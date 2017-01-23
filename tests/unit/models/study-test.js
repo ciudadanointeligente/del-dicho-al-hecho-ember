@@ -1,8 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('estudio', 'Unit | Model | estudio', {
+moduleForModel('study', 'Unit | Model | pertito', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:government']
 });
 
 test('it exists', function(assert) {
@@ -12,7 +12,7 @@ test('it exists', function(assert) {
 });
 
 test('it has attributes', function(assert){
-    let estudio = this.subject({'edition': 'marzo', 'year': '2016'});
-    assert.equal(estudio.get('edition'), 'marzo');
+    let estudio = this.subject({'version': 'marzo', 'year': '2016'});
+    assert.equal(estudio.get('version'), 'marzo');
     assert.equal(estudio.get('year'), 2016);
 });
