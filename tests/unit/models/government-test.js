@@ -12,7 +12,6 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-
 test('it has attributes', function(assert){
     let government = this.subject({'name': 'Bachelet 2013-2016'});
     assert.equal(government.get('name'), 'Bachelet 2013-2016');
