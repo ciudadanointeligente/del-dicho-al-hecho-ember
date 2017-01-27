@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import PapaParse from 'papaparse';
+import PapaParse from 'npm:papaparse';
 // import fs from 'ember-filesystem';
 
 
