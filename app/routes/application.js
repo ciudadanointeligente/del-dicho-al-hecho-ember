@@ -60,9 +60,6 @@ export default Ember.Route.extend({
           bills: bills,
           promises: promises,
         };
-        // console.log(data);
-        console.log(data.bills);
-        // console.log(data.promises);
         cb(data);
       }
     });
