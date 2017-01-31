@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import PapaParse from 'npm:papaparse';
-// import _ from 'lodash';
+import _ from 'lodash';
 
 export default Ember.Route.extend({
 //   model() {
@@ -18,15 +18,52 @@ export default Ember.Route.extend({
       header:true,
       complete: function(results){
 
+        var promises = [];
+        var bills = [];
 
-        console.log(results.data[0]);
+        _.forEach(results.data, function(value) {
+          let tmp = {
+            id:value.ID,
+            type: "promise",
+            attributes:
+            {
+              content: value.Promesa,
+            }};
+          promises.push(tmp);
+        });
 
-        let tmp = {
-          data: [
-            {id:1, type: "bill", attributes: {name: "Seba Pinera 1"}}
-          ]
+        var filtro = _.filter(results.data, function(item) {
+          return item.Boletin !== '';
+        });
+
+        _.forEach(filtro, function(value) {
+          var promise = _.filter(promises, function(item) {
+            return item.id === value.ID;
+          });
+          let tmp = {
+            id: value.Boletin,
+            type: "bill",
+            attributes:
+            {
+              name: value.Boletin,
+              title: value.Titulo,
+              url: value.Link,
+              justification: value.Justificacion,
+              year: value.Ano,
+              version: value.Version,
+              promise: promise[0],
+            }};
+          bills.push(tmp);
+        });
+
+        let data = {
+          bills: bills,
+          promises: promises,
         };
-        cb(tmp);
+        // console.log(data);
+        console.log(data.bills);
+        // console.log(data.promises);
+        cb(data);
       }
     });
   }
