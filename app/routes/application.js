@@ -46,11 +46,9 @@ export default Ember.Route.extend({
           });
 
           _.forEach(filtro, function(value) {
-            var promise = _.filter(promises, function(item) {
-              return item.id === value.ID;
-            });
+
             let tmp = {
-              id: value.Boletin,
+              id: parseInt(value.Boletin.replace('-', '')),
               type: "bill",
               attributes:
               {
@@ -60,9 +58,10 @@ export default Ember.Route.extend({
                 justification: value.Justificacion,
                 year: value.Ano,
                 version: value.Version,
-                promise: promise[0],
+                promise: {"id": value.ID},
               }};
             bills.push(tmp);
+            data.push(tmp);
           });
 
           let resultado = {
