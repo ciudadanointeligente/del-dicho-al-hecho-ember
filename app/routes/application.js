@@ -58,8 +58,16 @@ export default Ember.Route.extend({
                 justification: value.Justificacion,
                 year: value.Ano,
                 version: value.Version,
-                promise: {"id": value.ID},
-              }};
+              },
+              relationships: {
+                promise: {
+                  data: {
+                    id: value.ID,
+                    type: 'promise'
+                  }
+                }
+              },
+            };
             bills.push(tmp);
             data.push(tmp);
           });

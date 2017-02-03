@@ -1,7 +1,7 @@
 import { moduleFor, test } from 'ember-qunit';
 import 'ember-data';
 import Ember  from 'ember';
-import _ from 'lodash';
+// import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
   needs: ['model:bill', 'model:promise'],
@@ -18,11 +18,6 @@ test("it parses data", function(assert){
     let first_ = data.data[0];
     assert.equal(first_.type, "promise");
     assert.ok(first_.id);
-
-    let bills_ = _.filter(data.data, function(b){return b.type === "bill";});
-    assert.ok(bills_[0].id);
-    assert.ok(bills_[0].attributes.promise.id);
-
   };
 
   route._parseCsv("/Bachelet-2013-2017_Marzo-2016.csv").then(callback);
@@ -42,18 +37,28 @@ test("automatically loads data", function(assert){
       let promises = store.peekAll('promise');
       assert.ok(promises.toArray().length > 0);
 
-      let expected_promise = store.find('promise', 26);
-      let bill = store.find('bill', 906907);
-      // console.log(expected_promise);
-      console.log(bill);
-      assert.equal(bill.promise, expected_promise);
-
       done();
     });
   };
 
   Ember.run.bind(this, assertions)();
 
+});
 
+
+test("bill has promise", function(assert){
+  var done = assert.async();
+  var store = this.store;
+
+  let assertions = function(){
+    this.subject().model().then(function(){
+      let expected_promise = store.peekRecord('promise', 26);
+      let bill = store.peekRecord('bill', 906907);
+      assert.equal(bill.get('promise').get('id'), expected_promise.id);
+      done();
+    });
+  };
+
+  Ember.run.bind(this, assertions)();
 
 });
