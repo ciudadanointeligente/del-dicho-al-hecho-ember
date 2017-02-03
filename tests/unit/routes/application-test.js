@@ -36,7 +36,6 @@ test("automatically loads data", function(assert){
       assert.ok(bills.toArray().length > 0);
       let promises = store.peekAll('promise');
       assert.ok(promises.toArray().length > 0);
-
       done();
     });
   };
@@ -60,5 +59,96 @@ test("bill has promise", function(assert){
   };
 
   Ember.run.bind(this, assertions)();
+
+});
+test("promise has many bills from file", function(assert){
+  var done = assert.async();
+  var store = this.store;
+
+  let assertions = function(){
+    this.subject().model().then(function(){
+      let expected_promise = store.peekRecord('promise', 26);
+      let bill = store.peekRecord('bill', 906907);
+      let bill2 = store.peekRecord('bill', 1034406);
+      assert.equal(bill.get('promise').get('id'), expected_promise.id);
+      assert.equal(bill2.get('promise').get('id'), expected_promise.id);
+      let promises = store.peekAll('promise');
+      assert.equal(promises.toArray().length, 26);
+      done();
+    });
+  };
+
+  Ember.run.bind(this, assertions)();
+
+});
+test('matches csv with model attributes', function(assert){
+  let route = this.subject();
+
+  let row_from_csv = {
+  	"ID": "1",
+  	"Ano": "2016",
+  	"Version": "mayo",
+  	"Area": "Democracia",
+  	"Promesa": 'Hola esto es una promesa',
+  	"CumplimientoTotal": "40%",
+  	"CoherenciaTotal": "4",
+  	"Boletin": "10344-06",
+  	"Titulo": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  	"Link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  	"PrimerTramite": "1",
+  	"Veto": "",
+  	"Insistencia": "",
+  	"SegundoTercerTramite": "",
+  	"ComisionMixta": "",
+  	"TribunalConstitucional": "",
+  	"AprobacionPresidencial": "",
+  	"Promulgado": "",
+  	"RechazadoRetirado": "",
+  	"Avance": "0,4",
+  	"Simple": "1",
+  	"Suma": "",
+  	"Inmediata": "",
+  	"Total": "1",
+  	"Marginal": "",
+  	"ParcialMinima": "",
+  	"ParcialAlto": "",
+  	"EscalaCoherencia": "4",
+  	"Justificacion": "Esto es un perrito"
+  };
+
+  let resulting_data = route._parseAttributes(row_from_csv);
+
+  let expected_data = [
+    {
+      attributes:
+      {
+        content: 'Hola esto es una promesa'
+      },
+      id: 1,
+      type: "promise"
+
+    },
+  {
+  	"id": 1034406,
+  	"type": "bill",
+  	"attributes": {
+  		"name": "10344-06",
+  		"title": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  		"url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  		"justification": "Esto es un perrito",
+  		"year": "2016",
+  		"version": "mayo"
+  	},
+    "relationships": {
+      "promise": {
+        "data": {
+          "id": 1,
+          "type": 'promise'
+        }
+      }
+    }
+
+  }];
+  assert.deepEqual(resulting_data, expected_data);
 
 });

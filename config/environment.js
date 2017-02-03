@@ -1,8 +1,31 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+  var matcher = {
+    'promise': {
+      'content': 'Promesa',
+      'id': {
+        'fieldToGetIdFrom': 'ID'
+      }
+    },
+    'bill': {
+      'name': 'Boletin',
+      'title': 'Titulo',
+      'url': 'Link',
+      'justification': 'Justificacion',
+      'year': 'Ano',
+      'version': 'Version',
+      'id': {
+        'fieldToGetIdFrom': 'Boletin'
+      },
+      'relationships':[
+        "promise"
+      ]
+    }
+  };
   var ENV = {
     modulePrefix: 'ddah-ember',
+    matcher: matcher,
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
