@@ -4,7 +4,7 @@ import Ember  from 'ember';
 // import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -20,11 +20,9 @@ test("it parses data", function(assert){
     assert.ok(first_.id);
   };
 
-  route._parseCsv("/Bachelet-2013-2017_Marzo-2016.csv").then(callback);
+  route._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv").then(callback);
 
 });
-
-
 
 test("automatically loads data", function(assert){
   var done = assert.async();
@@ -44,7 +42,6 @@ test("automatically loads data", function(assert){
 
 });
 
-
 test("bill has promise", function(assert){
   var done = assert.async();
   var store = this.store;
@@ -61,6 +58,7 @@ test("bill has promise", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+
 test("promise has many bills from file", function(assert){
   var done = assert.async();
   var store = this.store;
@@ -81,6 +79,7 @@ test("promise has many bills from file", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+
 test('matches csv with model attributes', function(assert){
   let route = this.subject();
 
@@ -150,5 +149,24 @@ test('matches csv with model attributes', function(assert){
 
   }];
   assert.deepEqual(resulting_data, expected_data);
+});
+
+test("it has studies and government", function(assert){
+  let route = this.subject();
+  var store = this.store;
+  route._parseStudiesGovernment(store);
+  let studies = store.peekAll('study');
+  assert.ok(studies.toArray().length > 0);
+  let gov = store.peekAll('government');
+  assert.ok(gov.toArray().length > 0);
+  assert.ok(gov.toArray()[0].get('id'), 'Gobierno tiene id');
+
+  let idGov = route._hashCode('Bachelet-2014-2018');
+  assert.ok(studies.toArray()[0].get('government'));
+  assert.equal(idGov, studies.toArray()[0].get('government').get('id'));
+
+  assert.ok(studies.toArray()[0].get('id'), 'Estudio tiene id');
+
+
 
 });

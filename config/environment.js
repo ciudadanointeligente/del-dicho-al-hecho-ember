@@ -23,9 +23,16 @@ module.exports = function(environment) {
       ]
     }
   };
+  var studies = {
+    studies: [
+      "Bachelet-2014-2018_Marzo-2016",
+      "Bachelet-2014-2018_Mayo-2016",
+    ]
+  }
   var ENV = {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
+    studies: studies,
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

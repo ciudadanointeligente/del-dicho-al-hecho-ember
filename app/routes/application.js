@@ -4,10 +4,10 @@ import _ from 'lodash';
 import config from '../config/environment';
 
 
-
 export default Ember.Route.extend({
   model() {
-    return this._parseCsv("/Bachelet-2013-2017_Marzo-2016.csv", this.store);
+    this._parseStudiesGovernment(this.store);
+    return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
   },
 
   _parseAttributes(data_csv){
@@ -40,7 +40,6 @@ export default Ember.Route.extend({
                 }
               };
           });
-
         }
 
       });
@@ -88,5 +87,56 @@ export default Ember.Route.extend({
     });
 
 
+  },
+
+  _hashCode(str){
+    var hash = 0;
+    if (str.length === 0) {
+      return hash;
+    }
+
+    for (var i = 0; i < str.length; i++) {
+        let char = str.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+  },
+
+  _parseStudiesGovernment(store){
+    let _hashCode = this._hashCode;
+
+    Ember.run.begin();
+
+    _.forEach(config.studies['studies'], function(key){
+      let arrayGS = key.split('_');
+      let version = arrayGS[1].split('-')[0];
+      let year = arrayGS[1].split('-')[1];
+      let name = arrayGS[0];
+
+      if (store.peekRecord('government', _hashCode(name)) == null) {
+        store.createRecord('government', {
+          name: name,
+          id: _hashCode(name),
+        });
+      }
+
+      let gov = store.peekRecord('government', _hashCode(name));
+
+      let study = store.createRecord('study', {
+        version: version,
+        year: year,
+        id: _hashCode(version+year),
+      });
+
+      gov.get('studies').pushObject(study);
+      console.log(gov.get('studies'));
+
+    });
+
+    Ember.run.end();
+
+
   }
+
 });

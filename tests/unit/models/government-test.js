@@ -13,8 +13,8 @@ test('it exists', function(assert) {
 });
 
 test('it has attributes', function(assert){
-    let government = this.subject({'name': 'Bachelet 2013-2016'});
-    assert.equal(government.get('name'), 'Bachelet 2013-2016');
+    let government = this.subject({'name': 'Bachelet 2014-2018'});
+    assert.equal(government.get('name'), 'Bachelet 2014-2018');
     assert.ok(Ember.guidFor(government));
 });
 
