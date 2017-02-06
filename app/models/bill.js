@@ -8,7 +8,8 @@ export default DS.Model.extend({
   justification: DS.attr('string'),
   fullfilment: DS.attr('number'),
   coherence: DS.attr('number'),
+  version: DS.attr('string'),
+  year: DS.attr('string'),
   phase: DS.belongsTo('phase'),
   promise: DS.belongsTo('promise'),
-
 });

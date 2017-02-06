@@ -37,3 +37,9 @@ test("bill belongs to promise", function(assert){
   assert.equal(relationship.key, 'promise');
   assert.equal(relationship.kind, 'belongsTo');
 });
+
+// test("preloading some data", function(assert){
+//     let the_bills = this.store().peekAll('bill');
+//     let arr = the_bills.toArray();
+//     assert.ok(arr.length > 0);
+// });

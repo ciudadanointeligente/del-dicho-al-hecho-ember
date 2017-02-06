@@ -1,8 +1,38 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+  var matcher = {
+    'promise': {
+      'content': 'Promesa',
+      'id': {
+        'fieldToGetIdFrom': 'ID'
+      }
+    },
+    'bill': {
+      'name': 'Boletin',
+      'title': 'Titulo',
+      'url': 'Link',
+      'justification': 'Justificacion',
+      'year': 'Ano',
+      'version': 'Version',
+      'id': {
+        'fieldToGetIdFrom': 'Boletin'
+      },
+      'relationships':[
+        "promise"
+      ]
+    }
+  };
+  var studies = {
+    studies: [
+      "Bachelet-2014-2018_Marzo-2016",
+      "Bachelet-2014-2018_Mayo-2016",
+    ]
+  }
   var ENV = {
     modulePrefix: 'ddah-ember',
+    matcher: matcher,
+    studies: studies,
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
