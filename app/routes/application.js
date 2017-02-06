@@ -105,7 +105,6 @@ export default Ember.Route.extend({
 
   _parseStudiesGovernment(store){
     let _hashCode = this._hashCode;
-
     Ember.run.begin();
 
     _.forEach(config.studies['studies'], function(key){
@@ -130,13 +129,9 @@ export default Ember.Route.extend({
       });
 
       gov.get('studies').pushObject(study);
-      console.log(gov.get('studies'));
-
     });
 
     Ember.run.end();
-
-
   }
 
 });
