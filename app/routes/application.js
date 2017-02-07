@@ -27,7 +27,7 @@ export default Ember.Route.extend({
   _uploadPhases(store){
     let _hashCode = this._hashCode;
     Ember.run.begin();
-    _.forEach(config.phases , function(key){
+    _.forEach(config.phases.phases , function(key){
       store.createRecord('phase', {
         name: key.name,
         fullfilment: parseInt(key.fullfilment),
@@ -71,12 +71,16 @@ export default Ember.Route.extend({
           }
           _.forEach(value, function(relationship_model){
             if (relationship_model === 'phase'){
-              obj["relationships"]['phase'] = {
-                data: {
-                  id: _hashCode(data_csv['Estado']),
-                  type: relationship_model
-                }
-              };
+              let columnName = config.phases.columnName;
+              if(!_.isNil(data_csv[columnName])){
+                obj["relationships"]['phase'] = {
+                  data: {
+                    id: _hashCode(data_csv[columnName]),
+                    type: relationship_model
+                  }
+                };
+              }
+
             } else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {

@@ -122,7 +122,6 @@ test('matches csv with model attributes', function(assert){
   };
 
   let resulting_data = route._parseAttributes(row_from_csv);
-
   let parsed_promise = _.find(resulting_data, {type:'promise'});
   assert.equal(parsed_promise.id, 1);
   assert.equal(parsed_promise.attributes.content, 'Hola esto es una promesa');

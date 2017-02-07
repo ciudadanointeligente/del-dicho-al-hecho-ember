@@ -39,7 +39,9 @@ module.exports = function(environment) {
       "Bachelet-2014-2018_Mayo-2016",
     ]
   };
-  var phases = [
+  var phases = {
+    'columnName': 'Estado',
+    "phases":[
     {
       'name': 'Primer Tramite',
       'fullfilment': 40,
@@ -68,7 +70,7 @@ module.exports = function(environment) {
       'name': 'Promulgado',
       'fullfilment': 100,
     }
-  ];
+  ]};
 
   var ENV = {
     modulePrefix: 'ddah-ember',
