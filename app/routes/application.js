@@ -6,7 +6,6 @@ import config from '../config/environment';
 
 export default Ember.Route.extend({
   model() {
-    this._uploadPhases(this.store);
     this._parseStudiesGovernment(this.store);
     return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
   },
@@ -28,15 +27,13 @@ export default Ember.Route.extend({
   _uploadPhases(store){
     let _hashCode = this._hashCode;
     Ember.run.begin();
-    console.log(config.phases);
     _.forEach(config.phases , function(key){
-      let phase = store.createRecord('phase', {
+      store.createRecord('phase', {
         name: key.name,
         fullfilment: parseInt(key.fullfilment),
         id: _hashCode(key.name),
       });
 
-      console.log(phase.get('fullfilment'));
     });
 
     Ember.run.end();
@@ -73,6 +70,14 @@ export default Ember.Route.extend({
             obj.relationships = {};
           }
           _.forEach(value, function(relationship_model){
+            if (relationship_model === 'phase'){
+              obj["relationships"]['phase'] = {
+                data: {
+                  id: _hashCode(data_csv['Estado']),
+                  type: relationship_model
+                }
+              };
+            } else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {
                 data: {
@@ -80,10 +85,12 @@ export default Ember.Route.extend({
                   type: relationship_model
                 }
               };
+            }
           });
         }
 
       });
+
       data.push(obj);
     });
     return data;
@@ -104,7 +111,6 @@ export default Ember.Route.extend({
             let data_per_row = _parseAttributes(value);
             data = _.concat(data, data_per_row);
           });
-
 
           let resultado = {
             data: data,
@@ -132,6 +138,8 @@ export default Ember.Route.extend({
   },
 
   _parseStudiesGovernment(store){
+    this._uploadPhases(store);
+
     let _hashCode = this._hashCode;
     Ember.run.begin();
 

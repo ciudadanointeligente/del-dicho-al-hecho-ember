@@ -54,7 +54,7 @@ test("bill has promise and phase", function(assert){
       let expected_promise = store.peekRecord('promise', 26);
       let bill = store.peekRecord('bill', 906907);
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
-      // assert.equal(bill.get('phase').get('name'), "Promulgado");
+      assert.equal(bill.get('phase').get('name'), "Promulgado");
       done();
     });
   };
@@ -150,10 +150,7 @@ test("it has studies and government", function(assert){
 
   assert.ok(studies.toArray()[0].get('id'), 'Estudio tiene id');
 
-
-
 });
-
 
 
 test("it has phases with fullfilment", function(assert){

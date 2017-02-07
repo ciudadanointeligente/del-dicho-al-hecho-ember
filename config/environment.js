@@ -28,7 +28,8 @@ module.exports = function(environment) {
         'fieldToGetIdFrom': 'Boletin'
       },
       'relationships':[
-        "promise"
+        "promise",
+        "phase",
       ]
     }
   };
@@ -40,7 +41,7 @@ module.exports = function(environment) {
   };
   var phases = [
     {
-      'name': 'Primer Trámite',
+      'name': 'Primer Tramite',
       'fullfilment': 40,
     }, {
       'name': 'Segundo Tercer Trámite',
