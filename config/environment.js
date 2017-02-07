@@ -30,18 +30,50 @@ module.exports = function(environment) {
       'relationships':[
         "promise"
       ]
-    },
+    }
   };
   var studies = {
     studies: [
       "Bachelet-2014-2018_Marzo-2016",
       "Bachelet-2014-2018_Mayo-2016",
     ]
-  }
+  };
+  var phases = [
+    {
+      'name': 'Primer Trámite',
+      'fullfilment': 40,
+    }, {
+      'name': 'Segundo Tercer Trámite',
+      'fullfilment': 70,
+    }, {
+      'name': 'Veto',
+      'fullfilment': 40,
+    }, {
+      'name': 'Insistencia',
+      'fullfilment': 40,
+    }, {
+      'name': 'Rechazado Retirado',
+      'fullfilment': 40,
+    }, {
+      'name': 'Comisión Mixta',
+      'fullfilment': 70,
+    }, {
+      'name': 'Tribunal Constitucional',
+      'fullfilment': 100,
+    }, {
+      'name': 'Aprobación Presidencial',
+      'fullfilment': 90,
+    }, {
+      'name': 'Promulgado',
+      'fullfilment': 100,
+    }
+  ];
+
   var ENV = {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
     studies: studies,
+    phases: phases,
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

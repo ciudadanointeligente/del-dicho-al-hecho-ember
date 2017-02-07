@@ -6,6 +6,7 @@ import config from '../config/environment';
 
 export default Ember.Route.extend({
   model() {
+    this._uploadPhases(this.store);
     this._parseStudiesGovernment(this.store);
     return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
   },
@@ -23,6 +24,24 @@ export default Ember.Route.extend({
     }
     return hash;
   },
+
+  _uploadPhases(store){
+    let _hashCode = this._hashCode;
+    Ember.run.begin();
+    console.log(config.phases);
+    _.forEach(config.phases , function(key){
+      let phase = store.createRecord('phase', {
+        name: key.name,
+        fullfilment: parseInt(key.fullfilment),
+        id: _hashCode(key.name),
+      });
+
+      console.log(phase.get('fullfilment'));
+    });
+
+    Ember.run.end();
+  },
+
   _parseAttributes(data_csv){
     let _hashCode = this._hashCode;
     let data = [];

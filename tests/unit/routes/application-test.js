@@ -4,7 +4,7 @@ import Ember  from 'ember';
 import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -45,7 +45,7 @@ test("automatically loads data", function(assert){
 
 });
 
-test("bill has promise", function(assert){
+test("bill has promise and phase", function(assert){
   var done = assert.async();
   var store = this.store;
 
@@ -54,6 +54,7 @@ test("bill has promise", function(assert){
       let expected_promise = store.peekRecord('promise', 26);
       let bill = store.peekRecord('bill', 906907);
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
+      // assert.equal(bill.get('phase').get('name'), "Promulgado");
       done();
     });
   };
@@ -151,4 +152,14 @@ test("it has studies and government", function(assert){
 
 
 
+});
+
+
+
+test("it has phases with fullfilment", function(assert){
+  let route = this.subject();
+  var store = this.store;
+  route._uploadPhases(store);
+  let phases = store.peekAll('phase');
+  assert.ok(phases.toArray().length > 0);
 });
