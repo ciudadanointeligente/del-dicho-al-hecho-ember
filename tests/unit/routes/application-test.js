@@ -1,7 +1,7 @@
 import { moduleFor, test } from 'ember-qunit';
 import 'ember-data';
 import Ember  from 'ember';
-// import _ from 'lodash';
+import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
   needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area'],
@@ -14,11 +14,13 @@ test("it parses data", function(assert){
   let route = this.subject();
 
   let callback = function(data){
-    assert.ok(data.data.length > 0);
-    let first_ = data.data[0];
+    assert.ok(data.data.length > 0, 'hay datos');
+    let area = _.find(data.data, {type: 'area'});
 
-    assert.equal(first_.type, "area");
-    assert.ok(first_.id);
+    assert.ok(area.id, 'Parses area');
+    let promise = _.find(data.data, {type: 'promise'});
+
+    assert.ok(promise.id, 'parses promise');
   };
 
   route._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv").then(callback);
@@ -120,38 +122,15 @@ test('matches csv with model attributes', function(assert){
 
   let resulting_data = route._parseAttributes(row_from_csv);
 
-  let expected_data = [
-    {
-      attributes:
-      {
-        content: 'Hola esto es una promesa'
-      },
-      id: 1,
-      type: "promise"
+  let parsed_promise = _.find(resulting_data, {type:'promise'});
+  assert.equal(parsed_promise.id, 1);
+  assert.equal(parsed_promise.attributes.content, 'Hola esto es una promesa');
 
-    },
-  {
-  	"id": 1034406,
-  	"type": "bill",
-  	"attributes": {
-  		"name": "10344-06",
-  		"title": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
-  		"url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
-  		"justification": "Esto es un perrito",
-  		"year": "2016",
-  		"version": "mayo"
-  	},
-    "relationships": {
-      "promise": {
-        "data": {
-          "id": 1,
-          "type": 'promise'
-        }
-      }
-    }
+  let parsed_bill = _.find(resulting_data, {type:'bill'});
+  assert.equal(parsed_bill.id, 1034406);
+  assert.equal(parsed_bill.attributes.name, "10344-06");
 
-  }];
-  assert.deepEqual(resulting_data, expected_data);
+
 });
 
 test("it has studies and government", function(assert){
