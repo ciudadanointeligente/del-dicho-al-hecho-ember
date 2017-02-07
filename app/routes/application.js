@@ -10,22 +10,44 @@ export default Ember.Route.extend({
     return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
   },
 
+  _hashCode(str){
+    var hash = 0;
+    if (str.length === 0) {
+      return hash;
+    }
+
+    for (var i = 0; i < str.length; i++) {
+        let char = str.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+  },
   _parseAttributes(data_csv){
+    let _hashCode = this._hashCode;
     let data = [];
     let keys = Object.keys(config.matcher);
+
     _.forEach(keys, function(key){
+
       let obj = {
         type: key,
         id: null,
         attributes: {}
       };
+
       _.forEach(config.matcher[key], function(value, attribue_name){
+
+
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
           let id = data_csv[value.fieldToGetIdFrom];
           // TODO: move this function to config file.
           obj.id = parseInt(id.replace("-", ""));
+          if(isNaN(obj.id)){
+            obj.id = _hashCode(id);
+          }
         }
         else if (attribue_name === "relationships") {
           if (!_.includes(Object.keys(obj), "relationships")){
@@ -51,6 +73,7 @@ export default Ember.Route.extend({
   _parseCsv(file_name, store){
     Ember.run.begin();
     let _parseAttributes = this._parseAttributes;
+    _parseAttributes = _parseAttributes.bind(this);
     return new Ember.RSVP.Promise(function(resolve, reject){
       PapaParse.parse(file_name, {
         download: true,
@@ -87,20 +110,6 @@ export default Ember.Route.extend({
     });
 
 
-  },
-
-  _hashCode(str){
-    var hash = 0;
-    if (str.length === 0) {
-      return hash;
-    }
-
-    for (var i = 0; i < str.length; i++) {
-        let char = str.charCodeAt(i);
-        hash = ((hash<<5)-hash)+char;
-        hash = hash & hash; // Convert to 32bit integer
-    }
-    return hash;
   },
 
   _parseStudiesGovernment(store){
