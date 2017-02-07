@@ -4,7 +4,7 @@ import Ember  from 'ember';
 // import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise', 'model:study', 'model:government'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -16,7 +16,8 @@ test("it parses data", function(assert){
   let callback = function(data){
     assert.ok(data.data.length > 0);
     let first_ = data.data[0];
-    assert.equal(first_.type, "promise");
+
+    assert.equal(first_.type, "area");
     assert.ok(first_.id);
   };
 
@@ -59,7 +60,8 @@ test("bill has promise", function(assert){
 
 });
 
-test("promise has many bills from file", function(assert){
+
+test("promise has many bills and an area", function(assert){
   var done = assert.async();
   var store = this.store;
 
@@ -72,6 +74,7 @@ test("promise has many bills from file", function(assert){
       assert.equal(bill2.get('promise').get('id'), expected_promise.id);
       let promises = store.peekAll('promise');
       assert.equal(promises.toArray().length, 26);
+      assert.equal(expected_promise.get('area').get('name'), "Democracia");
       done();
     });
   };

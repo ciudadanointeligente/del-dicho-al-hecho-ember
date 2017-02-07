@@ -11,21 +11,38 @@ export default Ember.Route.extend({
   },
 
   _parseAttributes(data_csv){
+    let _hashCode = this._hashCode;
+
+    // console.log(data_csv);
     let data = [];
     let keys = Object.keys(config.matcher);
+
+    // let area = {
+    //   type: 'area',
+    //   id: this._hashCode(data_csv['Area']),
+    //
+    // };
+
     _.forEach(keys, function(key){
+
       let obj = {
         type: key,
         id: null,
         attributes: {}
       };
+
       _.forEach(config.matcher[key], function(value, attribue_name){
+
+
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
           let id = data_csv[value.fieldToGetIdFrom];
           // TODO: move this function to config file.
           obj.id = parseInt(id.replace("-", ""));
+          if(_.isNil(obj.id)){
+            obj.id = this._hashCode(id);
+          }
         }
         else if (attribue_name === "relationships") {
           if (!_.includes(Object.keys(obj), "relationships")){

@@ -2,11 +2,20 @@
 
 module.exports = function(environment) {
   var matcher = {
+    'area': {
+      'name': 'Area',
+      'id': {
+        'fieldToGetIdFrom': 'Area'
+      },
+    },
     'promise': {
       'content': 'Promesa',
       'id': {
         'fieldToGetIdFrom': 'ID'
-      }
+      },
+      'relationships':[
+        "area"
+      ]
     },
     'bill': {
       'name': 'Boletin',
@@ -21,7 +30,7 @@ module.exports = function(environment) {
       'relationships':[
         "promise"
       ]
-    }
+    },
   };
   var studies = {
     studies: [
