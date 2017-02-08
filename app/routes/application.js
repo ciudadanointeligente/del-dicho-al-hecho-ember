@@ -84,12 +84,20 @@ export default Ember.Route.extend({
                 let priorities = [];
                 _.forEach(config.priorities.priorities, function(value){
                     if(obj.id > 0){
+                        let priority_id = _hashCode(obj.id + value.name);
                         let count = data_csv[value.countColumnName];
+                        let priority = {
+                          type: "priority",
+                          id: priority_id,
+                          attributes: {
+                            'name': value.name,
+                            'count': parseInt(count) || 0
+                          }
+                        };
+                        data.push(priority);
                         let rel = {
-                                'id': _hashCode(obj.id + value.name),
-                                'name': value.name,
+                                'id': priority_id,
                                 'type': 'priority',
-                                'count': parseInt(count) || 0
                                 };
                         priorities.push(rel);
                     }

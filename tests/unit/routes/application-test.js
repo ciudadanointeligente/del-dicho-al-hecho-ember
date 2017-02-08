@@ -45,7 +45,7 @@ test("automatically loads data", function(assert){
 
 });
 
-test("bill has promise and phase", function(assert){
+test("bill has promise, priority and phase", function(assert){
   var done = assert.async();
   var store = this.store;
 
@@ -55,6 +55,7 @@ test("bill has promise and phase", function(assert){
       let bill = store.peekRecord('bill', 906907);
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
       assert.equal(bill.get('phase').get('name'), "Promulgado");
+      assert.ok(bill.get('priorities').toArray()[0].toJSON().name, "Priority has name:" + bill.get('priorities').toArray()[0].toJSON().name);
       done();
     });
   };
@@ -85,6 +86,9 @@ test("promise has many bills and an area", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+
+
+
 
 test('matches csv with model attributes', function(assert){
   let route = this.subject();
@@ -129,9 +133,9 @@ test('matches csv with model attributes', function(assert){
   let parsed_bill = _.find(resulting_data, {type:'bill'});
   assert.equal(parsed_bill.id, 1034406);
   assert.equal(parsed_bill.attributes.name, "10344-06");
-  let simple = _.find(parsed_bill.relationships.priorities.data, {'name': 'Simple'});
-  assert.ok(simple.id);
-  assert.equal(simple.count, 1);
+  let simple = _.find(parsed_bill.relationships.priorities.data, {'id': route._hashCode(parsed_bill.id + "Simple")});
+  assert.ok(simple.type);
+
 });
 
 test("it has studies and government", function(assert){
