@@ -34,7 +34,7 @@ test("automatically loads data", function(assert){
   let assertions = function(){
       this.subject().model().then(function(){
       let bills = store.peekAll('bill');
-      assert.ok(bills.toArray().length > 0);
+      assert.ok(bills.toArray().length === 7, "Hay 7 bills:" + bills.toArray().length);
       let promises = store.peekAll('promise');
       assert.ok(promises.toArray().length > 0);
       done();
@@ -44,6 +44,9 @@ test("automatically loads data", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+
+
+
 
 test("bill has promise, priority and phase", function(assert){
   var done = assert.async();

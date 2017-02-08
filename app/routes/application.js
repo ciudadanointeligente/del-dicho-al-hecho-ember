@@ -121,8 +121,9 @@ export default Ember.Route.extend({
         }
 
       });
-
-      data.push(obj);
+      if(obj.id !== 0){
+        data.push(obj);
+      }
     });
     return data;
   },
