@@ -12,4 +12,5 @@ export default DS.Model.extend({
   year: DS.attr('string'),
   phase: DS.belongsTo('phase'),
   promise: DS.belongsTo('promise'),
+  priorities: DS.hasMany('priority'),
 });

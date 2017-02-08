@@ -54,7 +54,6 @@ export default Ember.Route.extend({
 
       _.forEach(config.matcher[key], function(value, attribue_name){
 
-
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
