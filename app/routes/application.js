@@ -2,26 +2,17 @@ import Ember from 'ember';
 import PapaParse from 'npm:papaparse';
 import _ from 'lodash';
 import config from '../config/environment';
+import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 
-export default Ember.Route.extend({
-  model() {
+export default Ember.Route.extend(UtilitiesMixin, {
+  parseCsv(){
     this._parseStudiesGovernment(this.store);
     return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
   },
-
-  _hashCode(str){
-    var hash = 0;
-    if (str.length === 0) {
-      return hash;
-    }
-
-    for (var i = 0; i < str.length; i++) {
-        let char = str.charCodeAt(i);
-        hash = ((hash<<5)-hash)+char;
-        hash = hash & hash; // Convert to 32bit integer
-    }
-    return hash;
+  model() {
+    this._parseStudiesGovernment(this.store);
+    return this.get('store').peekAll('government');
   },
 
   _uploadPhases(store){

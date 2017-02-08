@@ -32,7 +32,7 @@ test("automatically loads data", function(assert){
   var store = this.store;
 
   let assertions = function(){
-      this.subject().model().then(function(){
+      this.subject().parseCsv().then(function(){
       let bills = store.peekAll('bill');
       assert.ok(bills.toArray().length === 7, "Hay 7 bills:" + bills.toArray().length);
       let promises = store.peekAll('promise');
@@ -53,7 +53,7 @@ test("bill has promise, priority and phase", function(assert){
   var store = this.store;
 
   let assertions = function(){
-    this.subject().model().then(function(){
+    this.subject().parseCsv().then(function(){
       let expected_promise = store.peekRecord('promise', 26);
       let bill = store.peekRecord('bill', 906907);
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
@@ -73,7 +73,7 @@ test("promise has many bills and an area", function(assert){
   var store = this.store;
 
   let assertions = function(){
-    this.subject().model().then(function(){
+    this.subject().parseCsv().then(function(){
       let expected_promise = store.peekRecord('promise', 26);
       let bill = store.peekRecord('bill', 906907);
       let bill2 = store.peekRecord('bill', 1034406);
@@ -166,4 +166,9 @@ test("it has phases with fullfilment", function(assert){
   route._uploadPhases(store);
   let phases = store.peekAll('phase');
   assert.ok(phases.toArray().length > 0);
+});
+
+test("model return government", function(assert){
+  let gov = this.subject().model();
+  assert.ok(gov.toArray().length > 0);
 });
