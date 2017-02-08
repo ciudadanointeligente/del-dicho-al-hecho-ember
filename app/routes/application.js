@@ -23,6 +23,22 @@ export default Ember.Route.extend({
     }
     return hash;
   },
+
+  _uploadPhases(store){
+    let _hashCode = this._hashCode;
+    Ember.run.begin();
+    _.forEach(config.phases.phases , function(key){
+      store.createRecord('phase', {
+        name: key.name,
+        fullfilment: parseInt(key.fullfilment),
+        id: _hashCode(key.name),
+      });
+
+    });
+
+    Ember.run.end();
+  },
+
   _parseAttributes(data_csv){
     let _hashCode = this._hashCode;
     let data = [];
@@ -54,6 +70,18 @@ export default Ember.Route.extend({
             obj.relationships = {};
           }
           _.forEach(value, function(relationship_model){
+            if (relationship_model === 'phase'){
+              let columnName = config.phases.columnName;
+              if(!_.isNil(data_csv[columnName])){
+                obj["relationships"]['phase'] = {
+                  data: {
+                    id: _hashCode(data_csv[columnName]),
+                    type: relationship_model
+                  }
+                };
+              }
+
+            } else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {
                 data: {
@@ -61,10 +89,12 @@ export default Ember.Route.extend({
                   type: relationship_model
                 }
               };
+            }
           });
         }
 
       });
+
       data.push(obj);
     });
     return data;
@@ -85,7 +115,6 @@ export default Ember.Route.extend({
             let data_per_row = _parseAttributes(value);
             data = _.concat(data, data_per_row);
           });
-
 
           let resultado = {
             data: data,
@@ -113,6 +142,8 @@ export default Ember.Route.extend({
   },
 
   _parseStudiesGovernment(store){
+    this._uploadPhases(store);
+
     let _hashCode = this._hashCode;
     Ember.run.begin();
 
