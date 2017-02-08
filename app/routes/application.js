@@ -79,7 +79,28 @@ export default Ember.Route.extend({
                   }
                 };
               }
-            } else {
+            } else if(relationship_model === 'priority'){
+
+                let priorities = [];
+                _.forEach(config.priorities.priorities, function(value){
+                    if(obj.id > 0){
+                        let count = data_csv[value.countColumnName];
+                        let rel = {
+                                'id': _hashCode(obj.id + value.name),
+                                'name': value.name,
+                                'type': 'priority',
+                                'count': parseInt(count) || 0
+                                };
+                        priorities.push(rel);
+                    }
+
+                });
+                obj["relationships"]['priorities'] = {
+                  data: priorities
+                };
+
+            }
+              else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {
                 data: {

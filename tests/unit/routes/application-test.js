@@ -129,10 +129,9 @@ test('matches csv with model attributes', function(assert){
   let parsed_bill = _.find(resulting_data, {type:'bill'});
   assert.equal(parsed_bill.id, 1034406);
   assert.equal(parsed_bill.attributes.name, "10344-06");
-  // let simple = _.find(parsed_bill.get('priorities'), {'name': 'Simple'});
-  // console.log(simple);
-  // console.log('hola');
-  // assert.equal(simple.get('count'), 1);
+  let simple = _.find(parsed_bill.relationships.priorities.data, {'name': 'Simple'});
+  assert.ok(simple.id);
+  assert.equal(simple.count, 1);
 });
 
 test("it has studies and government", function(assert){

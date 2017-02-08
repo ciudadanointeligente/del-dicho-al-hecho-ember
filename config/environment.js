@@ -30,6 +30,7 @@ module.exports = function(environment) {
       'relationships':[
         "promise",
         "phase",
+        "priority",
       ]
     }
   };
@@ -42,15 +43,15 @@ module.exports = function(environment) {
   var priorities = {
     'priorities': [
       {
-        'countColumnName': "Simple"
+        'countColumnName': "Simple",
         'name': 'Simple'
       },
       {
-        'countColumnName': "Suma"
+        'countColumnName': "Suma",
         'name': 'Suma'
       },
       {
-        'countColumnName': "Inmediata"
+        'countColumnName': "Inmediata",
         'name': 'Inmediata'
       },
     ]
@@ -92,6 +93,7 @@ module.exports = function(environment) {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
     studies: studies,
+    priorities: priorities,
     phases: phases,
     environment: environment,
     rootURL: '/',
