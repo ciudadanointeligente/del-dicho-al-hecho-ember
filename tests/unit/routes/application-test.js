@@ -4,7 +4,7 @@ import Ember  from 'ember';
 import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase', 'model:priority'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -34,7 +34,7 @@ test("automatically loads data", function(assert){
   let assertions = function(){
       this.subject().model().then(function(){
       let bills = store.peekAll('bill');
-      assert.ok(bills.toArray().length > 0);
+      assert.ok(bills.toArray().length === 7, "Hay 7 bills:" + bills.toArray().length);
       let promises = store.peekAll('promise');
       assert.ok(promises.toArray().length > 0);
       done();
@@ -45,7 +45,10 @@ test("automatically loads data", function(assert){
 
 });
 
-test("bill has promise and phase", function(assert){
+
+
+
+test("bill has promise, priority and phase", function(assert){
   var done = assert.async();
   var store = this.store;
 
@@ -55,6 +58,7 @@ test("bill has promise and phase", function(assert){
       let bill = store.peekRecord('bill', 906907);
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
       assert.equal(bill.get('phase').get('name'), "Promulgado");
+      assert.ok(bill.get('priorities').toArray()[0].toJSON().name, "Priority has name:" + bill.get('priorities').toArray()[0].toJSON().name);
       done();
     });
   };
@@ -85,6 +89,9 @@ test("promise has many bills and an area", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+
+
+
 
 test('matches csv with model attributes', function(assert){
   let route = this.subject();
@@ -129,7 +136,8 @@ test('matches csv with model attributes', function(assert){
   let parsed_bill = _.find(resulting_data, {type:'bill'});
   assert.equal(parsed_bill.id, 1034406);
   assert.equal(parsed_bill.attributes.name, "10344-06");
-
+  let simple = _.find(parsed_bill.relationships.priorities.data, {'id': route._hashCode(parsed_bill.id + "Simple")});
+  assert.ok(simple.type);
 
 });
 

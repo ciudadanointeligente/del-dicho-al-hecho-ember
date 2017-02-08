@@ -54,7 +54,6 @@ export default Ember.Route.extend({
 
       _.forEach(config.matcher[key], function(value, attribue_name){
 
-
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
@@ -80,8 +79,36 @@ export default Ember.Route.extend({
                   }
                 };
               }
+            } else if(relationship_model === 'priority'){
 
-            } else {
+                let priorities = [];
+                _.forEach(config.priorities.priorities, function(value){
+                    if(obj.id > 0){
+                        let priority_id = _hashCode(obj.id + value.name);
+                        let count = data_csv[value.countColumnName];
+                        let priority = {
+                          type: "priority",
+                          id: priority_id,
+                          attributes: {
+                            'name': value.name,
+                            'count': parseInt(count) || 0
+                          }
+                        };
+                        data.push(priority);
+                        let rel = {
+                                'id': priority_id,
+                                'type': 'priority',
+                                };
+                        priorities.push(rel);
+                    }
+
+                });
+                obj["relationships"]['priorities'] = {
+                  data: priorities
+                };
+
+            }
+              else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {
                 data: {
@@ -94,8 +121,9 @@ export default Ember.Route.extend({
         }
 
       });
-
-      data.push(obj);
+      if(obj.id !== 0){
+        data.push(obj);
+      }
     });
     return data;
   },

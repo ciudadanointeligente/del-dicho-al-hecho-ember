@@ -30,6 +30,7 @@ module.exports = function(environment) {
       'relationships':[
         "promise",
         "phase",
+        "priority",
       ]
     }
   };
@@ -37,6 +38,22 @@ module.exports = function(environment) {
     studies: [
       "Bachelet-2014-2018_Marzo-2016",
       "Bachelet-2014-2018_Mayo-2016",
+    ]
+  };
+  var priorities = {
+    'priorities': [
+      {
+        'countColumnName': "Simple",
+        'name': 'Simple'
+      },
+      {
+        'countColumnName': "Suma",
+        'name': 'Suma'
+      },
+      {
+        'countColumnName': "Inmediata",
+        'name': 'Inmediata'
+      },
     ]
   };
   var phases = {
@@ -76,6 +93,7 @@ module.exports = function(environment) {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
     studies: studies,
+    priorities: priorities,
     phases: phases,
     environment: environment,
     rootURL: '/',

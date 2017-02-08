@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('bill', 'Unit | Model | bill', {
   // Specify the other units that are required for this test.
-  needs: ['model:phase', 'model:promise']
+  needs: ['model:phase', 'model:promise', 'model:priority']
 });
 
 test('it exists', function(assert) {
@@ -30,6 +30,14 @@ test("bill belongs to phase", function(assert){
   assert.equal(relationship.key, 'phase');
   assert.equal(relationship.kind, 'belongsTo');
 });
+
+test("bill has many priorities", function(assert){
+  let bill = this.store().modelFor('bill');
+  let relationship = Ember.get(bill, 'relationshipsByName').get('priorities');
+  assert.equal(relationship.key, 'priorities');
+  assert.equal(relationship.kind, 'hasMany');
+});
+
 
 test("bill belongs to promise", function(assert){
   let bill = this.store().modelFor('bill');
