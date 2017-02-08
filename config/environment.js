@@ -39,6 +39,22 @@ module.exports = function(environment) {
       "Bachelet-2014-2018_Mayo-2016",
     ]
   };
+  var priorities = {
+    'priorities': [
+      {
+        'countColumnName': "Simple"
+        'name': 'Simple'
+      },
+      {
+        'countColumnName': "Suma"
+        'name': 'Suma'
+      },
+      {
+        'countColumnName': "Inmediata"
+        'name': 'Inmediata'
+      },
+    ]
+  };
   var phases = {
     'columnName': 'Estado',
     "phases":[

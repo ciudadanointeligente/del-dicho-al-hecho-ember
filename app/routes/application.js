@@ -79,7 +79,6 @@ export default Ember.Route.extend({
                   }
                 };
               }
-
             } else {
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
               obj["relationships"][relationship_model] = {

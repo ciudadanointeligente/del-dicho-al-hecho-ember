@@ -4,7 +4,7 @@ import Ember  from 'ember';
 import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase', 'model:priority'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -129,8 +129,10 @@ test('matches csv with model attributes', function(assert){
   let parsed_bill = _.find(resulting_data, {type:'bill'});
   assert.equal(parsed_bill.id, 1034406);
   assert.equal(parsed_bill.attributes.name, "10344-06");
-
-
+  // let simple = _.find(parsed_bill.get('priorities'), {'name': 'Simple'});
+  // console.log(simple);
+  // console.log('hola');
+  // assert.equal(simple.get('count'), 1);
 });
 
 test("it has studies and government", function(assert){
