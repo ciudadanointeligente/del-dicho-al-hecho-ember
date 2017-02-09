@@ -5,4 +5,10 @@ export default DS.Model.extend({
     year: DS.attr('number'),
     promises: DS.hasMany('promise'),
     government: DS.belongsTo('government'),
+    slug: DS.attr("string", {defaultValue: function(e){
+      let gov = e.get("government");
+      return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).toLowerCase();
+
+    }
+  }),
 });

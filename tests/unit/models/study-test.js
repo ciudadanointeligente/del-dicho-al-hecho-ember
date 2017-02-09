@@ -31,3 +31,13 @@ test("study belongs to government", function(assert){
   assert.equal(relationship.key, 'government');
   assert.equal(relationship.kind, 'belongsTo');
 });
+
+
+test("study has slug attribute", function(assert){
+  Ember.run.begin();
+  let gov = this.store().createRecord('government', {'name': 'Bachelet-2014-2018'});
+  let estudio = this.subject({'version': 'marzo', 'year': '2016'});
+  gov.get('studies').pushObject(estudio);
+  assert.equal(estudio.get('slug'), 'bachelet-2014-2018_marzo-2016');
+  Ember.run.end();
+});
