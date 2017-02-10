@@ -1,8 +1,8 @@
 import Ember from 'ember';
+// import _ from 'lodash';
 
 export default Ember.Route.extend({
   model(params){
-    let result = this.get('store').peekAll('study').toArray()[0];
-    return result;
+    return this.get('store').peekAll('study').findBy('slug', params.study_name);
   },
 });
