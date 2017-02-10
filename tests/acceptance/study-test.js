@@ -10,3 +10,13 @@ test('visiting /study', function(assert) {
     assert.equal(currentURL(), '/study/bachelet-2014-2018_marzo-2016');
   });
 });
+
+
+
+test('visting a study that does\'n exist', function(assert){
+  visit('study/gatito');
+
+  andThen(function(){
+    assert.equal(currentURL(), '/404');
+  });
+});

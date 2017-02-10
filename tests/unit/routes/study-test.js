@@ -20,7 +20,6 @@ test("returns one study based on URL", function(assert){
   route.get("store").createRecord("study", {"version": "Mayo", "year": 2016, "government": gov});
   route.get("store").createRecord("study", {"version": "Marzo", "year": 2016, "government": gov});
   let study = route.model(params);
-  // console.log(study);
   assert.equal(study.get('version'), "Marzo");
   Ember.run.end();
 });

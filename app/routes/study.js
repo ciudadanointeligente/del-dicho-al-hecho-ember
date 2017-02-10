@@ -3,6 +3,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params){
-    return this.get('store').peekAll('study').findBy('slug', params.study_name);
+    let study = this.get('store').peekAll('study').findBy('slug', params.study_name);
+    if (typeof study === "undefined"){
+      this.transitionTo("/404");
+    }
+    return study;
   },
 });
