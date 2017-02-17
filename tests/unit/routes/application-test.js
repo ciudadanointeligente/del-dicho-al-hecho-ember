@@ -10,22 +10,6 @@ moduleFor('route:application', 'Unit | Route | application', {
   }
 });
 
-test("it parses data", function(assert){
-  let route = this.subject();
-
-  let callback = function(data){
-    assert.ok(data.data.length > 0, 'hay datos');
-    let area = _.find(data.data, {type: 'area'});
-
-    assert.ok(area.id, 'Parses area');
-    let promise = _.find(data.data, {type: 'promise'});
-
-    assert.ok(promise.id, 'parses promise');
-  };
-
-  route._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv").then(callback);
-
-});
 
 test("automatically loads data", function(assert){
   var done = assert.async();

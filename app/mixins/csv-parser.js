@@ -21,8 +21,7 @@ parseCsv(){
     Ember.run.end();
   },
 
-  _parseAttributes(data_csv){
-
+  _parseAttributes(data_csv, study){
     let _hashCode = this._hashCode;
     let data = [];
     let keys = Object.keys(config.matcher);
@@ -33,9 +32,7 @@ parseCsv(){
         id: null,
         attributes: {}
       };
-
       _.forEach(config.matcher[key], function(value, attribue_name){
-
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
@@ -49,6 +46,14 @@ parseCsv(){
         else if (attribue_name === "relationships") {
           if (!_.includes(Object.keys(obj), "relationships")){
             obj.relationships = {};
+          }
+          if (typeof study !== 'undefined' && key === 'promise'){
+            obj["relationships"]['study'] = {
+              data: {
+                id: study.get('id'),
+                type: 'study'
+              }
+            };
           }
           _.forEach(value, function(relationship_model){
             if (relationship_model === 'phase'){
@@ -91,7 +96,9 @@ parseCsv(){
 
             }
               else {
+
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
+
               obj["relationships"][relationship_model] = {
                 data: {
                   id: the_previous_object.id,
@@ -107,12 +114,18 @@ parseCsv(){
         data.push(obj);
       }
     });
+
     return data;
+
   },
 
-  _parseCsv(file_name, store){
+
+  _parseCsv(file_name, store, study){
     Ember.run.begin();
     let _parseAttributes = this._parseAttributes;
+    if (_.isNil(file_name)){
+      file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
+    }
     _parseAttributes = _parseAttributes.bind(this);
     return new Ember.RSVP.Promise(function(resolve, reject){
       PapaParse.parse(file_name, {
@@ -122,22 +135,19 @@ parseCsv(){
         complete: function(results){
           var data = [];
           _.forEach(results.data, function(value) {
-            let data_per_row = _parseAttributes(value);
+            let data_per_row = _parseAttributes(value, study);
             data = _.concat(data, data_per_row);
           });
-
           let resultado = {
-            data: data,
+            "data": data,
           };
-
           if(resultado) {
             if(!_.isNil(store)){
+
               store.pushPayload(resultado);
             }
-            resolve(resultado);
+            resolve(study);
             Ember.run.end();
-
-
           }
           else {
             reject("esto es un perrito");
