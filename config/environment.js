@@ -37,7 +37,7 @@ module.exports = function(environment) {
   var studies = {
     studies: [
       "Bachelet-2014-2018_Marzo-2016",
-      "Bachelet-2014-2018_Mayo-2016",
+      "Piñera-2010-2014_Marzo-2012",
     ]
   };
   var priorities = {
