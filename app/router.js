@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('government');
   this.route('404');
+  this.route('compare-studies');
 });
 
 export default Router;

@@ -4,10 +4,10 @@ import _ from 'lodash';
 import config from '../config/environment';
 
 export default Ember.Mixin.create({
-parseCsv(){
-  this._parseStudiesGovernment(this.store);
-  return this._parseCsv("/studies/Bachelet-2014-2018_Marzo-2016.csv", this.store);
-},
+  parseCsv(file_name){
+    this._parseStudiesGovernment(this.store);
+    return this._parseCsv("/studies/" + file_name, this.store);
+  },
   _uploadPhases(store){
     let _hashCode = this._hashCode;
     Ember.run.begin();
@@ -42,8 +42,7 @@ parseCsv(){
           if(isNaN(obj.id)){
             obj.id = _hashCode(id);
           }
-        }
-        else if (attribue_name === "relationships") {
+        } else if (attribue_name === "relationships") {
           if (!_.includes(Object.keys(obj), "relationships")){
             obj.relationships = {};
           }
@@ -67,7 +66,6 @@ parseCsv(){
                 };
               }
             } else if(relationship_model === 'priority'){
-
                 let priorities = [];
                 _.forEach(config.priorities.priorities, function(value){
                     if(obj.id > 0){
