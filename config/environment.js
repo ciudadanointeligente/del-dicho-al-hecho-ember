@@ -10,6 +10,7 @@ module.exports = function(environment) {
     },
     'promise': {
       'content': 'Promesa',
+      'number': 'ID',
       'id': {
         'fieldToGetIdFrom': 'ID'
       },

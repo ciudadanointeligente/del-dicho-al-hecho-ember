@@ -1,9 +1,10 @@
 import { moduleFor, test } from 'ember-qunit';
 import Ember from 'ember';
+import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 moduleFor('route:compare-studies', 'Unit | Route | compare studies', {
   // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['model:government', 'model:study', 'model:promise']
 });
 
 test('it exists', function(assert) {
@@ -13,16 +14,19 @@ test('it exists', function(assert) {
 
 test("returns studies based on URL", function(assert){
   let route = this.subject();
+  let UtilitiesObject = Ember.Object.extend(UtilitiesMixin);
+  let subject = UtilitiesObject.create();
   let params = {
-    studies: "bachelet-2014-2018_marzo-2016-piñera-2010-2014_marzo-2012"
+    studies: "bachelet-2014-2018_marzo-2016/vs/bachelet-2014-2018_marzo-2015"
   };
+
   Ember.run.begin();
   let govB = route.get("store").createRecord("government", {"name": "Bachelet-2014-2018"});
-  let govP = route.get("store").createRecord("government", {"name": "Piñera-2010-2014"});
-  route.get("store").createRecord("study", {"version": "Marzo", "year": 2016, "government": govB});
-  route.get("store").createRecord("study", {"version": "Marzo", "year": 2012, "government": govP});
+  route.get("store").createRecord("study", {"id": subject._hashCode("Marzo" + 2016), "version": "Marzo", "year": 2016, "government": govB});
+  route.get("store").createRecord("study", {"id": subject._hashCode("Marzo" + 2015), "version": "Marzo", "year": 2015, "government": govB});
+
   route.model(params).then(function(studies){
-    assert.equal(study.get('version'), "Marzo");
+    assert.ok(studies.get('firstObject').get('promises').toArray.length > 0);
   });
   Ember.run.end();
 

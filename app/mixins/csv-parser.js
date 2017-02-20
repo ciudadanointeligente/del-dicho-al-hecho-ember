@@ -8,6 +8,7 @@ export default Ember.Mixin.create({
     this._parseStudiesGovernment(this.store);
     return this._parseCsv("/studies/" + file_name, this.store);
   },
+
   _uploadPhases(store){
     let _hashCode = this._hashCode;
     Ember.run.begin();
@@ -36,11 +37,16 @@ export default Ember.Mixin.create({
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
-          let id = data_csv[value.fieldToGetIdFrom];
-          // TODO: move this function to config file.
-          obj.id = parseInt(id.replace("-", ""));
-          if(isNaN(obj.id)){
-            obj.id = _hashCode(id);
+          if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill')){
+            let id = _hashCode(data_csv[value.fieldToGetIdFrom] + study.get('government').get('name') + study.get('version') + study.get('year'));
+            obj.id = id;
+          } else {
+            let id = data_csv[value.fieldToGetIdFrom];
+            // TODO: move this function to config file.
+            obj.id = parseInt(id.replace("-", ""));
+            if(isNaN(obj.id)){
+              obj.id = _hashCode(id);
+            }
           }
         } else if (attribue_name === "relationships") {
           if (!_.includes(Object.keys(obj), "relationships")){
@@ -125,14 +131,17 @@ export default Ember.Mixin.create({
       file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
     }
     _parseAttributes = _parseAttributes.bind(this);
+    console.log(study);
     return new Ember.RSVP.Promise(function(resolve, reject){
       PapaParse.parse(file_name, {
         download: true,
         header:true,
         skipEmptyLines:true,
         complete: function(results){
+          console.log(file_name);
           var data = [];
           _.forEach(results.data, function(value) {
+            console.log(value);
             let data_per_row = _parseAttributes(value, study);
             data = _.concat(data, data_per_row);
           });
@@ -155,8 +164,6 @@ export default Ember.Mixin.create({
         }
       });
     });
-
-
   },
 
   _parseStudiesGovernment(store){
