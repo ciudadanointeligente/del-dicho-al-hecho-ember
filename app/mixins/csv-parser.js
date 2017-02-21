@@ -131,17 +131,14 @@ export default Ember.Mixin.create({
       file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
     }
     _parseAttributes = _parseAttributes.bind(this);
-    console.log(study);
     return new Ember.RSVP.Promise(function(resolve, reject){
       PapaParse.parse(file_name, {
         download: true,
         header:true,
         skipEmptyLines:true,
         complete: function(results){
-          console.log(file_name);
           var data = [];
           _.forEach(results.data, function(value) {
-            console.log(value);
             let data_per_row = _parseAttributes(value, study);
             data = _.concat(data, data_per_row);
           });

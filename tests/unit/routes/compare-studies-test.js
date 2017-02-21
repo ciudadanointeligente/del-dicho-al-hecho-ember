@@ -17,7 +17,7 @@ test("returns studies based on URL", function(assert){
   let UtilitiesObject = Ember.Object.extend(UtilitiesMixin);
   let subject = UtilitiesObject.create();
   let params = {
-    studies: "bachelet-2014-2018_marzo-2016/vs/bachelet-2014-2018_marzo-2015"
+    studies: "bachelet-2014-2018_marzo-2016~bachelet-2014-2018_marzo-2015"
   };
 
   Ember.run.begin();
@@ -26,7 +26,7 @@ test("returns studies based on URL", function(assert){
   route.get("store").createRecord("study", {"id": subject._hashCode("Marzo" + 2015), "version": "Marzo", "year": 2015, "government": govB});
 
   route.model(params).then(function(studies){
-    assert.ok(studies.get('firstObject').get('promises').toArray.length > 0);
+    assert.ok(studies.studies.get('firstObject').get('promises').toArray.length > 0);
   });
   Ember.run.end();
 
