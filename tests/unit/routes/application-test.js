@@ -16,7 +16,7 @@ test("automatically loads data", function(assert){
   var store = this.store;
 
   let assertions = function(){
-      this.subject().parseCsv("Bachelet-2014-2018_Marzo-2016.csv").then(function(){
+      this.subject().parseCsv("test/Bachelet-2014-2018_Marzo-2016.csv").then(function(){
       let bills = store.peekAll('bill');
       assert.ok(bills.toArray().length === 7, "Hay 7 bills:" + bills.toArray().length);
       let promises = store.peekAll('promise');
@@ -54,7 +54,7 @@ test("promise has many bills and an area", function(assert){
   var store = this.store;
 
   let assertions = function(){
-    this.subject().parseCsv("Bachelet-2014-2018_Marzo-2016.csv").then(function(){
+    this.subject().parseCsv("test/Bachelet-2014-2018_Marzo-2016.csv").then(function(){
       let expected_promise = store.peekRecord('promise', 26);
       let bill = store.peekRecord('bill', 906907);
       let bill2 = store.peekRecord('bill', 1034406);

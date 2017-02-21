@@ -27,8 +27,11 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
         // studies.push(parseCsv(file_name, store, study));
       }
     });
-    return Ember.RSVP.hash({
-      studies: studies,
-    });
+    console.log(studies);
+    return studies;
+    // return Ember.RSVP.hash({
+    //   studies: studies,
+    // });
+
   },
 });

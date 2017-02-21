@@ -1,1 +1,12 @@
 {{outlet}}
+
+<h2> Comparando Estudios de Gobierno de {{model.[0].government.name}}</h2>
+
+
+<ul>
+  {{#each model as |m|}}
+    <li>Versión {{m.version}} {{m.year}}</li>
+  {{else}}
+  No existen promesas aun
+  {{/each}}
+</ul>
