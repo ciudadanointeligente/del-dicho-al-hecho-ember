@@ -2,15 +2,25 @@
   <div class="menu">
     {{#link-to 'index'}}
       <h1 class="left">
-        <em>Nuestra primera Ember app</em>
+        <em>Del Dicho Al Hecho</em>
       </h1>
     {{/link-to}}
     <div class="left links">
-      {{#link-to 'about'}}
+      <li> {{#link-to 'about'}}
         About
-      {{/link-to}}
+      {{/link-to}} </li>
+
+      {{#each model as |gov|}}
+        {{#each gov.studies as |study|}}
+            <li> {{#link-to "study" study.slug}}{{gov.name}} - {{study.version}} {{study.year}}{{/link-to}} </li>
+        {{/each}}
+      {{else}}
+      No existen estudios
+      {{/each}}
     </div>
   </div>
+
+
   <div class="body">
     {{outlet}}
 
