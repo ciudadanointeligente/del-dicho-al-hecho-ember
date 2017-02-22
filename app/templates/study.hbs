@@ -54,29 +54,28 @@
         </div>
       </div><!--row-->
     </div><!--panel-heading-->
-    {{#each a.promises as |p|}}
-    {{!-- {{#if idFirstArea === a.id}}
-      'hooo'
-    {{/if}} --}}
-    <div id="cumplimiento-{{p.id}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne-{{p.id}}" >
+
+
+    <div id="cumplimiento-{{a.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-{{a.id}}" >
       <div class="panel-body">
+
+            {{#each a.promises as |p|}}
             <div class="panel-promise">
               <div class="row">
                 <div class="col-md-9">
                   <h4>Titulo {{p.id}}</h4>
                   <p>{{p.content}}</p><br>
-                  {{#if p.bills.length}}
-
-                  {{!-- TODO: Agregar un if si no hay bills --}}
-                  <p><span>Proyectos asociados</span></p>
-                  {{#each p.bills as |b|}}
-                  <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{p.id}}-{{b.id}}">Proyecto {{b.name}}</button>
-                  <p>
-                    <span>Total de urgencias</span> <span class="badge">99</span>
-                  </p>
-                  {{/each}}
-                  {{/if}}
-                </div><br>
+                      {{#if p.bills.length}}
+                      <p><span>Proyectos asociados</span></p>
+                      {{#each p.bills as |b|}}
+                      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{p.id}}-{{b.id}}">Proyecto {{b.name}}</button>
+                      <p>
+                        <span>Total de urgencias</span> <span class="badge">99</span>
+                      </p>
+                      {{/each}}
+                      {{/if}}
+                </div>
+                <br>
                 <div class="col-md-3 text-center">
                   <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -95,19 +94,19 @@
                     </div>
                   </div>
                 </div>
-                {{!-- {% include proyecto_modal.html %} --}}
               </div>
           </div>
-      </div><!--panel-body-->
-    </div><!--cumplimiento-->
 
     {{else}}
     No hay promesas que mostrar para esta área
     {{/each}}
-  </div>
-{{else}}
-<p> No hay áreas que mostrar </p>
-{{/each}}
+    </div><!--panel-body-->
+  </div><!--cumplimiento-->
+
+  </div><!--panel default-->
+  {{else}}
+  <p> No hay áreas que mostrar </p>
+  {{/each}}
 
     </div>
   </div>

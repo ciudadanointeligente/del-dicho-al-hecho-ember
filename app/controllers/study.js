@@ -10,6 +10,6 @@ export default Ember.Controller.extend({
   }.property('content'),
 
   idFirstArea: function() {
-    return this.get('store').peekAll('area').get('firstObject').get('id')
+    return this.get('store').peekAll('area').get('firstObject').get('id');
   }.property('content'),
 });
