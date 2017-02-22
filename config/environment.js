@@ -24,6 +24,7 @@ module.exports = function(environment) {
       'url': 'Link',
       'justification': 'Justificacion',
       'year': 'Ano',
+      'coherence-level': 'Coherencia Total',
       'version': 'Version',
       'id': {
         'fieldToGetIdFrom': 'Boletin'
