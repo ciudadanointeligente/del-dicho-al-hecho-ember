@@ -4,6 +4,9 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 // import _ from 'lodash';
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
+  setupController: function(controller, study) {
+      controller.set('model', study);
+  },
   model(params){
     let study = this.get('store').peekAll('study').findBy('slug', params.study_name);
     if (typeof study === "undefined"){

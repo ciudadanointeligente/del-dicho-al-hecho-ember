@@ -1,28 +1,12 @@
 <div class="container">
-  <div class="menu">
-    {{#link-to 'index'}}
-      <h1 class="left">
-        <em>Del Dicho Al Hecho</em>
-      </h1>
-    {{/link-to}}
-    <div class="left links">
-      <li> {{#link-to 'about'}}
-        About
-      {{/link-to}} </li>
 
-      {{#each model as |gov|}}
-        {{#each gov.studies as |study|}}
-            <li> {{#link-to "study" study.slug}}{{gov.name}} - {{study.version}} {{study.year}}{{/link-to}} </li>
-        {{/each}}
-      {{else}}
-      No existen estudios
-      {{/each}}
-    </div>
+  <div class="header">
+  
+    {{partial 'header'}}
   </div>
-
 
   <div class="body">
     {{outlet}}
-
   </div>
+
 </div>

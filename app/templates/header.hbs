@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+  <div class="navbar-header">
+    <h4 class="navbar-text">
+    {{#link-to "application"}}Del Dicho al Hecho{{/link-to}}
+    </h4>
+  </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li>{{#link-to "about"}}¿QUÉ ES?{{/link-to}}</li>
+      <li>{{#link-to "methodology"}}METODOLOGÍA{{/link-to}}</li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ESTUDIOS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          {{#each model as |gov|}}
+            <li> {{gov.name}} </li>
+            {{#each gov.studies as |study|}}
+                <li> {{#link-to "study" study.slug}} {{study.version}} {{study.year}}{{/link-to}} </li>
+            {{/each}}
+            <li role="separator" class="divider"></li>
+          {{/each}}
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+</nav>

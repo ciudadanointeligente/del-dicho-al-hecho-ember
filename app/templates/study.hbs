@@ -1,15 +1,114 @@
 {{outlet}}
 
-{{#if model}}
-Estas visualizando el estudio de {{model.version}} {{model.year}} del gobierno {{model.government.name}}
-{{/if}}
 
 
 
-<ul>
-  {{#each model.promises as |promise|}}
-    <li>{{promise.content}}</li>
-  {{else}}
-  No existen promesas aun
-  {{/each}}
-</ul>
+<br/>
+<br/>
+
+<div class="page-header">
+  <h1>Avance Programa de Gobierno {{model.government.name}}</h1>
+  <h2>{{fullName}}</h2>
+</div>
+
+
+
+<div class="panel panel-default">
+    <div class="panel-body">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+{{#each areas as |a|}}
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne-{{a.id}}">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="panel-title">
+            <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.id}}" aria-expanded="false" aria-controls="cumplimiento-[[p.id]]"><span>
+             {{a.name}}
+           </span></h4>
+          </h2>
+          <div class="sec-promesas">
+            <h5>{{a.promises.length}}promesa(s)<br>( 99 completas - 99 en proceso - 99 sin progreso)</h5>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 99%;"></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p class="hidden-md hidden-lg text-center">Avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></p>
+              <div class="category-result text-center">
+                99%
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p class="hidden-md hidden-lg text-center">Coherencia <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></p>
+              <div class="category-result text-center">
+                99
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--row-->
+    </div><!--panel-heading-->
+    {{#each a.promises as |p|}}
+    {{!-- {{#if idFirstArea === a.id}}
+      'hooo'
+    {{/if}} --}}
+    <div id="cumplimiento-{{p.id}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne-{{p.id}}" >
+      <div class="panel-body">
+            <div class="panel-promise">
+              <div class="row">
+                <div class="col-md-9">
+                  <h4>Titulo {{p.id}}</h4>
+                  <p>{{p.content}}</p><br>
+                  {{#if p.bills.length}}
+
+                  {{!-- TODO: Agregar un if si no hay bills --}}
+                  <p><span>Proyectos asociados</span></p>
+                  {{#each p.bills as |b|}}
+                  <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{p.id}}-{{b.id}}">Proyecto {{b.name}}</button>
+                  <p>
+                    <span>Total de urgencias</span> <span class="badge">99</span>
+                  </p>
+                  {{/each}}
+                  {{/if}}
+                </div><br>
+                <div class="col-md-3 text-center">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                      <p class="text-center">Avance</p>
+                      <div class="promise-result text-center">
+                        99
+                      </div>
+                      <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-{{p.id}}-{{b.id}}">¿Por qué?</a></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                      <p class="text-center">Coherencia</p>
+                      <div class="promise-result text-center">
+                        99
+                      </div>
+                      <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-coherencia-{{p.id}}-{{b.id}}">¿Por qué?</a></p>
+                    </div>
+                  </div>
+                </div>
+                {{!-- {% include proyecto_modal.html %} --}}
+              </div>
+          </div>
+      </div><!--panel-body-->
+    </div><!--cumplimiento-->
+
+    {{else}}
+    No hay promesas que mostrar para esta área
+    {{/each}}
+  </div>
+{{else}}
+<p> No hay áreas que mostrar </p>
+{{/each}}
+
+    </div>
+  </div>
+</div>
