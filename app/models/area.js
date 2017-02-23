@@ -4,6 +4,7 @@ import _ from 'lodash';
 export default DS.Model.extend({
     name: DS.attr('string'),
     promises: DS.hasMany('promise'),
+    study: DS.belongsTo('study'),
     fullfilment: DS.attr("number", {defaultValue: function(e){
       let fullfilment_promises = [];
       if (e.get('promises').toArray().length){

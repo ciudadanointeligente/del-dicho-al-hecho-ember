@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('area', 'Unit | Model | area', {
   // Specify the other units that are required for this test.
-  needs: ['model:promise']
+  needs: ['model:promise', 'model:area', 'model:study']
 });
 
 test('it exists', function(assert) {
