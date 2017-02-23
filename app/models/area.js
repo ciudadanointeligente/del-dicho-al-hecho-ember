@@ -28,4 +28,46 @@ export default DS.Model.extend({
         return 0;
       }
     }}),
+    completePromises: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) === 100){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    unprocessedPromises: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) === 0 ){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    progressPromises: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) !== 0 && parseInt(p.get('fullfilment')) !== 100 ){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
 });

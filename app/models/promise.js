@@ -8,6 +8,21 @@ export default DS.Model.extend({
   bills: DS.hasMany('bill'),
   study: DS.belongsTo('study'),
   area: DS.belongsTo('area'),
+  urgenciesCount: DS.attr("number", {defaultValue: function(e){
+    let count = 0;
+    if (e.get('bills').toArray().length){
+      let billsArray = e.get('bills');
+      billsArray.forEach(function(b){
+        let prioritiesArray = b.get('priorities');
+        prioritiesArray.forEach(function(priority){
+          count = count + parseInt(priority.get('count'));
+        });
+      });
+      return count;
+    } else {
+      return 0;
+    }
+  }}),
   fullfilment: DS.attr("number", {defaultValue: function(e){
     let fullfilment_bills = [];
     if (e.get('bills').toArray().length){

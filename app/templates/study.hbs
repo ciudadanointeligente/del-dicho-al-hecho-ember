@@ -28,7 +28,7 @@
            </span></h4>
           </h2>
           <div class="sec-promesas">
-            <h5>{{a.promises.length}}promesa(s)<br>( 99 completas - 99 en proceso - 99 sin progreso)</h5>
+            <h5>{{a.promises.length}} promesa(s)<br>({{a.completePromises}} completas - {{a.progressPromises}} en proceso - {{a.unprocessedPromises}} sin progreso)</h5>
           </div>
         </div>
         <div class="col-md-5">
@@ -70,7 +70,7 @@
                       {{#each p.bills as |b|}}
                       <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{p.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                       <p>
-                        <span>Total de urgencias</span> <span class="badge">99</span>
+                        <span>Total de urgencias</span> <span class="badge">{{p.urgenciesCount}}</span>
                       </p>
                       {{/each}}
                       {{/if}}
