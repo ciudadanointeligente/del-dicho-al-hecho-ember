@@ -16,9 +16,17 @@
           </div>
         </div>
         <div class="col-md-3 col-md-offset-3 text-center">
-          <div class="total-result">
-            {{ember-chart type='doughnut' data=chartData}}
-            {{ model.fullfilment }}
+          <div class="total-result cumplimientos">
+
+
+          <h3 class="text-center"></h3>
+          <div class="chart"></div>
+          <div class="text-center promise-result home">{{c.total}}</div>
+          {{ember-chart type='doughnut' data=chartData}}
+
+          <p class="text-center">{{model.fullfilment}}</p>
+
+
           </div>
           <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></h3>
         </div>
