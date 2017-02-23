@@ -33,7 +33,8 @@ module.exports = function(environment) {
         "promise",
         "phase",
         "priority",
-      ]
+      ],
+      'chekIsEmpty': 'Boletin',
     }
   };
   var studies = {

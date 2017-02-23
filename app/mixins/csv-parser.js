@@ -28,6 +28,11 @@ export default Ember.Mixin.create({
     let keys = Object.keys(config.matcher);
 
     _.forEach(keys, function(key){
+      if (config.matcher[key].chekIsEmpty){
+        if (!data_csv[config.matcher[key].chekIsEmpty]){
+          return;
+        }
+      }
       let obj = {
         type: key,
         id: null,
@@ -63,7 +68,7 @@ export default Ember.Mixin.create({
           _.forEach(value, function(relationship_model){
             if (relationship_model === 'phase'){
               let columnName = config.phases.columnName;
-              if(!_.isNil(data_csv[columnName])){
+              if(!_.isEmpty(data_csv[columnName])){
                 obj["relationships"]['phase'] = {
                   data: {
                     id: _hashCode(data_csv[columnName]),

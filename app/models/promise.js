@@ -11,13 +11,23 @@ export default DS.Model.extend({
   fullfilment: DS.attr("number", {defaultValue: function(e){
     let fullfilment_bills = [];
     if (e.get('bills').toArray().length){
-      _.forEach(e.get('bills'), function(b){
-        console.log(b.get('fullfilment'));
-        fullfilment_bills.push(1);
+      // console.log(e.get('content'));
+      // console.log(e.get('bills').toArray().length);
+      // console.log(e.get('bills').toArray());
+      let billsArray = e.get('bills');
+      billsArray.forEach(function(b){
+        fullfilment_bills.push(b.get('fullfilment'));
       });
+      console.log(_.mean(fullfilment_bills));
       return _.mean(fullfilment_bills);
     } else {
       return 0;
     }
   }}),
 });
+
+
+
+// fullfilment: DS.attr('number', {defaultValue: function(e){
+//   return e.get('phase').get('fullfilment');
+// }}),
