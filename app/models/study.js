@@ -36,4 +36,42 @@ export default DS.Model.extend({
         return 0;
       }
     }}),
+    billsCount: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          count += p.get('bills').toArray().length;
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    urgenciesCount: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          count += parseInt(p.get('urgenciesCount'));
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    capacity: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) === 100 && parseInt(p.get('coherenceLevel')) === 4){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
 });
