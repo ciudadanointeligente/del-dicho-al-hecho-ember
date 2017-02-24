@@ -1,23 +1,69 @@
 {{outlet}}
 
 
+<div>
 
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
 
 <h2> Comparando Estudios de Gobierno de {{model.[0].government.name}}</h2>
 
-{{model}}
+
+<div class="row">
+  <div class="col-md-4">
+    {{link-to "Sebastián Piñera - Michelle Bachelet al primer año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2014~piñera-2010-2014_Marzo-2010" class="btn btn-primary"}}
+  </div>
+  <div class="col-md-4">
+  {{link-to "Sebastián Piñera - Michelle Bachelet al segundo año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2015~piñera-2010-2014_Marzo-2011" class="btn btn-primary"}}
+  </div>
+  <div class="col-md-4">
+  {{link-to "Sebastián Piñera - Michelle Bachelet al tercer año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2016~piñera-2010-2014_Marzo-2012" class="btn btn-primary"}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    {{link-to "Sebastián Piñera - Michelle Bachelet al cuarto año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2017~piñera-2010-2014_Marzo-2013" class="btn btn-primary"}}
+  </div>
+  <div class="col-md-4">
+  Sebastián Piñera Gobierno completo
+  </div>
+  <div class="col-md-4">
+  Michelle Bachelet Gobierno completo
+  </div>
+</div>
 
 
-<ul>
-  {{#each model as |m|}}
-    <li>Versión {{m.version}} {{m.year}}</li>
-  {{else}}
-  No existen promesas aun
-  {{/each}}
-</ul>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3> {{model.[0].government.name}} </h3>
+  </div>
+  <div class="panel-body">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4> Promesas cumplidas </h4>
+    </div>
+    <div class="panel-body">
+      {{model.[0].promises.length}}
+      <p>Promesas</p>
+    </div>
+
+    <div class="panel-heading">
+      <h4> Avance promesas por año acumulado</h4>
+    </div>
+    <div class="panel-body">
+      {{ember-chart type='line' data=chartData}}
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+</div>

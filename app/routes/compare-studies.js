@@ -14,7 +14,6 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
     let hashCode = this._hashCode;
     let capitalize = this._capitalize;
     let studies = [];
-    // let parseCsv = this._parseCsv.bind(this);
 
     _.forEach(studies_name , function(st){
       let st_version = capitalize(st.split('_')[1].split('-')[0]);
