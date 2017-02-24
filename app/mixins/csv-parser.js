@@ -28,6 +28,11 @@ export default Ember.Mixin.create({
     let keys = Object.keys(config.matcher);
 
     _.forEach(keys, function(key){
+      if (config.matcher[key].chekIsEmpty){
+        if (!data_csv[config.matcher[key].chekIsEmpty]){
+          return;
+        }
+      }
       let obj = {
         type: key,
         id: null,
@@ -37,12 +42,12 @@ export default Ember.Mixin.create({
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
-          if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill')){
+
+          if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' || key === 'area')){
             let id = _hashCode(data_csv[value.fieldToGetIdFrom] + study.get('government').get('name') + study.get('version') + study.get('year'));
             obj.id = id;
           } else {
             let id = data_csv[value.fieldToGetIdFrom];
-            // TODO: move this function to config file.
             obj.id = parseInt(id.replace("-", ""));
             if(isNaN(obj.id)){
               obj.id = _hashCode(id);
@@ -52,7 +57,7 @@ export default Ember.Mixin.create({
           if (!_.includes(Object.keys(obj), "relationships")){
             obj.relationships = {};
           }
-          if (typeof study !== 'undefined' && key === 'promise'){
+          if (typeof study !== 'undefined' && (key === 'promise' || key === 'area')){
             obj["relationships"]['study'] = {
               data: {
                 id: study.get('id'),
@@ -63,7 +68,7 @@ export default Ember.Mixin.create({
           _.forEach(value, function(relationship_model){
             if (relationship_model === 'phase'){
               let columnName = config.phases.columnName;
-              if(!_.isNil(data_csv[columnName])){
+              if(!_.isEmpty(data_csv[columnName])){
                 obj["relationships"]['phase'] = {
                   data: {
                     id: _hashCode(data_csv[columnName]),

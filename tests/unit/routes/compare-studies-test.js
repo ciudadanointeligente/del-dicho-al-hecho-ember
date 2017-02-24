@@ -4,7 +4,8 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 moduleFor('route:compare-studies', 'Unit | Route | compare studies', {
   // Specify the other units that are required for this test.
-  needs: ['model:government', 'model:study', 'model:promise']
+
+  needs: ['model:government', 'model:study', 'model:promise', 'model:area']
 });
 
 test('it exists', function(assert) {
@@ -27,6 +28,10 @@ test("returns studies based on URL", function(assert){
 
   let studies = route.model(params);
   assert.ok(studies.get('firstObject').get('promises').toArray.length > 0);
+  //TODO: Retornar estudios con proyectos de ley desde model()
+  // let studies = route.model(params);
+  // assert.equal(studies.get('firstObject').get('version'), "Marzo");
+  // assert.ok(studies.get('firstObject').get('promises').toArray.length > 0);
   Ember.run.end();
 
 });

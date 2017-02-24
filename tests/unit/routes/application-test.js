@@ -29,14 +29,18 @@ test("automatically loads data", function(assert){
 
 });
 
+
 test("bill has promise, priority and phase", function(assert){
   var done = assert.async();
   var store = this.store;
 
   let assertions = function(){
-    this.subject().parseCsv("Bachelet-2014-2018_Marzo-2016.csv").then(function(){
-      let expected_promise = store.peekRecord('promise', 26);
-      let bill = store.peekRecord('bill', 906907);
+
+    this.subject().parseCsv("test/Bachelet-2014-2018_Marzo-2016.csv").then(function(){
+
+
+      let expected_promise = store.peekRecord('promise', "26");
+      let bill = store.peekRecord('bill', "906907");
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
       assert.equal(bill.get('phase').get('name'), "Promulgado");
       assert.ok(bill.get('priorities').toArray()[0].toJSON().name, "Priority has name:" + bill.get('priorities').toArray()[0].toJSON().name);
@@ -78,16 +82,16 @@ test('matches csv with model attributes', function(assert){
   let route = this.subject();
 
   let row_from_csv = {
-  	"ID": "1",
+  	"id": "1",
   	"Ano": "2016",
   	"Version": "mayo",
-  	"Area": "Democracia",
-  	"Promesa": 'Hola esto es una promesa',
-  	"CumplimientoTotal": "40%",
-  	"CoherenciaTotal": "4",
-  	"Boletin": "10344-06",
-  	"Titulo": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
-  	"Link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  	"area": "Democracia",
+  	"promesa": 'Hola esto es una promesa',
+  	"avance_total": "40%",
+  	"coherencia": "4",
+  	"boletin": "10344-06",
+  	"titulo_proyecto": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  	"link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
   	"PrimerTramite": "1",
   	"Veto": "",
   	"Insistencia": "",

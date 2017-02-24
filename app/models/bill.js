@@ -6,7 +6,10 @@ export default DS.Model.extend({
   url: DS.attr('string'),
   coherenceLevel: DS.attr('string'),
   justification: DS.attr('string'),
-  fullfilment: DS.attr('number'),
+  fullfilment: DS.attr('number', {defaultValue: function(e){
+    console.log(e.get('phase').get('fullfilment'));
+    return ( e.get('phase').get('fullfilment') ? parseInt(e.get('phase').get('fullfilment')) : 0);
+  }}),
   coherence: DS.attr('number'),
   version: DS.attr('string'),
   year: DS.attr('string'),
