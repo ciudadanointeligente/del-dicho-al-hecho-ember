@@ -47,7 +47,6 @@ export default Ember.Mixin.create({
             obj.id = id;
           } else {
             let id = data_csv[value.fieldToGetIdFrom];
-            // TODO: move this function to config file.
             obj.id = parseInt(id.replace("-", ""));
             if(isNaN(obj.id)){
               obj.id = _hashCode(id);

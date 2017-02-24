@@ -40,8 +40,9 @@ export default DS.Model.extend({
     if (e.get('bills').toArray().length){
       let billsArray = e.get('bills');
       billsArray.forEach(function(b){
-        (b.get('coherenceLevel') ? coherence_bills.push(parseFloat(b.get('coherenceLevel'))) : '' );
-        // console.log('' + parseFloat(b.get('coherenceLevel')));
+        if (b.get('coherenceLevel')){
+          coherence_bills.push(parseFloat(b.get('coherenceLevel')));
+        }
       });
       return (coherence_bills.length ? _.round(_.mean(coherence_bills), 1) : 0);
     } else {
