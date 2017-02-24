@@ -4,6 +4,7 @@ import _ from 'lodash';
 import config from '../config/environment';
 
 export default Ember.Mixin.create({
+
   parseCsv(file_name){
     this._parseStudiesGovernment(this.store);
     return this._parseCsv("/studies/" + file_name, this.store);
@@ -26,7 +27,6 @@ export default Ember.Mixin.create({
     let _hashCode = this._hashCode;
     let data = [];
     let keys = Object.keys(config.matcher);
-
     _.forEach(keys, function(key){
       if (config.matcher[key].chekIsEmpty){
         if (!data_csv[config.matcher[key].chekIsEmpty]){
@@ -152,7 +152,6 @@ export default Ember.Mixin.create({
           };
           if(resultado) {
             if(!_.isNil(store)){
-
               store.pushPayload(resultado);
             }
             resolve(study);
@@ -165,6 +164,63 @@ export default Ember.Mixin.create({
 
         }
       });
+    });
+  },
+
+  _arrayparseCsv(file_names, store){
+    Ember.run.begin();
+    let _parseAttributes = this._parseAttributes;
+    let studies = [];
+
+    _parseAttributes = _parseAttributes.bind(this);
+    let hashCode = this._hashCode;
+
+    return new Ember.RSVP.Promise(function(resolve, reject){
+      var resultado;
+      var data = [];
+      var count = 1;
+      _.forEach(file_names, function(fn){
+        let id = hashCode(fn.split('_')[1].split('-')[0] + fn.split('_')[1].split('-')[1].split('.')[0]);
+        let study = store.peekRecord('study', id);
+        studies.push(study);
+        PapaParse.parse(fn, {
+          download: true,
+          header:true,
+          skipEmptyLines:true,
+          complete: function(results){
+            _.forEach(results.data, function(value) {
+              let data_per_row = _parseAttributes(value, study);
+              data = _.concat(data, data_per_row);
+            });
+
+
+            if(count === file_names.length){
+              resultado = {
+                data: data,
+              };
+              if(resultado) {
+                if(!_.isNil(store)){
+                  store.pushPayload(resultado);
+                }
+                resolve(studies);
+                Ember.run.end();
+
+              }
+              else {
+                reject("esto es un perrito");
+                Ember.run.end();
+              }
+
+
+            } else {
+              count +=1;
+            }
+
+          }
+        });
+      });
+
+
     });
   },
 
