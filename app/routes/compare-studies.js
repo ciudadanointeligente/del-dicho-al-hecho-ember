@@ -13,24 +13,19 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
     let store = this.get('store');
     let hashCode = this._hashCode;
     let capitalize = this._capitalize;
-    // let parseCsv = this._parseCsv;
     let studies = [];
+    // let parseCsv = this._parseCsv.bind(this);
 
-    // return this._parseCsv(file_name, store, study);
     _.forEach(studies_name , function(st){
       let st_version = capitalize(st.split('_')[1].split('-')[0]);
       let st_year = st.split('_')[1].split('-')[1];
       let study = store.peekRecord('study', hashCode(st_version + st_year));
       if (!study.get('promises').toArray().length) {
-        // let file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
-        studies.push(study);
-        // studies.push(parseCsv(file_name, store, study));
+        let file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
+        studies.push(file_name);
       }
     });
-    return studies;
-    // return Ember.RSVP.hash({
-    //   studies: studies,
-    // });
+      return this._arrayparseCsv(studies,store);
 
   },
 });

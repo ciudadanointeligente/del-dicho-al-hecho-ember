@@ -30,12 +30,12 @@ test("automatically loads data", function(assert){
 });
 
 
-
 test("bill has promise, priority and phase", function(assert){
   var done = assert.async();
   var store = this.store;
 
   let assertions = function(){
+
     this.subject().parseCsv("test/Bachelet-2014-2018_Marzo-2016.csv").then(function(){
 
 
