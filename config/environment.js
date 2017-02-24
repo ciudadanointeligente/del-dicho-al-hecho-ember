@@ -3,67 +3,76 @@
 module.exports = function(environment) {
   var matcher = {
     'area': {
-      'name': 'Area',
+      'name': 'area',
       'id': {
-        'fieldToGetIdFrom': 'Area'
+        'fieldToGetIdFrom': 'area'
       },
+      'relationships':[
+      ]
     },
     'promise': {
-      'content': 'Promesa',
+      'content': 'promesa',
+      'number': 'id',
+      'title': 'titulo',
       'id': {
-        'fieldToGetIdFrom': 'ID'
+        'fieldToGetIdFrom': 'id'
       },
       'relationships':[
         "area"
       ]
     },
     'bill': {
-      'name': 'Boletin',
-      'title': 'Titulo',
-      'url': 'Link',
-      'justification': 'Justificacion',
+      'name': 'boletin',
+      'title': 'titulo_proyecto',
+      'url': 'link',
+      'justification': 'justificacion_avance',
       'year': 'Ano',
+      'coherence-level': 'coherencia',
       'version': 'Version',
       'id': {
-        'fieldToGetIdFrom': 'Boletin'
+        'fieldToGetIdFrom': 'boletin'
       },
       'relationships':[
         "promise",
         "phase",
         "priority",
-      ]
+      ],
+      'chekIsEmpty': 'boletin',
     }
   };
   var studies = {
     studies: [
+      "Bachelet-2014-2018_Marzo-2017",
       "Bachelet-2014-2018_Marzo-2016",
-      "Bachelet-2014-2018_Mayo-2016",
+      "Bachelet-2014-2018_Marzo-2015",
+      "Piñera-2010-2014_Marzo-2013",
+      "Piñera-2010-2014_Marzo-2012",
     ]
   };
   var priorities = {
     'priorities': [
       {
-        'countColumnName': "Simple",
+        'countColumnName': "simple",
         'name': 'Simple'
       },
       {
-        'countColumnName': "Suma",
+        'countColumnName': "suma",
         'name': 'Suma'
       },
       {
-        'countColumnName': "Inmediata",
+        'countColumnName': "inmediata",
         'name': 'Inmediata'
       },
     ]
   };
   var phases = {
-    'columnName': 'Estado',
+    'columnName': 'nombre avance',
     "phases":[
     {
       'name': 'Primer Tramite',
       'fullfilment': 40,
     }, {
-      'name': 'Segundo Tercer Trámite',
+      'name': 'Segundo Tramite',
       'fullfilment': 70,
     }, {
       'name': 'Veto',

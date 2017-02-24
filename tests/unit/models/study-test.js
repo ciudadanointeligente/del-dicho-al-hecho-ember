@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('study', 'Unit | Model | pertito', {
   // Specify the other units that are required for this test.
-  needs: ['model:government', 'model:promise']
+  needs: ['model:government', 'model:promise', 'model:area']
 });
 
 test('it exists', function(assert) {
