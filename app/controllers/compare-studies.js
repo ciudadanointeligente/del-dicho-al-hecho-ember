@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
     let studies = this.get('content');
     var fullfilments = [];
     var label = [];
-    var data = [];
+    //var data = [];
     studies.forEach(function(s){
       data.push(parseInt(s.get('fullfilment')));
       label.push(s.get('year'));
