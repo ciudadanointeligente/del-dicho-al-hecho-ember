@@ -104,13 +104,13 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>23/{{model.[0].promises.length}}</p>
-              <p>Promesas completas (20 completas - 3 en progreso)</p>
+              <p>{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
+              <p>Promesas completas ({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>23/{{model.[1].promises.length}}</p>
-              <p>Promesas completas (20 completas - 3 en progreso)</p>
+              <p>{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
+              <p>Promesas completas ({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
             </div>
           </div>
         </div>
@@ -125,12 +125,12 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>10</p>
+              <p>{{model.[0].capacidad}}</p>
               <p>Promesas con puntaje máximo</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>10</p>
+              <p>{{model.[1].capacidad}}</p>
               <p>Promesas con puntaje máximo</p>
             </div>
           </div>
