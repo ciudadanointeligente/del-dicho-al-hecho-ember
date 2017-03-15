@@ -43,10 +43,11 @@ export default Ember.Mixin.create({
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
 
-          if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' || key === 'area')){
+          if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
             let id = _hashCode(data_csv[value.fieldToGetIdFrom] + study.get('government').get('name') + study.get('version') + study.get('year'));
             obj.id = id;
           } else {
+
             let id = data_csv[value.fieldToGetIdFrom];
             obj.id = parseInt(id.replace("-", ""));
             if(isNaN(obj.id)){
@@ -57,7 +58,7 @@ export default Ember.Mixin.create({
           if (!_.includes(Object.keys(obj), "relationships")){
             obj.relationships = {};
           }
-          if (typeof study !== 'undefined' && (key === 'promise' || key === 'area')){
+          if (typeof study !== 'undefined' && (key === 'promise')){
             obj["relationships"]['study'] = {
               data: {
                 id: study.get('id'),

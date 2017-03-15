@@ -157,3 +157,45 @@ test("model return government", function(assert){
   let gov = this.subject().model();
   assert.ok(gov.toArray().length > 0);
 });
+
+test("_arrayparseCsv", function(assert){
+  assert.expect(2);
+  var store = this.store;
+  var config_studies = [
+      "Bachelet-2014-2018_Marzo-2015",
+      "Bachelet-2014-2018_Marzo-2016",
+    ];
+  this.subject()._parseStudiesGovernment(store, config_studies);
+  this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
+                                "/studies/test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(studies){
+    assert.ok(studies.toArray()[0].get('promises').toArray().length > 0);
+    assert.ok(studies.toArray()[1].get('promises').toArray().length > 0);
+  });
+});
+
+test("parses a single area", function(assert){
+  assert.expect(1);
+  var store = this.store;
+
+
+
+    var config_studies = [
+        "Bachelet-2014-2018_Marzo-2015",
+        "Bachelet-2014-2018_Marzo-2016",
+      ];
+    this.subject()._parseStudiesGovernment(store, config_studies);
+
+
+    let assertions = function(){
+      let runner = function(){
+        let areas = store.peekAll('area').toArray().filterBy('name', "Agricultura");
+        assert.equal(areas.length, 1);
+      };
+      let bound_runner = Ember.run.bind(this, runner);
+    this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
+                                 "/studies/test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(bound_runner);
+  };
+
+
+  Ember.run.bind(this, assertions)();
+});

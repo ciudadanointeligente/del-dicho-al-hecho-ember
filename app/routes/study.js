@@ -12,8 +12,7 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     if (typeof study === "undefined"){
       this.transitionTo("/404");
     }
-    let store = this.get('store');
     let file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
-    return this._parseCsv(file_name, store, study);
+    return this._parseCsv(file_name, this.get('store'), study);
   },
 });
