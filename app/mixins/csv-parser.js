@@ -128,17 +128,12 @@ export default Ember.Mixin.create({
     return data;
 
   },
-
-
-  _parseCsv(file_name, store, study){
-    Ember.run.begin();
+  _otroCsv(filename,study){
     let _parseAttributes = this._parseAttributes;
-    if (_.isNil(file_name)){
-      file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
-    }
     _parseAttributes = _parseAttributes.bind(this);
-    return new Ember.RSVP.Promise(function(resolve, reject){
-      PapaParse.parse(file_name, {
+    Ember.run.begin();
+    let papaparse_promise = new Ember.RSVP.Promise(function(resolve, reject){
+      PapaParse.parse(filename, {
         download: true,
         header:true,
         skipEmptyLines:true,
@@ -152,20 +147,30 @@ export default Ember.Mixin.create({
             "data": data,
           };
           if(resultado) {
-            if(!_.isNil(store)){
-              store.pushPayload(resultado);
-            }
-            resolve(study);
-            Ember.run.end();
+            resolve(resultado);
           }
           else {
             reject("esto es un perrito");
-            Ember.run.end();
-          }
 
+          }
         }
       });
     });
+    Ember.run.end();
+    return papaparse_promise;
+},
+
+  _parseCsv(file_name, store, study){
+    let _parseAttributes = this._parseAttributes;
+    if (_.isNil(file_name)){
+      file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
+    }
+    _parseAttributes = _parseAttributes.bind(this);
+    let result = this._otroCsv(file_name, study).then(function(resultado){
+      store.pushPayload(resultado);
+      return study;
+    });
+    return result;
   },
 
   _arrayparseCsv(file_names, store){
