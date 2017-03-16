@@ -125,6 +125,47 @@ test('matches csv with model attributes', function(assert){
   assert.ok(simple.type);
 
 });
+test('doesnt return anything', function(assert){
+  let route = this.subject();
+
+  let row_from_csv = {
+  	"id": "",
+  	"Ano": "",
+  	"Version": "",
+  	"area": "",
+  	"promesa": '',
+  	"avance_total": "",
+  	"coherencia": "",
+  	"boletin": "",
+  	"titulo_proyecto": "perrito",
+  	"link": "",
+  	"PrimerTramite": "",
+  	"Veto": "",
+  	"Insistencia": "",
+  	"SegundoTercerTramite": "",
+  	"ComisionMixta": "",
+  	"TribunalConstitucional": "",
+  	"AprobacionPresidencial": "",
+  	"Promulgado": "",
+  	"RechazadoRetirado": "",
+  	"Avance": "",
+  	"Simple": "",
+  	"Suma": "",
+  	"Inmediata": "",
+  	"Total": "",
+  	"Marginal": "",
+  	"ParcialMinima": "",
+  	"ParcialAlto": "",
+  	"EscalaCoherencia": "",
+  	"Justificacion": "Esto es un perrito"
+  };
+
+  let resulting_data = route._parseAttributes(row_from_csv);
+  assert.notOk(resulting_data.length);
+
+});
+
+
 
 test("it has studies and government", function(assert){
   let route = this.subject();
@@ -166,7 +207,7 @@ test("_arrayparseCsv", function(assert){
       "Bachelet-2014-2018_Marzo-2016",
     ];
   this.subject()._parseStudiesGovernment(store, config_studies);
-  this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
+  return this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
                                 "/studies/test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(studies){
     assert.ok(studies.toArray()[0].get('promises').toArray().length > 0);
     assert.ok(studies.toArray()[1].get('promises').toArray().length > 0);

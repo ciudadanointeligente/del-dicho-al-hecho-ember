@@ -49,6 +49,9 @@ export default Ember.Mixin.create({
           } else {
 
             let id = data_csv[value.fieldToGetIdFrom];
+            if(!id.trim().length){
+              return false;
+            }
             obj.id = parseInt(id.replace("-", ""));
             if(isNaN(obj.id)){
               obj.id = _hashCode(id);
@@ -120,7 +123,7 @@ export default Ember.Mixin.create({
         }
 
       });
-      if(obj.id !== 0){
+      if(obj.id !== 0 && !_.isNil(obj.id)){
         data.push(obj);
       }
     });
@@ -131,7 +134,6 @@ export default Ember.Mixin.create({
   _otroCsv(filename,study){
     let _parseAttributes = this._parseAttributes;
     _parseAttributes = _parseAttributes.bind(this);
-    Ember.run.begin();
     let papaparse_promise = new Ember.RSVP.Promise(function(resolve, reject){
       PapaParse.parse(filename, {
         download: true,
@@ -156,7 +158,6 @@ export default Ember.Mixin.create({
         }
       });
     });
-    Ember.run.end();
     return papaparse_promise;
 },
 
@@ -174,13 +175,13 @@ export default Ember.Mixin.create({
   },
 
   _arrayparseCsv(file_names, store){
-    Ember.run.begin();
     let _parseAttributes = this._parseAttributes;
     let studies = [];
 
     _parseAttributes = _parseAttributes.bind(this);
     let hashCode = this._hashCode;
 
+    Ember.run.begin();
     return new Ember.RSVP.Promise(function(resolve, reject){
       var resultado;
       var data = [];
