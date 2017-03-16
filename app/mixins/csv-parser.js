@@ -44,6 +44,9 @@ export default Ember.Mixin.create({
         } else if (attribue_name === "id") {
 
           if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
+            if(!data_csv[value.fieldToGetIdFrom].trim().length){
+              return false;
+            }
             let id = _hashCode(data_csv[value.fieldToGetIdFrom] + study.get('government').get('name') + study.get('version') + study.get('year'));
             obj.id = id;
           } else {
