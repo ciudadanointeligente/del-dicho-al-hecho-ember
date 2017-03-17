@@ -5,7 +5,6 @@ export default DS.Model.extend({
     version: DS.attr('string'),
     year: DS.attr('number'),
     promises: DS.hasMany('promise'),
-    areas: DS.hasMany('area'),
     government: DS.belongsTo('government'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
@@ -74,4 +73,60 @@ export default DS.Model.extend({
         return 0;
       }
     }}),
+    presentanAvance: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) > 0){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    finalizadas: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if (parseInt(p.get('fullfilment')) === 100){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    enDesarrollo: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if(parseInt(p.get('fullfilment')) > 39 && parseInt(p.get('fullfilment')) < 91){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }}),
+    capacidad: DS.attr("number", {defaultValue: function(e){
+      let count = 0;
+      if (e.get('promises').toArray().length){
+        let promisesArray = e.get('promises');
+        promisesArray.forEach(function(p){
+          if(parseInt(p.get('fullfilment')) === 100 && parseInt(p.get('coherenceLevel')) === 4){
+            count += 1;
+          }
+        });
+        return count;
+      } else {
+        return 0;
+      }
+    }})
 });

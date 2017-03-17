@@ -1,23 +1,225 @@
+<div>
+  <h2>Comparar Gobiernos</h2>
+  <!-- botonera -->
+  <div class="row">
+    <div class="col-md-4">
+      {{link-to "Sebastián Piñera - Michelle Bachelet al primer año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2014~piñera-2010-2014_Marzo-2010" class="btn btn-primary btn-sm"}}
+    </div>
+    <div class="col-md-4">
+      {{link-to "Sebastián Piñera - Michelle Bachelet al segundo año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2015~piñera-2010-2014_Marzo-2011" class="btn btn-primary btn-sm"}}
+    </div>
+    <div class="col-md-4">
+      {{link-to "Sebastián Piñera - Michelle Bachelet al tercer año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2016~piñera-2010-2014_Marzo-2012" class="btn btn-primary btn-sm"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      {{link-to "Sebastián Piñera - Michelle Bachelet al cuarto año de gobierno" "compare-studies" "bachelet-2014-2018_Marzo-2017~piñera-2010-2014_Marzo-2013" class="btn btn-primary btn-sm"}}
+    </div>
+    <div class="col-md-4">
+      <a href="#" class="btn btn-default btn-sm">Sebastián Piñera Gobierno completo</a>
+    </div>
+    <div class="col-md-4">
+      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet Gobierno completo</a>
+    </div>
+  </div>
+  <!-- EObotonera -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>{{model.[0].government.name}} - {{model.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
+    </div>
+    <div class="panel-body">
+      <!-- Cumplimiento y coherencia total -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Cumplimiento y coherencia total</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Bachelet 2do año</p>
+              <div class="graph-one">[gŕafico]</div>
+              <p>Coherencia</p>
+              <p class="total-coherence">{{model.[0].coherenceLevel}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Piñera 2do año</p>
+              <div class="graph-one">[gŕafico]</div>
+              <p>Coherencia</p>
+              <p class="total-coherence">{{model.[1].coherenceLevel}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cumplimiento y coherencia total -->
+      <!-- Promesas realizadas -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Promesas realizadas</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Bachelet 2do año</p>
+              <p>{{model.[0].promises.length}}</p>
+              <p>Promesas</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Piñera 2do año</p>
+              <p>{{model.[1].promises.length}}</p>
+              <p>Promesas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Promesas realizadas -->
+      <!-- Proyectos enviados -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Proyectos enviados</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Bachelet 2do año</p>
+              <p>{{model.[0].billsCount}}</p>
+              <p>Proyectos</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Piñera 2do año</p>
+              <p>{{model.[1].billsCount}}</p>
+              <p>Proyectos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyectos enviados -->
+      <!-- Promesas que presentan algún tipo de avance-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Promesas que presentan algún tipo de avance</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Bachelet 2do año</p>
+              <p>{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
+              <p>Promesas completas ({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Piñera 2do año</p>
+              <p>{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
+              <p>Promesas completas ({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Promesas que presentan algún tipo de avance-->
+      <!-- Capacidad -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Capacidad</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Bachelet 2do año</p>
+              <p>{{model.[0].capacidad}}</p>
+              <p>Promesas con puntaje máximo</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <p>Piñera 2do año</p>
+              <p>{{model.[1].capacidad}}</p>
+              <p>Promesas con puntaje máximo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Capacidad -->
+      <!-- Areas -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Áreas</h4>
+        </div>
+        <div class="panel-body">
+          <ul>
+            {{#each area as |a|}}
+              <li>{{a.name}}</li>
+            {{/each}}
+          </ul>
+          <ul>
+            {{#each model.[0].areas as |a|}}
+              <li>{{a.name}}</li>
+            {{/each}}
+          </ul>
+          <ul>
+            {{#each model.[1].areas as |a|}}
+              <li>{{a.name}}</li>
+            {{/each}}
+          </ul>
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Avance</th>
+                <th>Voluntad política</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Agricultura</td>
+                <td>
+                  <!-- bar01-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                  <!-- bar01-->
+                  <!-- bar02-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                  <!-- bar02-->
+                </td>
+                <td>
+                  <p>40/50</p>
+                  <p>40/50</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Agricultura</td>
+                <td>
+                  <!-- bar01-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                  <!-- bar01-->
+                  <!-- bar02-->
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                  <!-- bar02-->
+                </td>
+                <td>
+                  <p>40/50</p>
+                  <p>40/50</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Areas -->
+    </div>
+  </div>
+</div>
 {{outlet}}
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<h2> Comparando Estudios de Gobierno de {{model.[0].government.name}}</h2>
-
-{{model}}
-
-
-<ul>
-  {{#each model as |m|}}
-    <li>Versión {{m.version}} {{m.year}}</li>
-  {{else}}
-  No existen promesas aun
-  {{/each}}
-</ul>

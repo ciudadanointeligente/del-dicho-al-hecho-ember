@@ -6,9 +6,7 @@ module.exports = function(environment) {
       'name': 'area',
       'id': {
         'fieldToGetIdFrom': 'area'
-      },
-      'relationships':[
-      ]
+      }
     },
     'promise': {
       'content': 'promesa',

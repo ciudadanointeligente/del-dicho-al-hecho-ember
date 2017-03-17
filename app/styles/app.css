@@ -38,36 +38,16 @@ h4 {
   font-size: 20px; }
 
 /*NAVBAR*/
-.navbar {
-  border-radius: 0; }
-
 .navbar-default {
   background-color: #031424;
-  border: 0;
-  height: 70px;
-  padding-top: 13px; }
+  }
 
-.navbar-default .navbar-nav > li > a {
-  color: white; }
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #2ABAFD; }
-  .navbar-default .navbar-nav > li > a:focus {
-    color: #2ABAFD; }
-
-ul.nav.navbar-nav.navbar-right {
-  margin-top: -3px; }
-
-.navbar-toggle {
-  margin-top: -44px; }
-
-.navbar-default .navbar-toggle {
-  border: 0; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #2ABAFD; }
-
-.brand {
-  margin-left: 10px; }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #031424;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 540px;
+}
 
 /*SECTIONS*/
 #resume {
