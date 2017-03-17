@@ -151,15 +151,15 @@ test('area getCoherenceLevelByStudy', function(assert){
   assert.equal(data.area2.coherenceLevelByStudy(data.study2), 0);
 });
 
-// test('area getCompletedPromisesByStudy', function(assert){
-//
-//   let data = this.loadData();
-//
-//   assert.equal(data.area1.getCompletedPromisesByStudy(data.study1), 1);
-//   assert.equal(data.area2.getCompletedPromisesByStudy(data.study1), 0);
-//   assert.equal(data.area1.getCompletedPromisesByStudy(data.study2), 3.5);
-//   assert.equal(data.area2.getCompletedPromisesByStudy(data.study2), 0);
-// });
+test('area getCompletedPromisesByStudy', function(assert){
+
+  let data = this.loadData();
+
+  assert.equal(data.area1.getCompletedPromisesByStudy(data.study1), 1);
+  assert.equal(data.area2.getCompletedPromisesByStudy(data.study1), 0);
+  assert.equal(data.area1.getCompletedPromisesByStudy(data.study2), 1);
+  assert.equal(data.area2.getCompletedPromisesByStudy(data.study2), 0);
+});
 test("it calculates things of bills", function(assert){
   Ember.run.begin();
   let promesa_1 = this.store().createRecord('promise',{'content':'content01',

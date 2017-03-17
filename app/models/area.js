@@ -17,8 +17,14 @@ export default DS.Model.extend(CalculationsMixin, {
     coherenceLevelByStudy: function(study){
       let promises = this.getPromisesPerStudy(study);
       return this.getAverageFrom(promises, 'coherence');
+    },
+    getCompletedPromisesByStudy: function(study){
+      let promises = this.getPromisesPerStudy(study);
+      let completed_promises = promises.filter(function(p){
+        return p.get('is_completed');
+      });
+      return completed_promises.length;
     }
-    // ,completedPromises
     // ,unprocessedPromises
     // ,unprocessedPromises
 
