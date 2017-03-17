@@ -27,7 +27,7 @@ test("returns studies based on URL", function(assert){
   route.get("store").createRecord("study", {"id": subject._hashCode("Marzo" + "2015"), "version": "Marzo", "year": 2015, "government": govB});
 
 
-  route.model(params).then(function(data){
+  route.model(params).then(function(studies){
     assert.ok(studies.get('firstObject').get('promises').toArray().length > 0);
   });
 
