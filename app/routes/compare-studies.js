@@ -27,4 +27,7 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
       return this._arrayparseCsv(studies,store);
 
   },
+  setupController(controller){
+    controller.set('areas', this.store.peekAll('area'));
+  }
 });

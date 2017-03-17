@@ -27,7 +27,7 @@
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3>{{model.[0].government.name}} - {{model.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
+      <h3>{{model.studies.[0].government.name}} - {{model.studies.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
     </div>
     <div class="panel-body">
       <!-- Cumplimiento y coherencia total -->
@@ -41,13 +41,13 @@
               <p>Bachelet 2do año</p>
               <div class="graph-one">[gŕafico]</div>
               <p>Coherencia</p>
-              <p class="total-coherence">{{model.[0].coherenceLevel}}</p>
+              <p class="total-coherence">{{model.studies.[0].coherenceLevel}}</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
               <div class="graph-one">[gŕafico]</div>
               <p>Coherencia</p>
-              <p class="total-coherence">{{model.[1].coherenceLevel}}</p>
+              <p class="total-coherence">{{model.studies.[1].coherenceLevel}}</p>
             </div>
           </div>
         </div>
@@ -62,12 +62,12 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>{{model.[0].promises.length}}</p>
+              <p>{{model.studies.[0].promises.length}}</p>
               <p>Promesas</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>{{model.[1].promises.length}}</p>
+              <p>{{model.studies.[1].promises.length}}</p>
               <p>Promesas</p>
             </div>
           </div>
@@ -83,12 +83,12 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>{{model.[0].billsCount}}</p>
+              <p>{{model.studies.[0].billsCount}}</p>
               <p>Proyectos</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>{{model.[1].billsCount}}</p>
+              <p>{{model.studies.[1].billsCount}}</p>
               <p>Proyectos</p>
             </div>
           </div>
@@ -104,13 +104,13 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
-              <p>Promesas completas ({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>
+              <p>{{model.studies.[0].presentanAvance}}/{{model.studies.[0].promises.length}}</p>
+              <p>Promesas completas ({{model.studies.[0].finalizadas}} completas - {{model.studies.[0].enDesarrollo}} en progreso)</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
-              <p>Promesas completas ({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
+              <p>{{model.studies.[1].presentanAvance}}/{{model.studies.[1].promises.length}}</p>
+              <p>Promesas completas ({{model.studies.[1].finalizadas}} completas - {{model.studies.[1].enDesarrollo}} en progreso)</p>
             </div>
           </div>
         </div>
@@ -125,12 +125,12 @@
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Bachelet 2do año</p>
-              <p>{{model.[0].capacidad}}</p>
+              <p>{{model.studies.[0].capacidad}}</p>
               <p>Promesas con puntaje máximo</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <p>Piñera 2do año</p>
-              <p>{{model.[1].capacidad}}</p>
+              <p>{{model.studies.[1].capacidad}}</p>
               <p>Promesas con puntaje máximo</p>
             </div>
           </div>
@@ -144,17 +144,7 @@
         </div>
         <div class="panel-body">
           <ul>
-            {{#each area as |a|}}
-              <li>{{a.name}}</li>
-            {{/each}}
-          </ul>
-          <ul>
-            {{#each model.[0].areas as |a|}}
-              <li>{{a.name}}</li>
-            {{/each}}
-          </ul>
-          <ul>
-            {{#each model.[1].areas as |a|}}
+            {{#each areas as |a|}}
               <li>{{a.name}}</li>
             {{/each}}
           </ul>
