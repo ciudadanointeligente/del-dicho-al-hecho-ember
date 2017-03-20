@@ -24,10 +24,12 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
         studies.push(file_name);
       }
     });
-      return this._arrayparseCsv(studies,store);
+    let r = this._arrayparseCsv(studies,store);
+    return r;
 
   },
-  setupController(controller){
+  setupController(controller, model){
+    this._super(controller, model);
     controller.set('areas', this.store.peekAll('area'));
   }
 });
