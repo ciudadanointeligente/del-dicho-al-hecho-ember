@@ -143,14 +143,6 @@
           <h4>Áreas</h4>
         </div>
         <div class="panel-body">
-          <ul>
-            {{#each areas as |a|}}
-              <li>{{a.name}} (completitud: {{fullfilment a model.[0]}} y {{fullfilment a model.[1]}})</li>
-
-            {{/each}}
-          </ul>
-
-
           <table class="table table-responsive">
             <thead>
               <tr>
@@ -160,53 +152,31 @@
               </tr>
             </thead>
             <tbody>
+              {{#each areas as |a|}}
               <tr>
-                <td>Agricultura</td>
+                <td>{{a.name}}</td>
                 <td>
                   <!-- bar01-->
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">60% Complete</span>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilment a model.[0]}}%;">
+                      <span class="sr-only">{{fullfilment a model.[0]}}% Complete</span>
                     </div>
                   </div>
                   <!-- bar01-->
                   <!-- bar02-->
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">60% Complete</span>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilment a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilment a model.[1]}}%;">
+                      <span class="sr-only">{{fullfilment a model.[1]}}% Complete</span>
                     </div>
                   </div>
                   <!-- bar02-->
                 </td>
                 <td>
-                  <p>40/50</p>
-                  <p>40/50</p>
+                  <p>{{fullfilment a model.[0]}}/100</p>
+                  <p>{{fullfilment a model.[1]}}/100</p>
                 </td>
               </tr>
-
-              <tr>
-                <td>Agricultura</td>
-                <td>
-                  <!-- bar01-->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">60% Complete</span>
-                    </div>
-                  </div>
-                  <!-- bar01-->
-                  <!-- bar02-->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                      <span class="sr-only">60% Complete</span>
-                    </div>
-                  </div>
-                  <!-- bar02-->
-                </td>
-                <td>
-                  <p>40/50</p>
-                  <p>40/50</p>
-                </td>
-              </tr>
+              {{/each}}
             </tbody>
           </table>
         </div>

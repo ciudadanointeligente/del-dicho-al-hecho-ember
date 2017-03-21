@@ -137,7 +137,7 @@ test('area getFulfillment by study', function(assert){
 
   assert.equal(data.area1.fullfilmentPerStudy(data.study1), 50);
   assert.equal(data.area2.fullfilmentPerStudy(data.study1), 25);
-  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 77.5);
+  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 77);
   assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
 });
 
@@ -145,9 +145,9 @@ test('area getCoherenceLevelByStudy', function(assert){
 
   let data = this.loadData();
 
-  assert.equal(data.area1.coherenceLevelByStudy(data.study1), 2.5);
+  assert.equal(data.area1.coherenceLevelByStudy(data.study1), 2);
   assert.equal(data.area2.coherenceLevelByStudy(data.study1), 2);
-  assert.equal(data.area1.coherenceLevelByStudy(data.study2), 3.25);
+  assert.equal(data.area1.coherenceLevelByStudy(data.study2), 3);
   assert.equal(data.area2.coherenceLevelByStudy(data.study2), 0);
 });
 
@@ -182,5 +182,5 @@ test("it calculates things of bills", function(assert){
   Ember.run.end();
   let result = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherence');
 
-  assert.equal(result, 2.5);
+  assert.equal(result, 2);
 });

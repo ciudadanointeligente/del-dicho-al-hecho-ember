@@ -13,7 +13,7 @@ export default Ember.Mixin.create({
       });
     });
     if(bills){
-      return sum/bills;
+      return Math.floor(sum/bills);
     }
     return 0;
   }
