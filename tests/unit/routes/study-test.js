@@ -21,9 +21,7 @@ test("returns one study based on URL", function(assert){
     study_name: "bachelet-2014-2018_marzo-2016"
   };
   Ember.run.begin();
-  let gov = route.get("store").createRecord("government", {"name": "Bachelet-2014-2018"});
-  route.get("store").createRecord("study", {"version": "Mayo", "year": 2016, "government": gov});
-  route.get("store").createRecord("study", {"version": "Marzo", "year": 2016, "government": gov});
+  route._parseStudiesGovernment(this.store);
   Ember.run.end();
   return route.model(params).then(function(study){
     assert.equal(study.get('version'), "Marzo");

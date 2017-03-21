@@ -7,15 +7,7 @@ export default Ember.Controller.extend(UtilitiesMixin, {
   }.property('content'),
 
   areas: function() {
-    let studyAreas = [];
-    let id = this._hashCode(this.get('content').get('version') + this.get('content').get('year'));
-    let areas = this.get('store').peekAll('area');
-    areas.forEach(function(a){
-      if ( parseInt(a.get('study').get('id')) === parseInt(id)){
-        studyAreas.push(a);
-      }
-    });
-    return studyAreas;
+    return this.get('store').peekAll('area');
   }.property('content'),
 
   idFirstArea: function() {
