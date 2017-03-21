@@ -49,5 +49,11 @@ export default DS.Model.extend({
       return 0;
     }
   }}),
+  is_completed: DS.attr("boolean", {defaultValue: function(e){
+    let completed_bills = e.get('bills').filter(function(b){
+      return parseInt(b.get('fullfilment')) === 100;
+    });
+    return completed_bills.length === e.get('bills').toArray().length;
+  }}),
 
 });

@@ -1,73 +1,31 @@
 import DS from 'ember-data';
-import _ from 'lodash';
+import CalculationsMixin from 'ddah-ember/mixins/calculations';
 
-export default DS.Model.extend({
+export default DS.Model.extend(CalculationsMixin, {
     name: DS.attr('string'),
     promises: DS.hasMany('promise'),
-    fullfilment: DS.attr("number", {defaultValue: function(e){
-      let fullfilment_promises = [];
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          fullfilment_promises.push(parseFloat(p.get('fullfilment')));
-        });
-        return _.round(_.mean(fullfilment_promises), 0);
-      } else {
-        return 0;
-      }
-    }}),
-    coherenceLevel: DS.attr("number", {defaultValue: function(e){
-      let coherence_promises = [];
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          coherence_promises.push(parseFloat(p.get('coherenceLevel')));
-        });
-        return _.round(_.mean(coherence_promises),1);
-      } else {
-        return 0;
-      }
-    }}),
-    completePromises: DS.attr("number", {defaultValue: function(e){
-      let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          if (parseInt(p.get('fullfilment')) === 100){
-            count += 1;
-          }
-        });
-        return count;
-      } else {
-        return 0;
-      }
-    }}),
-    unprocessedPromises: DS.attr("number", {defaultValue: function(e){
-      let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          if (parseInt(p.get('fullfilment')) === 0 ){
-            count += 1;
-          }
-        });
-        return count;
-      } else {
-        return 0;
-      }
-    }}),
-    progressPromises: DS.attr("number", {defaultValue: function(e){
-      let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          if (parseInt(p.get('fullfilment')) !== 0 && parseInt(p.get('fullfilment')) !== 100 ){
-            count += 1;
-          }
-        });
-        return count;
-      } else {
-        return 0;
-      }
-    }}),
+    getPromisesPerStudy: function(study){
+      let area = this;
+      return study.get('promises').filter(function(p){
+        return area.get('id') === p.get('area').get('id');
+      });
+    },
+    fullfilmentPerStudy: function(study){
+      let promises = this.getPromisesPerStudy(study);
+      return this.getAverageFrom(promises, 'fullfilment');
+    },
+    coherenceLevelByStudy: function(study){
+      let promises = this.getPromisesPerStudy(study);
+      return this.getAverageFrom(promises, 'coherence');
+    },
+    getCompletedPromisesByStudy: function(study){
+      let promises = this.getPromisesPerStudy(study);
+      let completed_promises = promises.filter(function(p){
+        return p.get('is_completed');
+      });
+      return completed_promises.length;
+    }
+    // ,unprocessedPromises
+    // ,unprocessedPromises
+
 });

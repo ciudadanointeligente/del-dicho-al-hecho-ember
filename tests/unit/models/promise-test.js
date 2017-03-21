@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('promise', 'Unit | Model | promise', {
   // Specify the other units that are required for this test.
-  needs: ['model:bill', 'model:study', 'model:area']
+  needs: ['model:bill', 'model:study', 'model:area', 'model:phase', 'model:priority']
 });
 
 test('it exists', function(assert) {
@@ -37,4 +37,22 @@ test("promise belongs to area", function(assert){
   let relationship = Ember.get(promise, 'relationshipsByName').get('area');
   assert.equal(relationship.key, 'area');
   assert.equal(relationship.kind, 'belongsTo');
+});
+
+test('promise completed', function(assert){
+  Ember.run.begin();
+  let promise = this.subject({'content': "I'm a content"});
+  this.store().createRecord('bill',{'name':'name01',
+                                    'title':'title01',
+                                    'fullfilment':'100%',
+                                    'promise': promise,
+                                    'coherence': 4
+                                   });
+  this.store().createRecord('bill',{'name':'name02',
+                                    'title':'title02',
+                                    'fullfilment':'100%',
+                                    'promise': promise,
+                                    'coherence': 1});
+  Ember.run.end();
+  assert.ok(promise.get('is_completed'));
 });
