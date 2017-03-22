@@ -121,6 +121,16 @@ test('study return the capacity', function(assert){
   Ember.run.end();
 });
 
+
+test('fullName', function(assert){
+  Ember.run.begin();
+  let gov = this.store().createRecord('government', {'name': 'Bachelet-2014-2018'});
+  let estudio = this.store().createRecord('study',{"version":"marzo","year":"2016"});
+  gov.get('studies').pushObject(estudio);
+  Ember.run.end();
+  assert.equal(estudio.get('fullName'), 'marzo 2016');
+});
+
 test("chartData", function(assert){
   Ember.run.begin();
 

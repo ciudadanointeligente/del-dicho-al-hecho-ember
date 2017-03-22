@@ -12,6 +12,9 @@ export default DS.Model.extend({
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).toLowerCase();
       },
     }),
+    fullName: Ember.computed('version', 'year', function() {
+      return `${this.get('version')} ${this.get('year')}`;
+    }),
     fullfilment: DS.attr("number", {defaultValue: function(e){
       let fullfilment_promises = [];
       if (e.get('promises').toArray().length){

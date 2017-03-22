@@ -2,10 +2,6 @@ import Ember from 'ember';
 import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 export default Ember.Controller.extend(UtilitiesMixin, {
-  fullName: function() {
-    return this.get('content').get('version') + ' ' + this.get('content').get('year');
-  }.property('content'),
-
   areas: function() {
     return this.get('store').peekAll('area');
   }.property('content'),
