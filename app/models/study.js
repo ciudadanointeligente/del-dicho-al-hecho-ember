@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 import _ from 'lodash';
+import Ember from 'ember';
 
 export default DS.Model.extend({
     version: DS.attr('string'),
@@ -128,5 +129,24 @@ export default DS.Model.extend({
       } else {
         return 0;
       }
-    }})
+    }}),
+    chartData : Ember.computed('fullfilment', function() {
+      return {
+          labels: [
+            "% avance", "% incompleto"
+          ],
+          datasets: [
+              {
+                  data: [this.get('fullfilment'), 100-this.get('fullfilment')],
+                  backgroundColor: [
+                      "#FF6384",
+                      "#36A2EB",
+                  ],
+                  hoverBackgroundColor: [
+                      "#FF6384",
+                      "#36A2EB",
+                  ]
+              }]
+      };
+  })
 });
