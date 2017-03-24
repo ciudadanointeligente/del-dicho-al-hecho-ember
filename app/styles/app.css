@@ -80,8 +80,6 @@ h4 {
   margin-bottom: 5px; }
 
 /*DATA*/
-.cumplimientos {
-  min-height: 350px; }
 
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
   stroke: #2ABAFD; }

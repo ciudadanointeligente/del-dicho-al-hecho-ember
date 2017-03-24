@@ -151,9 +151,8 @@ export default DS.Model.extend({
                   ]
               }]
       };
-  }),
-  doughnutOpt: {
-    responsive: true
-  }
-
+    }),
+    doughnutOpt: {
+      responsive: true
+    }
 });
