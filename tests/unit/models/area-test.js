@@ -28,14 +28,13 @@ moduleForModel('area', 'Unit | Model | area', {
                                      'title':'title01',
                                      'fullfilment':'100%',
                                      'promise': promesa_1,
-                                     'coherence': 4
+                                     'coherenceLevel': 4
                                     });
    this.store().createRecord('bill',{'name':'name02',
                                      'title':'title02',
                                      'fullfilment':'0%',
                                      'promise': promesa_2,
-                                     'coherence': 1});
-
+                                     'coherenceLevel': 1});
 
    let promesa_11 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
@@ -51,27 +50,20 @@ moduleForModel('area', 'Unit | Model | area', {
    this.store().createRecord('bill',{'name':'name01',
                                      'title':'title01',
                                      'fullfilment':'25%',
-                                     'coherence': 1,
+                                     'coherenceLevel': 1,
                                      "promise": promesa_11});
    this.store().createRecord('bill',{'name':'name02',
                                      'title':'title02',
                                      'fullfilment':'25%',
-                                     'coherence': 3,
+                                     'coherenceLevel': 3,
                                      "promise": promesa_21});
 
     let gov2 = this.store().createRecord('government', {'name': 'Piñera-2011-2014'});
-
-
 
     let study2 = this.store().createRecord('study', {'version': 'marzo',
                                                      'year': '2013',
                                                      'government': gov2
                                                    });
-
-
-
-
-
 
     let promesa_3 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
@@ -86,22 +78,22 @@ moduleForModel('area', 'Unit | Model | area', {
 
     this.store().createRecord('bill',{'name':'name01',
                                       'title':'title01',
-                                      'coherence': 4,
+                                      'coherenceLevel': 4,
                                       'promise': promesa_3,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name02',
                                       'title':'title02',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_3,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name04',
                                       'title':'title04',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_4,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name05',
                                       'title':'title05',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_4,
                                       'fullfilment':'10%'});
 
@@ -137,7 +129,7 @@ test('area getFulfillment by study', function(assert){
 
   assert.equal(data.area1.fullfilmentPerStudy(data.study1), 50);
   assert.equal(data.area2.fullfilmentPerStudy(data.study1), 25);
-  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 77);
+  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 78);
   assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
 });
 
@@ -172,15 +164,16 @@ test("it calculates things of bills", function(assert){
                                    'title':'title01',
                                    'fullfilment':'100%',
                                    'promise': promesa_1,
-                                   'coherence': 4
+                                   'coherenceLevel': 4
                                   });
  this.store().createRecord('bill',{'name':'name02',
                                    'title':'title02',
                                    'fullfilment':'0%',
                                    'promise': promesa_2,
-                                   'coherence': 1});
+                                   'coherenceLevel': 1});
   Ember.run.end();
-  let result = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherence');
-
-  assert.equal(result, 2);
+  let result_coherence = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
+  assert.equal(result_coherence, 2);
+  let result_fullfilment = this.subject().getAverageFrom([promesa_1, promesa_2], 'fullfilment');
+  assert.equal(result_fullfilment, 50);
 });

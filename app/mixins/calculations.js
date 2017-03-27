@@ -4,16 +4,18 @@ import _ from 'lodash';
 export default Ember.Mixin.create({
   getAverageFrom: function(promises, what_from_bills){
     let sum = 0;
-    let bills = 0;
+    //let bills = 0;
 
     _.forEach(promises, function(p){
-      _.forEach(p.get('bills').toArray(), function(b){
-        sum = sum + parseInt(b.get(what_from_bills));
-        bills++;
-      });
+      sum = sum + parseInt(p.get(what_from_bills));
     });
-    if(bills){
-      return Math.floor(sum/bills);
+
+    if(sum){
+      let r = (sum/promises.length).toFixed(0);
+      if(what_from_bills === 'coherenceLevel'){
+        r = Math.floor(sum/promises.length).toFixed(1);
+      }
+      return r;
     }
     return 0;
   }
