@@ -16,7 +16,7 @@ export default DS.Model.extend(CalculationsMixin, {
     },
     coherenceLevelByStudy: function(study){
       let promises = this.getPromisesPerStudy(study);
-      return this.getAverageFrom(promises, 'coherence');
+      return this.getAverageFrom(promises, 'coherenceLevel');
     },
     getCompletedPromisesByStudy: function(study){
       let promises = this.getPromisesPerStudy(study);

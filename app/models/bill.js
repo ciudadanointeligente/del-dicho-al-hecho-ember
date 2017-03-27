@@ -9,7 +9,6 @@ export default DS.Model.extend({
   fullfilment: DS.attr('number', {defaultValue: function(e){
     return ( e.get('phase').get('fullfilment') ? parseInt(e.get('phase').get('fullfilment')) : 0);
   }}),
-  coherence: DS.attr('number'),
   version: DS.attr('string'),
   year: DS.attr('string'),
   phase: DS.belongsTo('phase'),

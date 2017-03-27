@@ -28,13 +28,13 @@ moduleForModel('area', 'Unit | Model | area', {
                                      'title':'title01',
                                      'fullfilment':'100%',
                                      'promise': promesa_1,
-                                     'coherence': 4
+                                     'coherenceLevel': 4
                                     });
    this.store().createRecord('bill',{'name':'name02',
                                      'title':'title02',
                                      'fullfilment':'0%',
                                      'promise': promesa_2,
-                                     'coherence': 1});
+                                     'coherenceLevel': 1});
 
 
    let promesa_11 = this.store().createRecord('promise',{'content':'content01',
@@ -51,12 +51,12 @@ moduleForModel('area', 'Unit | Model | area', {
    this.store().createRecord('bill',{'name':'name01',
                                      'title':'title01',
                                      'fullfilment':'25%',
-                                     'coherence': 1,
+                                     'coherenceLevel': 1,
                                      "promise": promesa_11});
    this.store().createRecord('bill',{'name':'name02',
                                      'title':'title02',
                                      'fullfilment':'25%',
-                                     'coherence': 3,
+                                     'coherenceLevel': 3,
                                      "promise": promesa_21});
 
     let gov2 = this.store().createRecord('government', {'name': 'Piñera-2011-2014'});
@@ -86,22 +86,22 @@ moduleForModel('area', 'Unit | Model | area', {
 
     this.store().createRecord('bill',{'name':'name01',
                                       'title':'title01',
-                                      'coherence': 4,
+                                      'coherenceLevel': 4,
                                       'promise': promesa_3,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name02',
                                       'title':'title02',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_3,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name04',
                                       'title':'title04',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_4,
                                       'fullfilment':'100%'});
     this.store().createRecord('bill',{'name':'name05',
                                       'title':'title05',
-                                      'coherence': 3,
+                                      'coherenceLevel': 3,
                                       'promise': promesa_4,
                                       'fullfilment':'10%'});
 
@@ -172,15 +172,15 @@ test("it calculates things of bills", function(assert){
                                    'title':'title01',
                                    'fullfilment':'100%',
                                    'promise': promesa_1,
-                                   'coherence': 4
+                                   'coherenceLevel': 4
                                   });
  this.store().createRecord('bill',{'name':'name02',
                                    'title':'title02',
                                    'fullfilment':'0%',
                                    'promise': promesa_2,
-                                   'coherence': 1});
+                                   'coherenceLevel': 1});
   Ember.run.end();
-  let result = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherence');
+  let result = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
 
   assert.equal(result, 2);
 });
