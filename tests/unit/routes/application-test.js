@@ -59,12 +59,15 @@ test("bill has promise, priority and phase", function(assert){
 test("promise has many bills and an area", function(assert){
   var done = assert.async();
   var store = this.store;
+  Ember.run.begin();
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016"});
+  Ember.run.end();
 
   let assertions = function(){
-    this.subject().parseCsv("test/Bachelet-2014-2018_Marzo-2016.csv").then(function(){
-      let expected_promise = store.peekRecord('promise', 26);
-      let bill = store.peekRecord('bill', 906907);
-      let bill2 = store.peekRecord('bill', 1034406);
+    this.subject()._parseCsv("/studies/test/Bachelet-2014-2018_Marzo-2016.csv", store,estudio).then(function(){
+      let expected_promise = store.peekAll('promise').toArray().findBy('number', 26);
+      let bill = store.peekAll('bill').toArray().findBy('name', '9069-07' );
+      let bill2 = store.peekAll('bill').toArray().findBy('name', '10344-06' );
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
       assert.equal(bill2.get('promise').get('id'), expected_promise.id);
       let promises = store.peekAll('promise');
