@@ -77,7 +77,7 @@ test("promise has many bills and an area", function(assert){
       assert.equal(bills.toArray().length, 7);
       let priorities = store.peekAll('priority');
       assert.equal(priorities.toArray().length, 21);
-      assert.equal(estudio.get('urgenciesCount'), 48);
+      assert.equal(estudio.get('urgenciesCount'), 42);
       done();
     });
   };
