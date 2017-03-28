@@ -3,7 +3,39 @@ import Ember from 'ember';
 
 moduleForModel('study', 'Unit | Model | pertito', {
   // Specify the other units that are required for this test.
-  needs: ['model:government', 'model:promise', 'model:area', 'model:bill', 'model:phase', 'model:priority']
+  needs: ['model:government', 'model:promise', 'model:area', 'model:bill', 'model:phase', 'model:priority'],
+  loadData: function(store){
+  Ember.run.begin();
+
+  let gov = store.createRecord('government', {'name': 'Bachelet-2014-2018'});
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016"});
+  let promesa_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
+  let promesa_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
+  let promesa_3= store.createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
+  let pl1 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl1});
+  store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl1});
+  store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl1});
+  let pl2 = store.createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
+  store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl2});
+  store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl2});
+  store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl2});
+  let pl3 = store.createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
+  store.createRecord('priority', {'name':'simple', 'count': 11, 'bill': pl3});
+  store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl3});
+  store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl3});
+
+  gov.get('studies').pushObject(estudio);
+  promesa_1.get('bills').pushObject(pl1);
+  promesa_2.get('bills').pushObject(pl2);
+  promesa_3.get('bills').pushObject(pl3);
+
+  estudio.get('promises').pushObject(promesa_1);
+  estudio.get('promises').pushObject(promesa_2);
+  estudio.get('promises').pushObject(promesa_3);
+  Ember.run.end();
+  return {'estudio': estudio};
+  }
 });
 
 test('it exists', function(assert) {
@@ -171,4 +203,10 @@ test("chartData", function(assert){
           }]
   };
   assert.deepEqual(estudio.get('chartData'), expected_dataChart);
+});
+
+test('calc urgencies', function(assert){
+  let estudio = this.loadData(this.store()).estudio;
+  assert.equal(estudio.get('urgenciesCount'), 100);
+  
 });
