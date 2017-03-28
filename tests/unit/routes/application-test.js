@@ -44,6 +44,9 @@ test("bill has promise, priority and phase", function(assert){
       assert.equal(bill.get('promise').get('id'), expected_promise.id);
       assert.equal(bill.get('phase').get('name'), "Promulgado");
       assert.ok(bill.get('priorities').toArray()[0].toJSON().name, "Priority has name:" + bill.get('priorities').toArray()[0].toJSON().name);
+      assert.equal(bill.get('priorities').findBy('name', 'Inmediata').get('count'), 3);
+      assert.equal(bill.get('priorities').findBy('name', 'Suma').get('count'), 2);
+      assert.equal(bill.get('priorities').findBy('name', 'Simple').get('count'), 1);
       done();
     });
   };
