@@ -55,5 +55,6 @@ export default DS.Model.extend({
     });
     return completed_bills.length === e.get('bills').toArray().length;
   }}),
-
+  ja_why: DS.attr('string'),
+  jc_why: DS.attr('string')
 });
