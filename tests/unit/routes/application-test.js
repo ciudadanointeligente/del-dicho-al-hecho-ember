@@ -60,7 +60,7 @@ test("promise has many bills and an area", function(assert){
   var done = assert.async();
   var store = this.store;
   Ember.run.begin();
-  let estudio = store.createRecord('study',{"version":"marzo","year":"2016"});
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016", "id": 1234});
   Ember.run.end();
 
   let assertions = function(){
@@ -73,6 +73,11 @@ test("promise has many bills and an area", function(assert){
       let promises = store.peekAll('promise');
       assert.equal(promises.toArray().length, 26);
       assert.equal(expected_promise.get('area').get('name'), "Democracia");
+      let bills = store.peekAll('bill');
+      assert.equal(bills.toArray().length, 7);
+      let priorities = store.peekAll('priority');
+      assert.equal(priorities.toArray().length, 21);
+      assert.equal(estudio.get('urgenciesCount'), 48);
       done();
     });
   };
