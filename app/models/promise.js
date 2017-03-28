@@ -46,7 +46,7 @@ export default DS.Model.extend({
       });
       return (coherence_bills.length ? _.round(_.mean(coherence_bills), 1) : 0);
     } else {
-      return 0;
+      return 1;
     }
   }}),
   is_completed: DS.attr("boolean", {defaultValue: function(e){

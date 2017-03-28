@@ -36,7 +36,6 @@ moduleForModel('area', 'Unit | Model | area', {
                                      'promise': promesa_2,
                                      'coherenceLevel': 1});
 
-
    let promesa_11 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
                                                          'title':'title01',
@@ -61,17 +60,10 @@ moduleForModel('area', 'Unit | Model | area', {
 
     let gov2 = this.store().createRecord('government', {'name': 'Piñera-2011-2014'});
 
-
-
     let study2 = this.store().createRecord('study', {'version': 'marzo',
                                                      'year': '2013',
                                                      'government': gov2
                                                    });
-
-
-
-
-
 
     let promesa_3 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
@@ -137,7 +129,7 @@ test('area getFulfillment by study', function(assert){
 
   assert.equal(data.area1.fullfilmentPerStudy(data.study1), 50);
   assert.equal(data.area2.fullfilmentPerStudy(data.study1), 25);
-  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 77);
+  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 78);
   assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
 });
 
@@ -180,7 +172,8 @@ test("it calculates things of bills", function(assert){
                                    'promise': promesa_2,
                                    'coherenceLevel': 1});
   Ember.run.end();
-  let result = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
-
-  assert.equal(result, 2);
+  let result_coherence = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
+  assert.equal(result_coherence, 2);
+  let result_fullfilment = this.subject().getAverageFrom([promesa_1, promesa_2], 'fullfilment');
+  assert.equal(result_fullfilment, 50);
 });
