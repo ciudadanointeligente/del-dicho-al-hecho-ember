@@ -86,7 +86,8 @@ export default Ember.Mixin.create({
             } else if(relationship_model === 'priority'){
                 let priorities = [];
                 _.forEach(config.priorities.priorities, function(value){
-                    if(obj.id > 0){
+
+                    if(obj.id){
                         let priority_id = _hashCode(obj.id + value.name);
                         let count = data_csv[value.countColumnName];
                         let priority = {
