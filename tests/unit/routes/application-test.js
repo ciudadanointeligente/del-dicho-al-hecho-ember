@@ -85,7 +85,7 @@ test("promise has many bills and an area", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
-/*
+
 test("bills belong to more than one promise", function(assert){
   var done = assert.async();
   var store = this.store;
@@ -105,7 +105,7 @@ test("bills belong to more than one promise", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
-*/
+
 
 test('matches csv with model attributes', function(assert){
   let route = this.subject();
