@@ -2,7 +2,7 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:government', 'Unit | Route | government', {
   // Specify the other units that are required for this test.
-  needs: ['model:government']
+  needs: ['model:government', 'model:justification']
 });
 
 test('it exists', function(assert) {

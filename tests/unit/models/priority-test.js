@@ -3,7 +3,7 @@ import Ember  from 'ember';
 
 moduleForModel('priority', 'Unit | Model | priority', {
   // Specify the other units that are required for this test.
-  needs: ['model:bill']
+  needs: ['model:bill', 'model:justification']
 });
 
 test('it exists', function(assert) {

@@ -33,11 +33,20 @@ module.exports = function(environment) {
         'fieldToGetIdFrom': 'boletin'
       },
       'relationships':[
-        "promise",
         "phase",
         "priority",
       ],
       'chekIsEmpty': 'boletin',
+    },
+    'justification': {
+      'justification': 'justificacion_avance',
+      'id': {
+        'fieldToGetIdFrom': 'justificacion_avance'
+      },
+      relationships: [
+        'promise',
+        'bill'
+      ]
     }
   };
   var studies = {

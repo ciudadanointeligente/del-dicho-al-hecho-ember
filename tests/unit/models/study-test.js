@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 moduleForModel('study', 'Unit | Model | pertito', {
   // Specify the other units that are required for this test.
-  needs: ['model:government', 'model:promise', 'model:area', 'model:bill', 'model:phase', 'model:priority'],
+  needs: ['model:government', 'model:promise', 'model:area', 'model:bill', 'model:phase', 'model:priority', 'model:justification'],
   loadData: function(store){
   Ember.run.begin();
 

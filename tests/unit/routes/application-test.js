@@ -4,7 +4,7 @@ import Ember  from 'ember';
 import _ from 'lodash';
 
 moduleFor('route:application', 'Unit | Route | application', {
-  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase', 'model:priority'],
+  needs: ['model:bill', 'model:promise', 'model:study', 'model:government', 'model:area', 'model:phase', 'model:priority', 'model:justification'],
   beforeEach: function(){
     this.inject.service('store');
   }
@@ -41,7 +41,7 @@ test("bill has promise, priority and phase", function(assert){
 
       let expected_promise = store.peekRecord('promise', "26");
       let bill = store.peekRecord('bill', "906907");
-      assert.equal(bill.get('promise').get('id'), expected_promise.id);
+      assert.equal(bill.get('promises').toArray()[0].get('id'), expected_promise.id);
       assert.equal(bill.get('phase').get('name'), "Promulgado");
       assert.ok(bill.get('priorities').toArray()[0].toJSON().name, "Priority has name:" + bill.get('priorities').toArray()[0].toJSON().name);
       assert.equal(bill.get('priorities').findBy('name', 'Inmediata').get('count'), 3);
@@ -68,8 +68,8 @@ test("promise has many bills and an area", function(assert){
       let expected_promise = store.peekAll('promise').toArray().findBy('number', 26);
       let bill = store.peekAll('bill').toArray().findBy('name', '9069-07' );
       let bill2 = store.peekAll('bill').toArray().findBy('name', '10344-06' );
-      assert.equal(bill.get('promise').get('id'), expected_promise.id);
-      assert.equal(bill2.get('promise').get('id'), expected_promise.id);
+      assert.equal(bill.get('promises').toArray()[0].get('id'), expected_promise.id);
+      assert.equal(bill2.get('promises').toArray()[0].get('id'), expected_promise.id);
       let promises = store.peekAll('promise');
       assert.equal(promises.toArray().length, 26);
       assert.equal(expected_promise.get('area').get('name'), "Democracia");
@@ -77,7 +77,7 @@ test("promise has many bills and an area", function(assert){
       assert.equal(bills.toArray().length, 7);
       let priorities = store.peekAll('priority');
       assert.equal(priorities.toArray().length, 21);
-      assert.equal(estudio.get('urgenciesCount'), 42);
+      assert.equal(estudio.get('urgenciesCount'), 48);
       done();
     });
   };
@@ -85,9 +85,27 @@ test("promise has many bills and an area", function(assert){
   Ember.run.bind(this, assertions)();
 
 });
+/*
+test("bills belong to more than one promise", function(assert){
+  var done = assert.async();
+  var store = this.store;
+  Ember.run.begin();
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016", "id": 1234});
+  Ember.run.end();
 
+  let assertions = function(){
+    this.subject()._parseCsv("/studies/test/Bachelet-2014-2018_Marzo-2016.csv", store,estudio).then(function(){
+      let bill = store.peekRecord('bill', 1736333047);
+      assert.equal(bill.get('promises').toArray().length, 2);
+      assert.equal(bill.get('priorities').toArray().length, 3);
+      done();
+    });
+  };
 
+  Ember.run.bind(this, assertions)();
 
+});
+*/
 
 test('matches csv with model attributes', function(assert){
   let route = this.subject();
@@ -121,7 +139,7 @@ test('matches csv with model attributes', function(assert){
   	"ParcialMinima": "",
   	"ParcialAlto": "",
   	"EscalaCoherencia": "4",
-  	"Justificacion": "Esto es un perrito"
+  	"justificacion_avance": "Esto es un perrito"
   };
 
   let resulting_data = route._parseAttributes(row_from_csv);
@@ -132,8 +150,20 @@ test('matches csv with model attributes', function(assert){
   let parsed_bill = _.find(resulting_data, {type:'bill'});
   assert.equal(parsed_bill.id, 1034406);
   assert.equal(parsed_bill.attributes.name, "10344-06");
+
   let simple = _.find(parsed_bill.relationships.priorities.data, {'id': route._hashCode(parsed_bill.id + "Simple")});
   assert.ok(simple.type);
+  
+
+  let parsed_just = _.find(resulting_data, {type:'justification'});
+  assert.ok(parsed_just.id);
+  assert.equal(parsed_just.relationships.promise.data.id, 1);
+  assert.equal(parsed_just.relationships.promise.data.type, 'promise');
+  assert.equal(parsed_just.relationships.bill.data.id, parsed_bill.id);
+  assert.equal(parsed_just.relationships.bill.data.type, 'bill');
+  assert.equal(parsed_just.attributes.justification, "Esto es un perrito");
+  //assert.equal(parsed_bill.relationships.promises.data[0].id, parsed_promise.id);
+  //assert.equal(parsed_bill.relationships.promises.data[0].type, 'promise');
 
 });
 test('doesnt return anything', function(assert){
@@ -168,7 +198,7 @@ test('doesnt return anything', function(assert){
   	"ParcialMinima": "",
   	"ParcialAlto": "",
   	"EscalaCoherencia": "",
-  	"Justificacion": "Esto es un perrito"
+  	"justificacion_avance": ""
   };
 
   let resulting_data = route._parseAttributes(row_from_csv);
