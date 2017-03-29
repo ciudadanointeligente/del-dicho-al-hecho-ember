@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleFor('route:study', 'Unit | Route | study', {
   // Specify the other units that are required for this test.
-  needs: ['route:application', 'model:study', "model:promise", "model:government", "model:phase", "model:bill", "model:area", "model:priority"],
+  needs: ['route:application', 'model:study', "model:promise", "model:government", "model:phase", "model:bill", "model:area", "model:priority", 'model:justification'],
   beforeEach: function(){
     this.inject.service('store');
   }

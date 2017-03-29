@@ -1,11 +1,24 @@
 import DS from 'ember-data';
 import _ from 'lodash';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   content: DS.attr('string'),
   number: DS.attr('number'),
   title: DS.attr('string'),
-  bills: DS.hasMany('bill'),
+  justifications: DS.hasMany('justification'),
+  bills: Ember.computed('justifications', function(){
+    let bs = [];
+    _.forEach(this.get('justifications').toArray(),function(justification){
+      let b = justification.get('bill');
+      let b_id = b.get('id');
+      let exists = _.some(bs, function(e){return e.get('id') === b_id;});
+      if(!exists){
+        bs.push(b);
+      }
+    });
+    return bs;
+  }),
   study: DS.belongsTo('study'),
   area: DS.belongsTo('area'),
   urgenciesCount: DS.attr("number", {defaultValue: function(e){

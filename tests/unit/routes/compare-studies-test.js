@@ -5,7 +5,7 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 moduleFor('route:compare-studies', 'Unit | Route | compare studies', {
   // Specify the other units that are required for this test.
 
-  needs: ['model:government', 'model:study', 'model:promise', 'model:area', 'model:priority', 'model:bill', 'model:phase']
+  needs: ['model:government', 'model:study', 'model:promise', 'model:area', 'model:priority', 'model:bill', 'model:phase', 'model:justification']
 });
 
 test('it exists', function(assert) {
