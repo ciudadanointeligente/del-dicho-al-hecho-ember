@@ -166,5 +166,14 @@ export default DS.Model.extend({
         }
       });
       return a;
-    })
+    }),
+    getPromisesByArea: function(area){
+      let promises = [];
+      _.forEach(this.get('promises').toArray(), function(promise){
+        if(promise.get('area').get('id') === area.get('id')){
+          promises.push(promise);
+        }
+      });
+      return promises;
+    }
 });
