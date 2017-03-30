@@ -225,6 +225,92 @@ test("it has studies and government", function(assert){
   assert.ok(studies.toArray()[0].get('id'), 'Estudio tiene id');
 
 });
+test('creates id even if where to get id from', function(assert){
+  let route = this.subject();
+
+  let row_from_csv = {
+  	"id": "1",
+  	"Ano": "2016",
+  	"Version": "mayo",
+  	"area": "Democracia",
+  	"promesa": 'Hola esto es una promesa',
+  	"avance_total": "40%",
+  	"coherencia": "4",
+  	"boletin": "10344-06",
+  	"titulo_proyecto": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  	"link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  	"PrimerTramite": "1",
+  	"Veto": "",
+  	"Insistencia": "",
+  	"SegundoTercerTramite": "",
+  	"ComisionMixta": "",
+  	"TribunalConstitucional": "",
+  	"AprobacionPresidencial": "",
+  	"Promulgado": "",
+  	"RechazadoRetirado": "",
+  	"Avance": "0,4",
+  	"Simple": "1",
+  	"Suma": "",
+  	"Inmediata": "",
+  	"Total": "1",
+  	"Marginal": "",
+  	"ParcialMinima": "",
+  	"ParcialAlto": "",
+  	"EscalaCoherencia": "4",
+    // Justificacion debería ser justificacion_avance (no justificacion) y
+    // aún así debería crear un id!
+  	"justificacion": "Esto es un perrito"
+  };
+  let resulting_data = route._parseAttributes(row_from_csv);
+  
+
+  let parsed_just = _.find(resulting_data, {type:'justification'});
+  assert.ok(parsed_just.id);
+
+});
+test('if there is no bill then no justification either', function(assert){
+  let route = this.subject();
+
+  let row_from_csv = {
+  	"id": "1",
+  	"Ano": "2016",
+  	"Version": "mayo",
+  	"area": "Democracia",
+  	"promesa": 'Hola esto es una promesa',
+  	"avance_total": "40%",
+  	"coherencia": "4",
+  	"boletin": "",
+  	"titulo_proyecto": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  	"link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  	"PrimerTramite": "1",
+  	"Veto": "",
+  	"Insistencia": "",
+  	"SegundoTercerTramite": "",
+  	"ComisionMixta": "",
+  	"TribunalConstitucional": "",
+  	"AprobacionPresidencial": "",
+  	"Promulgado": "",
+  	"RechazadoRetirado": "",
+  	"Avance": "0,4",
+  	"Simple": "1",
+  	"Suma": "",
+  	"Inmediata": "",
+  	"Total": "1",
+  	"Marginal": "",
+  	"ParcialMinima": "",
+  	"ParcialAlto": "",
+  	"EscalaCoherencia": "4",
+    // Justificacion debería ser justificacion_avance (no justificacion) y
+    // aún así debería crear un id!
+  	"justificacion": "Esto es un perrito"
+  };
+  let resulting_data = route._parseAttributes(row_from_csv);
+  
+
+  let parsed_just = _.find(resulting_data, {type:'justification'});
+  assert.notOk(parsed_just);
+
+});
 
 
 test("it has phases with fullfilment", function(assert){
