@@ -71,6 +71,13 @@
   </div>
 </div>
 
+{{#each model.areas as |a|}}
+  {{a.name}}
+  {{#each a.promises as |p|}}
+    <li>{{p.title}}</li>
+  {{/each}}
+{{/each}}
+
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

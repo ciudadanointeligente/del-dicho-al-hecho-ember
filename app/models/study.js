@@ -154,5 +154,17 @@ export default DS.Model.extend({
     }),
     doughnutOpt: {
       responsive: true
-    }
+    },
+    areas: Ember.computed('promises',function(){
+      let a = [];
+      this.get('promises').toArray().forEach(function(p){
+        let area = p.get('area');
+        let area_id = area.get('id');
+        let exist = _.some(a, function(e){ return e.get('id') === area_id; });
+        if( !exist ){
+          a.push( area );
+        }
+      });
+      return a;
+    })
 });

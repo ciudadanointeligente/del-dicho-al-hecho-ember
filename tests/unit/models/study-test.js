@@ -208,5 +208,66 @@ test("chartData", function(assert){
 test('calc urgencies', function(assert){
   let estudio = this.loadData(this.store()).estudio;
   assert.equal(estudio.get('urgenciesCount'), 100);
-  
+
+});
+
+test('show promises for a single study', function(assert){
+  Ember.run.begin();
+  let store = this.store();
+  let gov = store.createRecord('government', {'name': 'Bachelet-2014-2018'});
+  let estudio_1 = store.createRecord('study',{"version":"marzo","year":"2016"});
+  let estudio_2 = store.createRecord('study',{"version":"mayo","year":"2016"});
+
+  let promesa_1_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
+  let promesa_1_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
+  let promesa_1_3= store.createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
+  let promesa_1_4= store.createRecord('promise',{'content':'content04', 'number':'4', 'title':'title04'});
+
+  let promesa_2_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
+  let promesa_2_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
+
+  let pl1 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  let pl2 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+
+  let area_1 = store.createRecord('area',{'id': 1, 'name':'area 01'});
+  let area_2 = store.createRecord('area',{'id': 2, 'name':'area 02'});
+  let area_3 = store.createRecord('area',{'id': 3, 'name':'area 03'});
+
+  area_1.get('promises').pushObject(promesa_1_1);
+  area_2.get('promises').pushObject(promesa_1_2);
+  area_3.get('promises').pushObject(promesa_1_3);
+  area_3.get('promises').pushObject(promesa_1_4);
+
+  area_1.get('promises').pushObject(promesa_2_1);
+  area_2.get('promises').pushObject(promesa_2_2);
+
+  promesa_1_1.get('bills').pushObject(pl1);
+  promesa_2_1.get('bills').pushObject(pl2);
+
+  gov.get('studies').pushObject(estudio_1);
+  gov.get('studies').pushObject(estudio_2);
+
+  estudio_1.get('promises').pushObject(promesa_1_1);
+  estudio_1.get('promises').pushObject(promesa_1_2);
+  estudio_1.get('promises').pushObject(promesa_1_3);
+  estudio_1.get('promises').pushObject(promesa_1_4);
+
+  estudio_2.get('promises').pushObject(promesa_2_1);
+  estudio_2.get('promises').pushObject(promesa_2_2);
+  Ember.run.end();
+
+  let areas_1_array = estudio_1.get('areas');
+
+  assert.ok(areas_1_array.filterBy('id', 1),'kaka');
+  assert.ok(areas_1_array.filterBy('id', 2),'keke');
+  assert.ok(areas_1_array.filterBy('id', 3),'kiki');
+
+  assert.equal(areas_1_array.length, 3);
+
+  let areas_2_array = estudio_2.get('areas');
+  assert.ok(areas_2_array.filterBy('id', 1),'lala');
+  assert.ok(areas_2_array.filterBy('id', 2),'lele');
+  assert.notOk(areas_2_array.filterBy('id', 3).length,0);
+
+  assert.equal(areas_2_array.length, 2);
 });
