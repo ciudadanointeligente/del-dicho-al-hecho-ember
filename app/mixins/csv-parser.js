@@ -42,16 +42,20 @@ export default Ember.Mixin.create({
         if(!_.includes(['id', 'relationships'], attribue_name)){
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
+          let id_from_csv = data_csv[value.fieldToGetIdFrom];
+          if(_.isUndefined(id_from_csv)){
+            id_from_csv = String(_.random(0,1, true) * 10000);
+          }
 
           if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
             if(!data_csv[value.fieldToGetIdFrom].trim().length){
               return false;
             }
-            let id = _hashCode(data_csv[value.fieldToGetIdFrom] + study.get('government').get('name') + study.get('version') + study.get('year'));
+            let id = _hashCode(id_from_csv + study.get('government').get('name') + study.get('version') + study.get('year'));
             obj.id = id;
           } else {
 
-            let id = data_csv[value.fieldToGetIdFrom];
+            let id = id_from_csv;
             if(!id.trim().length){
               return false;
             }
@@ -115,13 +119,23 @@ export default Ember.Mixin.create({
               else {
 
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
+              //console.log(key, relationship_model, the_previous_object, obj);
 
-              obj["relationships"][relationship_model] = {
-                data: {
-                  id: the_previous_object.id,
-                  type: relationship_model
-                }
-              };
+              if(!_.isUndefined(the_previous_object)){
+                obj["relationships"][relationship_model] = {
+                  data: {
+                    id: the_previous_object.id,
+                    type: relationship_model
+                  }
+                };
+              }
+              else{
+                // if related element is not defined then this object can exist but it doesn't make sense
+                // ie: justification when there is no bill.
+                // is there any real sense to create a justification if there is no bill?
+                obj.id = null;
+              }
+
             }
           });
         }
