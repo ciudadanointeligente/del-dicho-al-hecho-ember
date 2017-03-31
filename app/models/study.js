@@ -167,6 +167,10 @@ export default DS.Model.extend({
       });
       return a;
     }),
+    promisesGroupedByArea: Ember.computed('promises', function(){
+      let groupedPromises = {};
+      return groupedPromises;
+    }),
     getPromisesByArea: function(area){
       let promises = [];
       _.forEach(this.get('promises').toArray(), function(promise){

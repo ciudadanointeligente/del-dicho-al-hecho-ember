@@ -8,11 +8,13 @@ moduleForModel('study', 'Unit | Model | pertito', {
   Ember.run.begin();
 
   let gov = store.createRecord('government', {'name': 'Bachelet-2014-2018'});
-  let estudio = store.createRecord('study',{"version":"marzo","year":"2016"});
-  let promesa_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
-  let promesa_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
-  let promesa_3= store.createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
-  let pl1 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016", "government": gov});
+
+
+  let area_1 = store.createRecord('area',{'id': 'a1', 'name':'area 01'});
+  let area_2 = store.createRecord('area',{'id': 'a2', 'name':'area 02'});
+
+  let pl1 = store.createRecord('bill',{'name':'name01','title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
   store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl1});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl1});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl1});
@@ -24,17 +26,51 @@ moduleForModel('study', 'Unit | Model | pertito', {
   store.createRecord('priority', {'name':'simple', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl3});
+  store.createRecord('promise',{'content':'content01',
+                                'id':1,
+                                'number':'1',
+                                'title':'title01',
+                                'study': estudio,
+                                'bills': [pl1],
+                                'area':area_1
+                              });
+  store.createRecord('promise',{'content':'content02',
+                                'id':2,
+                               'number':'2',
+                               'title':'title02',
+                               'study': estudio,
+                               'bills': [pl2],
+                               'area':area_1});
+  store.createRecord('promise',{'content':'content03',
+                                'id':3,
+                               'number':'3',
+                               'title':'title03',
+                               'study': estudio,
+                               'bills': [pl3],
+                               'area':area_2});
+  let estudio2 = store.createRecord('study',{"version":"marzo","year":"2017", "government": gov});
 
-  gov.get('studies').pushObject(estudio);
-  promesa_1.get('bills').pushObject(pl1);
-  promesa_2.get('bills').pushObject(pl2);
-  promesa_3.get('bills').pushObject(pl3);
-
-  estudio.get('promises').pushObject(promesa_1);
-  estudio.get('promises').pushObject(promesa_2);
-  estudio.get('promises').pushObject(promesa_3);
+  store.createRecord('promise',{'content':'content04',
+                                'id':4,
+                                'number':'4',
+                                'title':'title04',
+                                'study': estudio2,
+                                'area':area_2
+                              });
+  store.createRecord('promise',{'content':'content05',
+                                'id':5,
+                               'number':'5',
+                               'title':'title05',
+                               'study': estudio2,
+                               'area':area_2});
+  store.createRecord('promise',{'content':'content06',
+                                'id':6,
+                               'number':'6',
+                               'title':'title06',
+                               'study': estudio2,
+                               'area':area_1});
   Ember.run.end();
-  return {'estudio': estudio};
+  return {'estudio': estudio, 'estudio2': estudio2, 'areas': [area_1, area_2]};
   }
 });
 
@@ -295,4 +331,41 @@ test('getPromisesByArea', function(assert){
   let promises_estudio2 = estudio_2.getPromisesByArea(area_1);
   assert.equal(promises_estudio2.length, 1);
   assert.equal(promises_estudio2[0].get('id'), 'p2');
+});
+test('getPromisesGroupedByArea', function(assert){
+  let estudio = this.loadData(this.store()).estudio;
+  let result = estudio.get('promisesGroupedByArea');
+  /*
+  Esto es lo que yo espero
+  result => {
+    'a1': {
+      'area': a1,
+      'promises': [p1,p2],
+      'resumen':{
+        'completed': 10,
+        'in_progress': 11,
+        'no_progress': 5
+      }
+    },
+    'a2': {
+      'area': a2,
+      'promises': [p3],
+      'resumen':{
+        'completed': 12,
+        'in_progress': 13,
+        'no_progress': 5
+      }
+    }
+  }}
+  */
+  assert.equal(result.a1.area.get('id'), 'a1');
+  assert.equal(result.a1.promises.length, 2);
+
+  assert.ok(result.a1.promises.filterBy('id', 1).length);
+  assert.ok(result.a1.promises.filterBy('id', 2).length);
+
+  assert.equal(result.a2.area.get('id'), 'a2');
+  assert.equal(result.a2.promises.length, 1);
+  assert.ok(result.a2.promises.filterBy('id', 3).length);
+
 });
