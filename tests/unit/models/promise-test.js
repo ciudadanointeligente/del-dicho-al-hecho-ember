@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('promise', 'Unit | Model | promise', {
   // Specify the other units that are required for this test.
-  needs: ['model:bill', 'model:study', 'model:area', 'model:phase', 'model:priority']
+  needs: ['model:bill', 'model:study', 'model:area', 'model:phase', 'model:priority', 'model:justification']
 });
 
 test('it exists', function(assert) {
@@ -20,8 +20,8 @@ test('it has attributes', function(assert){
 
 test("promise has many bills", function(assert){
   let promise = this.store().modelFor('promise');
-  let relationship = Ember.get(promise, 'relationshipsByName').get('bills');
-  assert.equal(relationship.key, 'bills');
+  let relationship = Ember.get(promise, 'relationshipsByName').get('justifications');
+  assert.equal(relationship.key, 'justifications');
   assert.equal(relationship.kind, 'hasMany');
 });
 

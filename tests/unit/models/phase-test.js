@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('phase', 'Unit | Model | phase', {
   // Specify the other units that are required for this test.
-  needs: ['model:bill']
+  needs: ['model:bill', 'model:justification']
 });
 
 test('it exists', function(assert) {

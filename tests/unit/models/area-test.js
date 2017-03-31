@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 moduleForModel('area', 'Unit | Model | area', {
   // Specify the other units that are required for this test.
-  needs: ['model:promise', 'model:area', 'model:study', 'model:government', 'model:bill', 'model:phase', 'model:priority'],
+  needs: ['model:promise', 'model:area', 'model:study', 'model:government', 'model:bill', 'model:phase', 'model:priority', 'model:justification'],
   loadData: function(){
     Ember.run.begin();
     // Having two areas
@@ -24,17 +24,19 @@ moduleForModel('area', 'Unit | Model | area', {
                                                                    'title':'title02',
                                                                    'study': study1,
                                                                    'area': area1});
-   this.store().createRecord('bill',{'name':'name01',
+   let bill_a = this.store().createRecord('bill',{'name':'name_a',
+                                     'id':'ba',
                                      'title':'title01',
                                      'fullfilment':'100%',
-                                     'promise': promesa_1,
                                      'coherenceLevel': 4
                                     });
-   this.store().createRecord('bill',{'name':'name02',
+   this.store().createRecord('justification', {'promise': promesa_1, 'bill': bill_a});
+   let bill_b = this.store().createRecord('bill',{'name':'name_b',
+                                     'id':'bb',
                                      'title':'title02',
                                      'fullfilment':'0%',
-                                     'promise': promesa_2,
                                      'coherenceLevel': 1});
+   this.store().createRecord('justification', {'promise': promesa_2, 'bill': bill_b});
 
    let promesa_11 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
@@ -47,16 +49,19 @@ moduleForModel('area', 'Unit | Model | area', {
                                                          'study': study1,
                                                          'area': area2});
 
-   this.store().createRecord('bill',{'name':'name01',
+   let bill1 = this.store().createRecord('bill',{'name':'name01',
+                                     'id':'b1',
                                      'title':'title01',
                                      'fullfilment':'25%',
                                      'coherenceLevel': 1,
-                                     "promise": promesa_11});
-   this.store().createRecord('bill',{'name':'name02',
+                                     });
+   this.store().createRecord('justification', {'promise': promesa_11, 'bill': bill1});
+   let bill2 = this.store().createRecord('bill',{'name':'name02',
+                                     'id':'b2',
                                      'title':'title02',
                                      'fullfilment':'25%',
-                                     'coherenceLevel': 3,
-                                     "promise": promesa_21});
+                                     'coherenceLevel': 3});
+   this.store().createRecord('justification', {'promise': promesa_21, 'bill': bill2});
 
     let gov2 = this.store().createRecord('government', {'name': 'Piñera-2011-2014'});
 
@@ -76,26 +81,30 @@ moduleForModel('area', 'Unit | Model | area', {
                                                          'study': study2,
                                                          'area': area1});
 
-    this.store().createRecord('bill',{'name':'name01',
+    let bill3 = this.store().createRecord('bill',{'name':'name03',
+                                     'id':'b3',
                                       'title':'title01',
                                       'coherenceLevel': 4,
-                                      'promise': promesa_3,
                                       'fullfilment':'100%'});
-    this.store().createRecord('bill',{'name':'name02',
+   this.store().createRecord('justification', {'promise': promesa_3, 'bill': bill3});
+    let bill4 = this.store().createRecord('bill',{'name':'name04',
+                                     'id':'b4',
                                       'title':'title02',
                                       'coherenceLevel': 3,
-                                      'promise': promesa_3,
                                       'fullfilment':'100%'});
-    this.store().createRecord('bill',{'name':'name04',
+   this.store().createRecord('justification', {'promise': promesa_3, 'bill': bill4});
+    let bill5 = this.store().createRecord('bill',{'name':'name05',
+                                     'id':'b5',
                                       'title':'title04',
                                       'coherenceLevel': 3,
-                                      'promise': promesa_4,
                                       'fullfilment':'100%'});
-    this.store().createRecord('bill',{'name':'name05',
+   this.store().createRecord('justification', {'promise': promesa_4, 'bill': bill5});
+    let bill6 = this.store().createRecord('bill',{'name':'name06',
+                                     'id':'b6',
                                       'title':'title05',
                                       'coherenceLevel': 3,
-                                      'promise': promesa_4,
                                       'fullfilment':'10%'});
+   this.store().createRecord('justification', {'promise': promesa_4, 'bill': bill6});
 
     Ember.run.end();
     return {"area1": area1,
@@ -160,17 +169,17 @@ test("it calculates things of bills", function(assert){
   let promesa_2 = this.store().createRecord('promise',{'content':'content02',
                                                                  'number':'2',
                                                                  'title':'title02'});
- this.store().createRecord('bill',{'name':'name01',
+ let b1 = this.store().createRecord('bill',{'name':'name01',
                                    'title':'title01',
                                    'fullfilment':'100%',
-                                   'promise': promesa_1,
                                    'coherenceLevel': 4
                                   });
- this.store().createRecord('bill',{'name':'name02',
+  this.store().createRecord('justification', {'promise': promesa_1,'bill': b1});
+ let b2 = this.store().createRecord('bill',{'name':'name02',
                                    'title':'title02',
                                    'fullfilment':'0%',
-                                   'promise': promesa_2,
                                    'coherenceLevel': 1});
+  this.store().createRecord('justification', {'promise': promesa_2,'bill': b2});
   Ember.run.end();
   let result_coherence = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
   assert.equal(result_coherence, 2);
