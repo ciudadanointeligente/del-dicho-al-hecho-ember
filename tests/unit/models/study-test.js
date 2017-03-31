@@ -1,5 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 import Ember from 'ember';
+import _ from 'lodash';
 
 moduleForModel('study', 'Unit | Model | pertito', {
   // Specify the other units that are required for this test.
@@ -335,37 +336,20 @@ test('getPromisesByArea', function(assert){
 test('getPromisesGroupedByArea', function(assert){
   let estudio = this.loadData(this.store()).estudio;
   let result = estudio.get('promisesGroupedByArea');
-  /*
-  Esto es lo que yo espero
-  result => {
-    'a1': {
-      'area': a1,
-      'promises': [p1,p2],
-      'resumen':{
-        'completed': 10,
-        'in_progress': 11,
-        'no_progress': 5
-      }
-    },
-    'a2': {
-      'area': a2,
-      'promises': [p3],
-      'resumen':{
-        'completed': 12,
-        'in_progress': 13,
-        'no_progress': 5
-      }
-    }
-  }}
-  */
+
   assert.equal(result.a1.area.get('id'), 'a1');
   assert.equal(result.a1.promises.length, 2);
 
-  assert.ok(result.a1.promises.filterBy('id', 1).length);
-  assert.ok(result.a1.promises.filterBy('id', 2).length);
+  let p1 = _.find(result.a1.promises, function(promise){return promise.get('id') === '1';});
+  let p2 = _.find(result.a1.promises, function(promise){return promise.get('id') === '2';});
+
+  assert.ok(p1);
+  assert.ok(p2);
+
+  let p3 = _.find(result.a2.promises, function(promise){return promise.get('id') === '3';});
 
   assert.equal(result.a2.area.get('id'), 'a2');
   assert.equal(result.a2.promises.length, 1);
-  assert.ok(result.a2.promises.filterBy('id', 3).length);
+  assert.ok(p3);
 
 });

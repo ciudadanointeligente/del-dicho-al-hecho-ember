@@ -169,6 +169,17 @@ export default DS.Model.extend({
     }),
     promisesGroupedByArea: Ember.computed('promises', function(){
       let groupedPromises = {};
+      let promises = this.get('promises').toArray();
+
+      _.each(promises, function(p){
+        let area = p.get('area');
+        let area_id = area.get('id');
+        if(_.isUndefined(groupedPromises[area_id])) {
+          groupedPromises[area_id] = {'area':area, 'promises':[p], 'resumen':{'completed':0,'in_progress':0, 'no_progress':0}};
+        } else {
+          groupedPromises[area_id].promises.push(p);
+        }
+      });
       return groupedPromises;
     }),
     getPromisesByArea: function(area){

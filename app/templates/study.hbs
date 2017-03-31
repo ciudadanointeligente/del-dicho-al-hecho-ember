@@ -71,12 +71,15 @@
   </div>
 </div>
 
-{{#each model.areas as |a|}}
-  {{a.name}}
-  {{#each a.promises as |p|}}
+{{#each-in model.promisesGroupedByArea as |area_id a|}}
+  <li>{{a.area.name}}
+    <ul>
+  {{#each a.promises as |p| }}
     <li>{{p.title}}</li>
   {{/each}}
-{{/each}}
+    </ul>
+  </li>
+{{/each-in}}
 
 <div class="panel panel-default">
   <div class="panel-body">
