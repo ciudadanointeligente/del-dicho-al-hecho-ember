@@ -71,6 +71,16 @@
   </div>
 </div>
 
+{{#each-in model.promisesGroupedByArea as |area_id a|}}
+  <li>{{a.area.name}}
+    <ul>
+  {{#each a.promises as |p| }}
+    <li>{{p.title}}</li>
+  {{/each}}
+    </ul>
+  </li>
+{{/each-in}}
+
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

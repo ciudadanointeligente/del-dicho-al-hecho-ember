@@ -154,5 +154,41 @@ export default DS.Model.extend({
     }),
     doughnutOpt: {
       responsive: true
+    },
+    areas: Ember.computed('promises',function(){
+      let a = [];
+      this.get('promises').toArray().forEach(function(p){
+        let area = p.get('area');
+        let area_id = area.get('id');
+        let exist = _.some(a, function(e){ return e.get('id') === area_id; });
+        if( !exist ){
+          a.push( area );
+        }
+      });
+      return a;
+    }),
+    promisesGroupedByArea: Ember.computed('promises', function(){
+      let groupedPromises = {};
+      let promises = this.get('promises').toArray();
+
+      _.each(promises, function(p){
+        let area = p.get('area');
+        let area_id = area.get('id');
+        if(_.isUndefined(groupedPromises[area_id])) {
+          groupedPromises[area_id] = {'area':area, 'promises':[p], 'resumen':{'completed':0,'in_progress':0, 'no_progress':0}};
+        } else {
+          groupedPromises[area_id].promises.push(p);
+        }
+      });
+      return groupedPromises;
+    }),
+    getPromisesByArea: function(area){
+      let promises = [];
+      _.forEach(this.get('promises').toArray(), function(promise){
+        if(promise.get('area').get('id') === area.get('id')){
+          promises.push(promise);
+        }
+      });
+      return promises;
     }
 });
