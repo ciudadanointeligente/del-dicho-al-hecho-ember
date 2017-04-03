@@ -41,18 +41,17 @@ test("promise belongs to area", function(assert){
 
 test('promise completed', function(assert){
   Ember.run.begin();
-  let promise = this.subject({'content': "I'm a content"});
-  this.store().createRecord('bill',{'name':'name01',
+  let pl1 = this.store().createRecord('bill',{'name':'name01',
                                     'title':'title01',
                                     'fullfilment':'100%',
-                                    'promise': promise,
                                     'coherence': 4
                                    });
-  this.store().createRecord('bill',{'name':'name02',
+  let pl2 = this.store().createRecord('bill',{'name':'name02',
                                     'title':'title02',
                                     'fullfilment':'100%',
-                                    'promise': promise,
                                     'coherence': 1});
+  let promise = this.subject({'content': "I'm a content", 'bills':[pl1,pl2]});
+
   Ember.run.end();
   assert.ok(promise.get('is_completed'));
 });

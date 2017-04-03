@@ -63,11 +63,32 @@ export default DS.Model.extend({
     }
   }}),
   is_completed: DS.attr("boolean", {defaultValue: function(e){
+    console.log(e.get('bills'));
+    if(!e.get('bills').length) {
+      return false;
+    }
     let completed_bills = e.get('bills').filter(function(b){
       return parseInt(b.get('fullfilment')) === 100;
     });
     return completed_bills.length === e.get('bills').toArray().length;
   }}),
+
+  in_progress: DS.attr("boolean", {defaultValue: function(e){
+    return _.some(e.get('bills').toArray(), function(b){
+      return ( parseInt(b.get('fullfilment')) >= 1 && parseInt(b.get('fullfilment')) <= 99 );
+    });
+  }}),
+
+  no_progress: DS.attr("boolean", {defaultValue: function(e){
+    if(!e.get('bills').length) {
+      return true;
+    }
+    let no_progress_bills = e.get('bills').filter(function(b){
+      return parseInt(b.get('fullfilment')) === 0;
+    });
+    return no_progress_bills.length === e.get('bills').toArray().length;
+  }}),
+
   ja_why: DS.attr('string'),
   jc_why: DS.attr('string')
 });

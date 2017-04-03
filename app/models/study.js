@@ -1,8 +1,9 @@
 import DS from 'ember-data';
 import _ from 'lodash';
 import Ember from 'ember';
+import CalculationsMixin from 'ddah-ember/mixins/calculations';
 
-export default DS.Model.extend({
+export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
     year: DS.attr('number'),
     promises: DS.hasMany('promise'),
@@ -170,15 +171,21 @@ export default DS.Model.extend({
     promisesGroupedByArea: Ember.computed('promises', function(){
       let groupedPromises = {};
       let promises = this.get('promises').toArray();
+      let study = this;
 
       _.each(promises, function(p){
         let area = p.get('area');
         let area_id = area.get('id');
         if(_.isUndefined(groupedPromises[area_id])) {
-          groupedPromises[area_id] = {'area':area, 'promises':[p], 'resumen':{'completed':0,'in_progress':0, 'no_progress':0}};
+          groupedPromises[area_id] = {'area':area, 'promises':[p], 'summary':{'completed':0, 'in_progress':0, 'no_progress':0}};
         } else {
           groupedPromises[area_id].promises.push(p);
         }
+      });
+      _.each(groupedPromises, function(a, a_id){
+        groupedPromises[a_id].summary.completed = study.getCompleted(a.promises);
+        groupedPromises[a_id].summary.in_progress = study.getInProgress(a.promises);
+        groupedPromises[a_id].summary.no_progress = study.getNoProgress(a.promises);
       });
       return groupedPromises;
     }),

@@ -18,5 +18,23 @@ export default Ember.Mixin.create({
       return r;
     }
     return 0;
+  },
+  getCompleted: function(promises){
+    let completed_promises = promises.filter(function(p){
+      return p.get('is_completed');
+    });
+    return completed_promises.length;
+  },
+  getInProgress: function(promises){
+    let completed_in_progress = promises.filter(function(p){
+      return p.get('in_progress');
+    });
+    return completed_in_progress.length;
+  },
+  getNoProgress: function(promises){
+    let completed_no_progress = promises.filter(function(p){
+      return p.get('no_progress');
+    });
+    return completed_no_progress.length;
   }
 });

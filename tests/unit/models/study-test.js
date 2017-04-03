@@ -27,6 +27,7 @@ moduleForModel('study', 'Unit | Model | pertito', {
   store.createRecord('priority', {'name':'simple', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl3});
+  let pl4 = store.createRecord('bill',{'name':'name04', 'title':'title04', 'fullfilment':'0%', 'coherenceLevel': 4});
   store.createRecord('promise',{'content':'content01',
                                 'id':1,
                                 'number':'1',
@@ -40,7 +41,7 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'number':'2',
                                'title':'title02',
                                'study': estudio,
-                               'bills': [pl2],
+                               'bills': [pl2,pl4],
                                'area':area_1});
   store.createRecord('promise',{'content':'content03',
                                 'id':3,
@@ -51,19 +52,24 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'area':area_2});
   let estudio2 = store.createRecord('study',{"version":"marzo","year":"2017", "government": gov});
 
+  let pl5 = store.createRecord('bill',{'name':'name05','title':'title05', 'fullfilment':'0%', 'coherenceLevel': 1});
+  let pl6 = store.createRecord('bill',{'name':'name06','title':'title06', 'fullfilment':'0%', 'coherenceLevel': 1});
+
   store.createRecord('promise',{'content':'content04',
                                 'id':4,
                                 'number':'4',
                                 'title':'title04',
                                 'study': estudio2,
-                                'area':area_2
+                                'area':area_2,
+                                'bills':[pl5,pl6]
                               });
   store.createRecord('promise',{'content':'content05',
                                 'id':5,
                                'number':'5',
                                'title':'title05',
                                'study': estudio2,
-                               'area':area_2});
+                               'area':area_2
+                             });
   store.createRecord('promise',{'content':'content06',
                                 'id':6,
                                'number':'6',
@@ -352,4 +358,16 @@ test('getPromisesGroupedByArea', function(assert){
   assert.equal(result.a2.promises.length, 1);
   assert.ok(p3);
 
+});
+test('getFullfilmentByArea', function(assert){
+  let estudio = this.loadData(this.store()).estudio;
+  let estudio2 = this.loadData(this.store()).estudio2;
+  let result = estudio.get('promisesGroupedByArea');
+  let result2 = estudio2.get('promisesGroupedByArea');
+
+  assert.equal(result.a1.summary.completed, 1, 'a1 completed');
+  assert.equal(result.a1.summary.in_progress, 1,'a1 in_progress');
+  assert.equal(result2.a2.summary.completed, 0,'a2 completed');
+  assert.equal(result2.a2.summary.in_progress, 0,'a2 in_progress');
+  assert.equal(result2.a2.summary.no_progress, 2,'a2 no_progress');
 });
