@@ -71,57 +71,47 @@
   </div>
 </div>
 
-{{#each-in model.promisesGroupedByArea as |area_id a|}}
-  <li>{{a.area.name}}
-    <ul>
-  {{#each a.promises as |p| }}
-    <li>{{p.title}}</li>
-  {{/each}}
-    </ul>
-  </li>
-{{/each-in}}
-
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      {{#each areas as |a|}}
+      {{#each-in model.promisesGroupedByArea as |area_id a|}}
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne-{{a.id}}">
+        <div class="panel-heading" role="tab" id="headingOne-{{a.area.id}}">
           <div class="row">
             <div class="col-md-4">
-              <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.id}}" aria-expanded="false" aria-controls="cumplimiento-[[p.id]]">
+              <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
                 <span>
-                  {{a.name}}
+                  {{a.area.name}}
                 </span>
               </h4>
               <div class="sec-promesas">
-                <h5>{{a.promises.length}} promesa(s)<br>({{a.completePromises}} completas - {{a.progressPromises}} en proceso - {{a.unprocessedPromises}} sin progreso)</h5>
+                <h5>{{a.area.promises.length}} promesa(s)<br>({{a.area.completePromises}} completas - {{a.area.progressPromises}} en proceso - {{a.area.unprocessedPromises}} sin progreso)</h5>
               </div>
             </div>
             <div class="col-md-5">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow={{fullfilmentPerArea a model}} aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{fullfilmentPerArea a model}}%;"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%;"></div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                  <p class="hidden-md hidden-lg text-center">Avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="{{a.name}}"></i></p>
+                  <p class="hidden-md hidden-lg text-center">Avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="{{a.area.name}}"></i></p>
                   <div class="category-result text-center">
-                    {{fullfilmentPerArea a model}}%
+                    %
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
                   <p class="hidden-md hidden-lg text-center">Coherencia <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></p>
                   <div class="category-result text-center">
-                    {{coherence-per-area a model}}
+
                   </div>
                 </div>
               </div>
             </div>
           </div><!--row-->
         </div><!--panel-heading-->
-        <div id="cumplimiento-{{a.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-{{a.id}}" >
+        <div id="cumplimiento-{{a.area.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-{{a.area.id}}" >
           <div class="panel-body">
             {{#each a.promises as |p|}}
             <div class="panel-promise">
@@ -213,7 +203,7 @@
       </div><!--panel default-->
       {{else}}
       <p>No hay áreas que mostrar</p>
-      {{/each}}
+      {{/each-in}}
     </div>
   </div>
 </div>
