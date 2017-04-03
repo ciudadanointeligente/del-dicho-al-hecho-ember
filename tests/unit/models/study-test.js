@@ -370,4 +370,16 @@ test('getFullfilmentByArea', function(assert){
   assert.equal(result2.a2.summary.completed, 0,'a2 completed');
   assert.equal(result2.a2.summary.in_progress, 0,'a2 in_progress');
   assert.equal(result2.a2.summary.no_progress, 2,'a2 no_progress');
+
+
+  assert.equal(result.a1.summary.fullfilment, 60, 'a1 fullfilment');
+  assert.equal(result.a2.summary.fullfilment, 100, 'a1 fullfilment');
+  assert.equal(result2.a1.summary.fullfilment, 0, 'a1 fullfilment');
+  assert.equal(result2.a2.summary.fullfilment, 0, 'a1 fullfilment');
+
+  assert.equal(result.a1.summary.coherenceLevel, 3, 's1 a1 coherenceLevel');
+  assert.equal(result.a2.summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
+  assert.equal(result2.a1.summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
+  assert.equal(result2.a2.summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
+
 });

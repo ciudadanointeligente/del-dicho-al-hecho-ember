@@ -177,7 +177,7 @@ export default DS.Model.extend(CalculationsMixin, {
         let area = p.get('area');
         let area_id = area.get('id');
         if(_.isUndefined(groupedPromises[area_id])) {
-          groupedPromises[area_id] = {'area':area, 'promises':[p], 'summary':{'completed':0, 'in_progress':0, 'no_progress':0}};
+          groupedPromises[area_id] = {'area':area, 'promises':[p], 'summary':{'completed':0, 'in_progress':0, 'no_progress':0, 'fullfilment':0, 'coherenceLevel':0}};
         } else {
           groupedPromises[area_id].promises.push(p);
         }
@@ -186,6 +186,9 @@ export default DS.Model.extend(CalculationsMixin, {
         groupedPromises[a_id].summary.completed = study.getCompleted(a.promises);
         groupedPromises[a_id].summary.in_progress = study.getInProgress(a.promises);
         groupedPromises[a_id].summary.no_progress = study.getNoProgress(a.promises);
+        // console.log(a.promises.toArray().length, a_id);
+        groupedPromises[a_id].summary.fullfilment = study.getAverageFrom(a.promises, 'fullfilment');
+        groupedPromises[a_id].summary.coherenceLevel = study.getAverageFrom(a.promises, 'coherenceLevel');
       });
       return groupedPromises;
     }),

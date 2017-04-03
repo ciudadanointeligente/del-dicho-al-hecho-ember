@@ -1,21 +1,33 @@
 import Ember from 'ember';
 import _ from 'lodash';
 
+let defaults = {
+  'coherenceLevel':{
+    'returnValue': 1,
+    'fix_division': 1
+  }
+};
+
 export default Ember.Mixin.create({
   getAverageFrom: function(promises, what_from_bills){
     let sum = 0;
-    //let bills = 0;
+    let cnt = promises.length;
+    let has_defaults = _.some(Object.keys(defaults), function(o) {return o === what_from_bills; });
 
     _.forEach(promises, function(p){
-      sum = sum + parseInt(p.get(what_from_bills));
+      sum = sum + parseFloat(p.get(what_from_bills));
+
     });
 
-    if(sum){
-      let r = (sum/promises.length).toFixed(0);
-      if(what_from_bills === 'coherenceLevel'){
-        r = Math.floor(sum/promises.length).toFixed(1);
+    if(cnt){
+      let fix = 0;
+      if(has_defaults){
+        fix = defaults[what_from_bills].fix_division;
       }
-      return r;
+      return (sum/cnt).toFixed(fix);
+    }
+    if(has_defaults){
+      return defaults[what_from_bills].returnValue;
     }
     return 0;
   },

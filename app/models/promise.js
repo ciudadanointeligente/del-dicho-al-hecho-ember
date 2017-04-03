@@ -57,13 +57,12 @@ export default DS.Model.extend({
           coherence_bills.push(parseFloat(b.get('coherenceLevel')));
         }
       });
-      return (coherence_bills.length ? _.round(_.mean(coherence_bills), 1) : 0);
+      return (coherence_bills.length ? _.mean(coherence_bills) : 1);
     } else {
       return 1;
     }
   }}),
   is_completed: DS.attr("boolean", {defaultValue: function(e){
-    console.log(e.get('bills'));
     if(!e.get('bills').length) {
       return false;
     }
