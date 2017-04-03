@@ -9,7 +9,7 @@ export default DS.Model.extend({
   justifications: DS.hasMany('justification'),
   bills: Ember.computed('justifications', function(){
     let bs = [];
-    _.forEach(this.get('justifications').toArray(),function(justification){
+    this.get('justifications').forEach(function(justification){
       let b = justification.get('bill');
       let b_id = b.get('id');
       let exists = _.some(bs, function(e){return e.get('id') === b_id;});
