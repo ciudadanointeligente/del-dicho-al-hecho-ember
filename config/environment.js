@@ -12,8 +12,8 @@ module.exports = function(environment) {
       'content': 'promesa',
       'number': 'id',
       'title': 'titulo',
-      'ja_why': 'ja_porque',
-      'jc_why': 'jc_porque',
+      'ja-why': 'ja_porque',
+      'jc-why': 'jn_porque',
       'id': {
         'fieldToGetIdFrom': 'id'
       },
