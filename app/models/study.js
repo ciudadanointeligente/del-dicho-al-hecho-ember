@@ -61,18 +61,7 @@ export default DS.Model.extend(CalculationsMixin, {
       return count;
     }),
     capacity: DS.attr("number", {defaultValue: function(e){
-      let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          if (parseInt(p.get('fullfilment')) === 100 && parseInt(p.get('coherenceLevel')) === 4){
-            count += 1;
-          }
-        });
-        return count;
-      } else {
-        return 0;
-      }
+      return e.get('promises').filterBy('is_completed').length;
     }}),
     presentanAvance: DS.attr("number", {defaultValue: function(e){
       let count = 0;

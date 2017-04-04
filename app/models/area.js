@@ -29,6 +29,10 @@ export default DS.Model.extend(CalculationsMixin, {
     getNoProgress: function(study){
       let promises = this.getPromisesPerStudy(study);
       return this.getNoProgress(promises);
+    },
+    capacityByStudy: function(study){
+      return this.getCompletedPromisesByStudy(study);
+
     }
     // ,unprocessedPromises
     // ,unprocessedPromises

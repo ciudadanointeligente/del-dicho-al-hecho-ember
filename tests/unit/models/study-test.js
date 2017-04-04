@@ -35,21 +35,21 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                 'study': estudio,
                                 'bills': [pl1, pl3],
                                 'area':area_1
-                              });
+                              });//Promesa completada
   store.createRecord('promise',{'content':'content02',
                                 'id':2,
                                'number':'2',
                                'title':'title02',
                                'study': estudio,
                                'bills': [pl2,pl4],
-                               'area':area_1});
+                               'area':area_1});//Promesa no completada
   store.createRecord('promise',{'content':'content03',
                                 'id':3,
                                'number':'3',
                                'title':'title03',
                                'study': estudio,
                                'bills': [pl3],
-                               'area':area_2});
+                               'area':area_2});//promesa completada
   let estudio2 = store.createRecord('study',{"version":"marzo","year":"2017", "government": gov});
 
   let pl5 = store.createRecord('bill',{'id':'pl5', 'name':'name05','title':'title05', 'fullfilment':'0%', 'coherenceLevel': 1});
@@ -258,6 +258,13 @@ test('get bills', function(assert){
   assert.ok(estudio.get('bills').findBy('id', 'pl3'), 'pl3');
   assert.ok(estudio.get('bills').findBy('id', 'pl4'), 'pl4');
   assert.notOk(estudio.get('bills').findBy('id', 'pl5'), 'pl5');
+});
+
+test('getCapacity', function(assert){
+
+  let estudio = this.loadData(this.store()).estudio;
+  //there are two promises that are completed
+  assert.equal(estudio.get('capacity'), 2);
 });
 
 test('calc urgencies', function(assert){
