@@ -142,6 +142,11 @@ test('area getFulfillment by study', function(assert){
   assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
 });
 
+test('getCapacity', function(assert){
+  let data = this.loadData();
+  assert.equal(data.area1.capacityByStudy(data.study1), 1);
+});
+
 test('area getCoherenceLevelByStudy', function(assert){
 
   let data = this.loadData();
