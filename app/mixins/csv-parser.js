@@ -43,7 +43,7 @@ export default Ember.Mixin.create({
           obj.attributes[attribue_name] = data_csv[value];
         } else if (attribue_name === "id") {
           let id_from_csv = data_csv[value.fieldToGetIdFrom];
-          if(_.isUndefined(id_from_csv)){
+          if(_.isUndefined(id_from_csv) || _.includes(keys_that_can_be_empty, key)){
             id_from_csv = String(_.random(0,1, true) * 10000);
           }
 
@@ -129,6 +129,9 @@ export default Ember.Mixin.create({
                     type: relationship_model
                   }
                 };
+              if(relationship_model==='bill' && key === 'justification' && the_previous_object.attributes.name==='10783-04'){
+                console.log(obj.id, obj.attributes.justification);
+              }
               }
               else{
                 // if related element is not defined then this object can exist but it doesn't make sense
