@@ -2,7 +2,7 @@ import Ember from 'ember';
 import PapaParse from 'npm:papaparse';
 import _ from 'lodash';
 import config from '../config/environment';
-
+let keys_that_can_be_empty = ['justification'];
 export default Ember.Mixin.create({
 
   parseCsv(file_name){
@@ -57,7 +57,10 @@ export default Ember.Mixin.create({
 
             let id = id_from_csv;
             if(!id.trim().length){
-              return false;
+              if(!_.includes(keys_that_can_be_empty, key)){
+                return false;
+              }
+              id = String(_.random(0,1, true) * 10000);
             }
             obj.id = parseInt(id.replace("-", ""));
             if(isNaN(obj.id)){
@@ -117,9 +120,7 @@ export default Ember.Mixin.create({
 
             }
               else {
-
               let the_previous_object = _.find(data, function(o) { return o.type === relationship_model; });
-              //console.log(key, relationship_model, the_previous_object, obj);
 
               if(!_.isUndefined(the_previous_object)){
                 obj["relationships"][relationship_model] = {

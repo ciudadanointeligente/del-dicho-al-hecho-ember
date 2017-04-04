@@ -40,30 +40,26 @@ export default DS.Model.extend(CalculationsMixin, {
         return 0;
       }
     }}),
-    billsCount: DS.attr("number", {defaultValue: function(e){
+    bills: Ember.computed('promises', function(){
+      let bills = [];
+      let promises = this.get('promises');
+      promises.forEach(function(p){
+        bills = bills.concat(p.get('bills'));
+      });
+      return bills.uniqBy('id');
+    }),
+    billsCount: Ember.computed('bills', function(){
+      return this.get('bills').length;
+    }),
+    urgenciesCount: Ember.computed('bills', function(){
       let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          count += p.get('bills').toArray().length;
+      this.get('bills').forEach(function(b){
+        b.get('priorities').forEach(function(priority){
+          count += parseInt(priority.get('count'));
         });
-        return count;
-      } else {
-        return 0;
-      }
-    }}),
-    urgenciesCount: DS.attr("number", {defaultValue: function(e){
-      let count = 0;
-      if (e.get('promises').toArray().length){
-        let promisesArray = e.get('promises');
-        promisesArray.forEach(function(p){
-          count += parseInt(p.get('urgenciesCount'));
-        });
-        return count;
-      } else {
-        return 0;
-      }
-    }}),
+      });
+      return count;
+    }),
     capacity: DS.attr("number", {defaultValue: function(e){
       let count = 0;
       if (e.get('promises').toArray().length){
