@@ -253,6 +253,11 @@ test('get bills', function(assert){
   let estudio = this.loadData(this.store()).estudio;
   assert.ok(estudio.get('bills'), 'bills');
   assert.equal(estudio.get('bills').length, 4, 'length 4');
+  assert.ok(estudio.get('bills').findBy('id', 'pl1'), 'pl1');
+  assert.ok(estudio.get('bills').findBy('id', 'pl2'), 'pl2');
+  assert.ok(estudio.get('bills').findBy('id', 'pl3'), 'pl3');
+  assert.ok(estudio.get('bills').findBy('id', 'pl4'), 'pl4');
+  assert.notOk(estudio.get('bills').findBy('id', 'pl5'), 'pl5');
 });
 
 test('calc urgencies', function(assert){

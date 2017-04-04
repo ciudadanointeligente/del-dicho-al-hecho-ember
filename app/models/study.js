@@ -44,11 +44,9 @@ export default DS.Model.extend(CalculationsMixin, {
       let bills = [];
       let promises = this.get('promises');
       promises.forEach(function(p){
-        p.get('bills').toArray().forEach(function(b){
-          (!bills.any(function(o){ return o.get('id')===b.get('id');})) ? bills.push(b) : '';
-        });
+        bills = bills.concat(p.get('bills'));
       });
-      return bills;
+      return bills.uniqBy('id');
     }),
     billsCount: DS.attr("number", {defaultValue: function(e){
       let count = 0;
