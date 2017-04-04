@@ -40,6 +40,16 @@ export default DS.Model.extend(CalculationsMixin, {
         return 0;
       }
     }}),
+    bills: Ember.computed('promises', function(){
+      let bills = [];
+      let promises = this.get('promises');
+      promises.forEach(function(p){
+        p.get('bills').toArray().forEach(function(b){
+          (!bills.any(function(o){ return o.get('id')===b.get('id');})) ? bills.push(b) : '';
+        });
+      });
+      return bills;
+    }),
     billsCount: DS.attr("number", {defaultValue: function(e){
       let count = 0;
       if (e.get('promises').toArray().length){

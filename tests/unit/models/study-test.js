@@ -15,19 +15,19 @@ moduleForModel('study', 'Unit | Model | pertito', {
   let area_1 = store.createRecord('area',{'id': 'a1', 'name':'area 01'});
   let area_2 = store.createRecord('area',{'id': 'a2', 'name':'area 02'});
 
-  let pl1 = store.createRecord('bill',{'name':'name01','title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  let pl1 = store.createRecord('bill',{'id':'pl1', 'name':'name01','title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
   store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl1});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl1});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl1});
-  let pl2 = store.createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
+  let pl2 = store.createRecord('bill',{'id':'pl2', 'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
   store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl2});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl2});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl2});
-  let pl3 = store.createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
+  let pl3 = store.createRecord('bill',{'id':'pl3', 'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
   store.createRecord('priority', {'name':'simple', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl3});
-  let pl4 = store.createRecord('bill',{'name':'name04', 'title':'title04', 'fullfilment':'0%', 'coherenceLevel': 4});
+  let pl4 = store.createRecord('bill',{'id':'pl4', 'name':'name04', 'title':'title04', 'fullfilment':'0%', 'coherenceLevel': 4});
   store.createRecord('promise',{'content':'content01',
                                 'id':1,
                                 'number':'1',
@@ -52,8 +52,8 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'area':area_2});
   let estudio2 = store.createRecord('study',{"version":"marzo","year":"2017", "government": gov});
 
-  let pl5 = store.createRecord('bill',{'name':'name05','title':'title05', 'fullfilment':'0%', 'coherenceLevel': 1});
-  let pl6 = store.createRecord('bill',{'name':'name06','title':'title06', 'fullfilment':'0%', 'coherenceLevel': 1});
+  let pl5 = store.createRecord('bill',{'id':'pl5', 'name':'name05','title':'title05', 'fullfilment':'0%', 'coherenceLevel': 1});
+  let pl6 = store.createRecord('bill',{'id':'pl6', 'name':'name06','title':'title06', 'fullfilment':'0%', 'coherenceLevel': 1});
 
   store.createRecord('promise',{'content':'content04',
                                 'id':4,
@@ -247,6 +247,12 @@ test("chartData", function(assert){
           }]
   };
   assert.deepEqual(estudio.get('chartData'), expected_dataChart);
+});
+
+test('get bills', function(assert){
+  let estudio = this.loadData(this.store()).estudio;
+  assert.ok(estudio.get('bills'), 'bills');
+  assert.equal(estudio.get('bills').length, 4, 'length 4');
 });
 
 test('calc urgencies', function(assert){
