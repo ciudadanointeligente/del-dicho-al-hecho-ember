@@ -262,6 +262,8 @@ test('get bills', function(assert){
 
 test('calc urgencies', function(assert){
   let estudio = this.loadData(this.store()).estudio;
+
+  assert.equal(estudio.get('billsCount'), 4);
   assert.equal(estudio.get('urgenciesCount'), 100);
 
 });

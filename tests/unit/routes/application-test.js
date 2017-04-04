@@ -77,7 +77,7 @@ test("promise has many bills and an area", function(assert){
       assert.equal(bills.toArray().length, 7);
       let priorities = store.peekAll('priority');
       assert.equal(priorities.toArray().length, 21);
-      assert.equal(estudio.get('urgenciesCount'), 48);
+      assert.equal(estudio.get('urgenciesCount'), 42);
       done();
     });
   };
@@ -153,7 +153,7 @@ test('matches csv with model attributes', function(assert){
 
   let simple = _.find(parsed_bill.relationships.priorities.data, {'id': route._hashCode(parsed_bill.id + "Simple")});
   assert.ok(simple.type);
-  
+
 
   let parsed_just = _.find(resulting_data, {type:'justification'});
   assert.ok(parsed_just.id);
@@ -262,7 +262,7 @@ test('creates id even if where to get id from', function(assert){
   	"justificacion": "Esto es un perrito"
   };
   let resulting_data = route._parseAttributes(row_from_csv);
-  
+
 
   let parsed_just = _.find(resulting_data, {type:'justification'});
   assert.ok(parsed_just.id);
@@ -305,7 +305,7 @@ test('if there is no bill then no justification either', function(assert){
   	"justificacion": "Esto es un perrito"
   };
   let resulting_data = route._parseAttributes(row_from_csv);
-  
+
 
   let parsed_just = _.find(resulting_data, {type:'justification'});
   assert.notOk(parsed_just);
