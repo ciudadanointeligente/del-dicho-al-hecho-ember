@@ -268,6 +268,48 @@ test('creates id even if where to get id from', function(assert){
   assert.ok(parsed_just.id);
 
 });
+test('if there is a bill but no justification_explanation create one anyways', function(assert){
+
+  let route = this.subject();
+
+  let row_from_csv = {
+  	"id": "1",
+  	"Ano": "2016",
+  	"Version": "mayo",
+  	"area": "Democracia",
+  	"promesa": 'Hola esto es una promesa',
+  	"avance_total": "40%",
+  	"coherencia": "4",
+  	"boletin": "10344-06",
+  	"titulo_proyecto": "Regula el ejercicio del sufragio de los ciudadanos que se encuentran fuera del país.",
+  	"link": "http://www.senado.cl/appsenado/templates/tramitacion/index.php",
+  	"PrimerTramite": "1",
+  	"Veto": "",
+  	"Insistencia": "",
+  	"SegundoTercerTramite": "",
+  	"ComisionMixta": "",
+  	"TribunalConstitucional": "",
+  	"AprobacionPresidencial": "",
+  	"Promulgado": "",
+  	"RechazadoRetirado": "",
+  	"Avance": "0,4",
+  	"Simple": "1",
+  	"Suma": "",
+  	"Inmediata": "",
+  	"Total": "1",
+  	"Marginal": "",
+  	"ParcialMinima": "",
+  	"ParcialAlto": "",
+  	"EscalaCoherencia": "4",
+    // Justificacion está vacía y debería crear una justificación
+  	"justificacion_avance": ""
+  };
+  let resulting_data = route._parseAttributes(row_from_csv);
+
+
+  let parsed_just = _.find(resulting_data, {type:'justification'});
+  assert.ok(parsed_just.id);
+});
 test('if there is no bill then no justification either', function(assert){
   let route = this.subject();
 
