@@ -33,7 +33,7 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                 'number':'1',
                                 'title':'title01',
                                 'study': estudio,
-                                'bills': [pl1],
+                                'bills': [pl1, pl3],
                                 'area':area_1
                               });
   store.createRecord('promise',{'content':'content02',
@@ -68,6 +68,7 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'number':'5',
                                'title':'title05',
                                'study': estudio2,
+                               'bills': [pl5],
                                'area':area_2
                              });
   store.createRecord('promise',{'content':'content06',
@@ -377,7 +378,7 @@ test('getFullfilmentByArea', function(assert){
   assert.equal(result2.a1.summary.fullfilment, 0, 'a1 fullfilment');
   assert.equal(result2.a2.summary.fullfilment, 0, 'a1 fullfilment');
 
-  assert.equal(result.a1.summary.coherenceLevel, 3, 's1 a1 coherenceLevel');
+  assert.equal(result.a1.summary.coherenceLevel, 3.3, 's1 a1 coherenceLevel');
   assert.equal(result.a2.summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
   assert.equal(result2.a1.summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
   assert.equal(result2.a2.summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
