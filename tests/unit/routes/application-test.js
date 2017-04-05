@@ -20,7 +20,7 @@ test("automatically loads data", function(assert){
       let bills = store.peekAll('bill');
       assert.ok(bills.toArray().length === 7, "Hay 7 bills:" + bills.toArray().length);
       let promises = store.peekAll('promise');
-      assert.ok(promises.toArray().length > 0);
+      assert.equal(promises.toArray().length, 26);
       done();
     });
   };
@@ -78,6 +78,26 @@ test("promise has many bills and an area", function(assert){
       let priorities = store.peekAll('priority');
       assert.equal(priorities.toArray().length, 21);
       assert.equal(estudio.get('urgenciesCount'), 42);
+      done();
+    });
+  };
+
+  Ember.run.bind(this, assertions)();
+
+});
+
+
+test("BUG with coherence returning NaN", function(assert){
+  var done = assert.async();
+  var store = this.store;
+  Ember.run.begin();
+  let estudio = store.createRecord('study',{"version":"marzo","year":"2016", "id": 1234});
+  Ember.run.end();
+
+  let assertions = function(){
+    this.subject()._parseCsv("/studies/test/Bachelet-2014-2018_Marzo-2016.csv", store,estudio).then(function(){
+      let promise = store.peekAll('promise').toArray().findBy('number', 26);
+      assert.ok(promise.get('study').get('coherenceLevel'));
       done();
     });
   };

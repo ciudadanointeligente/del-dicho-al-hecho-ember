@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 import Ember from 'ember';
 import _ from 'lodash';
 
-moduleForModel('study', 'Unit | Model | pertito', {
+moduleForModel('study', 'Unit | Model | study (perrito)', {
   // Specify the other units that are required for this test.
   needs: ['model:government', 'model:promise', 'model:area', 'model:bill', 'model:phase', 'model:priority', 'model:justification'],
   loadData: function(store){
@@ -15,26 +15,27 @@ moduleForModel('study', 'Unit | Model | pertito', {
   let area_1 = store.createRecord('area',{'id': 'a1', 'name':'area 01'});
   let area_2 = store.createRecord('area',{'id': 'a2', 'name':'area 02'});
 
-  let pl1 = store.createRecord('bill',{'id':'pl1', 'name':'name01','title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  let pl1 = store.createRecord('bill',{'id':'pl1', 'name':'name01','title':'title01', 'fullfilment':'100%' });
   store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl1});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl1});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl1});
-  let pl2 = store.createRecord('bill',{'id':'pl2', 'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
+  let pl2 = store.createRecord('bill',{'id':'pl2', 'name':'name02', 'title':'title02', 'fullfilment':'40%'});
   store.createRecord('priority', {'name':'simple', 'count': 10, 'bill': pl2});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl2});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl2});
-  let pl3 = store.createRecord('bill',{'id':'pl3', 'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
+  let pl3 = store.createRecord('bill',{'id':'pl3', 'name':'name03', 'title':'title03', 'fullfilment':'100%'});
   store.createRecord('priority', {'name':'simple', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'suma', 'count': 11, 'bill': pl3});
   store.createRecord('priority', {'name':'inmediata', 'count': 12, 'bill': pl3});
-  let pl4 = store.createRecord('bill',{'id':'pl4', 'name':'name04', 'title':'title04', 'fullfilment':'0%', 'coherenceLevel': 4});
+  let pl4 = store.createRecord('bill',{'id':'pl4', 'name':'name04', 'title':'title04', 'fullfilment':'0%'});
   store.createRecord('promise',{'content':'content01',
                                 'id':1,
                                 'number':'1',
                                 'title':'title01',
                                 'study': estudio,
                                 'bills': [pl1, pl3],
-                                'area':area_1
+                                'area':area_1,
+                                'coherenceLevel': 3
                               });//Promesa completada
   store.createRecord('promise',{'content':'content02',
                                 'id':2,
@@ -42,25 +43,26 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'title':'title02',
                                'study': estudio,
                                'bills': [pl2,pl4],
+                               'coherenceLevel': 4,
                                'area':area_1});//Promesa no completada
   store.createRecord('promise',{'content':'content03',
                                 'id':3,
                                'number':'3',
                                'title':'title03',
                                'study': estudio,
-                               'bills': [pl3],
+                               'bills': [pl3],'coherenceLevel': 4,
                                'area':area_2});//promesa completada
   let estudio2 = store.createRecord('study',{"version":"marzo","year":"2017", "government": gov});
 
-  let pl5 = store.createRecord('bill',{'id':'pl5', 'name':'name05','title':'title05', 'fullfilment':'0%', 'coherenceLevel': 1});
-  let pl6 = store.createRecord('bill',{'id':'pl6', 'name':'name06','title':'title06', 'fullfilment':'0%', 'coherenceLevel': 1});
+  let pl5 = store.createRecord('bill',{'id':'pl5', 'name':'name05','title':'title05', 'fullfilment':'0%'});
+  let pl6 = store.createRecord('bill',{'id':'pl6', 'name':'name06','title':'title06', 'fullfilment':'0%'});
 
   store.createRecord('promise',{'content':'content04',
                                 'id':4,
                                 'number':'4',
                                 'title':'title04',
                                 'study': estudio2,
-                                'area':area_2,
+                                'area':area_2,'coherenceLevel': 1,
                                 'bills':[pl5,pl6]
                               });
   store.createRecord('promise',{'content':'content05',
@@ -68,7 +70,7 @@ moduleForModel('study', 'Unit | Model | pertito', {
                                'number':'5',
                                'title':'title05',
                                'study': estudio2,
-                               'bills': [pl5],
+                               'bills': [pl5],'coherenceLevel': 1,
                                'area':area_2
                              });
   store.createRecord('promise',{'content':'content06',
@@ -176,12 +178,12 @@ test('study return the capacity', function(assert){
 
   let gov = this.store().createRecord('government', {'name': 'Bachelet-2014-2018'});
   let estudio = this.store().createRecord('study',{"version":"marzo","year":"2016"});
-  let promesa_1=this.store().createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
-  let promesa_2=this.store().createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
-  let promesa_3=this.store().createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
-  let pl1 = this.store().createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
-  let pl2 = this.store().createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
-  let pl3 = this.store().createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
+  let promesa_1=this.store().createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01', 'coherenceLevel': 3});
+  let promesa_2=this.store().createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02', 'coherenceLevel': 2});
+  let promesa_3=this.store().createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03', 'coherenceLevel': 4});
+  let pl1 = this.store().createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%'});
+  let pl2 = this.store().createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%'});
+  let pl3 = this.store().createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%'});
 
   gov.get('studies').pushObject(estudio);
   promesa_1.get('bills').pushObject(pl1);
@@ -212,12 +214,12 @@ test("chartData", function(assert){
 
   let gov = this.store().createRecord('government', {'name': 'Bachelet-2014-2018'});
   let estudio = this.store().createRecord('study',{"version":"marzo","year":"2016"});
-  let promesa_1=this.store().createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
-  let promesa_2=this.store().createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
-  let promesa_3=this.store().createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
-  let pl1 = this.store().createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
-  let pl2 = this.store().createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%', 'coherenceLevel': 2});
-  let pl3 = this.store().createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%', 'coherenceLevel': 4});
+  let promesa_1=this.store().createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01', 'coherenceLevel': 3});
+  let promesa_2=this.store().createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02', 'coherenceLevel': 2});
+  let promesa_3=this.store().createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03', 'coherenceLevel': 4});
+  let pl1 = this.store().createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%'});
+  let pl2 = this.store().createRecord('bill',{'name':'name02', 'title':'title02', 'fullfilment':'40%'});
+  let pl3 = this.store().createRecord('bill',{'name':'name03', 'title':'title03', 'fullfilment':'100%'});
 
   gov.get('studies').pushObject(estudio);
   promesa_1.get('bills').pushObject(pl1);
@@ -282,16 +284,16 @@ test('show promises for a single study', function(assert){
   let estudio_1 = store.createRecord('study',{"version":"marzo","year":"2016"});
   let estudio_2 = store.createRecord('study',{"version":"mayo","year":"2016"});
 
-  let promesa_1_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
+  let promesa_1_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01', 'coherenceLevel': 3});
   let promesa_1_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
   let promesa_1_3= store.createRecord('promise',{'content':'content03', 'number':'3', 'title':'title03'});
   let promesa_1_4= store.createRecord('promise',{'content':'content04', 'number':'4', 'title':'title04'});
 
-  let promesa_2_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01'});
+  let promesa_2_1= store.createRecord('promise',{'content':'content01', 'number':'1', 'title':'title01', 'coherenceLevel': 3});
   let promesa_2_2= store.createRecord('promise',{'content':'content02', 'number':'2', 'title':'title02'});
 
-  let pl1 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
-  let pl2 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%', 'coherenceLevel': 3});
+  let pl1 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%'});
+  let pl2 = store.createRecord('bill',{'name':'name01', 'title':'title01', 'fullfilment':'100%'});
 
   let area_1 = store.createRecord('area',{'id': 1, 'name':'area 01'});
   let area_2 = store.createRecord('area',{'id': 2, 'name':'area 02'});
@@ -364,19 +366,19 @@ test('getPromisesGroupedByArea', function(assert){
   let estudio = this.loadData(this.store()).estudio;
   let result = estudio.get('promisesGroupedByArea');
 
-  assert.equal(result.a1.area.get('id'), 'a1');
-  assert.equal(result.a1.promises.length, 2);
+  assert.equal(result[0].area.get('id'), 'a1');
+  assert.equal(result[0].promises.length, 2);
 
-  let p1 = _.find(result.a1.promises, function(promise){return promise.get('id') === '1';});
-  let p2 = _.find(result.a1.promises, function(promise){return promise.get('id') === '2';});
+  let p1 = _.find(result[0].promises, function(promise){return promise.get('id') === '1';});
+  let p2 = _.find(result[0].promises, function(promise){return promise.get('id') === '2';});
 
   assert.ok(p1);
   assert.ok(p2);
 
-  let p3 = _.find(result.a2.promises, function(promise){return promise.get('id') === '3';});
+  let p3 = _.find(result[1].promises, function(promise){return promise.get('id') === '3';});
 
-  assert.equal(result.a2.area.get('id'), 'a2');
-  assert.equal(result.a2.promises.length, 1);
+  assert.equal(result[1].area.get('id'), 'a2');
+  assert.equal(result[1].promises.length, 1);
   assert.ok(p3);
 
 });
@@ -386,21 +388,21 @@ test('getFullfilmentByArea', function(assert){
   let result = estudio.get('promisesGroupedByArea');
   let result2 = estudio2.get('promisesGroupedByArea');
 
-  assert.equal(result.a1.summary.completed, 1, 'a1 completed');
-  assert.equal(result.a1.summary.in_progress, 1,'a1 in_progress');
-  assert.equal(result2.a2.summary.completed, 0,'a2 completed');
-  assert.equal(result2.a2.summary.in_progress, 0,'a2 in_progress');
-  assert.equal(result2.a2.summary.no_progress, 2,'a2 no_progress');
+  assert.equal(result[0].summary.completed, 1, 'a1 completed');
+  assert.equal(result[0].summary.in_progress, 1,'a1 in_progress');
+  assert.equal(result2[1].summary.completed, 0,'a2 completed');
+  assert.equal(result2[1].summary.in_progress, 0,'a2 in_progress');
+  assert.equal(result2[1].summary.no_progress, 2,'a2 no_progress');
 
 
-  assert.equal(result.a1.summary.fullfilment, 60, 'a1 fullfilment');
-  assert.equal(result.a2.summary.fullfilment, 100, 'a1 fullfilment');
-  assert.equal(result2.a1.summary.fullfilment, 0, 'a1 fullfilment');
-  assert.equal(result2.a2.summary.fullfilment, 0, 'a1 fullfilment');
+  assert.equal(result[0].summary.fullfilment, 60, 'a1 fullfilment');
+  assert.equal(result[1].summary.fullfilment, 100, 'a1 fullfilment');
+  assert.equal(result2[0].summary.fullfilment, 0, 'a1 fullfilment');
+  assert.equal(result2[1].summary.fullfilment, 0, 'a1 fullfilment');
 
-  assert.equal(result.a1.summary.coherenceLevel, 3.3, 's1 a1 coherenceLevel');
-  assert.equal(result.a2.summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
-  assert.equal(result2.a1.summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
-  assert.equal(result2.a2.summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
+  assert.equal(result[0].summary.coherenceLevel, 3.5, 's1 a1 coherenceLevel');
+  assert.equal(result[1].summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
+  assert.equal(result2[0].summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
+  assert.equal(result2[1].summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
 
 });

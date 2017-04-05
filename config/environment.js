@@ -14,6 +14,7 @@ module.exports = function(environment) {
       'title': 'titulo',
       'ja-why': 'ja_porque',
       'jc-why': 'jn_porque',
+      'coherence-level': 'coherencia',
       'id': {
         'fieldToGetIdFrom': 'id'
       },
@@ -27,7 +28,6 @@ module.exports = function(environment) {
       'url': 'link',
       'justification': 'justificacion_avance',
       'year': 'Ano',
-      'coherence-level': 'coherencia',
       'version': 'Version',
       'id': {
         'fieldToGetIdFrom': 'boletin'
@@ -91,7 +91,7 @@ module.exports = function(environment) {
       'fullfilment': 40,
     }, {
       'name': 'Rechazado Retirado',
-      'fullfilment': 40,
+      'fullfilment': 0,
     }, {
       'name': 'Comisión Mixta',
       'fullfilment': 70,

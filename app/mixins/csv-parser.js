@@ -129,9 +129,6 @@ export default Ember.Mixin.create({
                     type: relationship_model
                   }
                 };
-              if(relationship_model==='bill' && key === 'justification' && the_previous_object.attributes.name==='10783-04'){
-                console.log(obj.id, obj.attributes.justification);
-              }
               }
               else{
                 // if related element is not defined then this object can exist but it doesn't make sense
@@ -165,7 +162,15 @@ export default Ember.Mixin.create({
           var data = [];
           _.forEach(results.data, function(value) {
             let data_per_row = _parseAttributes(value, study);
-            data = _.concat(data, data_per_row);
+            data = _.unionWith(data, data_per_row, function(a, b){
+              if(a.type===b.type && a.type === 'promise' && a.id===b.id){
+                if(a.id === b.id){
+                  return true;
+                }
+              }
+              
+              return false;
+            });
           });
           let resultado = {
             "data": data,
