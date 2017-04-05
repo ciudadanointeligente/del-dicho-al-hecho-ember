@@ -13,14 +13,15 @@ test('it exists', function(assert) {
 });
 
 test('it has attribute', function(assert){
-  let test = this.subject({'name': '7543-12', 'title':'Reforma al Código de aguas', 'url': 'www.congresoabierto.cl/proyectos/7543-12', 'coherenceLevel':'total', 'justification': 'El proyecto contempla que se permita a la admin. limitar el ejrcicio de los dd de los aprovechamiento', 'coherence': 4, 'fullfilment':40});
+  let test = this.subject({'name': '7543-12',
+    'title':'Reforma al Código de aguas',
+    'url': 'www.congresoabierto.cl/proyectos/7543-12',
+    'justification': 'El proyecto contempla que se permita a la admin. limitar el ejrcicio de los dd de los aprovechamiento',
+    'fullfilment':40});
   assert.equal(test.get('name'), '7543-12');
   assert.equal(test.get('title'), 'Reforma al Código de aguas');
   assert.equal(test.get('url'), 'www.congresoabierto.cl/proyectos/7543-12');
-  assert.equal(test.get('coherenceLevel'), 'total');
   assert.equal(test.get('justification'), 'El proyecto contempla que se permita a la admin. limitar el ejrcicio de los dd de los aprovechamiento');
-  assert.equal(test.get('coherence'), 4);
-  assert.equal(test.get('coherence') + 3, 7);
   assert.equal(test.get('fullfilment'), 40);
 });
 

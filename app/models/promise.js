@@ -7,6 +7,7 @@ export default DS.Model.extend({
   number: DS.attr('number'),
   title: DS.attr('string'),
   justifications: DS.hasMany('justification'),
+  coherenceLevel: DS.attr('number', {defaultValue: 1}),
   bills: Ember.computed('justifications', function(){
     let bs = [];
     this.get('justifications').forEach(function(justification){
@@ -48,7 +49,7 @@ export default DS.Model.extend({
       return 0;
     }
   }}),
-  coherenceLevel: DS.attr("number", {defaultValue: function(e){
+  /*coherenceLevel: DS.attr("number", {defaultValue: function(e){
     let coherence_bills = [];
     if (e.get('bills').toArray().length){
       let billsArray = e.get('bills');
@@ -61,7 +62,7 @@ export default DS.Model.extend({
     } else {
       return 1;
     }
-  }}),
+  }}),*/
   is_completed: DS.attr("boolean", {defaultValue: function(e){
     if(!e.get('bills').length) {
       return false;

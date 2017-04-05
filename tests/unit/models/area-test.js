@@ -17,35 +17,36 @@ moduleForModel('area', 'Unit | Model | area', {
     let promesa_1 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
                                                          'title':'title01',
-                                                         'study': study1,
+                                                         'study': study1,'coherenceLevel': 4,
                                                          'area': area1});
     let promesa_2 = this.store().createRecord('promise',{'content':'content02',
                                                                    'number':'2',
                                                                    'title':'title02',
-                                                                   'study': study1,
+                                                                   'study': study1,'coherenceLevel': 1,
                                                                    'area': area1});
    let bill_a = this.store().createRecord('bill',{'name':'name_a',
                                      'id':'ba',
                                      'title':'title01',
-                                     'fullfilment':'100%',
-                                     'coherenceLevel': 4
+                                     'fullfilment':'100%'
+                                     
                                     });
    this.store().createRecord('justification', {'promise': promesa_1, 'bill': bill_a});
    let bill_b = this.store().createRecord('bill',{'name':'name_b',
                                      'id':'bb',
                                      'title':'title02',
-                                     'fullfilment':'0%',
-                                     'coherenceLevel': 1});
+                                     'fullfilment':'0%'});
    this.store().createRecord('justification', {'promise': promesa_2, 'bill': bill_b});
 
    let promesa_11 = this.store().createRecord('promise',{'content':'content01',
                                                          'number':'1',
                                                          'title':'title01',
                                                          'study': study1,
+                                                         'coherenceLevel': 1,
                                                          'area': area2});
    let promesa_21 = this.store().createRecord('promise',{'content':'content02',
                                                          'number':'2',
                                                          'title':'title02',
+                                                         'coherenceLevel': 3,
                                                          'study': study1,
                                                          'area': area2});
 
@@ -53,14 +54,12 @@ moduleForModel('area', 'Unit | Model | area', {
                                      'id':'b1',
                                      'title':'title01',
                                      'fullfilment':'25%',
-                                     'coherenceLevel': 1,
                                      });
    this.store().createRecord('justification', {'promise': promesa_11, 'bill': bill1});
    let bill2 = this.store().createRecord('bill',{'name':'name02',
                                      'id':'b2',
                                      'title':'title02',
-                                     'fullfilment':'25%',
-                                     'coherenceLevel': 3});
+                                     'fullfilment':'25%'});
    this.store().createRecord('justification', {'promise': promesa_21, 'bill': bill2});
 
     let gov2 = this.store().createRecord('government', {'name': 'Piñera-2011-2014'});
@@ -74,35 +73,33 @@ moduleForModel('area', 'Unit | Model | area', {
                                                          'number':'1',
                                                          'title':'title01',
                                                          'study': study2,
+                                      'coherenceLevel': 4,
                                                          'area': area1});
     let promesa_4 = this.store().createRecord('promise',{'content':'content02',
                                                          'number':'2',
                                                          'title':'title02',
+                                      'coherenceLevel': 3,
                                                          'study': study2,
                                                          'area': area1});
 
     let bill3 = this.store().createRecord('bill',{'name':'name03',
                                      'id':'b3',
                                       'title':'title01',
-                                      'coherenceLevel': 4,
                                       'fullfilment':'100%'});
    this.store().createRecord('justification', {'promise': promesa_3, 'bill': bill3});
     let bill4 = this.store().createRecord('bill',{'name':'name04',
                                      'id':'b4',
                                       'title':'title02',
-                                      'coherenceLevel': 3,
                                       'fullfilment':'100%'});
    this.store().createRecord('justification', {'promise': promesa_3, 'bill': bill4});
     let bill5 = this.store().createRecord('bill',{'name':'name05',
                                      'id':'b5',
                                       'title':'title04',
-                                      'coherenceLevel': 3,
                                       'fullfilment':'100%'});
    this.store().createRecord('justification', {'promise': promesa_4, 'bill': bill5});
     let bill6 = this.store().createRecord('bill',{'name':'name06',
                                      'id':'b6',
                                       'title':'title05',
-                                      'coherenceLevel': 3,
                                       'fullfilment':'10%'});
    this.store().createRecord('justification', {'promise': promesa_4, 'bill': bill6});
 
@@ -153,7 +150,7 @@ test('area getCoherenceLevelByStudy', function(assert){
 
   assert.equal(data.area1.coherenceLevelByStudy(data.study1), 2.5, 'a');
   assert.equal(data.area2.coherenceLevelByStudy(data.study1), 2, 'b');
-  assert.equal(data.area1.coherenceLevelByStudy(data.study2), 3.3, 'c');
+  assert.equal(data.area1.coherenceLevelByStudy(data.study2), 3.5, 'c');
   assert.equal(data.area2.coherenceLevelByStudy(data.study2), 1, 'd');
 });
 
@@ -170,20 +167,21 @@ test("it calculates things of bills", function(assert){
   Ember.run.begin();
   let promesa_1 = this.store().createRecord('promise',{'content':'content01',
                                                        'number':'1',
+                                   'coherenceLevel': 4,
                                                        'title':'title01'});
   let promesa_2 = this.store().createRecord('promise',{'content':'content02',
                                                                  'number':'2',
+                                   'coherenceLevel': 1,
                                                                  'title':'title02'});
  let b1 = this.store().createRecord('bill',{'name':'name01',
                                    'title':'title01',
                                    'fullfilment':'100%',
-                                   'coherenceLevel': 4
                                   });
   this.store().createRecord('justification', {'promise': promesa_1,'bill': b1});
  let b2 = this.store().createRecord('bill',{'name':'name02',
                                    'title':'title02',
                                    'fullfilment':'0%',
-                                   'coherenceLevel': 1});
+                                   });
   this.store().createRecord('justification', {'promise': promesa_2,'bill': b2});
   Ember.run.end();
   let result_coherence = this.subject().getAverageFrom([promesa_1, promesa_2], 'coherenceLevel');
