@@ -171,11 +171,11 @@ export default DS.Model.extend(CalculationsMixin, {
         groupedPromises[a_id].summary.completed = study.getCompleted(a.promises);
         groupedPromises[a_id].summary.in_progress = study.getInProgress(a.promises);
         groupedPromises[a_id].summary.no_progress = study.getNoProgress(a.promises);
-        // console.log(a.promises.toArray().length, a_id);
         groupedPromises[a_id].summary.fullfilment = study.getAverageFrom(a.promises, 'fullfilment');
         groupedPromises[a_id].summary.coherenceLevel = study.getAverageFrom(a.promises, 'coherenceLevel');
       });
-      return groupedPromises;
+      
+      return _.sortBy(groupedPromises, function(o){return o.area.get('name');});
     }),
     getPromisesByArea: function(area){
       let promises = [];

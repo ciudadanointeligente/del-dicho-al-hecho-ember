@@ -366,19 +366,19 @@ test('getPromisesGroupedByArea', function(assert){
   let estudio = this.loadData(this.store()).estudio;
   let result = estudio.get('promisesGroupedByArea');
 
-  assert.equal(result.a1.area.get('id'), 'a1');
-  assert.equal(result.a1.promises.length, 2);
+  assert.equal(result[0].area.get('id'), 'a1');
+  assert.equal(result[0].promises.length, 2);
 
-  let p1 = _.find(result.a1.promises, function(promise){return promise.get('id') === '1';});
-  let p2 = _.find(result.a1.promises, function(promise){return promise.get('id') === '2';});
+  let p1 = _.find(result[0].promises, function(promise){return promise.get('id') === '1';});
+  let p2 = _.find(result[0].promises, function(promise){return promise.get('id') === '2';});
 
   assert.ok(p1);
   assert.ok(p2);
 
-  let p3 = _.find(result.a2.promises, function(promise){return promise.get('id') === '3';});
+  let p3 = _.find(result[1].promises, function(promise){return promise.get('id') === '3';});
 
-  assert.equal(result.a2.area.get('id'), 'a2');
-  assert.equal(result.a2.promises.length, 1);
+  assert.equal(result[1].area.get('id'), 'a2');
+  assert.equal(result[1].promises.length, 1);
   assert.ok(p3);
 
 });
@@ -388,21 +388,21 @@ test('getFullfilmentByArea', function(assert){
   let result = estudio.get('promisesGroupedByArea');
   let result2 = estudio2.get('promisesGroupedByArea');
 
-  assert.equal(result.a1.summary.completed, 1, 'a1 completed');
-  assert.equal(result.a1.summary.in_progress, 1,'a1 in_progress');
-  assert.equal(result2.a2.summary.completed, 0,'a2 completed');
-  assert.equal(result2.a2.summary.in_progress, 0,'a2 in_progress');
-  assert.equal(result2.a2.summary.no_progress, 2,'a2 no_progress');
+  assert.equal(result[0].summary.completed, 1, 'a1 completed');
+  assert.equal(result[0].summary.in_progress, 1,'a1 in_progress');
+  assert.equal(result2[1].summary.completed, 0,'a2 completed');
+  assert.equal(result2[1].summary.in_progress, 0,'a2 in_progress');
+  assert.equal(result2[1].summary.no_progress, 2,'a2 no_progress');
 
 
-  assert.equal(result.a1.summary.fullfilment, 60, 'a1 fullfilment');
-  assert.equal(result.a2.summary.fullfilment, 100, 'a1 fullfilment');
-  assert.equal(result2.a1.summary.fullfilment, 0, 'a1 fullfilment');
-  assert.equal(result2.a2.summary.fullfilment, 0, 'a1 fullfilment');
+  assert.equal(result[0].summary.fullfilment, 60, 'a1 fullfilment');
+  assert.equal(result[1].summary.fullfilment, 100, 'a1 fullfilment');
+  assert.equal(result2[0].summary.fullfilment, 0, 'a1 fullfilment');
+  assert.equal(result2[1].summary.fullfilment, 0, 'a1 fullfilment');
 
-  assert.equal(result.a1.summary.coherenceLevel, 3.5, 's1 a1 coherenceLevel');
-  assert.equal(result.a2.summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
-  assert.equal(result2.a1.summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
-  assert.equal(result2.a2.summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
+  assert.equal(result[0].summary.coherenceLevel, 3.5, 's1 a1 coherenceLevel');
+  assert.equal(result[1].summary.coherenceLevel, 4, 's1 a2 coherenceLevel');
+  assert.equal(result2[0].summary.coherenceLevel, 1, 's2 a1 coherenceLevel');
+  assert.equal(result2[1].summary.coherenceLevel, 1, 's2 a2 coherenceLevel');
 
 });
