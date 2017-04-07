@@ -1,0 +1,304 @@
+<h3 id="introduction">Introduction</h3>
+<p>A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the comparison of two data sets.</p>
+
+<div class="canvas-holder">
+	<canvas width="250" height="125"></canvas>
+</div>
+
+<h3 id="example-usage">Example Usage</h3>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myLineChart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">type</span><span class="p">:</span> <span class="s1">'line'</span><span class="p">,</span>
+	<span class="na">data</span><span class="p">:</span> <span class="nx">data</span><span class="p">,</span>
+	<span class="na">options</span><span class="p">:</span> <span class="nx">options</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>Alternatively a line chart can be created using syntax similar to the v1.0 syntax</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myLineChart</span> <span class="o">=</span> <span class="nx">Chart</span><span class="p">.</span><span class="nx">Line</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">data</span><span class="p">:</span> <span class="nx">data</span><span class="p">,</span>
+	<span class="na">options</span><span class="p">:</span> <span class="nx">options</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<h3 id="data-structure">Data Structure</h3>
+
+<p>The following options can be included in a line chart dataset to configure options for that specific dataset.</p>
+
+<p>All point* properties can be specified as an array. If these are set to an array value, the first value applies to the first point, the second value to the second point, and so on.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Type</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data</td>
+      <td>See <a href="#line-chart-data-points">data point</a> section</td>
+      <td>The data to plot in a line</td>
+    </tr>
+    <tr>
+      <td>label</td>
+      <td><code class="highlighter-rouge">String</code></td>
+      <td>The label for the dataset which appears in the legend and tooltips</td>
+    </tr>
+    <tr>
+      <td>xAxisID</td>
+      <td><code class="highlighter-rouge">String</code></td>
+      <td>The ID of the x axis to plot this dataset on</td>
+    </tr>
+    <tr>
+      <td>yAxisID</td>
+      <td><code class="highlighter-rouge">String</code></td>
+      <td>The ID of the y axis to plot this dataset on</td>
+    </tr>
+    <tr>
+      <td>fill</td>
+      <td><code class="highlighter-rouge">Boolean</code></td>
+      <td>If true, fill the area under the line</td>
+    </tr>
+    <tr>
+      <td>lineTension</td>
+      <td><code class="highlighter-rouge">Number</code></td>
+      <td>Bezier curve tension of the line. Set to 0 to draw straightlines. <em>Note</em> This was renamed from ‘tension’ but the old name still works.</td>
+    </tr>
+    <tr>
+      <td>backgroundColor</td>
+      <td><code class="highlighter-rouge">Color</code></td>
+      <td>The fill color under the line. See <a href="#getting-started-colors">Colors</a></td>
+    </tr>
+    <tr>
+      <td>borderWidth</td>
+      <td><code class="highlighter-rouge">Number</code></td>
+      <td>The width of the line in pixels</td>
+    </tr>
+    <tr>
+      <td>borderColor</td>
+      <td><code class="highlighter-rouge">Color</code></td>
+      <td>The color of the line.</td>
+    </tr>
+    <tr>
+      <td>borderCapStyle</td>
+      <td><code class="highlighter-rouge">String</code></td>
+      <td>Cap style of the line. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap">MDN</a></td>
+    </tr>
+    <tr>
+      <td>borderDash</td>
+      <td><code class="highlighter-rouge">Array&lt;Number&gt;</code></td>
+      <td>Length and spacing of dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash">MDN</a></td>
+    </tr>
+    <tr>
+      <td>borderDashOffset</td>
+      <td><code class="highlighter-rouge">Number</code></td>
+      <td>Offset for line dashes. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset">MDN</a></td>
+    </tr>
+    <tr>
+      <td>borderJoinStyle</td>
+      <td><code class="highlighter-rouge">String</code></td>
+      <td>Line joint style. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin">MDN</a></td>
+    </tr>
+    <tr>
+      <td>pointBorderColor</td>
+      <td><code class="highlighter-rouge">Color or Array&lt;Color&gt;</code></td>
+      <td>The border color for points.</td>
+    </tr>
+    <tr>
+      <td>pointBackgroundColor</td>
+      <td><code class="highlighter-rouge">Color or Array&lt;Color&gt;</code></td>
+      <td>The fill color for points</td>
+    </tr>
+    <tr>
+      <td>pointBorderWidth</td>
+      <td><code class="highlighter-rouge">Number or Array&lt;Number&gt;</code></td>
+      <td>The width of the point border in pixels</td>
+    </tr>
+    <tr>
+      <td>pointRadius</td>
+      <td><code class="highlighter-rouge">Number or Array&lt;Number&gt;</code></td>
+      <td>The radius of the point shape. If set to 0, nothing is rendered.</td>
+    </tr>
+    <tr>
+      <td>pointHoverRadius</td>
+      <td><code class="highlighter-rouge">Number or Array&lt;Number&gt;</code></td>
+      <td>The radius of the point when hovered</td>
+    </tr>
+    <tr>
+      <td>pointHitRadius</td>
+      <td><code class="highlighter-rouge">Number or Array&lt;Number&gt;</code></td>
+      <td>The pixel size of the non-displayed point that reacts to mouse events</td>
+    </tr>
+    <tr>
+      <td>pointHoverBackgroundColor</td>
+      <td><code class="highlighter-rouge">Color or Array&lt;Color&gt;</code></td>
+      <td>Point background color when hovered</td>
+    </tr>
+    <tr>
+      <td>pointHoverBorderColor</td>
+      <td><code class="highlighter-rouge">Color or Array&lt;Color&gt;</code></td>
+      <td>Point border color when hovered</td>
+    </tr>
+    <tr>
+      <td>pointHoverBorderWidth</td>
+      <td><code class="highlighter-rouge">Number or Array&lt;Number&gt;</code></td>
+      <td>Border width of point when hovered</td>
+    </tr>
+    <tr>
+      <td>pointStyle</td>
+      <td><code class="highlighter-rouge">String, Array&lt;String&gt;, Image, Array&lt;Image&gt;</code></td>
+      <td>The style of point. Options are ‘circle’, ‘triangle’, ‘rect’, ‘rectRot’, ‘cross’, ‘crossRot’, ‘star’, ‘line’, and ‘dash’. If the option is an image, that image is drawn on the canvas using <code class="highlighter-rouge">drawImage</code>.</td>
+    </tr>
+    <tr>
+      <td>showLine</td>
+      <td><code class="highlighter-rouge">Boolean</code></td>
+      <td>If false, the line is not drawn for this dataset</td>
+    </tr>
+    <tr>
+      <td>spanGaps</td>
+      <td><code class="highlighter-rouge">Boolean</code></td>
+      <td>If true, lines will be drawn between points with no or null data</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>An example data object using these attributes is shown below.</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">labels</span><span class="p">:</span> <span class="p">[</span><span class="s2">"January"</span><span class="p">,</span> <span class="s2">"February"</span><span class="p">,</span> <span class="s2">"March"</span><span class="p">,</span> <span class="s2">"April"</span><span class="p">,</span> <span class="s2">"May"</span><span class="p">,</span> <span class="s2">"June"</span><span class="p">,</span> <span class="s2">"July"</span><span class="p">],</span>
+	<span class="na">datasets</span><span class="p">:</span> <span class="p">[</span>
+		<span class="p">{</span>
+			<span class="na">label</span><span class="p">:</span> <span class="s2">"My First dataset"</span><span class="p">,</span>
+			<span class="na">fill</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+			<span class="na">lineTension</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+			<span class="na">backgroundColor</span><span class="p">:</span> <span class="s2">"rgba(75,192,192,0.4)"</span><span class="p">,</span>
+			<span class="na">borderColor</span><span class="p">:</span> <span class="s2">"rgba(75,192,192,1)"</span><span class="p">,</span>
+			<span class="na">borderCapStyle</span><span class="p">:</span> <span class="s1">'butt'</span><span class="p">,</span>
+			<span class="na">borderDash</span><span class="p">:</span> <span class="p">[],</span>
+			<span class="na">borderDashOffset</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+			<span class="na">borderJoinStyle</span><span class="p">:</span> <span class="s1">'miter'</span><span class="p">,</span>
+			<span class="na">pointBorderColor</span><span class="p">:</span> <span class="s2">"rgba(75,192,192,1)"</span><span class="p">,</span>
+			<span class="na">pointBackgroundColor</span><span class="p">:</span> <span class="s2">"#fff"</span><span class="p">,</span>
+			<span class="na">pointBorderWidth</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+			<span class="na">pointHoverRadius</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+			<span class="na">pointHoverBackgroundColor</span><span class="p">:</span> <span class="s2">"rgba(75,192,192,1)"</span><span class="p">,</span>
+			<span class="na">pointHoverBorderColor</span><span class="p">:</span> <span class="s2">"rgba(220,220,220,1)"</span><span class="p">,</span>
+			<span class="na">pointHoverBorderWidth</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+			<span class="na">pointRadius</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+			<span class="na">pointHitRadius</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+			<span class="na">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
+			<span class="na">spanGaps</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+		<span class="p">}</span>
+	<span class="p">]</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+
+<p>The line chart usually requires an array of labels. This labels are shown on the X axis. There must be one label for each data point. More labels than datapoints are allowed, in which case the line ends at the last data point.
+The data for line charts is broken up into an array of datasets. Each dataset has a colour for the fill, a colour for the line and colours for the points and strokes of the points. These colours are strings just like CSS. You can use RGBA, RGB, HEX or HSL notation.</p>
+
+<p>The label key on each dataset is optional, and can be used when generating a scale for the chart.</p>
+
+<p>When <code class="highlighter-rouge">spanGaps</code> is set to true, the gaps between points in sparse datasets are filled in. By default, it is off.</p>
+
+<h3 id="data-points">Data Points</h3>
+
+<p>The data passed to the chart can be passed in two formats. The most common method is to pass the data array as an array of numbers. In this case, the <code class="highlighter-rouge">data.labels</code> array must be specified and must contain a label for each point or, in the case of labels to be displayed over multiple lines an array of labels (one for each line) i.e <code class="highlighter-rouge">[["June","2015"], "July"]</code>.</p>
+
+<p>The alternate is used for sparse datasets. Data is specified using an object containing <code class="highlighter-rouge">x</code> and <code class="highlighter-rouge">y</code> properties. This is used for scatter charts as documented below.</p>
+
+<h3 id="scatter-line-charts">Scatter Line Charts</h3>
+
+<p>Scatter line charts can be created by changing the X axis to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties. The example below creates a scatter chart with 3 points.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">scatterChart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">type</span><span class="p">:</span> <span class="s1">'line'</span><span class="p">,</span>
+	<span class="na">data</span><span class="p">:</span> <span class="p">{</span>
+		<span class="na">datasets</span><span class="p">:</span> <span class="p">[{</span>
+			<span class="na">label</span><span class="p">:</span> <span class="s1">'Scatter Dataset'</span><span class="p">,</span>
+			<span class="na">data</span><span class="p">:</span> <span class="p">[{</span>
+				<span class="na">x</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span>
+				<span class="na">y</span><span class="p">:</span> <span class="mi">0</span>
+			<span class="p">},</span> <span class="p">{</span>
+				<span class="na">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+				<span class="na">y</span><span class="p">:</span> <span class="mi">10</span>
+			<span class="p">},</span> <span class="p">{</span>
+				<span class="na">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+				<span class="na">y</span><span class="p">:</span> <span class="mi">5</span>
+			<span class="p">}]</span>
+		<span class="p">}]</span>
+	<span class="p">},</span>
+	<span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+		<span class="na">scales</span><span class="p">:</span> <span class="p">{</span>
+			<span class="na">xAxes</span><span class="p">:</span> <span class="p">[{</span>
+				<span class="na">type</span><span class="p">:</span> <span class="s1">'linear'</span><span class="p">,</span>
+				<span class="na">position</span><span class="p">:</span> <span class="s1">'bottom'</span>
+			<span class="p">}]</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<h3 id="chart-options">Chart Options</h3>
+
+<p>These are the customisation options specific to Line charts. These options are merged with the <a href="#chart-configuration-global-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>showLines</td>
+      <td>Boolean</td>
+      <td>true</td>
+      <td>If false, the lines between points are not drawn</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can override these for your <code class="highlighter-rouge">Chart</code> instance by passing a member <code class="highlighter-rouge">options</code> into the <code class="highlighter-rouge">Line</code> method.</p>
+
+<p>For example, we could have a line chart display without an X axis by doing the following. The config merge is smart enough to handle arrays so that you do not need to specify all axis settings to change one thing.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">type</span><span class="p">:</span> <span class="s1">'line'</span><span class="p">,</span>
+	<span class="na">data</span><span class="p">:</span> <span class="nx">data</span><span class="p">,</span>
+	<span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+		<span class="na">scales</span><span class="p">:</span> <span class="p">{</span>
+			<span class="na">xAxes</span><span class="p">:</span> <span class="p">[{</span>
+				<span class="na">display</span><span class="p">:</span> <span class="kc">false</span>
+			<span class="p">}]</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>We can also change these defaults values for each Line type that is created, this object is available at <code class="highlighter-rouge">Chart.defaults.line</code>.</p>
+
+<h3 id="stacked-charts">Stacked Charts</h3>
+
+<p>Stacked area charts can be created by setting the Y axis to a stacked configuration. The following example would have stacked lines.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">stackedLine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">type</span><span class="p">:</span> <span class="s1">'line'</span><span class="p">,</span>
+	<span class="na">data</span><span class="p">:</span> <span class="nx">data</span><span class="p">,</span>
+	<span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+		<span class="na">scales</span><span class="p">:</span> <span class="p">{</span>
+			<span class="na">yAxes</span><span class="p">:</span> <span class="p">[{</span>
+				<span class="na">stacked</span><span class="p">:</span> <span class="kc">true</span>
+			<span class="p">}]</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+</div>
