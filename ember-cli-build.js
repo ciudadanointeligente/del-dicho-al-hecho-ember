@@ -6,7 +6,8 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     fingerprint:{
       'extensions': ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg']
-    }
+    },
+    prepend: 'del-dicho-al-hecho-ember/'
     // Add options here
   });
 
