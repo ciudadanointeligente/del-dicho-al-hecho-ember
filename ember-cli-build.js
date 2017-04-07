@@ -1,9 +1,14 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var config = require('./config/environment');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    fingerprint:{
+      'extensions': ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg']
+    },
+    prepend: config().rootURL
     // Add options here
   });
 

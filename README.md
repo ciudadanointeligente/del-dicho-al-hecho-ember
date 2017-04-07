@@ -41,7 +41,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Se sube a un GitHub Pages relindo y se hace así:
+
+```npm run deploy```
+
+y luego debemos hacer algo así como esto:
+
+```git push origin gh-pages```
+
+Y tamos
 
 ## Further Reading / Useful Links
 

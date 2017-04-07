@@ -149,7 +149,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ddah-jekyll/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/del-dicho-al-hecho-ember/';
   }
 
   return ENV;
