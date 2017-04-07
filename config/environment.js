@@ -149,7 +149,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/ddah-jekyll/';
   }
 
   return ENV;

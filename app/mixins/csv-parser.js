@@ -7,7 +7,7 @@ export default Ember.Mixin.create({
 
   parseCsv(file_name){
     this._parseStudiesGovernment(this.store);
-    return this._parseCsv("/studies/" + file_name, this.store);
+    return this._parseCsv(config.rootURL + "studies/" + file_name, this.store);
   },
 
   _uploadPhases(store){
@@ -168,7 +168,7 @@ export default Ember.Mixin.create({
                   return true;
                 }
               }
-              
+
               return false;
             });
           });
@@ -191,7 +191,7 @@ export default Ember.Mixin.create({
   _parseCsv(file_name, store, study){
     let _parseAttributes = this._parseAttributes;
     if (_.isNil(file_name)){
-      file_name = '/studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
+      file_name = config.rootURL + 'studies/' + study.get('government').get('name') + '_' + study.get('version') + '-' + study.get('year') + '.csv';
     }
     _parseAttributes = _parseAttributes.bind(this);
     let result = this._otroCsv(file_name, study).then(function(resultado){
