@@ -14,9 +14,9 @@ test('visting a study that does\'n exist', function(assert){
 });
 
 test('visiting a valid study', function(assert){
-    visit("/study/bachelet-2014-2018_marzo-2016");
+    visit("/study/mishelle-bashelet_marzo-2017");
 
   andThen(function(){
-    assert.equal(currentURL(), '/study/bachelet-2014-2018_marzo-2016');
+    assert.equal(currentURL(), '/study/mishelle-bashelet_marzo-2017');
   });
 });
