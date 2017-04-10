@@ -16,6 +16,9 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
 
     _.forEach(studies_name , function(st){
       let study = store.peekAll('study').findBy('slug', st);
+      if(_.isUndefined(study)){
+        this.transitionTo("/404");
+      }
       let file_name = config.rootURL + study.get('filename');
       studies.push(file_name);
     });
