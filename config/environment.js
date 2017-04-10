@@ -1,5 +1,3 @@
-/* jshint node: true */
-
 var governments =[{
 	"name": "Mishelle Bashelet",
 	"years": "2014-2018",
@@ -112,7 +110,7 @@ module.exports = function(environment) {
     ]
   };
   var phases = {
-    'columnName': 'nombre avance',
+    'columnName': 'nombre_avance',
     "phases":[
     {
       'name': 'Primer Tramite',
