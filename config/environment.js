@@ -1,6 +1,6 @@
 var governments =[{
 	"name": "Mishelle Bashelet",
-	"years": "2014-2018",
+	"years": {'start': 2014, 'end': 2018},
 	"color": "#FF00FF",
 	"studies": [{
 		"type": "Programa",
@@ -26,7 +26,7 @@ var governments =[{
 	}]
 }, {
 	"name": "Sebastián Piñera",
-	"years": "2010-2014",
+	"years": {'start': 2010, 'end': 2014},
 	"color": "#FFAA00",
 	"studies": [{
 		"type": "Programa",

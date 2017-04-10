@@ -25,7 +25,15 @@
             {{/each}}
           </ul>
         </li>
-        <li>{{#link-to "compare-studies" "bachelet-2014-2018_Marzo-2017~piñera-2010-2014_Marzo-2013"}}Comparar estudios{{/link-to}}</li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparar Programa Año a Año<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {{#each compareUrls.Programa as |comparison|}}
+            <li>{{#link-to "compare-studies" comparison.url}} {{comparison.study1.government.name }} {{comparison.study1.version}} {{comparison.study1.year}} con {{comparison.study2.government.name}} {{comparison.study2.version}} {{comparison.study2.year}} {{/link-to}}</li>
+            {{/each}}
+          </ul>
+        </li>
+
       </ul>
     </div>
   </div>

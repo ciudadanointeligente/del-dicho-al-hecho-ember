@@ -8,5 +8,9 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     this._parseStudiesGovernment(this.store);
     return this.get('store').peekAll('government');
   },
+  setupController: function(controller, model) {
+    controller.set('model', model);
+    controller.setCompareUrls(model);
+  }
 
 });
