@@ -15,6 +15,8 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
       filenames.push( s.get('filename') );
     });
 
-    return this._arrayparseCsv(filenames,this.store);
+    return this._arrayparseCsv(filenames,this.store).then(function(){
+      return gov;
+    });
   }
 });

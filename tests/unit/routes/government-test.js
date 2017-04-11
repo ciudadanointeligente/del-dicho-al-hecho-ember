@@ -22,13 +22,13 @@ test('visiting a returns one government', function(assert){
   // Aquí hago como que le pido la url
   // localhost:4200/government/mishelle-bashelet
   let params = {'slug': 'mishelle-bashelet'};
-  route.model(params).then(function(model){
+  route.model(params).then(function(government){
     // Me debo asegurar que el metodo model() retorna la instancia del gobierno
     // además me debo asegurar que vienen todos procesados con
     // promesas y bills y toda la cacha de la espada.
-    assert.ok(model.studies);
-    assert.equal(model.government.get('slug'), params.slug);
-    model.studies.forEach(function(study){
+    assert.ok(government.get('studies'));
+    assert.equal(government.get('slug'), params.slug);
+    government.get('studies').forEach(function(study){
       assert.ok(study.get('promises').toArray().length);
       assert.equal(study.get('government').get('slug'), params.slug);
     });
