@@ -3,11 +3,10 @@ import moduleForAcceptance from 'ddah-ember/tests/helpers/module-for-acceptance'
 
 moduleForAcceptance('Acceptance | government');
 
-test('visiting /government', function(assert) {
-  visit('/government/mishelle-bashelet');
+test('visiting /government with wrong gov returns 404', function(assert) {
+  visit('/government/perrito');
 
   andThen(function() {
-    assert.equal(currentURL(), '/government/mishelle-bashelet');
-    assert.equal(find('.govs').length, 1);
+    assert.equal(currentURL(), '/404');
   });
 });
