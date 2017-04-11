@@ -29,7 +29,7 @@ test('visiting a returns one government', function(assert){
     assert.ok(studies);
     studies.forEach(function(study){
       assert.ok(study.get('promises').toArray().length);
-      assert.equal(study.get('gov').get('slug'), params.slug);
+      assert.equal(study.get('government').get('slug'), params.slug);
     });
   });
 
