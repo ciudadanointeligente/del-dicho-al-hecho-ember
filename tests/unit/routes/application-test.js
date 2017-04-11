@@ -238,7 +238,7 @@ test("it has studies and government", function(assert){
   assert.ok(gov.toArray().length > 0);
   assert.ok(gov.toArray()[0].get('id'), 'Gobierno tiene id');
 
-  let idGov = route._hashCode('Bachelet-2014-2018');
+  let idGov = route._hashCode('Mishelle Bashelet');
   assert.ok(studies.toArray()[0].get('government'));
   assert.equal(idGov, studies.toArray()[0].get('government').get('id'));
 
@@ -391,13 +391,29 @@ test("model return government", function(assert){
 test("_arrayparseCsv", function(assert){
   assert.expect(2);
   var store = this.store;
-  var config_studies = [
-      "Bachelet-2014-2018_Marzo-2015",
-      "Bachelet-2014-2018_Marzo-2016",
-    ];
-  this.subject()._parseStudiesGovernment(store, config_studies);
-  return this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
-                                "/studies/test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(studies){
+  var config_governments =[{
+  	"name": "Mishelle Bashelet",
+  	"years": "2014-2018",
+  	"color": "#FF00FF",
+  	"studies": [{
+  		"type": "Programa",
+  		"img": "/img/bashelet-en-el-avion.svg",
+  		"year": 2016,
+  		"version": "marzo",
+  		"name": "Bachelet-2014-2018_Marzo-2016",
+      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
+  	}, {
+  		"type": "Programa",
+  		"img": "/img/bashelet-con-la-fiera.svg",
+  		"year": 2015,
+  		"version": "marzo",
+  		"name": "Bachelet-2014-2018_Marzo-2015",
+  		"filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
+  	}]
+  }];
+  this.subject()._parseStudiesGovernment(store, config_governments);
+  return this.subject()._arrayparseCsv(["test/Bachelet-2014-2018_Marzo-2015.csv",
+                                "test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(studies){
     assert.ok(studies.toArray()[0].get('promises').toArray().length > 0);
     assert.ok(studies.toArray()[1].get('promises').toArray().length > 0);
   });
@@ -409,11 +425,27 @@ test("parses a single area", function(assert){
 
 
 
-    var config_studies = [
-        "Bachelet-2014-2018_Marzo-2015",
-        "Bachelet-2014-2018_Marzo-2016",
-      ];
-    this.subject()._parseStudiesGovernment(store, config_studies);
+  var config_governments =[{
+    "name": "Mishelle Bashelet",
+    "years": "2014-2018",
+    "color": "#FF00FF",
+    "studies": [{
+      "type": "Programa",
+      "img": "/img/bashelet-en-el-avion.svg",
+      "year": 2016,
+      "version": "marzo",
+      "name": "Bachelet-2014-2018_Marzo-2016",
+      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
+    }, {
+      "type": "Programa",
+      "img": "/img/bashelet-con-la-fiera.svg",
+      "year": 2015,
+      "version": "marzo",
+      "name": "Bachelet-2014-2018_Marzo-2015",
+      "filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
+    }]
+  }];
+    this.subject()._parseStudiesGovernment(store, config_governments);
 
 
     let assertions = function(){
@@ -422,8 +454,8 @@ test("parses a single area", function(assert){
         assert.equal(areas.length, 1);
       };
       let bound_runner = Ember.run.bind(this, runner);
-    this.subject()._arrayparseCsv(["/studies/test/Bachelet-2014-2018_Marzo-2015.csv",
-                                 "/studies/test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(bound_runner);
+    this.subject()._arrayparseCsv(["test/Bachelet-2014-2018_Marzo-2015.csv",
+                                 "test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(bound_runner);
   };
 
 

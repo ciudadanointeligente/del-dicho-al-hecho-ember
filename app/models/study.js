@@ -8,9 +8,10 @@ export default DS.Model.extend(CalculationsMixin, {
     year: DS.attr('number'),
     promises: DS.hasMany('promise'),
     government: DS.belongsTo('government'),
+    filename: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
-      return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).toLowerCase();
+      return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
       },
     }),
     fullName: Ember.computed('version', 'year', function() {
@@ -174,7 +175,7 @@ export default DS.Model.extend(CalculationsMixin, {
         groupedPromises[a_id].summary.fullfilment = study.getAverageFrom(a.promises, 'fullfilment');
         groupedPromises[a_id].summary.coherenceLevel = study.getAverageFrom(a.promises, 'coherenceLevel');
       });
-      
+
       return _.sortBy(groupedPromises, function(o){return o.area.get('name');});
     }),
     getPromisesByArea: function(area){

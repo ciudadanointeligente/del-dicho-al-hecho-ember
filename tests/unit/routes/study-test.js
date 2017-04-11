@@ -17,14 +17,28 @@ test('it exists', function(assert) {
 test("returns one study based on URL", function(assert){
   assert.expect(1);
   let route = this.subject();
-  let params = {
-    study_name: "bachelet-2014-2018_marzo-2016"
-  };
+
+  var config_governments =[{
+  	"name": "Mishelle Bashelet",
+  	"years": "2014-2018",
+  	"color": "#FF00FF",
+  	"studies": [{
+  		"type": "Programa",
+  		"img": "/img/bashelet-en-el-avion.svg",
+  		"year": 2016,
+  		"version": "marzo",
+  		"name": "Bachelet-2014-2018_Marzo-2016",
+      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
+  	}]
+  }];
   Ember.run.begin();
-  route._parseStudiesGovernment(this.store);
+  route._parseStudiesGovernment(this.store, config_governments);
   Ember.run.end();
+  let params = {
+    study_name: "mishelle-bashelet_marzo-2016"
+  };
   return route.model(params).then(function(study){
-    assert.equal(study.get('version'), "Marzo");
+    assert.equal(study.get('version'), "marzo");
   });
 
 });
@@ -34,10 +48,14 @@ test("study exists and has promises", function(assert){
   let route = this.subject();
   Ember.run.begin();
   let gov = route.get("store").createRecord("government", {"name": "Bachelet-2014-2018"});
-  route.get("store").createRecord("study", {"version": "Marzo", "year": 2016, "government": gov, "id": 1});
+  let s1 = route.get("store").createRecord("study", {"version": "Marzo",
+   "filename": "test/Bachelet-2014-2018_Marzo-2016.csv",
+   "year": 2016,
+   "government": gov,
+   "id": 1});
   Ember.run.end();
   let params = {
-    study_name: "bachelet-2014-2018_marzo-2016",
+    study_name: s1.get('slug')
   };
   return route.model(params).then(function(study){
     let st = study.get('promises').toArray();

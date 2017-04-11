@@ -1,5 +1,49 @@
-/* jshint node: true */
-
+var governments =[{
+	"name": "Mishelle Bashelet",
+	"years": {'start': 2014, 'end': 2018},
+	"color": "#FF00FF",
+	"studies": [{
+		"type": "Programa",
+		"img": "/img/bashelet-en-el-barquito.svg",
+		"year": 2017,
+		"version": "marzo",
+		"name": "Bachelet-2014-2018_Marzo-2017",
+    "filename": "Bachelet-2014-2018_Marzo-2017.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/bashelet-en-el-avion.svg",
+		"year": 2016,
+		"version": "marzo",
+		"name": "Bachelet-2014-2018_Marzo-2016",
+    "filename": "Bachelet-2014-2018_Marzo-2016.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"year": 2015,
+		"version": "marzo",
+		"name": "Bachelet-2014-2018_Marzo-2015",
+		"filename": "Bachelet-2014-2018_Marzo-2015.csv"
+	}]
+}, {
+	"name": "Sebastián Piñera",
+	"years": {'start': 2010, 'end': 2014},
+	"color": "#FFAA00",
+	"studies": [{
+		"type": "Programa",
+		"img": "/img/pinera-en-el-auto.svg",
+		"year": 2013,
+		"version": "marzo",
+		"name": "Piñera-2010-2014_Marzo-2013",
+		"filename": "Piñera-2010-2014_Marzo-2013.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"year": 2012,
+		"version": "marzo",
+		"name": "Piñera-2010-2014_Marzo-2012",
+		"filename": "Piñera-2010-2014_Marzo-2012.csv"
+	}]
+}];
 module.exports = function(environment) {
   var matcher = {
     'area': {
@@ -49,15 +93,6 @@ module.exports = function(environment) {
       ]
     }
   };
-  var studies = {
-    studies: [
-      "Bachelet-2014-2018_Marzo-2017",
-      "Bachelet-2014-2018_Marzo-2016",
-      "Bachelet-2014-2018_Marzo-2015",
-      "Piñera-2010-2014_Marzo-2013",
-      "Piñera-2010-2014_Marzo-2012",
-    ]
-  };
   var priorities = {
     'priorities': [
       {
@@ -75,7 +110,7 @@ module.exports = function(environment) {
     ]
   };
   var phases = {
-    'columnName': 'nombre avance',
+    'columnName': 'nombre_avance',
     "phases":[
     {
       'name': 'Primer Tramite',
@@ -110,7 +145,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
-    studies: studies,
+    governments: governments,
+    government_length: 4,
+    comparable_with_other_gov: 'Programa',
     priorities: priorities,
     phases: phases,
     environment: environment,
@@ -133,7 +170,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true; 2014-2018
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 

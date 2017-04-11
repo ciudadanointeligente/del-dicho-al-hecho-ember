@@ -206,7 +206,6 @@ export default Ember.Mixin.create({
     let studies = [];
 
     _parseAttributes = _parseAttributes.bind(this);
-    let hashCode = this._hashCode;
 
     Ember.run.begin();
     return new Ember.RSVP.Promise(function(resolve, reject){
@@ -214,10 +213,12 @@ export default Ember.Mixin.create({
       var data = [];
       var count = 1;
       _.forEach(file_names, function(fn){
-        let id = hashCode(fn.split('_')[1].split('-')[0] + fn.split('_')[1].split('-')[1].split('.')[0]);
-        let study = store.peekRecord('study', id);
+        if(_.startsWith(fn, config.rootURL)){
+          fn = fn.replace(config.rootURL, '');
+        }
+        let study = store.peekAll('study').findBy('filename', fn);
         studies.push(study);
-        PapaParse.parse(fn, {
+        PapaParse.parse('/studies/' + fn, {
           download: true,
           header:true,
           skipEmptyLines:true,
@@ -225,8 +226,8 @@ export default Ember.Mixin.create({
             _.forEach(results.data, function(value) {
               let data_per_row = _parseAttributes(value, study);
               data = _.concat(data, data_per_row);
-            });
 
+            });
 
             if(count === file_names.length){
               resultado = {
@@ -258,34 +259,37 @@ export default Ember.Mixin.create({
     });
   },
 
-  _parseStudiesGovernment(store){
+  _parseStudiesGovernment(store, config_governments){
+    if(_.isUndefined(config_governments)){
+      config_governments = config.governments;
+    }
     this._uploadPhases(store);
 
     let _hashCode = this._hashCode;
     Ember.run.begin();
 
-    _.forEach(config.studies['studies'], function(key){
-      let arrayGS = key.split('_');
-      let version = arrayGS[1].split('-')[0];
-      let year = arrayGS[1].split('-')[1];
-      let name = arrayGS[0];
+    _.forEach(config_governments, function(government){
+      let name = government.name;
 
-      if (store.peekRecord('government', _hashCode(name)) == null) {
-        store.createRecord('government', {
+      let gov = store.peekRecord('government', _hashCode(name));
+      if (!gov) {
+        gov = store.createRecord('government', {
           name: name,
           id: _hashCode(name),
         });
       }
 
-      let gov = store.peekRecord('government', _hashCode(name));
 
-      let study = store.createRecord('study', {
-        version: version,
-        year: year,
-        id: _hashCode(version+year),
+      _.forEach(government.studies, function(study_obj){
+          let study = store.createRecord('study', {
+            version: study_obj.version,
+            year: study_obj.year,
+            filename: study_obj.filename,
+            id: _hashCode(study_obj.version + study_obj.year),
+          });
+
+          gov.get('studies').pushObject(study);
       });
-
-      gov.get('studies').pushObject(study);
     });
 
     Ember.run.end();
