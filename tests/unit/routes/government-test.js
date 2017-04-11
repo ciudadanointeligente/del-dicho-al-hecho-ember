@@ -2,7 +2,12 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:government', 'Unit | Route | government', {
   // Specify the other units that are required for this test.
-  needs: ['model:government', 'model:justification']
+  needs: ['model:promise', 'model:area', 'model:study', 'model:government',
+          'model:bill', 'model:phase', 'model:priority', 'model:justification',
+          'route:application'],
+  beforeEach: function(){
+    this.inject.service('store');
+  }
 });
 
 test('it exists', function(assert) {
@@ -10,8 +15,21 @@ test('it exists', function(assert) {
   assert.ok(route);
 });
 
-test('it has gov model', function(assert){
+test('visiting a returns one government', function(assert){
   let route = this.subject();
-  let govs = route.model();
-  assert.ok(govs);
+  // Primero creo el gobierno.
+  route._parseStudiesGovernment(this.store);
+  // Aquí hago como que le pido la url
+  // localhost:4200/government/mishelle-bashelet
+  let params = {'slug': 'mishelle-bashelet'};
+  let gov = route.model(params);
+  assert.equal(gov.get('slug'), params.slug);
+  // Me debo asegurar que el metodo model() retorna la instancia del gobierno
+  // además me debo asegurar que vienen todos procesados con
+  // promesas y bills y toda la cacha de la espada.
+  assert.ok(gov.get('studies').toArray().length);
+  let studies = gov.get('studies');
+  studies.forEach(function(study){
+    assert.ok(study.get('promises').toArray().length);
+  });
 });
