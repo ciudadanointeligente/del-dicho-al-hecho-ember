@@ -22,14 +22,15 @@ test('visiting a returns one government', function(assert){
   // Aquí hago como que le pido la url
   // localhost:4200/government/mishelle-bashelet
   let params = {'slug': 'mishelle-bashelet'};
-  let gov = route.model(params);
-  assert.equal(gov.get('slug'), params.slug);
-  // Me debo asegurar que el metodo model() retorna la instancia del gobierno
-  // además me debo asegurar que vienen todos procesados con
-  // promesas y bills y toda la cacha de la espada.
-  assert.ok(gov.get('studies').toArray().length);
-  let studies = gov.get('studies');
-  studies.forEach(function(study){
-    assert.ok(study.get('promises').toArray().length);
+  route.model(params).then(function(studies){
+    // Me debo asegurar que el metodo model() retorna la instancia del gobierno
+    // además me debo asegurar que vienen todos procesados con
+    // promesas y bills y toda la cacha de la espada.
+    assert.ok(studies);
+    studies.forEach(function(study){
+      assert.ok(study.get('promises').toArray().length);
+      assert.equal(study.get('gov').get('slug'), params.slug);
+    });
   });
+
 });
