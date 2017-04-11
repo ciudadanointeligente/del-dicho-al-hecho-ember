@@ -146,6 +146,8 @@ module.exports = function(environment) {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
     governments: governments,
+    government_length: 4,
+    comparable_with_other_gov: 'Programa',
     priorities: priorities,
     phases: phases,
     environment: environment,

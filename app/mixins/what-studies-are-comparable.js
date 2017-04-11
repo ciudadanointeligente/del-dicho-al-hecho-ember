@@ -1,21 +1,19 @@
 import Ember from 'ember';
 import _ from 'lodash';
+import config from '../config/environment';
 
-
-let comparable_with_other_gov = 'Programa';
-let government_length = 4;
 
 export default Ember.Mixin.create({
   isComparable: function(study){
-    return study.type === comparable_with_other_gov;
+    return study.type === config.comparable_with_other_gov;
   },
   determinePreviousStudy: function(study){
-    return study.year - government_length;
+    return study.year - config.government_length;
   },
   comparableStudies: function(govs){
     govs = _.sortBy(govs, function(g){ return g.years.start; });
     let result = {
-      'version': comparable_with_other_gov,
+      'version': config.comparable_with_other_gov,
       'studies': []
     };
     let determinePreviousStudy = this.determinePreviousStudy;
