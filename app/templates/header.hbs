@@ -31,6 +31,10 @@
             {{#each compareUrls.Programa as |comparison|}}
             <li>{{#link-to "compare-studies" comparison.url}} {{comparison.study1.government.name }} {{comparison.study1.version}} {{comparison.study1.year}} con {{comparison.study2.government.name}} {{comparison.study2.version}} {{comparison.study2.year}} {{/link-to}}</li>
             {{/each}}
+            <li role="separator" class="divider"></li>
+            {{#each model as |gov|}}
+            <li>{{#link-to "government" gov.slug }} {{gov.name}} Gobierno Completo{{/link-to}}</li>
+            {{/each}}
           </ul>
         </li>
 

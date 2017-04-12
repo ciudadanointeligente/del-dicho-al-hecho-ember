@@ -12,10 +12,12 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('it has attributes', function(assert){
+test('it has attributes like name and slug', function(assert){
     let government = this.subject({'name': 'Bachelet 2014-2018'});
     assert.equal(government.get('name'), 'Bachelet 2014-2018');
     assert.ok(Ember.guidFor(government));
+    assert.equal(government.toJSON().name, 'Bachelet 2014-2018');
+    assert.ok(government.toJSON().slug);
 });
 
 test("gov has many studies", function(assert){

@@ -1,9 +1,15 @@
 
+
+
+
+<h1>{{model.name}}</h1>
 <ul class='govs'>
-{{#each model as |gov|}}
-  <li>{{gov.name}}</li>
+
+{{#each model.studies as |study|}}
+  <li>{{study.version}} - {{study.year}}</li>
 {{/each}}
 </ul>
 
+<h2>{{model.name}}</h2>
 
 {{outlet}}

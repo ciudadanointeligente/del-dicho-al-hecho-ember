@@ -226,13 +226,13 @@ export default Ember.Mixin.create({
             _.forEach(results.data, function(value) {
               let data_per_row = _parseAttributes(value, study);
               data = _.concat(data, data_per_row);
-
             });
 
             if(count === file_names.length){
               resultado = {
                 data: data,
               };
+
               if(resultado) {
                 if(!_.isNil(store)){
                   store.pushPayload(resultado);
@@ -254,7 +254,6 @@ export default Ember.Mixin.create({
           }
         });
       });
-
 
     });
   },
