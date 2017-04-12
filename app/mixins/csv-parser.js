@@ -225,7 +225,16 @@ export default Ember.Mixin.create({
           complete: function(results){
             _.forEach(results.data, function(value) {
               let data_per_row = _parseAttributes(value, study);
-              data = _.concat(data, data_per_row);
+              //data = _.concat(data, data_per_row);
+              data = _.unionWith(data, data_per_row, function(a, b){
+                if(a.type===b.type && a.type === 'promise' && a.id===b.id){
+                  if(a.id === b.id){
+                    return true;
+                  }
+                }
+
+                return false;
+              });
             });
 
             if(count === file_names.length){
