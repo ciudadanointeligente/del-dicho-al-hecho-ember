@@ -13,3 +13,110 @@
 <h2>{{model.name}}</h2>
 
 {{outlet}}
+
+<h3>Cumplimiento y Coherencia</h3>
+<table class="table">
+  <thead>
+    <tr>
+    {{#each model.studies as |study|}}
+      <th>{{study.year}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each model.studies as |study|}}
+      <td>
+        <li>fullfilment: {{study.fullfilment}}</li>
+        <li>coherence: {{study.coherenceLevel}}</li>
+      </td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>
+
+<h3>Proyectos enviados</h3>
+<table class="table">
+  <thead>
+    <tr>
+    {{#each model.studies as |study|}}
+      <th>{{study.year}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each model.studies as |study|}}
+      <td>
+        {{study.billsCount}}
+      </td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>
+
+<h3>Promesas que presentan algún tipo de avance</h3>
+<table class="table">
+  <thead>
+    <tr>
+    {{#each model.studies as |study|}}
+      <th>{{study.year}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each model.studies as |study|}}
+      <td>
+        {{#each-in study.promisesGroupedByArea as |area_id a|}}
+          <li>{{a.area.name}} - {{a.promises.length}} promesa(s)<br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso)</li>
+        {{/each-in}}
+      </td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>
+
+<h3>Capacidad</h3>
+<table class="table">
+  <thead>
+    <tr>
+    {{#each model.studies as |study|}}
+      <th>{{study.year}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each model.studies as |study|}}
+      <td>
+        {{study.capacity}}
+      </td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>
+
+<h3>Areas</h3>
+<table class="table">
+  <thead>
+    <tr>
+    {{#each model.studies as |study|}}
+      <th>{{study.year}}</th>
+    {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    {{#each model.studies as |study|}}
+      <td>
+      {{#each-in study.promisesGroupedByArea as |area_id a|}}
+        <li>
+          {{a.area.name}} - {{a.summary.fullfilment}}%
+        </li>
+      {{/each-in}}
+      </td>
+    {{/each}}
+    </tr>
+  </tbody>
+</table>
