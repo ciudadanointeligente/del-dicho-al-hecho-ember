@@ -2,11 +2,11 @@ var governments =[{
 	"name": "Mishelle Bashelet",
 	"years": {'start': 2014, 'end': 2018},
 	"color": "#FF00FF",
-  "in_landing": true,
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
 		"year": 2017,
+		"in_landing": true,
 		"version": "marzo",
 		"name": "Bachelet-2014-2018_Marzo-2017",
     "filename": "Bachelet-2014-2018_Marzo-2017.csv"
