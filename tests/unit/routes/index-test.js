@@ -26,7 +26,7 @@ test('/ route model() returns a study', function(assert) {
     "id": 2});
   Ember.run.end();
 
-  route.model().then(function(study){
-    assert.equal(study.get('id'), s1.get('id'));
-  });
+  let study = route.model();
+
+  assert.equal(study.get('id'), s1.get('id'));
 });
