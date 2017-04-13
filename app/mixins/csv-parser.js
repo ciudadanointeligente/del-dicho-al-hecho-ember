@@ -289,10 +289,16 @@ export default Ember.Mixin.create({
 
 
       _.forEach(government.studies, function(study_obj){
+          let in_land = false;
+          if(!_.isUndefined(study_obj.in_landing) && study_obj.in_landing){
+            in_land = true;
+          }
+
           let study = store.createRecord('study', {
             version: study_obj.version,
             year: study_obj.year,
             filename: study_obj.filename,
+            in_landing: in_land,
             id: _hashCode(study_obj.version + study_obj.year),
           });
 

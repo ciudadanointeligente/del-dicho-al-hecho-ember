@@ -15,7 +15,7 @@ test('it exists', function(assert) {
 });
 
 test("returns one study based on URL", function(assert){
-  assert.expect(1);
+  assert.expect(2);
   let route = this.subject();
 
   var config_governments =[{
@@ -28,7 +28,8 @@ test("returns one study based on URL", function(assert){
   		"year": 2016,
   		"version": "marzo",
   		"name": "Bachelet-2014-2018_Marzo-2016",
-      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
+      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv",
+      "in_landing": true
   	}]
   }];
   Ember.run.begin();
@@ -39,6 +40,7 @@ test("returns one study based on URL", function(assert){
   };
   return route.model(params).then(function(study){
     assert.equal(study.get('version'), "marzo");
+    assert.ok(study.get('in_landing'), "in_landing");
   });
 
 });

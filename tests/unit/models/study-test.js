@@ -96,6 +96,7 @@ test('it has attributes', function(assert){
     assert.equal(estudio_json.version, 'marzo');
     assert.equal(estudio_json.year, 2016);
     assert.equal(estudio_json.filename, 'mishelle-bashelet_marzo-2017.csv');
+    assert.equal(estudio_json.in_landing, false);
 });
 
 test("study has many promises", function(assert){

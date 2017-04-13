@@ -1,13 +1,12 @@
 import Ember from 'ember';
-// import PapaParse from 'npm:papaparse';
+import CsvParserMixin from 'ddah-ember/mixins/csv-parser';
+import UtilitiesMixin from 'ddah-ember/mixins/utilities';
+import config from '../config/environment';
 
-export default Ember.Route.extend({
-  // beforeModel(){
-  //   PapaParse.parse("/DDAHMarzo2016.csv", {
-  //     download: true,
-  //     complete: function(results){
-  //       // console.log(results);
-  //     }
-  //   });
-  // }
+export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
+  model(){
+    let study = this.store.peekAll('study').findBy('in_landing');
+    let file_name =config.rootURL +  'studies/' + study.get('filename');
+    return this._parseCsv(file_name, this.store, study);
+  }
 });
