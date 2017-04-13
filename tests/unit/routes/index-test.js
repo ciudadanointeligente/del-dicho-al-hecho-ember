@@ -8,6 +8,13 @@ moduleFor('route:index', 'Unit | Route | index', {
   }
 });
 
+test("beforeModel loads governments and stuff", function(assert){
+  let route = this.subject();
+  route.beforeModel();
+  let govs = this.store.peekAll('government');
+  assert.ok(govs.toArray().length);
+});
+
 test('/ route model() returns a study', function(assert) {
   let route = this.subject();
 
