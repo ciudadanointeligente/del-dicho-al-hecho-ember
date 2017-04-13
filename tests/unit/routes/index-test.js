@@ -23,7 +23,7 @@ test('/ route model() returns a study', function(assert) {
     "filename": "test/Bachelet-2014-2018_Marzo-2016.csv",
     "year": 2016,
     "government": gov,
-    "id": 1});
+    "id": 2});
   Ember.run.end();
 
   route.model().then(function(study){
