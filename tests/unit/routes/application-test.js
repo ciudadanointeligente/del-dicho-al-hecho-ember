@@ -238,7 +238,7 @@ test("it has studies and government", function(assert){
   assert.ok(gov.toArray().length > 0);
   assert.ok(gov.toArray()[0].get('id'), 'Gobierno tiene id');
 
-  let idGov = route._hashCode('Mishelle Bashelet');
+  let idGov = route._hashCode('Michelle Bachelet');
   assert.ok(studies.toArray()[0].get('government'));
   assert.equal(idGov, studies.toArray()[0].get('government').get('id'));
 

@@ -21,7 +21,7 @@ test('visiting a returns one government', function(assert){
   route._parseStudiesGovernment(this.store);
   // Aquí hago como que le pido la url
   // localhost:4200/government/mishelle-bashelet
-  let params = {'slug': 'mishelle-bashelet'};
+  let params = {'slug': 'michelle-bachelet'};
   route.model(params).then(function(government){
     // Me debo asegurar que el metodo model() retorna la instancia del gobierno
     // además me debo asegurar que vienen todos procesados con
