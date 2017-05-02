@@ -1,5 +1,5 @@
 var governments =[{
-	"name": "Mishelle Bashelet",
+	"name": "Michelle Bachelet",
 	"years": {'start': 2014, 'end': 2018},
 	"color": "#FF00FF",
 	"studies": [{
