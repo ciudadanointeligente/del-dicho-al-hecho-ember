@@ -220,7 +220,6 @@ export default Ember.Mixin.create({
 
         let study = store.peekAll('study').findBy('filename', fn_without_root);
         studies.push(study);
-        console.log(config.rootURL + 'studies/' + fn_without_root);
         PapaParse.parse(config.rootURL + 'studies/' + fn_without_root, {
           download: true,
           header:true,
