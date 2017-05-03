@@ -24,6 +24,7 @@ export default Ember.Mixin.create({
   },
 
   _parseAttributes(data_csv, study){
+    console.log('perrito');
     let _hashCode = this._hashCode;
     let data = [];
     let keys = Object.keys(config.matcher);
@@ -46,8 +47,11 @@ export default Ember.Mixin.create({
           if(_.isUndefined(id_from_csv) || _.includes(keys_that_can_be_empty, key)){
             id_from_csv = String(_.random(0,1, true) * 10000);
           }
-
           if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
+            if(_.isUndefined(data_csv[value.fieldToGetIdFrom])){
+              console.log('manso error con el campo ' + value.fieldToGetIdFrom);
+              return false;
+            }
             if(!data_csv[value.fieldToGetIdFrom].trim().length){
               return false;
             }

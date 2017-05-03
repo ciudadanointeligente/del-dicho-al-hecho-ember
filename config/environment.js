@@ -5,25 +5,39 @@ var governments =[{
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"year": 2017,
-		"in_landing": true,
+		"year": 2015,
 		"version": "marzo",
-		"name": "Bachelet-2014-2018_Marzo-2017",
-    "filename": "Bachelet-2014-2018_Marzo-2017.csv"
+		"name": "Bachelet-2014-2018_Programa-2015.csv",
+    "filename": "Bachelet-2014-2018_Programa-2015.csv"
 	}, {
-		"type": "Programa",
+		"type": "Discurso",
 		"img": "/img/bashelet-en-el-avion.svg",
-		"year": 2016,
-		"version": "marzo",
-		"name": "Bachelet-2014-2018_Marzo-2016",
-    "filename": "Bachelet-2014-2018_Marzo-2016.csv"
+		"year": 2015,
+		"version": "mayo",
+		"name": "Bachelet-2014-2018_Discurso-2015",
+    "filename": "Bachelet-2014-2018_Discurso-2015.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"year": 2015,
+		"year": 2016,
 		"version": "marzo",
-		"name": "Bachelet-2014-2018_Marzo-2015",
-		"filename": "Bachelet-2014-2018_Marzo-2015.csv"
+		"name": "Bachelet-2014-2018_Programa-2016",
+		"filename": "Bachelet-2014-2018_Programa-2016.csv"
+	}, {
+		"type": "Discurso",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"year": 2016,
+		"version": "Mayo",
+		"name": "Bachelet-2014-2018_Discurso-2016.csv",
+		"filename": "Bachelet-2014-2018_Discurso-2016.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"year": 2017,
+		"in_landing": true,
+		"version": "Marzo",
+		"name": "Bachelet-2014-2018_Programa-2017.csv",
+		"filename": "Bachelet-2014-2018_Programa-2017.csv"
 	}]
 }, {
 	"name": "Sebastián Piñera",
@@ -32,17 +46,38 @@ var governments =[{
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
-		"year": 2013,
+		"year": 2012,
 		"version": "marzo",
-		"name": "Piñera-2010-2014_Marzo-2013",
-		"filename": "Piñera-2010-2014_Marzo-2013.csv"
+		"name": "Piñera-2010-2014_Programa-2012",
+		"filename": "Piñera-2010-2014_Programa-2012.csv"
+	}, {
+		"type": "Discurso",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"year": 2013,
+		"version": "Mayo",
+		"name": "Piñera-2010-2014_Discurso-2013",
+		"filename": "Piñera-2010-2014_Discurso-2013.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"year": 2012,
+		"year": 2013,
 		"version": "marzo",
-		"name": "Piñera-2010-2014_Marzo-2012",
-		"filename": "Piñera-2010-2014_Marzo-2012.csv"
+		"name": "Piñera-2010-2014_Programa-2013",
+		"filename": "Piñera-2010-2014_Programa-2013.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"year": 2014,
+		"version": "marzo",
+		"name": "Piñera-2010-2014_Programa-2014",
+		"filename": "Piñera-2010-2014_Programa-2014.csv"
+	}, {
+		"type": "Discurso",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"year": 2013,
+		"version": "marzo",
+		"name": "Piñera-2010-2014_Discurso-2014",
+		"filename": "Piñera-2010-2014_Discurso-2014.csv"
 	}]
 }];
 module.exports = function(environment) {
