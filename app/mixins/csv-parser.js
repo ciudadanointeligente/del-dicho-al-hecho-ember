@@ -213,12 +213,14 @@ export default Ember.Mixin.create({
       var data = [];
       var count = 1;
       _.forEach(file_names, function(fn){
+        let fn_without_root = fn;
         if(_.startsWith(fn, config.rootURL)){
-          fn = fn.replace(config.rootURL, '');
+          fn_without_root = fn.replace(config.rootURL, '');
         }
-        let study = store.peekAll('study').findBy('filename', fn);
+
+        let study = store.peekAll('study').findBy('filename', fn_without_root);
         studies.push(study);
-        PapaParse.parse('/studies/' + fn, {
+        PapaParse.parse(config.rootURL + 'studies/' + fn, {
           download: true,
           header:true,
           skipEmptyLines:true,
