@@ -24,7 +24,6 @@ export default Ember.Mixin.create({
   },
 
   _parseAttributes(data_csv, study){
-    console.log('perrito');
     let _hashCode = this._hashCode;
     let data = [];
     let keys = Object.keys(config.matcher);
@@ -50,7 +49,6 @@ export default Ember.Mixin.create({
           if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
             if(_.isUndefined(data_csv[value.fieldToGetIdFrom])){
               console.log('manso error con el campo ' + value.fieldToGetIdFrom);
-              return false;
             }
             if(!data_csv[value.fieldToGetIdFrom].trim().length){
               return false;
@@ -277,15 +275,15 @@ export default Ember.Mixin.create({
     if(_.isUndefined(config_governments)){
       config_governments = config.governments;
     }
+    let govs = [];
     this._uploadPhases(store);
 
     let _hashCode = this._hashCode;
-    Ember.run.begin();
-
     _.forEach(config_governments, function(government){
       let name = government.name;
 
       let gov = store.peekRecord('government', _hashCode(name));
+      //
       if (!gov) {
         gov = store.createRecord('government', {
           name: name,
@@ -310,8 +308,9 @@ export default Ember.Mixin.create({
 
           gov.get('studies').pushObject(study);
       });
+      govs.push(gov);
     });
 
-    Ember.run.end();
+    return govs;
   }
 });

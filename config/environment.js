@@ -74,8 +74,8 @@ var governments =[{
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"year": 2013,
-		"version": "marzo",
+		"year": 2014,
+		"version": "mayo",
 		"name": "Piñera-2010-2014_Discurso-2014",
 		"filename": "Piñera-2010-2014_Discurso-2014.csv"
 	}]
@@ -96,7 +96,7 @@ module.exports = function(environment) {
       'jc-why': 'jn_porque',
       'coherence-level': 'coherencia',
       'id': {
-        'fieldToGetIdFrom': 'id'
+        'fieldToGetIdFrom': 'uid'
       },
       'relationships':[
         "area"
