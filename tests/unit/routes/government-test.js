@@ -1,4 +1,5 @@
 import { moduleFor, test } from 'ember-qunit';
+import Ember from 'ember';
 
 moduleFor('route:government', 'Unit | Route | government', {
   // Specify the other units that are required for this test.
@@ -18,7 +19,29 @@ test('it exists', function(assert) {
 test('visiting a returns one government', function(assert){
   let route = this.subject();
   // Primero creo el gobierno.
-  route._parseStudiesGovernment(this.store);
+  var config_governments =[{
+    "name": "Michelle Bachelet",
+    "years": "2014-2018",
+    "color": "#FF00FF",
+    "studies": [{
+      "type": "Programa",
+      "img": "/img/bashelet-en-el-avion.svg",
+      "year": 2016,
+      "version": "marzo",
+      "name": "Bachelet-2014-2018_Marzo-2016",
+      "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
+    }, {
+      "type": "Programa",
+      "img": "/img/bashelet-con-la-fiera.svg",
+      "year": 2015,
+      "version": "marzo",
+      "name": "Bachelet-2014-2018_Marzo-2015",
+      "filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
+    }]
+  }];
+  Ember.run.begin();
+  route._parseStudiesGovernment(route.store, config_governments);
+  Ember.run.end();
   // Aquí hago como que le pido la url
   // localhost:4200/government/mishelle-bashelet
   let params = {'slug': 'michelle-bachelet'};

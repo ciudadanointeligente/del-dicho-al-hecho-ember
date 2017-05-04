@@ -46,8 +46,10 @@ export default Ember.Mixin.create({
           if(_.isUndefined(id_from_csv) || _.includes(keys_that_can_be_empty, key)){
             id_from_csv = String(_.random(0,1, true) * 10000);
           }
-
           if (typeof study !== 'undefined' && (key === 'promise' || key === 'bill' )){
+            if(_.isUndefined(data_csv[value.fieldToGetIdFrom])){
+              console.log('manso error con el campo ' + value.fieldToGetIdFrom);
+            }
             if(!data_csv[value.fieldToGetIdFrom].trim().length){
               return false;
             }
@@ -220,8 +222,7 @@ export default Ember.Mixin.create({
 
         let study = store.peekAll('study').findBy('filename', fn_without_root);
         studies.push(study);
-        console.log(config.rootURL + 'studies/' + fn);
-        PapaParse.parse(config.rootURL + 'studies/' + fn, {
+        PapaParse.parse(config.rootURL + 'studies/' + fn_without_root, {
           download: true,
           header:true,
           skipEmptyLines:true,
@@ -274,15 +275,15 @@ export default Ember.Mixin.create({
     if(_.isUndefined(config_governments)){
       config_governments = config.governments;
     }
+    let govs = [];
     this._uploadPhases(store);
 
     let _hashCode = this._hashCode;
-    Ember.run.begin();
-
     _.forEach(config_governments, function(government){
       let name = government.name;
 
       let gov = store.peekRecord('government', _hashCode(name));
+      //
       if (!gov) {
         gov = store.createRecord('government', {
           name: name,
@@ -307,8 +308,9 @@ export default Ember.Mixin.create({
 
           gov.get('studies').pushObject(study);
       });
+      govs.push(gov);
     });
 
-    Ember.run.end();
+    return govs;
   }
 });

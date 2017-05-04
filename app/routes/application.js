@@ -5,8 +5,7 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
   model() {
-    this._parseStudiesGovernment(this.store);
-    return this.get('store').peekAll('government');
+    return this._parseStudiesGovernment(this.store);
   },
   setupController: function(controller, model) {
     controller.set('model', model);
