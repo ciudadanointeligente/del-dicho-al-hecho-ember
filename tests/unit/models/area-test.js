@@ -30,7 +30,7 @@ moduleForModel('area', 'Unit | Model | area', {
                                      'fullfilment':'100%'
                                      
                                     });
-   this.store().createRecord('justification', {'promise': promesa_1, 'bill': bill_a});
+   let justification1 = this.store().createRecord('justification', {'promise': promesa_1, 'bill': bill_a});
    let bill_b = this.store().createRecord('bill',{'name':'name_b',
                                      'id':'bb',
                                      'title':'title02',
@@ -107,6 +107,8 @@ moduleForModel('area', 'Unit | Model | area', {
     return {"area1": area1,
             "area2": area2,
             "study1": study1,
+            "bill1": bill_a,
+            "justification1": justification1,
             "study2": study2};
   }
 });
@@ -153,7 +155,16 @@ test('area getCoherenceLevelByStudy', function(assert){
   assert.equal(data.area1.coherenceLevelByStudy(data.study2), 3.5, 'c');
   assert.equal(data.area2.coherenceLevelByStudy(data.study2), 1, 'd');
 });
+test('area getPoliticalWillByStudy', function(assert){
+  let data = this.loadData();
+  Ember.run.begin();
+  data.bill1.unloadRecord();
+  data.justification1.unloadRecord();
+  Ember.run.end();
+  assert.equal(data.area1.getPoliticalWillByStudy(data.study1), 1);
+  assert.equal(data.area2.getPoliticalWillByStudy(data.study1), 2);
 
+});
 test('area getCompletedPromisesByStudy', function(assert){
 
   let data = this.loadData();

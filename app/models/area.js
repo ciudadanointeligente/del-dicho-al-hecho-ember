@@ -14,6 +14,17 @@ export default DS.Model.extend(CalculationsMixin, {
       let promises = this.getPromisesPerStudy(study);
       return this.getAverageFrom(promises, 'fullfilment');
     },
+    getPoliticalWillByStudy: function(study){
+      let promises = this.getPromisesPerStudy(study);
+      let count = 0;
+      promises.forEach(function(p){
+        if(p.get('justifications').get('length') > 0){
+          count += 1;
+        }
+      });
+      return count;
+
+    },
     coherenceLevelByStudy: function(study){
       let promises = this.getPromisesPerStudy(study);
       return this.getAverageFrom(promises, 'coherenceLevel');
