@@ -64,6 +64,7 @@ test("promise has many bills and an area", function(assert){
   Ember.run.end();
 
   let assertions = function(){
+    Ember.run.begin();
     this.subject()._parseCsv("/studies/test/Bachelet-2014-2018_Marzo-2016.csv", store,estudio).then(function(){
       let expected_promise = store.peekAll('promise').toArray().findBy('number', 26);
       let bill = store.peekAll('bill').toArray().findBy('name', '9069-07' );
@@ -80,6 +81,7 @@ test("promise has many bills and an area", function(assert){
       assert.equal(estudio.get('urgenciesCount'), 42);
       done();
     });
+    Ember.run.end();
   };
 
   Ember.run.bind(this, assertions)();
@@ -131,7 +133,7 @@ test('matches csv with model attributes', function(assert){
   let route = this.subject();
 
   let row_from_csv = {
-  	"id": "1",
+  	"uid": "1",
   	"Ano": "2016",
   	"Version": "mayo",
   	"area": "Democracia",
@@ -190,7 +192,7 @@ test('doesnt return anything', function(assert){
   let route = this.subject();
 
   let row_from_csv = {
-  	"id": "",
+  	"uid": "",
   	"Ano": "",
   	"Version": "",
   	"area": "",
@@ -231,7 +233,9 @@ test('doesnt return anything', function(assert){
 test("it has studies and government", function(assert){
   let route = this.subject();
   var store = this.store;
+  Ember.run.begin();
   route._parseStudiesGovernment(store);
+  Ember.run.end();
   let studies = store.peekAll('study');
   assert.ok(studies.toArray().length > 0);
   let gov = store.peekAll('government');
@@ -249,7 +253,7 @@ test('creates id even if where to get id from', function(assert){
   let route = this.subject();
 
   let row_from_csv = {
-  	"id": "1",
+  	"uid": "1",
   	"Ano": "2016",
   	"Version": "mayo",
   	"area": "Democracia",
@@ -293,7 +297,7 @@ test('if there is a bill but no justification_explanation create one anyways', f
   let route = this.subject();
 
   let row_from_csv = {
-  	"id": "1",
+  	"uid": "1",
   	"Ano": "2016",
   	"Version": "mayo",
   	"area": "Democracia",
@@ -334,7 +338,7 @@ test('if there is no bill then no justification either', function(assert){
   let route = this.subject();
 
   let row_from_csv = {
-  	"id": "1",
+  	"uid": "1",
   	"Ano": "2016",
   	"Version": "mayo",
   	"area": "Democracia",
@@ -384,7 +388,9 @@ test("it has phases with fullfilment", function(assert){
 });
 
 test("model return government", function(assert){
+  Ember.run.begin();
   let gov = this.subject().model();
+  Ember.run.end();
   assert.ok(gov.toArray().length > 0);
 });
 
@@ -411,7 +417,9 @@ test("_arrayparseCsv", function(assert){
   		"filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
   	}]
   }];
+  Ember.run.begin();
   this.subject()._parseStudiesGovernment(store, config_governments);
+  Ember.run.end();
   return this.subject()._arrayparseCsv(["test/Bachelet-2014-2018_Marzo-2015.csv",
                                 "test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(studies){
     assert.ok(studies.toArray()[0].get('promises').toArray().length > 0);
@@ -445,8 +453,9 @@ test("parses a single area", function(assert){
       "filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
     }]
   }];
+  Ember.run.begin();
     this.subject()._parseStudiesGovernment(store, config_governments);
-
+  Ember.run.end();
 
     let assertions = function(){
       let runner = function(){

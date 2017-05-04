@@ -90,7 +90,7 @@ module.exports = function(environment) {
     },
     'promise': {
       'content': 'promesa',
-      'number': 'id',
+      'number': 'uid',
       'title': 'titulo',
       'ja-why': 'ja_porque',
       'jc-why': 'jn_porque',

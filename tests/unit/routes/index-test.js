@@ -9,6 +9,7 @@ moduleFor('route:index', 'Unit | Route | index', {
 });
 
 test('/ route model() returns a study', function(assert) {
+  assert.expect(2);
   let route = this.subject();
 
   Ember.run.begin();
@@ -26,7 +27,7 @@ test('/ route model() returns a study', function(assert) {
     "id": 2});
   Ember.run.end();
 
-  route.model().then(function(study){
+  return route.model().then(function(study){
     assert.equal(study.get('id'), s1.get('id'));
     assert.ok(study.get('promises').toArray().length);
   });

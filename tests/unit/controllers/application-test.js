@@ -17,7 +17,9 @@ moduleFor('controller:application', 'Unit | Controller | application', {
 test('it exists', function(assert) {
   let CsvParserMixinObject = Ember.Object.extend(CsvParserMixin, UtilitiesMixin);
   let objeto = CsvParserMixinObject.create();
+  Ember.run.begin();
   objeto._parseStudiesGovernment(this.store);
+  Ember.run.end();
   let governments = this.store.peekAll('government');
   let controller = this.subject(governments);
   controller.setCompareUrls(governments);
