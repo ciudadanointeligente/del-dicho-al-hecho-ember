@@ -17,3 +17,5 @@ npm-debug.log
 testem.log
 *.swp
 .DS_Store
+_site
+.jekyll-metadata
