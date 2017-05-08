@@ -427,46 +427,38 @@ test("_arrayparseCsv", function(assert){
   });
 });
 
+
 test("parses a single area", function(assert){
   assert.expect(1);
   var store = this.store;
-
-
-
   var config_governments =[{
-    "name": "Mishelle Bashelet",
-    "years": "2014-2018",
-    "color": "#FF00FF",
-    "studies": [{
-      "type": "Programa",
-      "img": "/img/bashelet-en-el-avion.svg",
-      "year": 2016,
-      "version": "marzo",
-      "name": "Bachelet-2014-2018_Marzo-2016",
+  	"name": "Mishelle Bashelet",
+  	"years": "2014-2018",
+  	"color": "#FF00FF",
+  	"studies": [{
+  		"type": "Programa",
+  		"img": "/img/bashelet-en-el-avion.svg",
+  		"year": 2016,
+  		"version": "marzo",
+  		"name": "Bachelet-2014-2018_Marzo-2016",
       "filename": "test/Bachelet-2014-2018_Marzo-2015.csv"
-    }, {
-      "type": "Programa",
-      "img": "/img/bashelet-con-la-fiera.svg",
-      "year": 2015,
-      "version": "marzo",
-      "name": "Bachelet-2014-2018_Marzo-2015",
-      "filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
-    }]
+  	}, {
+  		"type": "Programa",
+  		"img": "/img/bashelet-con-la-fiera.svg",
+  		"year": 2015,
+  		"version": "marzo",
+  		"name": "Bachelet-2014-2018_Marzo-2015",
+  		"filename": "test/Bachelet-2014-2018_Marzo-2016.csv"
+  	}]
   }];
   Ember.run.begin();
-    this.subject()._parseStudiesGovernment(store, config_governments);
+  this.subject()._parseStudiesGovernment(store, config_governments);
   Ember.run.end();
-
-    let assertions = function(){
-      let runner = function(){
-        let areas = store.peekAll('area').toArray().filterBy('name', "Agricultura");
-        assert.equal(areas.length, 1);
-      };
-      let bound_runner = Ember.run.bind(this, runner);
-    this.subject()._arrayparseCsv(["test/Bachelet-2014-2018_Marzo-2015.csv",
-                                 "test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(bound_runner);
-  };
-
-
-  Ember.run.bind(this, assertions)();
+  return this.subject()._arrayparseCsv(["test/Bachelet-2014-2018_Marzo-2015.csv",
+                                "test/Bachelet-2014-2018_Marzo-2016.csv"], store).then(function(){
+      Ember.run.begin();
+      let areas = store.peekAll('area').toArray().filterBy('name', "Agricultura");
+      Ember.run.end();
+      assert.equal(areas.length, 1);
+  });
 });

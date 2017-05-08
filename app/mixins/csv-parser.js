@@ -2,12 +2,55 @@ import Ember from 'ember';
 import PapaParse from 'npm:papaparse';
 import _ from 'lodash';
 import config from '../config/environment';
+import RSVP from 'rsvp';
+
+
 let keys_that_can_be_empty = ['justification'];
+
+let whenToUnion = function(a, b){
+  if(a.type===b.type && a.type === 'promise' && a.id===b.id){
+    if(a.id === b.id){
+      return true;
+    }
+  }
+
+  return false;
+};
+
 export default Ember.Mixin.create({
 
   parseCsv(file_name){
     this._parseStudiesGovernment(this.store);
     return this._parseCsv(config.rootURL + "studies/" + file_name, this.store);
+  },
+  papaparseCsv(filename, study){
+    let _parseAttributes = this._parseAttributes;
+    _parseAttributes = _parseAttributes.bind(this);
+    return new Ember.RSVP.Promise(function(resolve, reject){
+      PapaParse.parse(filename, {
+        download: true,
+        header:true,
+        skipEmptyLines:true,
+        complete: function(results){
+          var data = [];
+          _.forEach(results.data, function(value) {
+            let data_per_row = _parseAttributes(value, study);
+            data = _.unionWith(data, data_per_row, whenToUnion);
+          });
+          let resultado = {
+            "data": data,
+          };
+          if(resultado) {
+            resolve({"resultado":resultado, "study": study});
+          }
+          else {
+            reject("esto es un perrito");
+
+          }
+        }
+      });
+    });
+
   },
 
   _uploadPhases(store){
@@ -153,41 +196,8 @@ export default Ember.Mixin.create({
 
   },
   _otroCsv(filename,study){
-    let _parseAttributes = this._parseAttributes;
-    _parseAttributes = _parseAttributes.bind(this);
-    let papaparse_promise = new Ember.RSVP.Promise(function(resolve, reject){
-      PapaParse.parse(filename, {
-        download: true,
-        header:true,
-        skipEmptyLines:true,
-        complete: function(results){
-          var data = [];
-          _.forEach(results.data, function(value) {
-            let data_per_row = _parseAttributes(value, study);
-            data = _.unionWith(data, data_per_row, function(a, b){
-              if(a.type===b.type && a.type === 'promise' && a.id===b.id){
-                if(a.id === b.id){
-                  return true;
-                }
-              }
 
-              return false;
-            });
-          });
-          let resultado = {
-            "data": data,
-          };
-          if(resultado) {
-            resolve(resultado);
-          }
-          else {
-            reject("esto es un perrito");
-
-          }
-        }
-      });
-    });
-    return papaparse_promise;
+    return this.papaparseCsv(filename, study);
 },
 
   _parseCsv(file_name, store, study){
@@ -197,7 +207,7 @@ export default Ember.Mixin.create({
     }
     _parseAttributes = _parseAttributes.bind(this);
     let result = this._otroCsv(file_name, study).then(function(resultado){
-      store.pushPayload(resultado);
+      store.pushPayload(resultado.resultado);
       return study;
     });
     return result;
@@ -205,70 +215,36 @@ export default Ember.Mixin.create({
 
   _arrayparseCsv(file_names, store){
     let _parseAttributes = this._parseAttributes;
+    _parseAttributes = _parseAttributes.bind(this);
+    let papaparseCsv = this.papaparseCsv;
+    papaparseCsv = papaparseCsv.bind(this);
     let studies = [];
 
-    _parseAttributes = _parseAttributes.bind(this);
-
-    Ember.run.begin();
-    return new Ember.RSVP.Promise(function(resolve, reject){
-      var resultado;
-      var data = [];
-      var count = 1;
-      _.forEach(file_names, function(fn){
-        let fn_without_root = fn;
-        if(_.startsWith(fn, config.rootURL)){
-          fn_without_root = fn.replace(config.rootURL, '');
-        }
-
-        let study = store.peekAll('study').findBy('filename', fn_without_root);
-        studies.push(study);
-        PapaParse.parse(config.rootURL + 'studies/' + fn_without_root, {
-          download: true,
-          header:true,
-          skipEmptyLines:true,
-          complete: function(results){
-            _.forEach(results.data, function(value) {
-              let data_per_row = _parseAttributes(value, study);
-              //data = _.concat(data, data_per_row);
-              data = _.unionWith(data, data_per_row, function(a, b){
-                if(a.type===b.type && a.type === 'promise' && a.id===b.id){
-                  if(a.id === b.id){
-                    return true;
-                  }
-                }
-
-                return false;
-              });
-            });
-
-            if(count === file_names.length){
-              resultado = {
-                data: data,
-              };
-
-              if(resultado) {
-                if(!_.isNil(store)){
-                  store.pushPayload(resultado);
-                }
-                resolve(studies);
-                Ember.run.end();
-
-              }
-              else {
-                reject("esto es un perrito");
-                Ember.run.end();
-              }
+    let parsing_promises = [];
 
 
-            } else {
-              count +=1;
-            }
+    _.forEach(file_names, function(fn){
+      let fn_without_root = fn;
+      if(_.startsWith(fn, config.rootURL)){
+        fn_without_root = fn.replace(config.rootURL, '');
+      }
 
-          }
-        });
-      });
-
+      let study = store.peekAll('study').findBy('filename', fn_without_root);
+      studies.push(study);
+      parsing_promises.push(papaparseCsv(config.rootURL + 'studies/' + fn_without_root, study));
     });
+
+    let _all = RSVP.allSettled(parsing_promises).then(function(array){
+      let _studies = [];
+      array.forEach(function(result){
+        store.pushPayload(result.value.resultado);
+        let s = store.peekRecord('study', result.value.study.get('id'));
+        _studies.push(s);
+      });
+      return _studies;
+      // Ember.run.end();
+    });
+    return _all;
   },
 
   _parseStudiesGovernment(store, config_governments){
