@@ -11,7 +11,7 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     }
     let filenames = [];
 
-    gov.get('studies').forEach(function(s){
+    gov.get('comparable').forEach(function(s){
       filenames.push( s.get('filename') );
     });
 

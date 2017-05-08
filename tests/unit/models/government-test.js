@@ -3,7 +3,7 @@ import Ember  from 'ember';
 
 moduleForModel('government', 'Unit | Model | government', {
   // Specify the other units that are required for this test.
-  needs: ['model:study']
+  needs: ['model:study', "model:promise", "model:government", "model:phase", "model:bill", "model:area", "model:priority", 'model:justification']
 });
 
 test('it exists', function(assert) {
@@ -26,4 +26,14 @@ test("gov has many studies", function(assert){
   let relationship = Ember.get(government, 'relationshipsByName').get('studies');
   assert.equal(relationship.key, 'studies');
   assert.equal(relationship.kind, 'hasMany');
+});
+test('government comparable studies', function(assert){
+    Ember.run.begin();
+    let government = this.subject({'name': 'Bachelet 2014-2018', 'color': 'red'});
+    let study1 = this.store().createRecord('study', {'version': 'marzo', 'year': '2016', 'government':government, 'type': 'Programa'});
+    this.store().createRecord('study', {'version': 'mayo', 'year': '2016', 'government':government, 'type': 'Discurso'});
+    Ember.run.end();
+    let comparable = government.get('comparable');
+    assert.equal(comparable.length, 1);
+    assert.equal(comparable.toArray()[0].get('id'), study1.get('id'));
 });

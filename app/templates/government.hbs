@@ -5,7 +5,7 @@
 <h1>{{model.name}}</h1>
 <ul class='govs'>
 
-{{#each model.studies as |study|}}
+{{#each model.comparable as |study|}}
   <li>{{study.version}} - {{study.year}}</li>
 {{/each}}
 </ul>
@@ -18,14 +18,14 @@
 <table class="table">
   <thead>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <th>{{study.year}}</th>
     {{/each}}
     </tr>
   </thead>
   <tbody>
     <tr>
-      {{#each model.studies as |study|}}
+      {{#each model.comparable as |study|}}
       <td>
         <li>fullfilment: {{study.fullfilment}}</li>
         <li>coherence: {{study.coherenceLevel}}</li>
@@ -39,14 +39,14 @@
 <table class="table">
   <thead>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <th>{{study.year}}</th>
     {{/each}}
     </tr>
   </thead>
   <tbody>
     <tr>
-      {{#each model.studies as |study|}}
+      {{#each model.comparable as |study|}}
       <td>
         {{study.billsCount}}
       </td>
@@ -59,14 +59,14 @@
 <table class="table">
   <thead>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <th>{{study.year}}</th>
     {{/each}}
     </tr>
   </thead>
   <tbody>
     <tr>
-      {{#each model.studies as |study|}}
+      {{#each model.comparable as |study|}}
       <td>
         {{#each-in study.promisesGroupedByArea as |area_id a|}}
           <li>{{a.area.name}} - {{a.promises.length}} promesa(s)<br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso)</li>
@@ -81,14 +81,14 @@
 <table class="table">
   <thead>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <th>{{study.year}}</th>
     {{/each}}
     </tr>
   </thead>
   <tbody>
     <tr>
-      {{#each model.studies as |study|}}
+      {{#each model.comparable as |study|}}
       <td>
         {{study.capacity}}
       </td>
@@ -101,14 +101,14 @@
 <table class="table">
   <thead>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <th>{{study.year}}</th>
     {{/each}}
     </tr>
   </thead>
   <tbody>
     <tr>
-    {{#each model.studies as |study|}}
+    {{#each model.comparable as |study|}}
       <td>
       {{#each-in study.promisesGroupedByArea as |area_id a|}}
         <li>
