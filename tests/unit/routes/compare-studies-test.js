@@ -14,6 +14,7 @@ test('it exists', function(assert) {
 });
 
 test("returns studies based on URL", function(assert){
+  assert.expect(1);
   let route = this.subject();
   let UtilitiesObject = Ember.Object.extend(UtilitiesMixin);
   let subject = UtilitiesObject.create();
@@ -36,7 +37,7 @@ test("returns studies based on URL", function(assert){
   let params = {
     studies: s1.get('slug') + "~" + s2.get('slug')
   };
-  route.model(params).then(function(studies){
+  return route.model(params).then(function(studies){
     assert.ok(studies.get('firstObject').get('promises').toArray().length > 0);
   });
 

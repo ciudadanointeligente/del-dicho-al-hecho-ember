@@ -45,7 +45,7 @@ test('visiting a returns one government', function(assert){
   // Aquí hago como que le pido la url
   // localhost:4200/government/mishelle-bashelet
   let params = {'slug': 'michelle-bachelet'};
-  route.model(params).then(function(government){
+  return route.model(params).then(function(government){
     // Me debo asegurar que el metodo model() retorna la instancia del gobierno
     // además me debo asegurar que vienen todos procesados con
     // promesas y bills y toda la cacha de la espada.
