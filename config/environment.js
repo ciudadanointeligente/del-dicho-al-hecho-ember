@@ -183,6 +183,7 @@ module.exports = function(environment) {
     matcher: matcher,
     governments: governments,
     government_length: 4,
+		useOnlyJsons: false,
     comparable_with_other_gov: 'Programa',
     priorities: priorities,
     phases: phases,

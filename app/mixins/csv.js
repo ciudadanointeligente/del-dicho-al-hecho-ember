@@ -19,28 +19,38 @@ let parser = {
     _parseAttributes = _parseAttributes.bind(this);
     let whenToUnion = this.whenToUnion;
     return new Ember.RSVP.Promise(function(resolve, reject){
-      PapaParse.parse(filename, {
-        download: true,
-        header:true,
-        skipEmptyLines:true,
-        complete: function(results){
-          var data = [];
-          _.forEach(results.data, function(value) {
-            let data_per_row = _parseAttributes(value, study);
-            data = _.unionWith(data, data_per_row, whenToUnion);
-          });
-          let resultado = {
-            "data": data,
-          };
-          if(resultado) {
-            resolve({"resultado":resultado, "study": study});
-          }
-          else {
-            reject("esto es un perrito");
+        if(config.useOnlyJsons){
 
-          }
+          Ember.$.getJSON('/json/'+study.get('slug') + '.json').then(function(r){
+            resolve({"resultado":r, "study": study});
+          });
+
         }
-      });
+      else {
+        PapaParse.parse(filename, {
+          download: true,
+          header:true,
+          skipEmptyLines:true,
+          complete: function(results){
+            var data = [];
+            _.forEach(results.data, function(value) {
+              let data_per_row = _parseAttributes(value, study);
+              data = _.unionWith(data, data_per_row, whenToUnion);
+            });
+            let resultado = {
+              "data": data,
+            };
+            if(resultado) {
+              resolve({"resultado":resultado, "study": study});
+            }
+            else {
+              reject("esto es un perrito");
+
+            }
+          }
+        });
+
+      }
     });
 
   },
