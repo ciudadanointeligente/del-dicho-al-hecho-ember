@@ -91,12 +91,19 @@ test('it exists', function(assert) {
 });
 
 test('it has attributes', function(assert){
-    let estudio = this.subject({'version': 'marzo', 'year': '2016', 'filename': 'mishelle-bashelet_marzo-2017.csv'});
+    let estudio = this.subject({'version': 'marzo',
+                                'year': '2016',
+                                'filename': 'mishelle-bashelet_marzo-2017.csv',
+                                'type': 'Programa',
+                                'image': 'perrito.svg'
+                              });
     let estudio_json = estudio.toJSON();
     assert.equal(estudio_json.version, 'marzo');
     assert.equal(estudio_json.year, 2016);
     assert.equal(estudio_json.filename, 'mishelle-bashelet_marzo-2017.csv');
     assert.equal(estudio_json.in_landing, false);
+    assert.equal(estudio_json.image, 'perrito.svg');
+    assert.equal(estudio_json.type, 'Programa');
 });
 
 test("study has many promises", function(assert){

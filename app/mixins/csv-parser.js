@@ -263,6 +263,7 @@ export default Ember.Mixin.create({
       if (!gov) {
         gov = store.createRecord('government', {
           name: name,
+          color: government.color,
           id: _hashCode(name),
         });
       }
@@ -279,6 +280,8 @@ export default Ember.Mixin.create({
             year: study_obj.year,
             filename: study_obj.filename,
             in_landing: in_land,
+            image: study_obj.img,
+            type: study_obj.type,
             id: _hashCode(study_obj.version + study_obj.year),
           });
 
