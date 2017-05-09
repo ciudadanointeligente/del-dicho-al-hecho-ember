@@ -132,12 +132,12 @@ export default DS.Model.extend(CalculationsMixin, {
               {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
-                      this.get("government").get("color"),
-                      "#36A2EB",
+                      this.get("government").get("color1"),
+                      this.get("government").get("color2"),
                   ],
                   hoverBackgroundColor: [
-                      "#FF6384",
-                      "#36A2EB",
+                      this.get("government").get("color3"),
+                      this.get("government").get("color4"),
                   ]
               }]
       };
