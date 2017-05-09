@@ -1,0 +1,1357 @@
+{
+  "data": [
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -275974028,
+      "attributes": {
+        "content": "Esperamos que este Congreso apruebe el nuevo Estatuto Laboral Agrícola, fruto de un amplio acuerdo, para proteger más y mejor a cerca de 800 mil compatriotas que laboran en el campo, y especialmente a las mujeres temporeras.",
+        "number": "1",
+        "title": "Crea nuevo Estatuto Laboral Agrícola",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1941783925,
+      "attributes": {
+        "content": "Próximamente enviaremos a este Congreso el proyecto de ley que crea el nuevo Ministerio de Agricultura, Pesca y Alimentos, para hacer de Chile una potencia agroalimentaria.",
+        "number": "2",
+        "title": "Crea nuevo ministerio de Agricultura, Pesca y Alimentos",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -135425418,
+      "attributes": {
+        "content": "Estamos impulsando la creación de una Carretera Eléctrica Pública, recientemente fue aprobada en general en el Senado, que fortalece el rol del Estado en la planificación, definición de trazados y otorgamiento de permisos para levantar líneas troncales de transmisión",
+        "number": "3",
+        "title": "Crea una Carretera Eléctrica Pública",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2082332535,
+      "attributes": {
+        "content": "También estamos ad portas de aprobar una reforma a la Ley de Concesiones Eléctricas, que simplificará los procedimientos y reducirá los tiempos para el otorgamiento de permisos para las líneas de transmisión, desde los casi 700 días actuales a tan sólo 150.",
+        "number": "4",
+        "title": "Reforma a la Ley de Concesiones Eléctricas",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 5123192,
+      "attributes": {
+        "content": "En junio enviaremos a este Congreso un proyecto de ley para avanzar en la interconexión de los Sistemas del Norte Grande y Central, lo que hará más robusto nuestro sistema eléctrico, introducirá más competencia, y favorecerá el ingreso de fuentes alternativas a nuestra matriz, como las energías renovables no convencionales",
+        "number": "5",
+        "title": "Envía proyecto de ley que avanza en interconectar los Sistemas del Norte Grande y Central",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1209642923,
+      "attributes": {
+        "name": "Cultura y Patrimonio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -2072086151,
+      "attributes": {
+        "content": "Y hace pocos días enviamos a este Congreso el proyecto de ley que crea el Ministerio de Cultura y Patrimonio y una moderna nueva institucionalidad cultural.",
+        "number": "6",
+        "title": "Crea Ministerio de Cultura y Patrimonio",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1209642923,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1085397476,
+      "attributes": {
+        "name": "Defensa"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 145671802,
+      "attributes": {
+        "content": "Para quienes esperamos la pronta aprobación en este Congreso del proyecto de ley que elimina o reduce su cotización del 6% de salud, tal como lo hicimos con los pensionados civiles",
+        "number": "7",
+        "title": "Proyecto de ley que elimina o reduce cotización del 6% de salud",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1085397476,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 286220412,
+      "attributes": {
+        "content": "Ingresamos a este Congreso una reforma a la Ley Orgánica Constitucional de Partidos Políticos, para modernizar y transparentar su estructura y financiamiento.",
+        "number": "9",
+        "title": "Reforma la Ley Orgánica Constitucional de Partidos Políticos",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -973761438,
+      "attributes": {
+        "content": "(...) perfeccionar la ley sobre la probidad pública, incluyendo la obligación de desprenderse de la administración, o incluso la propiedad, cuando esto sea necesario para evitar conflictos de intereses",
+        "number": "10",
+        "title": "Perfecciona ley sobre probidad pública",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1384545125,
+      "attributes": {
+        "content": "Quiero pedir a este Congreso la pronta aprobación de las leyes que hemos presentado para mejorar la transparencia",
+        "number": "13",
+        "title": "Leyes para mejorar la transparencia",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -692664218,
+      "attributes": {
+        "content": "(...) regular el lobby",
+        "number": "14",
+        "title": "Ley que regula el lobby",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1525093735,
+      "attributes": {
+        "content": "Seguiremos impulsando el voto de los chilenos en el extranjero, en las elecciones presidenciales, que mantengan un vínculo con Chile, el que se acreditará mediante su inscripción previa en alguna de las Embajadas o Consultados Chilenos.",
+        "number": "15",
+        "title": "Voto chileno en el extranjero",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1075860477,
+      "attributes": {
+        "name": "Deporte"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1665642345,
+      "attributes": {
+        "content": "Y ya está en este Congreso el proyecto de ley que crea el Ministerio del Deporte que, en beneficio de los deportistas chilenos, esperamos que prontamente sea aprobado.",
+        "number": "17",
+        "title": "Crea el Ministerio de Transportes",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1075860477,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -411566998,
+      "attributes": {
+        "content": "Esperamos que este Congreso alcance pronto los consensos para aprobar el nuevo Sistema Nacional de Acreditación de Instituciones de Educación Superior.",
+        "number": "18",
+        "title": "Nuevo Sistema Nacional de Acreditación de Instituciones de Educación Superior",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1806190955,
+      "attributes": {
+        "content": "Esperamos que este Congreso alcance pronto los consensos para aprobar los proyectos que establecen un nuevo Sistema Único de Financiamiento",
+        "number": "19",
+        "title": "Proyecto establece Sistema Único de Financiamiento",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "2"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -802193021,
+      "attributes": {
+        "content": "Enviaré a este Congreso una Reforma Constitucional para establecer el kínder obligatorio",
+        "number": "22",
+        "title": "Reforma Constitucional que establece kinder obligatorio",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1415564932,
+      "attributes": {
+        "content": "En las próximas semanas enviaremos a este Congreso un proyecto de ley que crea la Subsecretaría de Educación Superior.",
+        "number": "23",
+        "title": "Crea la Subsecretaría de Educación Superior",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -661644411,
+      "attributes": {
+        "content": "Y si este Congreso aprueba el proyecto que enviamos para crear la subvención preferencial para la clase media, ampliando este beneficio del 40% al 60% de los estudiantes más vulnerables, en régimen, ella beneficiará a 2,2 millones de estudiantes, contribuyendo a una mayor igualdad de oportunidades.",
+        "number": "24",
+        "title": "Proyecto que crea la subvención preferencial para la clase media",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1556113542,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley que crea gradualmente la Subvención Universal para los niños desde los tres años, incluyendo una subvención preferencial para los más vulnerables.",
+        "number": "25",
+        "title": "Proyecto que crea gradualmente la Subvención Universal para niños desde tres años",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -380547191,
+      "attributes": {
+        "content": "En las próximas semanas enviaremos a este Congreso un proyecto de ley que crea la Subsecretaría de Educación Superior.",
+        "number": "28",
+        "title": "Crea la Subsecretaría de Educación Superior",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1837210762,
+      "attributes": {
+        "content": "(Esperamos que este Congreso alcance pronto los consensos para aprobar) la nueva Superintendencia ",
+        "number": "29",
+        "title": "Nueva superintendencia",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -911721824,
+      "attributes": {
+        "content": "Para ello enviaremos próximamente a este Congreso una reforma a nuestro sistema de capacitación que permitirá aumentar la empleabilidad, productividad y salarios de los trabajadores, y especialmente de los más vulnerables.",
+        "number": "30",
+        "title": "",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1306036129,
+      "attributes": {
+        "content": "Enviamos a este Congreso un proyecto de ley que crea el Acuerdo de Vida en Pareja, que impulsaremos para que sea pronto Ley de la República, y que, además de resguardar derechos patrimoniales, previsionales y de salud, reconoce la dignidad y respeto debido a las relaciones de pareja de más de dos millones de chilenas y chilenos, hétero u homosexuales, que conviven sin estar casados.",
+        "number": "31",
+        "title": "Crea el Acuerdo de Vida en Pareja",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -771173214,
+      "attributes": {
+        "content": "Hoy quiero anunciar el pronto envío de un proyecto de ley que premiará con un Bono de Maternidad a todas las parejas que tengan a futuro tres o más niños",
+        "number": "32",
+        "title": "Bono de Maternidad",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 178004649,
+      "attributes": {
+        "name": "Infancia y Juventud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1446584739,
+      "attributes": {
+        "content": "Enviamos a este Congreso el proyecto de ley que reformula el Servicio Nacional de Menores, haciendo la necesaria distinción entre el Servicio Nacional de la Infancia y Adolescencia, que dependerá del Ministerio de Desarrollo Social, y el Servicio de Responsabilidad Penal Adolescente, que dependerá del Ministerio de Justicia.",
+        "number": "33",
+        "title": "Reforma al SENAME",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 178004649,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -948653673,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -630624604,
+      "attributes": {
+        "content": "Presentamos un proyecto para modernizar el Código de Procedimiento Civil, que data del siglo XIX. ",
+        "number": "34",
+        "title": "Moderniza el Código de Procedimiento Civil",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -948653673,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -948653673,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1587133349,
+      "attributes": {
+        "content": "(...) y estamos abocados a la difícil tarea de redactar un nuevo Código Penal, que reemplace al actual, que data de 1874, y estructure un mejor sistema de tipificación de delitos y asignación de penas, acorde a las realidades y necesidades del Chile del siglo XXI.",
+        "number": "35",
+        "title": "Redacta un nuevo Código Penal",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -948653673,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -948653673,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -490075994,
+      "attributes": {
+        "content": "Estamos impulsando una completa reestructuración de nuestra institucionalidad, a través de la presentación a este Congreso del proyecto de ley que crea la Subsecretaría de Derechos Humanos, que asumirá la plena responsabilidad de liderar todos los esfuerzos del Gobierno para asegurar el fiel y estricto respeto de los Derechos Humanos, de todos los ciudadanos, y en todo lugar, tiempo y circunstancias.",
+        "number": "36",
+        "title": "Crea la Subsecretaría de Derechos Humanos",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -948653673,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1727681959,
+      "attributes": {
+        "content": "Por eso estamos creando una nueva Agencia Nacional de Emergencia y Protección Civil, que reemplazará a la actual ONEMI, con la participación de nuestras Fuerzas Armadas, Carabineros y Bomberos.",
+        "number": "37",
+        "title": "Crea Agencia Nacional de Emergencia y Protección Civil en desmedro de ONEMI",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -349527384,
+      "attributes": {
+        "content": "Enviaremos a este Congreso un proyecto de ley Orgánico Constitucional para modernizar la Contraloría.",
+        "number": "38",
+        "title": "Moderniza Contraloría",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1868230569,
+      "attributes": {
+        "content": "Dejar atrás la estrategia de asimilación y reemplazarla por una de verdadera integración, para lo cual requerimos un nuevo y consensuado mecanismo de consulta, y crear el consejo de los pueblos indígenas. ",
+        "number": "39",
+        "title": "Crea el consejo de los pueblos indígenas",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -880702017,
+      "attributes": {
+        "content": "Promover su desarrollo económico y social para reducir las brechas existentes y recuperar el tiempo perdido (...) y reconocer valorar y promover su historia, cultura, tradiciones e idioma.",
+        "number": "40",
+        "title": "Promover desarrollo y cultura de los pueblos indígenas",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1337055936,
+      "attributes": {
+        "content": "Una reforma constitucional que reconozca que bajo una misma nación, un mismo territorio, y bajo la jurisdicción y soberanía de un mismo Estado, conviven varias entidades étnicas con culturas diferentes, lo que hace de nuestro país una nación multicultural. ",
+        "number": "41",
+        "title": "Reforma constitucional que reconozca la multiculturalidad",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1477604546,
+      "attributes": {
+        "content": "Quiero hoy pedir encarecidamente a este Congreso la pronta aprobación de la Ley de Isapres",
+        "number": "43",
+        "title": "Ley de Isapres",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -599604797,
+      "attributes": {
+        "content": "(Quiero hoy pedir encarecidamente a este Congreso la pronta aprobación) de la Ley de Fármacos enviadas por este Gobierno.",
+        "number": "44",
+        "title": "Ley de Fármacos",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1618153156,
+      "attributes": {
+        "content": "",
+        "number": "45",
+        "title": "",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -459056187,
+      "attributes": {
+        "content": "Enviamos al Congreso un proyecto de ley que crea un Plan Garantizado de Salud, accesible a un precio uniforme para todos: hombres y mujeres, jóvenes y adultos mayores",
+        "number": "46",
+        "title": "Crea Plan Garantizado de Salud",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 617037584,
+      "attributes": {
+        "name": "Seguridad"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1758701766,
+      "attributes": {
+        "content": "En los próximos días enviaremos a este Congreso un proyecto de ley que establece como un nuevo delito el insulto grave a un carabinero o policía en ejercicio de sus funciones, eleva las penas del delito de maltrato de obra, causando lesiones graves a los miembros de Carabineros o la PDI.(...) Pedimos a este Congreso la pronta aprobación del proyecto de ley que aumenta las penas a quienes ataquen o agredan a carabineros o cometan delitos en forma encapuchada durante manifestaciones públicas",
+        "number": "47",
+        "title": "Aumenta penas a quienes ataquen o agredan a carabineros",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 617037584,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 617037584,
+      "attributes": {
+        "name": "Seguridad"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -318507577,
+      "attributes": {
+        "content": "",
+        "number": "48",
+        "title": "",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 617037584,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 617037584,
+      "attributes": {
+        "name": "Seguridad"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1899250376,
+      "attributes": {
+        "content": "",
+        "number": "49",
+        "title": "",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 617037584,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -849682210,
+      "attributes": {
+        "content": "También pronto tendremos a disposición de todos los hogares y en forma gratuita la nueva televisión digital o de alta definición",
+        "number": "50",
+        "title": "Nueva televisión digital",
+        "ja-why": "",
+        "jc-why": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 449484683,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    }
+  ]
+}
