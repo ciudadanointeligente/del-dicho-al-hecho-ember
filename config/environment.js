@@ -1,7 +1,10 @@
 var governments =[{
 	"name": "Michelle Bachelet",
 	"years": {'start': 2014, 'end': 2018},
-	"color": "#FF00FF",
+	"color1": "#FF00FF",
+	"color2": "#FF00FF",
+	"color3": "#FF00FF",
+	"color4": "#FF00FF",
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
@@ -42,7 +45,10 @@ var governments =[{
 }, {
 	"name": "Sebastián Piñera",
 	"years": {'start': 2010, 'end': 2014},
-	"color": "#FFAA00",
+	"color1": "#FFAA00",
+	"color2": "#FFAA00",
+	"color3": "#FFAA00",
+	"color4s": "#FFAA00",
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
