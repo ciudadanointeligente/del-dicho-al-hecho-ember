@@ -151,7 +151,7 @@
                     <p><span>Total de urgencias</span> <span class="badge">{{p.urgenciesCount}}</span></p>
                   {{/if}}
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3">
                   <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6">
                       <p class="text-center">Avance</p>
@@ -166,9 +166,20 @@
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                               <h4 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h4>
+                              {{p.ja_why}}
+                              <h4 class="modal-title" id="myModalLabel">{{p.coherenceLevel}}/4 escala de coherencia - ¿Por qué?</h4>
+                              {{p.jc_why}}
                             </div>
                             <div class="modal-body">
-                              {{p.ja_why}}
+                              <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
+                              <div class="row"><!---Projects-->
+                                <div class="col-md-12 project-list">
+                                  <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
+                                  <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
+                                  <p><span>Estado de avance:</span></p>
+                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -187,10 +198,21 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h4>
+                              {{p.ja_why}}
                               <h4 class="modal-title" id="myModalLabel">{{p.coherenceLevel}}/4 escala de coherencia - ¿Por qué?</h4>
+                              {{p.jc_why}}
                             </div>
                             <div class="modal-body">
-                              {{p.jc_why}}
+                              <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
+                              <div class="row"><!---Projects-->
+                                <div class="col-md-12 project-list">
+                                  <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
+                                  <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
+                                  <p><span>Estado de avance:</span></p>
+                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>

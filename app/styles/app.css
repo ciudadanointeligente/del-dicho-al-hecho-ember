@@ -175,6 +175,11 @@ button.btn.btn-default.btn-sm.dark {
 .modal-footer{
   border: none;
 }
+.project-list{
+  border-left: 4px solid #031424;
+  padding: 5px 10px 5px 10px;
+  margin-left: 18px;
+}
 
 /*FOOTER*/
 footer {
