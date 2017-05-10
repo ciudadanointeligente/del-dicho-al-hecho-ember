@@ -125,8 +125,9 @@
                   <h4>{{p.title}}</h4>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
+                    <p style="float: left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
-                    <p><span>Proyectos asociados </span><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button></p>
+                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal coherence -->
                     <div class="modal fade" id="myModal-proyecto-{{a.id}}-{{b.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
