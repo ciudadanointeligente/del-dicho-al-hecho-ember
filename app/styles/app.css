@@ -59,11 +59,12 @@ h4 {
   background-color: transparent; }
 
 .panel.panel-default.legend {
-  background-color: #30425D;
+  background-color: #031424;
   color: white;
   padding: 5px 15px 5px 15px;
   border-radius: 0;
-  margin: 0; }
+  margin: 0 0 5px 0; 
+}
 
 .panel-default .panel-body {
   padding: 0;
