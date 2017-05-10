@@ -118,7 +118,7 @@ h4 {
   background-color: #0BD6B0; }
 
 .label {
-  background-color: #F64B57; }
+  background-color: #0BD6B0; }
 
 .tooltip {
   width: 280px; }
@@ -151,6 +151,18 @@ button.btn.btn-default.btn-sm.dark {
   button.btn.btn-default.btn-sm.dark:hover {
     background-color: #2ABAFD; }
 
+.btn-default{
+  background-color: #031424;
+  color: white;
+  border-radius: 20px;
+  border: none; }
+  .btn-default:hover{
+    background-color: #0BD6B0;
+    color: white;}
+  .btn-default:focus{
+    background-color: #0BD6B0;
+    color: white;}
+
 /*MODALS*/
 .modal-content {
   border: 0;
@@ -159,6 +171,10 @@ button.btn.btn-default.btn-sm.dark {
 
 .modal-header {
   border-bottom: none; }
+
+.modal-footer{
+  border: none;
+}
 
 /*FOOTER*/
 footer {

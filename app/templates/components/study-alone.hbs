@@ -128,15 +128,17 @@
                     <p style="float: left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
                     <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
-                    <!-- modal coherence -->
+                    <!-- modal project -->
                     <div class="modal fade" id="myModal-proyecto-{{a.id}}-{{b.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">{{b.name}} - {{b.title}}</h4>
+                            <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
+                            <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
                           </div>
                           <div class="modal-body">
+                            <p><span>Estado de avance:</span></p>
                             {{b.justification}}
                           </div>
                           <div class="modal-footer">
@@ -145,7 +147,6 @@
                         </div>
                       </div>
                     </div>
-                    <!-- modal coherence -->
                     {{/each}}
                     <p><span>Total de urgencias</span> <span class="badge">{{p.urgenciesCount}}</span></p>
                   {{/if}}
@@ -158,7 +159,7 @@
                         {{p.fullfilment}}%
                       </div>
                       <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-{{a.id}}-{{p.id}}">¿Por qué?</a></p>
-                      <!-- modal coherence -->
+                      <!-- modal cumplimiento -->
                       <div class="modal fade" id="myModal-cumplimiento-{{a.id}}-{{p.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
