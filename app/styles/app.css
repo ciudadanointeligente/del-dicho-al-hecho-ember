@@ -16,13 +16,13 @@ p {
     font-size: 16px; }
 
 a {
-  color: #F64B57; }
+  color: #0BD6B0; }
   a:hover {
     text-decoration: none;
-    color: #2ABAFD; }
+    color: #031424; }
   a:focus {
     text-decoration: none;
-    color: #2ABAFD; }
+    color: #031424; }
 
 span {
   font-weight: 700; }
@@ -115,7 +115,7 @@ h4 {
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
-  background-color: #F64B57; }
+  background-color: #0BD6B0; }
 
 .label {
   background-color: #F64B57; }
@@ -131,13 +131,13 @@ h4 {
 
 /*BUTTONS*/
 button.btn.btn-default {
-  background-color: #F64B57;
+  background-color: #0BD6B0;
   color: white;
   border: none;
   font-weight: 700;
   border-radius: 20px; }
   button.btn.btn-default:hover {
-    background-color: #2ABAFD; }
+    background-color: #031424; }
 
 button.btn.btn-default.btn-sm.btn-block.home {
   margin: auto;
