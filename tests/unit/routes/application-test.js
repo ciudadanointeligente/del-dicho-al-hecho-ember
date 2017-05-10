@@ -247,7 +247,6 @@ test("it has studies and government", function(assert){
 
   let parsed_gov = studies.toArray()[0].get('government');
   assert.equal(idGov, parsed_gov.get('id'));
-  assert.equal(parsed_gov.get('color'), '#FF00FF');
   assert.ok(studies.toArray()[0].get('image'), 'Image for study');
   assert.ok(studies.toArray()[0].get('type'), 'Image for study');
   assert.ok(studies.toArray()[0].get('id'), 'Estudio tiene id');

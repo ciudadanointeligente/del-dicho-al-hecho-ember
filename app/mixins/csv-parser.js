@@ -95,7 +95,10 @@ export default Ember.Mixin.create(CsvMixin, {
       if (!gov) {
         gov = store.createRecord('government', {
           name: name,
-          color: government.color,
+          color1: government.color1,
+          color2: government.color2,
+          color3: government.color3,
+          color4: government.color4,
           id: _hashCode(name),
         });
       }
