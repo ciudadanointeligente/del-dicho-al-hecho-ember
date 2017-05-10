@@ -9,22 +9,27 @@
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
     </div>
   </div>
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 text-center hidden-sm hidden-xs">
     <div class="total-result cumplimientos">
       <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}</p>
+      <p class="text-center">{{study.fullfilment}}%</p>
+    </div>
+    <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
+  </div>
+  <div class="col-md-4 text-center">
+    <div class="chart">
+      {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
+    </div>
+  </div>
+  <div class="col-md-4 text-center hidden-md hidden-lg ">
+    <div class="total-result cumplimientos">
+      <div class="text-center promise-result home">{{c.total}}</div>
+      <p class="text-center">{{study.fullfilment}}%</p>
     </div>
     <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
   </div>
   <div class="col-md-4 text-center">
     <div class="total-result cumplimientos">
-      <div class="chart">
-        {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=200}}
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="total-result">
       {{ study.coherenceLevel }}
     </div>
     <h3>coherencia total con el programa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>

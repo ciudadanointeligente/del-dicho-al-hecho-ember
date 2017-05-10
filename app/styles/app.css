@@ -28,7 +28,8 @@ span {
   font-weight: 700; }
 
 h3 {
-  font-size: 20px; }
+  font-size: 20px;
+  margin-top: 0;}
   h3.sub {
     font-size: 16px;
     line-height: 0;
@@ -36,6 +37,10 @@ h3 {
 
 h4 {
   font-size: 20px; }
+
+.bajada{
+  margin-bottom: 20px;
+}
 
 /*NAVBAR*/
 .navbar-default {
@@ -112,6 +117,8 @@ h4 {
   .total-result.sub {
     font-size: 30px;
     margin-bottom: 30px; }
+  .total-result.cumplimientos{
+    margin-top: 20px; }
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
