@@ -137,6 +137,11 @@ h4 {
   font-weight: 700;
   text-align: center; }
 
+.compare-result{
+  font-weight: 700;
+  font-size: 30px;
+}
+
 /*HIGHLIGHT ELEMENTS*/
 .badge {
   background-color: #0BD6B0; }

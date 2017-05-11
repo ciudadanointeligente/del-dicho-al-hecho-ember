@@ -24,20 +24,20 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Bachelet 2do año</p>
+              <p class="text-center">Bachelet 2do año</p>
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[0].chartData options=doughnutOpt height=200}}
               </div>
               <p class="compare-info">Coherencia</p>
-              <p class="total-coherence compare-info">{{model.[0].coherenceLevel}}</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].coherenceLevel}}</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Piñera 2do año</p>
+              <p class="text-center">Piñera 2do año</p>
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[1].chartData options=doughnutOpt height=200}}
               </div>
               <p class="compare-info">Coherencia</p>
-              <p class="compare-info">{{model.[1].coherenceLevel}}</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].coherenceLevel}}</p>
             </div>
           </div>
         </div>
@@ -51,13 +51,13 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Bachelet 2do año</p>
-              <p class="compare-info">{{model.[0].promises.length}}</p>
+              <p class="text-center">Bachelet 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Piñera 2do año</p>
-              <p class="compare-info">{{model.[1].promises.length}}</p>
+              <p class="text-center">Piñera 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
           </div>
@@ -72,13 +72,13 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Bachelet 2do año</p>
-              <p class="compare-info">{{model.[0].billsCount}}</p>
+              <p class="text-center">Bachelet 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Piñera 2do año</p>
-              <p class="compare-info">{{model.[1].billsCount}}</p>
+              <p class="text-center">Piñera 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
           </div>
@@ -93,13 +93,13 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Bachelet 2do año</p>
-              <p class="compare-info">{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
+              <p class="text-center">Bachelet 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
               <p class="compare-info">Promesas completas ({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Piñera 2do año</p>
-              <p class="compare-info">{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
+              <p class="text-center">Piñera 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
               <p class="compare-info">Promesas completas ({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
             </div>
           </div>
@@ -114,13 +114,13 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Bachelet 2do año</p>
-              <p class="compare-info">{{model.[0].capacidad}}</p>
+              <p class="text-center">Bachelet 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <p class="compare-info">Piñera 2do año</p>
-              <p class="compare-info">{{model.[1].capacidad}}</p>
+              <p class="text-center">Piñera 2do año</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
           </div>
@@ -148,14 +148,14 @@
                 <td width="80%">
                   <!-- bar01-->
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%; background-color: {{model.[0].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[0]}}% Complete</span>
                     </div>
                   </div>
                   <!-- bar01-->
                   <!-- bar02-->
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%;">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%; background-color: {{model.[1].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[1]}}% Complete</span>
                     </div>
                   </div>
