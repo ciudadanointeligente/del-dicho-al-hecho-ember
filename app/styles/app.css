@@ -95,8 +95,11 @@ h4 {
   border: 0;
   margin-bottom: 5px; }
 
-/*DATA*/
+.panel-body.compare{
+  background-color: white;
+}
 
+/*DATA*/
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
   stroke: #2ABAFD; }
 
