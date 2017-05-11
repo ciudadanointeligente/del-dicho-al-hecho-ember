@@ -140,9 +140,9 @@
           <table class="table table-responsive">
             <thead>
               <tr>
-                <th>Área</th>
-                <th>Avance</th>
-                <th>Voluntad política</th>
+                <th class="text-center">Área</th>
+                <th class="text-center">Avance</th>
+                <th class="text-center">Voluntad política</th>
               </tr>
             </thead>
             <tbody>
@@ -166,8 +166,8 @@
                   <!-- bar02-->
                 </td>
                 <td width="10%">
-                  <p>{{politicalWillPerArea a model.[0]}}</p>
-                  <p>{{politicalWillPerArea a model.[1]}}</p>
+                  <p class="compare-info" style="margin-top: 15px; color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
+                  <p class="compare-info" style="margin-top: 25px; color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
                 </td>
               </tr>
               {{/each}}
