@@ -151,23 +151,27 @@
                 <td width="10%">{{a.name}}</td>
                 <td width="80%">
                   <!-- bar01-->
-                  <div class="progress compare-bar">
+                  <div class="progress compare-bar hidden-xs hidden-sm">
                     <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%; background-color: {{model.[0].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[0]}}%</span>
                     </div>
                   </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[0].government.color1}}">{{fullfilmentPerArea a model.[0]}}%</p>
                   <!-- bar01-->
                   <!-- bar02-->
-                  <div class="progress compare-bar">
+                  <div class="progress compare-bar hidden-xs hidden-sm">
                     <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%; background-color: {{model.[1].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[1]}}%</span>
                     </div>
                   </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[1].government.color1}}">{{fullfilmentPerArea a model.[1]}}%</p>
                   <!-- bar02-->
                 </td>
                 <td width="10%">
-                  <p class="compare-info" style="margin-top: 15px; color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
-                  <p class="compare-info" style="margin-top: 25px; color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 25px; color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
                 </td>
               </tr>
               {{/each}}
