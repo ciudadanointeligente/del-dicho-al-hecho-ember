@@ -123,6 +123,10 @@ h4 {
   background-color: #EEFAFF;
   box-shadow: none;
 }
+.sr-only{
+  position: relative;
+  top: 3px;
+}
 
 .category-result {
   font-weight: 700;
