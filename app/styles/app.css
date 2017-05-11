@@ -74,6 +74,16 @@ h4 {
   background-color: transparent;
   box-shadow: none; }
 
+.panel-default > .panel-heading{
+  background-color: #30425D;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 0;
+  padding: 16px 0 5px 0;
+  border-color: transparent;
+}
+
 .panel.panel-default.legend {
   background-color: #031424;
   color: white;
@@ -89,7 +99,8 @@ h4 {
     background-color: #031424;
     color: white;
     border-radius: 0;
-    border: none;}
+    border: none;
+    padding-bottom: 15px; }
 
 .panel-promise {
   padding: 15px;
