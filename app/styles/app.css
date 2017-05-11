@@ -133,6 +133,10 @@ h4 {
   .total-result.cumplimientos{
     margin-top: 20px; }
 
+.compare-info{
+  font-weight: 700;
+  text-align: center; }
+
 /*HIGHLIGHT ELEMENTS*/
 .badge {
   background-color: #0BD6B0; }
