@@ -1,16 +1,25 @@
 <div>
-  <h2>Comparar Gobiernos</h2>
+  <div class="row">
+    <div class="page-header">
+      <h1 class="text-center">Comparar Estudios</h1>
+    </div>
+  </div>
   <!-- botonera -->
   <div class="row">
-    <div class="col-md-4">
-      <a href="#" class="btn btn-default btn-sm">Sebastián Piñera Gobierno completo</a>
+    <h3>Comparar programas año a año</h3>
+    <div class="col-md-12">
+      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet con Sebastián Piñera al 2do año de Gobierno</a>
+      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet con Sebastián Piñera al 3er año de Gobierno</a>
     </div>
-    <div class="col-md-4">
+    <h3>Comparar trayectorias de gobiernos</h3>
+    <div class="col-md-12">
       <a href="#" class="btn btn-default btn-sm">Michelle Bachelet Gobierno completo</a>
+      <a href="#" class="btn btn-default btn-sm">Sebastián Piñera Gobierno completo</a>
     </div>
   </div>
   <!-- EObotonera -->
 
+  <div class="row">
   <div class="panel panel-default">
     <div class="panel-heading text-center">
       <h3>{{model.[0].government.name}} - {{model.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
@@ -188,5 +197,6 @@
       <!-- Areas -->
     </div>
   </div>
+</div>
 </div>
 {{outlet}}
