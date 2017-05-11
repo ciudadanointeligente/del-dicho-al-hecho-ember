@@ -71,7 +71,8 @@ h4 {
 /*PANELS*/
 .panel {
   border: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  box-shadow: none; }
 
 .panel.panel-default.legend {
   background-color: #031424;
@@ -87,7 +88,8 @@ h4 {
   .panel-default .panel-body .panel-heading {
     background-color: #031424;
     color: white;
-    border-radius: 0; }
+    border-radius: 0;
+    border: none;}
 
 .panel-promise {
   padding: 15px;
@@ -98,6 +100,9 @@ h4 {
 .panel-body.compare{
   background-color: white;
 }
+
+.compare-box{
+  padding: 25px 0 10px 0; }
 
 /*DATA*/
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
