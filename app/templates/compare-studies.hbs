@@ -28,6 +28,8 @@
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[0].chartData options=doughnutOpt height=200}}
               </div>
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">%</p>
               <p class="compare-info">Coherencia</p>
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].coherenceLevel}}</p>
             </div>
@@ -36,6 +38,8 @@
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[1].chartData options=doughnutOpt height=200}}
               </div>
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">%</p>
               <p class="compare-info">Coherencia</p>
               <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].coherenceLevel}}</p>
             </div>
