@@ -136,7 +136,7 @@
           <table class="table table-responsive">
             <thead>
               <tr>
-                <th>Area</th>
+                <th>Área</th>
                 <th>Avance</th>
                 <th>Voluntad política</th>
               </tr>
@@ -147,14 +147,14 @@
                 <td width="10%">{{a.name}}</td>
                 <td width="80%">
                   <!-- bar01-->
-                  <div class="progress">
+                  <div class="progress compare-bar">
                     <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%; background-color: {{model.[0].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[0]}}% Complete</span>
                     </div>
                   </div>
                   <!-- bar01-->
                   <!-- bar02-->
-                  <div class="progress">
+                  <div class="progress compare-bar">
                     <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%; background-color: {{model.[1].government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a model.[1]}}% Complete</span>
                     </div>
