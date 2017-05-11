@@ -77,11 +77,13 @@ h4 {
 .panel-default > .panel-heading{
   background-color: #30425D;
   color: white;
-  text-align: center;
   margin-bottom: 5px;
   border-radius: 0;
-  padding: 16px 0 5px 0;
   border-color: transparent;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+  border-top: transparent;
 }
 
 .panel.panel-default.legend {
