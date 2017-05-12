@@ -85,6 +85,20 @@ h4 {
 .dropdown-menu .divider{
   background-color: transparent;}
 
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;}
+
+.navbar-default .navbar-toggle{
+  border: none;}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: transparent;}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+  color: white;}
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+    color: #0BD6B0;}
+
 /*SECTIONS*/
 #resume {
   background-color: white; }
