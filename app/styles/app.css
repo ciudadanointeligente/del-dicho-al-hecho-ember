@@ -51,6 +51,7 @@ h4 {
 /*NAVBAR*/
 .navbar-default {
   background-color: #031424;
+  border: none;
   }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -60,9 +61,29 @@ h4 {
     max-height: 540px;
 }
 
-.chart{
-  margin-bottom: 20px;
-}
+.navbar-default .navbar-nav > li > a{
+  color: white; }
+  .navbar-default .navbar-nav > li > a:hover{
+    color: #0BD6B0; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: transparent;
+  color: white; }
+
+.dropdown-menu{
+  background-color: #031424;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;}
+
+.dropdown-menu > li > a{
+  color: white; }
+  .dropdown-menu > li > a:hover{
+    color: #0BD6B0;
+    background-color: transparent;}
+
+.dropdown-menu .divider{
+  background-color: transparent;}
 
 /*SECTIONS*/
 #resume {
@@ -123,6 +144,9 @@ h4 {
 
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
   stroke: #031424; }
+
+.chart{
+  margin-bottom: 20px; }
 
 .progress {
   height: 26px;
