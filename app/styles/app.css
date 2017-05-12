@@ -109,7 +109,7 @@ img.logo-nav{
   font-weight: 700;}
 
 .navbar-nav > li > .dropdown-menu{
-  padding-left: 10px;}  
+  padding-left: 10px;}
 
 /*SECTIONS*/
 #resume {
@@ -287,8 +287,9 @@ button.btn.btn-default.btn-sm.dark {
 }
 .project-list{
   border-left: 4px solid #031424;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 40px 5px 10px;
   margin-left: 18px;
+  margin-bottom: 10px;
 }
 
 /*TABLES*/
