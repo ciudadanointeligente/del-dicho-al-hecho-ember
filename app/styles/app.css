@@ -28,7 +28,7 @@ span {
   font-weight: 700; }
 
 h1{
-  margin-top: 90px;}
+  margin-top: 130px;}
 
 h3 {
   font-size: 20px;
@@ -49,20 +49,26 @@ h4 {
   border-bottom: 0;}
 
 /*NAVBAR*/
+img.logo-nav{
+  margin-top: 10px;
+}
+
 .navbar-default {
   background-color: #031424;
   border: none;
-  }
+  height: 70px;}
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #031424;
 }
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 540px;
+    max-height: inherit;
+    background-color: #031424;
 }
 
 .navbar-default .navbar-nav > li > a{
-  color: white; }
+  color: white;
+  margin-top: 9px;}
   .navbar-default .navbar-nav > li > a:hover{
     color: #0BD6B0; }
 
@@ -101,7 +107,10 @@ h4 {
 
 .menu-list{
   font-weight: 700;}
-  
+
+.navbar-nav > li > .dropdown-menu{
+  padding-left: 10px;}  
+
 /*SECTIONS*/
 #resume {
   background-color: white; }
@@ -300,3 +309,10 @@ footer {
   padding: 50px 0 50px 0; }
   footer a {
     color: white; }
+
+
+@media (max-width: 333px) {
+  img.logo-nav{
+    width: 70%;
+  }
+}
