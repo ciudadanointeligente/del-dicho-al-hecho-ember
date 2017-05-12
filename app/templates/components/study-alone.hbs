@@ -143,8 +143,8 @@
                             <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
                           </div>
                           <div class="modal-body">
-                            <p><span>Estado de avance:</span></p>
-                            {{b.justification}}
+                            <p><span>Estado de avance:</span> {{b.phase.name}}</p>
+                            {{b.justifications}}
                           </div>
                           <div class="modal-footer">
                             <a class="btn btn-default" href="{{b.url}}" target="_blank">Ir al proyecto</a>
@@ -176,15 +176,19 @@
                               {{p.jc_why}}
                             </div>
                             <div class="modal-body">
+                              {{#if p.bills.length}}
                               <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
                               <div class="row"><!---Projects-->
+                                {{#each p.bills as |b|}}
                                 <div class="col-md-12 project-list">
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
-                                  <p><span>Estado de avance:</span></p>
+                                  <p><span>Estado de avance:</span> {{b.phase.name}}</p>
                                   <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
+                                {{/each}}
                               </div>
+                              {{/if}}
                             </div>
                           </div>
                         </div>

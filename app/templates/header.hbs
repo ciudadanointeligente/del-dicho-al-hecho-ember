@@ -19,7 +19,7 @@
             {{#each model as |gov|}}
               <li> {{gov.name}} </li>
               {{#each gov.studies as |study|}}
-                <li>{{#link-to "study" study.slug}} {{study.version}} {{study.year}}{{/link-to}}</li>
+                <li>{{#link-to "study" study.slug}} {{study.type}} {{study.version}} {{study.year}}{{/link-to}}</li>
               {{/each}}
               <li role="separator" class="divider"></li>
             {{/each}}
