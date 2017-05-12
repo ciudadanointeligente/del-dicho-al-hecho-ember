@@ -99,6 +99,9 @@ h4 {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
     color: #0BD6B0;}
 
+.menu-list{
+  font-weight: 700;}
+  
 /*SECTIONS*/
 #resume {
   background-color: white; }
