@@ -177,10 +177,11 @@ img.logo-nav{
 .progress {
   height: 26px;
   border-radius: 15px;
-  margin: 10px 0 20px 0; }
+  margin: 10px 0 20px 0;}
 
 .progress-bar {
-  background-color: #2ABAFD; }
+  background-color: #2ABAFD;
+  box-shadow: none; }
 
 .compare-bar{
   background-color: #EEFAFF;

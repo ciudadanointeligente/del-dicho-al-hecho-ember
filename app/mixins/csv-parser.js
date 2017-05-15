@@ -114,6 +114,7 @@ export default Ember.Mixin.create(CsvMixin, {
             version: study_obj.version,
             year: study_obj.year,
             filename: study_obj.filename,
+            color: study_obj.color,
             in_landing: in_land,
             image: study_obj.img,
             type: study_obj.type,

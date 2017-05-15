@@ -8,6 +8,7 @@ var governments =[{
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
+		"color": "#FCCCD0",
 		"year": 2015,
 		"version": "Marzo",
 		"name": "Bachelet-2014-2018_Programa-2015.csv",
@@ -15,6 +16,7 @@ var governments =[{
 	}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-en-el-avion.svg",
+		"color": "#FCCCD0",
 		"year": 2015,
 		"version": "Mayo",
 		"name": "Bachelet-2014-2018_Discurso-2015",
@@ -22,6 +24,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FDAAAF",
 		"year": 2016,
 		"version": "Marzo",
 		"name": "Bachelet-2014-2018_Programa-2016",
@@ -29,6 +32,7 @@ var governments =[{
 	}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FDAAAF",
 		"year": 2016,
 		"version": "Mayo",
 		"name": "Bachelet-2014-2018_Discurso-2016.csv",
@@ -36,6 +40,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FB7881",
 		"year": 2017,
 		"in_landing": true,
 		"version": "Marzo",
@@ -52,6 +57,7 @@ var governments =[{
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
+		"color": "#91CFEC",
 		"year": 2012,
 		"version": "Marzo",
 		"name": "Piñera-2010-2014_Programa-2012",
@@ -59,6 +65,7 @@ var governments =[{
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#67C7F4",
 		"year": 2013,
 		"version": "Mayo",
 		"name": "Piñera-2010-2014_Discurso-2013",
@@ -66,6 +73,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#67C7F4",
 		"year": 2013,
 		"version": "Marzo",
 		"name": "Piñera-2010-2014_Programa-2013",
@@ -73,6 +81,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#2ABAFD",
 		"year": 2014,
 		"version": "Marzo",
 		"name": "Piñera-2010-2014_Programa-2014",
@@ -80,6 +89,7 @@ var governments =[{
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#2ABAFD",
 		"year": 2014,
 		"version": "Mayo",
 		"name": "Piñera-2010-2014_Discurso-2014",

@@ -34,7 +34,7 @@
         <div class="row">
           <div class="col-md-12 compare-box">
             <p class="text-center">Bachelet</p>
-            <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].promises.length}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.promises.length}}</p>
             <p class="compare-info">Promesas</p>
           </div>
         </div>
@@ -57,9 +57,9 @@
               {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=200}}
             </div>
             <p class="compare-info">Avance</p>
-            <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{study.fullfilment}}%</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
             <p class="compare-info">Coherencia</p>
-            <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{study.coherenceLevel}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.coherenceLevel}}</p>
           </div>
           {{/each}}
         </div>
@@ -137,42 +137,34 @@
         <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{study.government.color4}}"></i> Bachelet</p>
-            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.government.color3}}"></i> Bachelet </p>
-            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.government.color2}}"></i> Bachelet </p>
-            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.government.color1}}"></i> Bachelet </p>
+            {{#each model.comparable as |study|}}
+            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} {{study.version}} - {{study.year}}</p>
+            {{/each}}
           </div>
         </div>
         <table class="table table-responsive">
           <thead>
             <tr>
-              <th class="text-center">Área</th>
+              <th>Área</th>
               <th class="text-center">Avance</th>
             </tr>
           </thead>
           <tbody>
             {{#each areas as |a|}}
             <tr>
-
               <td width="10%">{{a.name}}</td>
-
-
                 <td width="80%">
                   <!-- bar01-->
-
                   <div class="progress compare-bar hidden-xs hidden-sm">
                     {{#each model.comparable as |study|}}
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study}}%; background-color: {study.government.color1}}">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study}}%; background-color: {{study.color}}">
                       <span class="sr-only">{{fullfilmentPerArea a study}}%</span>
                     </div>
+                    <p class="compare-info hidden-md hidden-lg" style="color: {{study.color}}">{{fullfilmentPerArea a study}}%</p>
                     {{/each}}
                   </div>
                   <!-- bar01-->
                 </td>
-
-
-
-
             </tr>
             {{/each}}
           </tbody>
