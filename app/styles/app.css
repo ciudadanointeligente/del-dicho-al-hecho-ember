@@ -115,6 +115,9 @@ img.logo-nav{
 #resume {
   background-color: white; }
 
+#metodologia{
+  background-color: white;}
+
 /*PANELS*/
 .panel {
   border: 0;
@@ -163,6 +166,17 @@ img.logo-nav{
 
 .compare-box{
   padding: 25px 0 10px 0; }
+
+.panel.panel-glosario{
+  border-radius: 0;}
+  .panel-heading{
+    background-color: #031424;
+    color: white;
+    border-radius: 0;
+  }
+  .panel-body{
+    background-color: white;
+  }
 
 /*DATA*/
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
