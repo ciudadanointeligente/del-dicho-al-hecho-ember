@@ -18,5 +18,9 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     return this._arrayparseCsv(filenames,this.store).then(function(){
       return gov;
     });
+  },
+  setupController(controller, model){
+    this._super(controller, model);
+    controller.set('areas', this.store.peekAll('area'));
   }
 });
