@@ -110,7 +110,7 @@ module.exports = function(environment) {
       'title': 'titulo',
       'ja-why': 'ja_porque',
       'jc-why': 'jn_porque',
-      'coherence-level': 'coherencia',
+      'coherence-level': 'escala_de_coherencia',
       'id': {
         'fieldToGetIdFrom': 'uid'
       },
