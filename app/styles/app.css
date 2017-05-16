@@ -28,7 +28,7 @@ span {
   font-weight: 700; }
 
 h1{
-  margin-top: 90px;}
+  margin-top: 130px;}
 
 h3 {
   font-size: 20px;
@@ -49,29 +49,92 @@ h4 {
   border-bottom: 0;}
 
 /*NAVBAR*/
+img.logo-nav{
+  margin-top: 10px;
+}
+
 .navbar-default {
   background-color: #031424;
-  }
+  border: none;
+  height: 70px;}
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #031424;
 }
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 540px;
+    max-height: inherit;
+    background-color: #031424;
 }
 
-.chart{
-  margin-bottom: 20px;
-}
+.navbar-default .navbar-nav > li > a{
+  color: white;
+  margin-top: 9px;}
+  .navbar-default .navbar-nav > li > a:hover{
+    color: #0BD6B0; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: transparent;
+  color: white; }
+
+.dropdown-menu{
+  background-color: #031424;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;}
+
+.dropdown-menu > li > a{
+  color: white; }
+  .dropdown-menu > li > a:hover{
+    color: #0BD6B0;
+    background-color: transparent;}
+
+.dropdown-menu .divider{
+  background-color: transparent;}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;}
+
+.navbar-default .navbar-toggle{
+  border: none;}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: transparent;}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+  color: white;}
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+    color: #0BD6B0;}
+
+.menu-list{
+  font-weight: 700;}
+
+.navbar-nav > li > .dropdown-menu{
+  padding-left: 10px;}
 
 /*SECTIONS*/
 #resume {
   background-color: white; }
 
+#metodologia{
+  background-color: white;}
+
 /*PANELS*/
 .panel {
   border: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  box-shadow: none; }
+
+.panel-default > .panel-heading{
+  background-color: #30425D;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+  border-top: transparent;
+}
 
 .panel.panel-default.legend {
   background-color: #031424;
@@ -87,7 +150,9 @@ h4 {
   .panel-default .panel-body .panel-heading {
     background-color: #031424;
     color: white;
-    border-radius: 0; }
+    border-radius: 0;
+    border: none;
+    padding-bottom: 15px; }
 
 .panel-promise {
   padding: 15px;
@@ -95,21 +160,51 @@ h4 {
   border: 0;
   margin-bottom: 5px; }
 
-/*DATA*/
+.panel-body.compare{
+  background-color: white;
+}
 
+.compare-box{
+  padding: 25px 0 10px 0; }
+
+.panel.panel-glosario{
+  border-radius: 0;}
+  .panel-heading{
+    background-color: #031424;
+    color: white;
+    border-radius: 0;
+  }
+  .panel-body{
+    background-color: white;
+  }
+
+/*DATA*/
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
   stroke: #2ABAFD; }
 
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
   stroke: #031424; }
 
+.chart{
+  margin-bottom: 20px; }
+
 .progress {
   height: 26px;
   border-radius: 15px;
-  margin: 10px 0 20px 0; }
+  margin: 10px 0 20px 0;}
 
 .progress-bar {
-  background-color: #2ABAFD; }
+  background-color: #2ABAFD;
+  box-shadow: none; }
+
+.compare-bar{
+  background-color: #EEFAFF;
+  box-shadow: none;
+}
+.sr-only{
+  position: relative;
+  top: 3px;
+}
 
 .category-result {
   font-weight: 700;
@@ -129,6 +224,15 @@ h4 {
     margin-bottom: 30px; }
   .total-result.cumplimientos{
     margin-top: 20px; }
+
+.compare-info{
+  font-weight: 700;
+  text-align: center; }
+
+.compare-result{
+  font-weight: 700;
+  font-size: 30px;
+}
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
@@ -198,9 +302,21 @@ button.btn.btn-default.btn-sm.dark {
 }
 .project-list{
   border-left: 4px solid #031424;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 40px 5px 10px;
   margin-left: 18px;
+  margin-bottom: 10px;
 }
+
+/*TABLES*/
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+  border-top: 1px solid #031424; }
+
+.table > thead > tr > th{
+  border-bottom: 2px solid #031424; }
+
+.table-responsive{
+  border: none; }
+
 
 /*FOOTER*/
 footer {
@@ -209,3 +325,10 @@ footer {
   padding: 50px 0 50px 0; }
   footer a {
     color: white; }
+
+
+@media (max-width: 333px) {
+  img.logo-nav{
+    width: 70%;
+  }
+}

@@ -7,6 +7,7 @@ export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
     year: DS.attr('number'),
     promises: DS.hasMany('promise'),
+    color: DS.attr('string'),
     government: DS.belongsTo('government'),
     filename: DS.attr('string'),
     in_landing: DS.attr('boolean', { defaultValue: false }),
