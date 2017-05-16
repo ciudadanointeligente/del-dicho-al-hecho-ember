@@ -55,6 +55,14 @@ var governments =[{
 	"color3": "#91CFEC",
 	"color4": "#AAE0F9",
 	"studies": [{
+		"type": "Discurso",
+		"img": "/img/pinera-en-el-auto.svg",
+		"color": "#91CFEC",
+		"year": 2012,
+		"version": "Mayo",
+		"name": "Piñera-2010-2014_Discurso-2012",
+		"filename": "Piñera-2010-2014_Discurso-2012.csv"
+	},{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
 		"color": "#91CFEC",
