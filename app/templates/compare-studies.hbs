@@ -1,144 +1,161 @@
-<div>
-  <h2>Comparar Gobiernos</h2>
-  <!-- botonera -->
+<section id="comparar">
+<div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <a href="#" class="btn btn-default btn-sm">Sebastián Piñera Gobierno completo</a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet Gobierno completo</a>
+    <div class="page-header">
+      <h1 class="text-center">{{model.[0].government.name}} - {{model.[1].government.name}}</h1>
+      <h2 class="text-center">Al año de gobierno</h2>
     </div>
   </div>
-  <!-- EObotonera -->
 
+
+  <div class="row">
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3>{{model.[0].government.name}} - {{model.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
-    </div>
-    <div class="panel-body">
+    <div class="panel-body compare">
       <!-- Cumplimiento y coherencia total -->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Cumplimiento y coherencia total</h4>
+        <div class="panel-heading text-center">
+          <h4>Cumplimiento y coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Bachelet 2do año</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Bachelet</p>
               <div class="graph-one">
-                {{ember-chart type='doughnut' data=model.[0].chartData options=doughnutOpt height=200}}
+                {{ember-chart type='doughnut' data=model.[0].chartData options=doughnutOpt height=150}}
               </div>
-              <p>Coherencia</p>
-              <p class="total-coherence">{{model.[0].coherenceLevel}}</p>
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].fullfilment}}%</p>
+              <p class="compare-info">Coherencia</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].coherenceLevel}}</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Piñera 2do año</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Piñera</p>
               <div class="graph-one">
-                {{ember-chart type='doughnut' data=model.[1].chartData options=doughnutOpt height=200}}
+                {{ember-chart type='doughnut' data=model.[1].chartData options=doughnutOpt height=150}}
               </div>
-              <p>Coherencia</p>
-              <p class="total-coherence">{{model.[1].coherenceLevel}}</p>
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].fullfilment}}%</p>
+              <p class="compare-info">Coherencia</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].coherenceLevel}}</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <!-- Cumplimiento y coherencia total -->
       <!-- Promesas realizadas -->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Promesas realizadas</h4>
+        <div class="panel-heading text-center">
+          <h4>Promesas realizadas <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Bachelet 2do año</p>
-              <p>{{model.[0].promises.length}}</p>
-              <p>Promesas</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Bachelet</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].promises.length}}</p>
+              <p class="compare-info">Promesas</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Piñera 2do año</p>
-              <p>{{model.[1].promises.length}}</p>
-              <p>Promesas</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Piñera</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].promises.length}}</p>
+              <p class="compare-info">Promesas</p>
             </div>
           </div>
         </div>
+      </div>
       </div>
       <!-- Promesas realizadas -->
       <!-- Proyectos enviados -->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Proyectos enviados</h4>
+        <div class="panel-heading text-center">
+          <h4>Proyectos enviados <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Bachelet 2do año</p>
-              <p>{{model.[0].billsCount}}</p>
-              <p>Proyectos</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Bachelet</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].billsCount}}</p>
+              <p class="compare-info">Proyectos</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Piñera 2do año</p>
-              <p>{{model.[1].billsCount}}</p>
-              <p>Proyectos</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Piñera</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].billsCount}}</p>
+              <p class="compare-info">Proyectos</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <!-- Proyectos enviados -->
       <!-- Promesas que presentan algún tipo de avance-->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Promesas que presentan algún tipo de avance</h4>
+        <div class="panel-heading text-center">
+          <h4>Promesas que presentan algún tipo de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Bachelet 2do año</p>
-              <p>{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
-              <p>Promesas completas ({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Piñera 2do año</p>
-              <p>{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
-              <p>Promesas completas ({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Bachelet</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
+              <p class="compare-info">Promesas completas</p>
+              <p class="compare-info">({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Piñera</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
+              <p class="compare-info">Promesas completas</p>
+              <p class="compare-info">({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <!-- Promesas que presentan algún tipo de avance-->
       <!-- Capacidad -->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Capacidad</h4>
+        <div class="panel-heading text-center">
+          <h4>Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Bachelet 2do año</p>
-              <p>{{model.[0].capacidad}}</p>
-              <p>Promesas con puntaje máximo</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Bachelet</p>
+              <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].capacidad}}</p>
+              <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <p>Piñera 2do año</p>
-              <p>{{model.[1].capacidad}}</p>
-              <p>Promesas con puntaje máximo</p>
+            <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
+              <p class="text-center">Piñera</p>
+              <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].capacidad}}</p>
+              <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <!-- Capacidad -->
       <!-- Areas -->
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4>Áreas</h4>
+        <div class="panel-heading text-center">
+          <h4>Áreas <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h4>
         </div>
         <div class="panel-body">
+          <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{model.[0].government.color1}}"></i> Bachelet</p>
+              <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{model.[1].government.color1}}"></i> Piñera</p>
+            </div>
+          </div>
           <table class="table table-responsive">
             <thead>
               <tr>
-                <th>Area</th>
-                <th>Avance</th>
-                <th>Voluntad política</th>
+                <th>Área</th>
+                <th class="text-center">Avance</th>
+                <th class="text-center">Voluntad política</th>
               </tr>
             </thead>
             <tbody>
@@ -147,23 +164,27 @@
                 <td width="10%">{{a.name}}</td>
                 <td width="80%">
                   <!-- bar01-->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%;">
-                      <span class="sr-only">{{fullfilmentPerArea a model.[0]}}% Complete</span>
+                  <div class="progress compare-bar hidden-xs hidden-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[0]}}%; background-color: {{model.[0].government.color1}}">
+                      <span class="sr-only">{{fullfilmentPerArea a model.[0]}}%</span>
                     </div>
                   </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[0].government.color1}}">{{fullfilmentPerArea a model.[0]}}%</p>
                   <!-- bar01-->
                   <!-- bar02-->
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%;">
-                      <span class="sr-only">{{fullfilmentPerArea a model.[1]}}% Complete</span>
+                  <div class="progress compare-bar hidden-xs hidden-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a model.[1]}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a model.[1]}}%; background-color: {{model.[1].government.color1}}">
+                      <span class="sr-only">{{fullfilmentPerArea a model.[1]}}%</span>
                     </div>
                   </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[1].government.color1}}">{{fullfilmentPerArea a model.[1]}}%</p>
                   <!-- bar02-->
                 </td>
                 <td width="10%">
-                  <p>{{politicalWillPerArea a model.[0]}}</p>
-                  <p>{{politicalWillPerArea a model.[1]}}</p>
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 25px; color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[0].government.color1}}">{{politicalWillPerArea a model.[0]}}</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{model.[1].government.color1}}">{{politicalWillPerArea a model.[1]}}</p>
                 </td>
               </tr>
               {{/each}}
@@ -171,8 +192,11 @@
           </table>
         </div>
       </div>
+      </div>
       <!-- Areas -->
     </div>
   </div>
 </div>
+</div>
+</section>
 {{outlet}}
