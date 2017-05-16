@@ -2,29 +2,14 @@
 <div class="container">
   <div class="row">
     <div class="page-header">
-      <h1 class="text-center">Comparar Estudios</h1>
+      <h1 class="text-center">{{model.[0].government.name}} - {{model.[1].government.name}}</h1>
+      <h2 class="text-center">Al año de gobierno</h2>
     </div>
   </div>
-  <!-- botonera -->
-  <div class="row">
-    <h3>Comparar programas año a año</h3>
-    <div class="col-md-12">
-      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet con Sebastián Piñera al 2do año de Gobierno</a>
-      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet con Sebastián Piñera al 3er año de Gobierno</a>
-    </div>
-    <h3>Comparar trayectorias de gobiernos</h3>
-    <div class="col-md-12">
-      <a href="#" class="btn btn-default btn-sm">Michelle Bachelet Gobierno completo</a>
-      <a href="#" class="btn btn-default btn-sm">Sebastián Piñera Gobierno completo</a>
-    </div>
-  </div>
-  <!-- EObotonera -->
+
 
   <div class="row">
   <div class="panel panel-default">
-    <div class="panel-heading text-center">
-      <h3>{{model.[0].government.name}} - {{model.[1].government.name}} / Al 2do año de gobierno<!--  --></h3>
-    </div>
     <div class="panel-body compare">
       <!-- Cumplimiento y coherencia total -->
       <div class="panel panel-default">
@@ -35,7 +20,7 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Bachelet 2do año</p>
+              <p class="text-center">Bachelet</p>
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[0].chartData options=doughnutOpt height=150}}
               </div>
@@ -45,7 +30,7 @@
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].coherenceLevel}}</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Piñera 2do año</p>
+              <p class="text-center">Piñera</p>
               <div class="graph-one">
                 {{ember-chart type='doughnut' data=model.[1].chartData options=doughnutOpt height=150}}
               </div>
@@ -68,12 +53,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Bachelet 2do año</p>
+              <p class="text-center">Bachelet</p>
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Piñera 2do año</p>
+              <p class="text-center">Piñera</p>
               <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
@@ -91,12 +76,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Bachelet 2do año</p>
+              <p class="text-center">Bachelet</p>
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Piñera 2do año</p>
+              <p class="text-center">Piñera</p>
               <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
@@ -114,12 +99,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Bachelet 2do año</p>
+              <p class="text-center">Bachelet</p>
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].presentanAvance}}/{{model.[0].promises.length}}</p>
               <p class="compare-info">Promesas completas</p>
               <p class="compare-info">({{model.[0].finalizadas}} completas - {{model.[0].enDesarrollo}} en progreso)</p>            </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Piñera 2do año</p>
+              <p class="text-center">Piñera</p>
               <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].presentanAvance}}/{{model.[1].promises.length}}</p>
               <p class="compare-info">Promesas completas</p>
               <p class="compare-info">({{model.[1].finalizadas}} completas - {{model.[1].enDesarrollo}} en progreso)</p>
@@ -138,12 +123,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Bachelet 2do año</p>
+              <p class="text-center">Bachelet</p>
               <p class="compare-result compare-info" style="color: {{model.[0].government.color1}}">{{model.[0].capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">Piñera 2do año</p>
+              <p class="text-center">Piñera</p>
               <p class="compare-result compare-info" style="color: {{model.[1].government.color1}}">{{model.[1].capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
@@ -161,8 +146,8 @@
           <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{model.[0].government.color1}}"></i> Bachelet 2do año</p>
-              <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{model.[1].government.color1}}"></i> Piñera 2do año</p>
+              <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{model.[0].government.color1}}"></i> Bachelet</p>
+              <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{model.[1].government.color1}}"></i> Piñera</p>
             </div>
           </div>
           <table class="table table-responsive">
