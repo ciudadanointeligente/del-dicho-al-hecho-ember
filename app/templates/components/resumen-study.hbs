@@ -1,25 +1,89 @@
 
 {{yield}}
-<section id="estudio">
-<div class="container">
-<div class="row">
-  <div class="page-header">
-    <h1 class="text-center">
-    Hola liss!! este archivo se modifica en app/templates/components/resumen-study.hbs
-    {{study.government.name}} Estudio de {{study.fullName}}</h1>
-  </div>
-  <div class="col-md-12">
-    <div class="bajada">
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-    </div>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="chart">
-      {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
+<div id="welcome">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">¿Cuánto cumple el gobierno?</h1>
+        <div class="col-md-3 hidden-sm hidden-xs text-center">
+            <img src="/img/bachelet.svg">
+          </div>
+          <div class="col-md-3">
+            <div class="estudio-total">
+              <div class="chart">
+                {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
+              </div>
+              <p class="label-total text-center">48%</p>
+              <h3 class="label-title text-center">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio" tooltip></i></h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="estudio-total">
+              <p class="label-total text-center">2.5 de 4</p>
+              <h3 class="label-title text-center">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso" tooltip></i></h3>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs text-center">
+            <img src="/img/martillo.svg">
+          </div>
+      </div>
+      <div class="row movil">
+        <div class="col-md-6">
+          <ul class="list-unstyled list-inline hidden-xs">
+            <li>
+              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;via=ciudadanoi&amp;hashtags=Midamos&amp;text=¿Cuánto cumple el Gobierno? Midamos avance de promesas de programa en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+                 <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                 <i class="fa fa-twitter fa-stack-1x"></i>
+               </span>
+             </a>
+            </li>
+            <li>
+              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
+                <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline visible-xs text-center rrss">
+            <li>
+              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;via=ciudadanoi&amp;hashtags=Midamos&amp;text=¿Cuánto cumple el Gobierno? Midamos avance de promesas de programa en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+                 <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                 <i class="fa fa-twitter fa-stack-1x"></i>
+               </span>
+             </a>
+            </li>
+            <li>
+              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
+                <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="{{ site.baseurl }}estudio.html" class="hidden-xs btn btn-primary btn-lg" onclick="ga('send','event','home-ver-estudio-desktop','click')">Ver estudio completo</a>
+          <a href="{{ site.baseurl }}estudio.html" class="visible-xs btn btn-primary" onclick="ga('send','event','home-ver-estudio-mobile','click')">Ver estudio completo</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
+
+<section id="que-es-home">
+  <div class="container">
+    <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p class="home">Del Dicho al Hecho es un estudio de <a href="//ciudadanointeligente.org" target="_blank">Ciudadano Inteligente</a> que mide el cumplimiento de las promesas legislativas establecidas por el Gobierno en su Programa presidencial y discurso del 21 de mayo.</p><br><p class="home">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 
