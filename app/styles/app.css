@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #031424;
-  background-color: #EEFAFF; }
+  background-color: #D4F2FF; }
 
 p {
   text-align: initial;
@@ -201,6 +201,12 @@ section{
   border: 0;
   margin-bottom: 5px; }
 
+.panel-promise a{
+  color: #0BD6B0; }
+
+  .panel-promise a:hover{
+    color: #031424; }
+
 .panel-body.compare{
   background-color: white;
 }
@@ -216,7 +222,7 @@ section{
     border-radius: 0;
   }
   .panel-body{
-    background-color: white;
+    background-color: transparent;
   }
 
 /*DATA*/
@@ -332,6 +338,18 @@ button.btn.btn-default.btn-sm.dark {
   .btn-default:focus{
     background-color: #0BD6B0;
     color: white;}
+
+a.btn.btn-default.btn-sm.btn-block.home{
+  margin: auto;
+  max-width: 70px;
+  background-color: #031424;
+  color: white;
+  font-weight: 700;
+}
+a.btn.btn-default.btn-sm.btn-block.home:hover{
+  background-color: white;
+  color: #031424;
+}
 
 /*MODALS*/
 .modal-content {
