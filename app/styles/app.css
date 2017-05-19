@@ -15,14 +15,21 @@ p {
   p.home {
     font-size: 16px; }
 
+a.home{
+  color: #F64B57;
+}
+  a.home:hover{
+    color: #2ABAFD;
+  }
+
 a {
-  color: #0BD6B0; }
+  color: #2ABAFD; }
   a:hover {
     text-decoration: none;
-    color: #031424; }
+    color: #F64B57; }
   a:focus {
     text-decoration: none;
-    color: #031424; }
+    color: #F64B57; }
 
 span {
   font-weight: 700; }
@@ -70,7 +77,9 @@ img.logo-nav{
   color: white;
   margin-top: 9px;}
   .navbar-default .navbar-nav > li > a:hover{
-    color: #0BD6B0; }
+    color: #67C7F4; }
+    .navbar-default .navbar-nav > li > a:focus{
+      color: #67C7F4; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: transparent;
@@ -85,7 +94,7 @@ img.logo-nav{
 .dropdown-menu > li > a{
   color: white; }
   .dropdown-menu > li > a:hover{
-    color: #0BD6B0;
+    color: #67C7F4;
     background-color: transparent;}
 
 .dropdown-menu .divider{
@@ -103,7 +112,7 @@ img.logo-nav{
 .navbar-default .navbar-nav .open .dropdown-menu > li > a{
   color: white;}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-    color: #0BD6B0;}
+    color: #67C7F4;}
 
 .menu-list{
   font-weight: 700;}
@@ -112,11 +121,40 @@ img.logo-nav{
   padding-left: 10px;}
 
 /*SECTIONS*/
-#resume {
-  background-color: white; }
+section{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-top: -20px;
+}
+
+#que-es-home{
+  background-color: white;
+  padding-top: 130px;
+  margin-top: -150px;}
+  #que-es-home.h2{
+    color: #F64B57;
+  }
+
+#resume{
+  padding-top: 60px;}
+  #resume.h2{
+    color: #F64B57;}
+  #resume.a.h3{
+    color: #031424;}
+    #resume.a.h3:hover{
+      color: #F64B57;}
+
+#welcome{
+  margin-top: -20px;
+}
+
+#que-es{
+  background-color: white;
+}
 
 #metodologia{
-  background-color: white;}
+  background-color: white;
+}
 
 /*PANELS*/
 .panel {
