@@ -121,6 +121,9 @@ img.logo-nav{
   padding-left: 10px;}
 
 /*SECTIONS*/
+.jumbotron{
+    background-color: #D4F2FF;}
+
 section{
   padding-top: 30px;
   padding-bottom: 60px;
@@ -137,12 +140,12 @@ section{
 
 #resume{
   padding-top: 60px;}
-  #resume.h2{
+  #resume h2{
     color: #F64B57;}
-  #resume.a.h3{
+  #resume h3 > a{
     color: #031424;}
-    #resume.a.h3:hover{
-      color: #F64B57;}
+    #resume h3 > a:hover{
+      color: #2ABAFD;}
 
 #welcome{
   margin-top: -20px;
@@ -270,6 +273,10 @@ section{
 .compare-result{
   font-weight: 700;
   font-size: 30px;
+}
+
+.cumplimientos{
+  min-height: 350px;
 }
 
 /*HIGHLIGHT ELEMENTS*/
