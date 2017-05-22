@@ -221,8 +221,8 @@ section{
     color: white;
     border-radius: 0;
   }
-  .panel-body{
-    background-color: transparent;
+  .panel-glosario .panel-body{
+    background-color: white;
   }
 
 /*DATA*/
