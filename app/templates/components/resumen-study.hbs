@@ -92,7 +92,7 @@
   <h2 class="text-center">Cumplimiento de promesas al tercer año de gobierno de Bachelet</h2>
   <div class="row">
     {{#each-in study.promisesGroupedByArea as |area_id a|}}
-    <div class="cumplimientos col-sm-4 col-md-4">
+    <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
       <h3 class="text-center"><a href="" onClick="ga('send', 'event', 'home-{{c.area}}', 'click');">{{a.area.name}}</a></h3>
       <div class="chart">
       {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
