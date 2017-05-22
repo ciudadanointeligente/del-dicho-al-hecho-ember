@@ -134,7 +134,7 @@
                   {{#if p.bills.length}}
                     <p style="float: left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
+                    <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
                     <div class="modal fade" id="myModal-proyecto-{{a.id}}-{{b.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
@@ -149,7 +149,7 @@
                             {{b.justifications}}
                           </div>
                           <div class="modal-footer">
-                            <a class="btn btn-default" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                            <a class="btn btn-success project" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                           </div>
                         </div>
                       </div>
@@ -188,7 +188,7 @@
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                                   <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                  <a class="btn btn-success btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
                                 {{/each}}
                               </div>
@@ -227,7 +227,7 @@
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                                   <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                  <a class="btn btn-success btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
                                 {{/each}}
                               </div>
