@@ -10,6 +10,7 @@ var governments =[{
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FB7881",
 		"year": 2017,
+		"in_landing": true,
 		"version": "Marzo",
 		"name": "Michelle Bachelet Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv"
