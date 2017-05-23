@@ -133,7 +133,8 @@
           <thead>
             <tr>
               <th>Área</th>
-              <th class="text-center">Avance</th>
+              <th class="text-center">Avance año a año</th>
+              <th class="text-center">Avance total</th>
             </tr>
           </thead>
           <tbody>
@@ -151,6 +152,10 @@
                     {{/each}}
                   </div>
                   <!-- bar01-->
+                </td>
+                <td width="10%">
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">Hola%</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">Hola%</p>
                 </td>
             </tr>
             {{/each}}
