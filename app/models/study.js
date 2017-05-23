@@ -126,9 +126,7 @@ export default DS.Model.extend(CalculationsMixin, {
     }}),
     chartData : Ember.computed('fullfilment', function() {
       return {
-          labels: [
-            "% avance", "% incompleto"
-          ],
+          labels: [],
           datasets: [
               {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
@@ -144,7 +142,8 @@ export default DS.Model.extend(CalculationsMixin, {
       };
     }),
     doughnutOpt: {
-      responsive: true
+      responsive: true,
+      cutoutPercentage: 75
     },
     areas: Ember.computed('promises',function(){
       let a = [];
