@@ -6,11 +6,19 @@ var governments =[{
 	"color3": "#FDAAAF",
 	"color4": "#FCCCD0",
 	"studies": [{
+			"type": "Discurso",
+			"img": "/img/bashelet-con-la-fiera.svg",
+			"color": "#FDAAAF",
+			"in_landing": true,
+			"year": 2017,
+			"version": "Mayo",
+			"name": "Bachelet-2014-2018_Discurso-2017.csv",
+			"filename": "Bachelet-2014-2018_Discurso-2017.csv"
+		}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FB7881",
 		"year": 2017,
-		"in_landing": true,
 		"version": "Marzo",
 		"name": "Michelle Bachelet Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv"
