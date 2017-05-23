@@ -88,10 +88,10 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       {{#each-in study.promisesGroupedByArea as |area_id a|}}
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne-{{a.area.id}}">
+        <div id="headingOne-{{a.area.id}}" class="collapsed panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
           <div class="row">
             <div class="col-md-4">
-              <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
+              <h4>
                 <span>
                   {{a.area.name}}
                 </span>
