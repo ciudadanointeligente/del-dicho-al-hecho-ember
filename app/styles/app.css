@@ -331,6 +331,13 @@ section{
   .btn-success:focus{
     background-color: #031424; }
 
+.btn-success-inverse{
+  background-color: #031424; }
+  .btn-success-inverse:hover{
+    background-color: #0BD6B0; }
+  .btn-success-inverse:focus{
+    background-color: #0BD6B0; }
+
 .btn{
   margin: auto;
   color: white;
@@ -343,6 +350,11 @@ section{
 a.btn-success{
   color: white;}
   a:hover.btn-success{
+    color: white;}
+
+a.btn-success-inverse{
+  color: white;}
+  a:hover.btn-success-inverse{
     color: white;}
 
 /*MODALS*/
