@@ -13,6 +13,7 @@ export default DS.Model.extend(CalculationsMixin, {
     in_landing: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
+    name: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
