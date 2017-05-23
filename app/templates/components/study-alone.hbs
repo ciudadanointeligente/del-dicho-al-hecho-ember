@@ -16,9 +16,17 @@
       <div class="text-center promise-result home">{{c.total}}</div>
       <p class="text-center">{{study.fullfilment}}%</p>
     </div>
-    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
-    <div class="chart estudio-total">
+    <h3>cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+  </div>
+  <div class="col-md-4 text-center">
+    <div class="chart">
       {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
+    </div>
+  </div>
+  <div class="col-md-4 text-center hidden-md hidden-lg ">
+    <div class="total-result cumplimientos">
+      <div class="text-center promise-result home">{{c.total}}</div>
+      <p class="text-center">{{study.fullfilment}}%</p>
     </div>
   </div>
 
