@@ -117,6 +117,7 @@ var governments =[{
 module.exports = function(environment) {
   var area_images = {
     'Agricultura': 'img/i-agr.svg',
+		'Ciencia y Tecnología': 'img/i-cie.svg',
     'Cultura': 'img/i-cul.svg',
     'Defensa': 'img/i-def.svg',
     'Democracia': 'img/i-dem.svg',
