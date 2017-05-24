@@ -306,6 +306,13 @@ section{
 .chart-comparison{
   margin-top: 50px;}
 
+.chart-resume{
+  margin: -110px 0 10px 0;}
+
+.img-chart{
+  position: relative;
+  top: 125px;}
+
 /*HIGHLIGHT ELEMENTS*/
 .badge {
   background-color: #0BD6B0; }
