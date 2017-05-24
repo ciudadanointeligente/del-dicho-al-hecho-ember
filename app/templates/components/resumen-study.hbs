@@ -14,7 +14,7 @@
             </div>
               <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
               <div class="chart estudio-total">
-                {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
+                {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
               </div>
           </div>
           <div class="col-md-3 text-center">
@@ -96,7 +96,7 @@
       <h3 class="text-center"><a href="" onClick="ga('send', 'event', 'home-{{c.area}}', 'click');">{{a.area.name}}</a></h3>
       <div class="chart-resume text-center">
         <img src="{{ area-image a.area.name }}" class="img-chart">
-        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study) options=study.doughnutOpt height=150}}
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study 'front') options=study.doughnutOpt height=150}}
       </div>
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
       <p class="text-center home"><b>de avance</b></p>
