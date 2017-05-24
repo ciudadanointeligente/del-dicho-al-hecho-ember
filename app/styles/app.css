@@ -298,6 +298,14 @@ section{
   position: relative;
   top: 22px;}
 
+.graph-one{
+  position: relative;
+  top: -102px;
+  margin-bottom: -100px;}
+
+.chart-comparison{
+  margin-top: 50px;}
+
 /*HIGHLIGHT ELEMENTS*/
 .badge {
   background-color: #0BD6B0; }

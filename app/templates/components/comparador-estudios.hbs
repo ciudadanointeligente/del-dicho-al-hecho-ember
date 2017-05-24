@@ -22,21 +22,25 @@
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
               <p class="text-center">{{study_0.government.name}}</p>
-              <div class="graph-one">
-                {{ember-chart type='doughnut' data=study_0.chartData options=study_0.doughnutOpt height=150}}
+              <div class="chart-comparison">
+                <p class="compare-info">Avance</p>
+                <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.fullfilment}}%</p>
+                <div class="graph-one">
+                  {{ember-chart type='doughnut' data=study_0.chartData options=study_0.doughnutOpt height=150}}
+                </div>
               </div>
-              <p class="compare-info">Avance</p>
-              <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.fullfilment}}%</p>
               <p class="compare-info">Coherencia</p>
               <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.coherenceLevel}}</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
               <p class="text-center">{{study_1.government.name}}</p>
-              <div class="graph-one">
-                {{ember-chart type='doughnut' data=study_1.chartData options=study_1.doughnutOpt height=150}}
+              <div class="chart-comparison">
+                <p class="compare-info">Avance</p>
+                <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.fullfilment}}%</p>
+                <div class="graph-one">
+                  {{ember-chart type='doughnut' data=study_1.chartData options=study_1.doughnutOpt height=150}}
+                </div>
               </div>
-              <p class="compare-info">Avance</p>
-              <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.fullfilment}}%</p>
               <p class="compare-info">Coherencia</p>
               <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.coherenceLevel}}</p>
             </div>
