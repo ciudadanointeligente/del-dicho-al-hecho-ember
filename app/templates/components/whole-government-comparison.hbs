@@ -41,11 +41,13 @@
           {{#each model.comparable as |study|}}
           <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
             <p class="text-center">{{model.name}} {{study.year}}</p>
-            <div class="graph-one">
-              {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
+            <div class="chart-comparison">
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
+              <div class="graph-one chart-compare-studies">
+                {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
+              </div>
             </div>
-            <p class="compare-info">Avance</p>
-            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
             <p class="compare-info">Coherencia</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.coherenceLevel}}</p>
           </div>

@@ -2,33 +2,33 @@ var governments =[{
 	"name": "Michelle Bachelet",
 	"years": {'start': 2014, 'end': 2018},
 	"color1": "#F64B57",
-	"color2": "#FB7881",
-	"color3": "#FDAAAF",
-	"color4": "#FCCCD0",
+	"color2": "#FF7E88",
+	"color3": "#FFB0B6",
+	"color4": "#FFE7E8",
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FB7881",
+		"color": "#FF7E88",
 		"year": 2017,
 		"in_landing": true,
 		"version": "Marzo",
-		"name": "Michelle Bachelet Programa de Gobierno 2016",
+		"name": "Michelle Bachelet: Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FDAAAF",
+		"color": "#FFB0B6",
 		"year": 2016,
 		"version": "Marzo",
-		"name": "Michelle Bachelet Programa de Gobierno 2015",
+		"name": "Michelle Bachelet: Programa de Gobierno 2015",
 		"filename": "Bachelet-2014-2018_Programa-2016.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"color": "#FCCCD0",
+		"color": "#FFE7E8",
 		"year": 2015,
 		"version": "Marzo",
-		"name": "Michelle Bachelet Programa de Gobierno 2014",
+		"name": "Michelle Bachelet: Programa de Gobierno 2014",
     "filename": "Bachelet-2014-2018_Programa-2015.csv"
 	},{
 		"type": "Discurso",
@@ -37,7 +37,7 @@ var governments =[{
 		"in_landing": true,
 		"year": 2017,
 		"version": "Mayo",
-		"name": "Michelle Bachelet Cuenta Pública 2016",
+		"name": "Michelle Bachelet: Cuenta Pública 2016",
 		"filename": "Bachelet-2014-2018_Discurso-2017.csv"
 		}, {
 		"type": "Discurso",
@@ -45,7 +45,7 @@ var governments =[{
 		"color": "#FDAAAF",
 		"year": 2016,
 		"version": "Mayo",
-		"name": "Michelle Bachelet Cuenta Pública 2015",
+		"name": "Michelle Bachelet: Cuenta Pública 2015",
 		"filename": "Bachelet-2014-2018_Discurso-2016.csv"
 	}, {
 		"type": "Discurso",
@@ -53,39 +53,39 @@ var governments =[{
 		"color": "#FCCCD0",
 		"year": 2015,
 		"version": "Mayo",
-		"name": "Michelle Bachelet Cuenta Pública 2014",
+		"name": "Michelle Bachelet: Cuenta Pública 2014",
     "filename": "Bachelet-2014-2018_Discurso-2015.csv"
 	}, ]
 }, {
 	"name": "Sebastián Piñera",
 	"years": {'start': 2010, 'end': 2014},
 	"color1": "#2ABAFD",
-	"color2": "#67C7F4",
-	"color3": "#91CFEC",
-	"color4": "#AAE0F9",
+	"color2": "#70D2FF",
+	"color3": "#B0E6FF",
+	"color4": "#DBF4FF",
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
 		"color": "#2ABAFD",
 		"year": 2014,
 		"version": "Marzo",
-		"name": "Sebastián Piñera Programa de Gobierno 2013",
+		"name": "Sebastián Piñera: Programa de Gobierno 2013",
 		"filename": "Piñera-2010-2014_Programa-2014.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#67C7F4",
+		"color": "#70D2FF",
 		"year": 2013,
 		"version": "Marzo",
-		"name": "Sebastián Piñera Programa de Gobierno 2012",
+		"name": "Sebastián Piñera: Programa de Gobierno 2012",
 		"filename": "Piñera-2010-2014_Programa-2013.csv"
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#91CFEC",
+		"color": "#B0E6FF",
 		"year": 2012,
 		"version": "Marzo",
-		"name": "Sebastián Piñera Programa de Gobierno 2011",
+		"name": "Sebastián Piñera: Programa de Gobierno 2011",
 		"filename": "Piñera-2010-2014_Programa-2012.csv"
 	}, {
 		"type": "Discurso",
@@ -93,7 +93,7 @@ var governments =[{
 		"color": "#2ABAFD",
 		"year": 2014,
 		"version": "Mayo",
-		"name": "Sebastián Piñera Cuenta Pública 2013",
+		"name": "Sebastián Piñera: Cuenta Pública 2013",
 		"filename": "Piñera-2010-2014_Discurso-2014.csv"
 	}, {
 		"type": "Discurso",
@@ -101,7 +101,7 @@ var governments =[{
 		"color": "#67C7F4",
 		"year": 2013,
 		"version": "Mayo",
-		"name": "Sebastián Piñera Cuenta Pública 2012",
+		"name": "Sebastián Piñera: Cuenta Pública 2012",
 		"filename": "Piñera-2010-2014_Discurso-2013.csv"
 	}, {
 		"type": "Discurso",
@@ -109,7 +109,7 @@ var governments =[{
 		"color": "#91CFEC",
 		"year": 2012,
 		"version": "Mayo",
-		"name": "Sebastián Piñera Cuenta Pública 2011",
+		"name": "Sebastián Piñera: Cuenta Pública 2011",
 		"filename": "Piñera-2010-2014_Discurso-2012.csv"
 	},]
 }];
@@ -133,7 +133,7 @@ module.exports = function(environment) {
     'Pueblos Indígenas': 'img/i-pue.svg',
     'Salud': 'img/i-sal.svg',
     'Seguridad Ciudadana': 'img/i-seg.svg',
-    'Trabajo y Prevision Social': 'img/i-tra.svg',
+    'Trabajo y Previsión Social': 'img/i-tra.svg',
     'Transporte y Telecomunicaciones': 'img/i-tran.svg',
     'Vivienda y Urbanismo': 'img/i-viv.svg',
     'default': 'img/i-def.svg',
