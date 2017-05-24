@@ -352,6 +352,13 @@ section{
   .btn-danger:focus{
     background-color: #2ABAFD;}
 
+.btn-warning{
+  background-color: #2ABAFD;}
+  .btn-warning:hover{
+    background-color: #F64B57;}
+  .btn-warning:focus{
+    background-color: #F64B57;}
+
 .btn-success{
   background-color: #0BD6B0; }
   .btn-success:hover{
