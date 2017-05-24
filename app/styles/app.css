@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #031424;
-  background-color: #EEFAFF; }
+  background-color: #D4F2FF; }
 
 p {
   text-align: initial;
@@ -15,14 +15,20 @@ p {
   p.home {
     font-size: 16px; }
 
+.home a{
+  color: #2ABAFD;}
+  .home a:hover{
+    color: #F64B57;
+  }
+
 a {
-  color: #0BD6B0; }
+  color: #F64B57; }
   a:hover {
     text-decoration: none;
-    color: #031424; }
+    color: #2ABAFD; }
   a:focus {
     text-decoration: none;
-    color: #031424; }
+    color: #2ABAFD; }
 
 span {
   font-weight: 700; }
@@ -30,9 +36,13 @@ span {
 h1{
   margin-top: 130px;}
 
+h1.page {
+  color: #F64B57;
+}
+
 h3 {
   font-size: 20px;
-  margin-top: 0;}
+  margin-top: 20px;}
   h3.sub {
     font-size: 16px;
     line-height: 0;
@@ -40,6 +50,9 @@ h3 {
 
 h4 {
   font-size: 20px; }
+
+h5{
+  font-size: 16px; }
 
 .bajada{
   margin-bottom: 20px;
@@ -70,7 +83,9 @@ img.logo-nav{
   color: white;
   margin-top: 9px;}
   .navbar-default .navbar-nav > li > a:hover{
-    color: #0BD6B0; }
+    color: #67C7F4; }
+    .navbar-default .navbar-nav > li > a:focus{
+      color: #67C7F4; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: transparent;
@@ -85,7 +100,7 @@ img.logo-nav{
 .dropdown-menu > li > a{
   color: white; }
   .dropdown-menu > li > a:hover{
-    color: #0BD6B0;
+    color: #67C7F4;
     background-color: transparent;}
 
 .dropdown-menu .divider{
@@ -103,7 +118,7 @@ img.logo-nav{
 .navbar-default .navbar-nav .open .dropdown-menu > li > a{
   color: white;}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-    color: #0BD6B0;}
+    color: #67C7F4;}
 
 .menu-list{
   font-weight: 700;}
@@ -112,11 +127,43 @@ img.logo-nav{
   padding-left: 10px;}
 
 /*SECTIONS*/
-#resume {
-  background-color: white; }
+.jumbotron{
+    background-color: #D4F2FF;}
+
+section{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-top: -20px;
+}
+
+#que-es-home{
+  background-color: white;
+  padding-top: 130px;
+  margin-top: -150px;}
+  #que-es-home h2{
+    color: #F64B57;
+  }
+
+#resume{
+  padding-top: 60px;}
+  #resume h2{
+    color: #F64B57;}
+  #resume h3 > a{
+    color: #031424;}
+    #resume h3 > a:hover{
+      color: #2ABAFD;}
+
+#welcome{
+  margin-top: -20px;
+}
+
+#que-es{
+  background-color: white;
+}
 
 #metodologia{
-  background-color: white;}
+  background-color: white;
+}
 
 /*PANELS*/
 .panel {
@@ -160,6 +207,12 @@ img.logo-nav{
   border: 0;
   margin-bottom: 5px; }
 
+.panel-promise a{
+  color: #0BD6B0; }
+
+  .panel-promise a:hover{
+    color: #031424; }
+
 .panel-body.compare{
   background-color: white;
 }
@@ -174,7 +227,7 @@ img.logo-nav{
     color: white;
     border-radius: 0;
   }
-  .panel-body{
+  .panel-glosario .panel-body{
     background-color: white;
   }
 
@@ -185,8 +238,10 @@ img.logo-nav{
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
   stroke: #031424; }
 
-.chart{
-  margin-bottom: 20px; }
+.chart.estudio-total{
+  margin-bottom: -110px;
+  position: relative;
+  top: -158px;}
 
 .progress {
   height: 26px;
@@ -223,7 +278,7 @@ img.logo-nav{
     font-size: 30px;
     margin-bottom: 30px; }
   .total-result.cumplimientos{
-    margin-top: 20px; }
+    margin-top: 60px; }
 
 .compare-info{
   font-weight: 700;
@@ -234,6 +289,33 @@ img.logo-nav{
   font-size: 30px;
 }
 
+.cumplimientos-resumen{
+  min-height: 350px;
+}
+
+.label-cumplimiento{
+  position: relative;
+  top: 22px;}
+
+.label-coherencia{
+  position: relative;
+  top: 22px;}
+
+.chart-compare-studies{
+  position: relative;
+  top: -102px;
+  margin-bottom: -100px;}
+
+.chart-comparison{
+  margin-top: 50px;}
+
+.chart-resume{
+  margin: -110px 0 10px 0;}
+
+.img-chart{
+  position: relative;
+  top: 125px;}
+
 /*HIGHLIGHT ELEMENTS*/
 .badge {
   background-color: #0BD6B0; }
@@ -242,50 +324,72 @@ img.logo-nav{
   background-color: #0BD6B0; }
 
 .tooltip {
-  width: 280px; }
+  width: 280px;}
 
 .tooltip-inner {
-  background-color: #2ABAFD; }
+  background-color: white;
+  color: #031424;
+  font-family: 'Karla', sans-serif;}
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #2ABAFD; }
+  border-top-color: white; }
 
 .fa{
   margin: -16px 0 -7px 0;
 }
 
 /*BUTTONS*/
-button.btn.btn-default {
-  background-color: #0BD6B0;
-  color: white;
-  border: none;
-  font-weight: 700;
-  border-radius: 20px; }
-  button.btn.btn-default:hover {
+.btn-info{
+  max-width: 70px;
+  background-color: #031424; }
+  .btn-info:hover{
+    background-color: #2ABAFD; }
+
+.btn-danger{
+  background-color: #F64B57;}
+  .btn-danger:hover{
+    background-color: #2ABAFD;}
+  .btn-danger:focus{
+    background-color: #2ABAFD;}
+
+.btn-warning{
+  background-color: #2ABAFD;}
+  .btn-warning:hover{
+    background-color: #F64B57;}
+  .btn-warning:focus{
+    background-color: #F64B57;}
+
+.btn-success{
+  background-color: #0BD6B0; }
+  .btn-success:hover{
+    background-color: #031424; }
+  .btn-success:focus{
     background-color: #031424; }
 
-button.btn.btn-default.btn-sm.btn-block.home {
-  margin: auto;
-  max-width: 70px;
-  background-color: #FB7881; }
-  button.btn.btn-default.btn-sm.btn-block.home:hover {
-    background-color: #2ABAFD; }
-
-button.btn.btn-default.btn-sm.dark {
+.btn-success-inverse{
   background-color: #031424; }
-  button.btn.btn-default.btn-sm.dark:hover {
-    background-color: #2ABAFD; }
+  .btn-success-inverse:hover{
+    background-color: #0BD6B0; }
+  .btn-success-inverse:focus{
+    background-color: #0BD6B0; }
 
-.btn-default{
-  background-color: #031424;
+.btn{
+  margin: auto;
   color: white;
+  font-weight: 700;
   border-radius: 20px;
-  border: none; }
-  .btn-default:hover{
-    background-color: #0BD6B0;
+  border: none;}
+  .btn a{
     color: white;}
-  .btn-default:focus{
-    background-color: #0BD6B0;
+
+a.btn-success{
+  color: white;}
+  a:hover.btn-success{
+    color: white;}
+
+a.btn-success-inverse{
+  color: white;}
+  a:hover.btn-success-inverse{
     color: white;}
 
 /*MODALS*/
@@ -326,6 +430,15 @@ footer {
   footer a {
     color: white; }
 
+@media (max-width: 991px) {
+  .label-coherencia{
+    position: relative;
+    top: -18px;}
+
+  .chart.estudio-total{
+    margin-bottom: -170px;}
+
+}
 
 @media (max-width: 333px) {
   img.logo-nav{

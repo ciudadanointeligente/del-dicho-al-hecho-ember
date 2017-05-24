@@ -1,260 +1,109 @@
 
 {{yield}}
-<section id="estudio">
-<div class="container">
-<div class="row">
-  <div class="page-header">
-    <h1 class="text-center"> 
-    Hola liss!! este archivo se modifica en app/templates/components/resumen-study.hbs 
-    {{study.government.name}} Estudio de {{study.fullName}}</h1>
-  </div>
-  <div class="col-md-12">
-    <div class="bajada">
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-    </div>
-  </div>
-  <div class="col-md-4 text-center hidden-sm hidden-xs">
-    <div class="total-result cumplimientos">
-      <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}%</p>
-    </div>
-    <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="chart">
-      {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
-    </div>
-  </div>
-  <div class="col-md-4 text-center hidden-md hidden-lg ">
-    <div class="total-result cumplimientos">
-      <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}%</p>
-    </div>
-    <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="total-result cumplimientos">
-      {{ study.coherenceLevel }}
-    </div>
-    <h3>coherencia total con el programa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-3 text-center">
-    <h3 class="sub">Total de promesas</h3>
-    <div class="total-result sub">
-      {{study.promises.length}}
-    </div>
-  </div>
-  <div class="col-md-3 text-center">
-    <h3 class="sub">Total de proyectos enviados</h3>
-    <div class="total-result sub">
-      {{study.billsCount}}
-    </div>
-  </div>
-  <div class="col-md-3 text-center">
-    <h3 class="sub">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%) y su grado de coherencia (4)."></i></h3>
-    <div class="total-result sub">
-      {{study.capacity}}
-    </div>
-  </div>
-  <div class="col-md-3 text-center">
-    <h3 class="sub">Total de urgencias <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Es la suma de todas las urgencias asociadas a los proyectos de ley contenidos en el estudio."></i></h3>
-    <div class="total-result sub">
-      {{study.urgenciesCount}}
-    </div>
-  </div>
-</div>
-
-<div class="panel panel-default legend">
-  <div class="row">
-    <div class="col-md-9">
-      <h4>Áreas</h4>
-    </div>
-    <div class="hidden-xs hidden-sm col-md-3 text-center">
+<div id="welcome">
+  <div class="jumbotron">
+    <div class="container">
       <div class="row">
+        <h1 class="text-center">¿Cuánto cumple el gobierno?</h1>
+        <div class="col-md-3 hidden-sm hidden-xs text-center">
+            <img src="/img/bachelet.svg">
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="total-result cumplimientos">
+              {{study.fullfilment}}%
+            </div>
+              <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+              <div class="chart estudio-total">
+                {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
+              </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="total-result cumplimientos">
+              {{ study.coherenceLevel }}
+            </div>
+            <h3 class="label-coherencia">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs text-center">
+            <img src="/img/martillo.svg">
+          </div>
+      </div>
+      <div class="row movil">
         <div class="col-md-6">
-          <h5>Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></h5>
+          <ul class="list-unstyled list-inline hidden-xs">
+            <li>
+              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;via=ciudadanoi&amp;hashtags=Midamos&amp;text=¿Cuánto cumple el Gobierno? Midamos avance de promesas de programa en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+                 <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                 <i class="fa fa-twitter fa-stack-1x"></i>
+               </span>
+             </a>
+            </li>
+            <li>
+              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
+                <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline visible-xs text-center rrss">
+            <li>
+              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;via=ciudadanoi&amp;hashtags=Midamos&amp;text=¿Cuánto cumple el Gobierno? Midamos avance de promesas de programa en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+                 <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                 <i class="fa fa-twitter fa-stack-1x"></i>
+               </span>
+             </a>
+            </li>
+            <li>
+              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
+                <span class="fa-stack fa-lg">
+                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <h5>Coherencia del área</h5>
+        <div class="col-md-6 text-right">
+          <a href="{{config.rootURL}}study/{{study.slug}}" class="hidden-xs btn btn-primary btn-lg btn-danger" onclick="ga('send','event','home-ver-estudio-desktop','click')">Ver estudio completo</a>
+          <a href="{{config.rootURL}}study/{{study.slug}}" class="visible-xs btn btn-primary btn-danger" onclick="ga('send','event','home-ver-estudio-mobile','click')">Ver estudio completo</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      {{#each-in study.promisesGroupedByArea as |area_id a|}}
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne-{{a.area.id}}">
-          <div class="row">
-            <div class="col-md-4">
-              <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
-                <span>
-                  {{a.area.name}}
-                </span>
-              </h4>
-              <div class="sec-promesas">
-                <h5>{{a.promises.length}} promesa(s)<br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso - {{a.summary.no_progress}} sin progreso)</h5>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="{{a.summary.fullfilment}}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{a.summary.fullfilment}}%; background-color: {{study.government.color1}}"></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                  <p class="hidden-md hidden-lg text-center">Avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="{{a.area.name}}"></i></p>
-                  <div class="category-result text-center">
-                    {{a.summary.fullfilment}}%
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                  <p class="hidden-md hidden-lg text-center">Coherencia <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></p>
-                  <div class="category-result text-center">
-                    {{a.summary.coherenceLevel}}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!--row-->
-        </div><!--panel-heading-->
-        <div id="cumplimiento-{{a.area.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne-{{a.area.id}}" >
-          <div class="panel-body">
-            {{#each a.promises as |p|}}
-            <div class="panel-promise">
-              <div class="row">
-                <div class="col-md-9">
-                  <h4>{{p.title}}</h4>
-                  <p>{{p.content}}</p><br>
-                  {{#if p.bills.length}}
-                    <p style="float: left;"><span>Proyectos asociados </span></p>
-                    {{#each p.bills as |b|}}
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
-                    <!-- modal project -->
-                    <div class="modal fade" id="myModal-proyecto-{{a.id}}-{{b.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
-                            <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                            {{b.justifications}}
-                          </div>
-                          <div class="modal-footer">
-                            <a class="btn btn-default" href="{{b.url}}" target="_blank">Ir al proyecto</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {{/each}}
-                    <p><span>Total de urgencias</span> <span class="badge">{{p.urgenciesCount}}</span></p>
-                  {{/if}}
-                </div>
-                <div class="col-md-3">
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <p class="text-center">Avance</p>
-                      <div class="promise-result text-center">
-                        {{p.fullfilment}}%
-                      </div>
-                      <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-cumplimiento-{{a.id}}-{{p.id}}">¿Por qué?</a></p>
-                      <!-- modal cumplimiento -->
-                      <div class="modal fade" id="myModal-cumplimiento-{{a.id}}-{{p.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h4>
-                              {{p.ja_why}}
-                            </div>
-                            <div class="modal-body">
-                              <h4 class="modal-title" id="myModalLabel">{{p.coherenceLevel}}/4 escala de coherencia - ¿Por qué?</h4>
-                              {{p.jc_why}}
-                            </div>
-                            <div class="modal-body">
-                              {{#if p.bills.length}}
-                              <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
-                              <div class="row"><!---Projects-->
-                                {{#each p.bills as |b|}}
-                                <div class="col-md-12 project-list">
-                                  <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
-                                  <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
-                                  <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
-                                </div>
-                                {{/each}}
-                              </div>
-                              {{/if}}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- modal coherence -->
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <p class="text-center">Coherencia</p>
-                      <div class="promise-result text-center">
-                        {{p.coherenceLevel}}
-                      </div>
-                      <p class="text-center"><a href="#" data-toggle="modal" data-target="#myModal-coherencia-{{a.id}}-{{p.id}}">¿Por qué?</a></p>
-                      <!-- modal coherence -->
-                      <div class="modal fade" id="myModal-coherencia-{{a.id}}-{{p.id}}" role="dialog">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h4>
-                              {{p.ja_why}}
-                            </div>
-                            <div class="modal-body">
-                              <h4 class="modal-title" id="myModalLabel">{{p.coherenceLevel}}/4 escala de coherencia - ¿Por qué?</h4>
-                              {{p.jc_why}}
-                            </div>
-                            <div class="modal-body">
-                              {{#if p.bills.length}}
-                              <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
-                              <div class="row"><!---Projects-->
-                                {{#each p.bills as |b|}}
-                                <div class="col-md-12 project-list">
-                                  <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
-                                  <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
-                                  <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
-                                </div>
-                                {{/each}}
-                              </div>
-                              {{/if}}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- modal coherence -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {{else}}
-            <p>No hay promesas que mostrar para esta área</p>
-            {{/each}}
-          </div><!--panel-body-->
-        </div><!--cumplimiento-->
-      </div><!--panel default-->
-      {{else}}
-      <p>No hay áreas que mostrar</p>
-      {{/each-in}}
+<section id="que-es-home">
+  <div class="container">
+    <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p class="home">Del Dicho al Hecho es un estudio de <a href="//ciudadanointeligente.org" target="_blank">Ciudadano Inteligente</a> que mide el cumplimiento de las promesas legislativas establecidas por el Gobierno en su Programa presidencial y discurso del 21 de mayo.</p><br><p class="home">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+
+<section id="resume">
+<div class="container">
+  <h2 class="text-center">Cumplimiento de promesas al tercer año de gobierno de Bachelet</h2>
+  <div class="row">
+    {{#each-in study.promisesGroupedByArea as |area_id a|}}
+    <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
+      <h3 class="text-center"><a href="" onClick="ga('send', 'event', 'home-{{c.area}}', 'click');">{{a.area.name}}</a></h3>
+      <div class="chart-resume text-center">
+        <img src="{{ area-image a.area.name }}" class="img-chart">
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study 'front') options=study.doughnutOpt height=150}}
+      </div>
+      <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
+      <p class="text-center home"><b>de avance</b></p>
+      <p class="text-center">Coherencia con la promesa <b>{{a.summary.coherenceLevel}} de 4</b></p>
+      <a class="btn btn-info btn-sm btn-block" href="{{config.rootURL}}study/{{study.slug}}#area-{{a.area.slug}}" onClick="ga('send', 'event', 'home-{{a.area.slug}}-ver-mas', 'click');">Ver más</a>
+    </div>
+    {{/each-in}}
+  </div>
 </div>
 </section>

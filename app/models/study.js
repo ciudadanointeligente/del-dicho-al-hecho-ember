@@ -11,8 +11,10 @@ export default DS.Model.extend(CalculationsMixin, {
     government: DS.belongsTo('government'),
     filename: DS.attr('string'),
     in_landing: DS.attr('boolean', { defaultValue: false }),
+    visible: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
+    name: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
@@ -124,27 +126,43 @@ export default DS.Model.extend(CalculationsMixin, {
         return 0;
       }
     }}),
-    chartData : Ember.computed('fullfilment', function() {
+    chartDataFront : Ember.computed('fullfilment', function() {
       return {
-          labels: [
-            "% avance", "% incompleto"
-          ],
+          labels: [],
           datasets: [
               {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      this.get("government").get("color3"),
+                      "#FFFFFF",
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
+                      "#FFFFFF",
+                  ]
+              }]
+      };
+    }),
+    chartData : Ember.computed('fullfilment', function() {
+      return {
+          labels: [],
+          datasets: [
+              {
+                  data: [this.get('fullfilment'), 100-this.get('fullfilment')],
+                  backgroundColor: [
+                      this.get("government").get("color1"),
                       this.get("government").get("color4"),
+                  ],
+                  hoverBackgroundColor: [
+                      this.get("government").get("color2"),
+                      this.get("government").get("color3"),
                   ]
               }]
       };
     }),
     doughnutOpt: {
-      responsive: true
+      responsive: true,
+      cutoutPercentage: 73
     },
     areas: Ember.computed('promises',function(){
       let a = [];

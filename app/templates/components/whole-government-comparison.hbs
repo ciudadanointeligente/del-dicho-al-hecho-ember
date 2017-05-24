@@ -1,0 +1,178 @@
+{{yield}}
+<section id="gobierno">
+<div class="container">
+<div class="row">
+  <div class="page-header">
+    <h1 class="text-center">{{model.name}}</h1>
+    <h2 class="text-center">Año a año</h2>
+  </div>
+</div>
+
+
+<div class="row">
+<div class="panel panel-default">
+  <div class="panel-body compare">
+    <!-- Promesas realizadas -->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Total de promesas realizadas</h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-12 compare-box">
+            <p class="text-center">{{model.name}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.promises.length}}</p>
+            <p class="compare-info">Promesas</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Promesas realizadas -->
+    <!-- Cumplimiento y coherencia total -->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Cumplimiento y coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="La cifra de cumplimiento indica el nivel de avance de una promesa presidencial, según su estado de tramitación en el congreso. La coherencia determina el grado de consistencia entre los contenidos de una promesa presidencial y un proyecto de ley enviado al Congreso en una escala de 1 al 4"></i></h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          {{#each model.comparable as |study|}}
+          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <div class="chart-comparison">
+              <p class="compare-info">Avance</p>
+              <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
+              <div class="graph-one chart-compare-studies">
+                {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
+              </div>
+            </div>
+            <p class="compare-info">Coherencia</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.coherenceLevel}}</p>
+          </div>
+          {{/each}}
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cumplimiento y coherencia total -->
+    <!-- Proyectos enviados -->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Total de proyectos enviados</h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          {{#each model.comparable as |study|}}
+          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.billsCount}}</p>
+            <p class="compare-info">Proyectos</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Proyectos enviados -->
+    <!-- Promesas que presentan algún tipo de avance-->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Promesas que presentan algún tipo de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Promesas que tienen asociadas un o un conjunto de proyectos de ley para su cumplimiento"></i></h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          {{#each model.comparable as |study|}}
+          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.presentanAvance}}/{{study.promises.length}}</p>
+            <p class="compare-info">Promesas completas</p>
+            <p class="compare-info">({{study.finalizadas}} completas - {{study.enDesarrollo}} en progreso)</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Promesas que presentan algún tipo de avance-->
+    <!-- Capacidad -->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Este indicador mide la capacidad de un gobierno de cumplir una promesa en su totalidad. Es decir, no sólo cuenta ingresar un proyecto de ley, sino que también tener el manejo político para lograr su promulgación. Por ende, se contemplan sólo las promesas que tienen un 100% de avance y un 4 de coherencia"></i></h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          {{#each model.comparable as |study|}}
+          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.capacity}}</p>
+            <p class="compare-info">Promesas con puntaje máximo</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Capacidad -->
+    <!-- Areas -->
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h4>Avance comparado por áreas</h4>
+      </div>
+      <div class="panel-body">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            {{#each model.comparable as |study|}}
+            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} {{study.year}}</p>
+            {{/each}}
+          </div>
+        </div>
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th class="text-center">Avance año a año</th>
+              <th class="text-center">Avance total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each areas as |a|}}
+            <tr>
+              <td width="10%">{{a.name}}</td>
+                <td width="80%">
+                  <!-- bar01-->
+                  <div class="progress compare-bar hidden-xs hidden-sm">
+                    {{#each model.comparable as |study|}}
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study}}%; background-color: {{study.color}}">
+                      <span class="sr-only">{{fullfilmentPerArea a study}}%</span>
+                    </div>
+                    {{/each}}
+                  </div>
+                  <!-- bar01-->
+                  {{#each model.comparable as |study|}}
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color}}">{{fullfilmentPerArea a study}}%</p>
+                  {{/each}}
+                </td>
+                <td width="10%">
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">Hola%</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">Hola%</p>
+                </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+    <!-- Areas -->
+  </div>
+</div>
+</div>
+
+</div>
+</section>

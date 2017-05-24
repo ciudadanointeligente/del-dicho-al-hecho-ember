@@ -122,6 +122,7 @@ test('it exists', function(assert) {
 test('tiene nombre entre sus atributos', function(assert){
     let ar = this.subject({'name': 'nombre'});
     assert.equal(ar.toJSON().name, 'nombre');
+    assert.ok(ar.toJSON().slug);
 });
 
 test("area has many promises", function(assert){

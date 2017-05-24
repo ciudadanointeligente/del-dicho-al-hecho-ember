@@ -16,4 +16,12 @@ export default DS.Model.extend({
 
     return this.get('studies').filterBy('type', 'Programa');
   }),
+  hasVisibleStudies: Ember.computed('studies', function(){
+
+    let s = this.get('studies').filterBy('visible');
+    if(s.length > 0){
+      return true;
+    }
+    return false;
+  }),
 });

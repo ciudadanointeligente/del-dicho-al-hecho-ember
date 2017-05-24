@@ -17,28 +17,35 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estudios <span class="caret"></span></a>
           <ul class="dropdown-menu">
             {{#each model as |gov|}}
-              <li> {{gov.name}} </li>
-              {{#each gov.studies as |study|}}
-                <li>{{#link-to "study" study.slug}} {{study.type}} {{study.version}} {{study.year}}{{/link-to}}</li>
-              {{/each}}
-              <li role="separator" class="divider"></li>
+              {{#if gov.hasVisibleStudies}}
+               <li> {{gov.name}} </li>
+                {{#each gov.studies as |study|}}
+                {{#if study.visible}}
+                 <li>{{#link-to "study" study.slug}} {{study.name}}{{/link-to}}</li>
+                {{/if}}
+                {{/each}}
+                <li role="separator" class="divider"></li>
+              {{/if}}
             {{/each}}
           </ul>
         </li>
+
+        {{#if (comparisons-are-visible)}}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparar estudios<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li>Comparación 1</li>
+            <li>Avance por año en cumplimiento de Programa de Gobierno</li>
+            {{#each model as |gov|}}
+            <li>{{#link-to "government" gov.slug }} {{gov.name}}{{/link-to}}</li>
+            {{/each}}
+            <li role="separator" class="divider"></li>
+            <li>Comparación entre gobiernos</li>
             {{#each compareUrls.Programa as |comparison|}}
             <li>{{#link-to "compare-studies" comparison.url}} {{comparison.study1.government.name }} {{comparison.study1.version}} {{comparison.study1.year}} con {{comparison.study2.government.name}} {{comparison.study2.version}} {{comparison.study2.year}} {{/link-to}}</li>
             {{/each}}
-            <li role="separator" class="divider"></li>
-            <li>Gobiernos completos año a año</li>
-            {{#each model as |gov|}}
-            <li>{{#link-to "government" gov.slug }} {{gov.name}} año a año{{/link-to}}</li>
-            {{/each}}
           </ul>
         </li>
+        {{/if}}
 
       </ul>
     </div>

@@ -4,37 +4,28 @@
 <div class="container">
 <div class="row">
   <div class="page-header">
-    <h1 class="text-center"> {{study.government.name}} Estudio de {{study.fullName}}</h1>
+    <h1 class="text-center">{{study.name}}</h1>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-10 col-md-offset-1">
     <div class="bajada">
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. <a href="" class="btn btn-warning btn-xs" target="_blank" onclick="ga('send','event','metodologia-pdf','click')">Ver metodología</a></p>
     </div>
   </div>
-  <div class="col-md-4 text-center hidden-sm hidden-xs">
+  <div class="col-md-3 col-md-offset-3 text-center">
     <div class="total-result cumplimientos">
-      <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}%</p>
+      {{study.fullfilment}}%
     </div>
-    <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="chart">
-      {{ember-chart type='doughnut' data=study.chartData options=doughnutOpt height=150}}
+    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+    <div class="chart estudio-total">
+      {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
     </div>
   </div>
-  <div class="col-md-4 text-center hidden-md hidden-lg ">
-    <div class="total-result cumplimientos">
-      <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}%</p>
-    </div>
-    <h3>de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
+
+  <div class="col-md-3 text-center">
     <div class="total-result cumplimientos">
       {{ study.coherenceLevel }}
     </div>
-    <h3>coherencia total con el programa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
+    <h3 class="label-coherencia">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
   </div>
 </div>
 
@@ -88,16 +79,16 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       {{#each-in study.promisesGroupedByArea as |area_id a|}}
       <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne-{{a.area.id}}">
+        <div id="area-{{a.area.slug}}" class="collapsed panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
           <div class="row">
             <div class="col-md-4">
-              <h4 class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
+              <h4>
                 <span>
                   {{a.area.name}}
                 </span>
               </h4>
               <div class="sec-promesas">
-                <h5>{{a.promises.length}} promesa(s)<br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso - {{a.summary.no_progress}} sin progreso)</h5>
+                <p><b>{{a.promises.length}} promesa(s)</b><br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso - {{a.summary.no_progress}} sin progreso)</p>
               </div>
             </div>
             <div class="col-md-5">
@@ -108,13 +99,13 @@
             <div class="col-md-3">
               <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                  <p class="hidden-md hidden-lg text-center">Avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="{{a.area.name}}"></i></p>
+                  <p class="hidden-md hidden-lg text-center">Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></p>
                   <div class="category-result text-center">
                     {{a.summary.fullfilment}}%
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                  <p class="hidden-md hidden-lg text-center">Coherencia <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Hola"></i></p>
+                  <p class="hidden-md hidden-lg text-center">Coherencia del área</p>
                   <div class="category-result text-center">
                     {{a.summary.coherenceLevel}}
                   </div>
@@ -134,7 +125,7 @@
                   {{#if p.bills.length}}
                     <p style="float: left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
+                    <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
                     <div class="modal fade" id="myModal-proyecto-{{a.id}}-{{b.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
@@ -146,10 +137,10 @@
                           </div>
                           <div class="modal-body">
                             <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                            {{b.justifications}}
+                            {{p.ja_why}}
                           </div>
                           <div class="modal-footer">
-                            <a class="btn btn-default" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                            <a class="btn btn-success-inverse project" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                           </div>
                         </div>
                       </div>
@@ -161,7 +152,7 @@
                 <div class="col-md-3">
                   <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6">
-                      <p class="text-center">Avance</p>
+                      <p class="text-center">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso" tooltip></i></p>
                       <div class="promise-result text-center">
                         {{p.fullfilment}}%
                       </div>
@@ -188,7 +179,7 @@
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                                   <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                  <a class="btn btn-success-inverse btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
                                 {{/each}}
                               </div>
@@ -200,7 +191,7 @@
                       <!-- modal coherence -->
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6">
-                      <p class="text-center">Coherencia</p>
+                      <p class="text-center">Coherencia de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que determina el grado de consistencia entre los contenidos de una promesa presidencial y un proyecto de ley enviado al Congreso" tooltip></i></p>
                       <div class="promise-result text-center">
                         {{p.coherenceLevel}}
                       </div>
@@ -227,7 +218,7 @@
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                                   <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                                  <a class="btn btn-default btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
+                                  <a class="btn btn-success-inverse btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
                                 {{/each}}
                               </div>

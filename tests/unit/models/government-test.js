@@ -37,3 +37,14 @@ test('government comparable studies', function(assert){
     assert.equal(comparable.length, 1);
     assert.equal(comparable.toArray()[0].get('id'), study1.get('id'));
 });
+test('government has visible studies', function(assert){
+    Ember.run.begin();
+    let government = this.subject({'name': 'Bachelet 2014-2018', 'color': 'red'});
+    this.store().createRecord('study', {'version': 'marzo', 'year': '2016', 'government':government, 'type': 'Programa'});
+    this.store().createRecord('study', {'version': 'mayo', 'year': '2017', 'government':government, 'type': 'Discurso'});
+    let government2 = this.store().createRecord('government',{'name': 'FieraFeroz 2018-2022', 'color': 'red'});
+    this.store().createRecord('study', {'version': 'marzo', 'visible':true, 'year': '2018', 'government':government2, 'type': 'Programa'});
+    Ember.run.end();
+  assert.notOk(government.get('hasVisibleStudies'));
+  assert.ok(government2.get('hasVisibleStudies'));
+});
