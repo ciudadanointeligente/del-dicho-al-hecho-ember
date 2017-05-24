@@ -6,6 +6,7 @@ var config = require('./config/environment');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     fingerprint:{
+      'enabled': false,
       'extensions': ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg']
     },
     prepend: config().rootURL
