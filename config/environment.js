@@ -105,6 +105,30 @@ var governments =[{
 	}]
 }];
 module.exports = function(environment) {
+  var area_images = {
+    'Agricultura': 'areas/agricultura.svg',
+    'Cultura': 'areas/cultura.svg', 
+    'Defensa': 'areas/defensa.svg', 
+    'Democracia': 'areas/democracia.svg', 
+    'Desarrollo Social': 'areas/desarrollo_social.svg', 
+    'Economía y Comercio': 'areas/economia_y comercio.svg', 
+    'Educación': 'areas/educacion.svg', 
+    'Energía': 'areas/energia.svg', 
+    'Equidad de Género': 'areas/equidad_de genero.svg', 
+    'Estado': 'areas/estado.svg', 
+    'Infancia y Juventud': 'areas/infancia_y juventud.svg', 
+    'Justicia y DDHH': 'areas/justicia_y ddhh.svg', 
+    'Medio Ambiente': 'areas/medio_ambiente.svg', 
+    'Minería': 'areas/mineria.svg', 
+    'Obras Públicas': 'areas/obras_públicas.svg', 
+    'Pueblos Indígenas': 'areas/pueblos_indigenas.svg', 
+    'Salud': 'areas/salud.svg', 
+    'Seguridad Ciudadana': 'areas/seguridad_ciudadana.svg', 
+    'Trabajo y Prevision Social': 'areas/trabajo_y prevision social.svg', 
+    'Transporte y Telecomunicaciones': 'areas/transporte_y telecomunicaciones.svg', 
+    'Vivienda y Urbanismo': 'areas/vivienda_y urbanismo.svg', 
+    'default': 'areas/default.svg',
+  };
   var matcher = {
     'area': {
       'name': 'area',
@@ -208,6 +232,7 @@ module.exports = function(environment) {
     governments: governments,
     government_length: 4,
 		useOnlyJsons: false,
+    areaImages: area_images,
     comparable_with_other_gov: 'Programa',
     priorities: priorities,
     phases: phases,
