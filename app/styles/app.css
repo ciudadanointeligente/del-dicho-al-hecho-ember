@@ -235,8 +235,10 @@ section{
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
   stroke: #031424; }
 
-.chart{
-  margin-bottom: 20px; }
+.chart.estudio-total{
+  margin-bottom: -110px;
+  position: relative;
+  top: -158px;}
 
 .progress {
   height: 26px;
@@ -273,7 +275,7 @@ section{
     font-size: 30px;
     margin-bottom: 30px; }
   .total-result.cumplimientos{
-    margin-top: 20px; }
+    margin-top: 60px; }
 
 .compare-info{
   font-weight: 700;
@@ -287,6 +289,14 @@ section{
 .cumplimientos-resumen{
   min-height: 350px;
 }
+
+.label-cumplimiento{
+  position: relative;
+  top: 22px;}
+
+.label-coherencia{
+  position: relative;
+  top: 22px;}
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
@@ -395,6 +405,15 @@ footer {
   footer a {
     color: white; }
 
+@media (max-width: 991px) {
+  .label-coherencia{
+    position: relative;
+    top: -18px;}
+
+  .chart.estudio-total{
+    margin-bottom: -170px;}
+
+}
 
 @media (max-width: 333px) {
   img.logo-nav{

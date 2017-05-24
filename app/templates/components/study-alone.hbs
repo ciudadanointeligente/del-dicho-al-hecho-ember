@@ -11,30 +11,22 @@
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. <a href="" class="btn btn-danger btn-xs" target="_blank" onclick="ga('send','event','metodologia-pdf','click')">Ver metodología</a></p>
     </div>
   </div>
-  <div class="col-md-4 text-center hidden-sm hidden-xs">
+  <div class="col-md-3 col-md-offset-3 text-center">
     <div class="total-result cumplimientos">
       <div class="text-center promise-result home">{{c.total}}</div>
       <p class="text-center">{{study.fullfilment}}%</p>
     </div>
-    <h3>cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
-    <div class="chart">
+    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+    <div class="chart estudio-total">
       {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
     </div>
   </div>
-  <div class="col-md-4 text-center hidden-md hidden-lg ">
-    <div class="total-result cumplimientos">
-      <div class="text-center promise-result home">{{c.total}}</div>
-      <p class="text-center">{{study.fullfilment}}%</p>
-    </div>
-    <h3>cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
-  </div>
-  <div class="col-md-4 text-center">
+
+  <div class="col-md-3 text-center">
     <div class="total-result cumplimientos">
       {{ study.coherenceLevel }}
     </div>
-    <h3>coherencia <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
+    <h3 class="label-coherencia">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
   </div>
 </div>
 
