@@ -8,20 +8,20 @@
         <div class="col-md-3 hidden-sm hidden-xs text-center">
             <img src="/img/bachelet.svg">
           </div>
-          <div class="col-md-3">
-            <div class="estudio-total">
-              <div class="chart">
+          <div class="col-md-3 text-center">
+            <div class="total-result cumplimientos">
+              {{study.fullfilment}}%
+            </div>
+              <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+              <div class="chart estudio-total">
                 {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
               </div>
-              <p class="label-total text-center">48%</p>
-              <h3 class="label-title text-center">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
-            </div>
           </div>
-          <div class="col-md-3">
-            <div class="estudio-total">
-              <p class="label-total text-center">2.5 de 4</p>
-              <h3 class="label-title text-center">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso"></i></h3>
+          <div class="col-md-3 text-center">
+            <div class="total-result cumplimientos">
+              {{ study.coherenceLevel }}
             </div>
+            <h3 class="label-coherencia">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
           </div>
           <div class="col-md-3 hidden-sm hidden-xs text-center">
             <img src="/img/martillo.svg">
