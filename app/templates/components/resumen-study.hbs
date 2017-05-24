@@ -94,13 +94,13 @@
     {{#each-in study.promisesGroupedByArea as |area_id a|}}
     <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
       <h3 class="text-center"><a href="" onClick="ga('send', 'event', 'home-{{c.area}}', 'click');">{{a.area.name}}</a></h3>
-      <div class="chart">
-        <img src="{{ area-image a.area.name }}">
-      {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study) options=study.doughnutOpt height=150}}
+      <div class="chart-resume text-center">
+        <img src="{{ area-image a.area.name }}" class="img-chart">
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study) options=study.doughnutOpt height=150}}
       </div>
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
-      <p class="text-center home">de avance</p>
-      <p class="text-center">Coherencia con la promesa {{a.summary.coherenceLevel}} de 4</p>
+      <p class="text-center home"><b>de avance</b></p>
+      <p class="text-center">Coherencia con la promesa <b>{{a.summary.coherenceLevel}} de 4</b></p>
       <a class="btn btn-info btn-sm btn-block" href="" onClick="ga('send', 'event', 'home-{{c.area}}-ver-mas', 'click');">Ver más</a>
     </div>
     {{/each-in}}
