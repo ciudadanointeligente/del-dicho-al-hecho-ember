@@ -125,6 +125,23 @@ export default DS.Model.extend(CalculationsMixin, {
         return 0;
       }
     }}),
+    chartDataFront : Ember.computed('fullfilment', function() {
+      return {
+          labels: [],
+          datasets: [
+              {
+                  data: [this.get('fullfilment'), 100-this.get('fullfilment')],
+                  backgroundColor: [
+                      this.get("government").get("color1"),
+                      "#FFFFFF",
+                  ],
+                  hoverBackgroundColor: [
+                      this.get("government").get("color2"),
+                      "#FFFFFF",
+                  ]
+              }]
+      };
+    }),
     chartData : Ember.computed('fullfilment', function() {
       return {
           labels: [],
@@ -133,11 +150,11 @@ export default DS.Model.extend(CalculationsMixin, {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      this.get("government").get("color3"),
+                      this.get("government").get("color4"),
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
-                      this.get("government").get("color4"),
+                      this.get("government").get("color3"),
                   ]
               }]
       };
