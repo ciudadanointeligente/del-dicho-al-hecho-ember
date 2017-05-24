@@ -8,7 +8,7 @@ var governments =[{
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FB7881",
+		"color": "#FF7E88",
 		"year": 2017,
 		"in_landing": true,
 		"version": "Marzo",
@@ -17,7 +17,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FDAAAF",
+		"color": "#FFB0B6",
 		"year": 2016,
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
@@ -25,7 +25,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"color": "#FCCCD0",
+		"color": "#FFE7E8",
 		"year": 2015,
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
@@ -74,7 +74,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#67C7F4",
+		"color": "#70D2FF",
 		"year": 2013,
 		"version": "Marzo",
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
@@ -82,7 +82,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#91CFEC",
+		"color": "#B0E6FF",
 		"year": 2012,
 		"version": "Marzo",
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
