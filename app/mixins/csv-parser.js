@@ -110,12 +110,18 @@ export default Ember.Mixin.create(CsvMixin, {
             in_land = true;
           }
 
+          let visible = false;
+          if(!_.isUndefined(study_obj.visible) && study_obj.visible){
+            visible = true;
+          }
+
           let study = store.createRecord('study', {
             version: study_obj.version,
             year: study_obj.year,
             filename: study_obj.filename,
             color: study_obj.color,
             in_landing: in_land,
+            visible: visible,
             image: study_obj.img,
             type: study_obj.type,
             name: study_obj.name,

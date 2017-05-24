@@ -10,10 +10,10 @@ var governments =[{
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FF7E88",
 		"year": 2017,
-		"in_landing": true,
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
-		"filename": "Bachelet-2014-2018_Programa-2017.csv"
+		"filename": "Bachelet-2014-2018_Programa-2017.csv",
+		"visible": true,
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
@@ -21,7 +21,7 @@ var governments =[{
 		"year": 2016,
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
-		"filename": "Bachelet-2014-2018_Programa-2016.csv"
+		"filename": "Bachelet-2014-2018_Programa-2016.csv",
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
@@ -38,7 +38,8 @@ var governments =[{
 		"year": 2017,
 		"version": "Mayo",
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
-		"filename": "Bachelet-2014-2018_Discurso-2017.csv"
+		"filename": "Bachelet-2014-2018_Discurso-2017.csv",
+		"visible": true,
 		}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
@@ -234,6 +235,7 @@ module.exports = function(environment) {
       'fullfilment': 100,
     }
   ]};
+	var comparisonsAreVisible = true;
 
   var ENV = {
     modulePrefix: 'ddah-ember',
@@ -248,6 +250,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+		comparisonsAreVisible: false,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
