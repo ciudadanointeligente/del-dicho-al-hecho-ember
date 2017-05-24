@@ -144,7 +144,7 @@ export default DS.Model.extend(CalculationsMixin, {
     }),
     doughnutOpt: {
       responsive: true,
-      cutoutPercentage: 75
+      cutoutPercentage: 73
     },
     areas: Ember.computed('promises',function(){
       let a = [];
