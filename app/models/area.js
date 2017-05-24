@@ -4,6 +4,10 @@ import CalculationsMixin from 'ddah-ember/mixins/calculations';
 export default DS.Model.extend(CalculationsMixin, {
     name: DS.attr('string'),
     promises: DS.hasMany('promise'),
+    slug: DS.attr("string", {defaultValue: function(e){
+      return (e.get('name')).replace(/\s+/g, '-').toLowerCase();
+      },
+    }),
     getPromisesPerStudy: function(study){
       let area = this;
       return study.get('promises').filter(function(p){

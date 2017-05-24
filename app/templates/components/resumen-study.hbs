@@ -101,7 +101,7 @@
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
       <p class="text-center home"><b>de avance</b></p>
       <p class="text-center">Coherencia con la promesa <b>{{a.summary.coherenceLevel}} de 4</b></p>
-      <a class="btn btn-info btn-sm btn-block" href="{{config.rootURL}}study/{{study.slug}}#headingOne-{{a.area.id}}" onClick="ga('send', 'event', 'home-{{a.area.slug}}-ver-mas', 'click');">Ver más</a>
+      <a class="btn btn-info btn-sm btn-block" href="{{config.rootURL}}study/{{study.slug}}#area-{{a.area.slug}}" onClick="ga('send', 'event', 'home-{{a.area.slug}}-ver-mas', 'click');">Ver más</a>
     </div>
     {{/each-in}}
   </div>

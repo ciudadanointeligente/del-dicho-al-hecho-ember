@@ -79,7 +79,7 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       {{#each-in study.promisesGroupedByArea as |area_id a|}}
       <div class="panel panel-default">
-        <div id="headingOne-{{a.area.id}}" class="collapsed panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
+        <div id="area-{{a.area.slug}}" class="collapsed panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#cumplimiento-{{a.area.id}}" aria-expanded="false" aria-controls="cumplimiento-">
           <div class="row">
             <div class="col-md-4">
               <h4>
@@ -137,7 +137,7 @@
                           </div>
                           <div class="modal-body">
                             <p><span>Estado de avance:</span> {{b.phase.name}}</p>
-                            {{b.justifications}}
+                            {{p.ja_why}}
                           </div>
                           <div class="modal-footer">
                             <a class="btn btn-success-inverse project" href="{{b.url}}" target="_blank">Ir al proyecto</a>
