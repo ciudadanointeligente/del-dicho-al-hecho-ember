@@ -133,7 +133,7 @@ module.exports = function(environment) {
     'Pueblos Indígenas': 'img/i-pue.svg',
     'Salud': 'img/i-sal.svg',
     'Seguridad Ciudadana': 'img/i-seg.svg',
-    'Trabajo y Prevision Social': 'img/i-tra.svg',
+    'Trabajo y Previsión Social': 'img/i-tra.svg',
     'Transporte y Telecomunicaciones': 'img/i-tran.svg',
     'Vivienda y Urbanismo': 'img/i-viv.svg',
     'default': 'img/i-def.svg',
