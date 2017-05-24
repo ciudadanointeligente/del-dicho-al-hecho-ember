@@ -13,6 +13,7 @@ export default DS.Model.extend(CalculationsMixin, {
     in_landing: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
+    name: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
@@ -126,9 +127,7 @@ export default DS.Model.extend(CalculationsMixin, {
     }}),
     chartData : Ember.computed('fullfilment', function() {
       return {
-          labels: [
-            "% avance", "% incompleto"
-          ],
+          labels: [],
           datasets: [
               {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
@@ -144,7 +143,8 @@ export default DS.Model.extend(CalculationsMixin, {
       };
     }),
     doughnutOpt: {
-      responsive: true
+      responsive: true,
+      cutoutPercentage: 75
     },
     areas: Ember.computed('promises',function(){
       let a = [];

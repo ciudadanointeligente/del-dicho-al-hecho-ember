@@ -10,9 +10,7 @@ export default Ember.Helper.extend({
     let study = params[1];
     let f = area.fullfilmentPerStudy(study);
     let data =  {
-            labels: [
-              "% avance", "% incompleto"
-            ],
+            labels: [],
             datasets: [
                 {
                     data: [f, 100-f],
@@ -28,5 +26,5 @@ export default Ember.Helper.extend({
         };
     return data;
   }
-  
+
   });

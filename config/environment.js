@@ -7,46 +7,54 @@ var governments =[{
 	"color4": "#FCCCD0",
 	"studies": [{
 		"type": "Programa",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FB7881",
+		"year": 2017,
+		"version": "Marzo",
+		"name": "Michelle Bachelet Programa de Gobierno 2016",
+		"filename": "Bachelet-2014-2018_Programa-2017.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FDAAAF",
+		"year": 2016,
+		"version": "Marzo",
+		"name": "Michelle Bachelet Programa de Gobierno 2015",
+		"filename": "Bachelet-2014-2018_Programa-2016.csv"
+	}, {
+		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
 		"color": "#FCCCD0",
 		"year": 2015,
 		"version": "Marzo",
-		"name": "Bachelet-2014-2018_Programa-2015.csv",
+		"name": "Michelle Bachelet Programa de Gobierno 2014",
     "filename": "Bachelet-2014-2018_Programa-2015.csv"
+	},{
+		"type": "Discurso",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FDAAAF",
+		"in_landing": true,
+		"year": 2017,
+		"version": "Mayo",
+		"name": "Michelle Bachelet Cuenta Pública 2016",
+		"filename": "Bachelet-2014-2018_Discurso-2017.csv"
+		}, {
+		"type": "Discurso",
+		"img": "/img/bashelet-con-la-fiera.svg",
+		"color": "#FDAAAF",
+		"year": 2016,
+		"version": "Mayo",
+		"name": "Michelle Bachelet Cuenta Pública 2015",
+		"filename": "Bachelet-2014-2018_Discurso-2016.csv"
 	}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-en-el-avion.svg",
 		"color": "#FCCCD0",
 		"year": 2015,
 		"version": "Mayo",
-		"name": "Bachelet-2014-2018_Discurso-2015",
+		"name": "Michelle Bachelet Cuenta Pública 2014",
     "filename": "Bachelet-2014-2018_Discurso-2015.csv"
-	}, {
-		"type": "Programa",
-		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FDAAAF",
-		"year": 2016,
-		"version": "Marzo",
-		"name": "Bachelet-2014-2018_Programa-2016",
-		"filename": "Bachelet-2014-2018_Programa-2016.csv"
-	}, {
-		"type": "Discurso",
-		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FDAAAF",
-		"year": 2016,
-		"version": "Mayo",
-		"name": "Bachelet-2014-2018_Discurso-2016.csv",
-		"filename": "Bachelet-2014-2018_Discurso-2016.csv"
-	}, {
-		"type": "Programa",
-		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#FB7881",
-		"year": 2017,
-		"in_landing": true,
-		"version": "Marzo",
-		"name": "Bachelet-2014-2018_Programa-2017.csv",
-		"filename": "Bachelet-2014-2018_Programa-2017.csv"
-	}]
+	}, ]
 }, {
 	"name": "Sebastián Piñera",
 	"years": {'start': 2010, 'end': 2014},
@@ -55,54 +63,54 @@ var governments =[{
 	"color3": "#91CFEC",
 	"color4": "#AAE0F9",
 	"studies": [{
-		"type": "Discurso",
-		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#91CFEC",
-		"year": 2012,
-		"version": "Mayo",
-		"name": "Piñera-2010-2014_Discurso-2012",
-		"filename": "Piñera-2010-2014_Discurso-2012.csv"
-	},{
+		"type": "Programa",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#2ABAFD",
+		"year": 2014,
+		"version": "Marzo",
+		"name": "Sebastián Piñera Programa de Gobierno 2013",
+		"filename": "Piñera-2010-2014_Programa-2014.csv"
+	}, {
+		"type": "Programa",
+		"img": "/img/pinera-en-el-bicicleta.svg",
+		"color": "#67C7F4",
+		"year": 2013,
+		"version": "Marzo",
+		"name": "Sebastián Piñera Programa de Gobierno 2012",
+		"filename": "Piñera-2010-2014_Programa-2013.csv"
+	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
 		"color": "#91CFEC",
 		"year": 2012,
 		"version": "Marzo",
-		"name": "Piñera-2010-2014_Programa-2012",
+		"name": "Sebastián Piñera Programa de Gobierno 2011",
 		"filename": "Piñera-2010-2014_Programa-2012.csv"
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#67C7F4",
-		"year": 2013,
-		"version": "Mayo",
-		"name": "Piñera-2010-2014_Discurso-2013",
-		"filename": "Piñera-2010-2014_Discurso-2013.csv"
-	}, {
-		"type": "Programa",
-		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#67C7F4",
-		"year": 2013,
-		"version": "Marzo",
-		"name": "Piñera-2010-2014_Programa-2013",
-		"filename": "Piñera-2010-2014_Programa-2013.csv"
-	}, {
-		"type": "Programa",
-		"img": "/img/pinera-en-el-bicicleta.svg",
 		"color": "#2ABAFD",
 		"year": 2014,
-		"version": "Marzo",
-		"name": "Piñera-2010-2014_Programa-2014",
-		"filename": "Piñera-2010-2014_Programa-2014.csv"
+		"version": "Mayo",
+		"name": "Sebastián Piñera Cuenta Pública 2013",
+		"filename": "Piñera-2010-2014_Discurso-2014.csv"
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#2ABAFD",
-		"year": 2014,
+		"color": "#67C7F4",
+		"year": 2013,
 		"version": "Mayo",
-		"name": "Piñera-2010-2014_Discurso-2014",
-		"filename": "Piñera-2010-2014_Discurso-2014.csv"
-	}]
+		"name": "Sebastián Piñera Cuenta Pública 2012",
+		"filename": "Piñera-2010-2014_Discurso-2013.csv"
+	}, {
+		"type": "Discurso",
+		"img": "/img/pinera-en-el-auto.svg",
+		"color": "#91CFEC",
+		"year": 2012,
+		"version": "Mayo",
+		"name": "Sebastián Piñera Cuenta Pública 2011",
+		"filename": "Piñera-2010-2014_Discurso-2012.csv"
+	},]
 }];
 module.exports = function(environment) {
   var matcher = {
