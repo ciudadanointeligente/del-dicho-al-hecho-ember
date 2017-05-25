@@ -13,7 +13,7 @@ var governments =[{
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv",
-		"description": "hola",
+		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
 		"visible": true,
 	}, {
 		"type": "Programa",
@@ -42,7 +42,7 @@ var governments =[{
 		"version": "Mayo",
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
 		"filename": "Bachelet-2014-2018_Discurso-2017.csv",
-		"description": "hola",
+		"description": "de la Cuenta Pública 2016.",
 		"visible": true,
 		}, {
 		"type": "Discurso",
