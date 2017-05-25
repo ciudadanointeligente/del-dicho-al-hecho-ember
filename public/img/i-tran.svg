@@ -8,7 +8,7 @@
     </defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy-63">
-            <g id="Page-1-Copy" transform="translate(14.000000, 22.000000)">
+            <g id="Page-1-Copy" transform="translate(14.000000, 20.000000)">
                 <path d="M61.6533,10.2988 C61.6533,9.0308 60.6263,8.0038 59.3573,8.0038 C58.0903,8.0038 57.0623,9.0308 57.0623,10.2988 C57.0623,11.5668 58.0903,12.5948 59.3573,12.5948 C60.6263,12.5948 61.6533,11.5668 61.6533,10.2988 Z" id="Fill-1" fill="#307CBF"></path>
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
