@@ -290,7 +290,8 @@ section{
 }
 
 .cumplimientos-resumen{
-  min-height: 350px;
+  min-height: 310px;
+  margin-top: 30px;
 }
 
 .label-cumplimiento{
