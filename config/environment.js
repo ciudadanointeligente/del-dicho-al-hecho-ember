@@ -13,6 +13,7 @@ var governments =[{
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv",
+		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
 		"visible": true,
 	}, {
 		"type": "Programa",
@@ -22,6 +23,7 @@ var governments =[{
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
 		"filename": "Bachelet-2014-2018_Programa-2016.csv",
+		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
@@ -29,7 +31,8 @@ var governments =[{
 		"year": 2015,
 		"version": "Marzo",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
-    "filename": "Bachelet-2014-2018_Programa-2015.csv"
+    "filename": "Bachelet-2014-2018_Programa-2015.csv",
+		"description": "del Programa de Gobierno, a un año de haber asumido el poder.",
 	},{
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
@@ -39,6 +42,7 @@ var governments =[{
 		"version": "Mayo",
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
 		"filename": "Bachelet-2014-2018_Discurso-2017.csv",
+		"description": "de la Cuenta Pública 2016.",
 		"visible": true,
 		}, {
 		"type": "Discurso",
@@ -47,7 +51,8 @@ var governments =[{
 		"year": 2016,
 		"version": "Mayo",
 		"name": "Michelle Bachelet: Cuenta Pública 2015",
-		"filename": "Bachelet-2014-2018_Discurso-2016.csv"
+		"filename": "Bachelet-2014-2018_Discurso-2016.csv",
+		"description": "de la Cuenta Pública 2015.",
 	}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-en-el-avion.svg",
@@ -55,7 +60,8 @@ var governments =[{
 		"year": 2015,
 		"version": "Mayo",
 		"name": "Michelle Bachelet: Cuenta Pública 2014",
-    "filename": "Bachelet-2014-2018_Discurso-2015.csv"
+    "filename": "Bachelet-2014-2018_Discurso-2015.csv",
+		"description": "de la Cuenta Pública 2014.",
 	}, ]
 }, {
 	"name": "Sebastián Piñera",
@@ -71,7 +77,8 @@ var governments =[{
 		"year": 2014,
 		"version": "Marzo",
 		"name": "Sebastián Piñera: Programa de Gobierno 2013",
-		"filename": "Piñera-2010-2014_Programa-2014.csv"
+		"filename": "Piñera-2010-2014_Programa-2014.csv",
+		"description": "del Programa de Gobierno, a cuatro años de haber asumido el poder.",
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
@@ -79,7 +86,8 @@ var governments =[{
 		"year": 2013,
 		"version": "Marzo",
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
-		"filename": "Piñera-2010-2014_Programa-2013.csv"
+		"filename": "Piñera-2010-2014_Programa-2013.csv",
+		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
@@ -87,7 +95,8 @@ var governments =[{
 		"year": 2012,
 		"version": "Marzo",
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
-		"filename": "Piñera-2010-2014_Programa-2012.csv"
+		"filename": "Piñera-2010-2014_Programa-2012.csv",
+		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
@@ -95,7 +104,8 @@ var governments =[{
 		"year": 2014,
 		"version": "Mayo",
 		"name": "Sebastián Piñera: Cuenta Pública 2013",
-		"filename": "Piñera-2010-2014_Discurso-2014.csv"
+		"filename": "Piñera-2010-2014_Discurso-2014.csv",
+		"description": "de la Cuenta Pública 2013.",
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
@@ -103,7 +113,8 @@ var governments =[{
 		"year": 2013,
 		"version": "Mayo",
 		"name": "Sebastián Piñera: Cuenta Pública 2012",
-		"filename": "Piñera-2010-2014_Discurso-2013.csv"
+		"filename": "Piñera-2010-2014_Discurso-2013.csv",
+		"description": "de la Cuenta Pública 2012.",
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-auto.svg",
@@ -111,7 +122,8 @@ var governments =[{
 		"year": 2012,
 		"version": "Mayo",
 		"name": "Sebastián Piñera: Cuenta Pública 2011",
-		"filename": "Piñera-2010-2014_Discurso-2012.csv"
+		"filename": "Piñera-2010-2014_Discurso-2012.csv",
+		"description": "de la Cuenta Pública 2011.",
 	},]
 }];
 module.exports = function(environment) {

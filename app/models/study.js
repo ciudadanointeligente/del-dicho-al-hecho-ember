@@ -2,6 +2,7 @@ import DS from 'ember-data';
 import _ from 'lodash';
 import Ember from 'ember';
 import CalculationsMixin from 'ddah-ember/mixins/calculations';
+import config from '../config/environment';
 
 export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
@@ -15,10 +16,17 @@ export default DS.Model.extend(CalculationsMixin, {
     image: DS.attr('string'),
     type: DS.attr('string'),
     name: DS.attr('string'),
+    description: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
       },
+    }),
+    isVisible: Ember.computed('visible', function() {
+      if(config.environment === "development"){
+        return true;
+      }
+      return this.get('visible');
     }),
     fullName: Ember.computed('version', 'year', function() {
       return `${this.get('version')} ${this.get('year')}`;

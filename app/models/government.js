@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
@@ -17,6 +18,9 @@ export default DS.Model.extend({
     return this.get('studies').filterBy('type', 'Programa');
   }),
   hasVisibleStudies: Ember.computed('studies', function(){
+    if(config.environment === "development"){
+      return true;
+    }
 
     let s = this.get('studies').filterBy('visible');
     if(s.length > 0){
