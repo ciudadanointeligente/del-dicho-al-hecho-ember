@@ -12,9 +12,10 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     controller.setCompareUrls(model);
   },
   title: function(tokens) {
+
     tokens = Ember.makeArray(tokens);
     if(tokens.length){
-      return ' - '+tokens;
+      return 'DelDichoAlHecho - '+ tokens;
     }
     return tokens;
   }
