@@ -314,7 +314,8 @@ section{
 
 .img-chart{
   position: relative;
-  top: 125px;}
+  top: 125px;
+  z-index: -1;}
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
