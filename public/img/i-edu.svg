@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard Copy 23</title>
+    <title>Artboard Copy 50</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <polygon id="path-1" points="0 44 61.347 44 61.347 0.69 0 0.69"></polygon>
     </defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-Copy-23">
-            <g id="Page-1" transform="translate(24.000000, 32.000000)">
+        <g id="Artboard-Copy-50">
+            <g id="Page-1-Copy" transform="translate(19.000000, 26.000000)">
                 <polygon id="Fill-1" fill="#307CBF" points="43.911 6.082 53.784 44.31 61.347 42.357 51.474 4.129"></polygon>
                 <polygon id="Fill-2" fill="#307CBF" points="14.1309 4.0003 2.4979 4.0003 2.4979 43.4833 14.1309 43.4833 25.7629 43.4833 37.8749 43.4833 45.7019 43.4833 45.7019 13.3053 37.8749 13.3053 37.8749 10.1103 25.7629 10.1103 25.7629 4.0003"></polygon>
                 <path d="M0,41.6854 L12.833,41.6854 L12.833,1.0024 L0,1.0024 L0,41.6854 Z M1.199,40.4854 L11.634,40.4854 L11.634,2.2034 L1.199,2.2034 L1.199,40.4854 Z" id="Fill-3" fill="#0C1423"></path>
