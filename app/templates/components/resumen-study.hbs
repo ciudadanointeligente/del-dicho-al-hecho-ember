@@ -67,8 +67,8 @@
           </ul>
         </div>
         <div class="col-md-6 text-right">
-          <a href="{{config.rootURL}}study/{{study.slug}}" class="hidden-xs btn btn-primary btn-lg btn-danger" onclick="ga('send','event','home-ver-estudio-desktop','click')">Ver estudio completo</a>
-          <a href="{{config.rootURL}}study/{{study.slug}}" class="visible-xs btn btn-primary btn-danger" onclick="ga('send','event','home-ver-estudio-mobile','click')">Ver estudio completo</a>
+{{#link-to "study" study.slug  class="hidden-xs btn btn-primary btn-lg btn-danger" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Ver estudio completo {{/link-to}}
+{{#link-to "study" study.slug class="visible-xs btn btn-primary btn-danger" onclick="ga('send','event','home-ver-estudio-mobile','click')" }} Ver estudio completo {{/link-to}}
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
       <p class="text-center home"><b>de avance</b></p>
       <p class="text-center">Coherencia con la promesa <b>{{a.summary.coherenceLevel}} de 4</b></p>
-      <a class="btn btn-info btn-sm btn-block" href="{{config.rootURL}}study/{{study.slug}}#area-{{a.area.slug}}" onClick="ga('send', 'event', 'home-{{a.area.slug}}-ver-mas', 'click');">Ver más</a>
+{{#link-to "study" study.slug class="btn btn-info btn-sm btn-block" onClick="ga('send', 'event', 'home-{{a.area.slug}}-ver-mas', 'click');" }} Ver más{{/link-to}}
     </div>
     {{/each-in}}
   </div>
