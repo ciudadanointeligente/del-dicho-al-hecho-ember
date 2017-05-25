@@ -32,6 +32,12 @@ let parser = {
           header:true,
           skipEmptyLines:true,
           complete: function(results){
+            if(results.errors.length && config.envirnoment !== "production"){
+              _.forEach(results.errors, function(error){
+                console.log(error);
+              });
+              alert("Hay errores en el csv por favor revisa la consola del navegador para más info"); 
+            }
             var data = [];
             _.forEach(results.data, function(value) {
               let data_per_row = _parseAttributes(value, study);
