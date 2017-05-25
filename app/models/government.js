@@ -17,7 +17,7 @@ export default DS.Model.extend({
   }}),
   comparable: Ember.computed('studies', function(){
 
-    return this.get('studies').filterBy('type', 'Programa');
+    return this.get('studies').filterBy('type', 'Programa').sortBy('year');
   }),
   hasVisibleStudies: Ember.computed('studies', function(){
     if(config.environment === "development"){
