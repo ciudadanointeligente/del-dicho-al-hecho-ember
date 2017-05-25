@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Ember from 'ember';
 import CalculationsMixin from 'ddah-ember/mixins/calculations';
 import config from '../config/environment';
-
+console.log(config);
 export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
     year: DS.attr('number'),
@@ -20,6 +20,12 @@ export default DS.Model.extend(CalculationsMixin, {
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
       },
+    }),
+    order: Ember.computed('government', 'year', function() {
+      let gov_year = this.get('government').get('start_year');
+      
+      let n = this.get('year') - gov_year;
+      return config.orders[n];
     }),
     isVisible: Ember.computed('visible', function() {
       if(config.environment === "development"){

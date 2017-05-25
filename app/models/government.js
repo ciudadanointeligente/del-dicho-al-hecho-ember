@@ -5,6 +5,8 @@ import config from '../config/environment';
 export default DS.Model.extend({
   name: DS.attr('string'),
   studies: DS.hasMany('study'),
+  start_year: DS.attr('number'),
+  end_year: DS.attr('number'),
   color1: DS.attr('string'),
   color2: DS.attr('string'),
   color3: DS.attr('string'),
