@@ -4,10 +4,6 @@ import config from './config/environment';
 const Router = Ember.Router.extend({
   rootURL: config.rootURL,
   location: config.locationType,
-  title: function(tokens) {
-    console.log(tokens);
-    return tokens.join(' - ') + ' - DelDichoAlHecho';
-  },
 });
 
 Router.map(function() {
