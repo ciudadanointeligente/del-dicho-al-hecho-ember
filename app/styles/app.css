@@ -290,7 +290,8 @@ section{
 }
 
 .cumplimientos-resumen{
-  min-height: 350px;
+  min-height: 310px;
+  margin-top: 30px;
 }
 
 .label-cumplimiento{
@@ -310,7 +311,7 @@ section{
   margin-top: 50px;}
 
 .chart-resume{
-  margin: -110px 0 10px 0;}
+  margin: -105px 0 10px 0;}
 
 .img-chart{
   position: relative;

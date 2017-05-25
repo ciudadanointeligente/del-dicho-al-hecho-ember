@@ -133,6 +133,7 @@ export default Ember.Mixin.create(CsvMixin, {
             image: study_obj.img,
             type: study_obj.type,
             name: study_obj.name,
+            description: study_obj.description,
             id: _hashCode(study_obj.version + study_obj.year),
           });
 
