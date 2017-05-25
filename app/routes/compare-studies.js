@@ -6,6 +6,9 @@ import config from '../config/environment';
 
 
 export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
+  titleToken: function(model) {
+    return model[0].get('government').get('name') + " - " + model[1].get('government').get('name');
+  },
   model(params){
     let studies_name = params.studies.split('~');
     if (studies_name.length < 2){

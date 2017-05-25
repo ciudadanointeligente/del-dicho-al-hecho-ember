@@ -4,6 +4,9 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 import _ from 'lodash';
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
+  titleToken: function(model) {
+    return model.get('name');
+  },
   model(params){
     let gov = this.store.peekAll('government').findBy('slug', params.slug);
     if (_.isUndefined(gov)){
