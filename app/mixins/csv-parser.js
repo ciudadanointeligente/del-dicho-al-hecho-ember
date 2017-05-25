@@ -93,8 +93,16 @@ export default Ember.Mixin.create(CsvMixin, {
       let gov = store.peekRecord('government', _hashCode(name));
       //
       if (!gov) {
+        let start;
+        let end;
+        if(!_.isUndefined(government.years) && !_.isUndefined(government.years.start) && !_.isUndefined(government.years.start)){
+          start = government.years.start;
+          end = government.years.end;
+        }
         gov = store.createRecord('government', {
           name: name,
+          start_year: start,
+          end_year: end,
           color1: government.color1,
           color2: government.color2,
           color3: government.color3,

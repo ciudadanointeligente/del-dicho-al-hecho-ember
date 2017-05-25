@@ -127,6 +127,12 @@ var governments =[{
 	},]
 }];
 module.exports = function(environment) {
+  var orders = {
+    1: 'primer',
+    2: 'segundo',
+    3: 'tercer',
+    4: 'cuarto'
+  };
   var area_images = {
     'Agricultura': 'img/i-agr.svg',
 		'Ciencia y Tecnología': 'img/i-cie.svg',
@@ -253,6 +259,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ddah-ember',
     matcher: matcher,
+    orders:orders,
     governments: governments,
     government_length: 4,
 		useOnlyJsons: false,

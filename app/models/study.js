@@ -4,6 +4,13 @@ import Ember from 'ember';
 import CalculationsMixin from 'ddah-ember/mixins/calculations';
 import config from '../config/environment';
 
+let orders = {
+  1: 'primer',
+  2: 'segundo',
+  3: 'tercer',
+  4: 'cuarto'
+};
+
 export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
     year: DS.attr('number'),
@@ -21,6 +28,12 @@ export default DS.Model.extend(CalculationsMixin, {
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
       },
+    }),
+    order: Ember.computed('government', 'year', function() {
+      let gov_year = this.get('government').get('start_year');
+      
+      let n = this.get('year') - gov_year;
+      return orders[n];
     }),
     isVisible: Ember.computed('visible', function() {
       if(config.environment === "development"){
