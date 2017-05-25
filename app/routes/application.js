@@ -10,6 +10,13 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
   setupController: function(controller, model) {
     controller.set('model', model);
     controller.setCompareUrls(model);
+  },
+  title: function(tokens) {
+    tokens = Ember.makeArray(tokens);
+    if(tokens.length){
+      return ' - '+tokens;
+    }
+    return tokens;
   }
 
 });
