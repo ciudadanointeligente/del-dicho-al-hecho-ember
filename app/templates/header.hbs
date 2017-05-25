@@ -20,7 +20,7 @@
               {{#if gov.hasVisibleStudies}}
                <li> {{gov.name}} </li>
                 {{#each gov.studies as |study|}}
-                {{#if study.visible}}
+                {{#if study.isVisible}}
                  <li>{{#link-to "study" study.slug}} {{study.name}}{{/link-to}}</li>
                 {{/if}}
                 {{/each}}
