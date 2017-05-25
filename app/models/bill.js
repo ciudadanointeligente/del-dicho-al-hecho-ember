@@ -6,6 +6,7 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   title: DS.attr('string'),
   url: DS.attr('string'),
+  justification: DS.attr('string'),
   justifications: DS.hasMany('justification'),
   fullfilment: DS.attr('number', {defaultValue: function(e){
     return ( e.get('phase').get('fullfilment') ? parseInt(e.get('phase').get('fullfilment')) : 0);
