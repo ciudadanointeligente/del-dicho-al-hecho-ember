@@ -22,10 +22,11 @@ export default DS.Model.extend(CalculationsMixin, {
       },
     }),
     isVisible: Ember.computed('visible', function() {
+      console.log(config.environment);
       if(config.environment === "development"){
         return true;
       }
-      return this.visible;
+      return this.get('visible');
     }),
     fullName: Ember.computed('version', 'year', function() {
       return `${this.get('version')} ${this.get('year')}`;
