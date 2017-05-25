@@ -3,7 +3,14 @@ import _ from 'lodash';
 import Ember from 'ember';
 import CalculationsMixin from 'ddah-ember/mixins/calculations';
 import config from '../config/environment';
-console.log(config);
+
+let orders = {
+  1: 'primer',
+  2: 'segundo',
+  3: 'tercer',
+  4: 'cuarto'
+};
+
 export default DS.Model.extend(CalculationsMixin, {
     version: DS.attr('string'),
     year: DS.attr('number'),
@@ -25,7 +32,7 @@ export default DS.Model.extend(CalculationsMixin, {
       let gov_year = this.get('government').get('start_year');
       
       let n = this.get('year') - gov_year;
-      return config.orders[n];
+      return orders[n];
     }),
     isVisible: Ember.computed('visible', function() {
       if(config.environment === "development"){
