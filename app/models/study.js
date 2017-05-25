@@ -22,7 +22,7 @@ export default DS.Model.extend(CalculationsMixin, {
       },
     }),
     isVisible: Ember.computed('visible', function() {
-      if(config.environment !== "production"){
+      if(config.environment === "development"){
         return true;
       }
       return this.visible;
