@@ -12,7 +12,7 @@
     "start": "ember server",
     "test": "ember test",
     "deploy": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -",
-    "subir": "git fetch; git rebase origin/$(git rev-parse --abbrev-ref HEAD);ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push origin gh-pages",
+    "subir": "git branch -D gh-pages;git fetch; git rebase origin/$(git rev-parse --abbrev-ref HEAD);ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push origin gh-pages",
     "devel": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" --environment=development --branch=gh-pages-csv; git push; git checkout -"
   },
   "repository": "",
