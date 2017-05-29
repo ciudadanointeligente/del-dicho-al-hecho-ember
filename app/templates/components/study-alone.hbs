@@ -8,7 +8,7 @@
   </div>
   <div class="col-md-10 col-md-offset-1">
     <div class="bajada">
-      <p class="text-center">Aquí mostramos el avance por áreas del estudio de las promesas {{study.description}} <a href="" class="btn btn-warning btn-xs" target="_blank" onclick="ga('send','event','metodologia-pdf','click')">Ver metodología</a></p>
+      <p class="text-center">Aquí mostramos el avance por áreas del estudio de las promesas {{study.description}} {{#link-to "methodology" onClick="ga('send', 'event', 'estudio-metodologia', 'click');" class="btn btn-warning btn-xs"}}Ver metodología{{/link-to}}</p>
     </div>
   </div>
   <div class="col-md-3 col-md-offset-3 text-center">
