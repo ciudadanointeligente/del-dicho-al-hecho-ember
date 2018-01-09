@@ -1,0 +1,13 @@
+
+
+
+{{yield}}
+
+
+{{#each areasDiff as |diff_area|}}
+<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{diff_area.fulfillment}}%; background-color: {{diff_area.study.color}}">
+  {{#if diff_area.fulfillment }}
+    <span class="sr-only"  data-toggle="tooltip" data-placement="top" title="{{diff_area.study.name}}">{{diff_area.original_fulfillment}}%</span>
+  {{/if}}
+</div>
+{{/each}}

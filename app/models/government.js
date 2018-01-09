@@ -1,6 +1,7 @@
 import DS from 'ember-data';
 import Ember from 'ember';
 import config from '../config/environment';
+import _ from 'lodash';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
@@ -30,4 +31,48 @@ export default DS.Model.extend({
     }
     return false;
   }),
+  getFulfillmentPerArea: function(area){
+    let s = this.get('studies').sortBy('year').filterBy('type', 'Programa');
+    let r = [];
+    s.forEach(function(item){
+      r.push({
+        'study': item,
+        'fulfillment': area.fullfilmentPerStudy(item)});
+    });
+
+    return r;
+
+  },
+  getFulfillmentPerAreaDiff: function(area){
+    let areas = this.getFulfillmentPerArea(area);
+    let i = 0;
+    let r = [];
+    while (i < areas.length){
+      let diff;
+      if(!_.isUndefined(areas[i -1])){
+        diff = parseInt(areas[i].fulfillment) - parseInt(areas[i -1].fulfillment);
+        // if (diff_ > 0){
+        //   diff = diff_;
+        // }
+        // else {
+        //   diff = ;
+        // }
+      }
+      else {
+        diff = parseInt(areas[i].fulfillment);
+      }
+      let negative = false;
+      if (diff < 0){
+        negative = true;
+      }
+      r[i] = {
+          'study': areas[i].study,
+          'fulfillment': diff,
+          'negative': negative,
+          'original_fulfillment': areas[i].fulfillment
+        };
+      i++;
+    }
+    return r;
+  }
 });

@@ -141,26 +141,25 @@
             </tr>
           </thead>
           <tbody>
+            
+
             {{#each areas as |a|}}
+
+            
             <tr>
               <td width="10%">{{a.name}}</td>
                 <td width="80%">
                   <!-- bar01-->
                   <div class="progress compare-bar hidden-xs hidden-sm">
-                    {{#each model.comparable as |study|}}
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study}}%; background-color: {{study.color}}">
-                      <span class="sr-only">{{fullfilmentPerArea a study}}%</span>
-                    </div>
-                    {{/each}}
+                    {{#gov-area-bar-diff government=model area=a}}
+
+                    {{/gov-area-bar-diff}}
+                    
                   </div>
-                  <!-- bar01-->
-                  {{#each model.comparable as |study|}}
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color}}">{{fullfilmentPerArea a study}}%</p>
-                  {{/each}}
                 </td>
                 <td width="10%">
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">Hola%</p>
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">Hola%</p>
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
                 </td>
             </tr>
             {{/each}}

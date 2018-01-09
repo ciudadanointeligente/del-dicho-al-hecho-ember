@@ -141,6 +141,15 @@ test('area getFulfillment by study', function(assert){
   assert.equal(data.area1.fullfilmentPerStudy(data.study2), 78);
   assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
 });
+test('area getFulfillment by year', function(assert){
+
+  let data = this.loadData();
+
+  assert.equal(data.area1.fullfilmentPerStudy(data.study1), 50);
+  assert.equal(data.area2.fullfilmentPerStudy(data.study1), 25);
+  assert.equal(data.area1.fullfilmentPerStudy(data.study2), 78);
+  assert.equal(data.area2.fullfilmentPerStudy(data.study2), 0);
+});
 
 test('getCapacity', function(assert){
   let data = this.loadData();
