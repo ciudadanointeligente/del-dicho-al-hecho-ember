@@ -15,15 +15,18 @@ Router.map(function() {
   this.route('compare-studies', { path: 'compare/studies/:studies'});
   this.route('404');
 });
-
+/* jshint ignore:start */
 Router.reopen({
   notifyGoogleAnalytics: function() {
+    
     return ga('send', 'pageview', {
         'page': this.get('url'),
         'title': this.get('url')
       });
   }.on('didTransition')
+
 });
+/* jshint ignore:end */
 
 
 export default Router;
