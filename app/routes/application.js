@@ -15,9 +15,9 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
 
     tokens = Ember.makeArray(tokens);
     if(tokens.length && this.controller.currentPath !== 'index'){
-      return 'DelDichoAlHecho - '+ tokens;
+      return 'Del Dicho Al Hecho - '+ tokens;
     }
-    return 'DelDichoAlHecho';
+    return 'Del Dicho Al Hecho';
   }
 
 });
