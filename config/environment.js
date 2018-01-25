@@ -6,6 +6,16 @@ var governments =[{
 	"color3": "#FFB0B6",
 	"color4": "#FFE7E8",
 	"studies": [{
+    "type": "Programa",
+    "img": "/img/bashelet-en-el-barquito.svg",
+    "color": "#FF7E00",
+    "year": 2017,
+    "version": "Programa de Gobierno",
+    "name": "Michelle Bachelet: Programa de Gobierno 2017",
+    "filename": "Bachelet-2014-2018_Programa-2018.csv",
+    "description": "del Programa de Gobierno, al final de todo.",
+    "visible": true,
+  },{
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FF7E88",
