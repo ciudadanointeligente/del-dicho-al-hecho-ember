@@ -9,7 +9,7 @@
         <div class="col-md-3 hidden-sm hidden-xs text-center">
             <img src="/img/bachelet.svg">
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-6 text-center">
             <div class="total-result cumplimientos">
               {{study.fullfilment}}%
             </div>
@@ -17,12 +17,6 @@
               <div class="chart estudio-total">
                 {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
               </div>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="total-result cumplimientos">
-              {{ study.coherenceLevel }}
-            </div>
-            <h3 class="label-coherencia">coherencia total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Número que indica el promedio de consistencia de todas las promesas respecto a los proyectos de ley enviados al Congreso."></i></h3>
           </div>
           <div class="col-md-3 hidden-sm hidden-xs text-center">
             <img src="/img/martillo.svg">
@@ -101,7 +95,6 @@
       </div>
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
       <p class="text-center home"><b>de avance</b></p>
-      <p class="text-center">Coherencia con la promesa <b>{{a.summary.coherenceLevel}} de 4</b></p>
       <a href="{{url-for "study" study.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
     </div>
     {{/each-in}}
