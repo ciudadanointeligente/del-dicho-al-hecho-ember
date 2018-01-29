@@ -32,7 +32,7 @@ export default DS.Model.extend(CalculationsMixin, {
     order: Ember.computed('government', 'year', function() {
       let gov_year = this.get('government').get('start_year');
       
-      let n = this.get('year') - gov_year;
+      let n = this.get('year') - gov_year + 1;
       return orders[n];
     }),
     isVisible: Ember.computed('visible', function() {
@@ -229,5 +229,13 @@ export default DS.Model.extend(CalculationsMixin, {
         }
       });
       return promises;
+    },
+    hasPromisesInArea: function(area){
+      let promises = this.getPromisesByArea(area);
+
+      if (promises.length > 0){
+        return true;
+      }
+      return false;
     }
 });

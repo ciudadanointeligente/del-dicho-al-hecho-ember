@@ -224,7 +224,7 @@ test('order', function(assert){
   let estudio = this.store().createRecord('study',{"version":"marzo","year":"2016"});
   gov.get('studies').pushObject(estudio);
   Ember.run.end();
-  assert.equal(estudio.get('order'), 'segundo');
+  assert.equal(estudio.get('order'), 'tercer');
 });
 
 test("chartData", function(assert){
@@ -388,6 +388,29 @@ test('getPromisesByArea', function(assert){
   let promises_estudio2 = estudio_2.getPromisesByArea(area_1);
   assert.equal(promises_estudio2.length, 1);
   assert.equal(promises_estudio2[0].get('id'), 'p2');
+});
+test('hasPromisesInArea', function(assert){
+  Ember.run.begin();
+  let store = this.store();
+  let gov = store.createRecord('government', {'name': 'Bachelet-2014-2018'});
+  let estudio_1 = store.createRecord('study',{"version":"marzo","year":"2016", 'gov': gov});
+  let estudio_2 = store.createRecord('study',{"version":"mayo","year":"2016"});
+
+  let promesa_1_1= store.createRecord('promise',{'id':'p1','content':'content01', 'number':'1', 'title':'title01', 'study': estudio_1});
+
+  let promesa_1_2 = store.createRecord('promise',{'id':'p2','content':'content01', 'number':'1', 'title':'title01', 'study': estudio_2});
+
+
+  let area_1 = store.createRecord('area',{'id': 1, 'name':'area 01'});
+  let area_2 = store.createRecord('area',{'id': 2, 'name':'area 02'});
+
+  area_1.get('promises').pushObject(promesa_1_1);
+  area_1.get('promises').pushObject(promesa_1_2);
+  Ember.run.end();
+  let tiene_promesasEnArea1 = estudio_1.hasPromisesInArea(area_1);
+  assert.ok(tiene_promesasEnArea1);
+  let tiene_promesasEnArea2 = estudio_1.hasPromisesInArea(area_2);
+  assert.notOk(tiene_promesasEnArea2);
 });
 test('getPromisesGroupedByArea', function(assert){
   let estudio = this.loadData(this.store()).estudio;

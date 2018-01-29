@@ -37,6 +37,56 @@ test('government comparable studies', function(assert){
     assert.equal(comparable.length, 1);
     assert.equal(comparable.toArray()[0].get('id'), study1.get('id'));
 });
+test('government get amount of comparable promises', function(assert){
+  Ember.run.begin();
+    let government = this.subject({'name': 'Bachelet 2014-2018', 'color': 'red'});
+    let area1 = this.store().createRecord('area', {'id': "2222222222", 'name': 'nombre2'});
+    let study1 = this.store().createRecord('study', {'version': 'marzo', 'year': '2016', 'government':government, 'type': 'Programa'});
+    let study1_2 = this.store().createRecord('study', {'version': 'marzo', 'year': '2017', 'government':government, 'type': 'Programa'});
+    let promesa_1 = this.store().createRecord('promise',{'content':'content02',
+                                                                   'number':'2',
+                                                                   'title':'title02',
+                                                                   'study': study1,
+                                                                   'coherenceLevel': 1,
+                                                                   'area': area1});
+    let bill_a = this.store().createRecord('bill',{'name':'name_a',
+                                     'id':'ba',
+                                     'title':'title01',
+                                     'fullfilment':'10%'
+                                     
+                                    });
+    this.store().createRecord('justification', {'promise': promesa_1, 'bill': bill_a});
+    let promesa_1_2 = this.store().createRecord('promise',{'content':'content02',
+                                                                   'number':'3',
+                                                                   'title':'title02',
+                                                                   'study': study1_2,
+                                                                   'coherenceLevel': 1,
+                                                                   'area': area1});
+    let bill_a_2 = this.store().createRecord('bill',{'name':'name_a',
+                                     'id':'baa',
+                                     'title':'title01',
+                                     'fullfilment':'10%'
+                                     
+                                    });
+    this.store().createRecord('justification', {'promise': promesa_1_2, 'bill': bill_a_2});
+    let study2 = this.store().createRecord('study', {'version': 'mayo', 'year': '2016', 'government':government, 'type': 'Discurso'});
+    let promesa_2 = this.store().createRecord('promise',{'content':'content02',
+                                                                   'number':'2',
+                                                                   'title':'title02',
+                                                                   'study': study2,
+                                                                   'coherenceLevel': 1,
+                                                                   'area': area1});
+    let bill_b = this.store().createRecord('bill',{'name':'name_b',
+                                     'id':'bb',
+                                     'title':'title02',
+                                     'fullfilment':'20%'
+                                     
+                                    });
+    this.store().createRecord('justification', {'promise': promesa_2, 'bill': bill_b});
+    Ember.run.end();
+
+    assert.equal(government.get('comparablePromises'), 1);
+});
 test('government area and study by year comparable studies', function(assert){
     Ember.run.begin();
     let government = this.subject({'name': 'Bachelet 2014-2018', 'color': 'red'});

@@ -18,7 +18,10 @@ export default DS.Model.extend({
   }}),
   comparable: Ember.computed('studies', function(){
 
-    return this.get('studies').filterBy('type', 'Programa').sortBy('year');
+    return this.get('studies').filterBy('type', config.comparable_with_other_gov).sortBy('year');
+  }),
+  comparablePromises: Ember.computed('comparable', function(){
+    return this.get('comparable').get('lastObject').get('promises').get('length');
   }),
   hasVisibleStudies: Ember.computed('studies', function(){
     if(config.environment === "development"){
@@ -32,7 +35,7 @@ export default DS.Model.extend({
     return false;
   }),
   getFulfillmentPerArea: function(area){
-    let s = this.get('studies').sortBy('year').filterBy('type', 'Programa');
+    let s = this.get('studies').sortBy('year').filterBy('type', config.comparable_with_other_gov);
     let r = [];
     s.forEach(function(item){
       r.push({
@@ -51,12 +54,6 @@ export default DS.Model.extend({
       let diff;
       if(!_.isUndefined(areas[i -1])){
         diff = parseInt(areas[i].fulfillment) - parseInt(areas[i -1].fulfillment);
-        // if (diff_ > 0){
-        //   diff = diff_;
-        // }
-        // else {
-        //   diff = ;
-        // }
       }
       else {
         diff = parseInt(areas[i].fulfillment);

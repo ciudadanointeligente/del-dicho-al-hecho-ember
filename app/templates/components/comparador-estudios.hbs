@@ -165,27 +165,66 @@
                 <td width="10%">{{a.name}}</td>
                 <td width="80%">
                   <!-- bar01-->
+                  {{#if (studyHasPromisesInArea study_0 a)}}
                   <div class="progress compare-bar hidden-xs hidden-sm">
                     <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study_0}}%; background-color: {{study_0.government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a study_0}}%</span>
                     </div>
                   </div>
                   <p class="compare-info hidden-md hidden-lg" style="color: {{study_0.government.color1}}">{{fullfilmentPerArea a study_0}}%</p>
+                  {{else}}
+                  <div class="progress compare-bar hidden-xs hidden-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: #D3D3D3">
+                      <span class="sr-only">NO HAY PROMESAS EN ESTA AREA</span>
+                    </div>
+                  </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: #D3D3D3">NO HAY PROMESAS EN ESTA AREA</p>
+                  {{/if}}
                   <!-- bar01-->
                   <!-- bar02-->
+                  {{#if (studyHasPromisesInArea study_1 a)}}
                   <div class="progress compare-bar hidden-xs hidden-sm">
                     <div class="progress-bar" role="progressbar" aria-valuenow="{{fullfilmentPerArea a study_1}}" aria-valuemin="0" aria-valuemax="100" style="width: {{fullfilmentPerArea a study_1}}%; background-color: {{study_1.government.color1}}">
                       <span class="sr-only">{{fullfilmentPerArea a study_1}}%</span>
                     </div>
                   </div>
                   <p class="compare-info hidden-md hidden-lg" style="color: {{study_1.government.color1}}">{{fullfilmentPerArea a study_1}}%</p>
+                  {{else}}
+                  <div class="progress compare-bar hidden-xs hidden-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: #D3D3D3">
+                      <span class="sr-only">NO HAY PROMESAS EN ESTA AREA</span>
+                    </div>
+                  </div>
+                  <p class="compare-info hidden-md hidden-lg" style="color: #D3D3D3">NO HAY PROMESAS EN ESTA AREA</p>
+                  {{/if}}
+
                   <!-- bar02-->
                 </td>
                 <td width="10%">
+                  {{#if (studyHasPromisesInArea study_0 a)}}
+
                   <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
+                  {{else}}
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  {{/if}}
+                  {{#if (studyHasPromisesInArea study_1 a)}}
                   <p class="compare-info hidden-xs hidden-sm" style="margin-top: 25px; color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
+                  {{else}}
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  {{/if}}
+
+                  {{#if (studyHasPromisesInArea study_0 a)}}
                   <p class="compare-info hidden-md hidden-lg" style="color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
+                  {{else}}
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  {{/if}}
+
+                  {{#if (studyHasPromisesInArea study_1 a)}}
                   <p class="compare-info hidden-md hidden-lg" style="color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
+                  {{else}}
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p> 
+                  {{/if}}
+
                 </td>
               </tr>
               {{/each}}
