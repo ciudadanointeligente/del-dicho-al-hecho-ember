@@ -39,7 +39,8 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} {{study.year}}</p>
             <div class="chart-comparison">
               <p class="compare-info">Avance</p>
@@ -64,7 +65,7 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} {{study.year}}</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.billsCount}}</p>
             <p class="compare-info">Proyectos</p>
@@ -84,7 +85,7 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} {{study.year}}</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.presentanAvance}}/{{study.promises.length}}</p>
             <p class="compare-info">Promesas completas</p>
@@ -105,7 +106,7 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} {{study.year}}</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.capacity}}</p>
             <p class="compare-info">Promesas con puntaje máximo</p>
