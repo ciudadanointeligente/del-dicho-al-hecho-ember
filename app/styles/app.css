@@ -250,7 +250,8 @@ section{
 
 .progress-bar {
   background-color: #2ABAFD;
-  box-shadow: none; }
+  box-shadow: none;
+  padding-bottom: 20px;}
 
 .compare-bar{
   background-color: #EEFAFF;
