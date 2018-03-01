@@ -144,24 +144,26 @@
 
 
             {{#each areas as |a|}}
+              {{#if (hasPromisesInArea model a)}}
 
 
-            <tr>
-              <td width="10%">{{a.name}}</td>
-                <td width="80%">
-                  <!-- bar01-->
-                  <div class="progress compare-bar hidden-xs hidden-sm">
-                    {{#gov-area-bar-diff government=model area=a}}
+              <tr>
+                <td width="10%">{{a.name}}</td>
+                  <td width="80%">
+                    <!-- bar01-->
+                    <div class="progress compare-bar hidden-xs hidden-sm">
+                      {{#gov-area-bar-diff government=model area=a}}
 
-                    {{/gov-area-bar-diff}}
+                      {{/gov-area-bar-diff}}
 
-                  </div>
-                </td>
-                <td width="10%">
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
-                </td>
-            </tr>
+                    </div>
+                  </td>
+                  <td width="10%">
+                    <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                    <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                  </td>
+              </tr>
+              {{/if}}
             {{/each}}
           </tbody>
         </table>
