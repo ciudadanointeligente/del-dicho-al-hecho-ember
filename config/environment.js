@@ -288,7 +288,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-		comparisonsAreVisible: false,
+		comparisonsAreVisible: true,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
