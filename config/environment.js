@@ -1,6 +1,6 @@
 var governments =[{
 	"name": "Michelle Bachelet",
-	"years": {'start': 2014, 'end': 2018},
+	"years": {'start': 2014, 'end': 2017},
 	"color1": "#F64B57",
 	"color2": "#FF7E88",
 	"color3": "#FFB0B6",
@@ -75,7 +75,7 @@ var governments =[{
 	}, ]
 }, {
 	"name": "Sebastián Piñera",
-	"years": {'start': 2010, 'end': 2014},
+	"years": {'start': 2010, 'end': 2013},
 	"color1": "#2ABAFD",
 	"color2": "#70D2FF",
 	"color3": "#B0E6FF",
