@@ -4,11 +4,11 @@ var governments =[{
 	"color1": "#F64B57",
 	"color2": "#FF7E88",
 	"color3": "#FFB0B6",
-	"color4": "#FFE7E8",
+	"color4": "#FFD4D7",
 	"studies": [{
     "type": "Programa",
     "img": "/img/bashelet-en-el-barquito.svg",
-    "color": "#FF7E00",
+    "color": "#F64B57",
     "year": 2017,
     "in_landing": true,
     "version": "Programa de Gobierno",
@@ -38,7 +38,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"color": "#FFE7E8",
+		"color": "#FFD4D7",
 		"year": 2014,
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
