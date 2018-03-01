@@ -96,7 +96,9 @@ let parser = {
             let id = _hashCode(id_from_csv + study.get('government').get('name') + study.get('version') + study.get('year'));
             obj.id = id;
           } else {
-
+            if(_.isString(id_from_csv)){
+              id_from_csv = _.deburr(id_from_csv).trim().toLowerCase();
+            }
             let id = id_from_csv;
             if(!id.trim().length){
               if(!_.includes(keys_that_can_be_empty, key)){

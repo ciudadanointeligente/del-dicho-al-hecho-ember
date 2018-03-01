@@ -198,3 +198,32 @@ test('government has visible studies', function(assert){
   assert.notOk(government.get('hasVisibleStudies'));
   assert.ok(government2.get('hasVisibleStudies'));
 });
+test('government has promises in area', function(assert){
+  Ember.run.begin();
+    let government = this.subject({'name': 'Bachelet 2014-2018', 'color': 'red'});
+    this.store().createRecord('study', {'version': 'marzo', 'year': '2016', 'government':government, 'type': 'Programa'});
+    this.store().createRecord('study', {'version': 'mayo', 'year': '2017', 'government':government, 'type': 'Discurso'});
+    let government2 = this.store().createRecord('government',{'name': 'FieraFeroz 2018-2022', 'color': 'red'});
+    this.store().createRecord('study', {'version': 'marzo', 'visible':true, 'year': '2018', 'government':government2, 'type': 'Programa'});
+    let study1 = this.store().createRecord('study', {'version': 'marzo', 'year': '2016', 'government':government, 'type': 'Programa'});
+    let study2 = this.store().createRecord('study', {'version': 'marzo', 'year': '2017', 'government':government2, 'type': 'Programa'});
+    let area1 = this.store().createRecord('area', {'id': "1111111", 'name': 'nombre1'});
+    let area2 = this.store().createRecord('area', {'id': "22222222222", 'name': 'nombre2'});
+    this.store().createRecord('promise',{'content':'content02',
+                                         'number':'2',
+                                         'title':'title02',
+                                         'study': study1,
+                                         'coherenceLevel': 1,
+                                         'area': area1});
+    this.store().createRecord('promise',{'content':'content02',
+                                         'number':'3',
+                                         'title':'title02',
+                                         'study': study2,
+                                         'coherenceLevel': 1,
+                                         'area': area2});
+    Ember.run.end();
+    assert.ok(government.hasPromisesInArea(area1));
+    assert.notOk(government.hasPromisesInArea(area2));
+    assert.notOk(government2.hasPromisesInArea(area1));
+    assert.ok(government2.hasPromisesInArea(area2));
+});

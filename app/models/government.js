@@ -71,5 +71,18 @@ export default DS.Model.extend({
       i++;
     }
     return r;
+  },
+  hasPromisesInArea: function(area){
+    let thereAre = false;
+    this.get('studies').forEach(function(study){
+      let promises = study.get('promises');
+      promises.forEach(function(promise){
+        if(promise.get('area').get('id') === area.get('id')){
+          thereAre = true;
+        }
+      });
+    });
+    return thereAre;
+
   }
 });
