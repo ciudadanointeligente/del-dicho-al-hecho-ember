@@ -41,7 +41,7 @@
           {{#each model.comparable as |study|}}
 
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <div class="chart-comparison">
               <p class="compare-info">Avance</p>
               <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
@@ -66,7 +66,7 @@
         <div class="row">
           {{#each model.comparable as |study|}}
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.billsCount}}</p>
             <p class="compare-info">Proyectos</p>
           </div>
@@ -86,7 +86,7 @@
         <div class="row">
           {{#each model.comparable as |study|}}
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.presentanAvance}}/{{study.promises.length}}</p>
             <p class="compare-info">Promesas completas</p>
             <p class="compare-info">({{study.finalizadas}} completas - {{study.enDesarrollo}} en progreso)</p>
@@ -107,7 +107,7 @@
         <div class="row">
           {{#each model.comparable as |study|}}
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.capacity}}</p>
             <p class="compare-info">Promesas con puntaje máximo</p>
           </div>
@@ -128,7 +128,7 @@
           <div class="col-md-12">
             <p style="margin-top: 30px;"></p>
             {{#each model.comparable as |study|}}
-            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} {{study.year}}</p>
+            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} al {{study.order}} año</p>
             {{/each}}
             <p style="margin-bottom: 20px;"></p>
           </div>
