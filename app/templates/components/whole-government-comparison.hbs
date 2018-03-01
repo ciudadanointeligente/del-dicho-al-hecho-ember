@@ -125,9 +125,11 @@
         <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <p style="margin-top: 30px;"></p>
             {{#each model.comparable as |study|}}
             <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} {{study.year}}</p>
             {{/each}}
+            <p style="margin-bottom: 20px;"></p>
           </div>
         </div>
         <table class="table table-responsive">
@@ -139,11 +141,11 @@
             </tr>
           </thead>
           <tbody>
-            
+
 
             {{#each areas as |a|}}
 
-            
+
             <tr>
               <td width="10%">{{a.name}}</td>
                 <td width="80%">
@@ -152,7 +154,7 @@
                     {{#gov-area-bar-diff government=model area=a}}
 
                     {{/gov-area-bar-diff}}
-                    
+
                   </div>
                 </td>
                 <td width="10%">
