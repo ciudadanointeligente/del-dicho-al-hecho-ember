@@ -36,7 +36,7 @@
           <ul class="dropdown-menu">
             <li>Avance por año en cumplimiento de Programa de Gobierno</li>
             {{#each model as |gov|}}
-            <li>{{#link-to "government" gov.slug }} {{gov.name}}{{/link-to}}</li>
+            <li>{{#link-to "government" gov.slug }} {{gov.name}} {{gov.start_year}}-{{gov.end_year}}{{/link-to}}</li>
             {{/each}}
             <li role="separator" class="divider"></li>
             <li>Comparación entre gobiernos</li>

@@ -4,7 +4,7 @@
   <div class="row">
     <div class="page-header">
       <h1 class="text-center">{{study_0.government.name}} - {{study_1.government.name}}</h1>
-      <h2 class="text-center">Al año {{study_0.order}} año de gobierno</h2>
+      <h2 class="text-center">Al {{study_0.order}} año de gobierno</h2>
     </div>
   </div>
 
@@ -21,7 +21,7 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_0.government.name}}</p>
+              <p class="text-center">{{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
               <div class="chart-comparison">
                 <p class="compare-info">Avance</p>
                 <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.fullfilment}}%</p>
@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_1.government.name}}</p>
+              <p class="text-center">{{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
               <div class="chart-comparison">
                 <p class="compare-info">Avance</p>
                 <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.fullfilment}}%</p>
@@ -54,12 +54,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_0.government.name}}</p>
+              <p class="text-center">{{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_1.government.name}}</p>
+              <p class="text-center">{{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.promises.length}}</p>
               <p class="compare-info">Promesas</p>
             </div>
@@ -77,12 +77,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_0.government.name}}</p>
+              <p class="text-center">{{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_1.government.name}}</p>
+              <p class="text-center">{{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.billsCount}}</p>
               <p class="compare-info">Proyectos</p>
             </div>
@@ -100,12 +100,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_0.government.name}}</p>
+              <p class="text-center">{{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.presentanAvance}}/{{study_0.promises.length}}</p>
               <p class="compare-info">Promesas completas</p>
               <p class="compare-info">({{study_0.finalizadas}} completas - {{study_0.enDesarrollo}} en progreso)</p>            </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_1.government.name}}</p>
+              <p class="text-center">{{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.presentanAvance}}/{{study_1.promises.length}}</p>
               <p class="compare-info">Promesas completas</p>
               <p class="compare-info">({{study_1.finalizadas}} completas - {{study_1.enDesarrollo}} en progreso)</p>
@@ -124,12 +124,12 @@
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_0.government.name}}</p>
+              <p class="text-center">{{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_0.government.color1}}">{{study_0.capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
-              <p class="text-center">{{study_1.government.name}}</p>
+              <p class="text-center">{{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
               <p class="compare-result compare-info" style="color: {{study_1.government.color1}}">{{study_1.capacidad}}</p>
               <p class="compare-info">Promesas con puntaje máximo</p>
             </div>
@@ -147,8 +147,8 @@
           <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{study_0.government.color1}}"></i> {{study_0.government.name}}</p>
-              <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study_1.government.color1}}"></i> {{study_1.government.name}}</p>
+              <p><i class="fa fa-circle" aria-hidden="true" style="margin-top: 30px; padding-left: 9px; color: {{study_0.government.color1}}"></i> {{study_0.government.name}} {{study_0.government.start_year}}-{{study_0.government.end_year}}</p>
+              <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study_1.government.color1}}"></i> {{study_1.government.name}} {{study_1.government.start_year}}-{{study_1.government.end_year}}</p>
             </div>
           </div>
           <table class="table table-responsive">
@@ -222,7 +222,7 @@
                   {{#if (studyHasPromisesInArea study_1 a)}}
                   <p class="compare-info hidden-md hidden-lg" style="color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
                   {{else}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p> 
+                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
                   {{/if}}
 
                 </td>

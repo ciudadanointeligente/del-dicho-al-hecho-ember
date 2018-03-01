@@ -39,8 +39,9 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <div class="chart-comparison">
               <p class="compare-info">Avance</p>
               <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
@@ -64,8 +65,8 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.billsCount}}</p>
             <p class="compare-info">Proyectos</p>
           </div>
@@ -84,8 +85,8 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.presentanAvance}}/{{study.promises.length}}</p>
             <p class="compare-info">Promesas completas</p>
             <p class="compare-info">({{study.finalizadas}} completas - {{study.enDesarrollo}} en progreso)</p>
@@ -105,8 +106,8 @@
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
-          <div class="col-xs-12 col-sm-4 col-md-4 compare-box">
-            <p class="text-center">{{model.name}} {{study.year}}</p>
+          <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
+            <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.capacity}}</p>
             <p class="compare-info">Promesas con puntaje máximo</p>
           </div>
@@ -125,9 +126,11 @@
         <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <p style="margin-top: 30px;"></p>
             {{#each model.comparable as |study|}}
-            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} {{study.year}}</p>
+            <p><i class="fa fa-circle" aria-hidden="true" style="padding-left: 9px; color: {{study.color}}"></i> {{model.name}} al {{study.order}} año</p>
             {{/each}}
+            <p style="margin-bottom: 20px;"></p>
           </div>
         </div>
         <table class="table table-responsive">
@@ -139,27 +142,29 @@
             </tr>
           </thead>
           <tbody>
-            
+
 
             {{#each areas as |a|}}
+              {{#if (hasPromisesInArea model a)}}
 
-            
-            <tr>
-              <td width="10%">{{a.name}}</td>
-                <td width="80%">
-                  <!-- bar01-->
-                  <div class="progress compare-bar hidden-xs hidden-sm">
-                    {{#gov-area-bar-diff government=model area=a}}
 
-                    {{/gov-area-bar-diff}}
-                    
-                  </div>
-                </td>
-                <td width="10%">
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
-                </td>
-            </tr>
+              <tr>
+                <td width="10%">{{a.name}}</td>
+                  <td width="80%">
+                    <!-- bar01-->
+                    <div class="progress compare-bar hidden-xs hidden-sm">
+                      {{#gov-area-bar-diff government=model area=a}}
+
+                      {{/gov-area-bar-diff}}
+
+                    </div>
+                  </td>
+                  <td width="10%">
+                    <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                    <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                  </td>
+              </tr>
+              {{/if}}
             {{/each}}
           </tbody>
         </table>

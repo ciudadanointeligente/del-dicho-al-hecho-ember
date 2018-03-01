@@ -1,11 +1,22 @@
 var governments =[{
 	"name": "Michelle Bachelet",
-	"years": {'start': 2014, 'end': 2018},
+	"years": {'start': 2014, 'end': 2017},
 	"color1": "#F64B57",
 	"color2": "#FF7E88",
 	"color3": "#FFB0B6",
-	"color4": "#FFE7E8",
+	"color4": "#FFD4D7",
 	"studies": [{
+    "type": "Programa",
+    "img": "/img/bashelet-en-el-barquito.svg",
+    "color": "#F64B57",
+    "year": 2017,
+    "in_landing": true,
+    "version": "Programa de Gobierno",
+    "name": "Michelle Bachelet: Programa de Gobierno 2017",
+    "filename": "Bachelet-2014-2018_Programa-2018.csv",
+    "description": "del Programa de Gobierno, al final de todo.",
+    "visible": true,
+  },{
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FF7E88",
@@ -27,7 +38,7 @@ var governments =[{
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"color": "#FFE7E8",
+		"color": "#FFD4D7",
 		"year": 2014,
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
@@ -37,7 +48,6 @@ var governments =[{
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
 		"color": "#FDAAAF",
-		"in_landing": true,
 		"year": 2016,
 		"version": "Cuenta Pública",
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
@@ -65,7 +75,7 @@ var governments =[{
 	}, ]
 }, {
 	"name": "Sebastián Piñera",
-	"years": {'start': 2010, 'end': 2014},
+	"years": {'start': 2010, 'end': 2013},
 	"color1": "#2ABAFD",
 	"color2": "#70D2FF",
 	"color3": "#B0E6FF",
