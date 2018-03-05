@@ -1,0 +1,5862 @@
+{
+  "data": [
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -211329901,
+      "attributes": {
+        "content": "Para eso enviamos a este Congreso el proyecto de ley que crea la Agencia Nacional de Protección Civil, que reemplazará a la antigua ONEMI, y estará dotada de los necesarios recursos humanos y de tecnología de última generación. Este proyecto también considera la participación inmediata de nuestras Fuerzas Armadas y de Orden en la insustituible misión de proteger a la población, sin que sea necesario decretar Estado de Excepción Constitucional, como ocurre en la actualidad.",
+        "number": "1",
+        "title": "Crea la Agencia Nacional de Protección Civil",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -395454784,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 906861572,
+      "attributes": {
+        "name": "Suma",
+        "count": 13
+      }
+    },
+    {
+      "type": "priority",
+      "id": 798522558,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1255580604,
+      "attributes": {
+        "name": "7550-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7940&prmBoletin=7550-06",
+        "justification": "",
+        "chekIsEmpty": "7550-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -395454784,
+              "type": "priority"
+            },
+            {
+              "id": 906861572,
+              "type": "priority"
+            },
+            {
+              "id": 798522558,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5423,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -211329901,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1255580604,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2006428052,
+      "attributes": {
+        "content": "Seguiremos avanzando en perfeccionar la justicia laboral",
+        "number": "2",
+        "title": "Perfecciona la justicia laboral",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -70781291,
+      "attributes": {
+        "content": "Enviaremos al Congreso el proyecto de reforma a la Superintendencia de Seguridad Social",
+        "number": "3",
+        "title": "Reforma la Superintendencia de Seguridad Social",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1181888841,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 266937787,
+      "attributes": {
+        "name": "Suma",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1188130151,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1114724471,
+      "attributes": {
+        "name": "7829-13",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8222&prmBoletin=7829-13",
+        "justification": "",
+        "chekIsEmpty": "7829-13"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1181888841,
+              "type": "priority"
+            },
+            {
+              "id": 266937787,
+              "type": "priority"
+            },
+            {
+              "id": 1188130151,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6394,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -70781291,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1114724471,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2146976662,
+      "attributes": {
+        "content": "Enviaremos los proyectos que modifican la Ley de Accidentes del Trabajo y reforman el modelo de fiscalización",
+        "number": "4",
+        "title": "Modifica Ley de Accidentes del Trabajo y reforma modelo de fiscalización",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1112897405,
+      "attributes": {
+        "name": "Seguridad Pública"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 69767319,
+      "attributes": {
+        "content": "Y para superar el déficit de nuestras policías, estamos aumentando la dotación de Carabineros en diez mil efectivos y la dotación de la PDI en mil detectives, los cuales estarán en las calles protegiendo a la gente inocente.",
+        "number": "5",
+        "title": "Aumenta la dotación de Carabineros en diez mil efectivos y PDI en mil detectives",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1112897405,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1591221052,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2093262072,
+      "attributes": {
+        "name": "Suma",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": 184385594,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 852576562,
+      "attributes": {
+        "name": "6962-02",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7358&prmBoletin=6962-02",
+        "justification": "",
+        "chekIsEmpty": "6962-02"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1591221052,
+              "type": "priority"
+            },
+            {
+              "id": -2093262072,
+              "type": "priority"
+            },
+            {
+              "id": 184385594,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1603,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 69767319,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 852576562,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1112897405,
+      "attributes": {
+        "name": "Seguridad Pública"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -2007442024,
+      "attributes": {
+        "content": "Por eso presentamos un plan integral contra el alcoholismo y la droga, con metas y plazos exigentes, que incluye que toda persona que reincida en conducir en estado de ebriedad perderá definitivamente su carné de chofer.",
+        "number": "6",
+        "title": "Sanciona a conductores reincidentes en estado de ebriedad con la pérdida definitiva de su carné de chofer",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1112897405,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 781635917,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1889675823,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": -900375791,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1429314505,
+      "attributes": {
+        "name": "7652-15",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8043&prmBoletin=7652-15",
+        "justification": "",
+        "chekIsEmpty": "7652-15"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 781635917,
+              "type": "priority"
+            },
+            {
+              "id": -1889675823,
+              "type": "priority"
+            },
+            {
+              "id": -900375791,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7155,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -2007442024,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1429314505,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1112897405,
+      "attributes": {
+        "name": "Seguridad Pública"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 210315929,
+      "attributes": {
+        "content": "La utilización de nuevas tecnologías, como el uso del brazalete electrónico",
+        "number": "7",
+        "title": "Crea el uso del brazalete electrónico",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1112897405,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -731125325,
+      "attributes": {
+        "name": "Simple",
+        "count": 19
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1068904521,
+      "attributes": {
+        "name": "Suma",
+        "count": 20
+      }
+    },
+    {
+      "type": "priority",
+      "id": -478699285,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 6
+      }
+    },
+    {
+      "type": "bill",
+      "id": -618408690,
+      "attributes": {
+        "name": "5838-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6214&prmBoletin=5838-07",
+        "justification": "",
+        "chekIsEmpty": "5838-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -731125325,
+              "type": "priority"
+            },
+            {
+              "id": -1068904521,
+              "type": "priority"
+            },
+            {
+              "id": -478699285,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4422,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 210315929,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -618408690,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1866893414,
+      "attributes": {
+        "content": "Seguiremos aumentando la subvención escolar preferencial para llegar a más sectores de clase media, que hasta ahora siempre han estado postergados.",
+        "number": "8",
+        "title": "Aumenta la subvención escolar preferencial",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 350864539,
+      "attributes": {
+        "content": "Quiero reiterar aquí mi compromiso de enfrentar el bullying y la violencia al interior de las escuelas. Es necesario restablecer el respeto al profesor y a los estudiantes y exigir que el compañerismo y la no discriminación no sólo se enseñen, sino que se vivan al interior de la sala de clases.",
+        "number": "9",
+        "title": "Promueve medidas para enfrentar el bullying",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1560995723,
+      "attributes": {
+        "name": "Simple",
+        "count": 10
+      }
+    },
+    {
+      "type": "priority",
+      "id": 829671161,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1315970327,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1773747240,
+      "attributes": {
+        "name": "7123-04",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7525&prmBoletin=7123-04",
+        "justification": "",
+        "chekIsEmpty": "7123-04"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1560995723,
+              "type": "priority"
+            },
+            {
+              "id": 829671161,
+              "type": "priority"
+            },
+            {
+              "id": -1315970327,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5653,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 350864539,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1773747240,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -909117311,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley que crea la Subsecretaría de Educación Superior, para que las universidades, institutos profesionales y centros de formación técnica, así como los estudiantes y sus familias, se vinculen con el Estado en forma directa y eficiente.",
+        "number": "10",
+        "title": " Crea la Subsecretaría de Educación Superior",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1308640642,
+      "attributes": {
+        "content": "Avanzaremos en un nuevo trato con las universidades del Estado, otorgándoles más atribuciones y flexibilidad para mejorar su gestión y competitividad.",
+        "number": "11",
+        "title": "Otorga más atribuciones y flexibilidad a universidades del Estado",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -768568701,
+      "attributes": {
+        "content": "Perfeccionaremos los mecanismos de financiamiento estudiantil, permitiremos reprogramar a los 100 mil deudores morosos del Fondo Solidario.",
+        "number": "12",
+        "title": "Perfecciona los mecanismos de financiamiento estudiantil",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1094336581,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1706133439,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1882608157,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1516237589,
+      "attributes": {
+        "name": "7874-04",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8269&prmBoletin=7874-04",
+        "justification": "",
+        "chekIsEmpty": "7874-04"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1094336581,
+              "type": "priority"
+            },
+            {
+              "id": 1706133439,
+              "type": "priority"
+            },
+            {
+              "id": -1882608157,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8776,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -768568701,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1516237589,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1449189252,
+      "attributes": {
+        "content": "Modificaremos el esquema de Aporte Fiscal Indirecto, aumentando el número de beneficiarios y entregando los recursosdirectamente a los estudiantes, para que ellos decidan en qué institución quieren estudiar.",
+        "number": "13",
+        "title": "Modifica el esquema de Aporte Fiscal Indirecto",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -628020091,
+      "attributes": {
+        "content": "Proyecto de Ley de Tabaco",
+        "number": "14",
+        "title": "Envía Proyecto de Ley de Tabaco",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -437315004,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1934749832,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -718775622,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -663375926,
+      "attributes": {
+        "name": "7914-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8311&prmBoletin=7914-11",
+        "justification": "",
+        "chekIsEmpty": "7914-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -437315004,
+              "type": "priority"
+            },
+            {
+              "id": 1934749832,
+              "type": "priority"
+            },
+            {
+              "id": -718775622,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8475,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -628020091,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -663375926,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1589737862,
+      "attributes": {
+        "content": "Impulso a la Ley de Derecho y Deberes del Paciente",
+        "number": "15",
+        "title": "Impulsa Ley de Derecho y Deberes del Paciente",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1375669887,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1552256251,
+      "attributes": {
+        "name": "Suma",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": 693034589,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1552772399,
+      "attributes": {
+        "name": "4398-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=4785&prmBoletin=4398-11",
+        "justification": "",
+        "chekIsEmpty": "4398-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1375669887,
+              "type": "priority"
+            },
+            {
+              "id": -1552256251,
+              "type": "priority"
+            },
+            {
+              "id": 693034589,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8858,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1589737862,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1552772399,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -487471481,
+      "attributes": {
+        "content": "Las mayores opciones para la venta de remedios que no requieren receta y que permitirán una reducción estimada de 25 por ciento en su precio",
+        "number": "16",
+        "title": "Crea mayores opciones para la venta de remedios",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 843141796,
+      "attributes": {
+        "name": "Simple",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1033289960,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1765197402,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -878945929,
+      "attributes": {
+        "name": "7274-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7674&prmBoletin=7274-11",
+        "justification": "",
+        "chekIsEmpty": "7274-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 843141796,
+              "type": "priority"
+            },
+            {
+              "id": 1033289960,
+              "type": "priority"
+            },
+            {
+              "id": 1765197402,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 333,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -487471481,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -878945929,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1730286472,
+      "attributes": {
+        "content": "La nueva Ley de Fármacos, que exigirá el nombre genérico de los medicamentos y su venta en dosis unitarias, para abaratar su costo y comprar sólo lo que se necesita.",
+        "number": "17",
+        "title": "Crea la nueva Ley de Fármacos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 47316246,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1792237530,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1545711272,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -111602129,
+      "attributes": {
+        "name": "6523-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6917&prmBoletin=6523-11",
+        "justification": "",
+        "chekIsEmpty": "6523-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 47316246,
+              "type": "priority"
+            },
+            {
+              "id": 1792237530,
+              "type": "priority"
+            },
+            {
+              "id": 1545711272,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8075,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1730286472,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -111602129,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -346922871,
+      "attributes": {
+        "content": "La nueva Ley de Fármacos, que exigirá el nombre genérico de los medicamentos y su venta en dosis unitarias, para abaratar su costo y comprar sólo lo que se necesita.",
+        "number": "18",
+        "title": "Crea la nueva Ley de Fármacos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1507546764,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -519992392,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1844067722,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -494027247,
+      "attributes": {
+        "name": "6037-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6420&prmBoletin=6037-11",
+        "justification": "",
+        "chekIsEmpty": "6037-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1507546764,
+              "type": "priority"
+            },
+            {
+              "id": -519992392,
+              "type": "priority"
+            },
+            {
+              "id": 1844067722,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2484,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -346922871,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -494027247,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1870835082,
+      "attributes": {
+        "content": "La nueva Ley de Fármacos, que exigirá el nombre genérico de los medicamentos y su venta en dosis unitarias, para abaratar su costo y comprar sólo lo que se necesita.",
+        "number": "19",
+        "title": "Crea la nueva Ley de Fármacos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1453255580,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2079733728,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1363339874,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1068340404,
+      "attributes": {
+        "name": "6331-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6720&prmBoletin=6331-11",
+        "justification": "",
+        "chekIsEmpty": "6331-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1453255580,
+              "type": "priority"
+            },
+            {
+              "id": 2079733728,
+              "type": "priority"
+            },
+            {
+              "id": 1363339874,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 547,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1870835082,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1068340404,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -878097504,
+      "attributes": {
+        "content": "Enviamos la ley corta de isapres, que fija criterios de razonabilidad a los mecanismos de ajuste y evita diferencias excesivas de precios por sexo y edad de los planes de salud. Este proyecto será complementado con una iniciativa que definirá un plan garantizado de salud y un mecanismo solidario de financiamiento, para todos los usuarios de isapres.",
+        "number": "20",
+        "title": "Envía Ley corta de Isapres",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1339660449,
+      "attributes": {
+        "content": "Hemos puesto en marcha una nueva política: el Ingreso ético familiar",
+        "number": "21",
+        "title": "Crea la política de Ingreso ético familiar",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1451640773,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 101294143,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 892134755,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 6
+      }
+    },
+    {
+      "type": "bill",
+      "id": -731188486,
+      "attributes": {
+        "name": "7992-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8388&prmBoletin=7992-06",
+        "justification": "",
+        "chekIsEmpty": "7992-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1451640773,
+              "type": "priority"
+            },
+            {
+              "id": 101294143,
+              "type": "priority"
+            },
+            {
+              "id": 892134755,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2175,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1339660449,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -731188486,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -737548894,
+      "attributes": {
+        "content": "Queremos invitar a los diputados a aprobar cuanto antes el nuevo Ministerio de Desarrollo Social, ya aprobado en el Senado, y que liderará la lucha contra la pobreza y las desigualdades excesivas",
+        "number": "22",
+        "title": "Aprobar el nuevo Ministerio de Desarrollo Social",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 922940415,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1183384317,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": -366025953,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1840663682,
+      "attributes": {
+        "name": "7196-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7623&prmBoletin=7196-06",
+        "justification": "",
+        "chekIsEmpty": "7196-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 922940415,
+              "type": "priority"
+            },
+            {
+              "id": -1183384317,
+              "type": "priority"
+            },
+            {
+              "id": -366025953,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4859,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -737548894,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1840663682,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1480209059,
+      "attributes": {
+        "content": "Hagámoslo ya: inscripción automática y voto voluntario",
+        "number": "23",
+        "title": "Inscripción automática y voto voluntario",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2134804773,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1687124257,
+      "attributes": {
+        "name": "Suma",
+        "count": 16
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1691540797,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 5
+      }
+    },
+    {
+      "type": "bill",
+      "id": 26610549,
+      "attributes": {
+        "name": "7338-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7731&prmBoletin=7338-07",
+        "justification": "",
+        "chekIsEmpty": "7338-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -2134804773,
+              "type": "priority"
+            },
+            {
+              "id": -1687124257,
+              "type": "priority"
+            },
+            {
+              "id": -1691540797,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9592,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1480209059,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 26610549,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -597000284,
+      "attributes": {
+        "content": "Hemos enviado un proyecto al Congreso Nacional para permitir el voto de los chilenos que viven en el extranjero y que mantienen un vínculo con Chile. Esperamos que pronto alcancemos un consenso que transforme en ley esta aspiración.",
+        "number": "24",
+        "title": "Envía proyecto de Voto en el extranjero",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1327461335,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1105302235,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -961530809,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 790820184,
+      "attributes": {
+        "name": "7335-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7730&prmBoletin=7335-07",
+        "justification": "",
+        "chekIsEmpty": "7335-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1327461335,
+              "type": "priority"
+            },
+            {
+              "id": 1105302235,
+              "type": "priority"
+            },
+            {
+              "id": -961530809,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2157,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -597000284,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 790820184,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1620757669,
+      "attributes": {
+        "content": "También es importante aumentar los grados de participación, para eso hemos propuesto la iniciativa popular de ley.",
+        "number": "25",
+        "title": "Propone la iniciativa popular de ley",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1179034272,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 23584740,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1064150238,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1554537579,
+      "attributes": {
+        "name": "7206-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7604&prmBoletin=7206-07",
+        "justification": "",
+        "chekIsEmpty": "7206-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1179034272,
+              "type": "priority"
+            },
+            {
+              "id": 23584740,
+              "type": "priority"
+            },
+            {
+              "id": 1064150238,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9346,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1620757669,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1554537579,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -456451674,
+      "attributes": {
+        "content": "Facilitar los plebiscitos comunales",
+        "number": "26",
+        "title": "Facilita los plebiscitos comunales",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -481933195,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1269762311,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1500558057,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 24514801,
+      "attributes": {
+        "name": "7308-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7700&prmBoletin=7308-06",
+        "justification": "",
+        "chekIsEmpty": "7308-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -481933195,
+              "type": "priority"
+            },
+            {
+              "id": -1269762311,
+              "type": "priority"
+            },
+            {
+              "id": 1500558057,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9901,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -456451674,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 24514801,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1761306279,
+      "attributes": {
+        "content": "En los próximos meses enviaremos los proyectos de ley de primarias voluntarias y vinculantes para seleccionar los candidatos",
+        "number": "27",
+        "title": "Envía proyecto de ley de primarias voluntarias",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 546689385,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1310076141,
+      "attributes": {
+        "name": "Suma",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 604181877,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1726298221,
+      "attributes": {
+        "name": "7911-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8304&prmBoletin=7911-06",
+        "justification": "",
+        "chekIsEmpty": "7911-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 546689385,
+              "type": "priority"
+            },
+            {
+              "id": 1310076141,
+              "type": "priority"
+            },
+            {
+              "id": 604181877,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8273,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1761306279,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1726298221,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -315903064,
+      "attributes": {
+        "content": "Una nueva ley de partidos políticos, que los haga más democráticos, transparentes y participativos",
+        "number": "28",
+        "title": "Crea una nueva ley de partidos políticos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1901854889,
+      "attributes": {
+        "content": "Para potenciar en forma muy especial el desarrollo de las regiones extremas, estamos revisando y fortaleciendo los incentivos tributarios.",
+        "number": "29",
+        "title": "Potencia el desarrollo de las regiones extremas",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1271762670,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1799780430,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1871883728,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 599865916,
+      "attributes": {
+        "name": "8011-05",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8403&prmBoletin=8011-05",
+        "justification": "",
+        "chekIsEmpty": "8011-05"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1271762670,
+              "type": "priority"
+            },
+            {
+              "id": -1799780430,
+              "type": "priority"
+            },
+            {
+              "id": 1871883728,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6375,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1901854889,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 599865916,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -847077697,
+      "attributes": {
+        "content": "Potenciaremos y modernizaremos los gobiernos regionales y comunales, incorporando la elección directa de los consejeros regionales",
+        "number": "30",
+        "title": "Incorpora la elección directa de los consejeros regionales",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1389602145,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2066259685,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -855564675,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1542669614,
+      "attributes": {
+        "name": "7923-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8317&prmBoletin=7923-06",
+        "justification": "",
+        "chekIsEmpty": "7923-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1389602145,
+              "type": "priority"
+            },
+            {
+              "id": 2066259685,
+              "type": "priority"
+            },
+            {
+              "id": -855564675,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7750,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -847077697,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1542669614,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1370680256,
+      "attributes": {
+        "content": "Potenciaremos y modernizaremos los gobiernos regionales y comunales (…) extendiendo la Alta Dirección Pública para los cargos claves",
+        "number": "31",
+        "title": "Extiende la Alta Dirección Pública para los cargos claves",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1012889651,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1348676689,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2141328529,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1229737174,
+      "attributes": {
+        "name": "7963-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8381&prmBoletin=7963-06",
+        "justification": "",
+        "chekIsEmpty": "7963-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1012889651,
+              "type": "priority"
+            },
+            {
+              "id": 1348676689,
+              "type": "priority"
+            },
+            {
+              "id": 2141328529,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2711,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1370680256,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1229737174,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -706529087,
+      "attributes": {
+        "content": "Enviamos a este Congreso el proyecto de ley que perfecciona las declaraciones de patrimonio de intereses de las autoridades públicas y crea la figura del Fideicomiso Ciego",
+        "number": "32",
+        "title": "Perfecciona las declaraciones de patrimonio de intereses de las autoridades públicas y crea la figura de Fideicomiso ciego",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -471504874,
+      "attributes": {
+        "name": "Simple",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1077572902,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1361943640,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1261037969,
+      "attributes": {
+        "name": "7616-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8012&prmBoletin=7616-06",
+        "justification": "",
+        "chekIsEmpty": "7616-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -471504874,
+              "type": "priority"
+            },
+            {
+              "id": -1077572902,
+              "type": "priority"
+            },
+            {
+              "id": -1361943640,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7301,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -706529087,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1261037969,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1508840054,
+      "attributes": {
+        "name": "Cultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1511228866,
+      "attributes": {
+        "content": "Propondremos crear el Ministerio de la Cultura y el Patrimonio, que agrupará al Consejo de la Cultura y las Artes, la Dirección de Bibliotecas, Archivos y Museos y el Consejo de Monumentos Nacionales.",
+        "number": "33",
+        "title": "Crea el Ministerio de la Cultura y el Patrimonio",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1508840054,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1508840054,
+      "attributes": {
+        "name": "Cultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -565980477,
+      "attributes": {
+        "content": "Proyecto de ley que fortalece y perfecciona la Ley de Donaciones Culturales, simplificando sus procedimientos y ampliando el universo de beneficiarios y donantes.",
+        "number": "34",
+        "title": "Fortalece y perfecciona Ley de Donaciones Culturales",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1508840054,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 953632278,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1013520166,
+      "attributes": {
+        "name": "Suma",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -852769368,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1716578010,
+      "attributes": {
+        "name": "7761-06",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8012&prmBoletin=7616-06",
+        "justification": "",
+        "chekIsEmpty": "7761-06"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 953632278,
+              "type": "priority"
+            },
+            {
+              "id": -1013520166,
+              "type": "priority"
+            },
+            {
+              "id": -852769368,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6894,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -565980477,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1716578010,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1008063696,
+      "attributes": {
+        "name": "Deportes"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1651777476,
+      "attributes": {
+        "content": "Hemos decidido enviar a este Congreso un proyecto de ley que creará el Ministerio del Deporte en Chile",
+        "number": "35",
+        "title": "Crea el Ministerio del Deporte en Chile",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1008063696,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1113213644,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1462597768,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1608476214,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 480801153,
+      "attributes": {
+        "name": "8085-29",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8484&prmBoletin=8085-29",
+        "justification": "",
+        "chekIsEmpty": "8085-29"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1113213644,
+              "type": "priority"
+            },
+            {
+              "id": -1462597768,
+              "type": "priority"
+            },
+            {
+              "id": -1608476214,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8192,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1651777476,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 480801153,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -705319556,
+      "attributes": {
+        "name": "Equidad de Género"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -425431867,
+      "attributes": {
+        "content": "Enviamos al Congreso el proyecto de ley que extiende el posnatal de tres a seis meses y amplía su cobertura para el 60 por ciento de las madres trabajadoras de clase media y vulnerables, incorporando así a 160 mil mujeres a este beneficio.",
+        "number": "36",
+        "title": "Extiende el posnatal de tres a seis meses y amplía su cobertura para el 60 por ciento",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -705319556,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -738489605,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1751196415,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -824632669,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -384463217,
+      "attributes": {
+        "name": "7526-13",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7918&prmBoletin=7526-13",
+        "justification": "",
+        "chekIsEmpty": "7526-13"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -738489605,
+              "type": "priority"
+            },
+            {
+              "id": 1751196415,
+              "type": "priority"
+            },
+            {
+              "id": -824632669,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8485,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -425431867,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -384463217,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 178004649,
+      "attributes": {
+        "name": "Infancia y Juventud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1792326086,
+      "attributes": {
+        "content": "Para ayudar a los niños en situación de fragilidad, presentaremos el proyecto de ley que reformula el actual Sename, creando dos instituciones: el Servicio Nacional de la Infancia y la Adolescencia y el nuevo Servicio Nacional de Menores, enfocado exclusivamente en la atención y rehabilitación de niños y adolescentes que hayan infringido la ley.",
+        "number": "37",
+        "title": "Reformula el actual SENAME",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 178004649,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -284883257,
+      "attributes": {
+        "content": "Estamos perfeccionando nuestra legislación familiar y las normas sobre cuidado compartido de los hijos por padres separados, para buscar fórmulas más armoniosas, poniendo siempre por delante el interés superior de los hijos",
+        "number": "38",
+        "title": "Perfecciona legislación familiar y las normas sobre cuidado compartido de los hijos por padres separados",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -933994524,
+      "attributes": {
+        "name": "Simple",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2072780328,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1136021222,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 510218348,
+      "attributes": {
+        "name": "5917-18",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6301&prmBoletin=5917-18",
+        "justification": "",
+        "chekIsEmpty": "5917-18"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -933994524,
+              "type": "priority"
+            },
+            {
+              "id": 2072780328,
+              "type": "priority"
+            },
+            {
+              "id": -1136021222,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9964,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -284883257,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 510218348,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -705319556,
+      "attributes": {
+        "name": "Equidad de Género"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1932874696,
+      "attributes": {
+        "content": "Presentamos a este Congreso el proyecto de ley que modifica la sociedad conyugal, reconoce la plena capacidad de la mujer en la administración de sus bienes, asegura una efectiva igualdad entre ambos cónyuges y garantiza una adecuada protección económica para la mujer",
+        "number": "39",
+        "title": "Presenta proyecto de ley que modifica la sociedad conyugal",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -705319556,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 415043031,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 706587867,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 32791111,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1882287665,
+      "attributes": {
+        "name": "7727-18",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8124&prmBoletin=7727-18",
+        "justification": "",
+        "chekIsEmpty": "7727-18"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 415043031,
+              "type": "priority"
+            },
+            {
+              "id": 706587867,
+              "type": "priority"
+            },
+            {
+              "id": 32791111,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5329,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1932874696,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1882287665,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -816057890,
+      "attributes": {
+        "content": "Presentamos a este Congreso el proyecto de ley que modifica la sociedad conyugal, reconoce la plena capacidad de la mujer en la administración de sus bienes, asegura una efectiva igualdad entre ambos cónyuges y garantiza una adecuada protección económica para la mujer",
+        "number": "40",
+        "title": "Presenta proyecto de ley que modifica la sociedad conyugal",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 145521649,
+      "attributes": {
+        "name": "Simple",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1264966005,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1984823827,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1911682857,
+      "attributes": {
+        "name": "7567-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7957&prmBoletin=7567-07",
+        "justification": "",
+        "chekIsEmpty": "7567-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 145521649,
+              "type": "priority"
+            },
+            {
+              "id": 1264966005,
+              "type": "priority"
+            },
+            {
+              "id": -1984823827,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2144,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -816057890,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1911682857,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1746213630,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1401700063,
+      "attributes": {
+        "content": "Es importante que la Cámara de Diputados haya aprobado en general el proyecto que elimina o reduce gradualmente el descuento del siete por ciento de salud, a más de 770 mil adultos mayores de clase media y vulnerables.",
+        "number": "41",
+        "title": "Reduce gradualmente el descuento del siete por ciento de salud para adultos mayores",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1746213630,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2085429609,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1244615269,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 365154695,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 173948632,
+      "attributes": {
+        "name": "7570-11",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7958&prmBoletin=7570-11",
+        "justification": "",
+        "chekIsEmpty": "7570-11"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -2085429609,
+              "type": "priority"
+            },
+            {
+              "id": -1244615269,
+              "type": "priority"
+            },
+            {
+              "id": 365154695,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5569,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1401700063,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 173948632,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -675509280,
+      "attributes": {
+        "content": "Pusimos en marcha una agenda a favor de nuestros pueblos originarios, que incluye su reconocimiento constitucional",
+        "number": "42",
+        "title": "Pone en marcha agenda a favor de pueblos originarios",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 849578145,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -669494747,
+      "attributes": {
+        "name": "Suma",
+        "count": 22
+      }
+    },
+    {
+      "type": "priority",
+      "id": 236942141,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 182960502,
+      "attributes": {
+        "name": "5522-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=5903&prmBoletin=5522-07",
+        "justification": "",
+        "chekIsEmpty": "5522-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 849578145,
+              "type": "priority"
+            },
+            {
+              "id": -669494747,
+              "type": "priority"
+            },
+            {
+              "id": 236942141,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3706,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -675509280,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 182960502,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1542248673,
+      "attributes": {
+        "content": "Una completa reforma y fortalecimiento de las instituciones y programas orientados hacia ellos, como la Conadi, el Programa Orígenes y los Fondos de Desarrollo Indígena.",
+        "number": "43",
+        "title": "Reforma la CONADI, el programa Orígenes y los Fondos de Desarrollo Indigena",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 104076324,
+      "attributes": {
+        "name": "Pueblos Originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -534960670,
+      "attributes": {
+        "content": "También estamos comprometidos con el fortalecimiento de la libertad religiosa y la igualdad de cultos, para remover las trabas legales que aún susbsisten, especialmente en escuelas, hospitales, cárceles, instituciones de educación superior y en el acceso a subsidios estatales",
+        "number": "44",
+        "title": "Fortalece la libertad religiosa y la igualdad de cultos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 104076324,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1263757777,
+      "attributes": {
+        "name": "Economia y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1682797283,
+      "attributes": {
+        "content": "Se encuentra en avanzado trámite el proyecto de ley que crea el Sernac Financiero, para evitar cobros abusivos en bancos e instituciones financieras",
+        "number": "45",
+        "title": "Crea el SERNAC financiero",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1263757777,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1140877157,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 635834857,
+      "attributes": {
+        "name": "Suma",
+        "count": 13
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1803096583,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 6
+      }
+    },
+    {
+      "type": "bill",
+      "id": 594154014,
+      "attributes": {
+        "name": "7094-03",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7491&prmBoletin=7094-03",
+        "justification": "",
+        "chekIsEmpty": "7094-03"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1140877157,
+              "type": "priority"
+            },
+            {
+              "id": 635834857,
+              "type": "priority"
+            },
+            {
+              "id": -1803096583,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5457,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1682797283,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 594154014,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1263757777,
+      "attributes": {
+        "name": "Economia y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -394412060,
+      "attributes": {
+        "content": "Proyecto para disminuir los costos de los seguros de los créditos hipotecarios. Esta medida favorecerá a cerca de un millón 250 mil familias.",
+        "number": "46",
+        "title": "Disminuye los costos de los seguros de los créditos hipotecarios",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1263757777,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1700270656,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -145705084,
+      "attributes": {
+        "name": "Suma",
+        "count": 10
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1384476354,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1666595173,
+      "attributes": {
+        "name": "7440-05",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7837&prmBoletin=7440-05",
+        "justification": "",
+        "chekIsEmpty": "7440-05"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1700270656,
+              "type": "priority"
+            },
+            {
+              "id": -145705084,
+              "type": "priority"
+            },
+            {
+              "id": -1384476354,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5463,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -394412060,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1666595173,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1263757777,
+      "attributes": {
+        "name": "Economia y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1823345893,
+      "attributes": {
+        "content": "La agenda de impulso competitivo incorpora la creación de un nuevo estatuto Pyme 2.0",
+        "number": "47",
+        "title": "Crea nuevo estatuto Pyme 2.0",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1263757777,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -253863450,
+      "attributes": {
+        "content": "Ingresamos un proyecto de ley para adecuar nuestra legislación antiterrorista a los estándares propios de democracias desarrolladas,",
+        "number": "48",
+        "title": "Adecua legislación antiterrorista a los estándares propios de democracias desarrolladas",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1111019525,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1516249737,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2061386073,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -898595439,
+      "attributes": {
+        "name": "7529-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7924&prmBoletin=7529-07",
+        "justification": "",
+        "chekIsEmpty": "7529-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1111019525,
+              "type": "priority"
+            },
+            {
+              "id": 1516249737,
+              "type": "priority"
+            },
+            {
+              "id": 2061386073,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3301,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -253863450,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -898595439,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1963894503,
+      "attributes": {
+        "content": "Enviaremos a este Congreso un proyecto de ley que crea la Subsecretaría de Derechos Humanos, como parte del nuevo Ministerio de Justicia y Derechos Humanos.",
+        "number": "49",
+        "title": "Crea la Subsecretaría de Derechos Humanos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1031856380,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1180949176,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -255779334,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1458474187,
+      "attributes": {
+        "name": "8207-07",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8605&prmBoletin=8207-07",
+        "justification": "",
+        "chekIsEmpty": "8207-07"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1031856380,
+              "type": "priority"
+            },
+            {
+              "id": -1180949176,
+              "type": "priority"
+            },
+            {
+              "id": -255779334,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4077,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1963894503,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1458474187,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -785038083,
+      "attributes": {
+        "content": "Próximamente enviaremos a este Congreso un proyecto de ley que transformará el actual ministerio en el Ministerio de Agricultura y Alimentos",
+        "number": "50",
+        "title": "Transforma el actual ministerio en el Ministerio de Agricultura y Alimentos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1432719870,
+      "attributes": {
+        "content": "Próximamente enviaremos a este Congreso un proyecto de nuevo estatuto laboral, para adecuar las normas a la realidad del sector y proteger mejor los derechos de los trabajadores y trabajadoras agrícolas de temporada, recogiendo muchas de las propuestas de la Mesa Agrícola",
+        "number": "51",
+        "title": "Envía proyecto de nuevo estatuto laboral",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -926944644,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1234471232,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1566443646,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1168657520,
+      "attributes": {
+        "name": "7976-13",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8378&prmBoletin=7976-13",
+        "justification": "",
+        "chekIsEmpty": "7976-13"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -926944644,
+              "type": "priority"
+            },
+            {
+              "id": -1234471232,
+              "type": "priority"
+            },
+            {
+              "id": -1566443646,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2856,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1432719870,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1168657520,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -644489473,
+      "attributes": {
+        "content": "Presentamos una iniciativa para regular por ley los vegetales genéticamente modificados.",
+        "number": "52",
+        "title": "Regula por ley los vegetales genéticamente modificados",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -522094103,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1506675347,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -932143883,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 488048535,
+      "attributes": {
+        "name": "4690-01",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=5074&prmBoletin=4690-01",
+        "justification": "",
+        "chekIsEmpty": "4690-01"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -522094103,
+              "type": "priority"
+            },
+            {
+              "id": -1506675347,
+              "type": "priority"
+            },
+            {
+              "id": -932143883,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1169,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -644489473,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 488048535,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1573268480,
+      "attributes": {
+        "content": "Este año presentaremos un proyecto de ley para combatir a la desertificación, recuperar suelos erosionados, mejorar la retención hídrica y prevenir incendios forestales, ampliando las sanciones e incorporando la responsabilidad civil de quienes los ocasionen.",
+        "number": "53",
+        "title": "Presenta proyecto de ley que combate la desertificación",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1054830233,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2041369707,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1770033993,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 2083545431,
+      "attributes": {
+        "name": "8155-01",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8553&prmBoletin=8155-01",
+        "justification": "",
+        "chekIsEmpty": "8155-01"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1054830233,
+              "type": "priority"
+            },
+            {
+              "id": 2041369707,
+              "type": "priority"
+            },
+            {
+              "id": -1770033993,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8713,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1573268480,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 2083545431,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -503940863,
+      "attributes": {
+        "content": "Este año enviaremos un nuevo proyecto de ley de pesca que permita compatibilizar el desarrollo del sector, incluyendo la pesca artesanal e industrial, con la conservación del recurso pesquero.",
+        "number": "54",
+        "title": "Envía nuevo proyecto de ley de pesca",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1019696491,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1451439761,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 171178547,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1630654590,
+      "attributes": {
+        "name": "8091-21",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8488&prmBoletin=8091-21",
+        "justification": "",
+        "chekIsEmpty": "8091-21"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1019696491,
+              "type": "priority"
+            },
+            {
+              "id": -1451439761,
+              "type": "priority"
+            },
+            {
+              "id": 171178547,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7321,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -503940863,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1630654590,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1713817090,
+      "attributes": {
+        "content": "Estamos impulsando un sistema con puntaje para las licencias de conducir",
+        "number": "55",
+        "title": "Impulsa un sistema con puntaje para las licencias de conducir",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1955526009,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1691806467,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 835630949,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1795761876,
+      "attributes": {
+        "name": "3376-15",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=3695&prmBoletin=3376-15",
+        "justification": "",
+        "chekIsEmpty": "3376-15"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1955526009,
+              "type": "priority"
+            },
+            {
+              "id": -1691806467,
+              "type": "priority"
+            },
+            {
+              "id": 835630949,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4818,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1713817090,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1795761876,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -363392253,
+      "attributes": {
+        "content": "Crearemos una Superintendencia de Telecomunicaciones",
+        "number": "56",
+        "title": "Crea Superintendencia de Telecomunicaciones",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -497152732,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 178264936,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -933102630,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1252879482,
+      "attributes": {
+        "name": "8034-15",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8428&prmBoletin=8034-15",
+        "justification": "",
+        "chekIsEmpty": "8034-15"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -497152732,
+              "type": "priority"
+            },
+            {
+              "id": 178264936,
+              "type": "priority"
+            },
+            {
+              "id": -933102630,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3194,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -363392253,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1252879482,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1854365700,
+      "attributes": {
+        "content": "Aprobaremos una ley de TV digital, que permita una cobertura gratuita de alta definición en todo Chile.",
+        "number": "57",
+        "title": "Aprueba ley de TV digital",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2073269183,
+      "attributes": {
+        "name": "Simple",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 355241155,
+      "attributes": {
+        "name": "Suma",
+        "count": 27
+      }
+    },
+    {
+      "type": "priority",
+      "id": -465753249,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1726282021,
+      "attributes": {
+        "name": "6190-19",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6579&prmBoletin=6190-19",
+        "justification": "",
+        "chekIsEmpty": "6190-19"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 2073269183,
+              "type": "priority"
+            },
+            {
+              "id": 355241155,
+              "type": "priority"
+            },
+            {
+              "id": -465753249,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7062,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1854365700,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1726282021,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -222843643,
+      "attributes": {
+        "content": "La ley de antenas regulará su instalación y protegerá la salud y los derechos de los vecinos",
+        "number": "58",
+        "title": "Crea ley de antenas que regule su instalación",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 239901000,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -196386676,
+      "attributes": {
+        "name": "Suma",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": 761810230,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 579377398,
+      "attributes": {
+        "name": "4991-15",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=5379&prmBoletin=4991-15",
+        "justification": "",
+        "chekIsEmpty": "4991-15"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 239901000,
+              "type": "priority"
+            },
+            {
+              "id": -196386676,
+              "type": "priority"
+            },
+            {
+              "id": 761810230,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5291,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -222843643,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 579377398,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1942240427,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1994914310,
+      "attributes": {
+        "content": "Estamos avanzando en la portabilidad numérica",
+        "number": "59",
+        "title": "Avanza en portabilidad numérica",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1942240427,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -560435655,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1497776707,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -704018779,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1562537454,
+      "attributes": {
+        "name": "6964-15",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7357&prmBoletin=6964-15",
+        "justification": "",
+        "chekIsEmpty": "6964-15"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -560435655,
+              "type": "priority"
+            },
+            {
+              "id": -1497776707,
+              "type": "priority"
+            },
+            {
+              "id": -704018779,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8983,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1994914310,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1562537454,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1565886541,
+      "attributes": {
+        "name": "Minería"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -754018276,
+      "attributes": {
+        "content": "En los próximos meses enviaremos a este Congreso un proyecto de ley que crea una superintendencia especializada en el control de riesgos y fiscalización de las normas sobre seguridad minera, además de establecer comités paritarios en todas las empresas para prevenir accidentes laborales",
+        "number": "60",
+        "title": "Envía proyecto de ley que crea superintendencia especializada en el control de riesgos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1565886541,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 24201267,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1273704905,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 122139243,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1300916462,
+      "attributes": {
+        "name": "7848-08",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8245&prmBoletin=7848-08",
+        "justification": "",
+        "chekIsEmpty": "7848-08"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 24201267,
+              "type": "priority"
+            },
+            {
+              "id": -1273704905,
+              "type": "priority"
+            },
+            {
+              "id": 122139243,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5700,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -754018276,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1300916462,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1565886541,
+      "attributes": {
+        "name": "Minería"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1463739677,
+      "attributes": {
+        "content": "Esperamos que sea aprobado el proyecto que regula el cierre de faenas después del cese de su operación, a fin de evitar que explotaciones temporales produzcan daños permanentes al medio ambiente.",
+        "number": "61",
+        "title": "Aprueba el proyecto que regula el cierre de faenas después del cese de su operación",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1565886541,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 771906391,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1554490789,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1305091271,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1282890933,
+      "attributes": {
+        "name": "6415-08",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=6805&prmBoletin=6415-08",
+        "justification": "",
+        "chekIsEmpty": "6415-08"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 771906391,
+              "type": "priority"
+            },
+            {
+              "id": -1554490789,
+              "type": "priority"
+            },
+            {
+              "id": 1305091271,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8714,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1463739677,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1282890933,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1565886541,
+      "attributes": {
+        "name": "Minería"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -613469666,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley para fusionar los actuales ministerios de Minería y Energía",
+        "number": "62",
+        "title": "Fusiona los actuales ministerios de Minería y Energía",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1565886541,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1085397476,
+      "attributes": {
+        "name": "Defensa"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1604288287,
+      "attributes": {
+        "content": "Hemos propuesto al Congreso Nacional un mecanismo de financiamiento plurianual, que garantizará un equilibrio adecuado entre los recursos y la estabilidad que necesitan nuestras Fuerzas Armadas, y al mismo tiempo el control democrático del gasto en defensa. Este proyecto reemplazará la Ley Reservada del Cobre y liberará a Codelco de un impuesto distorsionador.",
+        "number": "63",
+        "title": "Reemplaza la Ley Reservada del Cobre y libera a CODELCO de un impuesto distorsionador",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1085397476,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1916679820,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 936083152,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1084982926,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 334110545,
+      "attributes": {
+        "name": "7678-02",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8071&prmBoletin=7678-02",
+        "justification": "",
+        "chekIsEmpty": "7678-02"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 1916679820,
+              "type": "priority"
+            },
+            {
+              "id": 936083152,
+              "type": "priority"
+            },
+            {
+              "id": -1084982926,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2669,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1604288287,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 334110545,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1085397476,
+      "attributes": {
+        "name": "Defensa"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -472921056,
+      "attributes": {
+        "content": "También impulsaremos la segunda etapa de la reforma a la Justicia Militar, en línea con la Reforma Procesal Penal en el campo civil",
+        "number": "64",
+        "title": "Impulsa la segunda etapa de la reforma a la Justicia Militar",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1085397476,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1085397476,
+      "attributes": {
+        "name": "Defensa"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1744836897,
+      "attributes": {
+        "content": "Eliminar gradualmente, la cotización del seis por ciento que afecta a los pensionados de las Fuerzas Armadas mayores de 65 años, afiliados a Capredena y Dipreca y terminar con distorsiones y excesos existentes",
+        "number": "65",
+        "title": "Elimina gradualmente la cotización del seis por ciento que afecta a pensionados de las Fuerzas Armadas",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1085397476,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 610587003,
+      "attributes": {
+        "name": "Medio Ambiente"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -332372446,
+      "attributes": {
+        "content": "A ellos [institucionalidad ambiental] se sumarán muy pronto los nuevos tribunales ambientales especializados",
+        "number": "66",
+        "title": "Suma a la institucionalidad ambiental los nuevos tribunales ambientales especializados",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 610587003,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 989189983,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1904949347,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1884865471,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1798922004,
+      "attributes": {
+        "name": "6747-12",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7144&prmBoletin=6747-12",
+        "justification": "",
+        "chekIsEmpty": "6747-12"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": 989189983,
+              "type": "priority"
+            },
+            {
+              "id": 1904949347,
+              "type": "priority"
+            },
+            {
+              "id": 1884865471,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9530,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -332372446,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1798922004,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 610587003,
+      "attributes": {
+        "name": "Medio Ambiente"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1885385507,
+      "attributes": {
+        "content": "A ellos [institucionalidad ambiental] se sumarán muy pronto el Servicio de Biodiversidad y Áreas Silvestres Protegidas",
+        "number": "67",
+        "title": "Suma a la institucionalidad ambiental el Servicio de Biodiversidad y Áreas Silvestres Protegidas",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 610587003,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1739443101,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1973618279,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -272295877,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1290336340,
+      "attributes": {
+        "name": "7487-12",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7888&prmBoletin=7487-12",
+        "justification": "",
+        "chekIsEmpty": "7487-12"
+      },
+      "relationships": {
+        "priorities": {
+          "data": [
+            {
+              "id": -1739443101,
+              "type": "priority"
+            },
+            {
+              "id": 1973618279,
+              "type": "priority"
+            },
+            {
+              "id": -272295877,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7659,
+      "attributes": {
+        "justification": ""
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1885385507,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1290336340,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 610587003,
+      "attributes": {
+        "name": "Medio Ambiente"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -191823836,
+      "attributes": {
+        "content": "Enviaremos a este Congreso un proyecto de Ley general de residuos, para fomentar el reciclaje y la reutilización de los residuos sólidos",
+        "number": "68",
+        "title": "Envía proyecto de Ley general de residuos",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 610587003,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2025934117,
+      "attributes": {
+        "content": "Debemos estudiar formas para flexibilizar y hacer más competitiva la distribución en el sistema eléctrico, considerando la posibilidad de crear un multicarrier eléctrico, que otorgue a los consumidores mayores opciones para elegir a sus generadores de energía",
+        "number": "69",
+        "title": "Otorga a los consumidores mayores opciones para elegir a sus generadores de energía",
+        "ja-why": "",
+        "jc-why": ""
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128810,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    }
+  ]
+}

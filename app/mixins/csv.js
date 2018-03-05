@@ -19,16 +19,14 @@ let parser = {
     _parseAttributes = _parseAttributes.bind(this);
     let whenToUnion = this.whenToUnion;
     return new Ember.RSVP.Promise(function(resolve, reject){
-        let exists = true;
         if(config.useOnlyJsons){
 
           Ember.$.getJSON('/json/'+study.get('slug') + '.json').then(function(r){
             resolve({"resultado":r, "study": study});
-          }, function(){
-            exists = false;
           });
 
         }
+      else {
         PapaParse.parse(filename, {
           download: true,
           header:true,
@@ -49,12 +47,6 @@ let parser = {
               "data": data,
             };
             if(resultado) {
-              if(config.useOnlyJsons && !exists){
-                console.log('*************************');
-                console.log("public/json/"+study.get('slug') + '.json');
-                console.log(JSON.stringify(resultado));
-
-               }
               resolve({"resultado":resultado, "study": study});
             }
             else {
@@ -64,6 +56,7 @@ let parser = {
           }
         });
 
+      }
     });
 
   },

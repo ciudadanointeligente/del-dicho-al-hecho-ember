@@ -1,0 +1,5152 @@
+{
+  "data": [
+    {
+      "type": "area",
+      "id": -62189043,
+      "attributes": {
+        "name": "Agricultura"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -494869387,
+      "attributes": {
+        "content": "Enviaremos el Proyecto de Ley que crea el Sistema Nacional de Inocuidad y Calidad Alimentaria y la Agencia Chilena para la Inocuidad y Calidad Alimentaria.",
+        "number": "1",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -62189043,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1037208832,
+      "attributes": {
+        "name": "Ciencia y Tecnología"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -463849580,
+      "attributes": {
+        "content": "Estamos elaborando junto a la Comisión Asesora Presidencial una propuesta para crear un Ministerio de la Ciencia y Tecnología.",
+        "number": "2",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1037208832,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1209642923,
+      "attributes": {
+        "name": "Cultura y Patrimonio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -432829773,
+      "attributes": {
+        "content": "Estamos enviando una indicación sustitutiva al proyecto del nuevo Ministerio de las Culturas, las Artes y el Patrimonio. Este proyecto será enviado a este Congreso Nacional durante el segundo semestre.",
+        "number": "3",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1209642923,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1312937050,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1860570518,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1256207896,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 216214365,
+      "attributes": {
+        "name": "8938-24",
+        "title": "Crea el Ministerio de la cultura",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9344&prmBoletin=8938-24",
+        "justification": "La promesa obtuvo un 40% en materia de avance por encontrarse en primer trámite constitucional (Boletín Nº 8938-24)",
+        "chekIsEmpty": "8938-24"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1312937050,
+              "type": "priority"
+            },
+            {
+              "id": -1860570518,
+              "type": "priority"
+            },
+            {
+              "id": 1256207896,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3758,
+      "attributes": {
+        "justification": "La promesa obtuvo un 40% en materia de avance por encontrarse en primer trámite constitucional (Boletín Nº 8938-24)"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -432829773,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 216214365,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1209642923,
+      "attributes": {
+        "name": "Cultura y Patrimonio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -401809966,
+      "attributes": {
+        "content": "Crearemos un nuevo canal de televisión cultural y educativo de recepción libre, gratuita y sin publicidad.",
+        "number": "4",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1209642923,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -370790159,
+      "attributes": {
+        "content": "Estoy hablando de proyectos para perfeccionar la democracia, como el que hemos enviado en diciembre de 2014 a este Congreso y que regula el financiamiento de las campañas y de los partidos, estableciendo recursos públicos y equitativos para ello, eliminando las contribuciones de las empresas y limitando el aporte reservado de los privados.",
+        "number": "5",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 100791421,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -862452479,
+      "attributes": {
+        "name": "Suma",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1191782881,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1212640185,
+      "attributes": {
+        "name": "9790-07",
+        "title": "Transparencia y fortalecimiento de la democracia",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10201&prmBoletin=9790-07",
+        "justification": "La promesa cuenta con un 100% en materia de avance por encontrarse promulgada la ley que la recoge.",
+        "chekIsEmpty": "9790-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 100791421,
+              "type": "priority"
+            },
+            {
+              "id": -862452479,
+              "type": "priority"
+            },
+            {
+              "id": 1191782881,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8643,
+      "attributes": {
+        "justification": "La promesa cuenta con un 100% en materia de avance por encontrarse promulgada la ley que la recoge."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -370790159,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1212640185,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -339770352,
+      "attributes": {
+        "content": "Y estoy hablando de sanciones muy severas para quienes no cumplan esta normativa (financiamiento electoral), que contemplen incluso la pérdida del cargo.",
+        "number": "6",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 369141120,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -477816124,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1631439362,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1809960771,
+      "attributes": {
+        "name": "10000-07",
+        "title": "Establece la Cesación en los cargos de parlamentario, alcalde, consejeros regionales y concejales por infracción a las normas de transparencia, control y límites del gasto electoral.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10420&prmBoletin=10000-07",
+        "justification": "Este proyecto de ley se encuentra promulgado, por lo que su porcentaje de avance corresponde al 100 %",
+        "chekIsEmpty": "10000-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 369141120,
+              "type": "priority"
+            },
+            {
+              "id": -477816124,
+              "type": "priority"
+            },
+            {
+              "id": -1631439362,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4910,
+      "attributes": {
+        "justification": "Este proyecto de ley se encuentra promulgado, por lo que su porcentaje de avance corresponde al 100 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -339770352,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1809960771,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "priority",
+      "id": 100791421,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -862452479,
+      "attributes": {
+        "name": "Suma",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1191782881,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1212640185,
+      "attributes": {
+        "name": "9790-07",
+        "title": "Transparencia y fortalecimiento de la democracia",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10201&prmBoletin=9790-07",
+        "justification": "La promesa cuenta con un 100% de avance por encontrarse promulgada la ley que la recoge.",
+        "chekIsEmpty": "9790-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 100791421,
+              "type": "priority"
+            },
+            {
+              "id": -862452479,
+              "type": "priority"
+            },
+            {
+              "id": 1191782881,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -308750545,
+      "attributes": {
+        "content": "Para fiscalizar bien esta ley firmé hace pocos días el proyecto de reforma constitucional que dará autonomía al Servel, con lo cual pasará a ser independiente del poder ejecutivo.",
+        "number": "7",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1470661500,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1480869824,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 212059778,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1037082595,
+      "attributes": {
+        "name": "10055-07",
+        "title": "Reforma constitucional que otorga autonomía constitucional al Servicio Electoral.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10478&prmBoletin=10055-07",
+        "justification": "La promesa cuenta con un 100% de avance por encontrarse promulgada la ley que la recoge.",
+        "chekIsEmpty": "10055-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1470661500,
+              "type": "priority"
+            },
+            {
+              "id": 1480869824,
+              "type": "priority"
+            },
+            {
+              "id": 212059778,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6975,
+      "attributes": {
+        "justification": "La promesa cuenta con un 100% de avance por encontrarse promulgada la ley que la recoge."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -308750545,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1037082595,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1016691052,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -277730738,
+      "attributes": {
+        "content": "Enviamos un proyecto de reforma constitucional, que permite la elección directa y democrática de los Intendentes.",
+        "number": "8",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1016691052,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 33930641,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1331888917,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2087856051,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1811649971,
+      "attributes": {
+        "name": "9834-06",
+        "title": "Dispone la elección popular del órgano ejecutivo del gobierno regional.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10247&prmBoletin=9834-06",
+        "justification": "El proyecto de reforma constitucional tiene un 40 % en materia de avance por encontrarse en primer trámite constitucional.",
+        "chekIsEmpty": "9834-06"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 33930641,
+              "type": "priority"
+            },
+            {
+              "id": 1331888917,
+              "type": "priority"
+            },
+            {
+              "id": -2087856051,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4040,
+      "attributes": {
+        "justification": "El proyecto de reforma constitucional tiene un 40 % en materia de avance por encontrarse en primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -277730738,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1811649971,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1632620834,
+      "attributes": {
+        "name": "Desarrollo social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -246710931,
+      "attributes": {
+        "content": "Enviaremos a este Congreso Nacional el proyecto de ley que crea la Subsecretaría de la Discapacidad.",
+        "number": "9",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1632620834,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -651442617,
+      "attributes": {
+        "content": "Enviaremos el segundo semestre a este Congreso un proyecto de ley para adaptar la Ley General de Bancos a estándares internacionales.",
+        "number": "10",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -620422810,
+      "attributes": {
+        "content": "En marzo pasado ingresamos el proyecto de ley que fortalece la libre competencia en los mercados. ",
+        "number": "11",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1291684247,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 399120539,
+      "attributes": {
+        "name": "Suma",
+        "count": 19
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1644870009,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 8
+      }
+    },
+    {
+      "type": "bill",
+      "id": -680384047,
+      "attributes": {
+        "name": "9950-03",
+        "title": "Proyecto que modifica el Decreto con Fuerza de Ley (DFL) N° 1, de 2004, del Ministerio de Economía, Fomento y Reconstrucción que a su vez fija el texto refundido, coordinado y sistematizado del decreto ley N° 211, de 1973, que fija normas para la defensa de la libre competencia",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10362&prmBoletin=9950-03",
+        "justification": "La promesa tiene un 70 % de avance por encontrarse en segundo trámite constitucional. ",
+        "chekIsEmpty": "9950-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1291684247,
+              "type": "priority"
+            },
+            {
+              "id": 399120539,
+              "type": "priority"
+            },
+            {
+              "id": -1644870009,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 10,
+      "attributes": {
+        "justification": "La promesa tiene un 70 % de avance por encontrarse en segundo trámite constitucional. "
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -620422810,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -680384047,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -589403003,
+      "attributes": {
+        "content": "Y enviaremos el proyecto de ley que fortalece la Superintendencia de Valores y Seguros.",
+        "number": "12",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1081602943,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1931861123,
+      "attributes": {
+        "name": "Suma",
+        "count": 23
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1885320095,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -355299889,
+      "attributes": {
+        "name": "9015-05",
+        "title": "Crea Comisión de Valores y Seguros.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9420&prmBoletin=9015-05",
+        "justification": "La promesa legislativa del proyecto de ley que fortalece a la superintendencia de valores y seguros tiene un 70 % de avance por encontrarse en segundo trámite constitucional.",
+        "chekIsEmpty": "9015-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1081602943,
+              "type": "priority"
+            },
+            {
+              "id": 1931861123,
+              "type": "priority"
+            },
+            {
+              "id": 1885320095,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6036,
+      "attributes": {
+        "justification": "La promesa legislativa del proyecto de ley que fortalece a la superintendencia de valores y seguros tiene un 70 % de avance por encontrarse en segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -589403003,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -355299889,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -558383196,
+      "attributes": {
+        "content": "Enviaremos el proyecto de ley que moderniza las ferias libres.",
+        "number": "13",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -527363389,
+      "attributes": {
+        "content": "Ingresamos ayer el proyecto de ley que regulariza el dominio de las caletas pesqueras, entregando su administración a pescadores artesanales.",
+        "number": "14",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 105800432,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2047046708,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 91374222,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1399304520,
+      "attributes": {
+        "name": "10063-21",
+        "title": "Regula el desarrollo integral y armónico de caletas pesqueras a nivel nacional y fija normas para su declaración y asignación.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10485&prmBoletin=10063-21",
+        "justification": "El avance en esta promesa es de 70 % pues se encuentra en el segundo trámite constitucional.",
+        "chekIsEmpty": "10063-21"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 105800432,
+              "type": "priority"
+            },
+            {
+              "id": 2047046708,
+              "type": "priority"
+            },
+            {
+              "id": 91374222,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1382,
+      "attributes": {
+        "justification": "El avance en esta promesa es de 70 % pues se encuentra en el segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -527363389,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1399304520,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -496343582,
+      "attributes": {
+        "content": "Enviamos el Proyecto de Bonificación al cultivo y repoblamiento de Algas. ",
+        "number": "15",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1024003257,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -680382901,
+      "attributes": {
+        "name": "Suma",
+        "count": 15
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1768373975,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -932493426,
+      "attributes": {
+        "name": "9151-21",
+        "title": "Crea bonificación para el repoblamiento y cultivo de algas.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9647&prmBoletin=9151-21",
+        "justification": "La promesa tiene un avance de 70 % pues se encuentra en Comisión Mixta.",
+        "chekIsEmpty": "9151-21"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -32479070,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1024003257,
+              "type": "priority"
+            },
+            {
+              "id": -680382901,
+              "type": "priority"
+            },
+            {
+              "id": 1768373975,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1066,
+      "attributes": {
+        "justification": "La promesa tiene un avance de 70 % pues se encuentra en Comisión Mixta."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -496343582,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -932493426,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -465323775,
+      "attributes": {
+        "content": "Hemos reformulado el proyecto que crea el Instituto Nacional de Desarrollo Sustentable de la Pesca Artesanal y la Acuicultura de Pequeña Escala.",
+        "number": "16",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 155005754,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 438161150,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1383273988,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 2105300920,
+      "attributes": {
+        "name": "9689-21",
+        "title": "Crea el Instituto Nacional de Desarrollo Sustentable de la Pesca Artesanal y de la Acuicultura de Pequeña Escala, INDESPA.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10103&prmBoletin=9689-21",
+        "justification": "El avance en esta materia es de 70 % que corresponde al segundo trámite constitucional.",
+        "chekIsEmpty": "9689-21"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 155005754,
+              "type": "priority"
+            },
+            {
+              "id": 438161150,
+              "type": "priority"
+            },
+            {
+              "id": 1383273988,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3730,
+      "attributes": {
+        "justification": "El avance en esta materia es de 70 % que corresponde al segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -465323775,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 2105300920,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 946222095,
+      "attributes": {
+        "name": "Economía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -434303968,
+      "attributes": {
+        "content": "Y sigue su discusión en el Congreso la ley que enviamos en 2014 de fortalecimiento del Sernac. Ella aumenta las multas a los infractores y obliga a la reparación íntegra de los daños causados a los consumidores, con una institucionalidad que dé garantías a todos.",
+        "number": "17",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 946222095,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1006391603,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1922821295,
+      "attributes": {
+        "name": "Suma",
+        "count": 13
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1843819119,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -830919565,
+      "attributes": {
+        "name": "9369-03",
+        "title": "Modifica ley N° 19.496, sobre Protección de los Derechos de los Consumidores.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9783&prmBoletin=9369-03",
+        "justification": "Este avance es de un 70 % pues el proyecto de ley ingresado al congreso se encuentra en el segundo trámite constitucional.",
+        "chekIsEmpty": "9369-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1006391603,
+              "type": "priority"
+            },
+            {
+              "id": -1922821295,
+              "type": "priority"
+            },
+            {
+              "id": -1843819119,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5453,
+      "attributes": {
+        "justification": "Este avance es de un 70 % pues el proyecto de ley ingresado al congreso se encuentra en el segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -434303968,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -830919565,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -403284161,
+      "attributes": {
+        "content": "Y este año enviaremos el proyecto que creará los Servicios Locales de Educación, marcando el retorno de escuelas y liceos públicos a la administración del Ministerio de Educación.",
+        "number": "18",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1283977998,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 318665682,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 706500016,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -207923093,
+      "attributes": {
+        "name": "10368-04",
+        "title": "Crea el Sistema de Educación Pública y modifica diversos cuerpos legales.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10782&prmBoletin=10368-04",
+        "justification": "El proyecto de ley que creará los Servicios Locales de Educación se encuentra en un avance de 40 % porque se encuentra en primer trámite constitucional.",
+        "chekIsEmpty": "10368-04"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1283977998,
+              "type": "priority"
+            },
+            {
+              "id": 318665682,
+              "type": "priority"
+            },
+            {
+              "id": 706500016,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4617,
+      "attributes": {
+        "justification": "El proyecto de ley que creará los Servicios Locales de Educación se encuentra en un avance de 40 % porque se encuentra en primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -403284161,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -207923093,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -372264354,
+      "attributes": {
+        "content": "Y esperamos que se apruebe pronto la ley que enviamos y que crea una Red de Centros de Formación Técnica públicos, nacidos al alero de universidades estatales, en cada una de las regiones del país.",
+        "number": "19",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -267922658,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 437721058,
+      "attributes": {
+        "name": "Suma",
+        "count": 19
+      }
+    },
+    {
+      "type": "priority",
+      "id": -937968736,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1476005101,
+      "attributes": {
+        "name": "9766-04",
+        "title": "Crea quince Centros de Formación Técnica estatales",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10170&prmBoletin=9766-04",
+        "justification": "Este proyecto de ley se encuentra promulgado, por lo que su porcentaje de avance corresponde al 100 %",
+        "chekIsEmpty": "9766-04"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -267922658,
+              "type": "priority"
+            },
+            {
+              "id": 437721058,
+              "type": "priority"
+            },
+            {
+              "id": -937968736,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9681,
+      "attributes": {
+        "justification": "Este proyecto de ley se encuentra promulgado, por lo que su porcentaje de avance corresponde al 100 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -372264354,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1476005101,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 310171400,
+      "attributes": {
+        "content": "Por eso, avanzando en nuestro compromiso de alcanzar la gratuidad para el 70 por ciento de los estudiantes más vulnerables de Chile al fin de mi período, a partir de 2016 aseguraremos que el 60 por ciento más vulnerable que asista a Centros de Formación Técnica, a Institutos Profesionales acreditados y sin fines de lucro, o a universidades del Consejo de Rectores, accedan a la gratuidad completa y efectiva, sin beca ni crédito. Esto beneficiará a casi 264 mil jóvenes.",
+        "number": "20",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1841648401,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -64474637,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 61424687,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -382847932,
+      "attributes": {
+        "name": "10461-05",
+        "title": "Modifica la ley N° 20.882, de Presupuestos del sector público del año 2016",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10879&prmBoletin=10461-05",
+        "justification": "Este compromiso tiene 100 % de avance al encontrarse promulgado el proyecto de ley que lo recoge.",
+        "chekIsEmpty": "10461-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1841648401,
+              "type": "priority"
+            },
+            {
+              "id": -64474637,
+              "type": "priority"
+            },
+            {
+              "id": 61424687,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 635,
+      "attributes": {
+        "justification": "Este compromiso tiene 100 % de avance al encontrarse promulgado el proyecto de ley que lo recoge."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 310171400,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -382847932,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 341191207,
+      "attributes": {
+        "content": "Para ello presentaremos en el segundo semestre de este año una ley que abordará un nuevo marco de regulación, financiamiento y gratuidad de la Educación Superior que definirá claramente el camino para que ningún joven tenga que pagar.",
+        "number": "21",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 372211014,
+      "attributes": {
+        "content": "Y ya enviamos al Congreso el proyecto de ley que establece una nueva Política Nacional Docente. Este proyecto de ley va al corazón de la mejora de la calidad: los maestros y maestras",
+        "number": "22",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -597186493,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1581511239,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -331573157,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1328219666,
+      "attributes": {
+        "name": "10008-04",
+        "title": "Crea el Sistema de Desarrollo Profesional Docente y modifica otras normas",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10422&prmBoletin=10008-04",
+        "justification": "El proyecto de ley que establece una nueva política Nacional Docente se encuentra promulgado, por lo que su estado de avance es de 100 % ",
+        "chekIsEmpty": "10008-04"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -597186493,
+              "type": "priority"
+            },
+            {
+              "id": 1581511239,
+              "type": "priority"
+            },
+            {
+              "id": -331573157,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6993,
+      "attributes": {
+        "justification": "El proyecto de ley que establece una nueva política Nacional Docente se encuentra promulgado, por lo que su estado de avance es de 100 % "
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 372211014,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1328219666,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1712708917,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 403230821,
+      "attributes": {
+        "content": "Por eso hemos firmado los instructivos y los proyectos de ley para asegurar la reposición de la educación cívica y un programa de formación ciudadana en el sistema escolar.",
+        "number": "23",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1712708917,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 19723036,
+      "attributes": {
+        "name": "Simple",
+        "count": 14
+      }
+    },
+    {
+      "type": "priority",
+      "id": -648011936,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -144854302,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -453496347,
+      "attributes": {
+        "name": "10043-04",
+        "title": "Crea el plan de formación ciudadana para los establecimientos educacionales reconocidos por el Estado.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10465&prmBoletin=10043-04",
+        "justification": "El proyecto de ley se encuentra promulgado, por lo que su estado de avance es de 100 %",
+        "chekIsEmpty": "10043-04"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 19723036,
+              "type": "priority"
+            },
+            {
+              "id": -648011936,
+              "type": "priority"
+            },
+            {
+              "id": -144854302,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8999,
+      "attributes": {
+        "justification": "El proyecto de ley se encuentra promulgado, por lo que su estado de avance es de 100 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 403230821,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -453496347,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 434250628,
+      "attributes": {
+        "content": "Enviaremos en el transcurso de este año, un proyecto de ley de Eficiencia Energética. Nuestro compromiso es lograr un ahorro energético a 2025 equivalente a lo que genera una central termoeléctrica.",
+        "number": "24",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 465270435,
+      "attributes": {
+        "content": "Además, enviamos al Congreso un proyecto de ley para que ENAP pueda desarrollar proyectos de generación, principalmente en geotermia, y sea un actor más relevante para el desarrollo de Chile.",
+        "number": "25",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 964628825,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1261349085,
+      "attributes": {
+        "name": "Suma",
+        "count": 10
+      }
+    },
+    {
+      "type": "priority",
+      "id": 327847813,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -361786924,
+      "attributes": {
+        "name": "9628-08",
+        "title": "Modifica la ley N° 20.365, que Establece Franquicia Tributaria respecto de Sistemas Solares Térmicos; la ley General de Servicios Eléctricos y la ley que Crea la ENAP.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10047&prmBoletin=9628-08",
+        "justification": "Este proyecto de ley está promulgado y cuenta con 100% de avance.",
+        "chekIsEmpty": "9628-08"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 964628825,
+              "type": "priority"
+            },
+            {
+              "id": 1261349085,
+              "type": "priority"
+            },
+            {
+              "id": 327847813,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 558,
+      "attributes": {
+        "justification": "Este proyecto de ley está promulgado y cuenta con 100% de avance."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 465270435,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -361786924,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 496290242,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley que se hará cargo de las diferencias en tarifas eléctricas de los clientes residenciales para que nadie pague más de un diez por ciento del promedio de las cuentas a nivel nacional.",
+        "number": "26",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -278137919,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -62847675,
+      "attributes": {
+        "name": "Suma",
+        "count": 13
+      }
+    },
+    {
+      "type": "priority",
+      "id": -318131171,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1342188322,
+      "attributes": {
+        "name": "10161-08",
+        "title": "Modifica la Ley General de Servicios Eléctricos, para introducir mecanismos de equidad en las tarifas eléctricas.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10584&prmBoletin=10161-08",
+        "justification": "Esta promesa legislativa se encuentra en el segundo trámite constitucional por lo que el porcentaje de avance es de 70% ",
+        "chekIsEmpty": "10161-08"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -278137919,
+              "type": "priority"
+            },
+            {
+              "id": -62847675,
+              "type": "priority"
+            },
+            {
+              "id": -318131171,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3901,
+      "attributes": {
+        "justification": "Esta promesa legislativa se encuentra en el segundo trámite constitucional por lo que el porcentaje de avance es de 70% "
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 496290242,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1342188322,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 59229381,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 527310049,
+      "attributes": {
+        "content": "Y en junio próximo, enviaremos un proyecto de ley para incorporar un reconocimiento a todas las comunas que aportan de manera relevante a la generación de energía de la que nos beneficiamos todos los chilenos y chilenas.",
+        "number": "27",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 59229381,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -278137919,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -62847675,
+      "attributes": {
+        "name": "Suma",
+        "count": 13
+      }
+    },
+    {
+      "type": "priority",
+      "id": -318131171,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1342188322,
+      "attributes": {
+        "name": "10161-08",
+        "title": "Modifica la Ley General de Servicios Eléctricos, para introducir mecanismos de equidad en las tarifas eléctricas.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10584&prmBoletin=10161-08",
+        "justification": "Esta promesa se encuentra en el segundo trámite legislativo, lo que se traduce en un 70% de avance.",
+        "chekIsEmpty": "10161-08"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -278137919,
+              "type": "priority"
+            },
+            {
+              "id": -62847675,
+              "type": "priority"
+            },
+            {
+              "id": -318131171,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8063,
+      "attributes": {
+        "justification": "Esta promesa se encuentra en el segundo trámite legislativo, lo que se traduce en un 70% de avance."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 527310049,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1342188322,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -705319556,
+      "attributes": {
+        "name": "Equidad de Género"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 558329856,
+      "attributes": {
+        "content": "Enviar al Parlamento un proyecto de ley que establece la posibilidad de interrumpir el embarazo en tres casos especialmente delicados.",
+        "number": "28",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -705319556,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 67965691,
+      "attributes": {
+        "name": "Simple",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -13325569,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1761963357,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -915803884,
+      "attributes": {
+        "name": "9895-11",
+        "title": "Regula la despenalización de la interrupción voluntaria del embarazo en tres causales",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10315&prmBoletin=9895-11",
+        "justification": "El proyecto de ley que regula la despenalización de la interrupción del embarazo en tres causales se encuentra en el segundo trámite constitucional, por lo que su porcentaje de avance el porcentaje es de 70%.",
+        "chekIsEmpty": "9895-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 67965691,
+              "type": "priority"
+            },
+            {
+              "id": -13325569,
+              "type": "priority"
+            },
+            {
+              "id": -1761963357,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9812,
+      "attributes": {
+        "justification": "El proyecto de ley que regula la despenalización de la interrupción del embarazo en tres causales se encuentra en el segundo trámite constitucional, por lo que su porcentaje de avance el porcentaje es de 70%."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 558329856,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -915803884,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 589349663,
+      "attributes": {
+        "content": "Enviaremos en junio próximo un proyecto de ley de financiamiento y responsabilidad fiscal regional.",
+        "number": "29",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1271785417,
+      "attributes": {
+        "content": "Fortaleceremos el Sistema de Alta Dirección Pública, para asegurar que al Estado se acceda por méritos y de manera abierta.",
+        "number": "30",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -776253395,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": -715879247,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -564269007,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 644057348,
+      "attributes": {
+        "name": "10164-05",
+        "title": "Perfecciona el sistema de Alta Dirección Pública y fortalece la Dirección Nacional del Registro Civil",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10583&prmBoletin=10164-05",
+        "justification": "El proyecto de ley se encuentra en segundo trámite constitucional, por lo que su estado de avance es de 70 %",
+        "chekIsEmpty": "10164-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -776253395,
+              "type": "priority"
+            },
+            {
+              "id": -715879247,
+              "type": "priority"
+            },
+            {
+              "id": -564269007,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7216,
+      "attributes": {
+        "justification": "El proyecto de ley se encuentra en segundo trámite constitucional, por lo que su estado de avance es de 70 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1271785417,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 644057348,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1302805224,
+      "attributes": {
+        "content": "Mandamos las indicaciones para poder hacer efectivo traspaso de competencias desde el gobierno central a los Gobiernos Regionales.",
+        "number": "31",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1194142331,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 309633663,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 176769827,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1228536978,
+      "attributes": {
+        "name": "7963-06",
+        "title": "Proyecto de ley que Profundiza la Regionalización del País",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8381&prmBoletin=7963-06",
+        "justification": "La promesa legislativa con 70 % de avance responde al proyecto de ley asociado que se encuentra en segundo trámite constitucional.",
+        "chekIsEmpty": "7963-06"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1194142331,
+              "type": "priority"
+            },
+            {
+              "id": 309633663,
+              "type": "priority"
+            },
+            {
+              "id": 176769827,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7763,
+      "attributes": {
+        "justification": "La promesa legislativa con 70 % de avance responde al proyecto de ley asociado que se encuentra en segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1302805224,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1228536978,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1333825031,
+      "attributes": {
+        "content": "Enviamos el proyecto de ley de fortalecimiento municipal, el cual permitirá mejorar la eficiencia de los municipios y hacer más transparente su gestión.",
+        "number": "32",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 897444037,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1234463561,
+      "attributes": {
+        "name": "Suma",
+        "count": 14
+      }
+    },
+    {
+      "type": "priority",
+      "id": 280588441,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1902701114,
+      "attributes": {
+        "name": "10057-06",
+        "title": "Modifica disposiciones aplicables a los funcionarios municipales y entrega nuevas competencias a la Subsecretaría de Desarrollo Regional y Administrativo.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10479&prmBoletin=10057-06}",
+        "justification": "El 90 % de avance en esta promesa legislativa corresponde a que el proyecto de ley se encuentra en estado de trámite en tribunal constitucional.",
+        "chekIsEmpty": "10057-06"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1445418372,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 897444037,
+              "type": "priority"
+            },
+            {
+              "id": 1234463561,
+              "type": "priority"
+            },
+            {
+              "id": 280588441,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9346,
+      "attributes": {
+        "justification": "El 90 % de avance en esta promesa legislativa corresponde a que el proyecto de ley se encuentra en estado de trámite en tribunal constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1333825031,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1902701114,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 2085168518,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1364844838,
+      "attributes": {
+        "content": "Por eso, ya presentamos en diciembre del año pasado una indicación al proyecto de ley que reforma la ONEMI y crea un nuevo Servicio de Gestión de Riesgos y Emergencias. Y porque debemos avanzar rápido, he renovado la urgencia a la tramitación de esta ley",
+        "number": "33",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 2085168518,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1404147586,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1883011774,
+      "attributes": {
+        "name": "Suma",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1577539008,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -878473066,
+      "attributes": {
+        "name": "7550-06\n",
+        "title": "Establece el Sistema Nacional de Emergencia y Protección Civil y crea la Agencia Nacional de Protección Civil.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=7940&prmBoletin=7550-06",
+        "justification": "El estado de avance del proyecto de ley asociado a esta promesa es de  70 % por encontrarse en el segundo trámite constitucional.",
+        "chekIsEmpty": "7550-06\n"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1404147586,
+              "type": "priority"
+            },
+            {
+              "id": -1883011774,
+              "type": "priority"
+            },
+            {
+              "id": -1577539008,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6884,
+      "attributes": {
+        "justification": "El estado de avance del proyecto de ley asociado a esta promesa es de  70 % por encontrarse en el segundo trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1364844838,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -878473066,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 178004649,
+      "attributes": {
+        "name": "Infancia y Juventud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1395864645,
+      "attributes": {
+        "content": "El Consejo Nacional de la Infancia que hemos constituido, está elaborando la Política Nacional de Niñez y Adolescencia, y el Proyecto de Ley de Garantía de los Derechos de los Niños, Niñas y Adolescentes que será enviado a este Congreso durante este año.",
+        "number": "34",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 178004649,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1189185440,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1078319708,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1436485858,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1258115574,
+      "attributes": {
+        "name": "10315-18",
+        "title": "Sistema de garantías de los derechos de la niñez",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10729&prmBoletin=10315-18",
+        "justification": "Esta promesa tiene un 40 % de avance pues el proyecto de ley asociado está en primer trámite constitucional.",
+        "chekIsEmpty": "10315-18"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1189185440,
+              "type": "priority"
+            },
+            {
+              "id": -1078319708,
+              "type": "priority"
+            },
+            {
+              "id": -1436485858,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9010,
+      "attributes": {
+        "justification": "Esta promesa tiene un 40 % de avance pues el proyecto de ley asociado está en primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1395864645,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1258115574,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1426884452,
+      "attributes": {
+        "content": "Esperamos que este año se apruebe en la Cámara de Diputados el Proyecto de Ley que crea la Subsecretaría de Derechos Humanos.",
+        "number": "35",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -661749128,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1465243068,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": 428316166,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -501636589,
+      "attributes": {
+        "name": "8207-07",
+        "title": "Crea la Subsecretaría de Derechos Humanos y establece adecuaciones en la Ley Orgánica del Ministerio de Justicia.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8605&prmBoletin=8207-07",
+        "justification": "Esta promesa cuenta con un 100 % de avance al encontrarse terminada su tramitación con la publicación de la ley número 20. 885.",
+        "chekIsEmpty": "8207-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -661749128,
+              "type": "priority"
+            },
+            {
+              "id": 1465243068,
+              "type": "priority"
+            },
+            {
+              "id": 428316166,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5516,
+      "attributes": {
+        "justification": "Esta promesa cuenta con un 100 % de avance al encontrarse terminada su tramitación con la publicación de la ley número 20. 885."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1426884452,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -501636589,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1457904259,
+      "attributes": {
+        "content": "Ingresaremos el Proyecto de Ley que tipifica el delito de tortura en conformidad a los compromisos internacionales.",
+        "number": "36",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1573051432,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -318943460,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 309655718,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 979005808,
+      "attributes": {
+        "name": "9589-17",
+        "title": "Proyecto de ley que modifica la tipificación del delito de tortura, eleva sustancialmente su penalidad y establece su imprescriptibilidad.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10009&prmBoletin=9589-17",
+        "justification": "El proyecto de ley que tipifica el delito de tortura se encuentra en el segundo trámite constitucional, por lo que el avance en esta promesa es de un 70 %",
+        "chekIsEmpty": "9589-17"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1573051432,
+              "type": "priority"
+            },
+            {
+              "id": -318943460,
+              "type": "priority"
+            },
+            {
+              "id": 309655718,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4628,
+      "attributes": {
+        "justification": "El proyecto de ley que tipifica el delito de tortura se encuentra en el segundo trámite constitucional, por lo que el avance en esta promesa es de un 70 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1457904259,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 979005808,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1488924066,
+      "attributes": {
+        "content": "Presentaremos además a este Congreso, un proyecto de Reforma Constitucional que crea el cargo de Fiscal Especial de Alta Complejidad en el Ministerio Público\"",
+        "number": "37",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1900372570,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2124891678,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1562963228,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -415438985,
+      "attributes": {
+        "name": "9608-07",
+        "title": "Crea el cargo de Fiscal de Alta complejidad en el Ministerio Público",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10022&prmBoletin=9608-07",
+        "justification": "Esta promesa tiene un 40 % de avance pues el proyecto de ley asociado está en primer trámite constitucional.",
+        "chekIsEmpty": "9608-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1900372570,
+              "type": "priority"
+            },
+            {
+              "id": 2124891678,
+              "type": "priority"
+            },
+            {
+              "id": -1562963228,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9156,
+      "attributes": {
+        "justification": "Esta promesa tiene un 40 % de avance pues el proyecto de ley asociado está en primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1488924066,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -415438985,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1519943873,
+      "attributes": {
+        "content": "Impulsaremos la tramitación de los proyectos de ley que garanticen la imprescriptibilidad y el carácter no amnistiable de los delitos de lesa humanidad.",
+        "number": "38",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1856807480,
+      "attributes": {
+        "name": "Simple",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2067350796,
+      "attributes": {
+        "name": "Suma",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -571131722,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -19374540,
+      "attributes": {
+        "name": "9748-07",
+        "title": "Modifica la Constitución Política de la República para establecer que los crímenes y delitos de guerra, lesa humanidad y genocidio no puedan prescribir ni ser amnistiados.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10193&prmBoletin=9748-07",
+        "justification": "El proyecto de ley asociado se encuentra en primer trámite constitucional, por lo que el avance de esta promesa corresponde al 40 %",
+        "chekIsEmpty": "9748-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1856807480,
+              "type": "priority"
+            },
+            {
+              "id": 2067350796,
+              "type": "priority"
+            },
+            {
+              "id": -571131722,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9640,
+      "attributes": {
+        "justification": "El proyecto de ley asociado se encuentra en primer trámite constitucional, por lo que el avance de esta promesa corresponde al 40 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1519943873,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -19374540,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2105712622,
+      "attributes": {
+        "name": "Simple",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 578738354,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -310903600,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 844032652,
+      "attributes": {
+        "name": "9773-07",
+        "title": "Adecua la ley penal en materia de amnistía, indulto y prescripción de la acción penal y la pena a lo que dispone el derecho internacional respecto de los delitos de genocidio, de lesa humanidad o de guerra.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10192&prmBoletin=9773-07",
+        "justification": "Al encontrarse en el primer trámite constitucional, esta promesa obtiene el 40 % de avance en la materia.",
+        "chekIsEmpty": "9773-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 2105712622,
+              "type": "priority"
+            },
+            {
+              "id": 578738354,
+              "type": "priority"
+            },
+            {
+              "id": -310903600,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1550963680,
+      "attributes": {
+        "content": "Nuevo proyecto de Código Penal para poner al día el actual, que se remonta a 1874.",
+        "number": "39",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -2061567862,
+      "attributes": {
+        "content": "Retomaremos la discusión del Código Procesal Civil, buscando resguardar mejor los derechos de todos los ciudadanos.",
+        "number": "40",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1365529752,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -642142244,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -736686106,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -750591383,
+      "attributes": {
+        "name": "8197-07",
+        "title": "Establece el nuevo Código Procesal Civil",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8596&prmBoletin=8197-07",
+        "justification": "El proyecto de ley que busca establecer un nuevo código procesal civil se encuentra en el segundo trámite constitucional, por lo que cuenta con 70 % de avance.",
+        "chekIsEmpty": "8197-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1365529752,
+              "type": "priority"
+            },
+            {
+              "id": -642142244,
+              "type": "priority"
+            },
+            {
+              "id": -736686106,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6445,
+      "attributes": {
+        "justification": "El proyecto de ley que busca establecer un nuevo código procesal civil se encuentra en el segundo trámite constitucional, por lo que cuenta con 70 % de avance."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -2061567862,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -750591383,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -2030548055,
+      "attributes": {
+        "content": "También para asegurar la defensa de los intereses de los ciudadanos frente a posibles denegaciones de derechos por parte del Estado, crearemos el Defensor Ciudadano.",
+        "number": "41",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1999528248,
+      "attributes": {
+        "content": "Hemos enviado indicaciones al proyecto de ley que Fortalece el Ministerio Público, para incrementar su dotación a 577 funcionarios.",
+        "number": "42",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -334407737,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1260670261,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1615033769,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1819943221,
+      "attributes": {
+        "name": "8265-07",
+        "title": "Fortalece el Ministerio Público.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=8657&prmBoletin=8265-07",
+        "justification": "El avance es de 100 % al encontrarse en estado de tramitación terminada.",
+        "chekIsEmpty": "8265-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -334407737,
+              "type": "priority"
+            },
+            {
+              "id": -1260670261,
+              "type": "priority"
+            },
+            {
+              "id": -1615033769,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4702,
+      "attributes": {
+        "justification": "El avance es de 100 % al encontrarse en estado de tramitación terminada."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1999528248,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1819943221,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -119473047,
+      "attributes": {
+        "name": "Justicia y DDHH"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1968508441,
+      "attributes": {
+        "content": "Estamos trabajando en las indicaciones al proyecto de ley de Identidad de Género.",
+        "number": "43",
+        "title": "",
+        "coherence-level": "3"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -119473047,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 572183154,
+      "attributes": {
+        "name": "Simple",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1841945654,
+      "attributes": {
+        "name": "Suma",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -120157236,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1736815245,
+      "attributes": {
+        "name": "8924-07\n",
+        "title": "Reconoce y da protección al derecho a la identidad de género",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9331&prmBoletin=8924-07",
+        "justification": "El proyecto de ley asociado a la Identidad de género se encuentra en el primer trámite constitucional con un avance de 40 %",
+        "chekIsEmpty": "8924-07\n"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 572183154,
+              "type": "priority"
+            },
+            {
+              "id": 1841945654,
+              "type": "priority"
+            },
+            {
+              "id": -120157236,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8785,
+      "attributes": {
+        "justification": "El proyecto de ley asociado a la Identidad de género se encuentra en el primer trámite constitucional con un avance de 40 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1968508441,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1736815245,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 610587003,
+      "attributes": {
+        "name": "Medio Ambiente"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1937488634,
+      "attributes": {
+        "content": "Cumplimos con presentar el proyecto de ley que creará el Servicio de Biodiversidad y Áreas Protegidas y el Sistema Nacional de Áreas Protegidas.",
+        "number": "44",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 610587003,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -651731019,
+      "attributes": {
+        "name": "Simple",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": 571399737,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1769909335,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1212036631,
+      "attributes": {
+        "name": "9404-12",
+        "title": "Crea el Servicio de Biodiversidad y Áreas Protegidas y el Sistema Nacional de Áreas Protegidas.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9819&prmBoletin=9404-12",
+        "justification": "La promesa expuesta tiene un 40 % de avance en la materia, encontrándose, el proyecto de ley asociado, en el primer trámite constitucional.",
+        "chekIsEmpty": "9404-12"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -651731019,
+              "type": "priority"
+            },
+            {
+              "id": 571399737,
+              "type": "priority"
+            },
+            {
+              "id": -1769909335,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6370,
+      "attributes": {
+        "justification": "La promesa expuesta tiene un 40 % de avance en la materia, encontrándose, el proyecto de ley asociado, en el primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1937488634,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1212036631,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 610587003,
+      "attributes": {
+        "name": "Medio Ambiente"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1906468827,
+      "attributes": {
+        "content": "Esto incluye la protección de glaciares, y ya iniciamos la discusión de indicaciones a la moción parlamentaria que trata esta materia.",
+        "number": "45",
+        "title": "",
+        "coherence-level": "2"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 610587003,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1664924918,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -592668742,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2102369592,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 929133456,
+      "attributes": {
+        "name": "9364-12",
+        "title": "Establece ley de protección y preservación de glaciares.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=9780&prmBoletin=9364-12",
+        "justification": "la promesa tiene un 40 % de avance, al encontrarse dicho proyecto en el primer trámite constitucional.",
+        "chekIsEmpty": "9364-12"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1664924918,
+              "type": "priority"
+            },
+            {
+              "id": -592668742,
+              "type": "priority"
+            },
+            {
+              "id": -2102369592,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8372,
+      "attributes": {
+        "justification": "la promesa tiene un 40 % de avance, al encontrarse dicho proyecto en el primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1906468827,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 929133456,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1565886541,
+      "attributes": {
+        "name": "Minería"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1875449020,
+      "attributes": {
+        "content": "Seguiremos perfeccionando el sistema de concesiones mineras para fomentar la entrada de nuevos actores e inyectar mayor dinamismo.",
+        "number": "46",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1565886541,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -344278225,
+      "attributes": {
+        "name": "Obras Públicas"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1844429213,
+      "attributes": {
+        "content": "Crearemos una nueva Dirección General de Concesiones con más recursos y capacidades de gestión.",
+        "number": "47",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -344278225,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1802397023,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1570577371,
+      "attributes": {
+        "name": "Suma",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1168122173,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1348357045,
+      "attributes": {
+        "name": "10126-15",
+        "title": "Crea la Dirección General de Concesiones de Obras Públicas y modifica las normas que señala",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10549&prmBoletin=10126-15",
+        "justification": "El proyecto de ley al encontrarse en el primer trámite constitucional tiene un avance de 40 %",
+        "chekIsEmpty": "10126-15"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1802397023,
+              "type": "priority"
+            },
+            {
+              "id": -1570577371,
+              "type": "priority"
+            },
+            {
+              "id": 1168122173,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7955,
+      "attributes": {
+        "justification": "El proyecto de ley al encontrarse en el primer trámite constitucional tiene un avance de 40 %"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1844429213,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1348357045,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1563792316,
+      "attributes": {
+        "name": "Pueblos originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1813409406,
+      "attributes": {
+        "content": "Llevamos a cabo diferentes procesos de consulta previa, siendo especialmente relevante el que crea el Ministerio de Pueblos Indígenas. ",
+        "number": "48",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1563792316,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1563792316,
+      "attributes": {
+        "name": "Pueblos originarios"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1782389599,
+      "attributes": {
+        "content": "Llevamos a cabo diferentes procesos de consulta previa, siendo especialmente relevante el que crea el Consejo de Pueblos Indígenas.",
+        "number": "49",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1563792316,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1871489436,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1275677528,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 125381274,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -875751507,
+      "attributes": {
+        "name": "10526-06",
+        "title": "Crea el Consejo Nacional y los Consejos de Pueblos Indígenas",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10947&prmBoletin=10526-06",
+        "justification": "Del mismo modo, esta promesa que tiene un 40 % de avance se encuentra en el primer trámite constitucional.",
+        "chekIsEmpty": "10526-06"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1871489436,
+              "type": "priority"
+            },
+            {
+              "id": -1275677528,
+              "type": "priority"
+            },
+            {
+              "id": 125381274,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8925,
+      "attributes": {
+        "justification": "Del mismo modo, esta promesa que tiene un 40 % de avance se encuentra en el primer trámite constitucional."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1782389599,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -875751507,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 79649485,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1099953845,
+      "attributes": {
+        "content": "El derecho a la salud es un derecho universal, por eso durante este año propondremos a consideración de este Congreso Nacional un proyecto de ley mejor y más equitativo que perfeccione el sistema de seguro privado.",
+        "number": "50",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 79649485,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1068934038,
+      "attributes": {
+        "content": "Ingresaremos en septiembre al Congreso el esperado Estatuto que regula el trabajo de temporeros y temporeras, para asegurar su protección y la calidad del empleo.",
+        "number": "51",
+        "title": "",
+        "coherence-level": "1"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1037914231,
+      "attributes": {
+        "content": "Hemos ingresado al Congreso el anhelado proyecto de ley que moderniza las relaciones laborales , y contamos con que la ley esté aprobada en el segundo semestre de este año, porque es tiempo de ponernos al día y asegurar el pleno ejercicio de los derechos colectivos del trabajo.",
+        "number": "52",
+        "title": "",
+        "coherence-level": "2"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1645283525,
+      "attributes": {
+        "name": "Simple",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -993878209,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": 221988451,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": -921661032,
+      "attributes": {
+        "name": "9835-13",
+        "title": "Moderniza el sistema de relaciones laborales, introduciendo modificaciones al Código del Trabajo",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10248&prmBoletin=9835-13",
+        "justification": "Proyecto se encuentra a la espera de su promulgación, cifrando un 90% de avance en la promesa.",
+        "chekIsEmpty": "9835-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": 2068746937,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1645283525,
+              "type": "priority"
+            },
+            {
+              "id": -993878209,
+              "type": "priority"
+            },
+            {
+              "id": 221988451,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1274,
+      "attributes": {
+        "justification": "Proyecto se encuentra a la espera de su promulgación, cifrando un 90% de avance en la promesa."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1037914231,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -921661032,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1006894424,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley para garantizar a todos los pensionados del Sistema de Pensiones Solidarias el acceso a una cuota mortuoria o prestación por muerte.",
+        "number": "53",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -806158028,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1174590328,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1900006858,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -252770165,
+      "attributes": {
+        "name": "10201-13",
+        "title": "Exime de la obligación de efectuar cotizaciones de salud a pensionados mayores de 65 años, facilita la tramitación de prestaciones de vejez y otorga otros beneficios que indica.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10616&prmBoletin=10201-13",
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015",
+        "chekIsEmpty": "10201-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -806158028,
+              "type": "priority"
+            },
+            {
+              "id": 1174590328,
+              "type": "priority"
+            },
+            {
+              "id": 1900006858,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6977,
+      "attributes": {
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1006894424,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -252770165,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -975874617,
+      "attributes": {
+        "content": "Además, enviaremos un proyecto de ley para que al cumplir la edad correspondiente, los beneficiarios de prestaciones de invalidez del Sistema de Pensiones Solidarias no deban acudir a presentar una solicitud para acceder al pilar solidario de vejez, sino que ésta sea procesada y verificada automáticamente por el Instituto de Previsión Social.",
+        "number": "54",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -806158028,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1174590328,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1900006858,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -252770165,
+      "attributes": {
+        "name": "10201-13",
+        "title": "Exime de la obligación de efectuar cotizaciones de salud a pensionados mayores de 65 años, facilita la tramitación de prestaciones de vejez y otorga otros beneficios que indica.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10616&prmBoletin=10201-13",
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015",
+        "chekIsEmpty": "10201-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -806158028,
+              "type": "priority"
+            },
+            {
+              "id": 1174590328,
+              "type": "priority"
+            },
+            {
+              "id": 1900006858,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9243,
+      "attributes": {
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -975874617,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -252770165,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 174215526,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -944854810,
+      "attributes": {
+        "content": "Y a aquellos pensionados mayores de 65 años de edad, que actualmente pagan el cinco por ciento en su cotización de salud, los eximiremos totalmente de la obligación de cotizar.",
+        "number": "55",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 174215526,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -806158028,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1174590328,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1900006858,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -252770165,
+      "attributes": {
+        "name": "10201-13",
+        "title": "Exime de la obligación de efectuar cotizaciones de salud a pensionados mayores de 65 años, facilita la tramitación de prestaciones de vejez y otorga otros beneficios que indica.",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10616&prmBoletin=10201-13",
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015",
+        "chekIsEmpty": "10201-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -806158028,
+              "type": "priority"
+            },
+            {
+              "id": 1174590328,
+              "type": "priority"
+            },
+            {
+              "id": 1900006858,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1183,
+      "attributes": {
+        "justification": "Promesa se encuentra con un 100% de avance, dado que el proyecto que la satisface se encuentra promulgado desde 15 de octubre del 2015"
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -944854810,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -252770165,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1504266019,
+      "attributes": {
+        "name": "Vivienda y Urbanismo"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -913835003,
+      "attributes": {
+        "content": "Enviaremos un proyecto de ley que permita al Estado captar una mayor parte de la valorización de los terrenos asociados a su propia acción. Porque lo único que corresponde asegurar es que el crecimiento de nuestras ciudades vaya en beneficio de lo colectivo.",
+        "number": "56",
+        "title": "",
+        "coherence-level": "4"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": 514128813,
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1504266019,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -28080132,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 518417472,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1680110082,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 881549861,
+      "attributes": {
+        "name": "10163-14",
+        "title": "Transparencia del mercado del suelo e incrementos de valor por ampliaciones del límite urbano",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=10582&prmBoletin=10163-14",
+        "justification": "La Promesa posee un 40% de avance, producto de que se encuentra en 1er Trámite Constitucional desde el 15 de marzo del 2016.",
+        "chekIsEmpty": "10163-14"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -28080132,
+              "type": "priority"
+            },
+            {
+              "id": 518417472,
+              "type": "priority"
+            },
+            {
+              "id": 1680110082,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4560,
+      "attributes": {
+        "justification": "La Promesa posee un 40% de avance, producto de que se encuentra en 1er Trámite Constitucional desde el 15 de marzo del 2016."
+      },
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -913835003,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 881549861,
+            "type": "bill"
+          }
+        }
+      }
+    }
+  ]
+}
