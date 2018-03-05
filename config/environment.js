@@ -155,7 +155,7 @@ module.exports = function(environment) {
   };
   var area_images = {
     'Agricultura': 'img/i-agr.svg',
-		'Ciencia y Tecnología': 'img/i-cie.svg',
+		// 'Ciencia y Tecnología': 'img/i-cie.svg',
     'Cultura': 'img/i-cul.svg',
     'Defensa': 'img/i-def.svg',
     'Democracia': 'img/i-dem.svg',
@@ -282,7 +282,7 @@ module.exports = function(environment) {
     orders:orders,
     governments: governments,
     government_length: 4,
-		useOnlyJsons: false,
+		useOnlyJsons: true,
     areaImages: area_images,
     comparable_with_other_gov: 'Programa',
     priorities: priorities,
