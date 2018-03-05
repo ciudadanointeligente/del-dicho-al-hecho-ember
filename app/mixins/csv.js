@@ -47,6 +47,12 @@ let parser = {
               "data": data,
             };
             if(resultado) {
+              if(config.useOnlyJsons && !exists && config.envirnoment !== "production"){
+                console.log('*************************');
+                console.log("public/json/"+study.get('slug') + '.json');
+                console.log(JSON.stringify(resultado));
+
+               }
               resolve({"resultado":resultado, "study": study});
             }
             else {

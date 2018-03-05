@@ -22,6 +22,7 @@ export default DS.Model.extend(CalculationsMixin, {
     visible: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
+    fixed_result: DS.attr('number'),
     name: DS.attr('string'),
     description: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
@@ -45,6 +46,9 @@ export default DS.Model.extend(CalculationsMixin, {
       return `${this.get('version')} ${this.get('year')}`;
     }),
     fullfilment: DS.attr("number", {defaultValue: function(e){
+      if(!_.isNil(e.get('fixed_result'))){
+        return e.get('fixed_result');
+      }
       let fullfilment_promises = [];
       if (e.get('promises').toArray().length){
         let promisesArray = e.get('promises');

@@ -15,6 +15,7 @@ var governments =[{
     "name": "Michelle Bachelet: Programa de Gobierno 2017",
     "filename": "Bachelet-2014-2018_Programa-2018.csv",
     "description": "del Programa de Gobierno, al final de todo.",
+    "fixed_result": 55,
     "visible": true,
   },{
 		"type": "Programa",
@@ -25,6 +26,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv",
 		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
+    "fixed_result": 47,
 		"visible": true,
 	}, {
 		"type": "Programa",
@@ -35,6 +37,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
 		"filename": "Bachelet-2014-2018_Programa-2016.csv",
 		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
+    "fixed_result": 39,
     "visible": true,
 	}, {
 		"type": "Programa",
@@ -45,6 +48,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
     "filename": "Bachelet-2014-2018_Programa-2015.csv",
 		"description": "del Programa de Gobierno, a un año de haber asumido el poder.",
+    "fixed_result": 25,
     "visible": true,
 	},{
 		"type": "Discurso",
@@ -55,6 +59,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
 		"filename": "Bachelet-2014-2018_Discurso-2017.csv",
 		"description": "de la Cuenta Pública 2016.",
+    "fixed_result": 58,
 		"visible": true,
 		}, {
 		"type": "Discurso",
@@ -65,6 +70,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Cuenta Pública 2015",
 		"filename": "Bachelet-2014-2018_Discurso-2016.csv",
 		"description": "de la Cuenta Pública 2015.",
+    "fixed_result": 53,
     "visible": true,
 	}, {
 		"type": "Discurso",
@@ -75,6 +81,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Cuenta Pública 2014",
     "filename": "Bachelet-2014-2018_Discurso-2015.csv",
 		"description": "de la Cuenta Pública 2014.",
+    "fixed_result": 44,
     "visible": true,
 	}, ]
 }, {
@@ -93,6 +100,7 @@ var governments =[{
 		"name": "Sebastián Piñera: Programa de Gobierno 2013",
 		"filename": "Piñera-2010-2014_Programa-2014.csv",
 		"description": "del Programa de Gobierno, a cuatro años de haber asumido el poder.",
+    "fixed_result": 54,
     "visible": true,
 	}, {
 		"type": "Programa",
@@ -103,6 +111,7 @@ var governments =[{
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
 		"filename": "Piñera-2010-2014_Programa-2013.csv",
 		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
+    "fixed_result": 37,
     "visible": true,
 	}, {
 		"type": "Programa",
@@ -113,6 +122,7 @@ var governments =[{
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
 		"filename": "Piñera-2010-2014_Programa-2012.csv",
 		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
+    "fixed_result": 26,
     "visible": true,
 	}, {
 		"type": "Discurso",
@@ -123,6 +133,7 @@ var governments =[{
 		"name": "Sebastián Piñera: Cuenta Pública 2013",
 		"filename": "Piñera-2010-2014_Discurso-2014.csv",
 		"description": "de la Cuenta Pública 2013.",
+    "fixed_result": 54,
     "visible": true,
 	}, {
 		"type": "Discurso",
@@ -132,6 +143,7 @@ var governments =[{
 		"version": "Cuenta Pública",
 		"name": "Sebastián Piñera: Cuenta Pública 2012",
 		"filename": "Piñera-2010-2014_Discurso-2013.csv",
+    "fixed_result": 46,
 		"description": "de la Cuenta Pública 2012.",
     "visible": true,
 	}, {
@@ -139,6 +151,7 @@ var governments =[{
 		"img": "/img/pinera-en-el-auto.svg",
 		"color": "#91CFEC",
 		"year": 2011,
+    "fixed_result": 53,
 		"version": "Cuenta Pública",
 		"name": "Sebastián Piñera: Cuenta Pública 2011",
 		"filename": "Piñera-2010-2014_Discurso-2012.csv",
