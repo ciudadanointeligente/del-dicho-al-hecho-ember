@@ -35,6 +35,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
 		"filename": "Bachelet-2014-2018_Programa-2016.csv",
 		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
+    "visible": true,
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
@@ -44,6 +45,7 @@ var governments =[{
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
     "filename": "Bachelet-2014-2018_Programa-2015.csv",
 		"description": "del Programa de Gobierno, a un año de haber asumido el poder.",
+    "visible": true,
 	},{
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
