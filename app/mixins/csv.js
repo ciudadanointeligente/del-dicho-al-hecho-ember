@@ -19,10 +19,12 @@ let parser = {
     _parseAttributes = _parseAttributes.bind(this);
     let whenToUnion = this.whenToUnion;
     return new Ember.RSVP.Promise(function(resolve, reject){
+        var exists = true;
         if(config.useOnlyJsons){
-
           Ember.$.getJSON('/json/'+study.get('slug') + '.json').then(function(r){
             resolve({"resultado":r, "study": study});
+          }, function(){
+            exists = false;
           });
 
         }
