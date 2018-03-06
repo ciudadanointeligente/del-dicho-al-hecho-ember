@@ -16,7 +16,7 @@
     <div class="total-result cumplimientos">
       {{study.fullfilment}}%
     </div>
-    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio"></i></h3>
+    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio."></i></h3>
     <div class="chart estudio-total">
       {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
     </div>
@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="col-md-3 text-center">
-    <h3 class="sub">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%)"></i></h3>
+    <h3 class="sub">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%)."></i></h3>
     <div class="total-result sub">
       {{study.capacity}}
     </div>
@@ -108,7 +108,7 @@
                   <h4>{{p.title}}</h4>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
-                    <p style="float: left;"><span>Proyectos asociados </span></p>
+                    <p style="float: left;"><span>Proyectos asociados</span> </p>
                     {{#each p.bills as |b|}}
                     <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
@@ -131,13 +131,13 @@
                       </div>
                     </div>
                     {{/each}}
-                    <p><span>Total de urgencias</span> <span class="badge">{{p.urgenciesCount}}</span></p>
+                    <p><span>Total de urgencias <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="El número total de urgencias indica la suma de las distintas urgencias -simple, suma, discusión inmediata- que tiene un proyecto de ley asociado a una promesa." tooltip></i></span> <span class="badge">{{p.urgenciesCount}}</span></p>
                   {{/if}}
                 </div>
                 <div class="col-md-2">
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                      <p class="text-center">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso" tooltip></i></p>
+                      <p class="text-center">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso." tooltip></i></p>
                       <div class="promise-result text-center">
                         {{p.fullfilment}}%
                       </div>
