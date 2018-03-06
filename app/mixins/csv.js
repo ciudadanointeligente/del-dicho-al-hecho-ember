@@ -28,7 +28,6 @@ let parser = {
           });
 
         }
-      else {
         PapaParse.parse(filename, {
           download: true,
           header:true,
@@ -63,8 +62,6 @@ let parser = {
             }
           }
         });
-
-      }
     });
 
   },
