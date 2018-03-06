@@ -15,7 +15,7 @@ var governments =[{
     "name": "Michelle Bachelet: Programa de Gobierno 2017",
     "filename": "Bachelet-2014-2018_Programa-2018.csv",
     "description": "del Programa de Gobierno, al final de todo.",
-    "fixed_result": 55,
+    "fixed_result": 56,
     "visible": true,
   },{
 		"type": "Programa",
