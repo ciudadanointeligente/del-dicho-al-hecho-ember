@@ -1,6 +1,6 @@
 var governments =[{
 	"name": "Michelle Bachelet",
-	"years": {'start': 2014, 'end': 2017},
+	"years": {'start': 2014, 'end': 2018},
 	"color1": "#F64B57",
 	"color2": "#FF7E88",
 	"color3": "#FFB0B6",
@@ -86,8 +86,8 @@ var governments =[{
 	}, ]
 }, {
 	"name": "Sebastián Piñera",
-	"years": {'start': 2010, 'end': 2013},
-	"extra_info": "Algo",
+	"years": {'start': 2010, 'end': 2014},
+	"extra_info": "La primera medición de Del Dicho al Hecho se efectuó en 2012, por lo que los resultados al primer año no están disponibles.",
 	"color1": "#2ABAFD",
 	"color2": "#70D2FF",
 	"color3": "#B0E6FF",
