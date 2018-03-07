@@ -4,12 +4,12 @@
 <div class="container">
 <div class="row">
   <div class="page-header">
-    <h1 class="text-center">{{study.name}}</h1>
+    <h1 class="text-center">¿Cuánto cumplió el gobierno de {{study.government.name}}?</h1>
     <h2 class="text-center">{{capitalize study.order}} año</h2>
   </div>
   <div class="col-md-10 col-md-offset-1">
     <div class="bajada">
-      <p class="text-center">Aquí mostramos el avance por áreas del estudio de las promesas {{study.description}} {{#link-to "methodology" onClick="ga('send', 'event', 'estudio-metodologia', 'click');" class="btn btn-warning btn-xs"}}Ver metodología{{/link-to}}</p>
+      <p class="text-center">Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno {{study.description}} {{#link-to "methodology" onClick="ga('send', 'event', 'estudio-metodologia', 'click');" class="btn btn-warning btn-xs"}}Ver metodología{{/link-to}}</p>
     </div>
   </div>
   <div class="col-md-6 col-md-offset-3 text-center">

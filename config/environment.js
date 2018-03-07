@@ -14,7 +14,7 @@ var governments =[{
     "version": "Programa de Gobierno",
     "name": "Michelle Bachelet: Programa de Gobierno 2017",
     "filename": "Bachelet-2014-2018_Programa-2018.csv",
-    "description": "del Programa de Gobierno, al final de todo.",
+    "description": ".",
     "fixed_result": 56,
     "visible": true,
   },{
@@ -25,7 +25,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
 		"filename": "Bachelet-2014-2018_Programa-2017.csv",
-		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
+		"description": "durante sus tres años de gestión.",
     "fixed_result": 47,
 		"visible": true,
 	}, {
@@ -36,7 +36,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
 		"filename": "Bachelet-2014-2018_Programa-2016.csv",
-		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
+		"description": "durante sus dos años de gestión.",
     "fixed_result": 39,
     "visible": true,
 	}, {
@@ -47,7 +47,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
     "filename": "Bachelet-2014-2018_Programa-2015.csv",
-		"description": "del Programa de Gobierno, a un año de haber asumido el poder.",
+		"description": "durante su primer año de gestión.",
     "fixed_result": 25,
     "visible": true,
 	},{
@@ -100,7 +100,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2013",
 		"filename": "Piñera-2010-2014_Programa-2014.csv",
-		"description": "del Programa de Gobierno, a cuatro años de haber asumido el poder.",
+		"description": ".",
     "fixed_result": 54,
     "visible": true,
 	}, {
@@ -111,7 +111,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
 		"filename": "Piñera-2010-2014_Programa-2013.csv",
-		"description": "del Programa de Gobierno, a tres años de haber asumido el poder.",
+		"description": "durante sus tres años de gestión.",
     "fixed_result": 37,
     "visible": true,
 	}, {
@@ -122,7 +122,7 @@ var governments =[{
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
 		"filename": "Piñera-2010-2014_Programa-2012.csv",
-		"description": "del Programa de Gobierno, a dos años de haber asumido el poder.",
+		"description": "durante sus primer año de gestión.",
     "fixed_result": 26,
     "visible": true,
 	}, {
