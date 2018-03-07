@@ -98,6 +98,11 @@ export default Ember.Mixin.create(CsvMixin, {
         if(!_.isUndefined(government.years) && !_.isUndefined(government.years.start) && !_.isUndefined(government.years.start)){
           start = government.years.start;
           end = government.years.end;
+
+        }
+        let extra_info = "";
+        if(!_.isUndefined(government.extra_info)){
+          extra_info = government.extra_info;
         }
         gov = store.createRecord('government', {
           name: name,
@@ -107,6 +112,7 @@ export default Ember.Mixin.create(CsvMixin, {
           color2: government.color2,
           color3: government.color3,
           color4: government.color4,
+          extra_info: extra_info,
           id: _hashCode(name),
         });
       }

@@ -6,6 +6,7 @@ import _ from 'lodash';
 export default DS.Model.extend({
   name: DS.attr('string'),
   studies: DS.hasMany('study'),
+  extra_info: DS.attr('string'),
   start_year: DS.attr('number'),
   end_year: DS.attr('number'),
   color1: DS.attr('string'),

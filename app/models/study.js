@@ -32,7 +32,7 @@ export default DS.Model.extend(CalculationsMixin, {
     }),
     order: Ember.computed('government', 'year', function() {
       let gov_year = this.get('government').get('start_year');
-      
+
       let n = this.get('year') - gov_year + 1;
       return orders[n];
     }),

@@ -87,6 +87,7 @@ var governments =[{
 }, {
 	"name": "Sebastián Piñera",
 	"years": {'start': 2010, 'end': 2013},
+	"extra_info": "Algo",
 	"color1": "#2ABAFD",
 	"color2": "#70D2FF",
 	"color3": "#B0E6FF",
