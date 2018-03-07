@@ -292,6 +292,7 @@ module.exports = function(environment) {
 
   var ENV = {
     modulePrefix: 'ddah-ember',
+    rrssUrl: 'https://docs.google.com/document/d/1amWdc8mGXMPDYhJVGsDINjXi1ibFElQlmmVxR6ria4M/edit',
     matcher: matcher,
     orders:orders,
     governments: governments,

@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('methodology');
   this.route('government');
+  this.route('rrss');
   this.route('government', {path: 'government/:slug'});
   this.route('compare-studies', { path: 'compare/studies/:studies'});
   this.route('404');
