@@ -14,10 +14,10 @@
     <div class="panel-body compare">
       <!-- Cumplimiento total -->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
-          <h4>Cumplimiento total<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="La cifra de cumplimiento indica el nivel de avance de una promesa presidencial, según su estado de tramitación en el congreso."></i></h4>
+        <div class="text-center panel-compare">
+          <h4>Cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="La cifra de cumplimiento indica el nivel de avance de una promesa presidencial, según su estado de tramitación en el congreso."></i></h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
@@ -47,10 +47,10 @@
       <!-- Cumplimiento  total -->
       <!-- Promesas realizadas -->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
+        <div class="text-center panel-compare">
           <h4>Total de promesas comparadas</h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
@@ -70,10 +70,10 @@
       <!-- Promesas realizadas -->
       <!-- Proyectos enviados -->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
+        <div class="text-center panel-compare">
           <h4>Total de proyectos enviados</h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
@@ -93,10 +93,10 @@
       <!-- Proyectos enviados -->
       <!-- Promesas que presentan algún tipo de avance-->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
+        <div class="text-center panel-compare">
           <h4>Promesas que presentan algún tipo de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Promesas que tienen asociadas un o un conjunto de proyectos de ley para su cumplimiento."></i></h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
@@ -117,10 +117,10 @@
       <!-- Promesas que presentan algún tipo de avance-->
       <!-- Capacidad -->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
+        <div class="text-center panel-compare">
           <h4>Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Este indicador mide la capacidad de un gobierno de cumplir una promesa en su totalidad. Es decir, no sólo cuenta ingresar un proyecto de ley, sino que también tener el manejo político para lograr su promulgación. Por ende, se contemplan sólo las promesas que tienen un 100% de avance."></i></h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 compare-box">
@@ -140,10 +140,10 @@
       <!-- Capacidad -->
       <!-- Areas -->
       <div class="panel panel-default">
-        <div class="panel-heading text-center">
+        <div class="text-center panel-compare">
           <h4>Avance comparado por áreas</h4>
         </div>
-        <div class="panel-body">
+        <div class="panel-compare-body">
           <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -154,15 +154,15 @@
           <table class="table table-responsive">
             <thead>
               <tr>
-                <th>Área</th>
-                <th class="text-center">Avance</th>
-                <th class="text-center">Promesas por área</th>
+                <th><h4>Área</h4></th>
+                <th class="text-center"><h4>Avance</h4></th>
+                <th class="text-center"><h4>Promesas por área</h4></th>
               </tr>
             </thead>
             <tbody>
               {{#each areas as |a|}}
               <tr>
-                <td width="10%">{{a.name}}</td>
+                <td width="10%"><h4>{{a.name}}</h4></td>
                 <td width="80%">
                   <!-- bar01-->
                   {{#if (studyHasPromisesInArea study_0 a)}}
@@ -203,26 +203,26 @@
                 <td width="10%">
                   {{#if (studyHasPromisesInArea study_0 a)}}
 
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
                   {{else}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: #D3D3D3">&nbsp;</p>
                   {{/if}}
                   {{#if (studyHasPromisesInArea study_1 a)}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 25px; color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: -6px; color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
                   {{else}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: #D3D3D3">&nbsp;</p>
                   {{/if}}
 
                   {{#if (studyHasPromisesInArea study_0 a)}}
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
+                  <p class="compare-result compare-info hidden-md hidden-lg" style="color: {{study_0.government.color1}}">{{politicalWillPerArea a study_0}}</p>
                   {{else}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: #D3D3D3">&nbsp;</p>
                   {{/if}}
 
                   {{#if (studyHasPromisesInArea study_1 a)}}
-                  <p class="compare-info hidden-md hidden-lg" style="color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
+                  <p class="compare-result compare-info hidden-md hidden-lg" style="color: {{study_1.government.color1}}">{{politicalWillPerArea a study_1}}</p>
                   {{else}}
-                  <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: #D3D3D3">&nbsp;</p>
+                  <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: #D3D3D3">&nbsp;</p>
                   {{/if}}
 
                 </td>

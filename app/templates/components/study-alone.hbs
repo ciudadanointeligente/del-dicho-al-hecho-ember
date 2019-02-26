@@ -83,7 +83,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="progress">
+              <div class="progress progress-study-alone">
                 <div class="progress-bar" role="progressbar" aria-valuenow="{{a.summary.fullfilment}}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{a.summary.fullfilment}}%; background-color: {{study.government.color1}}"></div>
               </div>
             </div>
@@ -108,7 +108,7 @@
                   <h5>{{p.title}}</h5>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
-                    <p style="float: left;"><span>Proyectos asociados</span> </p>
+                    <p style="float: left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
                     <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
