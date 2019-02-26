@@ -58,7 +58,7 @@
     <div class="hidden-xs hidden-sm col-md-2 text-center">
       <div class="row">
         <div class="col-md-12">
-          <h5>Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></h5>
+          <h4>Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></h4>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
             <div class="panel-promise">
               <div class="row">
                 <div class="col-md-10">
-                  <h4>{{p.title}}</h4>
+                  <h5>{{p.title}}</h5>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
                     <p style="float: left;"><span>Proyectos asociados</span> </p>
@@ -118,7 +118,7 @@
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
-                            <h4 class="modal-title" id="myModalLabel">{{b.title}}</h4>
+                            <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                           </div>
                           <div class="modal-body">
                             <p><span>Estado de avance:</span> {{b.phase.name}}</p>
@@ -148,12 +148,12 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h4>
+                              <h5 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h5>
                               {{p.ja_why}}
                             </div>
                             <div class="modal-body">
                               {{#if p.bills.length}}
-                              <h4 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h4>
+                              <h5 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h5>
                               <div class="row"><!---Projects-->
                                 {{#each p.bills as |b|}}
                                 <div class="col-md-12 project-list">
