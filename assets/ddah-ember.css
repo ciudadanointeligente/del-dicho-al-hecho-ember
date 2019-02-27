@@ -2,7 +2,7 @@ body {
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #3B3B3B;
+  color: #232323;
   background-color: #F4FBFF; }
 
 p {
@@ -16,13 +16,13 @@ p {
     font-size: 16px; }
 
 a {
-  color: #E8453B; }
+  color: #FF483C; }
   a:hover {
     text-decoration: none;
-    color: #17BBC2; }
+    color: #12D0D8; }
   a:focus {
     text-decoration: none;
-    color: #17BBC2; }
+    color: #12D0D8; }
 
 span {
   font-weight: 700; }
@@ -39,11 +39,11 @@ h5 {
 
 /*NAVBAR*/
 .navbar-default {
-  background-color: #3B3B3B;
+  background-color: #232323;
   }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #3B3B3B;
+    border-color: #232323;
 }
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 540px;
@@ -69,7 +69,7 @@ h5 {
   padding: 0;
   border: 0; }
   .panel-default .panel-body .panel-heading {
-    background-color: #3B3B3B;
+    background-color: #232323;
     color: white;
     border-radius: 0; }
 
@@ -82,10 +82,10 @@ h5 {
 /*DATA*/
 
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
-  stroke: #17BBC2; }
+  stroke: #12D0D8; }
 
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
-  stroke: #3B3B3B; }
+  stroke: #232323; }
 
 .progress {
   height: 26px;
@@ -93,7 +93,7 @@ h5 {
   margin: 10px 0 20px 0; }
 
 .progress-bar {
-  background-color: #17BBC2; }
+  background-color: #12D0D8; }
 
 .category-result {
   font-weight: 700;
@@ -114,41 +114,41 @@ h5 {
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
-  background-color: #E8453B; }
+  background-color: #FF483C; }
 
 .label {
-  background-color: #E8453B; }
+  background-color: #FF483C; }
 
 .tooltip {
   width: 280px; }
 
 .tooltip-inner {
-  background-color: #17BBC2; }
+  background-color: #12D0D8; }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #17BBC2; }
+  border-top-color: #12D0D8; }
 
 /*BUTTONS*/
 button.btn.btn-default {
-  background-color: #E8453B;
+  background-color: #FF483C;
   color: white;
   border: none;
   font-weight: 700;
   border-radius: 20px; }
   button.btn.btn-default:hover {
-    background-color: #17BBC2; }
+    background-color: #12D0D8; }
 
 button.btn.btn-default.btn-sm.btn-block.home {
   margin: auto;
   max-width: 70px;
   background-color: #FB7881; }
   button.btn.btn-default.btn-sm.btn-block.home:hover {
-    background-color: #17BBC2; }
+    background-color: #12D0D8; }
 
 button.btn.btn-default.btn-sm.dark {
-  background-color: #3B3B3B; }
+  background-color: #232323; }
   button.btn.btn-default.btn-sm.dark:hover {
-    background-color: #17BBC2; }
+    background-color: #12D0D8; }
 
 /*MODALS*/
 .modal-content {

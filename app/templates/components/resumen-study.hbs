@@ -4,11 +4,10 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <h1 class="text-center">¿Cuánto cumple el gobierno?</h1>
-        <p class="text-center">Revisa aquí el porcentaje de cumplimiento de las promesas de la Cuenta Pública 2017</p>
-        <div class="col-md-3 hidden-sm hidden-xs text-center">
-            <img src="/img/bachelet.svg">
-          </div>
+        <div class="col-md-6 text-center">
+          <h1>¿Cuánto cumple el gobierno?</h1>
+          <p>Revisa aquí el porcentaje de cumplimiento de las promesas de la Cuenta Pública 2017</p>
+        </div>
           <div class="col-md-6 text-center">
             <div class="total-result cumplimientos">
               {{study.fullfilment}}%
@@ -17,9 +16,6 @@
               <div class="chart estudio-total">
                 {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
               </div>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs text-center">
-            <img src="/img/martillo.svg">
           </div>
       </div>
       <div class="row movil">
