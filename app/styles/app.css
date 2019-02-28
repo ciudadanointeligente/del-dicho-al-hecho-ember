@@ -464,11 +464,11 @@ a.btn-success-inverse{
 
 /*FOOTER*/
 footer {
-  background-color: #232323;
-  color: white;
+  background-color: #F9F9F9;
+  color: #2A2A2A;
   padding: 50px 0 50px 0; }
   footer a {
-    color: white; }
+    color: #2A2A2A; }
 
 @media (max-width: 991px) {
   .label-coherencia{
