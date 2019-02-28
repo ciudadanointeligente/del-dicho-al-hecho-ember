@@ -1,5 +1,24 @@
-var governments =[{
-	"name": "Michelle Bachelet",
+var governments =[
+	{
+	"name": "Sebastián Piñera II",
+	"years": {'start': 2018, 'end': 2022},
+	"color1": "#FF483C",
+	"color2": "#FE6B61",
+	"color3": "#FF8F88",
+	"color4": "#FFB9B5",
+	"studies": [{
+    "type": "Programa",
+    "img": "/img/bashelet-en-el-barquito.svg",
+    "color": "#FF483C",
+    "year": 2018,
+    "version": "Programa de Gobierno",
+    "name": "Michelle Bachelet: Programa de Gobierno 2017",
+    "filename": "Piñera-2018-2022_Programa-2018.csv",
+    "description": ".",
+    "fixed_result": 23,
+    "visible": true,
+  }]},{
+	"name": "Michelle Bachelet II",
 	"years": {'start': 2014, 'end': 2018},
 	"color1": "#FF483C",
 	"color2": "#FE6B61",
@@ -96,7 +115,7 @@ var governments =[{
     "visible": true,
 	}, ]
 }, {
-	"name": "Sebastián Piñera",
+	"name": "Sebastián Piñera I",
 	"years": {'start': 2010, 'end': 2014},
 	"extra_info": "La primera medición de Del Dicho al Hecho se efectuó en 2012, por lo que los resultados al primer año no están disponibles.",
 	"color1": "#12D0D8",
