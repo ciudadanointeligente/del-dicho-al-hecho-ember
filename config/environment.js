@@ -124,7 +124,7 @@ var governments =[
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#12D0D8",
+		"color": "#FE3A93",
 		"year": 2013,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2013",
@@ -135,7 +135,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#66DEE3",
+		"color": "#F9669D",
 		"year": 2012,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
@@ -146,7 +146,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#9AFAFF",
+		"color": "#FF94BC",
 		"year": 2011,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
