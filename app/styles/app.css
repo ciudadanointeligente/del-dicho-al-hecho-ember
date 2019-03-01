@@ -37,7 +37,7 @@ span {
   font-weight: 700; }
 
 h1{
-  color: #FFF;
+  color: #232323;
   margin-top: 130px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700; }
@@ -146,7 +146,10 @@ img.logo-nav{
     height: 700px;
     padding-top: 100px;}
     .jumbotron h1{
-       color: #FFF;
+       color: #FFFF;
+    }
+    .jumbotron p{
+       font-size: 2rem;
     }
 .resume-back{
   margin-bottom: -768px;
@@ -274,7 +277,7 @@ section{
 .chart.estudio-total{
   margin-bottom: -110px;
   position: relative;
-  top: -158px;}
+  top: -152px;}
 
 .progress {
   height: 26px;
@@ -344,7 +347,7 @@ section{
 
 .label-cumplimiento{
   position: relative;
-  top: 22px;}
+  top: 26px;}
 
 .label-coherencia{
   position: relative;
@@ -445,7 +448,7 @@ section{
   margin: auto;
   color: white;
   font-weight: 700;
-  border-radius: 20px;
+  border-radius: 0;
   border: none;
   -webkit-transition: background-color .3s ease-in;}
   .btn a{
@@ -520,11 +523,49 @@ footer {
     padding-top: 0;
   }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    background-color: #F9F9F9;
-    color: #232323;
+    background-color: #FF483C;
+    color: #FFF;
   }
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form a{
-    color: #232323;
+  .navbar-default .navbar-nav > li > a{
+    color: #FFF;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    color: #FFF;
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+    max-height: fit-content;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+    color: #FFF;}
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+      color: #FFF;}
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+      color: #232323;}
+
+.dropdown-menu {
+  color: #FFF;}
+  .dropdown-menu > li > a{
+    display: initial;}
+  .navbar-nav > li > .dropdown-menu{
+    padding: 2px 15px;}
+
+  .jumbotron{
+    padding-top: 30px;
+  }
+  .jumbotron p{
+     font-size: 1.6rem;
+  }
+  .btn-jumbo{
+    height: 50px;
+  }
+  a.btn-jumbo{
+    padding: 14px;
+  }
+  .total-resume-home{
+    padding-top: 11px;
+  }
+  .resume-mobile-btn{
+    padding: 80px 60px 0;
   }
 }
 

@@ -159,11 +159,11 @@ export default DS.Model.extend(CalculationsMixin, {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      "#FAFAFA",
+                      "#F7F7F7",
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
-                      "#FAFAFA",
+                      "#F7F7F7",
                   ]
               }]
       };
@@ -193,11 +193,11 @@ export default DS.Model.extend(CalculationsMixin, {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      "#FAFAFA",
+                      "#F7F7F7",
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
-                      "#FAFAFA",
+                      "#F7F7F7",
                   ]
               }]
       };
