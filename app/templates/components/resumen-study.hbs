@@ -1,14 +1,17 @@
 
 {{yield}}
 <div id="welcome">
+  <img src="/img/pinera.jpg" class="resume-back">
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6">
           <h1>¿Cuánto cumple el gobierno?</h1>
           <p>Revisa aquí el porcentaje de cumplimiento de las promesas de la Cuenta Pública 2017</p>
+          {{#link-to "study" study.slug  class="hidden-xs btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Ver estudio completo {{/link-to}}
+          {{#link-to "study" study.slug class="visible-xs btn btn-primary btn-jumbo" onclick="ga('send','event','home-ver-estudio-mobile','click')" }} Ver estudio completo {{/link-to}}
         </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-3 text-center total-resume-home">
             <div class="total-result cumplimientos">
               {{study.fullfilment}}%
             </div>
@@ -18,50 +21,6 @@
               </div>
           </div>
       </div>
-      <div class="row movil">
-        <div class="col-md-6">
-          <ul class="list-unstyled list-inline hidden-xs">
-            <li>
-              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;hashtags=DelDichoalHecho&amp;text=Mira cuántas de sus promesas cumplió el gobierno de Michelle Bachelet en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
-                 <span class="fa-stack fa-lg">
-                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                 <i class="fa fa-twitter fa-stack-1x"></i>
-               </span>
-             </a>
-            </li>
-            <li>
-              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
-                <span class="fa-stack fa-lg">
-                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-facebook fa-stack-1x"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <ul class="list-unstyled list-inline visible-xs text-center rrss">
-            <li>
-              <a href="#" onclick="window.open(&quot;//twitter.com/share?url=https%3A%2F%2Fdeldichoalhecho.cl&amp;hashtags=DelDichoalHecho&amp;text=Mira cuántas de sus promesas cumplió el gobierno de Michelle Bachelet en&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
-                 <span class="fa-stack fa-lg">
-                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                 <i class="fa fa-twitter fa-stack-1x"></i>
-               </span>
-             </a>
-            </li>
-            <li>
-              <a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=https://deldichoalhecho.cl&quot;,&quot;facebook&quot;,&quot;width=550, height=350&quot;)">
-                <span class="fa-stack fa-lg">
-                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-facebook fa-stack-1x"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-right">
-{{#link-to "study" study.slug  class="hidden-xs btn btn-primary btn-lg btn-danger" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Ver estudio completo {{/link-to}}
-{{#link-to "study" study.slug class="visible-xs btn btn-primary btn-danger" onclick="ga('send','event','home-ver-estudio-mobile','click')" }} Ver estudio completo {{/link-to}}
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -70,8 +29,8 @@
   <div class="container">
     <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p class="home">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas.</p><br><p class="home">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
+      <div class="col-md-6 col-md-offset-3">
+        <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas.</p><br><p class="home text-center">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
       </div>
     </div>
   </div>
