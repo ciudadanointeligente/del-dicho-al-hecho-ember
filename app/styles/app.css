@@ -143,14 +143,14 @@ img.logo-nav{
 /*SECTIONS*/
 .jumbotron{
     background-color: #FF483C;
-    height: 800px;
-    padding-top: 160px;}
+    height: 700px;
+    padding-top: 100px;}
     .jumbotron h1{
        color: #FFF;
     }
 .resume-back{
-  margin-bottom: -880px;
-  padding: 80px 50%;
+  margin-bottom: -768px;
+  padding: 50px 54%;
 }
 .total-resume-home{
   padding-top: 170px;
