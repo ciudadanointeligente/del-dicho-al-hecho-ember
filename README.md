@@ -59,3 +59,9 @@ Y tamos
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+## Subir un nuevo gobierno
+
+* En el archivo environment.js agregar otro *government*
+* Para agregar un nuevo estudio, debe incluirse en el atributo *studies*
+* El estudio que se quiera destacar en el home debe tener el atributo `in_landing: true`
