@@ -202,6 +202,7 @@ module.exports = function(environment) {
     'Cultura': 'img/i-cul.svg',
     'Defensa': 'img/i-def.svg',
     'Democracia': 'img/i-dem.svg',
+		'Deporte': 'img/i-dep.svg',
     'Desarrollo Social': 'img/i-des.svg',
     'Economía y Comercio': 'img/i-eco.svg',
     'Educación': 'img/i-edu.svg',
