@@ -24,25 +24,25 @@
 </div>
 
 <div class="row">
-  <div class="col-md-3 text-center">
+  <div class="col-md-4 text-center">
     <h3 class="sub">Total de promesas</h3>
     <div class="total-result sub">
       {{study.promises.length}}
     </div>
   </div>
-  <div class="col-md-3 text-center">
+  <div class="col-md-4 text-center">
     <h3 class="sub">Total de proyectos enviados</h3>
     <div class="total-result sub">
       {{study.billsCount}}
     </div>
   </div>
-  <div class="col-md-3 text-center">
+  <div class="col-md-4 text-center">
     <h3 class="sub">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%)."></i></h3>
     <div class="total-result sub">
       {{study.capacity}}
     </div>
   </div>
-  <div class="col-md-3 text-center">
+  <div class="col-md-4 text-center hidden">
     <h3 class="sub">Total de urgencias <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Es la suma de todas las urgencias asociadas a los proyectos de ley contenidos en el estudio."></i></h3>
     <div class="total-result sub">
       {{study.urgenciesCount}}
@@ -131,7 +131,7 @@
                       </div>
                     </div>
                     {{/each}}
-                    <p><span>Total de urgencias <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="El número total de urgencias indica la suma de las distintas urgencias -simple, suma, discusión inmediata- que tiene un proyecto de ley asociado a una promesa." tooltip></i></span> <span class="badge">{{p.urgenciesCount}}</span></p>
+                    <p class="hidden"><span>Total de urgencias <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="El número total de urgencias indica la suma de las distintas urgencias -simple, suma, discusión inmediata- que tiene un proyecto de ley asociado a una promesa." tooltip></i></span> <span class="badge">{{p.urgenciesCount}}</span></p>
                   {{/if}}
                 </div>
                 <div class="col-md-2">
