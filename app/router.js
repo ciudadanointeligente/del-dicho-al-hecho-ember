@@ -15,11 +15,12 @@ Router.map(function() {
   this.route('government', {path: 'government/:slug'});
   this.route('compare-studies', { path: 'compare/studies/:studies'});
   this.route('404');
+  this.route('index-h');
 });
 /* jshint ignore:start */
 Router.reopen({
   notifyGoogleAnalytics: function() {
-    
+
     return ga('send', 'pageview', {
         'page': this.get('url'),
         'title': this.get('url')
