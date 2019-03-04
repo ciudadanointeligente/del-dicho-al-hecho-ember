@@ -15,10 +15,10 @@
   <div class="panel-body compare">
     <!-- Promesas realizadas -->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Total de promesas comparadas</h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           <div class="col-md-12 compare-box">
@@ -33,10 +33,10 @@
     <!-- Promesas realizadas -->
     <!-- Cumplimiento total -->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="La cifra de cumplimiento indica el nivel de avance de una promesa presidencial, según su estado de tramitación en el congreso."></i></h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
@@ -59,10 +59,10 @@
     <!-- Cumplimiento total -->
     <!-- Proyectos enviados -->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Total de proyectos enviados</h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
@@ -79,10 +79,10 @@
     <!-- Proyectos enviados -->
     <!-- Promesas que presentan algún tipo de avance-->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Promesas que presentan algún tipo de avance <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Promesas que tienen asociadas un o un conjunto de proyectos de ley para su cumplimiento."></i></h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
@@ -100,10 +100,10 @@
     <!-- Promesas que presentan algún tipo de avance-->
     <!-- Capacidad -->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Este indicador mide la capacidad de un gobierno de cumplir una promesa en su totalidad. Es decir, no sólo cuenta ingresar un proyecto de ley, sino que también tener el manejo político para lograr su promulgación. Por ende, se contemplan sólo las promesas que tienen un 100% de avance."></i></h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           {{#each model.comparable as |study|}}
@@ -120,10 +120,10 @@
     <!-- Capacidad -->
     <!-- Areas -->
     <div class="panel panel-default">
-      <div class="panel-heading text-center">
+      <div class="text-center panel-compare">
         <h4>Avance comparado por áreas</h4>
       </div>
-      <div class="panel-body">
+      <div class="panel-compare-body">
         <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -137,9 +137,9 @@
         <table class="table table-responsive">
           <thead>
             <tr>
-              <th>Área</th>
-              <th class="text-center">Avance año a año</th>
-              <th class="text-center">Avance total</th>
+              <th><h4>Área</h4></th>
+              <th class="text-center"><h4>Avance año a año</h4></th>
+              <th class="text-center"><h4>Avance total</h4></th>
             </tr>
           </thead>
           <tbody>
@@ -150,7 +150,7 @@
 
 
               <tr>
-                <td width="10%">{{a.name}}</td>
+                <td width="10%"><h4>{{a.name}}</h4></td>
                   <td width="80%">
                     <!-- bar01-->
                     <div class="progress compare-bar hidden-xs hidden-sm">
@@ -161,8 +161,8 @@
                     </div>
                   </td>
                   <td width="10%">
-                    <p class="compare-info hidden-xs hidden-sm" style="margin-top: 15px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
-                    <p class="compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                    <p class="compare-result compare-info hidden-xs hidden-sm" style="margin-top: 3px; color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
+                    <p class="compare-result compare-info hidden-md hidden-lg" style="color: {{study.color1}}">{{finalPercentageGovernmentArea model a}}%</p>
                   </td>
               </tr>
               {{/if}}

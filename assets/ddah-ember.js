@@ -2260,7 +2260,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Cumplimiento y coherencia total");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -2376,7 +2376,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Promesas realizadas");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -2468,7 +2468,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Proyectos enviados");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -2560,7 +2560,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Promesas que presentan algún tipo de avance");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -2676,7 +2676,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Capacidad");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -2768,7 +2768,7 @@ define("ddah-ember/templates/compare-studies", ["exports"], function (exports) {
         dom.setAttribute(el5, "class", "panel-heading");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h4");
+        var el6 = dom.createElement("h5");
         var el7 = dom.createTextNode("Áreas");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
@@ -4639,7 +4639,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
                 dom.appendChild(el4, el5);
                 var el5 = dom.createTextNode("\n                            ");
                 dom.appendChild(el4, el5);
-                var el5 = dom.createElement("h4");
+                var el5 = dom.createElement("h5");
                 dom.setAttribute(el5, "class", "modal-title");
                 dom.setAttribute(el5, "id", "myModalLabel");
                 var el6 = dom.createComment("");
@@ -4816,7 +4816,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
             dom.setAttribute(el3, "class", "col-md-9");
             var el4 = dom.createTextNode("\n                  ");
             dom.appendChild(el3, el4);
-            var el4 = dom.createElement("h4");
+            var el4 = dom.createElement("h5");
             var el5 = dom.createComment("");
             dom.appendChild(el4, el5);
             dom.appendChild(el3, el4);
@@ -4915,7 +4915,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
             dom.appendChild(el9, el10);
             var el10 = dom.createTextNode("\n                              ");
             dom.appendChild(el9, el10);
-            var el10 = dom.createElement("h4");
+            var el10 = dom.createElement("h5");
             dom.setAttribute(el10, "class", "modal-title");
             dom.setAttribute(el10, "id", "myModalLabel");
             var el11 = dom.createComment("");
@@ -5023,7 +5023,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
             dom.appendChild(el9, el10);
             var el10 = dom.createTextNode("\n                              ");
             dom.appendChild(el9, el10);
-            var el10 = dom.createElement("h4");
+            var el10 = dom.createElement("h5");
             dom.setAttribute(el10, "class", "modal-title");
             dom.setAttribute(el10, "id", "myModalLabel");
             var el11 = dom.createComment("");
@@ -5192,7 +5192,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
           dom.setAttribute(el4, "class", "col-md-4");
           var el5 = dom.createTextNode("\n              ");
           dom.appendChild(el4, el5);
-          var el5 = dom.createElement("h4");
+          var el5 = dom.createElement("h5");
           dom.setAttribute(el5, "class", "collapsed");
           dom.setAttribute(el5, "role", "button");
           dom.setAttribute(el5, "data-toggle", "collapse");
@@ -5218,7 +5218,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
           dom.setAttribute(el5, "class", "sec-promesas");
           var el6 = dom.createTextNode("\n                ");
           dom.appendChild(el5, el6);
-          var el6 = dom.createElement("h5");
+          var el6 = dom.createElement("h6");
           var el7 = dom.createComment("");
           dom.appendChild(el6, el7);
           var el7 = dom.createTextNode(" promesa(s)");
@@ -5754,7 +5754,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
         dom.setAttribute(el3, "class", "col-md-9");
         var el4 = dom.createTextNode("\n      ");
         dom.appendChild(el3, el4);
-        var el4 = dom.createElement("h4");
+        var el4 = dom.createElement("h5");
         var el5 = dom.createTextNode("Áreas y promesas");
         dom.appendChild(el4, el5);
         dom.appendChild(el3, el4);
@@ -5775,7 +5775,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
         dom.setAttribute(el5, "class", "col-md-6");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h5");
+        var el6 = dom.createElement("h6");
         var el7 = dom.createTextNode("Avance ");
         dom.appendChild(el6, el7);
         var el7 = dom.createElement("i");
@@ -5795,7 +5795,7 @@ define("ddah-ember/templates/components/study-alone", ["exports"], function (exp
         dom.setAttribute(el5, "class", "col-md-6");
         var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
-        var el6 = dom.createElement("h5");
+        var el6 = dom.createElement("h6");
         var el7 = dom.createTextNode("Coherencia ");
         dom.appendChild(el6, el7);
         var el7 = dom.createElement("i");

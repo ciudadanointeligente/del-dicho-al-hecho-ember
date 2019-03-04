@@ -1,61 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard Copy 53</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-Copy-53">
-            <g id="Page-1-Copy" transform="translate(11.000000, 27.000000)">
-                <polygon id="Fill-1" fill="#307CBF" points="46.422 12.7584 34.449 12.7584 34.321 12.7584 25.521 12.7584 25.521 21.4484 17.881 21.4484 10.24 21.4484 2.599 21.4484 2.599 27.0324 2.599 42.6474 10.24 42.6474 17.881 42.6474 25.521 42.6474 34.449 42.6474 37.552 42.6474 43.328 42.6474 46.422 42.6474 55.35 42.6474 62.99 42.6474 70.631 42.6474 78.271 42.6474 78.271 21.4484 70.631 21.4484 62.99 21.4484 55.35 21.4484 55.35 12.7584"></polygon>
-                <polygon id="Fill-2" fill="#3A6AA4" points="40.436 6.6074 46.422 6.6074 46.422 2.9334 40.436 2.9334"></polygon>
-                <path d="M32.92,24.0994 L43.822,24.0994 L43.822,11.0254 L32.92,11.0254 L32.92,24.0994 Z M31.72,25.2994 L45.021,25.2994 L45.021,9.8254 L31.72,9.8254 L31.72,25.2994 Z" id="Fill-3" fill="#0C1423"></path>
-                <path d="M33.049,39.7134 L43.822,39.7134 L43.822,25.2984 L33.049,25.2984 L33.049,39.7134 Z M31.849,40.9144 L45.021,40.9144 L45.021,24.0994 L31.849,24.0994 L31.849,40.9144 Z" id="Fill-4" fill="#0C1423"></path>
-                <polygon id="Fill-5" fill="#0C1423" points="37.836 21.8644 39.035 21.8644 39.035 18.2614 37.836 18.2614"></polygon>
-                <polygon id="Fill-6" fill="#0C1423" points="31.85 24.6994 33.049 24.6994 33.049 10.4254 31.85 10.4254"></polygon>
-                <polygon id="Fill-7" fill="#0C1423" points="32.8281 15.7627 32.0701 14.8317 38.0571 9.9597 38.8141 10.8907"></polygon>
-                <polygon id="Fill-8" fill="#0C1423" points="43.9785 15.7627 37.9925 10.8907 38.7495 9.9597 44.7365 14.8317"></polygon>
-                <path d="M24.121,24.0994 L31.85,24.0994 L31.85,11.0254 L24.121,11.0254 L24.121,24.0994 Z M22.922,25.2994 L33.049,25.2994 L33.049,9.8254 L22.922,9.8254 L22.922,25.2994 Z" id="Fill-9" fill="#0C1423"></path>
-                <path d="M24.121,39.7134 L31.85,39.7134 L31.85,25.2984 L24.121,25.2984 L24.121,39.7134 Z M22.922,40.9144 L33.049,40.9144 L33.049,24.0994 L22.922,24.0994 L22.922,40.9144 Z" id="Fill-10" fill="#0C1423"></path>
-                <path d="M16.48,39.7134 L22.921,39.7134 L22.921,25.2984 L16.48,25.2984 L16.48,39.7134 Z M15.281,40.9144 L24.121,40.9144 L24.121,24.0994 L15.281,24.0994 L15.281,40.9144 Z" id="Fill-11" fill="#0C1423"></path>
-                <path d="M8.84,39.7134 L15.281,39.7134 L15.281,25.2984 L8.84,25.2984 L8.84,39.7134 Z M7.64,40.9144 L16.48,40.9144 L16.48,24.0994 L7.64,24.0994 L7.64,40.9144 Z" id="Fill-12" fill="#0C1423"></path>
-                <path d="M0,40.9144 L8.84,40.9144 L8.84,24.0994 L0,24.0994 L0,40.9144 Z M1.199,39.7144 L7.641,39.7144 L7.641,25.2994 L1.199,25.2994 L1.199,39.7144 Z" id="Fill-13" fill="#0C1423"></path>
-                <polygon id="Fill-14" fill="#0C1423" points="27.386 32.6714 28.585 32.6714 28.585 29.0694 27.386 29.0694"></polygon>
-                <polygon id="Fill-15" fill="#0C1423" points="27.386 37.4984 28.585 37.4984 28.585 33.8954 27.386 33.8954"></polygon>
-                <polygon id="Fill-16" fill="#0C1423" points="27.386 21.8644 28.585 21.8644 28.585 18.2614 27.386 18.2614"></polygon>
-                <polygon id="Fill-17" fill="#0C1423" points="19.102 32.6714 20.301 32.6714 20.301 29.0694 19.102 29.0694"></polygon>
-                <polygon id="Fill-18" fill="#0C1423" points="19.102 37.4984 20.301 37.4984 20.301 33.8954 19.102 33.8954"></polygon>
-                <polygon id="Fill-19" fill="#0C1423" points="11.461 32.6714 12.66 32.6714 12.66 29.0694 11.461 29.0694"></polygon>
-                <polygon id="Fill-20" fill="#0C1423" points="11.461 37.4984 12.66 37.4984 12.66 33.8954 11.461 33.8954"></polygon>
-                <polygon id="Fill-21" fill="#0C1423" points="3.821 32.6714 5.02 32.6714 5.02 29.0694 3.821 29.0694"></polygon>
-                <polygon id="Fill-22" fill="#0C1423" points="3.821 37.4984 5.02 37.4984 5.02 33.8954 3.821 33.8954"></polygon>
-                <path d="M0,25.2994 L8.84,25.2994 L8.84,18.5164 L0,18.5164 L0,25.2994 Z M1.199,24.0994 L7.641,24.0994 L7.641,19.7154 L1.199,19.7154 L1.199,24.0994 Z" id="Fill-23" fill="#0C1423"></path>
-                <path d="M8.84,24.0994 L15.281,24.0994 L15.281,19.7164 L8.84,19.7164 L8.84,24.0994 Z M7.64,25.2994 L16.48,25.2994 L16.48,18.5154 L7.64,18.5154 L7.64,25.2994 Z" id="Fill-24" fill="#0C1423"></path>
-                <path d="M16.48,24.0994 L22.921,24.0994 L22.921,19.7164 L16.48,19.7164 L16.48,24.0994 Z M15.281,25.2994 L24.121,25.2994 L24.121,18.5154 L15.281,18.5154 L15.281,25.2994 Z" id="Fill-25" fill="#0C1423"></path>
-                <polygon id="Fill-26" fill="#0C1423" points="23.521 15.8974 32.449 15.8974 32.449 14.6974 23.521 14.6974"></polygon>
-                <path d="M45.021,24.0994 L52.75,24.0994 L52.75,11.0254 L45.021,11.0254 L45.021,24.0994 Z M43.822,25.2994 L53.949,25.2994 L53.949,9.8254 L43.822,9.8254 L43.822,25.2994 Z" id="Fill-27" fill="#0C1423"></path>
-                <path d="M45.021,39.7134 L52.75,39.7134 L52.75,25.2984 L45.021,25.2984 L45.021,39.7134 Z M43.822,40.9144 L53.949,40.9144 L53.949,24.0994 L43.822,24.0994 L43.822,40.9144 Z" id="Fill-28" fill="#0C1423"></path>
-                <path d="M53.949,39.7134 L60.39,39.7134 L60.39,25.2984 L53.949,25.2984 L53.949,39.7134 Z M52.75,40.9144 L61.59,40.9144 L61.59,24.0994 L52.75,24.0994 L52.75,40.9144 Z" id="Fill-29" fill="#0C1423"></path>
-                <path d="M61.59,39.7134 L68.031,39.7134 L68.031,25.2984 L61.59,25.2984 L61.59,39.7134 Z M60.39,40.9144 L69.23,40.9144 L69.23,24.0994 L60.39,24.0994 L60.39,40.9144 Z" id="Fill-30" fill="#0C1423"></path>
-                <path d="M69.23,39.7134 L75.671,39.7134 L75.671,25.2984 L69.23,25.2984 L69.23,39.7134 Z M68.031,40.9144 L76.871,40.9144 L76.871,24.0994 L68.031,24.0994 L68.031,40.9144 Z" id="Fill-31" fill="#0C1423"></path>
-                <polygon id="Fill-32" fill="#0C1423" points="48.286 32.6714 49.485 32.6714 49.485 29.0694 48.286 29.0694"></polygon>
-                <polygon id="Fill-33" fill="#0C1423" points="48.286 37.4984 49.485 37.4984 49.485 33.8954 48.286 33.8954"></polygon>
-                <polygon id="Fill-34" fill="#0C1423" points="48.286 21.8644 49.485 21.8644 49.485 18.2614 48.286 18.2614"></polygon>
-                <polygon id="Fill-35" fill="#0C1423" points="56.571 32.6714 57.77 32.6714 57.77 29.0694 56.571 29.0694"></polygon>
-                <polygon id="Fill-36" fill="#0C1423" points="56.571 37.4984 57.77 37.4984 57.77 33.8954 56.571 33.8954"></polygon>
-                <polygon id="Fill-37" fill="#0C1423" points="64.211 32.6714 65.41 32.6714 65.41 29.0694 64.211 29.0694"></polygon>
-                <polygon id="Fill-38" fill="#0C1423" points="64.211 37.4984 65.41 37.4984 65.41 33.8954 64.211 33.8954"></polygon>
-                <polygon id="Fill-39" fill="#0C1423" points="71.852 32.6714 73.051 32.6714 73.051 29.0694 71.852 29.0694"></polygon>
-                <polygon id="Fill-40" fill="#0C1423" points="71.852 37.4984 73.051 37.4984 73.051 33.8954 71.852 33.8954"></polygon>
-                <path d="M69.23,24.0994 L75.671,24.0994 L75.671,19.7164 L69.23,19.7164 L69.23,24.0994 Z M68.031,25.2994 L76.871,25.2994 L76.871,18.5154 L68.031,18.5154 L68.031,25.2994 Z" id="Fill-41" fill="#0C1423"></path>
-                <path d="M61.59,24.0994 L68.031,24.0994 L68.031,19.7164 L61.59,19.7164 L61.59,24.0994 Z M60.39,25.2994 L69.23,25.2994 L69.23,18.5154 L60.39,18.5154 L60.39,25.2994 Z" id="Fill-42" fill="#0C1423"></path>
-                <path d="M53.949,24.0994 L60.39,24.0994 L60.39,19.7164 L53.949,19.7164 L53.949,24.0994 Z M52.75,25.2994 L61.59,25.2994 L61.59,18.5154 L52.75,18.5154 L52.75,25.2994 Z" id="Fill-43" fill="#0C1423"></path>
-                <polygon id="Fill-44" fill="#0C1423" points="44.422 15.8974 53.35 15.8974 53.35 14.6974 44.422 14.6974"></polygon>
-                <polygon id="Fill-45" fill="#0C1423" points="32.449 15.8974 44.357 15.8974 44.357 14.6974 32.449 14.6974"></polygon>
-                <polygon id="Fill-46" fill="#0C1423" points="37.836 10.4254 39.035 10.4254 39.035 0.6004 37.836 0.6004"></polygon>
-                <path d="M37.836,4.8744 L45.022,4.8744 L45.022,0.0004 L37.836,0.0004 L37.836,4.8744 Z M39.035,3.6744 L43.822,3.6744 L43.822,1.2004 L39.035,1.2004 L39.035,3.6744 Z" id="Fill-47" fill="#0C1423"></path>
-                <path d="M36.1504,39.7139 L40.7284,39.7139 L40.7284,30.9069 C40.7284,29.6449 39.7014,28.6189 38.4394,28.6189 C37.1774,28.6189 36.1504,29.6449 36.1504,30.9069 L36.1504,39.7139 Z M41.9274,40.9139 L34.9514,40.9139 L34.9514,30.9069 C34.9514,28.9839 36.5154,27.4189 38.4394,27.4189 C40.3634,27.4189 41.9274,28.9839 41.9274,30.9069 L41.9274,40.9139 Z" id="Fill-48" fill="#0C1423"></path>
-            </g>
-        </g>
-    </g>
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="i-est">
+<rect width="110" height="110" fill="white"/>
+<g id="Group">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M61.422 45.7584H49.449H49.321H40.521V54.4484H32.881H25.24H17.599V60.0324V75.6474H25.24H32.881H40.521H49.449H52.552H58.328H61.422H70.35H77.99H85.631H93.271V54.4484H85.631H77.99H70.35V45.7584H61.422Z" fill="#FF483C"/>
+<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M55.436 39.6074H61.422V35.9334H55.436V39.6074Z" fill="#FF483C"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M47.92 57.0994H58.822V44.0254H47.92V57.0994ZM46.72 58.2994H60.021V42.8254H46.72V58.2994Z" fill="#303030"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M48.049 72.7134H58.822V58.2984H48.049V72.7134ZM46.849 73.9144H60.021V57.0994H46.849V73.9144Z" fill="#303030"/>
+<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd" d="M52.836 54.8644H54.035V51.2614H52.836V54.8644Z" fill="#303030"/>
+<path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd" d="M46.85 57.6994H48.049V43.4254H46.85V57.6994Z" fill="#303030"/>
+<path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd" d="M47.8281 48.7627L47.0701 47.8317L53.0571 42.9597L53.8141 43.8907L47.8281 48.7627Z" fill="#303030"/>
+<path id="Fill 8" fill-rule="evenodd" clip-rule="evenodd" d="M58.9785 48.7627L52.9925 43.8907L53.7495 42.9597L59.7365 47.8317L58.9785 48.7627Z" fill="#303030"/>
+<path id="Fill 9" fill-rule="evenodd" clip-rule="evenodd" d="M39.121 57.0994H46.85V44.0254H39.121V57.0994ZM37.922 58.2994H48.049V42.8254H37.922V58.2994Z" fill="#303030"/>
+<path id="Fill 10" fill-rule="evenodd" clip-rule="evenodd" d="M39.121 72.7134H46.85V58.2984H39.121V72.7134ZM37.922 73.9144H48.049V57.0994H37.922V73.9144Z" fill="#303030"/>
+<path id="Fill 11" fill-rule="evenodd" clip-rule="evenodd" d="M31.48 72.7134H37.921V58.2984H31.48V72.7134ZM30.281 73.9144H39.121V57.0994H30.281V73.9144Z" fill="#303030"/>
+<path id="Fill 12" fill-rule="evenodd" clip-rule="evenodd" d="M23.84 72.7134H30.281V58.2984H23.84V72.7134ZM22.64 73.9144H31.48V57.0994H22.64V73.9144Z" fill="#303030"/>
+<path id="Fill 13" fill-rule="evenodd" clip-rule="evenodd" d="M15 73.9144H23.84V57.0994H15V73.9144ZM16.199 72.7144H22.641V58.2994H16.199V72.7144Z" fill="#303030"/>
+<path id="Fill 14" fill-rule="evenodd" clip-rule="evenodd" d="M42.386 65.6714H43.585V62.0694H42.386V65.6714Z" fill="#303030"/>
+<path id="Fill 15" fill-rule="evenodd" clip-rule="evenodd" d="M42.386 70.4984H43.585V66.8954H42.386V70.4984Z" fill="#303030"/>
+<path id="Fill 16" fill-rule="evenodd" clip-rule="evenodd" d="M42.386 54.8644H43.585V51.2614H42.386V54.8644Z" fill="#303030"/>
+<path id="Fill 17" fill-rule="evenodd" clip-rule="evenodd" d="M34.102 65.6714H35.301V62.0694H34.102V65.6714Z" fill="#303030"/>
+<path id="Fill 18" fill-rule="evenodd" clip-rule="evenodd" d="M34.102 70.4984H35.301V66.8954H34.102V70.4984Z" fill="#303030"/>
+<path id="Fill 19" fill-rule="evenodd" clip-rule="evenodd" d="M26.461 65.6714H27.66V62.0694H26.461V65.6714Z" fill="#303030"/>
+<path id="Fill 20" fill-rule="evenodd" clip-rule="evenodd" d="M26.461 70.4984H27.66V66.8954H26.461V70.4984Z" fill="#303030"/>
+<path id="Fill 21" fill-rule="evenodd" clip-rule="evenodd" d="M18.821 65.6714H20.02V62.0694H18.821V65.6714Z" fill="#303030"/>
+<path id="Fill 22" fill-rule="evenodd" clip-rule="evenodd" d="M18.821 70.4984H20.02V66.8954H18.821V70.4984Z" fill="#303030"/>
+<path id="Fill 23" fill-rule="evenodd" clip-rule="evenodd" d="M15 58.2994H23.84V51.5164H15V58.2994ZM16.199 57.0994H22.641V52.7154H16.199V57.0994Z" fill="#303030"/>
+<path id="Fill 24" fill-rule="evenodd" clip-rule="evenodd" d="M23.84 57.0994H30.281V52.7164H23.84V57.0994ZM22.64 58.2994H31.48V51.5154H22.64V58.2994Z" fill="#303030"/>
+<path id="Fill 25" fill-rule="evenodd" clip-rule="evenodd" d="M31.48 57.0994H37.921V52.7164H31.48V57.0994ZM30.281 58.2994H39.121V51.5154H30.281V58.2994Z" fill="#303030"/>
+<path id="Fill 26" fill-rule="evenodd" clip-rule="evenodd" d="M38.521 48.8974H47.449V47.6974H38.521V48.8974Z" fill="#303030"/>
+<path id="Fill 27" fill-rule="evenodd" clip-rule="evenodd" d="M60.021 57.0994H67.75V44.0254H60.021V57.0994ZM58.822 58.2994H68.949V42.8254H58.822V58.2994Z" fill="#303030"/>
+<path id="Fill 28" fill-rule="evenodd" clip-rule="evenodd" d="M60.021 72.7134H67.75V58.2984H60.021V72.7134ZM58.822 73.9144H68.949V57.0994H58.822V73.9144Z" fill="#303030"/>
+<path id="Fill 29" fill-rule="evenodd" clip-rule="evenodd" d="M68.949 72.7134H75.39V58.2984H68.949V72.7134ZM67.75 73.9144H76.59V57.0994H67.75V73.9144Z" fill="#303030"/>
+<path id="Fill 30" fill-rule="evenodd" clip-rule="evenodd" d="M76.59 72.7134H83.031V58.2984H76.59V72.7134ZM75.39 73.9144H84.23V57.0994H75.39V73.9144Z" fill="#303030"/>
+<path id="Fill 31" fill-rule="evenodd" clip-rule="evenodd" d="M84.23 72.7134H90.671V58.2984H84.23V72.7134ZM83.031 73.9144H91.871V57.0994H83.031V73.9144Z" fill="#303030"/>
+<path id="Fill 32" fill-rule="evenodd" clip-rule="evenodd" d="M63.286 65.6714H64.485V62.0694H63.286V65.6714Z" fill="#303030"/>
+<path id="Fill 33" fill-rule="evenodd" clip-rule="evenodd" d="M63.286 70.4984H64.485V66.8954H63.286V70.4984Z" fill="#303030"/>
+<path id="Fill 34" fill-rule="evenodd" clip-rule="evenodd" d="M63.286 54.8644H64.485V51.2614H63.286V54.8644Z" fill="#303030"/>
+<path id="Fill 35" fill-rule="evenodd" clip-rule="evenodd" d="M71.571 65.6714H72.77V62.0694H71.571V65.6714Z" fill="#303030"/>
+<path id="Fill 36" fill-rule="evenodd" clip-rule="evenodd" d="M71.571 70.4984H72.77V66.8954H71.571V70.4984Z" fill="#303030"/>
+<path id="Fill 37" fill-rule="evenodd" clip-rule="evenodd" d="M79.211 65.6714H80.41V62.0694H79.211V65.6714Z" fill="#303030"/>
+<path id="Fill 38" fill-rule="evenodd" clip-rule="evenodd" d="M79.211 70.4984H80.41V66.8954H79.211V70.4984Z" fill="#303030"/>
+<path id="Fill 39" fill-rule="evenodd" clip-rule="evenodd" d="M86.852 65.6714H88.051V62.0694H86.852V65.6714Z" fill="#303030"/>
+<path id="Fill 40" fill-rule="evenodd" clip-rule="evenodd" d="M86.852 70.4984H88.051V66.8954H86.852V70.4984Z" fill="#303030"/>
+<path id="Fill 41" fill-rule="evenodd" clip-rule="evenodd" d="M84.23 57.0994H90.671V52.7164H84.23V57.0994ZM83.031 58.2994H91.871V51.5154H83.031V58.2994Z" fill="#303030"/>
+<path id="Fill 42" fill-rule="evenodd" clip-rule="evenodd" d="M76.59 57.0994H83.031V52.7164H76.59V57.0994ZM75.39 58.2994H84.23V51.5154H75.39V58.2994Z" fill="#303030"/>
+<path id="Fill 43" fill-rule="evenodd" clip-rule="evenodd" d="M68.949 57.0994H75.39V52.7164H68.949V57.0994ZM67.75 58.2994H76.59V51.5154H67.75V58.2994Z" fill="#303030"/>
+<path id="Fill 44" fill-rule="evenodd" clip-rule="evenodd" d="M59.422 48.8974H68.35V47.6974H59.422V48.8974Z" fill="#303030"/>
+<path id="Fill 45" fill-rule="evenodd" clip-rule="evenodd" d="M47.449 48.8974H59.357V47.6974H47.449V48.8974Z" fill="#303030"/>
+<path id="Fill 46" fill-rule="evenodd" clip-rule="evenodd" d="M52.836 43.4254H54.035V33.6004H52.836V43.4254Z" fill="#303030"/>
+<path id="Fill 47" fill-rule="evenodd" clip-rule="evenodd" d="M52.836 37.8744H60.022V33.0004H52.836V37.8744ZM54.035 36.6744H58.822V34.2004H54.035V36.6744Z" fill="#303030"/>
+<path id="Fill 48" fill-rule="evenodd" clip-rule="evenodd" d="M51.1504 72.7139H55.7284V63.9069C55.7284 62.6449 54.7014 61.6189 53.4394 61.6189C52.1774 61.6189 51.1504 62.6449 51.1504 63.9069V72.7139ZM56.9274 73.9139H49.9514V63.9069C49.9514 61.9839 51.5154 60.4189 53.4394 60.4189C55.3634 60.4189 56.9274 61.9839 56.9274 63.9069V73.9139Z" fill="#303030"/>
+</g>
+</g>
 </svg>

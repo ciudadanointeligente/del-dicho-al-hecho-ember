@@ -12,8 +12,8 @@ export default Ember.Helper.extend({
     let color4 = study.get("government").get("color4");
     let color3 = study.get("government").get("color3");
     if (params[2] === 'front') {
-          color4 = "#FFFFFF";
-          color3 = "#FFFFFF";
+          color4 = "#F7F7F7";
+          color3 = "#F7F7F7";
     }
     let data =  {
             labels: [],
