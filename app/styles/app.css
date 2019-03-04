@@ -5,8 +5,7 @@ body {
   color: #232323;
   background-color: #FFF;
   font-size: 1.4rem;
-  max-width: 100%;
-  overflow-x: hidden;}
+  max-width: 100%;}
 
 p {
   text-align: initial;
@@ -180,6 +179,7 @@ section{
 
 #welcome{
   margin-top: -20px;
+  overflow-x: hidden !important;
 }
 
 #que-es{
@@ -517,6 +517,9 @@ footer {
 
 
 @media (max-width: 991px) {
+#welcome {
+    overflow-x: hidden !important;}
+
   .label-coherencia{
     position: relative;
     top: -18px;}
