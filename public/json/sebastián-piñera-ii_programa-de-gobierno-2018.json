@@ -65,6 +65,12 @@
         "chekIsEmpty": "12043-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -85,7 +91,7 @@
     },
     {
       "type": "justification",
-      "id": 4609,
+      "id": 8223,
       "attributes": {
 
       },
@@ -200,6 +206,12 @@
         "chekIsEmpty": "12043-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -220,7 +232,7 @@
     },
     {
       "type": "justification",
-      "id": 3649,
+      "id": 931,
       "attributes": {
 
       },
@@ -304,6 +316,12 @@
         "chekIsEmpty": "11777-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -324,7 +342,7 @@
     },
     {
       "type": "justification",
-      "id": 774,
+      "id": 2134,
       "attributes": {
 
       },
@@ -408,6 +426,12 @@
         "chekIsEmpty": "12043-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -428,7 +452,7 @@
     },
     {
       "type": "justification",
-      "id": 4929,
+      "id": 9348,
       "attributes": {
 
       },
@@ -512,6 +536,12 @@
         "chekIsEmpty": "8466-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -532,7 +562,7 @@
     },
     {
       "type": "justification",
-      "id": 1630,
+      "id": 6704,
       "attributes": {
 
       },
@@ -595,7 +625,7 @@
       "attributes": {
         "content": "Crear un incentivo regional para atraer inversiones, en que los grandes proyectos aporten al desarrollo local en las comunas donde se emplacen",
         "number": "8",
-        "title": "",
+        "title": " Incentivo regional para atraer inversiones",
         "ja-why": ""
       },
       "relationships": {
@@ -647,6 +677,12 @@
         "chekIsEmpty": "12043-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -667,7 +703,7 @@
     },
     {
       "type": "justification",
-      "id": 6919,
+      "id": 3518,
       "attributes": {
 
       },
@@ -699,7 +735,7 @@
       "attributes": {
         "content": "Reestructurar y agilizar el Sistema de Evaluación Ambiental, a fin de lograr el desarrollo de procesos más expeditos, con altos estándares de calidad ambiental y en un marco de certeza jurídica para los titulares, la comunidad y los distintos servicios públicos que participan en la evaluación.",
         "number": "9",
-        "title": "",
+        "title": "Reestructurar el Sistema de Evaluación Ambiental",
         "ja-why": ""
       },
       "relationships": {
@@ -751,6 +787,12 @@
         "chekIsEmpty": "11952-12"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -771,7 +813,7 @@
     },
     {
       "type": "justification",
-      "id": 6661,
+      "id": 5256,
       "attributes": {
 
       },
@@ -803,7 +845,7 @@
       "attributes": {
         "content": "Modernizar las empresas públicas, dotándolas de un marco regulatorio moderno y común.",
         "number": "10",
-        "title": "",
+        "title": "Modernizar las empresas públicas",
         "ja-why": ""
       },
       "relationships": {
@@ -834,7 +876,7 @@
       "attributes": {
         "content": "Regular los mercados de economía colaborativa para facilitar la adecuada operación de sus plataformas.",
         "number": "11",
-        "title": "",
+        "title": "Regular los mercados de economía colaborativa",
         "ja-why": ""
       },
       "relationships": {
@@ -886,6 +928,12 @@
         "chekIsEmpty": "11934-15"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -906,7 +954,7 @@
     },
     {
       "type": "justification",
-      "id": 7524,
+      "id": 1415,
       "attributes": {
 
       },
@@ -938,7 +986,7 @@
       "attributes": {
         "content": "Hacer más eficaz la acción del SERNAC a favor de los consumidores, para que éstos puedan ejercer sus derechos, y asegurar la debida atención de los usuarios del sector público ampliando su rol a esta materia. Mejorar sus competencias y capacidades, con criterio conocidos, transparentes y objetivos.",
         "number": "12",
-        "title": "",
+        "title": "Hacer más eficaz al SERNAC",
         "ja-why": ""
       },
       "relationships": {
@@ -990,6 +1038,12 @@
         "chekIsEmpty": "9369-03"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1010,7 +1064,7 @@
     },
     {
       "type": "justification",
-      "id": 4826,
+      "id": 5812,
       "attributes": {
 
       },
@@ -1042,7 +1096,7 @@
       "attributes": {
         "content": "Crear un mecanismo para adaptar los contratos indefinidos a las condiciones cambiantes, sin costos excesivos y con respeto a los derechos del consumidor",
         "number": "13",
-        "title": "",
+        "title": "Adaptar los contratos indefinidos",
         "ja-why": ""
       },
       "relationships": {
@@ -1073,7 +1127,7 @@
       "attributes": {
         "content": "Modernizar la legislación en materia de jornada laboral, redefiniéndola en base a “hora” y permitiendo que el máximo semanal de 45 horas pueda ser distribuido en 4 días por acuerdo individual o colectivo.",
         "number": "14",
-        "title": "",
+        "title": "Modernizar la legislación en materia de jornada laboral",
         "ja-why": ""
       },
       "relationships": {
@@ -1104,7 +1158,7 @@
       "attributes": {
         "content": "Permitir que los trabajadores pacten con mayor libertad materias de jornada y horas extraordinarias, estableciendo límites máximos predefinidos para prevenir abusos.",
         "number": "15",
-        "title": "",
+        "title": "Mayor libertad para pactar jornada y horas extraordinarias.",
         "ja-why": ""
       },
       "relationships": {
@@ -1135,7 +1189,7 @@
       "attributes": {
         "content": "Modernizar la jornada parcial y permitir que las partes pacten bolsas de permisos para fines de cuidado familiar o actividades escolares, a ser compensados en los 30 días siguientes.",
         "number": "16",
-        "title": "",
+        "title": "Modernizar la jornada parcial",
         "ja-why": ""
       },
       "relationships": {
@@ -1166,7 +1220,7 @@
       "attributes": {
         "content": "Crear un contrato especial de trabajo a distancia que regule sus características.",
         "number": "17",
-        "title": "",
+        "title": "Regular el trabajo a distancia",
         "ja-why": ""
       },
       "relationships": {
@@ -1218,6 +1272,12 @@
         "chekIsEmpty": "12008-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1238,7 +1298,7 @@
     },
     {
       "type": "justification",
-      "id": 5994,
+      "id": 3751,
       "attributes": {
 
       },
@@ -1270,7 +1330,7 @@
       "attributes": {
         "content": "Ampliar progresivamente el feriado anual de 15 a 20 días hábiles, a ser compensados con la reducción de 3 feriados.",
         "number": "18",
-        "title": "",
+        "title": "Ampliar progresivamente el feriado anual",
         "ja-why": ""
       },
       "relationships": {
@@ -1301,7 +1361,7 @@
       "attributes": {
         "content": "Posibilitar, cuando sea pertinente y resguardando los derechos básicos de los trabajadores, los pactos individuales de adaptabilidad laboral.",
         "number": "19",
-        "title": "",
+        "title": "Posibilitar los pactos individuales de adaptabilidad laboral.",
         "ja-why": ""
       },
       "relationships": {
@@ -1332,7 +1392,7 @@
       "attributes": {
         "content": "Especificar procedimientos de negociación colectiva para grupos de negociadores fuera de los sindicatos.",
         "number": "20",
-        "title": "",
+        "title": "Procedimientos de negociación colectiva para grupos de negociadores fuera de los sindicatos",
         "ja-why": ""
       },
       "relationships": {
@@ -1363,7 +1423,7 @@
       "attributes": {
         "content": "Mejorar la definición legal de servicios mínimos en caso de huelga, a fin de garantizar el derecho al trabajo de personas no involucradas en la huelga.",
         "number": "21",
-        "title": "",
+        "title": "Mejorar la definición legal de servicios mínimos en caso de huelga",
         "ja-why": ""
       },
       "relationships": {
@@ -1394,7 +1454,7 @@
       "attributes": {
         "content": "Establecer el derecho a sala cuna universal para todas las madres trabajadoras con hijos menores de 2 años y padres trabajadores que tengan la tuición del hijo, a fin de favorecer el debido cuidado de los niños y la participación laboral de la mujer.",
         "number": "22",
-        "title": "",
+        "title": "Derecho a sala cuna universal ",
         "ja-why": ""
       },
       "relationships": {
@@ -1446,6 +1506,12 @@
         "chekIsEmpty": "12026-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1466,7 +1532,7 @@
     },
     {
       "type": "justification",
-      "id": 2378,
+      "id": 8963,
       "attributes": {
 
       },
@@ -1498,7 +1564,7 @@
       "attributes": {
         "content": "Crear un sistema de apoyo para los trabajadores por cuenta propia, que les permita tener oportunidades para acceder a mejores trabajos y mejores salarios.",
         "number": "23",
-        "title": "",
+        "title": "Crear un sistema de apoyo para los trabajadores por cuenta propia",
         "ja-why": ""
       },
       "relationships": {
@@ -1529,7 +1595,7 @@
       "attributes": {
         "content": "Modernizar la Dirección del Trabajo, estableciendo una clara división en los roles de fiscalización, multas, normativa, y conciliaciones y mediaciones, incorporando tecnologías modernas y reformulando los procesos de gestión estratégicos.",
         "number": "24",
-        "title": "",
+        "title": "Modernizar la Dirección del Trabajo",
         "ja-why": ""
       },
       "relationships": {
@@ -1560,7 +1626,7 @@
       "attributes": {
         "content": "Mejorar la oferta de programas y modificar la franquicia tributaria SENCE, de forma que dependa de la calidad y resultado de las capacitaciones y permita el acceso a los trabajadores por cuenta propia y mini pymes. Ampliar su cobertura a los adultos mayores y extender su aplicación a carreras de 2 años en Centros de Formación Técnica e Institutos Profesionales acreditados",
         "number": "25",
-        "title": "",
+        "title": "Modificar la franquicia tributaria SENCE",
         "ja-why": ""
       },
       "relationships": {
@@ -1591,7 +1657,7 @@
       "attributes": {
         "content": "Restablecer la certeza jurídica de la propiedad de los derechos de agua, de cualquier tipo, nuevos o antiguos",
         "number": "26",
-        "title": "",
+        "title": "Restablecer la certeza jurídica de los derechos de agua",
         "ja-why": ""
       },
       "relationships": {
@@ -1643,6 +1709,12 @@
         "chekIsEmpty": "7543-12"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1663,7 +1735,7 @@
     },
     {
       "type": "justification",
-      "id": 6600,
+      "id": 9440,
       "attributes": {
 
       },
@@ -1695,7 +1767,7 @@
       "attributes": {
         "content": "Incorporar medidas al Estatuto del Trabajador Agrícola que mejoren las condiciones laborales y ajusten las necesidades de trabajo a cada rubro",
         "number": "27",
-        "title": "",
+        "title": "Incorporar medidas al Estatuto del Trabajador Agrícola",
         "ja-why": ""
       },
       "relationships": {
@@ -1747,6 +1819,12 @@
         "chekIsEmpty": "11636-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1767,7 +1845,7 @@
     },
     {
       "type": "justification",
-      "id": 4737,
+      "id": 9431,
       "attributes": {
 
       },
@@ -1799,7 +1877,7 @@
       "attributes": {
         "content": "Impulsar una ley larga de puertos, que considere al sector alimentos como rubros sensibles,de forma de brindar seguridad en las exportaciones.",
         "number": "28",
-        "title": "",
+        "title": "Impulsar una ley larga de puertos",
         "ja-why": ""
       },
       "relationships": {
@@ -1830,7 +1908,7 @@
       "attributes": {
         "content": "Perfeccionar la ley de Muestra y Contramuestras y mejorar los sistemas de información a los agricultores.",
         "number": "29",
-        "title": "",
+        "title": "Perfeccionar la ley de Muestra y Contramuestras y mejorar los sistemas de información a los agricultores.",
         "ja-why": ""
       },
       "relationships": {
@@ -1861,7 +1939,7 @@
       "attributes": {
         "content": "Impulsar una modernización integral de la institucionalidad del sector, avanzando hacia un nuevo Ministerio de Agricultura, Alimentos y Recursos Naturales y la institucionalización de la Agencia de Control de Inocuidad de Alimentos.",
         "number": "30",
-        "title": "",
+        "title": "Nuevo Ministerio de Agricultura, Alimentos y Recursos Naturales",
         "ja-why": ""
       },
       "relationships": {
@@ -1892,7 +1970,7 @@
       "attributes": {
         "content": "Impulsar la Ley de Prevención y Control de Incendios Forestales e implementar un Plan de Reforestación para las hectáreas afectadas por los incendios del verano del 2017.",
         "number": "31",
-        "title": "",
+        "title": "Ley de Prevención y Control de Incendios Forestales",
         "ja-why": ""
       },
       "relationships": {
@@ -1923,7 +2001,7 @@
       "attributes": {
         "content": "Modernizar Conaf mediante la creación del nuevo Servicio Forestal como ente público.",
         "number": "32",
-        "title": "",
+        "title": "Creación del nuevo Servicio Forestal ",
         "ja-why": ""
       },
       "relationships": {
@@ -1975,6 +2053,12 @@
         "chekIsEmpty": "11175-01"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -1995,7 +2079,7 @@
     },
     {
       "type": "justification",
-      "id": 7787,
+      "id": 5779,
       "attributes": {
 
       },
@@ -2027,7 +2111,7 @@
       "attributes": {
         "content": "Impulsar un proyecto de ley que apoye a pequeños y medianos propietarios en la creación de bosques para fines ambientales y madereros.",
         "number": "33",
-        "title": "",
+        "title": "Impulsar ley para la creación de bosques para fines ambientales y madereros.",
         "ja-why": ""
       },
       "relationships": {
@@ -2058,7 +2142,7 @@
       "attributes": {
         "content": "Incentivar la exploración minera modernizando la regulación vigente.",
         "number": "34",
-        "title": "",
+        "title": "Incentivar la exploración minera",
         "ja-why": ""
       },
       "relationships": {
@@ -2089,7 +2173,7 @@
       "attributes": {
         "content": "Hacer una revisión integral de las normas de cierre de faenas e instalaciones que flexibilice los instrumentos de garantía, modifique el cálculo de vida útil y corrija vacíos legales e interpretativos.",
         "number": "35",
-        "title": "",
+        "title": "Revisión integral de las normas de cierre de faenas e instalaciones",
         "ja-why": ""
       },
       "relationships": {
@@ -2141,6 +2225,12 @@
         "chekIsEmpty": "12324-08"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2161,7 +2251,7 @@
     },
     {
       "type": "justification",
-      "id": 1271,
+      "id": 4571,
       "attributes": {
 
       },
@@ -2193,7 +2283,7 @@
       "attributes": {
         "content": "Actualizar el levantamiento de los permisos que requiere un proyecto minero a fin de simplificarlos y eliminar duplicidades de competencias entre servicio",
         "number": "36",
-        "title": "",
+        "title": "Simplificar permisos para proyectos mineros",
         "ja-why": ""
       },
       "relationships": {
@@ -2224,7 +2314,7 @@
       "attributes": {
         "content": "Reducir la discrecionalidad política en la revisión de proyectos de inversión y crear un procedimiento reglado y vinculante para consultas de pertinencia ambiental",
         "number": "37",
-        "title": "",
+        "title": "Reducir la discrecionalidad política en la revisión de proyectos de inversión",
         "ja-why": ""
       },
       "relationships": {
@@ -2276,6 +2366,12 @@
         "chekIsEmpty": "11747-03"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2296,7 +2392,7 @@
     },
     {
       "type": "justification",
-      "id": 9337,
+      "id": 4719,
       "attributes": {
 
       },
@@ -2328,7 +2424,7 @@
       "attributes": {
         "content": "Crear mecanismos de diálogo y solución temprana de conflictos entre empresas y comunidades, que mejore la confianza y dinamice los proyectos mineros y energéticos.",
         "number": "38",
-        "title": "",
+        "title": "Crear mecanismos de diálogo entre empresas y comunidades",
         "ja-why": ""
       },
       "relationships": {
@@ -2380,6 +2476,12 @@
         "chekIsEmpty": "11952-12"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2400,7 +2502,7 @@
     },
     {
       "type": "justification",
-      "id": 1880,
+      "id": 4577,
       "attributes": {
 
       },
@@ -2432,7 +2534,7 @@
       "attributes": {
         "content": "Desarrollar cambios normativos que faciliten la incorporación de la mujer al mundo laboral minero",
         "number": "40",
-        "title": "",
+        "title": "Facilitar la incorporación de la mujer al mundo laboral minero",
         "ja-why": ""
       },
       "relationships": {
@@ -2463,7 +2565,7 @@
       "attributes": {
         "content": "Modernizar el gobierno corporativo de ENAMI siguiendo los más altos estándares internacionales en la materia",
         "number": "41",
-        "title": "",
+        "title": "Modernizar el gobierno corporativo de ENAMI",
         "ja-why": ""
       },
       "relationships": {
@@ -2494,7 +2596,7 @@
       "attributes": {
         "content": "Reforzar el rol de COCHILCO y fortalecer al Ministerio de Minería.",
         "number": "42",
-        "title": "",
+        "title": "Reforzar el rol de COCHILCO y fortalecer al Ministerio de Minería.",
         "ja-why": ""
       },
       "relationships": {
@@ -2525,7 +2627,7 @@
       "attributes": {
         "content": "Profundizar la autonomía de Codelco, dándole mayor independencia a su gobierno corporativo respecto de los cambios de gobierno y dotándolo de mayores herramientas para gestionar con eficiencia la actual diversidad y complejidad de la Corporación",
         "number": "43",
-        "title": "",
+        "title": "Profundizar la autonomía de Codelco",
         "ja-why": ""
       },
       "relationships": {
@@ -2556,7 +2658,7 @@
       "attributes": {
         "content": "Fortalecer los derechos de pesca para el sector artesanal",
         "number": "45",
-        "title": "",
+        "title": "Fortalecer los derechos de pesca",
         "ja-why": ""
       },
       "relationships": {
@@ -2587,7 +2689,7 @@
       "attributes": {
         "content": "Facilitar la transferencia de los derechos de pesca",
         "number": "46",
-        "title": "",
+        "title": "Facilitar la transferencia de los derechos de pesca",
         "ja-why": ""
       },
       "relationships": {
@@ -2639,6 +2741,12 @@
         "chekIsEmpty": "11704-21"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2659,7 +2767,7 @@
     },
     {
       "type": "justification",
-      "id": 9765,
+      "id": 914,
       "attributes": {
 
       },
@@ -2691,7 +2799,7 @@
       "attributes": {
         "content": "Simplificar las figuras de reemplazo de inscripción de pescadores y sustitución de embarcaciones artesanales",
         "number": "47",
-        "title": "",
+        "title": "Simplificar las figuras de reemplazo de inscripción de pescadores y sustitución de embarcaciones artesanales",
         "ja-why": ""
       },
       "relationships": {
@@ -2722,7 +2830,7 @@
       "attributes": {
         "content": "Dar fortaleza jurídica y transparencia a las inscripciones en los Registros Pesqueros Artesanales. ",
         "number": "48",
-        "title": "",
+        "title": "Dar fortaleza jurídica y transparencia a las inscripciones en los Registros Pesqueros Artesanales.",
         "ja-why": ""
       },
       "relationships": {
@@ -2753,7 +2861,7 @@
       "attributes": {
         "content": "Evaluar y perfeccionar el marco jurídico del sector industrial, ampliando el porcentaje de licitación de la cuota pesquera y revisando la condición de renovación indefinida de la titularidad de las cuotas asignadas sin licitación, respetando los derechos ya asignados. ",
         "number": "49",
-        "title": "",
+        "title": "Ampliar el porcentaje de licitación de la cuota pesquera y revisar la renovación indefinida de las cuotas asignadas sin licitación",
         "ja-why": ""
       },
       "relationships": {
@@ -2805,6 +2913,12 @@
         "chekIsEmpty": "11704-21"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2825,7 +2939,7 @@
     },
     {
       "type": "justification",
-      "id": 478,
+      "id": 5750,
       "attributes": {
 
       },
@@ -2857,7 +2971,7 @@
       "attributes": {
         "content": "Implementar regulación que promueva la sustentabilidad y competitividad del sector (pesca), generando certeza sobre el potencial productivo de las empresas, condicionando la vigencia de los plazos de caducidad a las resoluciones de relocalizaciones y permitiendo agrupar la producción y traspasar la capacidad productiva.",
         "number": "50",
-        "title": "",
+        "title": "Implementar regulación que promueva la sustentabilidad y competitividad del sector pesca",
         "ja-why": ""
       },
       "relationships": {
@@ -2909,6 +3023,12 @@
         "chekIsEmpty": "11317-21"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -2929,7 +3049,7 @@
     },
     {
       "type": "justification",
-      "id": 1649,
+      "id": 6068,
       "attributes": {
 
       },
@@ -2961,7 +3081,7 @@
       "attributes": {
         "content": "Fortalecer la institucionalidad sectorial, modernizando la subsecretaria y mejorando la capacidad fiscalizadora de Sernapesca. ",
         "number": "51",
-        "title": "",
+        "title": "Modernizar  Sernapesca",
         "ja-why": ""
       },
       "relationships": {
@@ -3013,6 +3133,12 @@
         "chekIsEmpty": "10482-21"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3033,7 +3159,7 @@
     },
     {
       "type": "justification",
-      "id": 3400,
+      "id": 9320,
       "attributes": {
 
       },
@@ -3065,7 +3191,7 @@
       "attributes": {
         "content": "Fortalecer la institucionalidad del sector (energía) potenciando la autonomía de los entes técnicos y eliminando la discrecionalidad en la toma de decisiones",
         "number": "52",
-        "title": "",
+        "title": "Fortalecer la institucionalidad del sector energía",
         "ja-why": ""
       },
       "relationships": {
@@ -3096,7 +3222,7 @@
       "attributes": {
         "content": "Perfeccionar la Ley General de Servicios Eléctricos , de forma de simplificar la modificación de líneas existentes, agilizar los procedimientos para obtener concesiones y facilitar el acceso a los predios para efectos de la construcción y mantenimiento de la infraestructura.",
         "number": "53",
-        "title": "",
+        "title": "Perfeccionar la Ley General de Servicios Eléctricos",
         "ja-why": ""
       },
       "relationships": {
@@ -3127,7 +3253,7 @@
       "attributes": {
         "content": "Revisar y modernizar la regulación del segmento distribución, con el objeto de lograr mejores niveles de calidad y seguridad de suministro (Energía). Para ello se contempla: o Elevar los estándares de calidad y seguridad del servicio de distribución creando mecanismos de prevención con un adecuado sistema de seguimiento, fiscalización y comunicación hacia los usuarios finales.",
         "number": "54",
-        "title": "",
+        "title": "Modernizar la regulación de la distribución de Energia ",
         "ja-why": ""
       },
       "relationships": {
@@ -3210,6 +3336,12 @@
         "chekIsEmpty": "8999-08"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3230,7 +3362,7 @@
     },
     {
       "type": "justification",
-      "id": 2458,
+      "id": 4840,
       "attributes": {
 
       },
@@ -3262,7 +3394,7 @@
       "attributes": {
         "content": "Reactivar y actualizar el Plan de Eficiencia Energética 2020, incluyendo el fomento de los sistemas de gestión y cogeneración de energía, el establecimiento de estándares mínimos, la ampliación del etiquetado a otros segmentos domésticos e industriales, la modernización de la normativa de construcción, entre otras medidas.",
         "number": "56",
-        "title": "",
+        "title": "Reactivar y actualizar el Plan de Eficiencia Energética 2020",
         "ja-why": ""
       },
       "relationships": {
@@ -3314,6 +3446,12 @@
         "chekIsEmpty": "12058-08"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3334,7 +3472,7 @@
     },
     {
       "type": "justification",
-      "id": 8222,
+      "id": 4933,
       "attributes": {
 
       },
@@ -3397,7 +3535,7 @@
       "attributes": {
         "content": "Actualizar y modernizar el modelo de administración de Parques Nacionales, avanzando en la creación del Servicio de Biodiversidad y Áreas Protegidas.",
         "number": "58",
-        "title": "",
+        "title": "Crear el Servicio de Biodiversidad y Áreas Protegidas",
         "ja-why": ""
       },
       "relationships": {
@@ -3449,6 +3587,12 @@
         "chekIsEmpty": "9404-12"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3469,7 +3613,7 @@
     },
     {
       "type": "justification",
-      "id": 5394,
+      "id": 7700,
       "attributes": {
 
       },
@@ -3553,6 +3697,12 @@
         "chekIsEmpty": "9170-23"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3573,7 +3723,7 @@
     },
     {
       "type": "justification",
-      "id": 8655,
+      "id": 1192,
       "attributes": {
 
       },
@@ -3605,7 +3755,7 @@
       "attributes": {
         "content": "Revisar las tasas aeroportuarias y la regulación de la recalada de cruceros.",
         "number": "60",
-        "title": "",
+        "title": "Revisar las tasas aeroportuarias y la recalada de cruceros",
         "ja-why": ""
       },
       "relationships": {
@@ -3657,6 +3807,12 @@
         "chekIsEmpty": "9656-15"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3677,7 +3833,7 @@
     },
     {
       "type": "justification",
-      "id": 9823,
+      "id": 4540,
       "attributes": {
 
       },
@@ -3709,7 +3865,7 @@
       "attributes": {
         "content": "Activar incentivos tributarios a la inversión turística en zonas aisladas",
         "number": "61",
-        "title": "",
+        "title": "Incentivos tributarios a la inversión turística en zonas aisladas",
         "ja-why": ""
       },
       "relationships": {
@@ -3740,7 +3896,7 @@
       "attributes": {
         "content": "Eliminar barreras y simplificar la obtención de permisos municipales para poder acceder a bienes públicos que permitan desplegar fibra óptica y construir antenas para la telefonía móvil",
         "number": "62",
-        "title": "",
+        "title": "Simplificacion de permisos municipales",
         "ja-why": ""
       },
       "relationships": {
@@ -3771,7 +3927,7 @@
       "attributes": {
         "content": "Crear una subvención regular y preferencial que permita a todas las familias elegir un jardín infantil de calidad para sus hijos, a partir de los 2 años de edad. ",
         "number": "63",
-        "title": "",
+        "title": "Subvención para la educación parvularia",
         "ja-why": ""
       },
       "relationships": {
@@ -3802,7 +3958,7 @@
       "attributes": {
         "content": "Crear una subvención diferenciada para niños con necesidades especiales.",
         "number": "64",
-        "title": "",
+        "title": "Subvención para niños con necesidades especiales",
         "ja-why": ""
       },
       "relationships": {
@@ -3864,7 +4020,7 @@
       "attributes": {
         "content": "Restablecer el mérito con criterios de inclusión en el acceso a los\nliceos emblemáticos y proyectos especiales de excelencia, por razones\nacadémicas, artísticas y deportivas. En el resto de los establecimientos\npermitir criterios de admisión de hasta un 30% de la matrícula en\nfavor de alumnos vulnerables, migrantes o de criterios adicionales de\npriorización acordes a los respectivos proyectos educativos, los cuales\ntendrán que ser siempre objetivos, transparentes y no podrán significar\ndiscriminaciones arbitrarias.",
         "number": "66",
-        "title": "",
+        "title": "Restablecer criterios de mérito y justicia en la Admisión Escolar",
         "ja-why": ""
       },
       "relationships": {
@@ -3916,6 +4072,12 @@
         "chekIsEmpty": "12377-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -3936,7 +4098,7 @@
     },
     {
       "type": "justification",
-      "id": 2710,
+      "id": 9180,
       "attributes": {
 
       },
@@ -4061,7 +4223,7 @@
       "attributes": {
         "content": "Se perfeccionará la conformación del Consejo Nacional de Acreditación y ésta podrá asociarse a áreas disciplinarias.",
         "number": "70",
-        "title": "",
+        "title": "Perfeccionamiento de la conformación del Consejo Nacional de Acreditación",
         "ja-why": ""
       },
       "relationships": {
@@ -4113,6 +4275,12 @@
         "chekIsEmpty": "10783-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4133,7 +4301,7 @@
     },
     {
       "type": "justification",
-      "id": 4335,
+      "id": 8110,
       "attributes": {
 
       },
@@ -4165,7 +4333,7 @@
       "attributes": {
         "content": "Crear un Sistema Solidario de Acceso a la Educación Superior que evite que las razones económicas impidan estudiar, termine con las discriminaciones arbitrarias, asegure la igualdad de trato y resguarde la sustentabilidad y autonomía de las instituciones de educación.",
         "number": "71",
-        "title": "",
+        "title": "Sistema Solidario de Acceso a la Educación Superior",
         "ja-why": ""
       },
       "relationships": {
@@ -4217,6 +4385,12 @@
         "chekIsEmpty": "11822-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4237,7 +4411,7 @@
     },
     {
       "type": "justification",
-      "id": 6962,
+      "id": 5188,
       "attributes": {
 
       },
@@ -4321,6 +4495,12 @@
         "chekIsEmpty": "11616-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4341,7 +4521,7 @@
     },
     {
       "type": "justification",
-      "id": 1347,
+      "id": 4820,
       "attributes": {
 
       },
@@ -4373,7 +4553,7 @@
       "attributes": {
         "content": "Crear el Ministerio de Educación Superior, Ciencia, Tecnología e Innovación y la Superintendencia de Educación Superior, que fiscalice el cumplimiento de la legislación, asegure que las instituciones mantengan los requisitos de su reconocimiento oficial, sean viables y tengan un sistema de información transparente que impida la publicidad engañosa.",
         "number": "73",
-        "title": "",
+        "title": "Crear el Ministerio de Educación Superior, Ciencia, Tecnología e Innovación y la Superintendencia de Educación Superior",
         "ja-why": ""
       },
       "relationships": {
@@ -4425,6 +4605,12 @@
         "chekIsEmpty": "10783-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4445,7 +4631,7 @@
     },
     {
       "type": "justification",
-      "id": 6852,
+      "id": 1550,
       "attributes": {
 
       },
@@ -4477,7 +4663,7 @@
       "attributes": {
         "content": "Reordenar la institucionalidad gubernamental por medio de un nuevo ministerio a cargo de las actividades de ciencia, educación superior, tecnología e innovación y revisar los campos de acción y programas de agencias como CONICYT y CORFO",
         "number": "74",
-        "title": "",
+        "title": "Nuevo Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
         "ja-why": ""
       },
       "relationships": {
@@ -4529,6 +4715,12 @@
         "chekIsEmpty": "11101-19"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4549,7 +4741,7 @@
     },
     {
       "type": "justification",
-      "id": 940,
+      "id": 3998,
       "attributes": {
 
       },
@@ -4581,7 +4773,7 @@
       "attributes": {
         "content": "Apoyar el desarrollo de la industria de la información con planes de formación y eliminando distorsiones tributarias como el IVA a la exportación de servicios y el impuesto a la importación de software",
         "number": "75",
-        "title": "",
+        "title": "Apoyo al desarrollo de la industria de la información",
         "ja-why": ""
       },
       "relationships": {
@@ -4633,6 +4825,12 @@
         "chekIsEmpty": "12043-05"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4653,7 +4851,7 @@
     },
     {
       "type": "justification",
-      "id": 8744,
+      "id": 2582,
       "attributes": {
 
       },
@@ -4737,6 +4935,12 @@
         "chekIsEmpty": "11882-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4757,7 +4961,7 @@
     },
     {
       "type": "justification",
-      "id": 3203,
+      "id": 5806,
       "attributes": {
 
       },
@@ -4789,7 +4993,7 @@
       "attributes": {
         "content": "Complementar el Estatuto Pyme con un Estatuto para Emprendedores, que facilite el inicio de nuevos negocios disminuyendo las trabas y la carga regulatoria.",
         "number": "77",
-        "title": "",
+        "title": "Estatuto para Emprendedores",
         "ja-why": ""
       },
       "relationships": {
@@ -4820,7 +5024,7 @@
       "attributes": {
         "content": "Adaptar la ley de incentivo tributario a I+D para facilitar su uso por parte de empresas de menor tamaño y nuevos emprendimientos, incorporando mecanismos de prefinanciamiento.",
         "number": "78",
-        "title": "",
+        "title": "Adaptar la ley de incentivo tributario a I+D",
         "ja-why": ""
       },
       "relationships": {
@@ -4851,7 +5055,7 @@
       "attributes": {
         "content": "Dotar de autonomía a la Comisión Nacional de Productividad, con mandato para pronunciarse sobre los efectos sobre la productividad de las reformas y cambios regulatorios relevantes.",
         "number": "79",
-        "title": "",
+        "title": "Dotar de autonomía a la Comisión Nacional de Productividad",
         "ja-why": ""
       },
       "relationships": {
@@ -4882,7 +5086,7 @@
       "attributes": {
         "content": "Nuevo Ministerio de la Familia y Desarrollo Social",
         "number": "80",
-        "title": "",
+        "title": "Nuevo Ministerio de la Familia y Desarrollo Social",
         "ja-why": ""
       },
       "relationships": {
@@ -4934,6 +5138,12 @@
         "chekIsEmpty": "11951-31"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -4954,7 +5164,7 @@
     },
     {
       "type": "justification",
-      "id": 5223,
+      "id": 5948,
       "attributes": {
 
       },
@@ -4986,7 +5196,7 @@
       "attributes": {
         "content": "Se creará la Subsecretaría de Familia, cuya misión fundamental será desarrollar las políticas sociales para fortalecer a las familias y, simultáneamente, brindar un nuevo trato a nuestros niños y adultos mayores.",
         "number": "81",
-        "title": "",
+        "title": "Creacion de la Subsecretaría de Familia",
         "ja-why": ""
       },
       "relationships": {
@@ -5048,7 +5258,7 @@
       "attributes": {
         "content": "Se perfeccionarán los ejes “Seguridades” y “Oportunidades” del Ingreso Ético Familiar centrando en la familia el apoyo ante situaciones de vulnerabilidad",
         "number": "83",
-        "title": "",
+        "title": "Perfeccionamiento de los ejes “Seguridades” y “Oportunidades” del Ingreso Ético Familiar",
         "ja-why": ""
       },
       "relationships": {
@@ -5079,7 +5289,7 @@
       "attributes": {
         "content": "Crear por ley el Estatuto de Fortalecimiento y Protección para la Familia estableciendo principios, derechos y garantías básicas para la familia y su reconocimiento como sujeto político prioritario por parte del Estado.",
         "number": "84",
-        "title": "",
+        "title": "Crear el Estatuto de Fortalecimiento y Protección para la Familia",
         "ja-why": ""
       },
       "relationships": {
@@ -5110,7 +5320,7 @@
       "attributes": {
         "content": "Impulsar una ley marco que proteja la maternidad, en especial los programas de acompañamiento de embarazos vulnerables, permitiendo además la libre elección y la participación de la sociedad civil, y ampliar el acceso a la atención a mujeres y sus parejas en edad fértil con diagnóstico de infertilidad",
         "number": "85",
-        "title": "",
+        "title": "Impulsar ley marco que proteja la maternidad",
         "ja-why": ""
       },
       "relationships": {
@@ -5141,7 +5351,7 @@
       "attributes": {
         "content": "Crear dentro de la nueva subsecretaría (de la Familia) el Servicio de Protección a la Infancia, incorporándolo a la Alta Dirección Pública, y perfeccionar los proyectos vinculados al sistema de garantías de la infancia.",
         "number": "86",
-        "title": "",
+        "title": "Crear el Servicio de Protección a la Infancia",
         "ja-why": ""
       },
       "relationships": {
@@ -5193,6 +5403,12 @@
         "chekIsEmpty": "12027-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5213,7 +5429,7 @@
     },
     {
       "type": "justification",
-      "id": 7479,
+      "id": 183,
       "attributes": {
 
       },
@@ -5276,7 +5492,7 @@
       "attributes": {
         "content": "Modificar la Ley de Adopciones para que cuando no sea posible que el niño vuelva con su familia, buscar la mejor familia adoptiva en función de su interés superior, asegurando un proceso rápido amparado en una nueva y moderna regulación.",
         "number": "88",
-        "title": "",
+        "title": "Modificar la Ley de Adopciones",
         "ja-why": ""
       },
       "relationships": {
@@ -5328,6 +5544,12 @@
         "chekIsEmpty": "9119-18"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5348,7 +5570,7 @@
     },
     {
       "type": "justification",
-      "id": 9242,
+      "id": 1968,
       "attributes": {
 
       },
@@ -5380,7 +5602,7 @@
       "attributes": {
         "content": "Mejorar sustancialmente el sistema residencial aumentando gradualmente la subvención base al doble de lo que se entrega actualmente, determinando nuevos estándares de calidad y licitando nuevos proyectos.",
         "number": "89",
-        "title": "",
+        "title": "Mejorar el sistema residencial",
         "ja-why": ""
       },
       "relationships": {
@@ -5432,6 +5654,12 @@
         "chekIsEmpty": "11657-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5452,7 +5680,7 @@
     },
     {
       "type": "justification",
-      "id": 8045,
+      "id": 8333,
       "attributes": {
 
       },
@@ -5536,6 +5764,12 @@
         "chekIsEmpty": "6956-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5556,7 +5790,7 @@
     },
     {
       "type": "justification",
-      "id": 76,
+      "id": 5486,
       "attributes": {
 
       },
@@ -5588,7 +5822,7 @@
       "attributes": {
         "content": "Revisar la legislación con el propósito de sancionar las nuevas formas de violencia ejercida contra la infancia a través de las redes sociales e internet.",
         "number": "91",
-        "title": "",
+        "title": "Sancionar la violencia contra la infancia a través de las redes sociales e internet.",
         "ja-why": ""
       },
       "relationships": {
@@ -5640,6 +5874,12 @@
         "chekIsEmpty": "12022-04"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5660,7 +5900,7 @@
     },
     {
       "type": "justification",
-      "id": 4784,
+      "id": 498,
       "attributes": {
 
       },
@@ -5692,7 +5932,7 @@
       "attributes": {
         "content": "Crear el Servicio de Acción Joven dentro del Ministerio de la Familia y Desarrollo Social. Este organismo reemplazará al Injuv y tendrá dos funciones principales: acción y participación, centrándose en promover el voluntariado, y reconocimiento de las preocupaciones de los jóvenes en las políticas públicas.",
         "number": "92",
-        "title": "",
+        "title": "Crear el Servicio de Acción Joven",
         "ja-why": ""
       },
       "relationships": {
@@ -5723,7 +5963,7 @@
       "attributes": {
         "content": " Como parte del ingreso etico familiar 2.0 y 'A fin de fomentar la participación laboral formal de las mujeres con hijos, el monto del Bono Trabajo Mujer mejorará, entregando un mayor aporte dependiendo del grado de vulnerabilidad y del tamaño de la familia'.",
         "number": "93",
-        "title": "",
+        "title": "Mejorar el monto del Bono Trabajo Mujer ",
         "ja-why": ""
       },
       "relationships": {
@@ -5754,7 +5994,7 @@
       "attributes": {
         "content": " Como parte del ingreso etico familiar 2.0  se 'Implementara una transferencia condicionada por controles de salud de la mujer que permita prevenir el cáncer cérvicouterino y de mamas.",
         "number": "94",
-        "title": "",
+        "title": "Transferencia condicionada por controles de salud de la mujer",
         "ja-why": ""
       },
       "relationships": {
@@ -5785,7 +6025,7 @@
       "attributes": {
         "content": "Como parte del ingreso etico familiar 2.0  se 'Implementara una transferencia condicionada por examen preventivo de salud del adulto mayor'.",
         "number": "95",
-        "title": "",
+        "title": "Transferencia condicionada por examen preventivo de salud del adulto mayor",
         "ja-why": ""
       },
       "relationships": {
@@ -5816,7 +6056,7 @@
       "attributes": {
         "content": "Garantía de tope de gasto por parte de las familias ante un evento catastrófico en salud de carácter no ambulatorio.",
         "number": "96",
-        "title": "",
+        "title": "Garantía de tope de gasto en salud por evento catastrófico",
         "ja-why": ""
       },
       "relationships": {
@@ -5847,7 +6087,7 @@
       "attributes": {
         "content": "Crear el seguro Protección para Enfermedades Catastróficas para los afiliados a FONASA, disponible tanto para la red pública como la para la red privada de prestadores preferentes.",
         "number": "97",
-        "title": "",
+        "title": "Crear el seguro Protección para Enfermedades Catastróficas",
         "ja-why": ""
       },
       "relationships": {
@@ -5878,7 +6118,7 @@
       "attributes": {
         "content": "Nueva Defensoría de Víctimas de la Delincuencia, para que las familias que sean víctimas de delitos violentos sean atendidas por un abogado defensor, el que podrá activar un proceso judicial para perseguir a quienes resulten responsables.",
         "number": "98",
-        "title": "",
+        "title": "Nueva Defensoría de Víctimas de la Delincuencia",
         "ja-why": ""
       },
       "relationships": {
@@ -5909,7 +6149,7 @@
       "attributes": {
         "content": "Mejorar beneficios en el Pilar Solidario, diferenciados por edad.",
         "number": "99",
-        "title": "",
+        "title": "Mejoras en el Pilar Solidario, diferenciados por edad",
         "ja-why": ""
       },
       "relationships": {
@@ -5961,6 +6201,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -5981,7 +6227,7 @@
     },
     {
       "type": "justification",
-      "id": 9666,
+      "id": 5430,
       "attributes": {
 
       },
@@ -6013,7 +6259,7 @@
       "attributes": {
         "content": "Aumentar las cotizaciones (obligatorias) en cuatro puntos porcentuales, con cargo al empleador, para mejorar las pensiones en el largo plazo.",
         "number": "100",
-        "title": "",
+        "title": "Aumento de las cotizaciones obligatorias",
         "ja-why": ""
       },
       "relationships": {
@@ -6065,6 +6311,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6085,7 +6337,7 @@
     },
     {
       "type": "justification",
-      "id": 5814,
+      "id": 6610,
       "attributes": {
 
       },
@@ -6117,7 +6369,7 @@
       "attributes": {
         "content": "Implementar gradualmente un seguro social de dependencia para personas mayores que requieran ayuda de terceros, incluyendo un mecanismo de apoyo para los cuidadores familiares y formales.",
         "number": "101",
-        "title": "",
+        "title": "Implementar un seguro social de dependencia para personas mayores",
         "ja-why": ""
       },
       "relationships": {
@@ -6169,6 +6421,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6189,7 +6447,7 @@
     },
     {
       "type": "justification",
-      "id": 5570,
+      "id": 9351,
       "attributes": {
 
       },
@@ -6221,7 +6479,7 @@
       "attributes": {
         "content": "Crear un Defensor Mayor en el SENAMA",
         "number": "102",
-        "title": "",
+        "title": "Crear un Defensor Mayor en el SENAMA",
         "ja-why": ""
       },
       "relationships": {
@@ -6273,6 +6531,12 @@
         "chekIsEmpty": "7507-18"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6293,7 +6557,7 @@
     },
     {
       "type": "justification",
-      "id": 127,
+      "id": 4936,
       "attributes": {
 
       },
@@ -6325,7 +6589,7 @@
       "attributes": {
         "content": "Mejorar las pensiones de los adultos mayores más vulnerables, incrementando los aportes fiscales al Pilar Solidario en un 42%, para aumentar la Pensión Básica y el Aporte Previsional Solidario, extendiendo su cobertura hacia la clase media. El objetivo es incrementar significativamente estos beneficios, cuyo monto además irá aumentando con la edad",
         "number": "103",
-        "title": "",
+        "title": "Mejorar las pensiones de los adultos mayores",
         "ja-why": ""
       },
       "relationships": {
@@ -6377,6 +6641,12 @@
         "chekIsEmpty": "12212-12"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6397,7 +6667,7 @@
     },
     {
       "type": "justification",
-      "id": 6600,
+      "id": 4847,
       "attributes": {
 
       },
@@ -6429,7 +6699,7 @@
       "attributes": {
         "content": "Aumentar las pensiones de la clase media con un complemento de sus pensiones con cargo fiscal para quienes hayan cotizado más de 20 años, el que aumentará cuando se postergue la edad de jubilación. ",
         "number": "104",
-        "title": "",
+        "title": "Aumentar las pensiones de la clase media",
         "ja-why": ""
       },
       "relationships": {
@@ -6481,6 +6751,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6501,7 +6777,7 @@
     },
     {
       "type": "justification",
-      "id": 8472,
+      "id": 5170,
       "attributes": {
 
       },
@@ -6533,7 +6809,7 @@
       "attributes": {
         "content": "Aumentar las pensiones de las mujeres con un complemento de sus pensiones con cargo fiscal para quienes hayan cotizado más de 16 años, el que también aumentará cuando se postergue la edad de jubilación. También se aumentará la rentabilidad del Bono por Hijo en el caso de los nacidos antes de julio de 2009.",
         "number": "105",
-        "title": "",
+        "title": "Aumentar las pensiones de las mujeres",
         "ja-why": ""
       },
       "relationships": {
@@ -6585,6 +6861,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6605,7 +6887,7 @@
     },
     {
       "type": "justification",
-      "id": 437,
+      "id": 620,
       "attributes": {
 
       },
@@ -6689,6 +6971,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6709,7 +6997,7 @@
     },
     {
       "type": "justification",
-      "id": 6829,
+      "id": 1153,
       "attributes": {
 
       },
@@ -6741,7 +7029,7 @@
       "attributes": {
         "content": "Crear nuevos incentivos para los planes de ahorro previsional voluntario",
         "number": "107",
-        "title": "",
+        "title": "Crear incentivos para los planes de ahorro previsional voluntario",
         "ja-why": ""
       },
       "relationships": {
@@ -6793,6 +7081,12 @@
         "chekIsEmpty": "12212-14"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6813,7 +7107,7 @@
     },
     {
       "type": "justification",
-      "id": 3008,
+      "id": 2083,
       "attributes": {
 
       },
@@ -6845,7 +7139,7 @@
       "attributes": {
         "content": "Autorizar el retiro de un monto de libre disposición a quienes posterguen la edad de jubilación equivalente al 50% del mayor ahorro logrado fruto de dicha decisión.",
         "number": "108",
-        "title": "",
+        "title": "Autorizar el retiro de un monto de libre disposición",
         "ja-why": ""
       },
       "relationships": {
@@ -6897,6 +7191,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -6917,7 +7217,7 @@
     },
     {
       "type": "justification",
-      "id": 725,
+      "id": 5373,
       "attributes": {
 
       },
@@ -6949,7 +7249,7 @@
       "attributes": {
         "content": " Levantando las restricciones al cambio de fondo (de pensiones)",
         "number": "109",
-        "title": "",
+        "title": "Levantar las restricciones al cambio de fondo de pensiones",
         "ja-why": ""
       },
       "relationships": {
@@ -7001,6 +7301,12 @@
         "chekIsEmpty": "12212-14"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7021,7 +7327,7 @@
     },
     {
       "type": "justification",
-      "id": 471,
+      "id": 5436,
       "attributes": {
 
       },
@@ -7053,7 +7359,7 @@
       "attributes": {
         "content": "Reimpulsar el proyecto que modifica el régimen de sociedad conyugal permitiendo a la mujer administrar la sociedad y/o sus bienes propios. ",
         "number": "110",
-        "title": "",
+        "title": "Permitir a la mujer administrar la sociedad conyugal y/o sus bienes propios",
         "ja-why": ""
       },
       "relationships": {
@@ -7105,6 +7411,12 @@
         "chekIsEmpty": "7727-18"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7125,7 +7437,7 @@
     },
     {
       "type": "justification",
-      "id": 6733,
+      "id": 4012,
       "attributes": {
 
       },
@@ -7157,7 +7469,7 @@
       "attributes": {
         "content": "Terminar con el impedimento legal de contraer segundas nupcias antes de los 270 días desde la disolución del vínculo por divorcio, nulidad o muerte.",
         "number": "111",
-        "title": "",
+        "title": "Eliminar impedimento legal de contraer segundas nupcias antes de los 270 ",
         "ja-why": ""
       },
       "relationships": {
@@ -7209,6 +7521,12 @@
         "chekIsEmpty": "11126-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7229,7 +7547,7 @@
     },
     {
       "type": "justification",
-      "id": 2349,
+      "id": 1894,
       "attributes": {
 
       },
@@ -7261,7 +7579,7 @@
       "attributes": {
         "content": "Mejorar el subsidio al empleo de la mujer, entregando un mayor aporte dependiendo del tamaño de la familia.",
         "number": "112",
-        "title": "",
+        "title": "Mejorar el subsidio al empleo de la mujer",
         "ja-why": ""
       },
       "relationships": {
@@ -7292,7 +7610,7 @@
       "attributes": {
         "content": "Impulsar el pronto despacho del proyecto de ley sobre el Derecho de las Mujeres a una Vida Libre de Violencia.",
         "number": "113",
-        "title": "",
+        "title": " Ley sobre el Derecho de las Mujeres a una Vida Libre de Violencia.",
         "ja-why": ""
       },
       "relationships": {
@@ -7344,6 +7662,12 @@
         "chekIsEmpty": "11077-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7364,7 +7688,7 @@
     },
     {
       "type": "justification",
-      "id": 7575,
+      "id": 8394,
       "attributes": {
 
       },
@@ -7448,6 +7772,12 @@
         "chekIsEmpty": "8851-18"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7468,7 +7798,7 @@
     },
     {
       "type": "justification",
-      "id": 7133,
+      "id": 4417,
       "attributes": {
 
       },
@@ -7572,7 +7902,7 @@
     },
     {
       "type": "justification",
-      "id": 6499,
+      "id": 7327,
       "attributes": {
 
       },
@@ -7656,6 +7986,12 @@
         "chekIsEmpty": "11970-34"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7676,7 +8012,7 @@
     },
     {
       "type": "justification",
-      "id": 5295,
+      "id": 6590,
       "attributes": {
 
       },
@@ -7760,6 +8096,12 @@
         "chekIsEmpty": "11923-25"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7780,7 +8122,7 @@
     },
     {
       "type": "justification",
-      "id": 7191,
+      "id": 1854,
       "attributes": {
 
       },
@@ -7864,6 +8206,12 @@
         "chekIsEmpty": "7606-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7884,7 +8232,7 @@
     },
     {
       "type": "justification",
-      "id": 3730,
+      "id": 2844,
       "attributes": {
 
       },
@@ -7916,7 +8264,7 @@
       "attributes": {
         "content": "Aumentar las penas del delito de maltrato habitual y de lesiones cuando se produce en un contexto de violencia intrafamiliar",
         "number": "119",
-        "title": "",
+        "title": "Aumento de penas en el contexto de violencia intrafamiliar",
         "ja-why": ""
       },
       "relationships": {
@@ -7968,6 +8316,12 @@
         "chekIsEmpty": "8851-18"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -7988,7 +8342,7 @@
     },
     {
       "type": "justification",
-      "id": 1870,
+      "id": 5222,
       "attributes": {
 
       },
@@ -8020,7 +8374,7 @@
       "attributes": {
         "content": "Garantizar a la mujer un hogar donde vivir con sus hijos, facilitando la afectación del bien familiar. ",
         "number": "120",
-        "title": "",
+        "title": "Facilitar la afectación del bien familiar",
         "ja-why": ""
       },
       "relationships": {
@@ -8051,7 +8405,7 @@
       "attributes": {
         "content": "Modernizar Fonasa desde la lógica de un fondo a una de seguro. El foco estará puesto en la entrega de los servicios comprometidos de manera oportuna y con la mejor calidad posible.\no Impulsar una nueva gobernanza mediante un directorio técnico y avanzar desde el financiamiento de instituciones hacia el de soluciones de salud para los usuarios.",
         "number": "121",
-        "title": "",
+        "title": "Modernizar Fonasa",
         "ja-why": ""
       },
       "relationships": {
@@ -8082,7 +8436,7 @@
       "attributes": {
         "content": "Reorganizar la atención de salud, mediante las siguientes innovaciones institucionales:Transformar la Subsecretaría de Redes Asistenciales en una entidad independiente, con un Directorio Nacional de Atención de Salud Pública elegido por Alta Dirección Pública. Su función principal será monitorear el funcionamiento de la red de prestadores estatales y designar, evaluar y remover a los gobiernos superiores de los Servicios de Salud y hospitales, cuando corresponda.",
         "number": "122",
-        "title": "",
+        "title": " Innovacion institucional en la Subsecretaría de Redes Asistenciales",
         "ja-why": ""
       },
       "relationships": {
@@ -8113,7 +8467,7 @@
       "attributes": {
         "content": "Modernizar los Servicios de Salud, incluyendo cambios a sus estructuras administrativas y gobiernos corporativos, los que se renovarán en función del desempeño y con independencia del ciclo político. Los servicios contarán con directores ejecutivos que dependerán de los directorios y su objetivo central será mejorar la atención de los usuarios.",
         "number": "123",
-        "title": "",
+        "title": "Modernizar los Servicios de Salud,",
         "ja-why": ""
       },
       "relationships": {
@@ -8144,7 +8498,7 @@
       "attributes": {
         "content": "Reformar gradualmente los esquemas de seguros para avanzar hacia un sistema que garantice asequibilidad, competencia, transparencia y libre afiliación poniendo fin a las preexistencias.",
         "number": "124",
-        "title": "",
+        "title": "Reformar los esquemas de seguros ",
         "ja-why": ""
       },
       "relationships": {
@@ -8175,7 +8529,7 @@
       "attributes": {
         "content": "Terminar con las discriminaciones en el acceso por edad, género o preexistencias en Isapres, mediante la creación de un Plan de Salud Universal.",
         "number": "125",
-        "title": "",
+        "title": "Crear un Plan de Salud Universal",
         "ja-why": ""
       },
       "relationships": {
@@ -8206,7 +8560,7 @@
       "attributes": {
         "content": "Crear un sistema que estimule a independientes e informales a cotizar para salud.",
         "number": "126",
-        "title": "",
+        "title": "Crear un sistema que estimule a independientes e informales a cotizar para salud",
         "ja-why": ""
       },
       "relationships": {
@@ -8258,6 +8612,12 @@
         "chekIsEmpty": "12002-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8278,7 +8638,7 @@
     },
     {
       "type": "justification",
-      "id": 1692,
+      "id": 4903,
       "attributes": {
 
       },
@@ -8310,7 +8670,7 @@
       "attributes": {
         "content": "Avanzar a mediano plazo hacia un nuevo seguro social de salud, con un plan base para todos los chilenos, independiente del sistema previsional.",
         "number": "127",
-        "title": "",
+        "title": "Nuevo seguro social de salud",
         "ja-why": ""
       },
       "relationships": {
@@ -8393,6 +8753,12 @@
         "chekIsEmpty": "9914-11"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8413,7 +8779,7 @@
     },
     {
       "type": "justification",
-      "id": 8770,
+      "id": 7014,
       "attributes": {
 
       },
@@ -8445,7 +8811,7 @@
       "attributes": {
         "content": "Nuevo comparador online de precios www.tufarmacia.gob.cl, para que todas las personas sepan en qué farmacia pueden encontrar los medicamentos más baratos del mercado, incluyendo las alternativas de genéricos bioequivalentes disponibles.",
         "number": "129",
-        "title": "",
+        "title": "Nuevo comparador online de precios de farmacos",
         "ja-why": ""
       },
       "relationships": {
@@ -8497,6 +8863,12 @@
         "chekIsEmpty": "9914-11"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8517,7 +8889,7 @@
     },
     {
       "type": "justification",
-      "id": 245,
+      "id": 6157,
       "attributes": {
 
       },
@@ -8549,7 +8921,7 @@
       "attributes": {
         "content": "Observatorio nacional e internacional de medicamentos y otros dispositivos médicos.",
         "number": "130",
-        "title": "",
+        "title": "Observatorio nacional e internacional de medicamentos y otros dispositivos médicos.",
         "ja-why": ""
       },
       "relationships": {
@@ -8601,6 +8973,12 @@
         "chekIsEmpty": "9914-11"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8621,7 +8999,7 @@
     },
     {
       "type": "justification",
-      "id": 2233,
+      "id": 7920,
       "attributes": {
 
       },
@@ -8653,7 +9031,7 @@
       "attributes": {
         "content": "Perfeccionar la ley Ricarte Soto redefiniendo el método de priorización, incorporando el riesgo vital y mejorando el registro de pacientes.",
         "number": "131",
-        "title": "",
+        "title": "Perfeccionar la ley Ricarte Soto",
         "ja-why": ""
       },
       "relationships": {
@@ -8684,7 +9062,7 @@
       "attributes": {
         "content": "Constituir el Consejo Nacional de Cáncer, cuyo propósito principal será velar por el fortalecimiento de una política nacional de cáncer de carácter permanente.",
         "number": "132",
-        "title": "",
+        "title": "Constituir el Consejo Nacional de Cáncer",
         "ja-why": ""
       },
       "relationships": {
@@ -8736,6 +9114,12 @@
         "chekIsEmpty": "12292-11"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8756,7 +9140,7 @@
     },
     {
       "type": "justification",
-      "id": 8077,
+      "id": 3027,
       "attributes": {
 
       },
@@ -8840,6 +9224,12 @@
         "chekIsEmpty": "12212-13"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -8860,7 +9250,7 @@
     },
     {
       "type": "justification",
-      "id": 8846,
+      "id": 5999,
       "attributes": {
 
       },
@@ -8892,7 +9282,7 @@
       "attributes": {
         "content": "Fomentar un mercado laboral inclusivo para las personas con discapacidad, incluyendo a los cuidadores en la cuota de la nueva Ley de Inclusión Laboral, facilitando el acceso a los sistemas de capacitación de SENCE y estableciendo mecanismos que permitan compatibilizar el trabajo y las terapias de rehabilitación.",
         "number": "134",
-        "title": "",
+        "title": "Mercado laboral inclusivo",
         "ja-why": ""
       },
       "relationships": {
@@ -8923,7 +9313,7 @@
       "attributes": {
         "content": "Perfeccionar la legislación de seguridad social para las personas con discapacidad, de forma que los jóvenes con discapacidad no pierdan los beneficios de su plan de salud familiar por el hecho de trabajar. También se flexibilizarán los requisitos para mantener el derecho al Pilar Solidario en el caso de quienes opten por trabajar. ",
         "number": "135",
-        "title": "",
+        "title": "Perfeccionar la legislación de seguridad social en materia de discapacidad",
         "ja-why": ""
       },
       "relationships": {
@@ -8954,7 +9344,7 @@
       "attributes": {
         "content": "Reconocer constitucionalmente a los pueblos indígenas, impulsando el diálogo con los mismos a través de los mecanismos de participación y consulta respectivos.",
         "number": "136",
-        "title": "",
+        "title": "Reconocer constitucionalmente a los pueblos indígenas",
         "ja-why": ""
       },
       "relationships": {
@@ -8985,7 +9375,7 @@
       "attributes": {
         "content": "Crear el Consejo Nacional de Pueblos Indígenas y los Consejos de cada pueblo, como instancias de representación y participación de los pueblos indígenas.",
         "number": "137",
-        "title": "",
+        "title": "Crear el Consejo Nacional de Pueblos Indígenas y los Consejos de cada pueblo",
         "ja-why": ""
       },
       "relationships": {
@@ -9057,7 +9447,7 @@
     },
     {
       "type": "justification",
-      "id": 9530,
+      "id": 9924,
       "attributes": {
 
       },
@@ -9089,7 +9479,7 @@
       "attributes": {
         "content": "Establecer una Agencia de Desarrollo Indígena en ese Ministerio, que sea la continuadora de la CONADI, con responsabilidad por la ejecución de las políticas, planes y programas para las personas y comunidades indígenas.",
         "number": "138",
-        "title": "",
+        "title": "Establecer una Agencia de Desarrollo Indígena",
         "ja-why": ""
       },
       "relationships": {
@@ -9161,7 +9551,7 @@
     },
     {
       "type": "justification",
-      "id": 648,
+      "id": 6720,
       "attributes": {
 
       },
@@ -9193,7 +9583,7 @@
       "attributes": {
         "content": "Crear Corporaciones Territoriales de Desarrollo Indígena que sean garantes y acompañen los acuerdos entre el Estado y los indígenas, y entre privados y comunidades, para desarrollar proyectos en determinados territorios.",
         "number": "139",
-        "title": "",
+        "title": "Crear Corporaciones Territoriales de Desarrollo Indígena",
         "ja-why": ""
       },
       "relationships": {
@@ -9224,7 +9614,7 @@
       "attributes": {
         "content": "Modificar la ley indígena para potenciar el uso productivo de las tierras entregadas a los miembros del pueblo mapuche reduciendo o eliminando las prohibiciones de vender, hipotecar, arrendar, o disponer de sus tierras.",
         "number": "140",
-        "title": "",
+        "title": "Modificar la ley indígena en materia de disposicion de sus tierras",
         "ja-why": ""
       },
       "relationships": {
@@ -9255,7 +9645,7 @@
       "attributes": {
         "content": "Se impulsará y actualizará el proyecto de Ley de Migración y Extranjería",
         "number": "141",
-        "title": "",
+        "title": "Actualizacion al proyecto de Ley de Migración y Extranjería",
         "ja-why": ""
       },
       "relationships": {
@@ -9307,6 +9697,12 @@
         "chekIsEmpty": "8970-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9327,7 +9723,7 @@
     },
     {
       "type": "justification",
-      "id": 4084,
+      "id": 1987,
       "attributes": {
 
       },
@@ -9359,7 +9755,7 @@
       "attributes": {
         "content": "Mejorar la institucionalidad estableciendo por ley el Consejo de Política Migratoria y fortaleciendo a la Subsecretaría del Interior y las Gobernaciones como autoridades migratorias.",
         "number": "142",
-        "title": "",
+        "title": "Establecer por ley el Consejo de Política Migratoria ",
         "ja-why": ""
       },
       "relationships": {
@@ -9411,6 +9807,12 @@
         "chekIsEmpty": "8970-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9431,7 +9833,7 @@
     },
     {
       "type": "justification",
-      "id": 4003,
+      "id": 3089,
       "attributes": {
 
       },
@@ -9463,7 +9865,7 @@
       "attributes": {
         "content": "Ampliar las opciones que se le ofrecen al migrante, con visas específicas para personas con capital humano avanzado que Chile necesita, como médicos especialistas y talentos excepcionales.",
         "number": "143",
-        "title": "",
+        "title": "Visas específicas para capital humano avanzado",
         "ja-why": ""
       },
       "relationships": {
@@ -9515,6 +9917,12 @@
         "chekIsEmpty": "8970-08"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9535,7 +9943,7 @@
     },
     {
       "type": "justification",
-      "id": 4316,
+      "id": 9055,
       "attributes": {
 
       },
@@ -9650,6 +10058,12 @@
         "chekIsEmpty": "8970-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9670,7 +10084,7 @@
     },
     {
       "type": "justification",
-      "id": 4043,
+      "id": 2276,
       "attributes": {
 
       },
@@ -9754,6 +10168,12 @@
         "chekIsEmpty": "8970-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9774,7 +10194,7 @@
     },
     {
       "type": "justification",
-      "id": 2591,
+      "id": 7617,
       "attributes": {
 
       },
@@ -9858,6 +10278,12 @@
         "chekIsEmpty": "8970-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9878,7 +10304,7 @@
     },
     {
       "type": "justification",
-      "id": 4494,
+      "id": 660,
       "attributes": {
 
       },
@@ -9962,6 +10388,12 @@
         "chekIsEmpty": "8970-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -9982,7 +10414,7 @@
     },
     {
       "type": "justification",
-      "id": 9810,
+      "id": 9825,
       "attributes": {
 
       },
@@ -10066,6 +10498,12 @@
         "chekIsEmpty": "12250-25"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10086,7 +10524,7 @@
     },
     {
       "type": "justification",
-      "id": 7635,
+      "id": 6327,
       "attributes": {
 
       },
@@ -10170,6 +10608,12 @@
         "chekIsEmpty": "12250-25"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10190,7 +10634,7 @@
     },
     {
       "type": "justification",
-      "id": 4835,
+      "id": 7118,
       "attributes": {
 
       },
@@ -10305,6 +10749,12 @@
         "chekIsEmpty": "11705-25"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10325,7 +10775,7 @@
     },
     {
       "type": "justification",
-      "id": 1372,
+      "id": 7014,
       "attributes": {
 
       },
@@ -10409,6 +10859,12 @@
         "chekIsEmpty": "12228-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10429,7 +10885,7 @@
     },
     {
       "type": "justification",
-      "id": 8581,
+      "id": 6723,
       "attributes": {
 
       },
@@ -10575,6 +11031,12 @@
         "chekIsEmpty": "12192-25"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10595,7 +11057,7 @@
     },
     {
       "type": "justification",
-      "id": 3826,
+      "id": 2800,
       "attributes": {
 
       },
@@ -10679,6 +11141,12 @@
         "chekIsEmpty": "12234-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10699,7 +11167,7 @@
     },
     {
       "type": "justification",
-      "id": 6749,
+      "id": 136,
       "attributes": {
 
       },
@@ -10783,6 +11251,12 @@
         "chekIsEmpty": "12234-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10803,7 +11277,7 @@
     },
     {
       "type": "justification",
-      "id": 8133,
+      "id": 7528,
       "attributes": {
 
       },
@@ -10887,6 +11361,12 @@
         "chekIsEmpty": "12234-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -10907,7 +11387,7 @@
     },
     {
       "type": "justification",
-      "id": 6297,
+      "id": 9360,
       "attributes": {
 
       },
@@ -11022,6 +11502,12 @@
         "chekIsEmpty": "12234-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11042,7 +11528,7 @@
     },
     {
       "type": "justification",
-      "id": 1625,
+      "id": 6896,
       "attributes": {
 
       },
@@ -11126,6 +11612,12 @@
         "chekIsEmpty": "9692-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11146,7 +11638,7 @@
     },
     {
       "type": "justification",
-      "id": 1186,
+      "id": 864,
       "attributes": {
 
       },
@@ -11230,6 +11722,12 @@
         "chekIsEmpty": "9692-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11250,7 +11748,7 @@
     },
     {
       "type": "justification",
-      "id": 6458,
+      "id": 9126,
       "attributes": {
 
       },
@@ -11644,6 +12142,12 @@
         "chekIsEmpty": "11174-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11664,7 +12168,7 @@
     },
     {
       "type": "justification",
-      "id": 5399,
+      "id": 3339,
       "attributes": {
 
       },
@@ -11748,6 +12252,12 @@
         "chekIsEmpty": "11174-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11768,7 +12278,7 @@
     },
     {
       "type": "justification",
-      "id": 6488,
+      "id": 5368,
       "attributes": {
 
       },
@@ -11852,6 +12362,12 @@
         "chekIsEmpty": "12092-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11872,7 +12388,7 @@
     },
     {
       "type": "justification",
-      "id": 8889,
+      "id": 8460,
       "attributes": {
 
       },
@@ -11956,6 +12472,12 @@
         "chekIsEmpty": "12092-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -11976,7 +12498,7 @@
     },
     {
       "type": "justification",
-      "id": 1884,
+      "id": 3562,
       "attributes": {
 
       },
@@ -12060,6 +12582,12 @@
         "chekIsEmpty": "12092-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12080,7 +12608,7 @@
     },
     {
       "type": "justification",
-      "id": 5500,
+      "id": 402,
       "attributes": {
 
       },
@@ -12164,6 +12692,12 @@
         "chekIsEmpty": "12025-03"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12184,7 +12718,7 @@
     },
     {
       "type": "justification",
-      "id": 8039,
+      "id": 2723,
       "attributes": {
 
       },
@@ -12268,6 +12802,12 @@
         "chekIsEmpty": "12092-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12288,7 +12828,7 @@
     },
     {
       "type": "justification",
-      "id": 4444,
+      "id": 4017,
       "attributes": {
 
       },
@@ -12372,6 +12912,12 @@
         "chekIsEmpty": "12092-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12392,7 +12938,7 @@
     },
     {
       "type": "justification",
-      "id": 1842,
+      "id": 7829,
       "attributes": {
 
       },
@@ -12538,6 +13084,12 @@
         "chekIsEmpty": "11245-17"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": 2068746937,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12558,7 +13110,7 @@
     },
     {
       "type": "justification",
-      "id": 5814,
+      "id": 5827,
       "attributes": {
 
       },
@@ -12642,6 +13194,12 @@
         "chekIsEmpty": "12345-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12662,7 +13220,7 @@
     },
     {
       "type": "justification",
-      "id": 7637,
+      "id": 3877,
       "attributes": {
 
       },
@@ -12932,6 +13490,12 @@
         "chekIsEmpty": "11883-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -12952,7 +13516,7 @@
     },
     {
       "type": "justification",
-      "id": 4639,
+      "id": 6917,
       "attributes": {
 
       },
@@ -13749,6 +14313,12 @@
         "chekIsEmpty": "11883-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -13769,7 +14339,7 @@
     },
     {
       "type": "justification",
-      "id": 8209,
+      "id": 82,
       "attributes": {
 
       },
@@ -13853,6 +14423,12 @@
         "chekIsEmpty": "10739-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -13873,7 +14449,7 @@
     },
     {
       "type": "justification",
-      "id": 3150,
+      "id": 7218,
       "attributes": {
 
       },
@@ -13957,6 +14533,12 @@
         "chekIsEmpty": "12100-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -13977,7 +14559,7 @@
     },
     {
       "type": "justification",
-      "id": 6741,
+      "id": 704,
       "attributes": {
 
       },
@@ -14216,6 +14798,12 @@
         "chekIsEmpty": "7550-06"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -14236,7 +14824,7 @@
     },
     {
       "type": "justification",
-      "id": 9281,
+      "id": 1411,
       "attributes": {
 
       },
@@ -14320,6 +14908,12 @@
         "chekIsEmpty": "7550-07"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -14340,7 +14934,7 @@
     },
     {
       "type": "justification",
-      "id": 7798,
+      "id": 1746,
       "attributes": {
 
       },
@@ -14734,6 +15328,12 @@
         "chekIsEmpty": "9256-27"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -14754,7 +15354,7 @@
     },
     {
       "type": "justification",
-      "id": 1725,
+      "id": 9721,
       "attributes": {
 
       },
@@ -14838,6 +15438,12 @@
         "chekIsEmpty": "7678-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -14858,7 +15464,7 @@
     },
     {
       "type": "justification",
-      "id": 6443,
+      "id": 7822,
       "attributes": {
 
       },
@@ -14942,6 +15548,12 @@
         "chekIsEmpty": "12391-02"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -14962,7 +15574,7 @@
     },
     {
       "type": "justification",
-      "id": 6846,
+      "id": 3,
       "attributes": {
 
       },
@@ -15108,6 +15720,12 @@
         "chekIsEmpty": "11273-03"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -15128,7 +15746,7 @@
     },
     {
       "type": "justification",
-      "id": 3039,
+      "id": 906,
       "attributes": {
 
       },
@@ -15263,7 +15881,7 @@
     },
     {
       "type": "justification",
-      "id": 316,
+      "id": 337,
       "attributes": {
 
       },
@@ -15564,6 +16182,12 @@
         "chekIsEmpty": "12288-14"
       },
       "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
         "priorities": {
           "data": [
             {
@@ -15584,7 +16208,7 @@
     },
     {
       "type": "justification",
-      "id": 1167,
+      "id": 1979,
       "attributes": {
 
       },

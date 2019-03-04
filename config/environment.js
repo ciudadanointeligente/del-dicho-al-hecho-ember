@@ -318,6 +318,7 @@ module.exports = function(environment) {
     }
   ]};
 	var comparisonsAreVisible = true;
+	var launched = false;
 
   var ENV = {
     modulePrefix: 'ddah-ember',
