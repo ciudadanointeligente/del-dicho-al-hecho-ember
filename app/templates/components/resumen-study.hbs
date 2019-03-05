@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1>¿Cuánto cumple el gobierno?</h1>
-          <p>Revisa aquí el porcentaje de cumplimiento de las promesas del Programa de Gobierno</p>
+          <p>Revisa aquí el porcentaje de cumplimiento de las promesas del Programa de Gobierno de Sebastián Piñera</p>
           {{#link-to "study" study.slug  class="hidden-xs btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Ver estudio completo {{/link-to}}
         </div>
           <div class="col-md-3 text-center total-resume-home">
@@ -15,7 +15,7 @@
               {{study.fullfilment}}%
             </div>
               <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio."></i></h3>
-              <div class="chart estudio-total">
+              <div class="chart estudio-total home-chart">
                 {{ember-chart type='doughnut' data=study.chartDataResume options=study.doughnutOpt height=150}}
               </div>
           </div>
@@ -41,7 +41,7 @@
 
 <section id="resume">
 <div class="container">
-  <h2 class="text-center">Cumplimiento de promesas al tercer año de gobierno de Bachelet</h2>
+  <h2 class="text-center">Cumplimiento de promesas al primer año de gobierno de Piñera</h2>
   <div class="row">
     {{#each-in study.promisesGroupedByArea as |area_id a|}}
     <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">

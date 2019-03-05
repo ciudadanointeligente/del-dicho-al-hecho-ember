@@ -5,8 +5,7 @@ body {
   color: #232323;
   background-color: #FFF;
   font-size: 1.4rem;
-  max-width: 100%;
-  overflow-x: hidden;}
+  max-width: 100%;}
 
 p {
   text-align: initial;
@@ -180,6 +179,7 @@ section{
 
 #welcome{
   margin-top: -20px;
+  overflow-x: hidden !important;
 }
 
 #que-es{
@@ -230,7 +230,7 @@ section{
 .panel-promise {
   padding: 15px 15px 25px;
   background-color: white;
-  border: 1px solid #2323;
+  border: 1px solid #E0E0E0;
   margin-top: -5px; }
 
 .panel-promise a{
@@ -266,6 +266,10 @@ section{
   .panel-glosario .panel-body{
     background-color: white;
   }
+
+.panel-body.glosary{
+  border: 1px solid #E0E0E0;
+}
 
 /*DATA*/
 .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
@@ -366,7 +370,7 @@ section{
 
 .img-chart{
   position: relative;
-  top: 121px;
+  top: 125px;
   z-index: -1;}
 
 /*HIGHLIGHT ELEMENTS*/
@@ -513,13 +517,18 @@ footer {
 
 
 @media (max-width: 991px) {
+#welcome {
+    overflow-x: hidden !important;}
+
   .label-coherencia{
     position: relative;
     top: -18px;}
 
   .chart.estudio-total{
-    margin-bottom: -170px;}
+    margin-bottom: -100px;}
 
+  .chart.estudio-total.home-chart{
+    margin-bottom: -170px;}
 }
 
 @media (max-width: 767px) {
