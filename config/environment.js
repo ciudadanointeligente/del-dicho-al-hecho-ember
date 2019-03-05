@@ -210,7 +210,7 @@ module.exports = function(environment) {
     'Equidad de Género': 'img/i-equ.svg',
     'Estado': 'img/i-est.svg',
     'Infancia y Juventud': 'img/i-inf.svg',
-    'Justicia y Derechos Humanos': 'img/i-jus.svg',
+    'Justicia y DDHH': 'img/i-jus.svg',
     'Medio Ambiente': 'img/i-med.svg',
     'Minería': 'img/i-min.svg',
     'Obras Públicas': 'img/i-obr.svg',
