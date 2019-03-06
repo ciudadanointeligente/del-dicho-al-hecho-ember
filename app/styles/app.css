@@ -5,7 +5,9 @@ body {
   color: #232323;
   background-color: #FFF;
   font-size: 1.4rem;
-  max-width: 100%;}
+  max-width: 100%;
+  overflow-x: hidden;
+  }
 
 p {
   text-align: initial;
@@ -179,7 +181,6 @@ section{
 
 #welcome{
   margin-top: -20px;
-  overflow-x: hidden !important;
 }
 
 #que-es{
