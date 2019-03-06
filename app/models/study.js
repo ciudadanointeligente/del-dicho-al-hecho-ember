@@ -81,7 +81,16 @@ export default DS.Model.extend(CalculationsMixin, {
       return bills.uniqBy('id');
     }),
     billsCount: Ember.computed('bills', function(){
-      return this.get('bills').length;
+      let projectWithBills = [];
+      this.get('bills').forEach(function(b){
+        let name = b.get('name');
+        if (name.match('boletín')) {
+            console.log("match!");
+        } else {
+          projectWithBills = projectWithBills.concat(b);
+        }
+      });
+      return projectWithBills.length;
     }),
     urgenciesCount: Ember.computed('bills', function(){
       let count = 0;

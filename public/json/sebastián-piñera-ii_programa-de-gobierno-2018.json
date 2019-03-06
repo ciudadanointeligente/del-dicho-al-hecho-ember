@@ -91,7 +91,7 @@
     },
     {
       "type": "justification",
-      "id": 4368,
+      "id": 1547,
       "attributes": {
 
       },
@@ -232,7 +232,7 @@
     },
     {
       "type": "justification",
-      "id": 7828,
+      "id": 2496,
       "attributes": {
 
       },
@@ -342,7 +342,7 @@
     },
     {
       "type": "justification",
-      "id": 4177,
+      "id": 6398,
       "attributes": {
 
       },
@@ -452,7 +452,7 @@
     },
     {
       "type": "justification",
-      "id": 1089,
+      "id": 1393,
       "attributes": {
 
       },
@@ -562,7 +562,7 @@
     },
     {
       "type": "justification",
-      "id": 3909,
+      "id": 7616,
       "attributes": {
 
       },
@@ -614,7 +614,7 @@
     },
     {
       "type": "priority",
-      "id": -1880385437,
+      "id": -595153788,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -622,7 +622,7 @@
     },
     {
       "type": "priority",
-      "id": -1941607833,
+      "id": 53023432,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -630,7 +630,7 @@
     },
     {
       "type": "priority",
-      "id": 1392587835,
+      "id": 95199354,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -638,12 +638,12 @@
     },
     {
       "type": "bill",
-      "id": 377002165,
+      "id": 151530227,
       "attributes": {
-        "name": "1",
+        "name": "sin boletín asociado 1",
         "title": "Proyecto de Ley que Establece Medidas para Incentivar la protección de los derechos de los consumidores",
         "url": "",
-        "chekIsEmpty": "1"
+        "chekIsEmpty": "sin boletín asociado 1"
       },
       "relationships": {
         "phase": {
@@ -655,15 +655,15 @@
         "priorities": {
           "data": [
             {
-              "id": -1880385437,
+              "id": -595153788,
               "type": "priority"
             },
             {
-              "id": -1941607833,
+              "id": 53023432,
               "type": "priority"
             },
             {
-              "id": 1392587835,
+              "id": 95199354,
               "type": "priority"
             }
           ]
@@ -672,7 +672,7 @@
     },
     {
       "type": "justification",
-      "id": 2088,
+      "id": 215,
       "attributes": {
 
       },
@@ -685,7 +685,7 @@
         },
         "bill": {
           "data": {
-            "id": 377002165,
+            "id": 151530227,
             "type": "bill"
           }
         }
@@ -782,7 +782,7 @@
     },
     {
       "type": "justification",
-      "id": 5522,
+      "id": 5918,
       "attributes": {
 
       },
@@ -892,7 +892,7 @@
     },
     {
       "type": "justification",
-      "id": 3453,
+      "id": 4819,
       "attributes": {
 
       },
@@ -1033,7 +1033,7 @@
     },
     {
       "type": "justification",
-      "id": 2940,
+      "id": 3878,
       "attributes": {
 
       },
@@ -1143,7 +1143,7 @@
     },
     {
       "type": "justification",
-      "id": 7247,
+      "id": 1168,
       "attributes": {
 
       },
@@ -1195,7 +1195,7 @@
     },
     {
       "type": "priority",
-      "id": -1880385437,
+      "id": -1623765188,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -1203,7 +1203,7 @@
     },
     {
       "type": "priority",
-      "id": -1941607833,
+      "id": 2022900608,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -1211,7 +1211,7 @@
     },
     {
       "type": "priority",
-      "id": 1392587835,
+      "id": 1324638914,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -1219,12 +1219,12 @@
     },
     {
       "type": "bill",
-      "id": 377002165,
+      "id": -873163694,
       "attributes": {
-        "name": "1",
+        "name": "sin boletín asociado 2",
         "title": "Proyecto de Ley que Establece Medidas para Incentivar la protección de los derechos de los consumidores",
         "url": "",
-        "chekIsEmpty": "1"
+        "chekIsEmpty": "sin boletín asociado 2"
       },
       "relationships": {
         "phase": {
@@ -1236,15 +1236,15 @@
         "priorities": {
           "data": [
             {
-              "id": -1880385437,
+              "id": -1623765188,
               "type": "priority"
             },
             {
-              "id": -1941607833,
+              "id": 2022900608,
               "type": "priority"
             },
             {
-              "id": 1392587835,
+              "id": 1324638914,
               "type": "priority"
             }
           ]
@@ -1253,7 +1253,7 @@
     },
     {
       "type": "justification",
-      "id": 441,
+      "id": 9042,
       "attributes": {
 
       },
@@ -1266,7 +1266,7 @@
         },
         "bill": {
           "data": {
-            "id": 377002165,
+            "id": -873163694,
             "type": "bill"
           }
         }
@@ -1456,7 +1456,7 @@
     },
     {
       "type": "justification",
-      "id": 8650,
+      "id": 7982,
       "attributes": {
 
       },
@@ -1690,7 +1690,7 @@
     },
     {
       "type": "justification",
-      "id": 1782,
+      "id": 2298,
       "attributes": {
 
       },
@@ -1863,7 +1863,7 @@
       "attributes": {
         "name": "7543-12",
         "title": "Reforma el Código de Aguas",
-        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=7543-12\n",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=7543-12\r\n",
         "chekIsEmpty": "7543-12"
       },
       "relationships": {
@@ -1893,7 +1893,7 @@
     },
     {
       "type": "justification",
-      "id": 7028,
+      "id": 7341,
       "attributes": {
 
       },
@@ -2003,7 +2003,7 @@
     },
     {
       "type": "justification",
-      "id": 98,
+      "id": 3783,
       "attributes": {
 
       },
@@ -2237,7 +2237,7 @@
     },
     {
       "type": "justification",
-      "id": 7104,
+      "id": 7816,
       "attributes": {
 
       },
@@ -2291,7 +2291,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2322,7 +2322,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2409,7 +2409,7 @@
     },
     {
       "type": "justification",
-      "id": 1077,
+      "id": 15,
       "attributes": {
 
       },
@@ -2432,7 +2432,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2550,7 +2550,7 @@
     },
     {
       "type": "justification",
-      "id": 3553,
+      "id": 5028,
       "attributes": {
 
       },
@@ -2573,7 +2573,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2660,7 +2660,7 @@
     },
     {
       "type": "justification",
-      "id": 8850,
+      "id": 4524,
       "attributes": {
 
       },
@@ -2683,7 +2683,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2714,7 +2714,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2745,7 +2745,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2776,7 +2776,7 @@
       "type": "area",
       "id": 1064423383,
       "attributes": {
-        "name": "Mineria"
+        "name": "Minería"
       }
     },
     {
@@ -2925,7 +2925,7 @@
     },
     {
       "type": "justification",
-      "id": 6320,
+      "id": 6105,
       "attributes": {
 
       },
@@ -3097,7 +3097,7 @@
     },
     {
       "type": "justification",
-      "id": 8632,
+      "id": 2825,
       "attributes": {
 
       },
@@ -3207,7 +3207,7 @@
     },
     {
       "type": "justification",
-      "id": 9896,
+      "id": 3098,
       "attributes": {
 
       },
@@ -3317,7 +3317,7 @@
     },
     {
       "type": "justification",
-      "id": 9365,
+      "id": 6818,
       "attributes": {
 
       },
@@ -3340,7 +3340,7 @@
       "type": "area",
       "id": -1605427991,
       "attributes": {
-        "name": "Energia"
+        "name": "Energía"
       }
     },
     {
@@ -3371,7 +3371,7 @@
       "type": "area",
       "id": -1605427991,
       "attributes": {
-        "name": "Energia"
+        "name": "Energía"
       }
     },
     {
@@ -3402,7 +3402,7 @@
       "type": "area",
       "id": -1605427991,
       "attributes": {
-        "name": "Energia"
+        "name": "Energía"
       }
     },
     {
@@ -3411,7 +3411,7 @@
       "attributes": {
         "content": "Revisar y modernizar la regulación del segmento distribución, con el objeto de lograr mejores niveles de calidad y seguridad de suministro (Energía). Para ello se contempla: o Elevar los estándares de calidad y seguridad del servicio de distribución creando mecanismos de prevención con un adecuado sistema de seguimiento, fiscalización y comunicación hacia los usuarios finales.",
         "number": "52",
-        "title": "Modernizar la regulación de la distribución de Energia ",
+        "title": "Modernizar la regulación de la distribución de Energía ",
         "ja-why": ""
       },
       "relationships": {
@@ -3433,7 +3433,7 @@
       "type": "area",
       "id": -1605427991,
       "attributes": {
-        "name": "Energia"
+        "name": "Energía"
       }
     },
     {
@@ -3520,7 +3520,7 @@
     },
     {
       "type": "justification",
-      "id": 7989,
+      "id": 9838,
       "attributes": {
 
       },
@@ -3543,7 +3543,7 @@
       "type": "area",
       "id": -1605427991,
       "attributes": {
-        "name": "Energia"
+        "name": "Energía"
       }
     },
     {
@@ -3630,7 +3630,7 @@
     },
     {
       "type": "justification",
-      "id": 2338,
+      "id": 3484,
       "attributes": {
 
       },
@@ -3771,7 +3771,7 @@
     },
     {
       "type": "justification",
-      "id": 9050,
+      "id": 930,
       "attributes": {
 
       },
@@ -3881,7 +3881,7 @@
     },
     {
       "type": "justification",
-      "id": 8654,
+      "id": 9001,
       "attributes": {
 
       },
@@ -3991,7 +3991,7 @@
     },
     {
       "type": "justification",
-      "id": 4857,
+      "id": 2780,
       "attributes": {
 
       },
@@ -4105,7 +4105,7 @@
     },
     {
       "type": "priority",
-      "id": -1880385437,
+      "id": 958129604,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -4113,7 +4113,7 @@
     },
     {
       "type": "priority",
-      "id": -1941607833,
+      "id": -633627640,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -4121,7 +4121,7 @@
     },
     {
       "type": "priority",
-      "id": 1392587835,
+      "id": -16916678,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -4129,12 +4129,12 @@
     },
     {
       "type": "bill",
-      "id": 377002165,
+      "id": -1897857615,
       "attributes": {
-        "name": "1",
+        "name": "sin boletín asociado 3",
         "title": "Establece un Sistema de Subvenciones para los niveles medios de la educación parvularia",
         "url": "",
-        "chekIsEmpty": "1"
+        "chekIsEmpty": "sin boletín asociado 3"
       },
       "relationships": {
         "phase": {
@@ -4146,15 +4146,15 @@
         "priorities": {
           "data": [
             {
-              "id": -1880385437,
+              "id": 958129604,
               "type": "priority"
             },
             {
-              "id": -1941607833,
+              "id": -633627640,
               "type": "priority"
             },
             {
-              "id": 1392587835,
+              "id": -16916678,
               "type": "priority"
             }
           ]
@@ -4163,7 +4163,7 @@
     },
     {
       "type": "justification",
-      "id": 7968,
+      "id": 3898,
       "attributes": {
 
       },
@@ -4176,7 +4176,7 @@
         },
         "bill": {
           "data": {
-            "id": 377002165,
+            "id": -1897857615,
             "type": "bill"
           }
         }
@@ -4255,7 +4255,7 @@
       "type": "promise",
       "id": -47784952,
       "attributes": {
-        "content": "Restablecer el mérito con criterios de inclusión en el acceso a los\nliceos emblemáticos y proyectos especiales de excelencia, por razones\nacadémicas, artísticas y deportivas. En el resto de los establecimientos\npermitir criterios de admisión de hasta un 30% de la matrícula en\nfavor de alumnos vulnerables, migrantes o de criterios adicionales de\npriorización acordes a los respectivos proyectos educativos, los cuales\ntendrán que ser siempre objetivos, transparentes y no podrán significar\ndiscriminaciones arbitrarias.",
+        "content": "Restablecer el mérito con criterios de inclusión en el acceso a los\r\nliceos emblemáticos y proyectos especiales de excelencia, por razones\r\nacadémicas, artísticas y deportivas. En el resto de los establecimientos\r\npermitir criterios de admisión de hasta un 30% de la matrícula en\r\nfavor de alumnos vulnerables, migrantes o de criterios adicionales de\r\npriorización acordes a los respectivos proyectos educativos, los cuales\r\ntendrán que ser siempre objetivos, transparentes y no podrán significar\r\ndiscriminaciones arbitrarias.",
         "number": "64",
         "title": "Restablecer criterios de mérito y justicia en la Admisión Escolar",
         "ja-why": ""
@@ -4335,7 +4335,7 @@
     },
     {
       "type": "justification",
-      "id": 833,
+      "id": 3661,
       "attributes": {
 
       },
@@ -4538,7 +4538,7 @@
     },
     {
       "type": "justification",
-      "id": 9997,
+      "id": 2733,
       "attributes": {
 
       },
@@ -4648,7 +4648,7 @@
     },
     {
       "type": "justification",
-      "id": 6210,
+      "id": 1507,
       "attributes": {
 
       },
@@ -4758,7 +4758,7 @@
     },
     {
       "type": "justification",
-      "id": 1400,
+      "id": 919,
       "attributes": {
 
       },
@@ -4868,7 +4868,7 @@
     },
     {
       "type": "justification",
-      "id": 2133,
+      "id": 2829,
       "attributes": {
 
       },
@@ -4978,7 +4978,7 @@
     },
     {
       "type": "justification",
-      "id": 4131,
+      "id": 8922,
       "attributes": {
 
       },
@@ -5088,7 +5088,7 @@
     },
     {
       "type": "justification",
-      "id": 3511,
+      "id": 2096,
       "attributes": {
 
       },
@@ -5198,7 +5198,7 @@
     },
     {
       "type": "justification",
-      "id": 2182,
+      "id": 2677,
       "attributes": {
 
       },
@@ -5401,7 +5401,7 @@
     },
     {
       "type": "justification",
-      "id": 2739,
+      "id": 3291,
       "attributes": {
 
       },
@@ -5666,7 +5666,7 @@
     },
     {
       "type": "justification",
-      "id": 4394,
+      "id": 1688,
       "attributes": {
 
       },
@@ -5807,7 +5807,7 @@
     },
     {
       "type": "justification",
-      "id": 9002,
+      "id": 8283,
       "attributes": {
 
       },
@@ -5917,7 +5917,7 @@
     },
     {
       "type": "justification",
-      "id": 4274,
+      "id": 7402,
       "attributes": {
 
       },
@@ -6027,7 +6027,7 @@
     },
     {
       "type": "justification",
-      "id": 3639,
+      "id": 5935,
       "attributes": {
 
       },
@@ -6137,7 +6137,7 @@
     },
     {
       "type": "justification",
-      "id": 4486,
+      "id": 7024,
       "attributes": {
 
       },
@@ -6464,7 +6464,7 @@
     },
     {
       "type": "justification",
-      "id": 2919,
+      "id": 1721,
       "attributes": {
 
       },
@@ -6574,7 +6574,7 @@
     },
     {
       "type": "justification",
-      "id": 3835,
+      "id": 6176,
       "attributes": {
 
       },
@@ -6684,7 +6684,7 @@
     },
     {
       "type": "justification",
-      "id": 6779,
+      "id": 2642,
       "attributes": {
 
       },
@@ -6794,7 +6794,7 @@
     },
     {
       "type": "justification",
-      "id": 486,
+      "id": 4115,
       "attributes": {
 
       },
@@ -6904,7 +6904,7 @@
     },
     {
       "type": "justification",
-      "id": 3477,
+      "id": 3668,
       "attributes": {
 
       },
@@ -7014,7 +7014,7 @@
     },
     {
       "type": "justification",
-      "id": 7154,
+      "id": 9151,
       "attributes": {
 
       },
@@ -7124,7 +7124,7 @@
     },
     {
       "type": "justification",
-      "id": 2692,
+      "id": 9305,
       "attributes": {
 
       },
@@ -7234,7 +7234,7 @@
     },
     {
       "type": "justification",
-      "id": 9663,
+      "id": 4765,
       "attributes": {
 
       },
@@ -7344,7 +7344,7 @@
     },
     {
       "type": "justification",
-      "id": 1414,
+      "id": 6188,
       "attributes": {
 
       },
@@ -7454,7 +7454,7 @@
     },
     {
       "type": "justification",
-      "id": 1889,
+      "id": 9318,
       "attributes": {
 
       },
@@ -7564,7 +7564,7 @@
     },
     {
       "type": "justification",
-      "id": 5691,
+      "id": 209,
       "attributes": {
 
       },
@@ -7674,7 +7674,7 @@
     },
     {
       "type": "justification",
-      "id": 9996,
+      "id": 7873,
       "attributes": {
 
       },
@@ -7784,7 +7784,7 @@
     },
     {
       "type": "justification",
-      "id": 6071,
+      "id": 1178,
       "attributes": {
 
       },
@@ -7925,7 +7925,7 @@
     },
     {
       "type": "justification",
-      "id": 661,
+      "id": 6530,
       "attributes": {
 
       },
@@ -8035,7 +8035,7 @@
     },
     {
       "type": "justification",
-      "id": 3614,
+      "id": 1413,
       "attributes": {
 
       },
@@ -8096,9 +8096,9 @@
       "type": "promise",
       "id": 2011507442,
       "attributes": {
-        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso",
+        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Tipificación del femicidio y de otros delitos contra las mujeres",
         "number": "114",
-        "title": "agenda corta de combate a la violencia contra la mujer",
+        "title": "Agenda corta de combate a la violencia contra la mujer",
         "ja-why": ""
       },
       "relationships": {
@@ -8176,7 +8176,7 @@
     },
     {
       "type": "justification",
-      "id": 6244,
+      "id": 2565,
       "attributes": {
 
       },
@@ -8206,9 +8206,9 @@
       "type": "promise",
       "id": 986813521,
       "attributes": {
-        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso",
+        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Sancionar la difusión no consentida de imágenes o contenido de connotación sexual",
         "number": "115",
-        "title": "agenda corta de combate a la violencia contra la mujer",
+        "title": "Agenda corta de combate a la violencia contra la mujer",
         "ja-why": ""
       },
       "relationships": {
@@ -8286,7 +8286,7 @@
     },
     {
       "type": "justification",
-      "id": 4648,
+      "id": 9829,
       "attributes": {
 
       },
@@ -8316,9 +8316,9 @@
       "type": "promise",
       "id": -37880400,
       "attributes": {
-        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso",
+        "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Tipifica el delito de acoso sexual en público.",
         "number": "116",
-        "title": "agenda corta de combate a la violencia contra la mujer",
+        "title": "Agenda corta de combate a la violencia contra la mujer",
         "ja-why": ""
       },
       "relationships": {
@@ -8396,7 +8396,7 @@
     },
     {
       "type": "justification",
-      "id": 9829,
+      "id": 9937,
       "attributes": {
 
       },
@@ -8506,7 +8506,7 @@
     },
     {
       "type": "justification",
-      "id": 6681,
+      "id": 6362,
       "attributes": {
 
       },
@@ -8567,7 +8567,7 @@
       "type": "promise",
       "id": 1183005133,
       "attributes": {
-        "content": "Modernizar Fonasa desde la lógica de un fondo a una de seguro. El foco estará puesto en la entrega de los servicios comprometidos de manera oportuna y con la mejor calidad posible.\no Impulsar una nueva gobernanza mediante un directorio técnico y avanzar desde el financiamiento de instituciones hacia el de soluciones de salud para los usuarios.",
+        "content": "Modernizar Fonasa desde la lógica de un fondo a una de seguro. El foco estará puesto en la entrega de los servicios comprometidos de manera oportuna y con la mejor calidad posible.\r\no Impulsar una nueva gobernanza mediante un directorio técnico y avanzar desde el financiamiento de instituciones hacia el de soluciones de salud para los usuarios.",
         "number": "119",
         "title": "Modernizar Fonasa",
         "ja-why": ""
@@ -8802,7 +8802,7 @@
     },
     {
       "type": "justification",
-      "id": 3397,
+      "id": 1897,
       "attributes": {
 
       },
@@ -8943,7 +8943,7 @@
     },
     {
       "type": "justification",
-      "id": 5094,
+      "id": 1500,
       "attributes": {
 
       },
@@ -9053,7 +9053,7 @@
     },
     {
       "type": "justification",
-      "id": 277,
+      "id": 7782,
       "attributes": {
 
       },
@@ -9163,7 +9163,7 @@
     },
     {
       "type": "justification",
-      "id": 1762,
+      "id": 6401,
       "attributes": {
 
       },
@@ -9304,7 +9304,7 @@
     },
     {
       "type": "justification",
-      "id": 5616,
+      "id": 6615,
       "attributes": {
 
       },
@@ -9414,7 +9414,7 @@
     },
     {
       "type": "justification",
-      "id": 7758,
+      "id": 7650,
       "attributes": {
 
       },
@@ -9652,9 +9652,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -9675,7 +9675,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -9741,7 +9741,7 @@
     },
     {
       "type": "justification",
-      "id": 4286,
+      "id": 7728,
       "attributes": {
 
       },
@@ -9762,9 +9762,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -9785,7 +9785,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -9851,7 +9851,7 @@
     },
     {
       "type": "justification",
-      "id": 2976,
+      "id": 9937,
       "attributes": {
 
       },
@@ -9872,9 +9872,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -9895,7 +9895,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -9961,7 +9961,7 @@
     },
     {
       "type": "justification",
-      "id": 9380,
+      "id": 8117,
       "attributes": {
 
       },
@@ -10013,9 +10013,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -10036,7 +10036,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -10102,7 +10102,7 @@
     },
     {
       "type": "justification",
-      "id": 9516,
+      "id": 6970,
       "attributes": {
 
       },
@@ -10123,9 +10123,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -10146,7 +10146,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -10212,7 +10212,7 @@
     },
     {
       "type": "justification",
-      "id": 9923,
+      "id": 3531,
       "attributes": {
 
       },
@@ -10233,9 +10233,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -10256,7 +10256,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -10322,7 +10322,7 @@
     },
     {
       "type": "justification",
-      "id": 7342,
+      "id": 2126,
       "attributes": {
 
       },
@@ -10432,7 +10432,7 @@
     },
     {
       "type": "justification",
-      "id": 7813,
+      "id": 5498,
       "attributes": {
 
       },
@@ -10542,7 +10542,7 @@
     },
     {
       "type": "justification",
-      "id": 103,
+      "id": 1062,
       "attributes": {
 
       },
@@ -10652,7 +10652,7 @@
     },
     {
       "type": "justification",
-      "id": 6441,
+      "id": 4838,
       "attributes": {
 
       },
@@ -10793,7 +10793,7 @@
     },
     {
       "type": "justification",
-      "id": 2206,
+      "id": 2349,
       "attributes": {
 
       },
@@ -10903,7 +10903,7 @@
     },
     {
       "type": "justification",
-      "id": 5589,
+      "id": 1776,
       "attributes": {
 
       },
@@ -11075,7 +11075,7 @@
     },
     {
       "type": "justification",
-      "id": 6788,
+      "id": 671,
       "attributes": {
 
       },
@@ -11185,7 +11185,7 @@
     },
     {
       "type": "justification",
-      "id": 7264,
+      "id": 1593,
       "attributes": {
 
       },
@@ -11295,7 +11295,7 @@
     },
     {
       "type": "justification",
-      "id": 2651,
+      "id": 5477,
       "attributes": {
 
       },
@@ -11405,7 +11405,7 @@
     },
     {
       "type": "justification",
-      "id": 8989,
+      "id": 4482,
       "attributes": {
 
       },
@@ -11546,7 +11546,7 @@
     },
     {
       "type": "justification",
-      "id": 8848,
+      "id": 1848,
       "attributes": {
 
       },
@@ -11656,7 +11656,7 @@
     },
     {
       "type": "justification",
-      "id": 3323,
+      "id": 7053,
       "attributes": {
 
       },
@@ -11766,7 +11766,7 @@
     },
     {
       "type": "justification",
-      "id": 6155,
+      "id": 4407,
       "attributes": {
 
       },
@@ -11818,9 +11818,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11841,7 +11841,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -11849,9 +11849,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11872,7 +11872,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -11880,9 +11880,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11903,7 +11903,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -11911,9 +11911,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11934,7 +11934,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -11942,9 +11942,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11965,7 +11965,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -11973,9 +11973,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -11996,7 +11996,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12004,9 +12004,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12027,7 +12027,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12035,9 +12035,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12058,7 +12058,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12066,9 +12066,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12089,7 +12089,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12097,9 +12097,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12120,7 +12120,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12186,7 +12186,7 @@
     },
     {
       "type": "justification",
-      "id": 6231,
+      "id": 8072,
       "attributes": {
 
       },
@@ -12207,9 +12207,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12230,7 +12230,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12296,7 +12296,7 @@
     },
     {
       "type": "justification",
-      "id": 4302,
+      "id": 1184,
       "attributes": {
 
       },
@@ -12317,9 +12317,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12340,7 +12340,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12406,7 +12406,7 @@
     },
     {
       "type": "justification",
-      "id": 1476,
+      "id": 2477,
       "attributes": {
 
       },
@@ -12427,9 +12427,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12450,7 +12450,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12516,7 +12516,7 @@
     },
     {
       "type": "justification",
-      "id": 7920,
+      "id": 3649,
       "attributes": {
 
       },
@@ -12537,9 +12537,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12560,7 +12560,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12626,7 +12626,7 @@
     },
     {
       "type": "justification",
-      "id": 163,
+      "id": 271,
       "attributes": {
 
       },
@@ -12647,9 +12647,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12670,7 +12670,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12736,7 +12736,7 @@
     },
     {
       "type": "justification",
-      "id": 8444,
+      "id": 5967,
       "attributes": {
 
       },
@@ -12757,9 +12757,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12780,7 +12780,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12846,7 +12846,7 @@
     },
     {
       "type": "justification",
-      "id": 5399,
+      "id": 1540,
       "attributes": {
 
       },
@@ -12867,9 +12867,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -12890,7 +12890,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -12956,7 +12956,7 @@
     },
     {
       "type": "justification",
-      "id": 4327,
+      "id": 3994,
       "attributes": {
 
       },
@@ -12977,9 +12977,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13000,7 +13000,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13008,9 +13008,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13031,7 +13031,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13039,9 +13039,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13062,7 +13062,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13128,7 +13128,7 @@
     },
     {
       "type": "justification",
-      "id": 3093,
+      "id": 6897,
       "attributes": {
 
       },
@@ -13149,9 +13149,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13172,7 +13172,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13238,7 +13238,7 @@
     },
     {
       "type": "justification",
-      "id": 9964,
+      "id": 8399,
       "attributes": {
 
       },
@@ -13259,9 +13259,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13282,7 +13282,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13290,9 +13290,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13313,7 +13313,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13321,9 +13321,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13344,7 +13344,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13352,9 +13352,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13375,7 +13375,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13383,9 +13383,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13406,7 +13406,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13414,9 +13414,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -13437,7 +13437,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -13534,7 +13534,7 @@
     },
     {
       "type": "justification",
-      "id": 114,
+      "id": 9046,
       "attributes": {
 
       },
@@ -13967,7 +13967,7 @@
       "type": "promise",
       "id": -1766066672,
       "attributes": {
-        "content": "Perfeccionar los mecanismos de fiscalización al gobierno y la administración pública y fortalecer la obligación de respuesta y seguimiento de oficios por parte del Ejecutivo.\n",
+        "content": "Perfeccionar los mecanismos de fiscalización al gobierno y la administración pública y fortalecer la obligación de respuesta y seguimiento de oficios por parte del Ejecutivo.\r\n",
         "number": "204",
         "title": "Perfeccionar la fiscalización al gobierno y la administración pública",
         "ja-why": ""
@@ -14357,7 +14357,7 @@
     },
     {
       "type": "justification",
-      "id": 3991,
+      "id": 9424,
       "attributes": {
 
       },
@@ -14378,9 +14378,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -14401,7 +14401,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -14467,7 +14467,7 @@
     },
     {
       "type": "justification",
-      "id": 3166,
+      "id": 6,
       "attributes": {
 
       },
@@ -14577,7 +14577,7 @@
     },
     {
       "type": "justification",
-      "id": 7714,
+      "id": 7238,
       "attributes": {
 
       },
@@ -14842,7 +14842,7 @@
     },
     {
       "type": "justification",
-      "id": 4993,
+      "id": 464,
       "attributes": {
 
       },
@@ -14952,7 +14952,7 @@
     },
     {
       "type": "justification",
-      "id": 7763,
+      "id": 4990,
       "attributes": {
 
       },
@@ -15372,7 +15372,7 @@
     },
     {
       "type": "justification",
-      "id": 1705,
+      "id": 8553,
       "attributes": {
 
       },
@@ -15482,7 +15482,7 @@
     },
     {
       "type": "justification",
-      "id": 399,
+      "id": 1084,
       "attributes": {
 
       },
@@ -15592,7 +15592,7 @@
     },
     {
       "type": "justification",
-      "id": 5457,
+      "id": 3354,
       "attributes": {
 
       },
@@ -15644,9 +15644,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -15667,7 +15667,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -15764,7 +15764,7 @@
     },
     {
       "type": "justification",
-      "id": 1774,
+      "id": 5620,
       "attributes": {
 
       },
@@ -15909,9 +15909,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -15932,7 +15932,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -15940,9 +15940,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -15963,7 +15963,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -15971,9 +15971,9 @@
     },
     {
       "type": "area",
-      "id": -1063653961,
+      "id": 878529673,
       "attributes": {
-        "name": "Justicia y Derechos Humanos"
+        "name": "Justicia y DDHH"
       }
     },
     {
@@ -15994,7 +15994,7 @@
         },
         "area": {
           "data": {
-            "id": -1063653961,
+            "id": 878529673,
             "type": "area"
           }
         }
@@ -16153,7 +16153,7 @@
     },
     {
       "type": "justification",
-      "id": 1372,
+      "id": 2585,
       "attributes": {
 
       },
