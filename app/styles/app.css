@@ -518,6 +518,12 @@ footer {
 
 
 @media (max-width: 991px) {
+  img.logo-nav{
+    margin-left: 10px;
+  }
+  .sub-brand {
+    margin: 3px 0 0 52px;}
+
 #welcome {
     overflow-x: hidden !important;}
 
