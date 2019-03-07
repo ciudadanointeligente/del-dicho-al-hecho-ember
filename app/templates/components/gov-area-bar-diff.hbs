@@ -1,13 +1,19 @@
-
-
-
 {{yield}}
 
+<div class="progress compare-bar hidden-xs hidden-sm">
 
-{{#each areasDiff as |diff_area|}}
-<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{diff_area.fulfillment}}%; background-color: {{diff_area.study.color}}">
-  {{#if diff_area.fulfillment }}
-    <span class="sr-only"  data-toggle="tooltip" data-placement="top" title="{{diff_area.study.name}}">{{diff_area.original_fulfillment}}%</span>
-  {{/if}}
+  {{#each areasDiff as |diff_area|}}
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{diff_area.fulfillment}}%; background-color: {{diff_area.study.color}}">
+      {{#if diff_area.fulfillment }}
+        <span class="sr-only"  data-toggle="tooltip" data-placement="top" title="{{diff_area.study.name}}">{{diff_area.original_fulfillment}}%</span>
+      {{/if}}
+    </div>
+  {{/each}}
+
 </div>
+
+<div class="hidden-md hidden-lg text-center">
+{{#each areasDiff as |diff_area|}}
+  <p style="color: {{diff_area.study.color}}" class="text-center"><span>{{diff_area.original_fulfillment}}%</span></p>
 {{/each}}
+</div>
