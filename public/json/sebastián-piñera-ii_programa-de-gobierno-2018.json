@@ -14,7 +14,7 @@
         "content": "Reintegrar gradualmente el impuesto a nivel de empresas con los impuestos pagados por las personas.",
         "number": "1",
         "title": "Reintegración Impuestos Corporativos",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -91,7 +91,7 @@
     },
     {
       "type": "justification",
-      "id": 1547,
+      "id": 406,
       "attributes": {
 
       },
@@ -124,7 +124,7 @@
         "content": "Hacer converger gradualmente la tasa del impuesto de primera categoría a los niveles promedio de los países de la OCDE.",
         "number": "2",
         "title": "Baja tasa de impuesto empresas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -155,7 +155,7 @@
         "content": "Establecer incentivos que reactiven la inversión favoreciendo prioritariamente a las Pymes, la innovación y el emprendimiento",
         "number": "3",
         "title": "Incentivos inversión",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -232,7 +232,7 @@
     },
     {
       "type": "justification",
-      "id": 2496,
+      "id": 1663,
       "attributes": {
 
       },
@@ -265,7 +265,7 @@
         "content": "Perfeccionar e institucionalizar la regla fiscal para asegurar su credibilidad en el tiempo",
         "number": "4",
         "title": "Institucionalizar Regla Fiscal",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -342,7 +342,7 @@
     },
     {
       "type": "justification",
-      "id": 6398,
+      "id": 9484,
       "attributes": {
 
       },
@@ -375,7 +375,7 @@
         "content": "Reducir y simplificar la carga administrativa de la reforma tributaria, especialmente para las Pymes, y otorgar mayor seguridad jurídica a empresas y personas",
         "number": "5",
         "title": "Reducir carga administrativa tributaria",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -452,7 +452,7 @@
     },
     {
       "type": "justification",
-      "id": 1393,
+      "id": 2430,
       "attributes": {
 
       },
@@ -485,7 +485,7 @@
         "content": "Masificación de la firma electrónica",
         "number": "6",
         "title": "Masificación de la firma electrónica",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -562,7 +562,7 @@
     },
     {
       "type": "justification",
-      "id": 7616,
+      "id": 9832,
       "attributes": {
 
       },
@@ -595,7 +595,7 @@
         "content": "Movilidad de garantías hipotecarias",
         "number": "7",
         "title": "Movilidad de garantías hipotecarias",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -614,7 +614,7 @@
     },
     {
       "type": "priority",
-      "id": -595153788,
+      "id": 1721946669,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -622,7 +622,7 @@
     },
     {
       "type": "priority",
-      "id": 53023432,
+      "id": 573869745,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -630,7 +630,7 @@
     },
     {
       "type": "priority",
-      "id": 95199354,
+      "id": 120532529,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -638,12 +638,12 @@
     },
     {
       "type": "bill",
-      "id": 151530227,
+      "id": 996217618,
       "attributes": {
-        "name": "sin boletín asociado 1",
+        "name": "12409-03",
         "title": "Proyecto de Ley que Establece Medidas para Incentivar la protección de los derechos de los consumidores",
-        "url": "",
-        "chekIsEmpty": "sin boletín asociado 1"
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12409-03",
+        "chekIsEmpty": "12409-03"
       },
       "relationships": {
         "phase": {
@@ -655,15 +655,15 @@
         "priorities": {
           "data": [
             {
-              "id": -595153788,
+              "id": 1721946669,
               "type": "priority"
             },
             {
-              "id": 53023432,
+              "id": 573869745,
               "type": "priority"
             },
             {
-              "id": 95199354,
+              "id": 120532529,
               "type": "priority"
             }
           ]
@@ -672,7 +672,7 @@
     },
     {
       "type": "justification",
-      "id": 215,
+      "id": 4155,
       "attributes": {
 
       },
@@ -685,7 +685,7 @@
         },
         "bill": {
           "data": {
-            "id": 151530227,
+            "id": 996217618,
             "type": "bill"
           }
         }
@@ -705,7 +705,7 @@
         "content": "Crear un incentivo regional para atraer inversiones, en que los grandes proyectos aporten al desarrollo local en las comunas donde se emplacen",
         "number": "8",
         "title": " Incentivo regional para atraer inversiones",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -782,7 +782,7 @@
     },
     {
       "type": "justification",
-      "id": 5918,
+      "id": 4029,
       "attributes": {
 
       },
@@ -815,7 +815,7 @@
         "content": "Reestructurar y agilizar el Sistema de Evaluación Ambiental, a fin de lograr el desarrollo de procesos más expeditos, con altos estándares de calidad ambiental y en un marco de certeza jurídica para los titulares, la comunidad y los distintos servicios públicos que participan en la evaluación.",
         "number": "9",
         "title": "Reestructurar el Sistema de Evaluación Ambiental",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -892,7 +892,7 @@
     },
     {
       "type": "justification",
-      "id": 4819,
+      "id": 1571,
       "attributes": {
 
       },
@@ -925,7 +925,7 @@
         "content": "Modernizar las empresas públicas, dotándolas de un marco regulatorio moderno y común.",
         "number": "10",
         "title": "Modernizar las empresas públicas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -956,7 +956,7 @@
         "content": "Regular los mercados de economía colaborativa para facilitar la adecuada operación de sus plataformas.",
         "number": "11",
         "title": "Regular los mercados de economía colaborativa",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -1033,7 +1033,7 @@
     },
     {
       "type": "justification",
-      "id": 3878,
+      "id": 4431,
       "attributes": {
 
       },
@@ -1066,7 +1066,7 @@
         "content": "Hacer más eficaz la acción del SERNAC a favor de los consumidores, para que éstos puedan ejercer sus derechos, y asegurar la debida atención de los usuarios del sector público ampliando su rol a esta materia. Mejorar sus competencias y capacidades, con criterio conocidos, transparentes y objetivos.",
         "number": "12",
         "title": "Hacer más eficaz al SERNAC",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -1143,7 +1143,7 @@
     },
     {
       "type": "justification",
-      "id": 1168,
+      "id": 7743,
       "attributes": {
 
       },
@@ -1176,7 +1176,7 @@
         "content": "Crear un mecanismo para adaptar los contratos indefinidos a las condiciones cambiantes, sin costos excesivos y con respeto a los derechos del consumidor",
         "number": "13",
         "title": "Adaptar los contratos indefinidos",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -1195,7 +1195,7 @@
     },
     {
       "type": "priority",
-      "id": -1623765188,
+      "id": 1721946669,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -1203,7 +1203,7 @@
     },
     {
       "type": "priority",
-      "id": 2022900608,
+      "id": 573869745,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -1211,7 +1211,7 @@
     },
     {
       "type": "priority",
-      "id": 1324638914,
+      "id": 120532529,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -1219,12 +1219,12 @@
     },
     {
       "type": "bill",
-      "id": -873163694,
+      "id": 996217618,
       "attributes": {
-        "name": "sin boletín asociado 2",
+        "name": "12409-03",
         "title": "Proyecto de Ley que Establece Medidas para Incentivar la protección de los derechos de los consumidores",
-        "url": "",
-        "chekIsEmpty": "sin boletín asociado 2"
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12409-03",
+        "chekIsEmpty": "12409-03"
       },
       "relationships": {
         "phase": {
@@ -1236,15 +1236,15 @@
         "priorities": {
           "data": [
             {
-              "id": -1623765188,
+              "id": 1721946669,
               "type": "priority"
             },
             {
-              "id": 2022900608,
+              "id": 573869745,
               "type": "priority"
             },
             {
-              "id": 1324638914,
+              "id": 120532529,
               "type": "priority"
             }
           ]
@@ -1253,7 +1253,7 @@
     },
     {
       "type": "justification",
-      "id": 9042,
+      "id": 5994,
       "attributes": {
 
       },
@@ -1266,7 +1266,7 @@
         },
         "bill": {
           "data": {
-            "id": -873163694,
+            "id": 996217618,
             "type": "bill"
           }
         }
@@ -1286,7 +1286,7 @@
         "content": "Modernizar la legislación en materia de jornada laboral, redefiniéndola en base a “hora” y permitiendo que el máximo semanal de 45 horas pueda ser distribuido en 4 días por acuerdo individual o colectivo.",
         "number": "14",
         "title": "Modernizar la legislación en materia de jornada laboral",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1317,7 +1317,7 @@
         "content": "Permitir que los trabajadores pacten con mayor libertad materias de jornada y horas extraordinarias, estableciendo límites máximos predefinidos para prevenir abusos.",
         "number": "15",
         "title": "Mayor libertad para pactar jornada y horas extraordinarias.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1348,7 +1348,7 @@
         "content": "Modernizar la jornada parcial y permitir que las partes pacten bolsas de permisos para fines de cuidado familiar o actividades escolares, a ser compensados en los 30 días siguientes.",
         "number": "16",
         "title": "Modernizar la jornada parcial",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1379,7 +1379,7 @@
         "content": "Crear un contrato especial de trabajo a distancia que regule sus características.",
         "number": "17",
         "title": "Regular el trabajo a distancia",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -1456,7 +1456,7 @@
     },
     {
       "type": "justification",
-      "id": 7982,
+      "id": 2842,
       "attributes": {
 
       },
@@ -1489,7 +1489,7 @@
         "content": "Ampliar progresivamente el feriado anual de 15 a 20 días hábiles, a ser compensados con la reducción de 3 feriados.",
         "number": "18",
         "title": "Ampliar progresivamente el feriado anual",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1520,7 +1520,7 @@
         "content": "Posibilitar, cuando sea pertinente y resguardando los derechos básicos de los trabajadores, los pactos individuales de adaptabilidad laboral.",
         "number": "19",
         "title": "Posibilitar los pactos individuales de adaptabilidad laboral.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1551,7 +1551,7 @@
         "content": "Especificar procedimientos de negociación colectiva para grupos de negociadores fuera de los sindicatos.",
         "number": "20",
         "title": "Procedimientos de negociación colectiva para grupos no sindicalizados",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1582,7 +1582,7 @@
         "content": "Mejorar la definición legal de servicios mínimos en caso de huelga, a fin de garantizar el derecho al trabajo de personas no involucradas en la huelga.",
         "number": "21",
         "title": "Mejorar la definición legal de servicios mínimos en caso de huelga",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1613,7 +1613,7 @@
         "content": "Establecer el derecho a sala cuna universal para todas las madres trabajadoras con hijos menores de 2 años y padres trabajadores que tengan la tuición del hijo, a fin de favorecer el debido cuidado de los niños y la participación laboral de la mujer.",
         "number": "22",
         "title": "Derecho a sala cuna universal ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -1690,7 +1690,7 @@
     },
     {
       "type": "justification",
-      "id": 2298,
+      "id": 3269,
       "attributes": {
 
       },
@@ -1723,7 +1723,7 @@
         "content": "Crear un sistema de apoyo para los trabajadores por cuenta propia, que les permita tener oportunidades para acceder a mejores trabajos y mejores salarios.",
         "number": "23",
         "title": "Sistema de apoyo para los trabajadores por cuenta propia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1754,7 +1754,7 @@
         "content": "Modernizar la Dirección del Trabajo, estableciendo una clara división en los roles de fiscalización, multas, normativa, y conciliaciones y mediaciones, incorporando tecnologías modernas y reformulando los procesos de gestión estratégicos.",
         "number": "24",
         "title": "Modernizar la Dirección del Trabajo",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1785,7 +1785,7 @@
         "content": "Mejorar la oferta de programas y modificar la franquicia tributaria SENCE, de forma que dependa de la calidad y resultado de las capacitaciones y permita el acceso a los trabajadores por cuenta propia y mini pymes. Ampliar su cobertura a los adultos mayores y extender su aplicación a carreras de 2 años en Centros de Formación Técnica e Institutos Profesionales acreditados",
         "number": "25",
         "title": "Modificar la franquicia tributaria SENCE",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -1816,7 +1816,7 @@
         "content": "Restablecer la certeza jurídica de la propiedad de los derechos de agua, de cualquier tipo, nuevos o antiguos",
         "number": "26",
         "title": "Restablecer la certeza jurídica de los derechos de agua",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -1893,7 +1893,7 @@
     },
     {
       "type": "justification",
-      "id": 7341,
+      "id": 2641,
       "attributes": {
 
       },
@@ -1926,7 +1926,7 @@
         "content": "Incorporar medidas al Estatuto del Trabajador Agrícola que mejoren las condiciones laborales y ajusten las necesidades de trabajo a cada rubro",
         "number": "27",
         "title": "Incorporar medidas al Estatuto del Trabajador Agrícola",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2003,7 +2003,7 @@
     },
     {
       "type": "justification",
-      "id": 3783,
+      "id": 2774,
       "attributes": {
 
       },
@@ -2036,7 +2036,7 @@
         "content": "Impulsar una ley larga de puertos, que considere al sector alimentos como rubros sensibles,de forma de brindar seguridad en las exportaciones.",
         "number": "28",
         "title": "Impulsar una ley larga de puertos",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2067,7 +2067,7 @@
         "content": "Perfeccionar la ley de Muestra y Contramuestras y mejorar los sistemas de información a los agricultores.",
         "number": "29",
         "title": "Perfeccionar la ley de Muestra y Contramuestras y mejorar los sistemas de información a los agricultores.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2098,7 +2098,7 @@
         "content": "Impulsar una modernización integral de la institucionalidad del sector, avanzando hacia un nuevo Ministerio de Agricultura, Alimentos y Recursos Naturales y la institucionalización de la Agencia de Control de Inocuidad de Alimentos.",
         "number": "30",
         "title": "Nuevo Ministerio de Agricultura, Alimentos y Recursos Naturales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2129,7 +2129,7 @@
         "content": "Impulsar la Ley de Prevención y Control de Incendios Forestales e implementar un Plan de Reforestación para las hectáreas afectadas por los incendios del verano del 2017.",
         "number": "31",
         "title": "Ley de Prevención y Control de Incendios Forestales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2160,7 +2160,7 @@
         "content": "Modernizar Conaf mediante la creación del nuevo Servicio Forestal como ente público.",
         "number": "32",
         "title": "Creación del nuevo Servicio Forestal ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2237,7 +2237,7 @@
     },
     {
       "type": "justification",
-      "id": 7816,
+      "id": 4843,
       "attributes": {
 
       },
@@ -2270,7 +2270,7 @@
         "content": "Impulsar un proyecto de ley que apoye a pequeños y medianos propietarios en la creación de bosques para fines ambientales y madereros.",
         "number": "33",
         "title": "Ley que apoye la creación de bosques para fines ambientales y madereros.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2301,7 +2301,7 @@
         "content": "Incentivar la exploración minera modernizando la regulación vigente.",
         "number": "34",
         "title": "Incentivar la exploración minera",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2332,7 +2332,7 @@
         "content": "Hacer una revisión integral de las normas de cierre de faenas e instalaciones que flexibilice los instrumentos de garantía, modifique el cálculo de vida útil y corrija vacíos legales e interpretativos.",
         "number": "35",
         "title": "Revisión integral de las normas de cierre de faenas e instalaciones",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2409,7 +2409,7 @@
     },
     {
       "type": "justification",
-      "id": 15,
+      "id": 4614,
       "attributes": {
 
       },
@@ -2442,7 +2442,7 @@
         "content": "Actualizar el levantamiento de los permisos que requiere un proyecto minero a fin de simplificarlos y eliminar duplicidades de competencias entre servicio",
         "number": "36",
         "title": "Simplificar permisos para proyectos mineros",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2473,7 +2473,7 @@
         "content": "Reducir la discrecionalidad política en la revisión de proyectos de inversión y crear un procedimiento reglado y vinculante para consultas de pertinencia ambiental",
         "number": "37",
         "title": "Reducir la discrecionalidad política en la revisión de proyectos de inversión",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2550,7 +2550,7 @@
     },
     {
       "type": "justification",
-      "id": 5028,
+      "id": 2335,
       "attributes": {
 
       },
@@ -2583,7 +2583,7 @@
         "content": "Crear mecanismos de diálogo y solución temprana de conflictos entre empresas y comunidades, que mejore la confianza y dinamice los proyectos mineros y energéticos.",
         "number": "38",
         "title": "Crear mecanismos de diálogo entre empresas y comunidades",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2660,7 +2660,7 @@
     },
     {
       "type": "justification",
-      "id": 4524,
+      "id": 6779,
       "attributes": {
 
       },
@@ -2693,7 +2693,7 @@
         "content": "Desarrollar cambios normativos que faciliten la incorporación de la mujer al mundo laboral minero",
         "number": "39",
         "title": "Facilitar la incorporación de la mujer al mundo laboral minero",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2724,7 +2724,7 @@
         "content": "Modernizar el gobierno corporativo de ENAMI siguiendo los más altos estándares internacionales en la materia",
         "number": "40",
         "title": "Modernizar el gobierno corporativo de ENAMI",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2755,7 +2755,7 @@
         "content": "Reforzar el rol de COCHILCO y fortalecer al Ministerio de Minería.",
         "number": "41",
         "title": "Reforzar el rol de COCHILCO y fortalecer al Ministerio de Minería.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2786,7 +2786,7 @@
         "content": "Profundizar la autonomía de Codelco, dándole mayor independencia a su gobierno corporativo respecto de los cambios de gobierno y dotándolo de mayores herramientas para gestionar con eficiencia la actual diversidad y complejidad de la Corporación",
         "number": "42",
         "title": "Profundizar la autonomía de Codelco",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2817,7 +2817,7 @@
         "content": "Fortalecer los derechos de pesca para el sector artesanal",
         "number": "43",
         "title": "Fortalecer los derechos de pesca",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2848,7 +2848,7 @@
         "content": "Facilitar la transferencia de los derechos de pesca",
         "number": "44",
         "title": "Facilitar la transferencia de los derechos de pesca",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -2925,7 +2925,7 @@
     },
     {
       "type": "justification",
-      "id": 6105,
+      "id": 6965,
       "attributes": {
 
       },
@@ -2958,7 +2958,7 @@
         "content": "Simplificar las figuras de reemplazo de inscripción de pescadores y sustitución de embarcaciones artesanales",
         "number": "45",
         "title": "Simplificar las figuras de reemplazo de inscripción de pescadores y sustitución de embarcaciones artesanales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -2989,7 +2989,7 @@
         "content": "Dar fortaleza jurídica y transparencia a las inscripciones en los Registros Pesqueros Artesanales. ",
         "number": "46",
         "title": "Dar fortaleza jurídica y transparencia a las inscripciones en los Registros Pesqueros Artesanales.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -3020,7 +3020,7 @@
         "content": "Evaluar y perfeccionar el marco jurídico del sector industrial, ampliando el porcentaje de licitación de la cuota pesquera y revisando la condición de renovación indefinida de la titularidad de las cuotas asignadas sin licitación, respetando los derechos ya asignados. ",
         "number": "47",
         "title": "Ampliar el porcentaje de licitación de la cuota pesquera y revisar la renovación indefinida de las cuotas asignadas sin licitación",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -3097,7 +3097,7 @@
     },
     {
       "type": "justification",
-      "id": 2825,
+      "id": 6167,
       "attributes": {
 
       },
@@ -3130,7 +3130,7 @@
         "content": "Implementar regulación que promueva la sustentabilidad y competitividad del sector (pesca), generando certeza sobre el potencial productivo de las empresas, condicionando la vigencia de los plazos de caducidad a las resoluciones de relocalizaciones y permitiendo agrupar la producción y traspasar la capacidad productiva.",
         "number": "48",
         "title": "Implementar regulación que promueva la sustentabilidad y competitividad del sector pesca",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -3207,7 +3207,7 @@
     },
     {
       "type": "justification",
-      "id": 3098,
+      "id": 8219,
       "attributes": {
 
       },
@@ -3240,7 +3240,7 @@
         "content": "Fortalecer la institucionalidad sectorial, modernizando la subsecretaria y mejorando la capacidad fiscalizadora de Sernapesca. ",
         "number": "49",
         "title": "Modernizar  Sernapesca",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -3317,7 +3317,7 @@
     },
     {
       "type": "justification",
-      "id": 6818,
+      "id": 2293,
       "attributes": {
 
       },
@@ -3350,7 +3350,7 @@
         "content": "Fortalecer la institucionalidad del sector (energía) potenciando la autonomía de los entes técnicos y eliminando la discrecionalidad en la toma de decisiones",
         "number": "50",
         "title": "Fortalecer la institucionalidad del sector energía",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -3381,7 +3381,7 @@
         "content": "Perfeccionar la Ley General de Servicios Eléctricos , de forma de simplificar la modificación de líneas existentes, agilizar los procedimientos para obtener concesiones y facilitar el acceso a los predios para efectos de la construcción y mantenimiento de la infraestructura.",
         "number": "51",
         "title": "Perfeccionar la Ley General de Servicios Eléctricos",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -3412,7 +3412,7 @@
         "content": "Revisar y modernizar la regulación del segmento distribución, con el objeto de lograr mejores niveles de calidad y seguridad de suministro (Energía). Para ello se contempla: o Elevar los estándares de calidad y seguridad del servicio de distribución creando mecanismos de prevención con un adecuado sistema de seguimiento, fiscalización y comunicación hacia los usuarios finales.",
         "number": "52",
         "title": "Modernizar la regulación de la distribución de Energía ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -3443,7 +3443,7 @@
         "content": "Modificar la actual regulación para lograr una adecuada incorporación de nuevas tecnologías tales como redes inteligentes, sistemas de almacenamiento, gestión de demanda, generación distribuida y comercialización",
         "number": "53",
         "title": "Modificar la regulación para incorporar nuevas tecnologias ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -3520,7 +3520,7 @@
     },
     {
       "type": "justification",
-      "id": 9838,
+      "id": 8057,
       "attributes": {
 
       },
@@ -3553,7 +3553,7 @@
         "content": "Reactivar y actualizar el Plan de Eficiencia Energética 2020, incluyendo el fomento de los sistemas de gestión y cogeneración de energía, el establecimiento de estándares mínimos, la ampliación del etiquetado a otros segmentos domésticos e industriales, la modernización de la normativa de construcción, entre otras medidas.",
         "number": "54",
         "title": "Reactivar y actualizar el Plan de Eficiencia Energética 2020",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -3630,7 +3630,7 @@
     },
     {
       "type": "justification",
-      "id": 3484,
+      "id": 1273,
       "attributes": {
 
       },
@@ -3663,7 +3663,7 @@
         "content": "Desarrollar nuevas fuentes de abastecimiento, incorporando en la Ley de Concesiones mecanismos para el desarrollo de obras de desalinización, trasvases y sistema de infiltración de agua",
         "number": "55",
         "title": "Desarrollar nuevas fuentes de abastecimiento",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -3694,7 +3694,7 @@
         "content": "Actualizar y modernizar el modelo de administración de Parques Nacionales, avanzando en la creación del Servicio de Biodiversidad y Áreas Protegidas.",
         "number": "56",
         "title": "Crear el Servicio de Biodiversidad y Áreas Protegidas",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -3771,7 +3771,7 @@
     },
     {
       "type": "justification",
-      "id": 930,
+      "id": 6712,
       "attributes": {
 
       },
@@ -3804,7 +3804,7 @@
         "content": "Reformular la estructura organizacional de la promoción turística de Chile mediante una alianza público-privada eficiente y concentrar todas las agencias públicas de promoción bajo una misma institucionalidad.",
         "number": "57",
         "title": "Reformular la estructura organizacional de la promoción turística",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -3881,7 +3881,7 @@
     },
     {
       "type": "justification",
-      "id": 9001,
+      "id": 3338,
       "attributes": {
 
       },
@@ -3914,7 +3914,7 @@
         "content": "Revisar las tasas aeroportuarias y la regulación de la recalada de cruceros.",
         "number": "58",
         "title": "Revisar las tasas aeroportuarias y la recalada de cruceros",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -3991,7 +3991,7 @@
     },
     {
       "type": "justification",
-      "id": 2780,
+      "id": 5561,
       "attributes": {
 
       },
@@ -4024,7 +4024,7 @@
         "content": "Activar incentivos tributarios a la inversión turística en zonas aisladas",
         "number": "59",
         "title": "Incentivos tributarios a la inversión turística en zonas aisladas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4055,7 +4055,7 @@
         "content": "Eliminar barreras y simplificar la obtención de permisos municipales para poder acceder a bienes públicos que permitan desplegar fibra óptica y construir antenas para la telefonía móvil",
         "number": "60",
         "title": "Simplificar los permisos municipales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4086,7 +4086,7 @@
         "content": "Crear una subvención regular y preferencial que permita a todas las familias elegir un jardín infantil de calidad para sus hijos, a partir de los 2 años de edad. ",
         "number": "61",
         "title": "Subvención para la educación parvularia",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -4105,7 +4105,7 @@
     },
     {
       "type": "priority",
-      "id": 958129604,
+      "id": -1300816923,
       "attributes": {
         "name": "Simple",
         "count": 0
@@ -4113,7 +4113,7 @@
     },
     {
       "type": "priority",
-      "id": -633627640,
+      "id": -1820334487,
       "attributes": {
         "name": "Suma",
         "count": 0
@@ -4121,7 +4121,7 @@
     },
     {
       "type": "priority",
-      "id": -16916678,
+      "id": 1549658489,
       "attributes": {
         "name": "Inmediata",
         "count": 0
@@ -4129,12 +4129,12 @@
     },
     {
       "type": "bill",
-      "id": -1897857615,
+      "id": 1262415691,
       "attributes": {
-        "name": "sin boletín asociado 3",
+        "name": "12436-04",
         "title": "Establece un Sistema de Subvenciones para los niveles medios de la educación parvularia",
-        "url": "",
-        "chekIsEmpty": "sin boletín asociado 3"
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12436-04",
+        "chekIsEmpty": "12436-04"
       },
       "relationships": {
         "phase": {
@@ -4146,15 +4146,15 @@
         "priorities": {
           "data": [
             {
-              "id": 958129604,
+              "id": -1300816923,
               "type": "priority"
             },
             {
-              "id": -633627640,
+              "id": -1820334487,
               "type": "priority"
             },
             {
-              "id": -16916678,
+              "id": 1549658489,
               "type": "priority"
             }
           ]
@@ -4163,7 +4163,7 @@
     },
     {
       "type": "justification",
-      "id": 3898,
+      "id": 7435,
       "attributes": {
 
       },
@@ -4176,7 +4176,7 @@
         },
         "bill": {
           "data": {
-            "id": -1897857615,
+            "id": 1262415691,
             "type": "bill"
           }
         }
@@ -4196,7 +4196,7 @@
         "content": "Crear una subvención diferenciada para niños con necesidades especiales.",
         "number": "62",
         "title": "Subvención para niños con necesidades especiales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4227,7 +4227,7 @@
         "content": "Perfeccionar el marco regulatorio para permitir mayor autonomía y diversidad de proyectos educativos, junto con una adecuada red de fiscalización y apoyo. ",
         "number": "63",
         "title": "Permitir mayor autonomía y diversidad de proyectos educativos",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4258,7 +4258,7 @@
         "content": "Restablecer el mérito con criterios de inclusión en el acceso a los\r\nliceos emblemáticos y proyectos especiales de excelencia, por razones\r\nacadémicas, artísticas y deportivas. En el resto de los establecimientos\r\npermitir criterios de admisión de hasta un 30% de la matrícula en\r\nfavor de alumnos vulnerables, migrantes o de criterios adicionales de\r\npriorización acordes a los respectivos proyectos educativos, los cuales\r\ntendrán que ser siempre objetivos, transparentes y no podrán significar\r\ndiscriminaciones arbitrarias.",
         "number": "64",
         "title": "Restablecer criterios de mérito y justicia en la Admisión Escolar",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -4335,7 +4335,7 @@
     },
     {
       "type": "justification",
-      "id": 3661,
+      "id": 7136,
       "attributes": {
 
       },
@@ -4368,7 +4368,7 @@
         "content": "Facilitar los aportes voluntarios de las familias y la sociedad civil, eliminando las restricciones que actualmente impone la ley, como por ejemplo, el descuento a las donaciones o las restricciones en el uso de aportes no periódicos. ",
         "number": "65",
         "title": "Facilitar las donaciones voluntarias de las familias y la sociedad civil.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4399,7 +4399,7 @@
         "content": "Perfeccionar el Programa de Integración Escolar, incluyendo el envío de una ley sobre necesidades educativas especiales y homologación curricular. ",
         "number": "66",
         "title": "Perfeccionar el Programa de Integración Escolar",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4430,7 +4430,7 @@
         "content": "Reforzar el Sistema de Aseguramiento de la Calidad, conjugando la autorregulación de los procesos internos con la rendición de cuentas sobre los estándares de calidad y estableciendo la acreditación institucional como condición para acceder a fondos públicos",
         "number": "67",
         "title": "Reforzar el Sistema de Aseguramiento de la Calidad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -4461,7 +4461,7 @@
         "content": "Se perfeccionará la conformación del Consejo Nacional de Acreditación y ésta podrá asociarse a áreas disciplinarias.",
         "number": "68",
         "title": "Perfeccionar la conformación del Consejo Nacional de Acreditación",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -4538,7 +4538,7 @@
     },
     {
       "type": "justification",
-      "id": 2733,
+      "id": 2026,
       "attributes": {
 
       },
@@ -4571,7 +4571,7 @@
         "content": "Crear un Sistema Solidario de Acceso a la Educación Superior que evite que las razones económicas impidan estudiar, termine con las discriminaciones arbitrarias, asegure la igualdad de trato y resguarde la sustentabilidad y autonomía de las instituciones de educación.",
         "number": "69",
         "title": "Sistema Solidario de Acceso a la Educación Superior",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -4648,7 +4648,7 @@
     },
     {
       "type": "justification",
-      "id": 1507,
+      "id": 6640,
       "attributes": {
 
       },
@@ -4681,7 +4681,7 @@
         "content": "Un nuevo Sistema Único de Créditos para los estudiantes de instituciones acreditadas. Este crédito sustituirá al Crédito con Aval del Estado y al Fondo Solidario del Crédito Universitario por un sistema administrado por el Estado, sin intervención de la banca, con una tasa de interés del 2% real anual. La cuota a pagar será contingente al ingreso y progresiva, pero en ningún caso excederá el 10% de las remuneraciones. La deuda se pagará sólo cuando el alumno haya egresado y tenga ingresos, no se paga si no se tienen ingresos o estos son demasiado bajos, condonándose después de 15 años de pago. Este sistema tendrá requisitos de calidad para las instituciones y de mérito para los estudiantes.",
         "number": "70",
         "title": "Nuevo Sistema Único de Créditos para los estudiantes de instituciones acreditadas",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -4758,7 +4758,7 @@
     },
     {
       "type": "justification",
-      "id": 919,
+      "id": 4288,
       "attributes": {
 
       },
@@ -4791,7 +4791,7 @@
         "content": "Crear el Ministerio de Educación Superior, Ciencia, Tecnología e Innovación y la Superintendencia de Educación Superior, que fiscalice el cumplimiento de la legislación, asegure que las instituciones mantengan los requisitos de su reconocimiento oficial, sean viables y tengan un sistema de información transparente que impida la publicidad engañosa.",
         "number": "71",
         "title": "Crear el Ministerio de Educación Superior, Ciencia, Tecnología e Innovación y la Superintendencia de Educación Superior",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -4868,7 +4868,7 @@
     },
     {
       "type": "justification",
-      "id": 2829,
+      "id": 8479,
       "attributes": {
 
       },
@@ -4901,7 +4901,7 @@
         "content": "Reordenar la institucionalidad gubernamental por medio de un nuevo ministerio a cargo de las actividades de ciencia, educación superior, tecnología e innovación y revisar los campos de acción y programas de agencias como CONICYT y CORFO",
         "number": "72",
         "title": "Nuevo Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -4978,7 +4978,7 @@
     },
     {
       "type": "justification",
-      "id": 8922,
+      "id": 4765,
       "attributes": {
 
       },
@@ -5011,7 +5011,7 @@
         "content": "Apoyar el desarrollo de la industria de la información con planes de formación y eliminando distorsiones tributarias como el IVA a la exportación de servicios y el impuesto a la importación de software",
         "number": "73",
         "title": "Apoyar al desarrollo de la industria de la información",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -5088,7 +5088,7 @@
     },
     {
       "type": "justification",
-      "id": 2096,
+      "id": 2115,
       "attributes": {
 
       },
@@ -5121,7 +5121,7 @@
         "content": "Adaptar las regulaciones a los desafíos que impone la revolución digital (...) incorporación masiva de las tecnologías digitales en los ministerios y servicios públicos y el desarrollo de políticas de ciberseguridad",
         "number": "74",
         "title": "Adaptar las regulaciones a la revolución digital",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -5198,7 +5198,7 @@
     },
     {
       "type": "justification",
-      "id": 2677,
+      "id": 307,
       "attributes": {
 
       },
@@ -5231,7 +5231,7 @@
         "content": "Complementar el Estatuto Pyme con un Estatuto para Emprendedores, que facilite el inicio de nuevos negocios disminuyendo las trabas y la carga regulatoria.",
         "number": "75",
         "title": "Estatuto para Emprendedores",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5262,7 +5262,7 @@
         "content": "Adaptar la ley de incentivo tributario a I+D para facilitar su uso por parte de empresas de menor tamaño y nuevos emprendimientos, incorporando mecanismos de prefinanciamiento.",
         "number": "76",
         "title": "Adaptar la ley de incentivo tributario a I+D",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5293,7 +5293,7 @@
         "content": "Dotar de autonomía a la Comisión Nacional de Productividad, con mandato para pronunciarse sobre los efectos sobre la productividad de las reformas y cambios regulatorios relevantes.",
         "number": "77",
         "title": "Dotar de autonomía a la Comisión Nacional de Productividad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5324,7 +5324,7 @@
         "content": "Nuevo Ministerio de la Familia y Desarrollo Social",
         "number": "78",
         "title": "Nuevo Ministerio de la Familia y Desarrollo Social",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -5401,7 +5401,7 @@
     },
     {
       "type": "justification",
-      "id": 3291,
+      "id": 2518,
       "attributes": {
 
       },
@@ -5434,7 +5434,7 @@
         "content": "Se creará la Subsecretaría de Familia, cuya misión fundamental será desarrollar las políticas sociales para fortalecer a las familias y, simultáneamente, brindar un nuevo trato a nuestros niños y adultos mayores.",
         "number": "79",
         "title": "Crear la Subsecretaría de Familia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5465,7 +5465,7 @@
         "content": "Se fortalecerá y traspasará a dicha Subsecretaría (de la Familia) el subsistema Chile Crece Contigo.",
         "number": "80",
         "title": "Chile Crece Contigo sera parte de la Subsecretaría de Familia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5496,7 +5496,7 @@
         "content": "Se perfeccionarán los ejes “Seguridades” y “Oportunidades” del Ingreso Ético Familiar centrando en la familia el apoyo ante situaciones de vulnerabilidad",
         "number": "81",
         "title": "Perfeccionamiento de los ejes “Seguridades” y “Oportunidades” del Ingreso Ético Familiar",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5527,7 +5527,7 @@
         "content": "Crear por ley el Estatuto de Fortalecimiento y Protección para la Familia estableciendo principios, derechos y garantías básicas para la familia y su reconocimiento como sujeto político prioritario por parte del Estado.",
         "number": "82",
         "title": "Crear el Estatuto de Fortalecimiento y Protección para la Familia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5558,7 +5558,7 @@
         "content": "Impulsar una ley marco que proteja la maternidad, en especial los programas de acompañamiento de embarazos vulnerables, permitiendo además la libre elección y la participación de la sociedad civil, y ampliar el acceso a la atención a mujeres y sus parejas en edad fértil con diagnóstico de infertilidad",
         "number": "83",
         "title": "Impulsar ley marco que proteja la maternidad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5589,7 +5589,7 @@
         "content": "Crear dentro de la nueva subsecretaría (de la Familia) el Servicio de Protección a la Infancia, incorporándolo a la Alta Dirección Pública, y perfeccionar los proyectos vinculados al sistema de garantías de la infancia.",
         "number": "84",
         "title": "Crear el Servicio de Protección a la Infancia",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -5666,7 +5666,7 @@
     },
     {
       "type": "justification",
-      "id": 1688,
+      "id": 7083,
       "attributes": {
 
       },
@@ -5699,7 +5699,7 @@
         "content": "Fortalecer la colaboración con la sociedad civil mediante la creación de una Ley Única de Subvenciones, el aumento de los recursos para las supervisiones y el fortalecimiento de la transparencia y los estándares de calidad.",
         "number": "85",
         "title": "Crear una Ley Única de Subvenciones",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -5730,7 +5730,7 @@
         "content": "Modificar la Ley de Adopciones para que cuando no sea posible que el niño vuelva con su familia, buscar la mejor familia adoptiva en función de su interés superior, asegurando un proceso rápido amparado en una nueva y moderna regulación.",
         "number": "86",
         "title": "Modificar la Ley de Adopciones",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -5807,7 +5807,7 @@
     },
     {
       "type": "justification",
-      "id": 8283,
+      "id": 5439,
       "attributes": {
 
       },
@@ -5840,7 +5840,7 @@
         "content": "Mejorar sustancialmente el sistema residencial aumentando gradualmente la subvención base al doble de lo que se entrega actualmente, determinando nuevos estándares de calidad y licitando nuevos proyectos.",
         "number": "87",
         "title": "Mejorar el sistema residencial",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -5917,7 +5917,7 @@
     },
     {
       "type": "justification",
-      "id": 7402,
+      "id": 5521,
       "attributes": {
 
       },
@@ -5950,7 +5950,7 @@
         "content": "Promover una agenda de prevención del abuso sexual infantil y acompañamiento a las víctimas y sus familias. Entre otras, (...) analizaremos modificaciones en los plazos y condiciones de prescripción de estos delitos y sus penas.",
         "number": "88",
         "title": "Promover una agenda de prevención del abuso sexual infantil y acompañamiento a las víctimas y sus familias",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6027,7 +6027,7 @@
     },
     {
       "type": "justification",
-      "id": 5935,
+      "id": 9065,
       "attributes": {
 
       },
@@ -6060,7 +6060,7 @@
         "content": "Revisar la legislación con el propósito de sancionar las nuevas formas de violencia ejercida contra la infancia a través de las redes sociales e internet.",
         "number": "89",
         "title": "Sancionar la violencia contra la infancia a través de las redes sociales e internet.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6137,7 +6137,7 @@
     },
     {
       "type": "justification",
-      "id": 7024,
+      "id": 8109,
       "attributes": {
 
       },
@@ -6170,7 +6170,7 @@
         "content": "Crear el Servicio de Acción Joven dentro del Ministerio de la Familia y Desarrollo Social. Este organismo reemplazará al Injuv y tendrá dos funciones principales: acción y participación, centrándose en promover el voluntariado, y reconocimiento de las preocupaciones de los jóvenes en las políticas públicas.",
         "number": "90",
         "title": "Crear el Servicio de Acción Joven",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6201,7 +6201,7 @@
         "content": " Como parte del ingreso etico familiar 2.0 y 'A fin de fomentar la participación laboral formal de las mujeres con hijos, el monto del Bono Trabajo Mujer mejorará, entregando un mayor aporte dependiendo del grado de vulnerabilidad y del tamaño de la familia'.",
         "number": "91",
         "title": "Mejorar el monto del Bono Trabajo Mujer ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6232,7 +6232,7 @@
         "content": " Como parte del ingreso etico familiar 2.0  se 'Implementara una transferencia condicionada por controles de salud de la mujer que permita prevenir el cáncer cérvicouterino y de mamas.",
         "number": "92",
         "title": "Transferencia condicionada por controles de salud de la mujer",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6263,7 +6263,7 @@
         "content": "Como parte del ingreso etico familiar 2.0  se 'Implementara una transferencia condicionada por examen preventivo de salud del adulto mayor'.",
         "number": "93",
         "title": "Transferencia condicionada por examen preventivo de salud del adulto mayor",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6294,7 +6294,7 @@
         "content": "Garantía de tope de gasto por parte de las familias ante un evento catastrófico en salud de carácter no ambulatorio.",
         "number": "94",
         "title": "Garantía de tope de gasto en salud por evento catastrófico",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6325,7 +6325,7 @@
         "content": "Crear el seguro Protección para Enfermedades Catastróficas para los afiliados a FONASA, disponible tanto para la red pública como la para la red privada de prestadores preferentes.",
         "number": "95",
         "title": "Crear el seguro Protección para Enfermedades Catastróficas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6356,7 +6356,7 @@
         "content": "Nueva Defensoría de Víctimas de la Delincuencia, para que las familias que sean víctimas de delitos violentos sean atendidas por un abogado defensor, el que podrá activar un proceso judicial para perseguir a quienes resulten responsables.",
         "number": "96",
         "title": "Nueva Defensoría de Víctimas de la Delincuencia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -6387,7 +6387,7 @@
         "content": "Mejorar beneficios en el Pilar Solidario, diferenciados por edad.",
         "number": "97",
         "title": "Mejoras en el Pilar Solidario, diferenciados por edad",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6464,7 +6464,7 @@
     },
     {
       "type": "justification",
-      "id": 1721,
+      "id": 2433,
       "attributes": {
 
       },
@@ -6497,7 +6497,7 @@
         "content": "Aumentar las cotizaciones (obligatorias) en cuatro puntos porcentuales, con cargo al empleador, para mejorar las pensiones en el largo plazo.",
         "number": "98",
         "title": "Aumentar las cotizaciones obligatorias",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6574,7 +6574,7 @@
     },
     {
       "type": "justification",
-      "id": 6176,
+      "id": 2725,
       "attributes": {
 
       },
@@ -6607,7 +6607,7 @@
         "content": "Implementar gradualmente un seguro social de dependencia para personas mayores que requieran ayuda de terceros, incluyendo un mecanismo de apoyo para los cuidadores familiares y formales.",
         "number": "99",
         "title": "Implementar un seguro social de dependencia para personas mayores",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6684,7 +6684,7 @@
     },
     {
       "type": "justification",
-      "id": 2642,
+      "id": 5728,
       "attributes": {
 
       },
@@ -6717,7 +6717,7 @@
         "content": "Crear un Defensor Mayor en el SENAMA",
         "number": "100",
         "title": "Crear un Defensor Mayor en el SENAMA",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6794,7 +6794,7 @@
     },
     {
       "type": "justification",
-      "id": 4115,
+      "id": 5185,
       "attributes": {
 
       },
@@ -6827,7 +6827,7 @@
         "content": "Mejorar las pensiones de los adultos mayores más vulnerables, incrementando los aportes fiscales al Pilar Solidario en un 42%, para aumentar la Pensión Básica y el Aporte Previsional Solidario, extendiendo su cobertura hacia la clase media. El objetivo es incrementar significativamente estos beneficios, cuyo monto además irá aumentando con la edad",
         "number": "101",
         "title": "Mejorar las pensiones de los adultos mayores",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -6904,7 +6904,7 @@
     },
     {
       "type": "justification",
-      "id": 3668,
+      "id": 9269,
       "attributes": {
 
       },
@@ -6937,7 +6937,7 @@
         "content": "Aumentar las pensiones de la clase media con un complemento de sus pensiones con cargo fiscal para quienes hayan cotizado más de 20 años, el que aumentará cuando se postergue la edad de jubilación. ",
         "number": "102",
         "title": "Aumentar las pensiones de la clase media",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7014,7 +7014,7 @@
     },
     {
       "type": "justification",
-      "id": 9151,
+      "id": 3313,
       "attributes": {
 
       },
@@ -7047,7 +7047,7 @@
         "content": "Aumentar las pensiones de las mujeres con un complemento de sus pensiones con cargo fiscal para quienes hayan cotizado más de 16 años, el que también aumentará cuando se postergue la edad de jubilación. También se aumentará la rentabilidad del Bono por Hijo en el caso de los nacidos antes de julio de 2009.",
         "number": "103",
         "title": "Aumentar las pensiones de las mujeres",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7124,7 +7124,7 @@
     },
     {
       "type": "justification",
-      "id": 9305,
+      "id": 1242,
       "attributes": {
 
       },
@@ -7157,7 +7157,7 @@
         "content": "Mantener el monto de la pensión total que recibirán los nuevos pensionados de retiro programado del Pilar Solidario, evitando su disminución a medida que pasa el tiempo. ",
         "number": "104",
         "title": "Mantener estable el monto de los pensionados por retiro programado ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7234,7 +7234,7 @@
     },
     {
       "type": "justification",
-      "id": 4765,
+      "id": 5571,
       "attributes": {
 
       },
@@ -7267,7 +7267,7 @@
         "content": "Crear nuevos incentivos para los planes de ahorro previsional voluntario",
         "number": "105",
         "title": "Crear incentivos para los planes de ahorro previsional voluntario",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7344,7 +7344,7 @@
     },
     {
       "type": "justification",
-      "id": 6188,
+      "id": 5807,
       "attributes": {
 
       },
@@ -7377,7 +7377,7 @@
         "content": "Autorizar el retiro de un monto de libre disposición a quienes posterguen la edad de jubilación equivalente al 50% del mayor ahorro logrado fruto de dicha decisión.",
         "number": "106",
         "title": "Autorizar el retiro de un monto de libre disposición",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7454,7 +7454,7 @@
     },
     {
       "type": "justification",
-      "id": 9318,
+      "id": 1711,
       "attributes": {
 
       },
@@ -7487,7 +7487,7 @@
         "content": " Levantando las restricciones al cambio de fondo (de pensiones)",
         "number": "107",
         "title": "Levantar las restricciones al cambio de fondo de pensiones",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7564,7 +7564,7 @@
     },
     {
       "type": "justification",
-      "id": 209,
+      "id": 8547,
       "attributes": {
 
       },
@@ -7597,7 +7597,7 @@
         "content": "Reimpulsar el proyecto que modifica el régimen de sociedad conyugal permitiendo a la mujer administrar la sociedad y/o sus bienes propios. ",
         "number": "108",
         "title": "Permitir a la mujer administrar la sociedad conyugal y/o sus bienes propios",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7674,7 +7674,7 @@
     },
     {
       "type": "justification",
-      "id": 7873,
+      "id": 555,
       "attributes": {
 
       },
@@ -7707,7 +7707,7 @@
         "content": "Terminar con el impedimento legal de contraer segundas nupcias antes de los 270 días desde la disolución del vínculo por divorcio, nulidad o muerte.",
         "number": "109",
         "title": "Eliminar impedimento legal de contraer segundas nupcias antes de los 270 ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7784,7 +7784,7 @@
     },
     {
       "type": "justification",
-      "id": 1178,
+      "id": 2277,
       "attributes": {
 
       },
@@ -7817,7 +7817,7 @@
         "content": "Mejorar el subsidio al empleo de la mujer, entregando un mayor aporte dependiendo del tamaño de la familia.",
         "number": "110",
         "title": "Mejorar el subsidio al empleo de la mujer",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -7848,7 +7848,7 @@
         "content": "Impulsar el pronto despacho del proyecto de ley sobre el Derecho de las Mujeres a una Vida Libre de Violencia.",
         "number": "111",
         "title": " Ley sobre el Derecho de las Mujeres a una Vida Libre de Violencia.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -7925,7 +7925,7 @@
     },
     {
       "type": "justification",
-      "id": 6530,
+      "id": 7591,
       "attributes": {
 
       },
@@ -7958,7 +7958,7 @@
         "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso sobre violencia en el pololeo",
         "number": "112",
         "title": "Poner urgencia a los proyectos sobre violencia en el pololeo",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8035,7 +8035,7 @@
     },
     {
       "type": "justification",
-      "id": 1413,
+      "id": 9009,
       "attributes": {
 
       },
@@ -8068,7 +8068,7 @@
         "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso sobre medios electrónicos para medidas de protección",
         "number": "113",
         "title": "Poner urgencia a los proyectos sobre medios electrónicos para medidas de protección",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8098,8 +8098,8 @@
       "attributes": {
         "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Tipificación del femicidio y de otros delitos contra las mujeres",
         "number": "114",
-        "title": "Agenda corta de combate a la violencia contra la mujer",
-        "ja-why": ""
+        "title": "agenda corta de combate a la violencia contra la mujer",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8176,7 +8176,7 @@
     },
     {
       "type": "justification",
-      "id": 2565,
+      "id": 5519,
       "attributes": {
 
       },
@@ -8208,8 +8208,8 @@
       "attributes": {
         "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Sancionar la difusión no consentida de imágenes o contenido de connotación sexual",
         "number": "115",
-        "title": "Agenda corta de combate a la violencia contra la mujer",
-        "ja-why": ""
+        "title": "agenda corta de combate a la violencia contra la mujer",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8286,7 +8286,7 @@
     },
     {
       "type": "justification",
-      "id": 9829,
+      "id": 4479,
       "attributes": {
 
       },
@@ -8318,8 +8318,8 @@
       "attributes": {
         "content": "Desarrollar una agenda corta de combate a la violencia contra la mujer poniendo urgencia a los proyectos paralizados en el Congreso - Tipifica el delito de acoso sexual en público.",
         "number": "116",
-        "title": "Agenda corta de combate a la violencia contra la mujer",
-        "ja-why": ""
+        "title": "agenda corta de combate a la violencia contra la mujer",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8396,7 +8396,7 @@
     },
     {
       "type": "justification",
-      "id": 9937,
+      "id": 2969,
       "attributes": {
 
       },
@@ -8429,7 +8429,7 @@
         "content": "Aumentar las penas del delito de maltrato habitual y de lesiones cuando se produce en un contexto de violencia intrafamiliar",
         "number": "117",
         "title": "Aumento de penas en el contexto de violencia intrafamiliar",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8506,7 +8506,7 @@
     },
     {
       "type": "justification",
-      "id": 6362,
+      "id": 818,
       "attributes": {
 
       },
@@ -8539,7 +8539,7 @@
         "content": "Garantizar a la mujer un hogar donde vivir con sus hijos, facilitando la afectación del bien familiar. ",
         "number": "118",
         "title": "Facilitar la afectación del bien familiar",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8570,7 +8570,7 @@
         "content": "Modernizar Fonasa desde la lógica de un fondo a una de seguro. El foco estará puesto en la entrega de los servicios comprometidos de manera oportuna y con la mejor calidad posible.\r\no Impulsar una nueva gobernanza mediante un directorio técnico y avanzar desde el financiamiento de instituciones hacia el de soluciones de salud para los usuarios.",
         "number": "119",
         "title": "Modernizar Fonasa",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8601,7 +8601,7 @@
         "content": "Reorganizar la atención de salud, mediante las siguientes innovaciones institucionales:Transformar la Subsecretaría de Redes Asistenciales en una entidad independiente, con un Directorio Nacional de Atención de Salud Pública elegido por Alta Dirección Pública. Su función principal será monitorear el funcionamiento de la red de prestadores estatales y designar, evaluar y remover a los gobiernos superiores de los Servicios de Salud y hospitales, cuando corresponda.",
         "number": "120",
         "title": " Innovacion institucional en la Subsecretaría de Redes Asistenciales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8632,7 +8632,7 @@
         "content": "Modernizar los Servicios de Salud, incluyendo cambios a sus estructuras administrativas y gobiernos corporativos, los que se renovarán en función del desempeño y con independencia del ciclo político. Los servicios contarán con directores ejecutivos que dependerán de los directorios y su objetivo central será mejorar la atención de los usuarios.",
         "number": "121",
         "title": "Modernizar los Servicios de Salud,",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8663,7 +8663,7 @@
         "content": "Reformar gradualmente los esquemas de seguros para avanzar hacia un sistema que garantice asequibilidad, competencia, transparencia y libre afiliación poniendo fin a las preexistencias.",
         "number": "122",
         "title": "Reformar los esquemas de seguros ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8694,7 +8694,7 @@
         "content": "Terminar con las discriminaciones en el acceso por edad, género o preexistencias en Isapres, mediante la creación de un Plan de Salud Universal.",
         "number": "123",
         "title": "Crear un Plan de Salud Universal",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8725,7 +8725,7 @@
         "content": "Crear un sistema que estimule a independientes e informales a cotizar para salud.",
         "number": "124",
         "title": "Crear un sistema que estimule a independientes e informales a cotizar para salud",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -8802,7 +8802,7 @@
     },
     {
       "type": "justification",
-      "id": 1897,
+      "id": 9761,
       "attributes": {
 
       },
@@ -8835,7 +8835,7 @@
         "content": "Avanzar a mediano plazo hacia un nuevo seguro social de salud, con un plan base para todos los chilenos, independiente del sistema previsional.",
         "number": "125",
         "title": "Nuevo seguro social de salud",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -8866,7 +8866,7 @@
         "content": "Introducir más competencia en la industria de laboratorios y farmacéutica y potenciar el uso de medicamentos genéricos bioequivalentes.",
         "number": "126",
         "title": "Mayor competencia en la industria de laboratorios y farmacéutica",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -8943,7 +8943,7 @@
     },
     {
       "type": "justification",
-      "id": 1500,
+      "id": 9532,
       "attributes": {
 
       },
@@ -8976,7 +8976,7 @@
         "content": "Nuevo comparador online de precios www.tufarmacia.gob.cl, para que todas las personas sepan en qué farmacia pueden encontrar los medicamentos más baratos del mercado, incluyendo las alternativas de genéricos bioequivalentes disponibles.",
         "number": "127",
         "title": "Nuevo comparador online de precios de farmacos",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9053,7 +9053,7 @@
     },
     {
       "type": "justification",
-      "id": 7782,
+      "id": 20,
       "attributes": {
 
       },
@@ -9086,7 +9086,7 @@
         "content": "Observatorio nacional e internacional de medicamentos y otros dispositivos médicos.",
         "number": "128",
         "title": "Observatorio nacional e internacional de medicamentos y otros dispositivos médicos.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9163,7 +9163,7 @@
     },
     {
       "type": "justification",
-      "id": 6401,
+      "id": 3254,
       "attributes": {
 
       },
@@ -9196,7 +9196,7 @@
         "content": "Perfeccionar la ley Ricarte Soto redefiniendo el método de priorización, incorporando el riesgo vital y mejorando el registro de pacientes.",
         "number": "129",
         "title": "Perfeccionar la ley Ricarte Soto",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9227,7 +9227,7 @@
         "content": "Constituir el Consejo Nacional de Cáncer, cuyo propósito principal será velar por el fortalecimiento de una política nacional de cáncer de carácter permanente.",
         "number": "130",
         "title": "Constituir el Consejo Nacional de Cáncer",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9304,7 +9304,7 @@
     },
     {
       "type": "justification",
-      "id": 6615,
+      "id": 4819,
       "attributes": {
 
       },
@@ -9337,7 +9337,7 @@
         "content": "Impulsar nuevos mecanismos de apoyo para las familias: se estudiará la creación de un subsidio de apoyo para la dependencia de los adultos mayores con discapacidad",
         "number": "131",
         "title": "Subsidio de apoyo para los adultos mayores con discapacidad",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9414,7 +9414,7 @@
     },
     {
       "type": "justification",
-      "id": 7650,
+      "id": 9677,
       "attributes": {
 
       },
@@ -9447,7 +9447,7 @@
         "content": "Fomentar un mercado laboral inclusivo para las personas con discapacidad, incluyendo a los cuidadores en la cuota de la nueva Ley de Inclusión Laboral, facilitando el acceso a los sistemas de capacitación de SENCE y estableciendo mecanismos que permitan compatibilizar el trabajo y las terapias de rehabilitación.",
         "number": "132",
         "title": "Mercado laboral inclusivo",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9478,7 +9478,7 @@
         "content": "Perfeccionar la legislación de seguridad social para las personas con discapacidad, de forma que los jóvenes con discapacidad no pierdan los beneficios de su plan de salud familiar por el hecho de trabajar. También se flexibilizarán los requisitos para mantener el derecho al Pilar Solidario en el caso de quienes opten por trabajar. ",
         "number": "133",
         "title": "Perfeccionar la legislación de seguridad social en materia de discapacidad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9509,7 +9509,7 @@
         "content": "Reconocer constitucionalmente a los pueblos indígenas, impulsando el diálogo con los mismos a través de los mecanismos de participación y consulta respectivos.",
         "number": "134",
         "title": "Reconocer constitucionalmente a los pueblos indígenas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9540,7 +9540,7 @@
         "content": "Crear el Consejo Nacional de Pueblos Indígenas y los Consejos de cada pueblo, como instancias de representación y participación de los pueblos indígenas.",
         "number": "135",
         "title": "Crear el Consejo Nacional de Pueblos Indígenas y los Consejos de cada pueblo",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9571,7 +9571,7 @@
         "content": "Establecer una Agencia de Desarrollo Indígena en ese Ministerio, que sea la continuadora de la CONADI, con responsabilidad por la ejecución de las políticas, planes y programas para las personas y comunidades indígenas.",
         "number": "136",
         "title": "Establecer una Agencia de Desarrollo Indígena",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9602,7 +9602,7 @@
         "content": "Crear Corporaciones Territoriales de Desarrollo Indígena que sean garantes y acompañen los acuerdos entre el Estado y los indígenas, y entre privados y comunidades, para desarrollar proyectos en determinados territorios.",
         "number": "137",
         "title": "Crear Corporaciones Territoriales de Desarrollo Indígena",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9633,7 +9633,7 @@
         "content": "Modificar la ley indígena para potenciar el uso productivo de las tierras entregadas a los miembros del pueblo mapuche reduciendo o eliminando las prohibiciones de vender, hipotecar, arrendar, o disponer de sus tierras.",
         "number": "138",
         "title": "Modificar la ley indígena en materia de disposicion de sus tierras",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -9664,7 +9664,7 @@
         "content": "Se impulsará y actualizará el proyecto de Ley de Migración y Extranjería",
         "number": "139",
         "title": "Actualizar el proyecto de Ley de Migración y Extranjería",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9741,7 +9741,7 @@
     },
     {
       "type": "justification",
-      "id": 7728,
+      "id": 6587,
       "attributes": {
 
       },
@@ -9774,7 +9774,7 @@
         "content": "Mejorar la institucionalidad estableciendo por ley el Consejo de Política Migratoria y fortaleciendo a la Subsecretaría del Interior y las Gobernaciones como autoridades migratorias.",
         "number": "140",
         "title": "Establecer por ley el Consejo de Política Migratoria ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9851,7 +9851,7 @@
     },
     {
       "type": "justification",
-      "id": 9937,
+      "id": 4995,
       "attributes": {
 
       },
@@ -9884,7 +9884,7 @@
         "content": "Ampliar las opciones que se le ofrecen al migrante, con visas específicas para personas con capital humano avanzado que Chile necesita, como médicos especialistas y talentos excepcionales.",
         "number": "141",
         "title": "Visas específicas para capital humano avanzado",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -9961,7 +9961,7 @@
     },
     {
       "type": "justification",
-      "id": 8117,
+      "id": 1031,
       "attributes": {
 
       },
@@ -9994,7 +9994,7 @@
         "content": "Exigir a todo extranjero que trabaje en Chile cotizar en el sistema chileno de pensiones, sin perjuicio de poder retirar sus fondos previsionales en caso de dejar el país para destinarlos a fines previsionales en su país de origen.",
         "number": "142",
         "title": "Obligacion para los extranjeros de cotizar en el sistema chileno de pensiones",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -10025,7 +10025,7 @@
         "content": "Establecer expresamente que los extranjeros en situación migratoria regular tendrán acceso al sistema de salud en condiciones iguales a los nacionales.",
         "number": "143",
         "title": "Igualdad para el migrante regular en el acceso al sistema de salud",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10102,7 +10102,7 @@
     },
     {
       "type": "justification",
-      "id": 6970,
+      "id": 1150,
       "attributes": {
 
       },
@@ -10135,7 +10135,7 @@
         "content": "Mantener garantía de acceso a educación preescolar, básica y media a los niños extranjeros en las mismas condiciones que a los nacionales con independencia de su situación migratoria.",
         "number": "144",
         "title": "Garantía de acceso a educación a los niños extranjeros",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10212,7 +10212,7 @@
     },
     {
       "type": "justification",
-      "id": 3531,
+      "id": 4371,
       "attributes": {
 
       },
@@ -10245,7 +10245,7 @@
         "content": "Hacer más expedita y menos burocrática la expulsión de aquellas personas que, no teniendo arraigo, incumplan gravemente las normas chilenas, sin perjuicio de los procesos judiciales que deban enfrentar en Chile.",
         "number": "145",
         "title": "Agilizar la expulsión de extranjeros que incumplan las normas chilenas",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10322,7 +10322,7 @@
     },
     {
       "type": "justification",
-      "id": 2126,
+      "id": 8419,
       "attributes": {
 
       },
@@ -10355,7 +10355,7 @@
         "content": "Agilizar y perfeccionar el sistema de revalidación y reconocimiento de títulos de educación superior.",
         "number": "146",
         "title": "Perfeccionar el sistema de revalidación y reconocimiento de títulos",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10432,7 +10432,7 @@
     },
     {
       "type": "justification",
-      "id": 5498,
+      "id": 9724,
       "attributes": {
 
       },
@@ -10465,7 +10465,7 @@
         "content": "Modernizar los sistemas de auditoría y de selección de personal administrativo, incorporando procedimientos y protocolos modernos de gestión como matrices de riesgo o gestión presupuestaria por objetivos estratégicos, entre otras medidas.",
         "number": "147",
         "title": "Modernizar los sistemas de auditoría y selección de personal",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10542,7 +10542,7 @@
     },
     {
       "type": "justification",
-      "id": 1062,
+      "id": 8107,
       "attributes": {
 
       },
@@ -10575,7 +10575,7 @@
         "content": "Establecer una auditoría financiera contable externa para nuestras policías e implementar un nuevo sistema para denuncias de conductas indebidas dentro de las instituciones policiales.",
         "number": "148",
         "title": "Auditoría financiera contable externa en las policías",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10652,7 +10652,7 @@
     },
     {
       "type": "justification",
-      "id": 4838,
+      "id": 9462,
       "attributes": {
 
       },
@@ -10685,7 +10685,7 @@
         "content": "Radicar las funciones administrativas (de las Policías) en personal civil especializado, que será elegido por concurso público y sus directivos por los mecanismos de la Alta Dirección Pública, con la sola excepción de la dirección que seguirá el escalafón de orden y seguridad",
         "number": "149",
         "title": "Personal administrativo civil en las Policías",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -10716,7 +10716,7 @@
         "content": "Establecer el Sistema Táctico de Análisis Delictual (STAD) por ley. ",
         "number": "150",
         "title": "Establecer el Sistema Táctico de Análisis Delictual (STAD) por ley. ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10793,7 +10793,7 @@
     },
     {
       "type": "justification",
-      "id": 2349,
+      "id": 5201,
       "attributes": {
 
       },
@@ -10826,7 +10826,7 @@
         "content": "Incorporar a los gobiernos locales en un trabajo conjunto de prevención del delito e introducir cambios legales para que las municipalidades puedan asumir funciones en el área de tránsito, emergencias y faltas relacionadas con las incivilidades a fin de focalizar la labor de Carabineros en prevención del delito",
         "number": "151",
         "title": "Incorporar a los gobiernos locales en la prevención del delito ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -10903,7 +10903,7 @@
     },
     {
       "type": "justification",
-      "id": 1776,
+      "id": 2111,
       "attributes": {
 
       },
@@ -10936,7 +10936,7 @@
         "content": "Nueva Ley de Prevención de la Violencia y el Delito y, en general, se haga cargo coordinadamente de los factores de riesgo que afectan a la población. Entre otros, involucrará la prevención de la violencia y la deserción en el ámbito escolar y la prevención y rehabilitación en consumo abusivo de drogas y alcohol, con especial énfasis en los adolescentes infractores de ley con problemas de abuso de estas sustancias.",
         "number": "152",
         "title": "Nueva Ley de Prevención de la Violencia y el Delito",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -10967,7 +10967,7 @@
         "content": "Crear una Estrategia Nacional de Ciberseguridad estableciendo, mediante reforma constitucional, que el ciberespacio nacional es un medioambiente soberano con el mismo estatus del aire, mar y tierra. ",
         "number": "153",
         "title": "Crear una Estrategia Nacional de Ciberseguridad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -10998,7 +10998,7 @@
         "content": "Actualizar la ley de delitos informáticos y crear una fuerza de respuesta ante ciberemergencias.",
         "number": "154",
         "title": "Actualizar la ley de delitos informáticos",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11075,7 +11075,7 @@
     },
     {
       "type": "justification",
-      "id": 671,
+      "id": 7918,
       "attributes": {
 
       },
@@ -11108,7 +11108,7 @@
         "content": "Crear un Comité de Inteligencia bajo la dependencia de la Presidencia de la República, con todos los órganos con capacidades e información de inteligencia, como las policías, las fuerzas armadas, gendarmería, entre otros, de forma de concretar el rol asesor que le asigna el Sistema de Inteligencia del Estado",
         "number": "155",
         "title": "Crear un Comité de Inteligencia",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11185,7 +11185,7 @@
     },
     {
       "type": "justification",
-      "id": 1593,
+      "id": 1993,
       "attributes": {
 
       },
@@ -11218,7 +11218,7 @@
         "content": "Incorporar la Unidad de Análisis Financiero al Sistema de Inteligencia del Estado para combatir los circuitos financieros del crimen organizado. ",
         "number": "156",
         "title": "Incorporar la Unidad de Análisis Financiero al Sistema de Inteligencia del Estado",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11295,7 +11295,7 @@
     },
     {
       "type": "justification",
-      "id": 5477,
+      "id": 6488,
       "attributes": {
 
       },
@@ -11328,7 +11328,7 @@
         "content": "Reformular la Ley de Inteligencia creando una comunidad de inteligencia confiable con equipos estables de las FF.AA., Gendarmería, Carabineros y la PDI, e incorporando un Centro de Fusión de Datos contra el Terrorismo y un Departamento de Protección de Infraestructura Crítica. ",
         "number": "157",
         "title": "Reformular la Ley de Inteligencia",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11405,7 +11405,7 @@
     },
     {
       "type": "justification",
-      "id": 4482,
+      "id": 5108,
       "attributes": {
 
       },
@@ -11438,7 +11438,7 @@
         "content": "Conformar la Escuela Nacional de Inteligencia, que genere una comunidad de inteligencia robusta entre todas las instituciones que tengan a accesos a información útil.",
         "number": "158",
         "title": "Conformar la Escuela Nacional de Inteligencia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11469,7 +11469,7 @@
         "content": "Hacer obligatoria la entrega e intercambio de información para fines de inteligencia y preventivos.",
         "number": "159",
         "title": "Obligatoriedad del intercambio de información para fines de inteligencia y preventivos.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11546,7 +11546,7 @@
     },
     {
       "type": "justification",
-      "id": 1848,
+      "id": 2224,
       "attributes": {
 
       },
@@ -11579,7 +11579,7 @@
         "content": "Modificar la ley antiterrorista para mejorar su eficacia persecutoria, introduciendo nuevas herramientas como los agentes encubiertos, los informantes, las entregas vigiladas, la cooperación eficaz, la asistencia internacional, entre otros. Asimismo, crear un estatuto especial de protección para las víctimas y los testigos, peritos, agentes y cooperadores.",
         "number": "160",
         "title": "Modificar la ley antiterrorista",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11656,7 +11656,7 @@
     },
     {
       "type": "justification",
-      "id": 7053,
+      "id": 4713,
       "attributes": {
 
       },
@@ -11689,7 +11689,7 @@
         "content": "Incorporar normas procesales excepcionales para cambiar la competencia de los tribunales en los juicios por terrorismo, de manera de otorgar un juicio justo y libre de presiones tanto a víctimas como imputados.",
         "number": "161",
         "title": "Permitir cambiar la competencia de los tribunales en los juicios por terrorismo",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -11766,7 +11766,7 @@
     },
     {
       "type": "justification",
-      "id": 4407,
+      "id": 311,
       "attributes": {
 
       },
@@ -11799,7 +11799,7 @@
         "content": "Institucionalizar la oferta pública de atención integral a las víctimas mediante una Ley de Apoyo Integral a las Víctimas de Delitos.",
         "number": "162",
         "title": "Ley de Apoyo Integral a las Víctimas de Delitos.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11830,7 +11830,7 @@
         "content": "Aprobar el proyecto de ley actual incorporando la mediación voluntaria o forzada al inicio del proceso y restituir la casación en sede civil",
         "number": "163",
         "title": "Incorporar la mediación voluntaria o forzada al inicio del proceso y restituir la casación en sede civil",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11861,7 +11861,7 @@
         "content": "Presentar al Congreso un Proyecto de Arbitraje Nacional que lo homologue con el arbitraje comercial internacional e incentive el arbitraje institucional.",
         "number": "164",
         "title": "Proyecto de Arbitraje Nacional",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11892,7 +11892,7 @@
         "content": "Exigir tasas de litigación para acceder al sistema de justicia para demandantes frecuentes en que ello forma parte previsible de su sistema de negocios.",
         "number": "165",
         "title": "Tasas de litigación para demandantes frecuentes",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11923,7 +11923,7 @@
         "content": "Completar el diseño orgánico que dé sustento al nuevo Código Procesal Civil, en línea con la estructura de los tribunales reformados.",
         "number": "166",
         "title": "Completar el diseño orgánico que dé sustento al nuevo Código Procesal Civil",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11954,7 +11954,7 @@
         "content": "Modificar y modernizar los procesos ejecutivos, con una fuerte incorporación de tecnología.",
         "number": "167",
         "title": "Modernizar los procesos ejecutivos",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -11985,7 +11985,7 @@
         "content": "Avanzar hacia un procedimiento oral, desformalizado y sin necesidad de abogado para asuntos patrimoniales menores y vecinales.",
         "number": "168",
         "title": "Procedimiento desformalizado para asuntos patrimoniales menores y vecinales.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -12016,7 +12016,7 @@
         "content": "Dotar a dichos tribunales de una unidad administrativa de conflictos de pequeñas cuantías o vecinales y proveer asesoría y apoyo a los usuarios.",
         "number": "169",
         "title": "Una unidad administrativa de conflictos de pequeña cuantía o vecinales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -12047,7 +12047,7 @@
         "content": "La decisión del juez será inapelable y la del mediador pasará por la revisión del juez para obtener valor de sentencia firme y ejecutoriada.",
         "number": "170",
         "title": "La decisión del juez será inapelable y la del mediador sujeta a revisión del juez",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -12078,7 +12078,7 @@
         "content": "Enviar un proyecto de ley sobre ejecución de penas y separar las funciones de custodia y reinserción, con especialización y coordinación entre los encargados de ambas funciones.",
         "number": "171",
         "title": "Separar las funciones de custodia y reinserción",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -12109,7 +12109,7 @@
         "content": "Impulsar el proyecto de ley que crea el Servicio Nacional de Reinserción Social de Adolescentes, encargado de la reinserción social de los adolescentes infractores junto con gestionar la ejecución de las medidas y sanciones del sistema de responsabilidad penal adolescente.",
         "number": "172",
         "title": "Crear el Servicio Nacional de Reinserción Social de Adolescentes",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12186,7 +12186,7 @@
     },
     {
       "type": "justification",
-      "id": 8072,
+      "id": 8997,
       "attributes": {
 
       },
@@ -12219,7 +12219,7 @@
         "content": "Implementar una reforma integral a la Ley sobre Responsabilidad Penal Adolescente, especialmente en lo relativo a las sanciones y el acceso a los programas de reinserción social, deserción escolar, tratamiento de consumo de drogas y alcohol, procurando que la intervención sea con la colaboración y acompañamiento de su familia y, de no ser posible, de un adulto que sea haga responsable del adolescente .",
         "number": "173",
         "title": "Reforma integral a la Ley sobre Responsabilidad Penal Adolescente",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12296,7 +12296,7 @@
     },
     {
       "type": "justification",
-      "id": 1184,
+      "id": 3323,
       "attributes": {
 
       },
@@ -12329,7 +12329,7 @@
         "content": "Avanzar en la tramitación de los proyectos que modernizan el sistema registral y notarial modificando el régimen de nombramiento y las funciones de ambos sistemas.",
         "number": "174",
         "title": "Modernizan el sistema registral y notarial",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12406,7 +12406,7 @@
     },
     {
       "type": "justification",
-      "id": 2477,
+      "id": 5274,
       "attributes": {
 
       },
@@ -12439,7 +12439,7 @@
         "content": "Incorporar de manera obligatoria y vinculante un examen de conocimientos para los postulantes a un cargo de notario, conservador o archivero.",
         "number": "175",
         "title": "Obligatoriedad del examen de conocimientos para postulantes al cargo de notario, conservador o archivero",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12516,7 +12516,7 @@
     },
     {
       "type": "justification",
-      "id": 3649,
+      "id": 8824,
       "attributes": {
 
       },
@@ -12549,7 +12549,7 @@
         "content": "Establecer la obligación (para notarías) de contar con un portal web con información relevante y acceso a diversos servicios",
         "number": "176",
         "title": "Obligación de las notarias de contar con un portal web",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12626,7 +12626,7 @@
     },
     {
       "type": "justification",
-      "id": 271,
+      "id": 1322,
       "attributes": {
 
       },
@@ -12659,7 +12659,7 @@
         "content": "Masificar el uso de la firma electrónica avanzada haciendo prescindible la certificación notarial en ciertos casos.",
         "number": "177",
         "title": "Masificar la firma electrónica avanzada",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12736,7 +12736,7 @@
     },
     {
       "type": "justification",
-      "id": 5967,
+      "id": 6473,
       "attributes": {
 
       },
@@ -12769,7 +12769,7 @@
         "content": "Perfeccionar el sistema de fiscalización (a notarías), creando una entidad especializada al interior de la Corporación Administrativa del Poder Judicial.",
         "number": "178",
         "title": "Perfeccionar el sistema de fiscalización a notarías",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12846,7 +12846,7 @@
     },
     {
       "type": "justification",
-      "id": 1540,
+      "id": 7952,
       "attributes": {
 
       },
@@ -12879,7 +12879,7 @@
         "content": "Eliminar la existencia de notarios y conservadores vitalicios, limitando el ejercicio del cargo hasta los 75 años de edad",
         "number": "179",
         "title": "Eliminar notarios y conservadores vitalicios",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -12956,7 +12956,7 @@
     },
     {
       "type": "justification",
-      "id": 3994,
+      "id": 7575,
       "attributes": {
 
       },
@@ -12989,7 +12989,7 @@
         "content": "Inhabilitar a los jueces para postular o integrar ternas para los cargos de notario o conservador",
         "number": "180",
         "title": "Inhabilitar postulacion de jueces para los cargos de notario o conservador",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13020,7 +13020,7 @@
         "content": "Perfeccionar la Ley Zamudio",
         "number": "181",
         "title": "Perfeccionar la Ley Zamudio",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13051,7 +13051,7 @@
         "content": "Apoyar la tramitación del proyecto de ley que consagra el Mecanismo Nacional de Prevención de la Tortura.",
         "number": "182",
         "title": "Consagrar el Mecanismo Nacional de Prevención de la Tortura.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en Tribunal Constitucional o a la espera de de Aprobación Presidencial."
       },
       "relationships": {
         "study": {
@@ -13128,7 +13128,7 @@
     },
     {
       "type": "justification",
-      "id": 6897,
+      "id": 202,
       "attributes": {
 
       },
@@ -13161,7 +13161,7 @@
         "content": "Por razones humanitarias y de dignidad permitir que las personas de edad muy avanzada, o con enfermedades terminales graves, o que les impidan valerse por sí mismas, y que se encuentren cumpliendo condenas en cárceles, puedan sustituir la pena por arresto total en su propio domicilio o, según su elección, en un establecimiento adecuado a su situación de salud o avanzada edad.",
         "number": "183",
         "title": "Sustitución de penas privativas de libertad por razones humanitarias ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -13238,7 +13238,7 @@
     },
     {
       "type": "justification",
-      "id": 8399,
+      "id": 2097,
       "attributes": {
 
       },
@@ -13271,7 +13271,7 @@
         "content": "Retomar el proyecto que ajusta el Código Penal a la política criminal actual, incorporando los delitos reconocidos en los últimos años.",
         "number": "184",
         "title": "Ajustar el Código Penal a la política criminal actual",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13302,7 +13302,7 @@
         "content": "Analizar la posibilidad de que en algunos delitos de alta connotación pública se establezca una pena efectiva en proporción a la pena respectiva.",
         "number": "185",
         "title": "Pena efectiva en delitos de alta connotación pública",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13333,7 +13333,7 @@
         "content": "Explicitar la prohibición de la tortura entre aquellos apremios ilegítimos proscritos por la Constitución.",
         "number": "186",
         "title": "Explicitar la prohibición de la tortura en la constitucion",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13364,7 +13364,7 @@
         "content": "Consagrar expresamente el derecho a la propia imagen.",
         "number": "187",
         "title": "Consagrar el derecho a la propia imagen.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13395,7 +13395,7 @@
         "content": "Establecer el derecho a la autodeterminación informativa de forma que las personas tengan un razonable control sobre la circulación de sus datos sensibles.",
         "number": "188",
         "title": "Establecer el derecho a la autodeterminación informativa",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13426,7 +13426,7 @@
         "content": "Explicitar que ningún acto de violencia o uso indebido de espacios públicos podrá interpretarse como ejercicio legítimo del derecho de reunión y reconocer el derecho de las personas a usar los espacios comunes.",
         "number": "189",
         "title": "Regular el derecho de reunión",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13457,7 +13457,7 @@
         "content": "Incorporar una serie de disposiciones para modernizar el Estado, incluyendo el concurso público como regla general de acceso a la administración, el mérito como uno de los principios que deben asegurar las leyes que regulen la carrera funcionaria, el principio de continuidad de la función pública, entre otras.",
         "number": "190",
         "title": "Modernizacion del Estado",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -13534,7 +13534,7 @@
     },
     {
       "type": "justification",
-      "id": 9046,
+      "id": 5351,
       "attributes": {
 
       },
@@ -13567,7 +13567,7 @@
         "content": "Flexibilizar la orgánica del Poder Ejecutivo, facultando al presidente para reorganizar por una vez, al inicio de su mandato, los ministerios y la dependencia de servicios públicos en conformidad con sus prioridades.",
         "number": "191",
         "title": "Facultar al presidente para reorganizar los ministerios y la dependencia de servicios públicos ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13598,7 +13598,7 @@
         "content": "En el régimen de urgencias, permitir que éstas sean calificadas por la cámara respectiva e impedir que se utilice más de un número determinado de urgencias por comisión. Además, restringir su presentación en periodos previos a elecciones para evitar su aprovechamiento político y el abuso de las facultades exclusivas del Ejecutivo.",
         "number": "192",
         "title": "Regular el régimen de urgencias",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13629,7 +13629,7 @@
         "content": "Crear la iniciativa conjunta entre el Ejecutivo y parlamentarios, para aquellas materias que no sean de iniciativa exclusiva del Presidente de la República.",
         "number": "193",
         "title": "Crear la iniciativa conjunta entre el Ejecutivo y parlamentarios",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13660,7 +13660,7 @@
         "content": "Incorporar a la Constitución el principio de responsabilidad fiscal para las normas legales vinculadas con el gasto público e institucionalizar la aplicación de ese principio.",
         "number": "194",
         "title": "Incorporar a la Constitución el principio de responsabilidad fiscal",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13691,7 +13691,7 @@
         "content": "Regular el reemplazo parlamentario cuando el cargo queda vacante, estableciendo que se provea por la persona que habría resultado elegida de corresponderle a esa lista otro cargo.",
         "number": "195",
         "title": "Regular el reemplazo parlamentario por vacancia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13722,7 +13722,7 @@
         "content": "Establecer un límite a la reelección de los parlamentarios.",
         "number": "196",
         "title": "Establecer un límite a la reelección de los parlamentarios.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13753,7 +13753,7 @@
         "content": "Uniformar la regulación de los órganos autónomos, incorporando a la Constitución sus atribuciones esenciales y su órgano directivo, delegando a la ley orgánica respectiva el resto de las materias. Adicionalmente, estudiar la introducción de órganos colegiados en los distintos órganos autónomos del Estado y definir niveles de autonomía para ciertos servicios públicos como el Servicio de Impuestos Internos, la Fiscalía Nacional Económica y las superintendencias.",
         "number": "197",
         "title": "Uniformar la regulación de los órganos autónomos",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13784,7 +13784,7 @@
         "content": "Fortalecer a los municipios estableciendo que pueden hacer todo aquello que no esté expresamente entregado al gobierno central de forma de consagrar una subsidiariedad territorial.",
         "number": "198",
         "title": "Consagrar la subsidiariedad territorial de los Municipios",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13815,7 +13815,7 @@
         "content": "Introducir la iniciativa popular de ley y los plebiscitos regionales.",
         "number": "199",
         "title": "Introducir la iniciativa popular de ley y los plebiscitos regionales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13846,7 +13846,7 @@
         "content": "Potenciar el rol de la Biblioteca del Congreso como órgano asesor y profesionalizar la asesoría parlamentaria, transitando desde la asesoría externa individual a las asesorías profesionales permanentes por Comités o Bancadas. Estas se designarán por concurso público en tres etapas, incluyendo criterios de profesionalización y confianza política. Los asesores tendrán dedicación exclusiva al trabajo legislativo.",
         "number": "200",
         "title": "Potenciar la Biblioteca del Congreso como órgano asesor y establecer asesorías profesionales permanentes por Comités o Bancadas.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13877,7 +13877,7 @@
         "content": "Crear una Secretaría Técnica común del Senado y la Cámara, que cumpla una función revisora previa a la promulgación de la ley. Dicha secretaría deberá elaborar un modelo de redacción legislativa e informar sobre la admisibilidad de las mociones parlamentarias, los errores de técnica legislativa, las posibilidades de refundir proyectos, la racionalización del número de comisiones permanentes, entre otros.",
         "number": "201",
         "title": "Crear una Secretaría Técnica común del Senado y la Cámara",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13908,7 +13908,7 @@
         "content": "Incorporar las plantas del Congreso al sistema de Alta Dirección Pública.",
         "number": "202",
         "title": "Incorporar las plantas del Congreso al sistema de Alta Dirección Pública.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13939,7 +13939,7 @@
         "content": "Disminuir el número de parlamentarios manteniendo un sistema proporcional, reduciendo su número a 120 diputados y 40 senadores.",
         "number": "203",
         "title": "Disminuir el número de parlamentarios",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -13970,7 +13970,7 @@
         "content": "Perfeccionar los mecanismos de fiscalización al gobierno y la administración pública y fortalecer la obligación de respuesta y seguimiento de oficios por parte del Ejecutivo.\r\n",
         "number": "204",
         "title": "Perfeccionar la fiscalización al gobierno y la administración pública",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14001,7 +14001,7 @@
         "content": "Establecer la obligación de las autoridades del Ejecutivo o sus representantes de asistir a las comisiones legislativas a las que sean citados y sancionar como falta grave a la probidad administrativa la entrega de antecedentes falsos en comisiones investigadoras.",
         "number": "205",
         "title": "Obligatoriedad del Ejecutivo de asistir a las citaciones a comisiones legislativas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14032,7 +14032,7 @@
         "content": "Fortalecer el control ético y de gestión presupuestaria creando una Contraloría General del Congreso Nacional que ejerza su rol con autonomía.",
         "number": "206",
         "title": "Crear una Contraloría General del Congreso",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14063,7 +14063,7 @@
         "content": "Establecer una instancia permanente, de carácter colegiada e independiente, encargada de la dirección general y superior del Congreso, responsable de su gestión administrativa y económica.",
         "number": "207",
         "title": "Establecer una dirección general y superior del Congreso",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14094,7 +14094,7 @@
         "content": "Incorporar la obligación anual de los parlamentarios de rendir cuentas públicas en sus respectivos distritos y circunscripciones.",
         "number": "208",
         "title": "Obligación de los parlamentarios de rendir cuentas públicas ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14125,7 +14125,7 @@
         "content": "Modernización y fortalecimiento de la Contraloría General de la República a través de nueva ley orgánica que actualice la normativa vigente.",
         "number": "209",
         "title": "Nueva ley orgánica de la Contraloría General de la República",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14156,7 +14156,7 @@
         "content": "Modernizar Tribunal Constitucional: Revisar y perfeccionar el recurso de inaplicabilidad, fortaleciendo el respeto de la Constitución en los litigios ante los tribunales ordinarios.",
         "number": "210",
         "title": "Perfeccionar el recurso de inaplicabilidad",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14187,7 +14187,7 @@
         "content": "Modernizar Tribunal Constitucional: Revisar el sistema de nombramiento de los ministros del Tribunal Constitucional, promoviendo un mayor escrutinio de los postulantes, fortaleciendo la transparencia e involucrando a los tres poderes del Estado en los nombramientos de sus miembros.",
         "number": "211",
         "title": "Revisar el sistema de nombramiento de los ministros del Tribunal Constitucional",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14218,7 +14218,7 @@
         "content": "Modernizar Tribunal Constitucional: Reducir el número de ministros de 10 a 9 para evitar que asuntos de relevancia sean resueltos por el voto dirimente de su presidente.",
         "number": "212",
         "title": "Reducir el número de ministros del Tribunal Constitucional",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14249,7 +14249,7 @@
         "content": "Institucionalizar por ley el funcionamiento de los comités interministeriales de coordinación político, económico, social, infraestructura y territorio.",
         "number": "213",
         "title": "Institucionalizar el funcionamiento de los comités interministeriales ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14280,7 +14280,7 @@
         "content": "Aumentar las condiciones para regular el tránsito entre el sector público y el privado, avanzando hacia los estándares existentes en los países de la OCDE en materia de prevención de los conflictos de interés.",
         "number": "214",
         "title": "Regular el tránsito entre el sector público y el privado",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -14357,7 +14357,7 @@
     },
     {
       "type": "justification",
-      "id": 9424,
+      "id": 2849,
       "attributes": {
 
       },
@@ -14390,7 +14390,7 @@
         "content": "Actualizar la legislación en lo que se refiere a las conductas sancionadas y las penas respecto a los delitos funcionarios, como el soborno y el cohecho.",
         "number": "215",
         "title": "Actualizar la legislación respecto a los delitos funcionarios",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
       },
       "relationships": {
         "study": {
@@ -14467,7 +14467,7 @@
     },
     {
       "type": "justification",
-      "id": 6,
+      "id": 3733,
       "attributes": {
 
       },
@@ -14500,7 +14500,7 @@
         "content": "Ampliar las exigencias de transparencia a todos los órganos estatales autónomos tales como el Ministerio Público, la Contraloría, el Banco Central, el Servicio Electoral, entre otros.",
         "number": "216",
         "title": "Ampliar las exigencias de transparencia a todos los órganos estatales autónomos ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -14577,7 +14577,7 @@
     },
     {
       "type": "justification",
-      "id": 7238,
+      "id": 1204,
       "attributes": {
 
       },
@@ -14610,7 +14610,7 @@
         "content": "Modernizar el Estatuto Administrativo que rige a los funcionarios públicos, despejando la duplicidad normativa que ha producido el uso judicial del Código del Trabajo para funcionarios regidos por el Estatuto Administrativo y otras disfuncionalidades.",
         "number": "217",
         "title": "Modernizar el Estatuto Administrativo",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14641,7 +14641,7 @@
         "content": "Incrementar la movilidad vertical y horizontal de los funcionarios al interior de las instituciones del Estado, facilitando el acceso a cargos profesionales, técnicos y directivos a funcionarios de otros servicios, sean ellos planta o contrata.",
         "number": "218",
         "title": "Incrementar la movilidad de los funcionarios al interior de las instituciones del Estado",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14672,7 +14672,7 @@
         "content": "Reformar la gestión y gobierno corporativo de las empresas públicas, terminando con la presencia de ministros en los directorios y asegurando que los directores sean seleccionados por su mérito, experiencia y capacidades.",
         "number": "219",
         "title": "Reformar la seleccion del directorio de las empresas públicas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14703,7 +14703,7 @@
         "content": "Separar la función empresarial de un eventual rol social de las empresas públicas, que debiera justificarse en su propio mérito y ser abordado de forma separada a través de subsidios directos que decida el Congreso.",
         "number": "220",
         "title": "Separar la función empresarial de un eventual rol social de las empresas públicas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14734,7 +14734,7 @@
         "content": "Armonizar las leyes de las empresas públicas e institucionalizar, definir facultades y empoderar al Sistema de Empresas Públicas que hoy funciona como un comité dependiente de CORFO y carece de facultades para ejercer correctamente su rol.",
         "number": "221",
         "title": "Armonizar las leyes de las empresas públicas",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -14765,7 +14765,7 @@
         "content": "Impulsar la promulgación de la ley, impulsada durante el anterior gobierno, que establece el Sistema Nacional de Emergencia y Protección Civil y crea la Agencia Nacional de Protección Civil, para modernizar la estructura y gestión de la ONEMI y establecer un sistema efectivo para prevenir y gestionar el riesgo de desastres. ",
         "number": "222",
         "title": "Establecer el Sistema Nacional de Emergencia y Proteccion Civil y crear la Agencia Nacional de Proteccion Civil.",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -14842,7 +14842,7 @@
     },
     {
       "type": "justification",
-      "id": 464,
+      "id": 6519,
       "attributes": {
 
       },
@@ -14875,7 +14875,7 @@
         "content": "Modificar la Ley Orgánica Constitucional de Municipalidades sobre atribuciones y manejo de recursos para la gestión del riesgo de desastres y administración de emergencias, de manera de fortalecer sus capacidades y atribuciones.",
         "number": "223",
         "title": "Modificar la Ley Orgánica Constitucional de Municipalidades",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -14952,7 +14952,7 @@
     },
     {
       "type": "justification",
-      "id": 4990,
+      "id": 2263,
       "attributes": {
 
       },
@@ -14985,7 +14985,7 @@
         "content": "Crear una asignación especial de función crítica para cargos prioritarios de las municipalidades y fortalecer la de los gobiernos regionales, estableciendo un límite máximo en relación al personal de planta y contrata.",
         "number": "224",
         "title": "Crear una asignación para cargos prioritarios de las municipalidades y fortalecer la de los gobiernos regionales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15016,7 +15016,7 @@
         "content": "Incorporar en regiones y comunas un sistema de selección para jefes de división o directores de unidades por mecanismo de Alta Dirección Pública.",
         "number": "225",
         "title": "Incorporar en regiones y comunas la seleccion por Alta Dirección Pública",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15047,7 +15047,7 @@
         "content": "Establecer la remoción de autoridades regionales por incumplimiento de deberes o faltas a la probidad, similar a la figura que existe en el caso de los municipios.",
         "number": "226",
         "title": "Establecer la remoción de autoridades regionales ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15078,7 +15078,7 @@
         "content": "Reforzar el rol de los municipios, para que sean los responsables de la inversión local y los grandes gestores de los programas sociales.",
         "number": "227",
         "title": "Reforzar el rol de los municipios en la inversión local y los programas sociales.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15109,7 +15109,7 @@
         "content": "Modificar la Ley de Financiamiento Urbano Compartido, haciendo posibles los aportes municipales que permitan la coejecución entre el sector público y privado de obras de interés público.",
         "number": "228",
         "title": "Modificar la Ley de Financiamiento Urbano Compartido",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15140,7 +15140,7 @@
         "content": "Crear el Fondo Nacional de Desarrollo Local con los recursos que financian proyectos de impacto local.",
         "number": "229",
         "title": "Crear el Fondo Nacional de Desarrollo Local",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15171,7 +15171,7 @@
         "content": "Transformar los recursos con directrices sectoriales del Fondo Nacional de Desarrollo Regional a recursos de libre disposición",
         "number": "230",
         "title": "Transformar los recursos con directrices sectoriales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15202,7 +15202,7 @@
         "content": "Definir una ley de financiamiento y responsabilidad fiscal regional.",
         "number": "231",
         "title": "Definir una ley de financiamiento y responsabilidad fiscal regional.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15233,7 +15233,7 @@
         "content": "Crear una franquicia tributaria para las donaciones a municipios y regiones destinadas a inversión o programas en beneficio de la comunidad.",
         "number": "232",
         "title": "Crear franquicia tributaria para las donaciones a municipios y regiones",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15264,7 +15264,7 @@
         "content": "Aumentar los recursos de libre disposición de los municipios mediante la mejora de normas legales y reglamentarias que faciliten la recaudación de impuestos y derechos municipales",
         "number": "233",
         "title": "Aumentar los recursos de libre disposición de los municipios",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15295,7 +15295,7 @@
         "content": "Aumentar la capacidad de contribuir al resguardo y protección de nuestros intereses y derechos en la Antártica y en las áreas marítimas, jurisdiccionales o con responsabilidad internacional.",
         "number": "234",
         "title": "Resguardar nuestros intereses y derechos en la Antártica",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -15372,7 +15372,7 @@
     },
     {
       "type": "justification",
-      "id": 8553,
+      "id": 2151,
       "attributes": {
 
       },
@@ -15405,7 +15405,7 @@
         "content": "Reemplazar la Ley Reservada del Cobre por un mecanismo de financiamiento estable y plurianual que garantice la inversión en desarrollo y el sostenimiento de las capacidades estratégicas, incluyendo la mantención de un fondo de contingencia estratégica y un piso mínimo garantizado.",
         "number": "235",
         "title": "Reemplazar la Ley Reservada del Cobre",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -15482,7 +15482,7 @@
     },
     {
       "type": "justification",
-      "id": 1084,
+      "id": 3843,
       "attributes": {
 
       },
@@ -15515,7 +15515,7 @@
         "content": "Modernizar la carrera militar a fin de aprovechar mejor la formación del personal activo, considerando que en la actualidad pasa a retiro personal altamente calificado que todavía cuenta con capacidades para seguir aportando en sus respectivas instituciones.",
         "number": "236",
         "title": "Modernizar la carrera militar ",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -15592,7 +15592,7 @@
     },
     {
       "type": "justification",
-      "id": 3354,
+      "id": 7760,
       "attributes": {
 
       },
@@ -15625,7 +15625,7 @@
         "content": "Modernizar las normas que rigen los gobiernos corporativos de las empresas públicas de defensa y generar mecanismos de cooperación con el sector privado.",
         "number": "237",
         "title": "Modernizar la normativa de los gobiernos corporativos de las empresas públicas de defensa",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15656,7 +15656,7 @@
         "content": "Elaborar una Ley para el Regreso (de compatriotas en el extranjero)",
         "number": "238",
         "title": "Elaborar una Ley para el Regreso",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15687,7 +15687,7 @@
         "content": "Promover sistemas de economía colaborativa y solidaria por medio del apoyo a emprendimientos de impacto social, cuyo objetivo sea la creación de soluciones para las personas más vulnerables.",
         "number": "239",
         "title": "Promover sistemas de economía colaborativa y solidaria",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -15764,7 +15764,7 @@
     },
     {
       "type": "justification",
-      "id": 5620,
+      "id": 3377,
       "attributes": {
 
       },
@@ -15797,7 +15797,7 @@
         "content": "Crear el Servicio Nacional de la Sociedad Civil en reemplazo de la División de Organizaciones Sociales. Su principal función será establecer canales de comunicación y colaboración entre el Estado y la sociedad civil.",
         "number": "240",
         "title": "Crear el Servicio Nacional de la Sociedad Civil",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15828,7 +15828,7 @@
         "content": "Acelerar la aprobación de la Ley Única de Donaciones con el objetivo de promover la solidaridad, la filantropía y la participación de la sociedad civil.",
         "number": "241",
         "title": "Acelerar la aprobación de la Ley Única de Donaciones",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15859,7 +15859,7 @@
         "content": "Crear una Ley Única de Subvenciones Sociales que no discrimine según quien provea el servicio y sea transversal a todos los organismos del Estado.",
         "number": "242",
         "title": "Crear una Ley Única de Subvenciones Sociales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15890,7 +15890,7 @@
         "content": "Incorporar a las organizaciones religiosas como susceptibles de ser objeto de donaciones con beneficios tributarios en la Ley Única de Donaciones.",
         "number": "243",
         "title": "Incorporar a las organizaciones religiosas como objeto de donaciones",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15921,7 +15921,7 @@
         "content": "Perfeccionar la ley de libertad religiosa y de culto e ingresar una reforma constitucional que incluya la libertad religiosa en el artículo 19 N°6 de la Constitución Política.",
         "number": "244",
         "title": "Perfeccionar la ley de libertad religiosa y de culto",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15952,7 +15952,7 @@
         "content": "Reconocer el derecho de las instituciones de carácter privado a determinar su propio ideario institucional y a no ser obligadas a actuar en contra del mismo.",
         "number": "245",
         "title": "Derecho de las instituciones privadas a determinar su propio ideario institucional",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -15983,7 +15983,7 @@
         "content": "Regular las condiciones en que se ejerce el derecho de objeción de conciencia, entendido como el derecho de la persona a ser eximida del cumplimiento de aquellas obligaciones jurídicas que le impongan acciones u omisiones contrarias a los propios y graves imperativos religiosos, morales, éticos o axiológicos, sinceramente asumidos y debidamente probados.",
         "number": "246",
         "title": "Regular el ejercicio del derecho de objeción de conciencia",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16014,7 +16014,7 @@
         "content": " Reconocer todas las escuelas artísticas que cumplan requisitos de calidad, estableciendo una subvención especial y crear un Liceo Artístico de Excelencia en las regiones del país.",
         "number": "247",
         "title": "Subvención para escuelas artísticas de calidad y creacion de Liceos artisticos ",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16045,7 +16045,7 @@
         "content": "Revisar la Ley de Monumentos Nacionales sobre la composición del Consejo de Monumentos Nacionales, la revisión de los tipos y procedimientos de declaratorias y el sistema de compensaciones e incentivos.",
         "number": "248",
         "title": "Revisar la Ley de Monumentos Nacionales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16076,7 +16076,7 @@
         "content": "Reconocer a la ciudad como objeto de la planificación urbanística y desarrollar Planes de Ciudad en las policomunales, con atribuciones en lo referente a conformación de barrios, diseño de espacios públicos, prevención de riesgos naturales, transportes, infraestructura y medioambiente.",
         "number": "249",
         "title": "Planificación urbanística",
-        "ja-why": ""
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
       },
       "relationships": {
         "study": {
@@ -16153,7 +16153,7 @@
     },
     {
       "type": "justification",
-      "id": 2585,
+      "id": 5777,
       "attributes": {
 
       },
@@ -16186,7 +16186,7 @@
         "content": "Fusionar el Ministerio de Vivienda y Urbanismo con el Ministerio de Bienes Nacionales y crear el Ministerio de Ciudad, Vivienda y Territorio.",
         "number": "250",
         "title": " Crear el Ministerio de Ciudad, Vivienda y Territorio.",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16217,7 +16217,7 @@
         "content": "Modernizar la legislación sobre inmuebles patrimoniales incorporando mecanismos de compensación y beneficios tributarios para los propietarios.",
         "number": "251",
         "title": "Modernizar la legislación sobre inmuebles patrimoniales",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16248,7 +16248,7 @@
         "content": "Crear un Fondo de Remediación que pueda iniciar acciones de reparación de componentes del medio ambiente dañados. El financiamiento del fondo, además de donaciones, provendrá de diversas fuentes, incluyendo planes de reparación y compensación de la Superintendencia de Medio Ambiente, así como sentencias de los Tribunales Ambientales en materia de daño ambiental.",
         "number": "252",
         "title": "Crear un Fondo de Remediación del medio ambiente dañado",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16279,7 +16279,7 @@
         "content": "Implementar una Ley de Cambio Climático a fin de cumplir con nuestro compromiso internacional al año 2030",
         "number": "253",
         "title": "Implementar una Ley de Cambio Climático",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16310,7 +16310,7 @@
         "content": "Crear una estrategia de financiamiento, junto con la creación de un Fondo Climático Nacional, para la investigación científica, la generación de información, el diseño de medidas y la transferencia de tecnologías.",
         "number": "254",
         "title": " Crear un Fondo Climático Nacional",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16341,7 +16341,7 @@
         "content": "Modernizar la Ley del Deporte, fomentando la asociatividad y la descentralización, potenciando el rol de la sociedad civil, especialmente los clubes, y ampliando el destino de las donaciones deportivas, de forma que incluyan nuevas organizaciones como juntas de vecinos y colegios, así como deportistas en particular,",
         "number": "255",
         "title": "Modernizar la Ley del Deporte, en materia de asociatividad y descentralización",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16372,7 +16372,7 @@
         "content": "Impulsar una agenda de protección animal, prohibiendo el uso de animales en circo y modernizando la legislación vigente en la materia",
         "number": "256",
         "title": "Modernizar legislacion en materia de proteccion animal",
-        "ja-why": ""
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
       },
       "relationships": {
         "study": {
@@ -16391,3 +16391,4 @@
     }
   ]
 }
+
