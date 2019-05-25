@@ -17,7 +17,19 @@ var governments =[
     "description": ".",
     "fixed_result": 23,
     "visible": true,
-  }]},{
+  },{
+		"type": "Discurso",
+		"img": "/img/pinera-en-el-auto.svg",
+		"color": "#12D0D8",
+		"year": 2018,
+		"version": "Cuenta Pública",
+		"name": "Sebastián Piñera: Cuenta Pública 2018",
+		"filename": "Piñera-2018-2022_Discurso-2019.csv",
+		"description": "de la Cuenta Pública 2018.",
+    "fixed_result": 53,
+		"visible": true,
+		}
+	]},{
 	"name": "Michelle Bachelet II",
 	"years": {'start': 2014, 'end': 2018},
 	"color1": "#FF483C",
