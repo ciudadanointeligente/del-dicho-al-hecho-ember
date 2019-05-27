@@ -11,7 +11,6 @@ var governments =[
     "color": "#12D0D8",
     "year": 2018,
     "version": "Programa de Gobierno",
-		"in_landing": true,
     "name": "Sebastián Piñera: Programa de Gobierno 2018",
     "filename": "Piñera-2018-2022_Discurso-2019",
     "description": ".",
@@ -27,6 +26,7 @@ var governments =[
 		"filename": "Piñera-2018-2022_Discurso-2019.csv",
 		"description": "de la Cuenta Pública 2018.",
     "fixed_result": 53,
+		"in_landing": true,
 		"visible": true,
 		}
 	]},{
