@@ -15,6 +15,9 @@ let parser = {
     return false;
   },
   papaparseCsv(filename, study){
+    console.log(study);
+    console.log(filename);
+
     let _parseAttributes = this._parseAttributes;
     _parseAttributes = _parseAttributes.bind(this);
     let whenToUnion = this.whenToUnion;
@@ -37,7 +40,7 @@ let parser = {
               _.forEach(results.errors, function(error){
                 console.log(error);
               });
-              alert("Hay errores en el csv por favor revisa la consola del navegador para más info"); 
+              alert("Hay errores en el csv por favor revisa la consola del navegador para más info");
             }
             var data = [];
             _.forEach(results.data, function(value) {
