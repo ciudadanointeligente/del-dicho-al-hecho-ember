@@ -10,9 +10,7 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
   },
   model(params){
     let study = this.store.peekAll('study').findBy('slug', params.study_name);
-    console.log('print study in app/routes/study.js');
-    console.log(study);
-    console.log('end print study in app/routes/study.js');
+    // console.log(study);
     if (_.isUndefined(study)){
       this.transitionTo("/404");
     }

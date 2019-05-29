@@ -15,8 +15,8 @@ let parser = {
     return false;
   },
   papaparseCsv(filename, study){
-    console.log(study);
-    console.log(filename);
+    // console.log(study);
+    // console.log(filename);
 
     let _parseAttributes = this._parseAttributes;
     _parseAttributes = _parseAttributes.bind(this);
