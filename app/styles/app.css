@@ -516,6 +516,11 @@ footer {
   top: -35px;
 }
 
+.apoyo-de{
+  position: relative;
+  top: 0;
+}
+
 
 @media (max-width: 991px) {
   img.logo-nav{
