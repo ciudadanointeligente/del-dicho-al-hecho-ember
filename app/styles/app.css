@@ -1,8 +1,8 @@
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #232323;
+  color: #263238;
   background-color: #FFF;
   font-size: 1.4rem;
   max-width: 100%;
@@ -20,31 +20,31 @@ p {
     font-size: 1.4rem; }
 
 .home a{
-  color: #12D0D8;}
+  color: #6200EA;}
   .home a:hover{
-    color: #FF483C;
+    color: #6200EA;
   }
 
 a {
-  color: #FF483C; }
+  color: #6200EA; }
   a:hover {
     text-decoration: none;
-    color: #12D0D8; }
+    color: #6200EA; }
   a:focus {
     text-decoration: none;
-    color: #12D0D8; }
+    color: #6200EA; }
 
 span {
   font-weight: 700; }
 
 h1{
-  color: #232323;
+  color: #263238;
   margin-top: 130px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700; }
 
 h2{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 3.3rem;
 }
@@ -59,7 +59,7 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700; }
 
 h5 {
@@ -67,6 +67,10 @@ h5 {
 
 h6{
   font-size: 1.6rem; }
+
+.font-mono{
+  font-family: 'Space Mono', monospace;
+}
 
 .bajada{
   margin-bottom: 20px;
@@ -81,38 +85,39 @@ img.logo-nav{
 }
 
 .navbar-default {
-  background-color: #FF483C;
+  background-color: #F4F9FE;
   border: none;
   height: 80px;}
 
 .navbar-header{
   margin: 6px 0 0;}
   .navbar-header a{
-    color: #FFF;}
+    color: #465056;}
     .navbar-header a:hover{
-      color: #232323;}
+      color: #465056;}
 
 .sub-brand{
-  margin: 3px 0 0 42px;
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
 }
 
 .navbar-default .navbar-nav > li > a{
-  color: white;
+  color: #465056;
   margin-top: 15px;}
   .navbar-default .navbar-nav > li > a:hover{
-    color: #232323; }
+    color: #465056; }
     .navbar-default .navbar-nav > li > a:focus{
-      color: #232323; }
+      color: #465056; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: transparent;
-  color: white; }
+  color: #6200EA; }
 
 .dropdown-menu{
-  background-color: #F9F9F9;
-  color: #232323;
+  background-color: #F4F9FE;
+  color: #263238;
   box-shadow: none;
   border-radius: 0;}
 
@@ -129,21 +134,25 @@ img.logo-nav{
   background-color: transparent;}
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a{
-  color: #232323;}
+  color: #263238;}
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-    color: #FF483C;}
+    color: #6200EA;}
 
 .menu-list{
-  font-weight: 700;}
+  font-weight: 400;}
 
 .navbar-nav > li > .dropdown-menu{
   padding: 15px;
   margin-top: 15px;
   border: none;}
 
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #F4F9FE;
+}
+
 /*SECTIONS*/
 .jumbotron{
-    background-color: #FF483C;
+    background-color: #6200EA;
     height: 700px;
     padding-top: 100px;}
     .jumbotron h1{
@@ -151,6 +160,7 @@ img.logo-nav{
     }
     .jumbotron p{
        font-size: 2rem;
+       color: white;
     }
 .resume-back{
   margin-bottom: -734px;
@@ -173,9 +183,9 @@ section{
 #resume{
   padding-top: 60px;}
   #resume h2{
-    color: #232323;}
+    color: #263238;}
   #resume h3 > a{
-    color: #232323;}
+    color: #263238;}
     #resume h3 > a:hover{
       color: #12D0D8;}
 
@@ -198,7 +208,7 @@ section{
   box-shadow: none; }
 
 .panel-default > .panel-heading{
-  background-color: #232323;
+  background-color: #263238;
   color: white;
   margin-bottom: 5px;
   border-radius: 0;
@@ -210,7 +220,7 @@ section{
 }
 
 .panel.panel-default.legend {
-  background-color: #232323;
+  background-color: #263238;
   color: white;
   padding: 5px 15px 5px 15px;
   border-radius: 0;
@@ -221,7 +231,7 @@ section{
   padding: 0;
   border: 0; }
   .panel-default .panel-body .panel-heading {
-    background-color: #232323;
+    background-color: #263238;
     color: white;
     border-radius: 0;
     border: none;
@@ -238,13 +248,13 @@ section{
   color: #12D0D8; }
 
   .panel-promise a:hover{
-    color: #232323; }
+    color: #263238; }
 
 .compare-box{
   padding: 25px 0 10px 0; }
 
 .panel-default .panel-body .panel-compare {
-  background-color: #232323;
+  background-color: #263238;
   color: white;
   border-radius: 0;
   border: none;
@@ -260,7 +270,7 @@ section{
 .panel.panel-glosario{
   border-radius: 0;}
   .panel-heading{
-    background-color: #232323;
+    background-color: #263238;
     color: white;
     border-radius: 0;
   }
@@ -277,7 +287,7 @@ section{
   stroke: #12D0D8; }
 
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
-  stroke: #232323; }
+  stroke: #263238; }
 
 .chart.estudio-total{
   margin-bottom: -110px;
@@ -309,14 +319,14 @@ section{
 .category-result {
   font-weight: 700;
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   margin-top: 22px; }
 
 .promise-result {
   font-weight: 700;
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700; }
   .promise-result.home {
     line-height: 24px; }
@@ -324,12 +334,12 @@ section{
 .total-result {
   font-weight: 700;
   font-size: 4.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700; }
   .total-result.sub {
     font-size: 3rem;
     margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
     font-weight: 700; }
   .total-result.cumplimientos{
     margin-top: 60px; }
@@ -341,13 +351,19 @@ section{
 .compare-result{
   font-weight: 700;
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;;
 }
 
 .cumplimientos-resumen{
   min-height: 310px;
   margin-top: 30px;
+}
+.cumplimientos-resumen h3{
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 
 .label-cumplimiento{
@@ -386,8 +402,8 @@ section{
 
 .tooltip-inner {
   background-color: white;
-  color: #232323;
-  font-family: 'Karla', sans-serif;}
+  color: #263238;
+  font-family: 'Work Sans', sans-serif;}
 
 .tooltip.top .tooltip-arrow {
   border-top-color: white; }
@@ -399,23 +415,47 @@ section{
 /*BUTTONS*/
 .btn-info{
   max-width: 70px;
-  background-color: #FF483C;
+  font-family: 'Space Mono', monospace;
+  background-color: transparent;
+  border: 2px solid #6200EA;
+  color: #6200EA;
   -webkit-transition: background-color .3s ease-in;}
   .btn-info:hover{
-    background-color: #12D0D8; }
+    background-color: #6200EA;
+    border: 2px solid #6200EA;
+  }
+  a.btn-info{
+    color: #6200EA;
+  }
+  a.btn-info:hover{
+    color: #FFF;
+  }
 
 .btn-jumbo{
-  background-color: #12D0D8;
+  background-color: transparent;
   font-size: 1.6rem;
   font-weight: 700;
-  -webkit-transition: background-color .3s ease-in;}
-  .btn-jumbo:hover{
-    background-color: #FFF; }
-  a.btn-jumbo{
-    color: #FFF;
-    -webkit-transition: background-color .3s ease-in;}
-    a.btn-jumbo:hover{
-      color: #12D0D8;}
+  border: 2px solid #FFF;
+  font-family: 'Space Mono', monospace;
+  -webkit-transition: background-color .3s ease-in;
+}
+.btn-jumbo:hover{
+  background-color: #FFF;
+  border: 2px solid #FFF;
+}
+.btn-jumbo:focus{
+  background-color: #FFF;
+}
+a.btn-jumbo{
+  color: #FFF;
+  -webkit-transition: background-color .3s ease-in;
+}
+a.btn-jumbo:hover{
+  color: #6200EA;
+}
+a.btn-jumbo:focus{
+  color: #6200EA;
+}
 
 .btn-danger{
   background-color: #FF483C;
@@ -437,12 +477,12 @@ section{
   background-color: #12D0D8;
   -webkit-transition: background-color .3s ease-in;}
   .btn-success:hover{
-    background-color: #232323; }
+    background-color: #263238; }
   .btn-success:focus{
-    background-color: #232323; }
+    background-color: #263238; }
 
 .btn-success-inverse{
-  background-color: #232323;
+  background-color: #263238;
   -webkit-transition: background-color .3s ease-in; }
   .btn-success-inverse:hover{
     background-color: #12D0D8; }
@@ -454,7 +494,6 @@ section{
   color: white;
   font-weight: 700;
   border-radius: 0;
-  border: none;
   -webkit-transition: background-color .3s ease-in;}
   .btn a{
     color: white;
@@ -485,7 +524,7 @@ a.btn-success-inverse{
   border: none;
 }
 .project-list{
-  border-left: 4px solid #232323;
+  border-left: 4px solid #263238;
   padding: 5px 40px 5px 10px;
   margin-left: 18px;
   margin-bottom: 10px;
@@ -493,10 +532,10 @@ a.btn-success-inverse{
 
 /*TABLES*/
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
-  border-top: 1px solid #232323; }
+  border-top: 1px solid #263238; }
 
 .table > thead > tr > th{
-  border-bottom: 2px solid #232323; }
+  border-bottom: 2px solid #263238; }
 
 .table-responsive{
   border: none; }
@@ -555,27 +594,27 @@ footer {
     padding-top: 0;
   }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    background-color: #FF483C;
-    color: #FFF;
+    background-color: #F4F9FE;
+    color: #465056;
   }
   .navbar-default .navbar-nav > li > a{
-    color: #FFF;
+    color: #465056;
   }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
-    color: #FFF;
+    color: #465056;
   }
   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
     max-height: fit-content;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a{
-    color: #FFF;}
+    color: #465056;}
     .navbar-default .navbar-nav .open .dropdown-menu > li > a{
-      color: #FFF;}
+      color: #465056;}
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-      color: #232323;}
+      color: #6200EA;}
 
 .dropdown-menu {
-  color: #FFF;}
+  color: #465056;}
   .dropdown-menu > li > a{
     display: initial;}
   .navbar-nav > li > .dropdown-menu{
