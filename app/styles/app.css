@@ -89,7 +89,7 @@ img.logo-nav{
   height: 80px;}
 
 .navbar-header{
-  margin: 6px 0 0;}
+  margin: 11px 0 0;}
   .navbar-header a{
     color: #465056;}
     .navbar-header a:hover{
@@ -100,6 +100,7 @@ img.logo-nav{
   font-size: 1.3rem;
   font-family: 'Space Mono', monospace;
   font-weight: 400;
+  margin: 2px 0;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -163,7 +164,7 @@ img.logo-nav{
     }
 .resume-back{
   margin-bottom: -734px;
-  padding: 50px 39%;
+  padding: 50px 0;
 }
 .total-resume-home{
   padding-top: 170px;

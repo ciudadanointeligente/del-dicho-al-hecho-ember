@@ -1,7 +1,7 @@
 
 {{yield}}
 <div id="welcome">
-  <img src="/img/palacio.png" class="resume-back">
+  <img src="/img/hero-home.jpg" class="resume-back">
   <div class="jumbotron">
     <div class="container">
       <div class="row">
@@ -27,6 +27,30 @@
   </div>
 </section>
 
+
+<section id="resume">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <h2 class="text-center">Cumplimiento de promesas al primer año de gobierno de Piñera</h2>
+    </div>
+  </div>
+  <div class="row">
+    {{#each-in study.promisesGroupedByArea as |area_id a|}}
+    <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
+      <h3 class="text-center">{{a.area.name}}</h3>
+      <div class="chart-resume text-center">
+        <img src="{{ area-image a.area.name }}" class="img-chart">
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study 'front') options=study.doughnutOpt height=150}}
+      </div>
+      <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
+      <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
+      <a href="{{url-for "study" study.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+    </div>
+    {{/each-in}}
+  </div>
+</div>
+</section>
 
 <section id="resume">
 <div class="container">
