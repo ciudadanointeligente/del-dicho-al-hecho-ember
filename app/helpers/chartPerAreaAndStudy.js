@@ -21,11 +21,11 @@ export default Ember.Helper.extend({
                 {
                     data: [f, 100-f],
                     backgroundColor: [
-                        study.get("government").get("color1"),
+                        study.get("color"),
                         color4,
                     ],
                     hoverBackgroundColor: [
-                        study.get("government").get("color2"),
+                        study.get("color"),
                         color3,
                     ]
                 }]

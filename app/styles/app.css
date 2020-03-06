@@ -34,6 +34,17 @@ a {
     text-decoration: none;
     color: #6200EA; }
 
+a.glosary{
+  position: relative;
+  top: -2px;
+}
+a.glosary:hover{
+  color: #C5D0DE;
+}
+a.glosary:focus{
+  color: #C5D0DE;
+}
+
 span {
   font-weight: 700; }
 
@@ -119,7 +130,8 @@ img.logo-nav{
   background-color: #F4F9FE;
   color: #263238;
   box-shadow: none;
-  border-radius: 0;}
+  border-radius: 0;
+  font-size:1.1rem;}
 
 .dropdown-menu .divider{
   background-color: transparent;}
@@ -503,7 +515,7 @@ a.btn-jumbo:focus{
   border: 2px solid #6200EA;
   color: #6200EA !important;
   font-family: 'Space Mono', monospace;
-  padding: 5px;
+  padding: 5px 10px;
   -webkit-transition: background-color .3s ease-in;}
   .btn-warning:hover{
     background-color: #6200EA;
