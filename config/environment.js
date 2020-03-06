@@ -26,9 +26,29 @@ var governments =[
 		"filename": "Piñera-2018-2022_Discurso-2019.csv",
 		"description": "de la Cuenta Pública 2018.",
     "fixed_result": 53,
-		"in_landing": true,
 		"visible": true,
-		}
+	}, {
+    "type": "Programa",
+    "color": "#12D0D8",
+    "year": 2019,
+    "version": "Programa de Gobierno",
+    "name": "Sebastián Piñera: Programa de Gobierno 2019",
+    "filename": "Piñera-2018-2022_Programa-2019.csv",
+    "description": ".",
+    "fixed_result": 34,
+    "visible": true,
+		"in_landing": true,
+  }, {
+    "type": "Estallido",
+    "color": "#12D0D8",
+    "year": 2019,
+    "version": "Estallido Social",
+    "name": "Sebastián Piñera: Estallido Social 2019",
+    "filename": "Piñera-2018-2022_Estallido-2019.csv",
+    "description": ".",
+    "fixed_result": 66,
+    "visible": true,
+  },
 	]},{
 	"name": "Michelle Bachelet II",
 	"years": {'start': 2014, 'end': 2018},
@@ -328,6 +348,9 @@ module.exports = function(environment) {
     }, {
       'name': 'Promulgado',
       'fullfilment': 100,
+    }, {
+      'name': 'Tercer Tramite',
+      'fullfilment': 70,
     }
   ]};
 	var comparisonsAreVisible = true;

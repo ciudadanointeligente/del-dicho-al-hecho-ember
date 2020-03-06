@@ -935,6 +935,7 @@ define('ddah-ember/mixins/csv-parser', ['exports', 'ember', 'npm:papaparse', 'lo
     },
 
     _uploadPhases: function _uploadPhases(store) {
+      console.log('ACTUALIZAR FASES')
       var _hashCode = this._hashCode;
       _ember['default'].run.begin();
       _lodash['default'].forEach(_ddahEmberConfigEnvironment['default'].phases.phases, function (key) {
