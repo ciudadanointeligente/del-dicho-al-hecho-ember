@@ -137,7 +137,7 @@ img.logo-nav{
   background-color: transparent;}
 
 .navbar-default .navbar-toggle .icon-bar{
-  background-color: white;}
+  background-color: #465056;}
 
 .navbar-default .navbar-toggle{
   border: none;}
@@ -211,6 +211,77 @@ section{
 
 #metodologia{
   background-color: white;
+}
+
+#hero-methodology{
+  background: url('../img/hero-methodology.jpg');
+  background-position: center;
+}
+
+#hero-about{
+  background: url('../img/hero-about.jpg');
+  background-position: center;
+}
+
+#hero-studies{
+  background: url('../img/hero-studies.jpg');
+  background-position: center;
+}
+
+#hero-whole{
+  background: url('../img/hero-whole.jpg');
+  background-position: center;
+}
+
+#hero-comparisson{
+  background: url('../img/hero-comparisson.jpg');
+  background-position: center;
+}
+
+#hero-movement{
+  background: url('../img/hero-movement.jpg');
+  background-position: center;
+}
+
+.hero{
+  min-height: 60vh;
+  padding: 80px;
+  margin-bottom: 50px;
+}
+
+.hero h1{
+  color: #FFF;
+}
+
+#hero-home{
+  background: url('../img/hero-home.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding: 80px;
+  margin-bottom: 50px;
+}
+
+#hero-home h1{
+  color: #fff;
+  font-size: 4.6rem;
+}
+
+#hero-home p{
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom:20px;
+}
+
+.home-about{
+  background: #F4F9FE !important;
+  padding: 30px 40px 40px !important;
+  margin: -160px 0 -30px;
+  border-radius: 0;
+}
+
+.home-about h2{
+  color: #6200EA;
 }
 
 /*PANELS*/
@@ -424,7 +495,7 @@ section{
 .img-chart{
   position: relative;
   top: 125px;
-  z-index: -1;}
+  z-index: 20;}
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
@@ -627,30 +698,48 @@ a.btn-success-inverse{
 
 /*FOOTER*/
 footer {
-  background-color: #F9F9F9;
-  color: #2A2A2A;
-  padding: 68px 0 50px 0;
-  margin-top: -30px;}
-  footer a {
-    color: #2A2A2A; }
-
-.proyecto-de{
-  position: relative;
-  top: -35px;
+  background: #465056;
+  color: white;
+  font-size: 1.2rem;
+  padding: 50px 0 30px;
+  line-height: 1.5;
 }
 
-.apoyo-de{
-  position: relative;
-  top: 0;
+footer a{
+  color: #fff;
+}
+
+footer a:hover{
+  color: #C5D0DE;
 }
 
 
 @media (max-width: 991px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    margin: 21px -20px 10px;
+  }
+
+  .navbar-nav .open .dropdown-menu{
+    margin: 0 0 15px;
+  }
+
+  #hero-home{
+    padding: 20px;
+  }
+
+  #hero-home h1{
+    font-size: 3rem;
+  }
+
+  #hero-home p{
+    font-size: 1.8rem;
+  }
+
   img.logo-nav{
     margin-left: 10px;
   }
   .sub-brand {
-    margin: 3px 0 0 52px;}
+    margin: 3px 0 0 10px;}
 
 #welcome {
     overflow-x: hidden !important;}
@@ -714,6 +803,7 @@ footer {
   }
   .btn-jumbo{
     height: 50px;
+    margin-bottom: 15px;
   }
   a.btn-jumbo{
     padding: 14px;
