@@ -9,9 +9,10 @@ export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
     return model.get('name');
   },
   model(params){
+    console.log(params);
     let study = this.store.peekAll('study').findBy('slug', params.study_name);
     // TODO: Aqui se imprime el json si es que no existe para ese estudio
-    // console.log(study);
+    console.log(study);
     if (_.isUndefined(study)){
       this.transitionTo("/404");
     }
