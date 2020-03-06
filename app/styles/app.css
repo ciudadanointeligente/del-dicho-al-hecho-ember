@@ -53,7 +53,6 @@ h3 {
   font-size: 1.8rem;
   margin-top: 20px;}
   h3.sub {
-    font-size: 1.6rem;
     line-height: 0;
     margin-top: 30px; }
 
@@ -222,7 +221,7 @@ section{
 .panel.panel-default.legend {
   background-color: #263238;
   color: white;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 11px 15px;
   border-radius: 0;
   margin: 0 0 5px 0;
 }
@@ -245,10 +244,15 @@ section{
   margin-top: -5px; }
 
 .panel-promise a{
-  color: #12D0D8; }
+  color: #6200EA;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
 
   .panel-promise a:hover{
-    color: #263238; }
+    color: #304FFE; }
 
 .compare-box{
   padding: 25px 0 10px 0; }
@@ -292,7 +296,7 @@ section{
 .chart.estudio-total{
   margin-bottom: -110px;
   position: relative;
-  top: -152px;}
+  top: -145px;}
 
 .progress {
   height: 26px;
@@ -322,6 +326,25 @@ section{
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   margin-top: 22px; }
+
+.promise-length{
+  font-family: 'Space mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  position: relative;
+  top: -2px;
+}
+
+.uppercase-font{
+  font-family: 'Space mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 3px;
+  margin-right: 9px;
+}
 
 .promise-result {
   font-weight: 700;
@@ -395,7 +418,16 @@ section{
   background-color: #12D0D8; }
 
 .label {
-  background-color: #12D0D8; }
+  font-family: 'Space mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  position: relative;
+  top: 3px;
+  margin-right: 9px;
+  background-color: #6200EA;
+  padding: 3px 5px;
+  border-radius: 0;}
 
 .tooltip {
   width: 280px;}
@@ -466,28 +498,61 @@ a.btn-jumbo:focus{
     background-color: #12D0D8;}
 
 .btn-warning{
-  background-color: #12D0D8;
+  background-color: transparent;
+  border: 2px solid #6200EA;
+  color: #6200EA !important;
+  font-family: 'Space Mono', monospace;
+  padding: 5px;
   -webkit-transition: background-color .3s ease-in;}
   .btn-warning:hover{
-    background-color: #FF483C;}
+    background-color: #6200EA;
+    border: 2px solid #6200EA;
+    color: #fff !important;
+  }
   .btn-warning:focus{
-    background-color: #FF483C;}
-
+    background-color: #6200EA;
+    border: 2px solid #6200EA;
+    color: #fff !important;
+  }
 .btn-success{
-  background-color: #12D0D8;
-  -webkit-transition: background-color .3s ease-in;}
+  background-color: #6200EA;
+  border: 2px solid #6200EA;
+  -webkit-transition: background-color .3s ease-in;
+  font-family: 'Space mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-right: 9px;
+}
   .btn-success:hover{
-    background-color: #263238; }
+    background-color: transparent;
+    border: 2px solid #6200EA;
+    color: #6200EA;
+   }
   .btn-success:focus{
-    background-color: #263238; }
+    background-color: transparent;
+    border: 2px solid #6200EA;
+    color: #6200EA;
+   }
+
 
 .btn-success-inverse{
-  background-color: #263238;
-  -webkit-transition: background-color .3s ease-in; }
+  background-color: transparent;
+  -webkit-transition: background-color .3s ease-in;
+  border: 2px solid #6200EA;
+  color: #6200EA !important;
+  font-family: 'Space mono', monospace;
+ }
   .btn-success-inverse:hover{
-    background-color: #12D0D8; }
+    background-color: #6200EA;
+    color: #fff !important;
+    border: 2px solid #6200EA;
+   }
   .btn-success-inverse:focus{
-    background-color: #12D0D8; }
+    background-color: #6200EA;
+    color: #fff !important;
+    border: 2px solid #6200EA;
+   }
 
 .btn{
   margin: auto;
@@ -515,7 +580,8 @@ a.btn-success-inverse{
 .modal-content {
   border: 0;
   border-radius: 0;
-  -webkit-box-shadow: none; }
+  -webkit-box-shadow: none;
+  padding: 10px 20px 20px;}
 
 .modal-header {
   border-bottom: none; }
@@ -523,6 +589,11 @@ a.btn-success-inverse{
 .modal-footer{
   border: none;
 }
+
+.modal-title{
+  padding: 20px 0;
+}
+
 .project-list{
   border-left: 4px solid #263238;
   padding: 5px 40px 5px 10px;
