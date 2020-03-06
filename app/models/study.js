@@ -19,6 +19,7 @@ export default DS.Model.extend(CalculationsMixin, {
     government: DS.belongsTo('government'),
     filename: DS.attr('string'),
     in_landing: DS.attr('boolean', { defaultValue: false }),
+    in_landing_2: DS.attr('boolean', { defaultValue: false }),
     visible: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
