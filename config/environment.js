@@ -17,7 +17,7 @@ var governments =[
 		"title": "¿Cuánto cumplió el gobierno de Sebastián Piñera al primer año?",
     "fixed_result": 23,
     "visible": true,
-		"in_landing": true,
+		"in_landing": false,
   },{
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-auto.svg",
@@ -30,7 +30,7 @@ var governments =[
 		"title": "¿Cuánto cumplió el gobierno de Sebastián Piñera de la primera cuenta pública?",
     "fixed_result": 53,
 		"visible": true,
-		"in_landing_2": true,
+		"in_landing_2": false,
 	}, {
     "type": "Programa",
     "color": "#73F1FF",
@@ -42,7 +42,7 @@ var governments =[
     "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
     "fixed_result": 33,
     "visible": false,
-		"in_landing": false,
+		"in_landing": true,
   }, {
     "type": "Estallido",
     "color": "#F1ACFD",
@@ -54,7 +54,7 @@ var governments =[
     "description": "Revisa cuánto cumplió el gobierno de los anuncios legislativos realizados a raíz de las movilizaciones sociales.",
     "fixed_result": 64,
     "visible": false,
-		"in_landing_2": false,
+		"in_landing_2": true,
   },
 	]},{
 	"name": "Michelle Bachelet II",
