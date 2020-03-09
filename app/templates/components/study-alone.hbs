@@ -1,22 +1,28 @@
+<div id="hero-studies" class="hero">
+  <div class="row">
+    <h1 class="text-center page">Estudios</h1>
+  </div>
+</div>
+
 
 {{yield}}
 <section id="estudio">
 <div class="container">
 <div class="row">
-  <div class="page-header">
-    <h1 class="text-center">¿Cuánto cumplió el gobierno de {{study.government.name}}?</h1>
+  <div class="col-md-8 col-md-offset-2 page-header">
+    <h1 class="text-center" style="margin-top:-20px;">{{study.title}}</h1>
     <h2 class="text-center">{{capitalize study.order}} año</h2>
   </div>
   <div class="col-md-10 col-md-offset-1">
     <div class="bajada">
-      <p class="text-center">Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno {{study.description}} {{#link-to "methodology" onClick="ga('send', 'event', 'estudio-metodologia', 'click');" class="btn btn-warning btn-xs"}}Ver metodología{{/link-to}}</p>
+      <p class="text-center">{{study.description}} {{#link-to "methodology" onClick="ga('send', 'event', 'estudio-metodologia', 'click');" class="btn btn-warning btn-xs"}}Ver metodología{{/link-to}}</p>
     </div>
   </div>
   <div class="col-md-6 col-md-offset-3 text-center">
     <div class="total-result cumplimientos">
       {{study.fullfilment}}%
     </div>
-    <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio."></i></h3>
+    <h3 class="label-cumplimiento uppercase-font">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio."></i></h3>
     <div class="chart estudio-total">
       {{ember-chart type='doughnut' data=study.chartDataFront options=study.doughnutOpt height=150}}
     </div>
@@ -25,19 +31,19 @@
 
 <div class="row">
   <div class="col-md-4 text-center">
-    <h3 class="sub">Total de promesas</h3>
+    <h3 class="sub uppercase-font">Total de promesas</h3>
     <div class="total-result sub">
       {{study.promises.length}}
     </div>
   </div>
   <div class="col-md-4 text-center">
-    <h3 class="sub">Total de proyectos enviados</h3>
+    <h3 class="sub uppercase-font">Total de proyectos enviados</h3>
     <div class="total-result sub">
       {{study.billsCount}}
     </div>
   </div>
   <div class="col-md-4 text-center">
-    <h3 class="sub">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%)."></i></h3>
+    <h3 class="sub uppercase-font">Capacidad <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Indicador que señala el número de promesas que presentan puntuación máxima en su nivel de avance (100%)."></i></h3>
     <div class="total-result sub">
       {{study.capacity}}
     </div>
@@ -53,12 +59,12 @@
 <div class="panel panel-default legend">
   <div class="row">
     <div class="col-md-10">
-      <h4>Áreas</h4>
+      <h4 class="uppercase-font">Áreas</h4>
     </div>
     <div class="hidden-xs hidden-sm col-md-2 text-center">
       <div class="row">
         <div class="col-md-12">
-          <h4>Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></h4>
+          <h4 class="uppercase-font">Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></h4>
         </div>
       </div>
     </div>
@@ -79,7 +85,8 @@
                 </span>
               </h4>
               <div class="sec-promesas">
-                <p><b>{{a.promises.length}} promesa(s)</b><br>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso - {{a.summary.no_progress}} sin progreso)</p>
+                <p class="promise-length"><b>{{a.promises.length}} promesa(s)</b></p>
+                <p>({{a.summary.completed}} completas - {{a.summary.in_progress}} en proceso - {{a.summary.no_progress}} sin progreso)</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -108,7 +115,7 @@
                   <h5>{{p.title}}</h5>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
-                    <p style="float: left;"><span>Proyectos asociados </span></p>
+                    <p style="float: left;" class="uppercase-font"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
                     <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
@@ -121,7 +128,7 @@
                             <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
                           </div>
                           <div class="modal-body">
-                            <p><span>Estado de avance:</span> {{b.phase.name}}</p>
+                            <p class="uppercase-font"><span>Estado de avance:</span> {{b.phase.name}}</p>
 
                           </div>
                           <div class="modal-footer">
@@ -137,7 +144,7 @@
                 <div class="col-md-2">
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                      <p class="text-center">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso." tooltip></i></p>
+                      <p class="text-center uppercase-font">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso." tooltip></i></p>
                       <div class="promise-result text-center">
                         {{p.fullfilment}}%
                       </div>
@@ -148,18 +155,18 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h5 class="modal-title" id="myModalLabel">{{p.fullfilment}}% de avance - ¿Por qué?</h5>
+                              <h5 class="modal-title font-mono" id="myModalLabel"><b>{{p.fullfilment}}% de avance - ¿Por qué?</b></h5>
                               {{p.ja_why}}
                             </div>
                             <div class="modal-body">
                               {{#if p.bills.length}}
-                              <h5 class="modal-title" id="myModalLabel">Proyectos de ley asociados</h5>
+                              <p class="modal-title uppercase-font" id="myModalLabel">Proyectos de ley asociados</p>
                               <div class="row"><!---Projects-->
                                 {{#each p.bills as |b|}}
                                 <div class="col-md-12 project-list">
                                   <span class="label label-default ng-binding">Proyecto {{b.name}}</span>
                                   <h5 class="modal-title" id="myModalLabel">{{b.title}}</h5>
-                                  <p><span>Estado de avance:</span> {{b.phase.name}}</p>
+                                  <p class="uppercase-font" style="margin-bottom:10px;"><span>Estado de avance:</span> {{b.phase.name}}</p>
                                   <a class="btn btn-success-inverse btn-xs" href="{{b.url}}" target="_blank">Ir al proyecto</a>
                                 </div>
                                 {{/each}}

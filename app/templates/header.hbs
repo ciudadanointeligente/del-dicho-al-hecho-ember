@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
       </button>
       {{#link-to "application"}}<img src="/img/logo-ddah.svg" title="Fundación Ciudadanía Inteligente" class="logo-nav img-responsive">{{/link-to}}
-      <a href="//ciudadanointeligente.org" target="_blank" class="sub-brand">de Ciudadanía Inteligente</a>
+      <a href="//ciudadaniai.org" target="_blank" class="sub-brand">Un proyecto de Ciudadanía Inteligente</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right menu-list">
@@ -18,7 +18,7 @@
           <ul class="dropdown-menu">
             {{#each model as |gov|}}
               {{#if gov.hasVisibleStudies}}
-               <li> {{gov.name}} </li>
+               <li class="uppercase-font" style="margin-bottom:10px"> {{gov.name}} </li>
                 {{#each gov.studies as |study|}}
                 {{#if study.isVisible}}
                  <li>{{#link-to "study" study.slug onClick="ga('send', 'event', 'menu-study{{study.slug}}', 'click');"}} {{study.name}}{{/link-to}}</li>
@@ -34,14 +34,14 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comparar estudios<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li>Avance por año en cumplimiento de Programa de Gobierno</li>
+            <li class="uppercase-font" style="margin-bottom:10px">Avance por año en cumplimiento de Programa de Gobierno</li>
             {{#each model as |gov|}}
               {{#if gov.comparableStudies}}
                 <li>{{#link-to "government" gov.slug }} {{gov.name}} {{gov.start_year}}-{{gov.end_year}}{{/link-to}}</li>
                 {{/if}}
             {{/each}}
             <li role="separator" class="divider"></li>
-            <li>Comparación entre gobiernos</li>
+            <li class="uppercase-font" style="margin-bottom:10px">Comparación entre gobiernos</li>
             {{#each compareUrls.Programa as |comparison|}}
               <li>{{#link-to "compare-studies" comparison.url}} {{comparison.study1.government.name}} - {{comparison.study2.government.name}} al {{comparison.study1.order}} año de gobierno {{/link-to}}</li>
             {{/each}}

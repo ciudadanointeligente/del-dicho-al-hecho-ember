@@ -1,9 +1,15 @@
+<div id="hero-whole" class="hero">
+  <div class="row">
+    <h1 class="text-center page">Comparar estudios</h1>
+  </div>
+</div>
+
 {{yield}}
 <section id="gobierno">
 <div class="container">
 <div class="row">
-  <div class="page-header">
-    <h1 class="text-center">{{model.name}}</h1>
+  <div class="col-md-8 col-md-offset-2 page-header">
+    <h1 class="text-center" style="margin-top:-20px;">{{model.name}}</h1>
     <h2 class="text-center">{{model.start_year}} - {{model.end_year}}</h2>
     <p class="text-center">{{model.extra_info}}</p>
   </div>
@@ -24,7 +30,7 @@
           <div class="col-md-12 compare-box">
             <p class="text-center">{{model.name}}</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{model.comparablePromises}}</p>
-            <p class="compare-info">Promesas</p>
+            <p class="compare-info uppercase-font">Promesas</p>
           </div>
         </div>
         </div>
@@ -44,7 +50,7 @@
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <div class="chart-comparison">
-              <p class="compare-info">Avance</p>
+              <p class="compare-info uppercase-font">Avance</p>
               <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.fullfilment}}%</p>
               <div class="graph-one chart-compare-studies">
                 {{ember-chart type='doughnut' data=study.chartData options=study.doughnutOpt height=150}}
@@ -69,7 +75,7 @@
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.billsCount}}</p>
-            <p class="compare-info">Proyectos</p>
+            <p class="compare-info uppercase-font">Proyectos</p>
           </div>
           {{/each}}
         </div>
@@ -89,8 +95,8 @@
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.presentanAvance}}/{{study.promises.length}}</p>
-            <p class="compare-info">Promesas con algún tipo de avance</p>
-            <p class="compare-info">({{study.finalizadas}} completas - {{study.enDesarrollo}} en progreso)</p>
+            <p class="compare-info uppercase-font">Promesas con algún tipo de avance</p>
+            <p class="compare-info uppercase-font">({{study.finalizadas}} completas - {{study.enDesarrollo}} en progreso)</p>
           </div>
           {{/each}}
         </div>
@@ -110,7 +116,7 @@
           <div class="col-xs-12 col-sm-{{columnsPerGovernment model }} col-md-{{columnsPerGovernment model }} compare-box">
             <p class="text-center">{{model.name}} al {{study.order}} año</p>
             <p class="compare-result compare-info" style="color: {{study.government.color1}}">{{study.capacity}}</p>
-            <p class="compare-info">Promesas con puntaje máximo</p>
+            <p class="compare-info uppercase-font">Promesas con puntaje máximo</p>
           </div>
           {{/each}}
         </div>
@@ -137,9 +143,9 @@
         <table class="table table-responsive">
           <thead>
             <tr>
-              <th><h4>Área</h4></th>
-              <th class="text-center"><h4>Avance año a año</h4></th>
-              <th class="text-center"><h4>Avance total</h4></th>
+              <th><h4 class="uppercase-font">Área</h4></th>
+              <th class="text-center"><h4 class="uppercase-font">Avance año a año</h4></th>
+              <th class="text-center"><h4 class="uppercase-font">Avance total</h4></th>
             </tr>
           </thead>
           <tbody>

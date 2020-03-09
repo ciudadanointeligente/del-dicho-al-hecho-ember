@@ -124,6 +124,11 @@ export default Ember.Mixin.create(CsvMixin, {
             in_land = true;
           }
 
+          let in_land_2 = false;
+          if(!_.isUndefined(study_obj.in_landing_2) && study_obj.in_landing_2){
+            in_land_2 = true;
+          }
+
           let visible = false;
           if(!_.isUndefined(study_obj.visible) && study_obj.visible){
             visible = true;
@@ -139,12 +144,14 @@ export default Ember.Mixin.create(CsvMixin, {
             filename: study_obj.filename,
             color: study_obj.color,
             in_landing: in_land,
+            in_landing_2: in_land_2,
             visible: visible,
             fixed_result: fixed_result,
             image: study_obj.img,
             type: study_obj.type,
             name: study_obj.name,
             description: study_obj.description,
+            title: study_obj.title,
             id: _hashCode(study_obj.version + study_obj.year),
           });
 

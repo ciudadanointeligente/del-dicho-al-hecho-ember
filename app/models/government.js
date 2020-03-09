@@ -13,7 +13,7 @@ export default DS.Model.extend({
   color2: DS.attr('string'),
   color3: DS.attr('string'),
   color4: DS.attr('string'),
-  // Indica si un gobierno tiene más de un estudio, y por lo tanto, puede ser comparado entre sus distintos años 
+  // Indica si un gobierno tiene más de un estudio, y por lo tanto, puede ser comparado entre sus distintos años
   comparableStudies: Ember.computed('studies', function(){
     let s = this.get('studies').filterBy('visible');
     if(s.length > 1){

@@ -1,8 +1,8 @@
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #232323;
+  color: #263238;
   background-color: #F4FBFF; }
 
 p {
@@ -39,11 +39,11 @@ h5 {
 
 /*NAVBAR*/
 .navbar-default {
-  background-color: #232323;
+  background-color: #263238;
   }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #232323;
+    border-color: #263238;
 }
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 540px;
@@ -69,7 +69,7 @@ h5 {
   padding: 0;
   border: 0; }
   .panel-default .panel-body .panel-heading {
-    background-color: #232323;
+    background-color: #263238;
     color: white;
     border-radius: 0; }
 
@@ -85,7 +85,7 @@ h5 {
   stroke: #12D0D8; }
 
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
-  stroke: #232323; }
+  stroke: #263238; }
 
 .progress {
   height: 26px;
@@ -146,7 +146,7 @@ button.btn.btn-default.btn-sm.btn-block.home {
     background-color: #12D0D8; }
 
 button.btn.btn-default.btn-sm.dark {
-  background-color: #232323; }
+  background-color: #263238; }
   button.btn.btn-default.btn-sm.dark:hover {
     background-color: #12D0D8; }
 

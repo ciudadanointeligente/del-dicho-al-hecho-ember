@@ -1,58 +1,75 @@
-
 {{yield}}
-<div id="welcome">
-  <img src="/img/palacio.png" class="resume-back">
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>¿Cuánto cumple el gobierno?</h1>
-          <p>Revisa aquí el porcentaje de cumplimiento de las promesas realizadas por el presidente Sebastián Piñera en la cuenta pública del 2018.</p>
-          {{#link-to "study" study.slug  class="hidden-xs btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Ver estudio completo {{/link-to}}
-        </div>
-          <div class="col-md-3 text-center total-resume-home">
-            <div class="total-result cumplimientos">
-              {{study.fullfilment}}%
-            </div>
-              <h3 class="label-cumplimiento">cumplimiento total <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio de avance de todas las promesas contenidas en el estudio."></i></h3>
-              <div class="chart estudio-total home-chart">
-                {{ember-chart type='doughnut' data=study.chartDataResume options=study.doughnutOpt height=150}}
-              </div>
-          </div>
-          <div class="col-md-3 visible-xs resume-mobile-btn">
-            {{#link-to "study" study.slug class="visible-xs btn btn-primary btn-jumbo" onclick="ga('send','event','home-ver-estudio-mobile','click')" }} Ver estudio completo {{/link-to}}
-          </div>
-      </div>
+<div id="hero-home">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>¿Cuánto cumple el gobierno?</h1>
+      <p>Pronto podrás revisar el balance de cumplimiento de las promesas legislativas del programa del segundo año del gobierno de Sebastián Piñera, junto a los anuncios realizados durante las movilizaciones sociales de Chile.</p>
+      {{!-- {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Movilizaciones Sociales {{/link-to}}
+      {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Programa {{/link-to}} --}}
     </div>
   </div>
 </div>
 
 <section id="que-es-home">
   <div class="container">
-    <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas.</p><br><p class="home text-center">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default home-about">
+          <div class="panel-body">
+            <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
+            <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas. Este año se añadirá una nueva sección del estudio sobre anuncios hechos por el gobierno en el marco de las movilizaciones sociales que partieron en octubre de 2019.</p><br>
+            <p class="home text-center">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<section id="movement">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <h2 class="text-center">{{study_1.title}}</h2>
+      <p class="home text-center">{{study_1.description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{#each-in study_1.promisesGroupedByArea as |area_id a|}}
+      <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
+        <h3 class="text-center">{{a.area.name}}</h3>
+        <div class="chart-resume text-center">
+          <img src="{{ area-image a.area.name }}" class="img-chart">
+          {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_1 'front') options=study.doughnutOpt height=150}}
+        </div>
+        <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
+        <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
+        <a href="{{url-for "study" study_1.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+      </div>
+    {{/each-in}}
+  </div>
+</div>
+</section>
 
 <section id="resume">
 <div class="container">
-  <h2 class="text-center">Cumplimiento de promesas al primer año de gobierno de Piñera</h2>
   <div class="row">
-    {{#each-in study.promisesGroupedByArea as |area_id a|}}
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <h2 class="text-center">{{study_0.title}}</h2>
+      <p class="home text-center">{{study_0.description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{#each-in study_0.promisesGroupedByArea as |area_id a|}}
     <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
       <h3 class="text-center">{{a.area.name}}</h3>
       <div class="chart-resume text-center">
         <img src="{{ area-image a.area.name }}" class="img-chart">
-        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study 'front') options=study.doughnutOpt height=150}}
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_0 'front') options=study.doughnutOpt height=150}}
       </div>
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
-      <p class="text-center home"><b>de avance</b></p>
-      <a href="{{url-for "study" study.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+      <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
+      <a href="{{url-for "study" study_0.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
     </div>
     {{/each-in}}
   </div>

@@ -7,7 +7,6 @@ export function areaImage(params/*, hash*/) {
 
   	return config.areaImages[area_name];
   }
-  console.log("'" + area_name+"': 'areas/" + area_name.replace(' ', '_').toLowerCase() + ".svg', ");
   return config.areaImages['default'];
 
 }

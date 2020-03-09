@@ -19,12 +19,14 @@ export default DS.Model.extend(CalculationsMixin, {
     government: DS.belongsTo('government'),
     filename: DS.attr('string'),
     in_landing: DS.attr('boolean', { defaultValue: false }),
+    in_landing_2: DS.attr('boolean', { defaultValue: false }),
     visible: DS.attr('boolean', { defaultValue: false }),
     image: DS.attr('string'),
     type: DS.attr('string'),
     fixed_result: DS.attr('number'),
     name: DS.attr('string'),
     description: DS.attr('string'),
+    title: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
@@ -168,11 +170,11 @@ export default DS.Model.extend(CalculationsMixin, {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      "#F7F7F7",
+                      "#F4F9FE",
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
-                      "#F7F7F7",
+                      "#F4F9FE",
                   ]
               }]
       };
@@ -202,11 +204,11 @@ export default DS.Model.extend(CalculationsMixin, {
                   data: [this.get('fullfilment'), 100-this.get('fullfilment')],
                   backgroundColor: [
                       this.get("government").get("color1"),
-                      "#F7F7F7",
+                      "#F4F9FE",
                   ],
                   hoverBackgroundColor: [
                       this.get("government").get("color2"),
-                      "#F7F7F7",
+                      "#F4F9FE",
                   ]
               }]
       };

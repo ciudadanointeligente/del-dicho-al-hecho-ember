@@ -935,6 +935,7 @@ define('ddah-ember/mixins/csv-parser', ['exports', 'ember', 'npm:papaparse', 'lo
     },
 
     _uploadPhases: function _uploadPhases(store) {
+      console.log('ACTUALIZAR FASES')
       var _hashCode = this._hashCode;
       _ember['default'].run.begin();
       _lodash['default'].forEach(_ddahEmberConfigEnvironment['default'].phases.phases, function (key) {
@@ -1755,6 +1756,9 @@ define('ddah-ember/routes/index', ['exports', 'ember', 'ddah-ember/mixins/csv-pa
   exports['default'] = _ember['default'].Route.extend(_ddahEmberMixinsCsvParser['default'], _ddahEmberMixinsUtilities['default'], {
     model: function model() {
       var study = this.store.peekAll('study').findBy('in_landing');
+      console.log("STUDY EN DDAH-EMBER.JS");
+
+      console.log(study);
       var file_name = _ddahEmberConfigEnvironment['default'].rootURL + 'studies/' + study.get('filename');
       return this._parseCsv(file_name, this.store, study);
     }
