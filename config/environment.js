@@ -41,10 +41,10 @@ var governments =[
     "filename": "Piñera-2018-2022_Programa-2019.csv",
     "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
     "fixed_result": 33,
-    "visible": false,
+    "visible": true,
 		"in_landing": true,
   }, {
-    "type": "Estallido",
+    "type": "MovimientoSocial",
     "color": "#F1ACFD",
     "year": 2019,
     "version": "Movilización Social",
