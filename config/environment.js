@@ -44,7 +44,7 @@ var governments =[
     "visible": false,
 		"in_landing": true,
   }, {
-    "type": "Estallido",
+    "type": "MovimientoSocial",
     "color": "#F1ACFD",
     "year": 2019,
     "version": "Movilización Social",
