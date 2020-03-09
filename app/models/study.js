@@ -26,6 +26,7 @@ export default DS.Model.extend(CalculationsMixin, {
     fixed_result: DS.attr('number'),
     name: DS.attr('string'),
     description: DS.attr('string'),
+    title: DS.attr('string'),
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();

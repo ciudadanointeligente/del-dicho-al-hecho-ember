@@ -6,7 +6,7 @@ import config from '../config/environment';
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
   titleToken: function(model) {
-    return 'titleToken';
+    return model[0].name + "-" + model[1].name;
   },
   model(){
     let studies = [];

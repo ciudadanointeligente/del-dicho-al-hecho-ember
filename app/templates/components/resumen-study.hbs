@@ -3,9 +3,9 @@
   <div class="row">
     <div class="col-md-6">
       <h1>¿Cuánto cumple el gobierno?</h1>
-      <p>Revisa el balance de cumplimiento de las promesas legislativas del programa del segundo año del gobierno de Sebastián Piñera, junto a los anuncios realizados durante las movilizaciones sociales de Chile.</p>
-      {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Movilizaciones Sociales {{/link-to}}
-      {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Programa {{/link-to}}
+      <p>Pronto podrás revisar el balance de cumplimiento de las promesas legislativas del programa del segundo año del gobierno de Sebastián Piñera, junto a los anuncios realizados durante las movilizaciones sociales de Chile.</p>
+      {{!-- {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Movilizaciones Sociales {{/link-to}}
+      {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Programa {{/link-to}} --}}
     </div>
   </div>
 </div>
@@ -17,7 +17,7 @@
         <div class="panel panel-default home-about">
           <div class="panel-body">
             <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
-            <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas. Este año se añadió una nueva sección del estudio sobre anuncios hechos por el gobierno en el marco de las movilizaciones sociales que partieron en octubre de 2019.</p><br>
+            <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas. Este año se añadirá una nueva sección del estudio sobre anuncios hechos por el gobierno en el marco de las movilizaciones sociales que partieron en octubre de 2019.</p><br>
             <p class="home text-center">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
           </div>
         </div>
@@ -30,8 +30,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-md-offset-2">
-      <h2 class="text-center">Los anuncios del Gobierno durante las movilizaciones sociales</h2>
-      <p class="home text-center">Revisa cuánto cumplió el gobierno de los anuncios legislativos realizados a raíz de las movilizaciones sociales</p>
+      <h2 class="text-center">{{study_1.title}}</h2>
+      <p class="home text-center">{{study_1.description}}</p>
     </div>
   </div>
   <div class="row">
@@ -44,7 +44,7 @@
         </div>
         <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
         <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
-        <a href="{{url-for "study" study.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+        <a href="{{url-for "study" study_1.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
       </div>
     {{/each-in}}
   </div>
@@ -55,8 +55,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-md-offset-2">
-      <h2 class="text-center">Las promesas del Programa de Gobierno de Sebastián Piñera</h2>
-      <p class="home text-center">Revisa el cumplimiento de promesas legislativas del programa al segundo año de gobierno de Piñera</p>
+      <h2 class="text-center">{{study_0.title}}</h2>
+      <p class="home text-center">{{study_0.description}}</p>
     </div>
   </div>
   <div class="row">

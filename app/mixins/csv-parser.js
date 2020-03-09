@@ -151,6 +151,7 @@ export default Ember.Mixin.create(CsvMixin, {
             type: study_obj.type,
             name: study_obj.name,
             description: study_obj.description,
+            title: study_obj.title,
             id: _hashCode(study_obj.version + study_obj.year),
           });
 
