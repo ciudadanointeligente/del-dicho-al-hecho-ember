@@ -3,9 +3,9 @@
   <div class="row">
     <div class="col-md-6">
       <h1>¿Cuánto cumple el gobierno?</h1>
-      <p>Pronto podrás revisar el balance de cumplimiento de las promesas legislativas del programa del segundo año del gobierno de Sebastián Piñera, junto a los anuncios realizados durante las movilizaciones sociales de Chile.</p>
-      {{!-- {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Movilizaciones Sociales {{/link-to}}
-      {{#link-to "study" study.slug  class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')" }} Programa {{/link-to}} --}}
+      <p>Revisa el balance de cumplimiento de las promesas legislativas del programa del segundo año del gobierno de Sebastián Piñera, junto a los anuncios realizados durante las movilizaciones sociales de Chile.</p>
+      <a href="#movement" class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-movilizaciones-desktop','click')">Movilizaciones Sociales</a>
+      <a href="#resume" class="btn btn-primary btn-lg btn-jumbo" onclick="ga('send','event','home-ver-estudio-desktop','click')">Programa de Gobierno</a>
     </div>
   </div>
 </div>
@@ -17,7 +17,7 @@
         <div class="panel panel-default home-about">
           <div class="panel-body">
             <h2 class="text-center">¿Qué es Del Dicho al Hecho?</h2>
-            <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas. Este año se añadirá una nueva sección del estudio sobre anuncios hechos por el gobierno en el marco de las movilizaciones sociales que partieron en octubre de 2019.</p><br>
+            <p class="home text-center">Del Dicho al Hecho es un estudio que mide el cumplimiento de las promesas legislativas establecidas por el gobierno en su programa presidencial y discurso de rendición de cuentas. Este año se añadió una nueva sección del estudio sobre anuncios hechos por el gobierno en el marco de las movilizaciones sociales que partieron en octubre de 2019.</p><br>
             <p class="home text-center">Con esto buscamos dar información que empodera a los ciudadanos y ciudadanas en el ejercicio de su derecho a exigir el cumplimiento de las promesas realizadas por los representantes, fortaleciendo su capacidad de fiscalización y control de gestión.</p>
           </div>
         </div>
@@ -40,7 +40,7 @@
         <h3 class="text-center">{{a.area.name}}</h3>
         <div class="chart-resume text-center">
           <img src="{{ area-image a.area.name }}" class="img-chart">
-          {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_1 'front') options=study.doughnutOpt height=150}}
+          {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_1 'front') options=study_1.doughnutOpt height=150}}
         </div>
         <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
         <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
@@ -65,7 +65,7 @@
       <h3 class="text-center">{{a.area.name}}</h3>
       <div class="chart-resume text-center">
         <img src="{{ area-image a.area.name }}" class="img-chart">
-        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_0 'front') options=study.doughnutOpt height=150}}
+        {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_0 'front') options=study_0.doughnutOpt height=150}}
       </div>
       <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
       <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>

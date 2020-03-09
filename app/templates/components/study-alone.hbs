@@ -1,9 +1,8 @@
-<div id="hero-studies" class="hero">
+<div id={{heroByStudyType study}} class="hero">
   <div class="row">
     <h1 class="text-center page">Estudios</h1>
   </div>
 </div>
-
 
 {{yield}}
 <section id="estudio">
@@ -91,13 +90,13 @@
             </div>
             <div class="col-md-6">
               <div class="progress progress-study-alone">
-                <div class="progress-bar" role="progressbar" aria-valuenow="{{a.summary.fullfilment}}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{a.summary.fullfilment}}%; background-color: {{study.government.color1}}"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="{{a.summary.fullfilment}}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{a.summary.fullfilment}}%; background-color: {{study.color}}"></div>
               </div>
             </div>
             <div class="col-md-2">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                  <p class="hidden-md hidden-lg text-center">Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></p>
+                  <p class="hidden-md hidden-lg text-center margin-bottom-20-mobile">Avance del área <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el promedio del cumplimiento de las promesas que pertenecen a un área determinada."></i></p>
                   <div class="category-result text-center">
                     {{a.summary.fullfilment}}%
                   </div>
@@ -144,7 +143,7 @@
                 <div class="col-md-2">
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                      <p class="text-center uppercase-font">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso." tooltip></i></p>
+                      <p class="text-center uppercase-font margin-top-20-mobile">Avance de la promesa <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Porcentaje que indica el nivel de cumplimiento de una promesa presidencial, en su estado de tramitación en el Congreso." tooltip></i></p>
                       <div class="promise-result text-center">
                         {{p.fullfilment}}%
                       </div>

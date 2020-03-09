@@ -193,7 +193,7 @@ section{
   padding: 100px 0 100px;}
 
 #resume{
-  padding-top: 60px;}
+  padding-top: 80px;}
   #resume h2{
     color: #263238;}
   #resume h3 > a{
@@ -243,6 +243,11 @@ section{
   background-position: center;
 }
 
+#movement{
+  margin-bottom:60px;
+  padding-top: 80px;
+}
+
 .hero{
   min-height: 60vh;
   padding: 80px;
@@ -275,8 +280,8 @@ section{
 
 .home-about{
   background: #F4F9FE !important;
-  padding: 30px 40px 40px !important;
-  margin: -160px 0 -30px;
+  padding: 50px 50px 60px !important;
+  margin: -160px 0 60px;
   border-radius: 0;
 }
 
@@ -499,7 +504,7 @@ section{
 
 /*HIGHLIGHT ELEMENTS*/
 .badge {
-  background-color: #12D0D8; }
+  background-color: #6200EA; }
 
 .label {
   font-family: 'Space mono', monospace;
@@ -528,6 +533,14 @@ section{
   margin: -16px 0 -7px 0;
 }
 
+.margin-top-20-mobile{
+  margin-top: 0;
+}
+
+.margin-bottom-20-mobile{
+  margin-bottom: 0px;
+}
+
 /*BUTTONS*/
 .btn-info{
   max-width: 70px;
@@ -537,6 +550,10 @@ section{
   color: #6200EA;
   -webkit-transition: background-color .3s ease-in;}
   .btn-info:hover{
+    background-color: #6200EA;
+    border: 2px solid #6200EA;
+  }
+  .btn-info:focus{
     background-color: #6200EA;
     border: 2px solid #6200EA;
   }
@@ -561,6 +578,7 @@ section{
 }
 .btn-jumbo:focus{
   background-color: #FFF;
+  border: 2px solid #FFF;
 }
 a.btn-jumbo{
   color: #FFF;
@@ -574,33 +592,43 @@ a.btn-jumbo:focus{
 }
 
 .btn-danger{
-  background-color: #FF483C;
+  background-color: transparent;
+  border: 2px solid #465056 !important;
+  color: #465056 !important;
+  font-family: 'Space Mono', monospace;
+  padding: 5px 10px;
   -webkit-transition: background-color .3s ease-in;}
   .btn-danger:hover{
-    background-color: #12D0D8;}
+    background-color: #465056 !important;
+    border: 2px solid #465056 !important;
+    color: #fff !important;
+  }
   .btn-danger:focus{
-    background-color: #12D0D8;}
+    background-color: #465056 !important;
+    border: 2px solid #465056 !important;
+    color: #fff !important;
+  }
 
 .btn-warning{
   background-color: transparent;
-  border: 2px solid #6200EA;
+  border: 2px solid #6200EA !important;
   color: #6200EA !important;
   font-family: 'Space Mono', monospace;
   padding: 5px 10px;
   -webkit-transition: background-color .3s ease-in;}
   .btn-warning:hover{
     background-color: #6200EA;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
     color: #fff !important;
   }
   .btn-warning:focus{
     background-color: #6200EA;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
     color: #fff !important;
   }
 .btn-success{
   background-color: #6200EA;
-  border: 2px solid #6200EA;
+  border: 2px solid #6200EA !important;
   -webkit-transition: background-color .3s ease-in;
   font-family: 'Space mono', monospace;
   text-transform: uppercase;
@@ -610,12 +638,12 @@ a.btn-jumbo:focus{
 }
   .btn-success:hover{
     background-color: transparent;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
     color: #6200EA;
    }
   .btn-success:focus{
     background-color: transparent;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
     color: #6200EA;
    }
 
@@ -623,19 +651,19 @@ a.btn-jumbo:focus{
 .btn-success-inverse{
   background-color: transparent;
   -webkit-transition: background-color .3s ease-in;
-  border: 2px solid #6200EA;
+  border: 2px solid #6200EA !important;
   color: #6200EA !important;
   font-family: 'Space mono', monospace;
  }
   .btn-success-inverse:hover{
     background-color: #6200EA;
     color: #fff !important;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
    }
   .btn-success-inverse:focus{
     background-color: #6200EA;
     color: #fff !important;
-    border: 2px solid #6200EA;
+    border: 2px solid #6200EA !important;
    }
 
 .btn{
@@ -653,11 +681,15 @@ a.btn-success{
   -webkit-transition: background-color .3s ease-in;}
   a:hover.btn-success{
     color: white;}
+  a:focus.btn-success{
+    color: white;}
 
 a.btn-success-inverse{
   color: white;
   -webkit-transition: background-color .3s ease-in;}
   a:hover.btn-success-inverse{
+    color: white;}
+  a:focus.btn-success-inverse{
     color: white;}
 
 /*MODALS*/
@@ -713,14 +745,48 @@ footer a:hover{
   color: #C5D0DE;
 }
 
+footer a:focus{
+  color: #C5D0DE;
+}
+
+
+img.logo-footer-fci {
+  width: 70%;
+  margin: 10px 0 0px;
+}
+
+.list-footer{
+  position: relative;
+  left: -40px;
+}
+
+svg.icon-footer {
+  width: 8%;
+}
 
 @media (max-width: 991px) {
+  img.logo-footer-fci {
+    width: 50%;
+  }
+
+  svg.icon-footer {
+    width: 6%;
+  }
+
   .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     margin: 21px -20px 10px;
   }
 
   .navbar-nav .open .dropdown-menu{
     margin: 0 0 15px;
+  }
+
+  .margin-top-20-mobile{
+    margin-top: 20px;
+  }
+
+  .margin-bottom-20-mobile{
+    margin-bottom: -20px;
   }
 
   #hero-home{
@@ -756,6 +822,7 @@ footer a:hover{
 }
 
 @media (max-width: 767px) {
+
   h2{
     font-size: 2.5rem;
   }
