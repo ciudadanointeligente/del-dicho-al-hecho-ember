@@ -1,0 +1,4903 @@
+{
+  "data": [
+    {
+      "type": "area",
+      "id": -976773812,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1153608226,
+      "attributes": {
+        "content": "Reducción de las dietas de los parlamentarios y altos sueldos de la administración pública y reducción en el número de los parlamentarios y limitación de las reelecciones.",
+        "number": "1",
+        "title": "Reducción dietas de parlamentarios y altos sueldos de la administración pública",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -976773812,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -267336763,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1323170231,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": -663439975,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 2064822087,
+      "attributes": {
+        "name": "9304-07",
+        "title": "Reforma constitucional que modifica el artículo 62 de la Constitución Política, para determinar por ley el monto de la dieta parlamentaria.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=9304-07",
+        "chekIsEmpty": "9304-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -267336763,
+              "type": "priority"
+            },
+            {
+              "id": -1323170231,
+              "type": "priority"
+            },
+            {
+              "id": -663439975,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2498,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1153608226,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 2064822087,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -976773812,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 704911587,
+      "attributes": {
+        "content": "Reducción de las dietas de los parlamentarios y altos sueldos de la administración pública y reducción en el número de los parlamentarios y limitación de las reelecciones.",
+        "number": "2",
+        "title": "Reducción en el número de los parlamentarios",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -976773812,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 531174319,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -75413325,
+      "attributes": {
+        "name": "Suma",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2043648657,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 469421526,
+      "attributes": {
+        "name": "11692-07",
+        "title": "Reduce el número de integrantes de la Cámara de Diputados y del Senado, en la forma que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=11692-07",
+        "chekIsEmpty": "11692-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 531174319,
+              "type": "priority"
+            },
+            {
+              "id": -75413325,
+              "type": "priority"
+            },
+            {
+              "id": -2043648657,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2365,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 704911587,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 469421526,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -976773812,
+      "attributes": {
+        "name": "Democracia"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 256214948,
+      "attributes": {
+        "content": "Reducción de las dietas de los parlamentarios y altos sueldos de la administración pública y reducción en el número de los parlamentarios y limitación de las reelecciones.",
+        "number": "3",
+        "title": "Limite a las reelecciones",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -976773812,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1001197681,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -696152587,
+      "attributes": {
+        "name": "Suma",
+        "count": 11
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1171056275,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 2010016645,
+      "attributes": {
+        "name": "4499-07",
+        "title": "Proyecto de Reforma Constitucional para limitar la reelección de las autoridades que indica.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=4499-07",
+        "chekIsEmpty": "4499-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1001197681,
+              "type": "priority"
+            },
+            {
+              "id": -696152587,
+              "type": "priority"
+            },
+            {
+              "id": -1171056275,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5973,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 256214948,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 2010016645,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1276383490,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -192481691,
+      "attributes": {
+        "content": "Proyecto que establece la reducción de las contribuciones de los adultos mayores más\n vulnerables.",
+        "number": "4",
+        "title": "Reducción de las contribuciones de los adultos mayores",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1276383490,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1075380295,
+      "attributes": {
+        "name": "Simple",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1605598027,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1190007255,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 7
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1683393909,
+      "attributes": {
+        "name": "12043-05",
+        "title": "Moderniza la legislación tributaria",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12043-05",
+        "chekIsEmpty": "12043-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1075380295,
+              "type": "priority"
+            },
+            {
+              "id": 1605598027,
+              "type": "priority"
+            },
+            {
+              "id": 1190007255,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 866,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -192481691,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1683393909,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1276383490,
+      "attributes": {
+        "name": "Desarrollo Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -641178330,
+      "attributes": {
+        "content": "Los adultos mayores de 65 años o más, que estén pensionados, tendrán una rebaja del 50 por ciento de la tarifa normal en el transporte público.",
+        "number": "5",
+        "title": "Rebaja en el transporte para mayores de 65 años",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1276383490,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1551892354,
+      "attributes": {
+        "name": "Simple",
+        "count": 2
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1450908994,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -700444096,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1485040789,
+      "attributes": {
+        "name": "12097-15",
+        "title": "Modifica disposiciones sobre subsidio nacional al transporte público remunerado de pasajeros.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12097-15",
+        "chekIsEmpty": "12097-15"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1551892354,
+              "type": "priority"
+            },
+            {
+              "id": 1450908994,
+              "type": "priority"
+            },
+            {
+              "id": -700444096,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2347,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -641178330,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1485040789,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1089874969,
+      "attributes": {
+        "content": "Otorgamiento de facilidades en el cumplimiento de las obligaciones tributarias, a través de mayores plazos para declaraciones de IVA, reconocimiento tributario de pérdidas de inventarios, revalúo fiscal de inmuebles y la exención de multas por pérdida de documentos contables.",
+        "number": "6",
+        "title": "Ayudas tributarias y financieras a las micro, pequeñas y medianas empresas",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1235237518,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1619172178,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 377806384,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 5
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1625284115,
+      "attributes": {
+        "name": "13116-03",
+        "title": "Contempla diversas medidas tributarias y financieras destinadas a apoyar a las micro, pequeñas y medianas empresas",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13116-03",
+        "chekIsEmpty": "13116-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1235237518,
+              "type": "priority"
+            },
+            {
+              "id": 1619172178,
+              "type": "priority"
+            },
+            {
+              "id": 377806384,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4943,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1089874969,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1625284115,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1538571608,
+      "attributes": {
+        "content": "Envío de un proyecto de ley al Congreso para incentivar y facilitar las donaciones a las micro, pequeña y mediana empresas que han sido afectadas por actos de violencia.",
+        "number": "7",
+        "title": "Facilitar las donaciones a micro, pequeñas y medianas empresas afectadas por actos de violencia.\n",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1235237518,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1619172178,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 377806384,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 5
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1625284115,
+      "attributes": {
+        "name": "13116-03",
+        "title": "Facilitar las donaciones a micro, pequeñas y medianas empresas afectadas por actos de violencia.\n",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13116-03",
+        "chekIsEmpty": "13116-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1235237518,
+              "type": "priority"
+            },
+            {
+              "id": 1619172178,
+              "type": "priority"
+            },
+            {
+              "id": 377806384,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5366,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1538571608,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1625284115,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1987268247,
+      "attributes": {
+        "content": "Creación de un nuevo tramo en el Impuesto Global Complementario de 40% para las rentas\n superiores a 8 millones mensuales, lo que aumentará la recaudación tributaria en US 160 MM.",
+        "number": "8",
+        "title": "Mayor impuesto a sectores de mayores ingresos",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1075380295,
+      "attributes": {
+        "name": "Simple",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1605598027,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1190007255,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 7
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1683393909,
+      "attributes": {
+        "name": "12043-05",
+        "title": "Moderniza la legislación tributaria",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12043-05",
+        "chekIsEmpty": "12043-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1075380295,
+              "type": "priority"
+            },
+            {
+              "id": 1605598027,
+              "type": "priority"
+            },
+            {
+              "id": 1190007255,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6880,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1987268247,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1683393909,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1859002410,
+      "attributes": {
+        "content": "El proyecto busca adelantar entrada en vigencia del plazo máximo de 30 días para pago de facturas a micro, pequeñas y medianas empresas.\n\n",
+        "number": "9",
+        "title": "Adelanto de la entrada en vigencia de la Ley de Pago a 30 días",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 205769450,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 71733934,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1856053332,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": 206333234,
+      "attributes": {
+        "name": "13045-03",
+        "title": "Modifica la ley N° 21.131 que establece pago a treinta días",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13045-03",
+        "chekIsEmpty": "13045-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 205769450,
+              "type": "priority"
+            },
+            {
+              "id": 71733934,
+              "type": "priority"
+            },
+            {
+              "id": 1856053332,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 63,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1859002410,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 206333234,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1363057008,
+      "attributes": {
+        "content": "Establecer que las empresas que vendan productos al Estado informen en forma transparente la identidad de sus dueños personas naturales, así tendremos mayor transparencia, podremos detectar y combatir cualquier abuso, conflicto de interés y concentraciones excesivas en la provisión de bienes y servicios al Estado, lo que va a favorecer a todos los chilenos.",
+        "number": "10",
+        "title": "Obligación a empresas que venden al Estado de informar la identidad de sus dueños como personas naturales",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1768623076,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -86744992,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1989537310,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -504339315,
+      "attributes": {
+        "name": "12953-05",
+        "title": "Ley de Presupuestos del sector público correspondiente al año 2020",
+        "url": "http://archive.is/SpB1D",
+        "chekIsEmpty": "12953-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1768623076,
+              "type": "priority"
+            },
+            {
+              "id": -86744992,
+              "type": "priority"
+            },
+            {
+              "id": -1989537310,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2874,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1363057008,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -504339315,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1811753647,
+      "attributes": {
+        "content": "Establecer en forma simple y transparente los términos y condiciones del comercio electrónico y prohibir todo abuso y todo cobro de comisiones que no correspondan a prestaciones efectivas.",
+        "number": "11",
+        "title": "Transparentar términos y condiciones del comercio electrónico y prohibir comisiones abusivas",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2034517010,
+      "attributes": {
+        "content": "Eliminar trámites notariales innecesarios, establecer las operaciones y trámites que deberán ser prestados digitalmente para facilitarles la vida a los ciudadanos y reducir los cobros de los Conservadores de Bienes Raíces.",
+        "number": "12",
+        "title": "Eliminación de trámites notariales innecesarios y aumentar digitalización",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1585820371,
+      "attributes": {
+        "content": "Establecer la Portabilidad Financiera para que los todos deudores de tarjeta de crédito, de crédito de consumo, de crédito hipotecario puedan elegir la institución financiera que les ofrezca las mejores condiciones, intereses y comisiones, evitando así abusos cuando son clientes cautivos.",
+        "number": "13",
+        "title": "Portabilidad financiera",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -820947256,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -769556980,
+      "attributes": {
+        "name": "Suma",
+        "count": 10
+      }
+    },
+    {
+      "type": "priority",
+      "id": -599220298,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 618142080,
+      "attributes": {
+        "name": "12909-03",
+        "title": "Regula la portabilidad financiera",
+        "url": "https://www.senado.cl/appsenado/templates/tramitacion/index.php?",
+        "chekIsEmpty": "12909-03"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -820947256,
+              "type": "priority"
+            },
+            {
+              "id": -769556980,
+              "type": "priority"
+            },
+            {
+              "id": -599220298,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3412,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1585820371,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 618142080,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1137123732,
+      "attributes": {
+        "content": "Se cobrará un sobretasa de 0,075% a viviendas de más de $400 millones de avalúo fiscal. Hay que considerar en todo caso que el avalúo fiscal está entre 30% y 60% más bajo que el avalúo comercial, y que el impuesto parte sobre el delta, es decir, si la vivienda tiene un avalúo de $410 millones, la tasa se aplicará sobre $10 millones porque los $400 millones están exentos. El ministro de Hacienda detalló que con esta medida se conseguirán US$200 millones, gravando al 1% de contribuyentes con mayores activos inmobiliarios.",
+        "number": "14",
+        "title": "Creación de impuesto al patrimonio inmobiliario",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1075380295,
+      "attributes": {
+        "name": "Simple",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1605598027,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1190007255,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 7
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1683393909,
+      "attributes": {
+        "name": "12043-05",
+        "title": "Moderniza la legislación tributaria",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12043-05",
+        "chekIsEmpty": "12043-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1075380295,
+              "type": "priority"
+            },
+            {
+              "id": 1605598027,
+              "type": "priority"
+            },
+            {
+              "id": 1190007255,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8496,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1137123732,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1683393909,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 688427093,
+      "attributes": {
+        "content": "Será obligatorio el pago de patentes municipales por parte de las sociedades de inversión y se eliminará gradualmente la devolución de pagos provisionales por empresas con pérdidas (PPUA). Para 2020, la devolución será de 90%; 2021 de 80%; 2022 de 70%; y 2023 de 50%.",
+        "number": "15",
+        "title": "Sociedades de inversión deberán pagar patentes municipales",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1075380295,
+      "attributes": {
+        "name": "Simple",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1605598027,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1190007255,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 7
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1683393909,
+      "attributes": {
+        "name": "12043-05",
+        "title": "Moderniza la legislación tributaria",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12043-05",
+        "chekIsEmpty": "12043-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1075380295,
+              "type": "priority"
+            },
+            {
+              "id": 1605598027,
+              "type": "priority"
+            },
+            {
+              "id": 1190007255,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9272,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 688427093,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1683393909,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 1713269295,
+      "attributes": {
+        "name": "Economía y Comercio"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 239730454,
+      "attributes": {
+        "content": "Reintegración de las Pymes y en esa línea se crea un sistema Pro Emprendimiento para las Pymes que cumplan ciertos requisitos básicos: ventas anuales hasta UF 75.000, empresa operativa, y dueños personas naturales. En este régimen se eximirá del pago de impuesto a las Pymes, y si el emprendedor se encuentra en el tramo exento del global complementario, ni la empresa ni su dueño deberán tributar. Para aquellas Pymes que ya están más establecidas y tienen mejores niveles de venta, y que estaban en el sistema semi integrado, se mejora el régimen Pyme y se les fijará una tasa de impuesto de 25%, menor que las empresas grandes, además de entregarles los mismos beneficios e incentivos de las empresas pequeñas. Estas Pymes quedarán en un sistema integrado en base a retiro.",
+        "number": "16",
+        "title": "Reintegración tributaria de Pymes a través del sistema Pro Emprendimiento",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 1713269295,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1075380295,
+      "attributes": {
+        "name": "Simple",
+        "count": 12
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1605598027,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1190007255,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 7
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1683393909,
+      "attributes": {
+        "name": "12043-05",
+        "title": "Moderniza la legislación tributaria",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12043-05",
+        "chekIsEmpty": "12043-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1075380295,
+              "type": "priority"
+            },
+            {
+              "id": 1605598027,
+              "type": "priority"
+            },
+            {
+              "id": 1190007255,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8256,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 239730454,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1683393909,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -291263143,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -208966185,
+      "attributes": {
+        "content": "Proyecto contempla posibilidad de posponer cuotas morosas y retomar pago de crédito vigente bajo mismas condiciones originales, lo que implica pagar interés anual real de 2%.",
+        "number": "17",
+        "title": "Condonación de multas e intereses del CAE",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -291263143,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1768623076,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -86744992,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1989537310,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -504339315,
+      "attributes": {
+        "name": "12953-05",
+        "title": "Ley de Presupuestos del sector público correspondiente al año 2020",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12953-05",
+        "chekIsEmpty": "12953-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1768623076,
+              "type": "priority"
+            },
+            {
+              "id": -86744992,
+              "type": "priority"
+            },
+            {
+              "id": -1989537310,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5209,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -208966185,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -504339315,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -291263143,
+      "attributes": {
+        "name": "Educación"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -657662824,
+      "attributes": {
+        "content": "Proyecto que crea el derecho a la Sala Cuna Universal a todos los niños de madres -o padres cuando corresponda- trabajadoras de Chile.",
+        "number": "18",
+        "title": "Sala cuna universal",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -291263143,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -98377057,
+      "attributes": {
+        "name": "Simple",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1291709533,
+      "attributes": {
+        "name": "Suma",
+        "count": 20
+      }
+    },
+    {
+      "type": "priority",
+      "id": -886509441,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 8
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1640860243,
+      "attributes": {
+        "name": "12026-13",
+        "title": "Crea el beneficio social de educación en el nivel de sala cuna, financiado por un fondo solidario.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12026-13",
+        "chekIsEmpty": "12026-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -98377057,
+              "type": "priority"
+            },
+            {
+              "id": -1291709533,
+              "type": "priority"
+            },
+            {
+              "id": -886509441,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3340,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -657662824,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1640860243,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1605427991,
+      "attributes": {
+        "name": "Energía"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1106359463,
+      "attributes": {
+        "content": "Creación de un mecanismo de estabilización de las tarifas eléctricas, lo que permitirá anular la reciente alza 9,2% de la electricidad, retrotrayendo el valor de las tarifas eléctricas al nivel del primer semestre de este año.",
+        "number": "19",
+        "title": "Estabilización de precios de la energía eléctrica",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1605427991,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -811239776,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1013691364,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 833507550,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1726728334,
+      "attributes": {
+        "name": "13017-08",
+        "title": "Proyecto de ley que crea un mecanismo transitorio de estabilización de precios de la energía eléctrica para clientes sujetos a regulación de tarifas.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13017-08",
+        "chekIsEmpty": "13017-08"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -811239776,
+              "type": "priority"
+            },
+            {
+              "id": 1013691364,
+              "type": "priority"
+            },
+            {
+              "id": 833507550,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5124,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1106359463,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1726728334,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1293665946,
+      "attributes": {
+        "name": "Estado"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1907216367,
+      "attributes": {
+        "content": "Fortalecimiento del Fondo Común Municipal, estableciendo mayores aportes de las comunas de mayores ingresos, en beneficio de las comunas de menores ingresos. Esto permitirá una mayor equidad en la provisión de servicios municipales como seguridad, luminarias, infraestructura, parques, deporte, recreación y otros.",
+        "number": "20",
+        "title": "Fortalecimiento del Fondo Común Municipal",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1293665946,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1063653961,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1458519728,
+      "attributes": {
+        "content": "Fortalecer la Fiscalía Nacional Económica, Organismo Público que debe velar por la libre competencia, con nuevas herramientas para prevenir, investigar y denunciar los carteles y las conductas anticompetitivas, herramientas como el alzamiento del secreto bancario y la protección de las pruebas físicas o digitales de conductas anticompetitivas.",
+        "number": "21",
+        "title": "Fortalecer la Fiscalía Nacional Económica",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1063653961,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1063653961,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1009823089,
+      "attributes": {
+        "content": "Aumentar las sanciones penales con penas de cárcel efectivas, para los delitos de colusión cuando los bienes afectados sean de primera necesidad, como medicamentos o alimentos.",
+        "number": "22",
+        "title": "Mayores sanciones a la colusión en bienes de primera necesidad",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1063653961,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1063653961,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 561126450,
+      "attributes": {
+        "content": "Aumentar las sanciones penales y las multas para los delitos tributarios, el uso de información privilegiada y la divulgación de información falsa en los mercados financieros.",
+        "number": "23",
+        "title": "Más penas y multas para delitos tributarios, información privilegiada y divulgación de información financiera falsa",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1063653961,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1063653961,
+      "attributes": {
+        "name": "Justicia y Derechos Humanos"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 112429811,
+      "attributes": {
+        "content": "Creación de la figura del Denunciante Anónimo, para que cualquier ciudadano, en forma anónima o con identidad protegida, pueda denunciar actos de colusión o delitos en el sector público o privado.",
+        "number": "24",
+        "title": "Creación de la figura del Denunciante Anónimo",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1063653961,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1139935575,
+      "attributes": {
+        "name": "Infancia y Juventud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -336266828,
+      "attributes": {
+        "content": "El Proyecto Pro-Infancia, que termina con el tristemente célebre Sename y lo reemplaza por dos nuevos servicios públicos. El Servicio de Protección de la Niñez y Adolescencia y el Servicio de Reinserción Juvenil.",
+        "number": "25",
+        "title": "Creación del Servicio de Protección a la Niñez (reemplaza al Sename)",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1139935575,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1116419682,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 836926502,
+      "attributes": {
+        "name": "Suma",
+        "count": 30
+      }
+    },
+    {
+      "type": "priority",
+      "id": -271293988,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 700667121,
+      "attributes": {
+        "name": "12027-07",
+        "title": "Crea el Servicio de Protección a la Niñez y modifica normas legales que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12027-07",
+        "chekIsEmpty": "12027-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1116419682,
+              "type": "priority"
+            },
+            {
+              "id": 836926502,
+              "type": "priority"
+            },
+            {
+              "id": -271293988,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4278,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -336266828,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 700667121,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1139935575,
+      "attributes": {
+        "name": "Infancia y Juventud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -784963467,
+      "attributes": {
+        "content": "El Proyecto Pro-Infancia, que termina con el tristemente célebre Sename y lo reemplaza por dos nuevos servicios públicos. El Servicio de Protección de la Niñez y Adolescencia y el Servicio de Reinserción Juvenil.",
+        "number": "26",
+        "title": "Creación del Servicio de Reinserción Juvenil (reemplaza al Sename)",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1139935575,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1783365052,
+      "attributes": {
+        "name": "Simple",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1624188792,
+      "attributes": {
+        "name": "Suma",
+        "count": 40
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1213887162,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -2097122505,
+      "attributes": {
+        "name": "11174-07",
+        "title": "Crea el Servicio Nacional de Reinserción Social Juvenil e introduce modificaciones a la ley N° 20.084, sobre responsabilidad penal de adolescentes, y a otras normas que indica.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=11174-07",
+        "chekIsEmpty": "11174-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1783365052,
+              "type": "priority"
+            },
+            {
+              "id": -1624188792,
+              "type": "priority"
+            },
+            {
+              "id": 1213887162,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9952,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -784963467,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -2097122505,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1233660106,
+      "attributes": {
+        "content": "El proyecto de ley crea el Plan de Salud Universal, que asegura el acceso a una salud oportuna para toda la población y que contempla una reducción en los tiempos máximos de espera, estableciendo plazos máximos de atención en intervenciones quirúrgicas, procedimientos, consultas de especialidad y todos los servicios incluidos en el nuevo plan.",
+        "number": "27",
+        "title": "Plan de Salud Universal para beneficiarios de Fonasa",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1541578953,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1574775237,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1603407079,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -883577202,
+      "attributes": {
+        "name": "13178-11",
+        "title": "Reforma el Fondo Nacional de Salud y crea un Plan de Salud Universal",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13178-11",
+        "chekIsEmpty": "13178-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1541578953,
+              "type": "priority"
+            },
+            {
+              "id": -1574775237,
+              "type": "priority"
+            },
+            {
+              "id": 1603407079,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 2298,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1233660106,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -883577202,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1682356745,
+      "attributes": {
+        "content": "Para solucionar el alto gasto que representa para los chilenos la compra de remedios, se creará un nuevo Seguro de Medicamentos para todos los beneficiarios de Fonasa, que asegurará el acceso a fármacos a precios más bajos, con descuentos esperados del 60%. Este otorgará protección financiera para cerca de 200 tipos de remedios de mayor uso por parte de la población, como fármacos para la diabetes, hipertensión arterial y colesterol alto, entre otros. La Cenabast será el organismo encargado de comprar los fármacos, mientras que Fonasa licitará su distribución y financiará parte de su costo.",
+        "number": "28",
+        "title": "Seguro de Medicamentos para todos los beneficiarios de Fonasa",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1541578953,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1574775237,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1603407079,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": -883577202,
+      "attributes": {
+        "name": "13178-11",
+        "title": "Reforma el Fondo Nacional de Salud y crea un Plan de Salud Universal",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13178-11",
+        "chekIsEmpty": "13178-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1541578953,
+              "type": "priority"
+            },
+            {
+              "id": -1574775237,
+              "type": "priority"
+            },
+            {
+              "id": 1603407079,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4559,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1682356745,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -883577202,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -2131053384,
+      "attributes": {
+        "content": "El Ministerio de Salud envió hoy al Congreso un nuevo proyecto de ley que ampliará las facultades de la Central de Abastecimiento (Cenabast) para permitir que intermedie en la compra de medicamentos para las farmacias independientes y almacenes farmacéuticos.",
+        "number": "29",
+        "title": "Intermediación entre Cenabast y farmacias privadas",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1376940940,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1987380272,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -88400782,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1934573621,
+      "attributes": {
+        "name": "13027-11",
+        "title": "Autoriza la intermediación de medicamentos por parte de Cenabast a almacenes farmacéuticos y farmacias privadas",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13027-11",
+        "chekIsEmpty": "13027-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1376940940,
+              "type": "priority"
+            },
+            {
+              "id": -1987380272,
+              "type": "priority"
+            },
+            {
+              "id": -88400782,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3965,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -2131053384,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1934573621,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 882522446,
+      "attributes": {
+        "content": "Urgencia de discusión inmediata al Proyecto de Ley enviado por nuestro Gobierno al Congreso que crea el Seguro de Enfermedades Catastróficas, de forma de asegurar un techo al gasto de salud de las familias.  El gasto que exceda a ese techo será cubierto por el Seguro.",
+        "number": "30",
+        "title": "Seguro de Enfermedades Catastrófico",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1856952588,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1526546096,
+      "attributes": {
+        "name": "Suma",
+        "count": 16
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1992476402,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 5
+      }
+    },
+    {
+      "type": "bill",
+      "id": 511297005,
+      "attributes": {
+        "name": "12662-11",
+        "title": "Crea el Seguro de Salud Clase Media a través de una cobertura financiera especial en la modalidad de atención de libre elección de FONASA",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12662-11",
+        "chekIsEmpty": "12662-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1856952588,
+              "type": "priority"
+            },
+            {
+              "id": -1526546096,
+              "type": "priority"
+            },
+            {
+              "id": 1992476402,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5948,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 882522446,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 511297005,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 433825807,
+      "attributes": {
+        "content": "Creación de un Seguro que cubra parte del gasto en medicamentos de las familias chilenas, no cubierto por programas como el GES o la Ley Ricarte Soto.",
+        "number": "31",
+        "title": "Seguro que cubre parte del gasto en medicamentos",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 109202157,
+      "attributes": {
+        "name": "Salud"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -14870832,
+      "attributes": {
+        "content": "Creación de un observatorio internacional de medicamentos para fijar una banda referencial y de acuerdo a ello fijar precios máximos de medicamentos de alto costo.",
+        "number": "32",
+        "title": "Fijación de precios máximos de medicamentos de alto costo.",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 109202157,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -567397160,
+      "attributes": {
+        "name": "Simple",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": -469852132,
+      "attributes": {
+        "name": "Suma",
+        "count": 49
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1935784026,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 4
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1364168293,
+      "attributes": {
+        "name": "9914-11",
+        "title": "Creación de un observatorio internacional de medicamentos para fijar una banda referencial y de acuerdo a ello fijar precios máximos de medicamentos de alto costo.",
+        "url": "https://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=9914-11",
+        "chekIsEmpty": "9914-11"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -32479070,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -567397160,
+              "type": "priority"
+            },
+            {
+              "id": -469852132,
+              "type": "priority"
+            },
+            {
+              "id": -1935784026,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7358,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -14870832,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1364168293,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -463567471,
+      "attributes": {
+        "content": "Se ingresará un proyecto de ley que regulará y sancionará con mayor fuerza los daños contra Carabineros, la PDI y Gendarmería.",
+        "number": "33",
+        "title": "Protección a las Fuerzas de Orden y Seguridad y de Gendarmería de Chile",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -406370262,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 151543790,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2033031956,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 917563380,
+      "attributes": {
+        "name": "13124-07",
+        "title": "Proyecto de ley que modifica el Código Penal y otros cuerpos legales para fortalecer la protección de las Fuerzas de Orden y Seguridad y de Gendarmería de Chile.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13124-07",
+        "chekIsEmpty": "13124-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -406370262,
+              "type": "priority"
+            },
+            {
+              "id": 151543790,
+              "type": "priority"
+            },
+            {
+              "id": 2033031956,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3195,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -463567471,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 917563380,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -912264110,
+      "attributes": {
+        "content": "Firmaremos y enviaremos al Congreso y con la máxima urgencia un proyecto de ley que va a permitir a nuestras Fuerzas Armadas, colaborar en la protección de la infraestructura crítica de nuestro país.",
+        "number": "34",
+        "title": "Protección de la infraestructura crítica del país",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1110966174,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 164218406,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 921393116,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 693778514,
+      "attributes": {
+        "name": "13088-02",
+        "title": "Proyecto de ley que modifica la Ley Orgánica Constitucional de las Fuerzas Armadas para establecer el rol de éstas en la protección de la infraestructura crítica del país cuando sea indispensable para la seguridad nacional.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13088-02",
+        "chekIsEmpty": "13088-02"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1110966174,
+              "type": "priority"
+            },
+            {
+              "id": 164218406,
+              "type": "priority"
+            },
+            {
+              "id": 921393116,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 5908,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -912264110,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 693778514,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1360960749,
+      "attributes": {
+        "content": "El Presidente Sebastián Piñera anunció este jueves medidas para fortalecer el orden público y resguardar la seguridad ciudadana, incluyendo un proyecto de ley antisaqueos (...) Además (...) se le dará urgencia al proyecto que permite combatir mejor los delitos que se realizan con barricadas.",
+        "number": "35",
+        "title": "Ley antisaqueo y antibarricadas",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -298181270,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1555006766,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -429146668,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1557100589,
+      "attributes": {
+        "name": "13044-25",
+        "title": "Modifica el Código Penal para tipificar como delito la alteración de la paz pública mediante la ejecución de actos de violencia, y agrava las penas aplicables, en las circunstancias que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13090-25",
+        "chekIsEmpty": "13044-25"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -298181270,
+              "type": "priority"
+            },
+            {
+              "id": 1555006766,
+              "type": "priority"
+            },
+            {
+              "id": -429146668,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9637,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1360960749,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1557100589,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1809657388,
+      "attributes": {
+        "content": "Creación de la Defensoría de las víctimas, de forma de facilitar el acceso y fortalecer la defensa jurídica y apoyo social y sicológico a las víctimas de la delincuencia.",
+        "number": "36",
+        "title": "Creación de la Defensoría de las víctimas",
+        "ja-why": "No se conocen proyectos de ley asociados a esta promesa."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 2036613269,
+      "attributes": {
+        "content": " Se establecerá discusión inmediata al Proyecto de Ley Antiencapuchados, que penará con mayor rigor a quienes lleven a cabo desórdenes públicos ocultando su identidad",
+        "number": "37",
+        "title": "Ley antiencapuchados",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -415527463,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 518014301,
+      "attributes": {
+        "name": "Suma",
+        "count": 3
+      }
+    },
+    {
+      "type": "priority",
+      "id": -186203387,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 10
+      }
+    },
+    {
+      "type": "bill",
+      "id": 34129619,
+      "attributes": {
+        "name": "12894-07",
+        "title": "Proyecto de ley que establece el ocultamiento de la identidad como tipo penal, circunstancia agravante y caso de flagrancia.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12894-07",
+        "chekIsEmpty": "12894-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -415527463,
+              "type": "priority"
+            },
+            {
+              "id": 518014301,
+              "type": "priority"
+            },
+            {
+              "id": -186203387,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7536,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 2036613269,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 34129619,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1587916630,
+      "attributes": {
+        "content": "El Mandatario además señaló que se presentará una discusión inmediata para el proyecto que refuerza el Sistema Nacional de Inteligencia del Estado y pondrá mayor urgencia al proyecto que moderniza las policías.",
+        "number": "38",
+        "title": "Modernización al sistema de inteligencia del Estado.",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1405113027,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": 342683073,
+      "attributes": {
+        "name": "Suma",
+        "count": 8
+      }
+    },
+    {
+      "type": "priority",
+      "id": -274220767,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 10
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1814359118,
+      "attributes": {
+        "name": "12234-02",
+        "title": "Fortalece y moderniza el sistema de inteligencia del Estado.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12234-02",
+        "chekIsEmpty": "12234-02"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1405113027,
+              "type": "priority"
+            },
+            {
+              "id": 342683073,
+              "type": "priority"
+            },
+            {
+              "id": -274220767,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8217,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1587916630,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1814359118,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1139219991,
+      "attributes": {
+        "content": "El Mandatario además señaló que se presentará una discusión inmediata para el proyecto que refuerza el Sistema Nacional de Inteligencia del Estado y pondrá mayor urgencia al proyecto que moderniza las policías.",
+        "number": "39",
+        "title": "Modernización de las policías",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -639303143,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -371603043,
+      "attributes": {
+        "name": "Suma",
+        "count": 22
+      }
+    },
+    {
+      "type": "priority",
+      "id": -898242875,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1495785131,
+      "attributes": {
+        "name": "12250-25",
+        "title": "Moderniza la gestión institucional y fortalece la probidad y la transparencia en la Fuerzas de Orden y Seguridad Pública.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12250-25",
+        "chekIsEmpty": "12250-25"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -639303143,
+              "type": "priority"
+            },
+            {
+              "id": -371603043,
+              "type": "priority"
+            },
+            {
+              "id": -898242875,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6394,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1139219991,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1495785131,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1140857460,
+      "attributes": {
+        "name": "Seguridad Ciudadana"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -142171475,
+      "attributes": {
+        "content": "Hacemos un llamado al Congreso para darle celeridad a los proyectos de la agenda de seguridad (...) Especialización de las Policías se encuentra con Urgencia Suma en su primer trámite en el Senado.",
+        "number": "40",
+        "title": "Especialización de Policías",
+        "ja-why": "El proyecto de ley asociado se encuentra en primer trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1140857460,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 310510601,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2068936819,
+      "attributes": {
+        "name": "Suma",
+        "count": 9
+      }
+    },
+    {
+      "type": "priority",
+      "id": -241541419,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 768165680,
+      "attributes": {
+        "name": "12699-07",
+        "title": "Proyecto de ley que propicia la especialización preferente de las Fuerzas de Orden y Seguridad Pública mediante modificaciones a las leyes orgánicas que indica y a la normativa procesal penal.",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12699-07",
+        "chekIsEmpty": "12699-07"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 310510601,
+              "type": "priority"
+            },
+            {
+              "id": -2068936819,
+              "type": "priority"
+            },
+            {
+              "id": -241541419,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8552,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -142171475,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 768165680,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -590868114,
+      "attributes": {
+        "content": "El Presidente Sebastián Piñera anunció este martes el envío de un proyecto de ley que consiste en la entrega de un bono que beneficiará a más de 1,3 millones de familias y que permitirá una importante ayuda en su economía.",
+        "number": "41",
+        "title": "Bono extraordinario de apoyo familiar",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1666418352,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -914454540,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -561150258,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 239772338,
+      "attributes": {
+        "name": "13102-05",
+        "title": "Entrega un bono extraordinario de apoyo familiar",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13102-05",
+        "chekIsEmpty": "13102-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1666418352,
+              "type": "priority"
+            },
+            {
+              "id": -914454540,
+              "type": "priority"
+            },
+            {
+              "id": -561150258,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1903,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -590868114,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 239772338,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1039564753,
+      "attributes": {
+        "content": "1. Aumento inmediato de 20% de la Pensión Básica Solidaria, lo que beneficiará a 590 mil pensionados.\n2. Aumento inmediato, apenas se apruebe la ley, de 20% en el Aporte Previsional Solidario, lo que beneficiará a 945 mil pensionados.\n3. Aumento adicional de las pensiones básicas y los aportes previsionales solidarios, durante los años 2021 y 2022, para los pensionados mayores de 75 años.",
+        "number": "42",
+        "title": "Aumento del 20% de la Pensión Básica Solidaria y el Aporte Previsional Solidario",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1486969660,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 673323784,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 676249658,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 884823898,
+      "attributes": {
+        "name": "13091-13",
+        "title": "Mejora y establece nuevos beneficios en el sistema de pensiones solidarias",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13091-13",
+        "chekIsEmpty": "13091-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1486969660,
+              "type": "priority"
+            },
+            {
+              "id": 673323784,
+              "type": "priority"
+            },
+            {
+              "id": 676249658,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6501,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1039564753,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 884823898,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1488261392,
+      "attributes": {
+        "content": "Se considera un aumento al 50% para la Pensión Básica Solidaria (PBS) y para la Pensión Máxima con Aporte Solidario (PMAS), desde enero del año 2020, para beneficiarios mayores de 80 años. Adicionalmente, para pensionados de 75 a 79 años se incrementará la PBS y la PMAS en 30% en enero 2020, llegando a un aumento acumulado de 50% en enero del año 2021.  Finalmente, pensionados menores de 75 años, recibirán un incremento en la PBS y la PMAS de 25% en enero del año 2020, 40% en enero del año 2021, llegando a un acumulado de 50% en enero del año 2022.",
+        "number": "43",
+        "title": "Aumento del 50% para la Pensión Básica Solidaria y de entre 25 y 30% de la Pensión Máxima con Aporte Solidario",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1486969660,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 673323784,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 676249658,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 884823898,
+      "attributes": {
+        "name": "13091-13",
+        "title": "Mejora y establece nuevos beneficios en el sistema de pensiones solidarias",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13091-13",
+        "chekIsEmpty": "13091-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1486969660,
+              "type": "priority"
+            },
+            {
+              "id": 673323784,
+              "type": "priority"
+            },
+            {
+              "id": 676249658,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 6852,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1488261392,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 884823898,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1936958031,
+      "attributes": {
+        "content": "Aportes de recursos fiscales para complementar el ahorro previsional de la clase media y las mujeres que trabajan y cotizan, para incrementar sus pensiones al momento de la jubilación, lo que favorecerá a 500 mil trabajadores.",
+        "number": "44",
+        "title": "Más recursos fiscales para complementar el ahorro previsional de la clase media y las mujeres que trabajan y cotizan",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1713132770,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1190596638,
+      "attributes": {
+        "name": "Suma",
+        "count": 17
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1854727072,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1234215762,
+      "attributes": {
+        "name": "12212-13",
+        "title": "Mejora pensiones del sistema de pensiones solidarias y del sistema de pensiones de capitalización individual, crea nuevos beneficios de pensión para la clase media y las mujeres, crea un subsidio y seguro de dependencia, e introduce modificaciones en los cuerpos legales que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12212-13",
+        "chekIsEmpty": "12212-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1713132770,
+              "type": "priority"
+            },
+            {
+              "id": -1190596638,
+              "type": "priority"
+            },
+            {
+              "id": 1854727072,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3196,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1936958031,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1234215762,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1909312626,
+      "attributes": {
+        "content": "Aportes de recursos fiscales para mejorar las pensiones de los adultos mayores no valentes.",
+        "number": "45",
+        "title": "Más recursos fiscales para pensiones de los adultos mayores no valentes",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1713132770,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1190596638,
+      "attributes": {
+        "name": "Suma",
+        "count": 17
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1854727072,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1234215762,
+      "attributes": {
+        "name": "12212-13",
+        "title": "Mejora pensiones del sistema de pensiones solidarias y del sistema de pensiones de capitalización individual, crea nuevos beneficios de pensión para la clase media y las mujeres, crea un subsidio y seguro de dependencia, e introduce modificaciones en los cuerpos legales que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12212-13",
+        "chekIsEmpty": "12212-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1713132770,
+              "type": "priority"
+            },
+            {
+              "id": -1190596638,
+              "type": "priority"
+            },
+            {
+              "id": 1854727072,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4663,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1909312626,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1234215762,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1460615987,
+      "attributes": {
+        "content": "Creación de un Ingreso Mínimo Garantizado de $ 350 mil mensuales, para todos los trabajadores con jornada completa que complementan el salario de los trabajadores a jornada completa, cuando sea inferior a los $ 350 mil.  Este beneficio se aplicará en forma proporcional a los menores de 18 y mayores de 65 años.",
+        "number": "46",
+        "title": "Ingreso mínimo garantizado",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -2105977457,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1865974419,
+      "attributes": {
+        "name": "Suma",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1890429041,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 5
+      }
+    },
+    {
+      "type": "bill",
+      "id": -379938795,
+      "attributes": {
+        "name": "13041-13",
+        "title": "Crea un subsidio para alcanzar un ingreso mínimo garantizado",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13041-13",
+        "chekIsEmpty": "13041-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -2105977457,
+              "type": "priority"
+            },
+            {
+              "id": 1865974419,
+              "type": "priority"
+            },
+            {
+              "id": -1890429041,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 4950,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1460615987,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -379938795,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 1011919348,
+      "attributes": {
+        "content": "El proyecto también agrega un punto de cotización adicional, de cargo del empleador, el que será destinado a financiar Seguros Sociales, como el seguro para adultos mayores no valentes y otros Seguros Sociales.",
+        "number": "47",
+        "title": "Reforma previsional con un punto adicional en las cotizaciones de cargo del empleador, destinado a financiar seguros sociales  (pasando de propuesta original de 4% a 6%)",
+        "ja-why": "El proyecto de ley asociado se encuentra en segundo trámite constitucional"
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1713132770,
+      "attributes": {
+        "name": "Simple",
+        "count": 6
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1190596638,
+      "attributes": {
+        "name": "Suma",
+        "count": 17
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1854727072,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 3
+      }
+    },
+    {
+      "type": "bill",
+      "id": -1234215762,
+      "attributes": {
+        "name": "12212-13",
+        "title": "Mejora pensiones del sistema de pensiones solidarias y del sistema de pensiones de capitalización individual, crea nuevos beneficios de pensión para la clase media y las mujeres, crea un subsidio y seguro de dependencia, e introduce modificaciones en los cuerpos legales que indica",
+        "url": "https://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12212-13",
+        "chekIsEmpty": "12212-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1713132770,
+              "type": "priority"
+            },
+            {
+              "id": -1190596638,
+              "type": "priority"
+            },
+            {
+              "id": 1854727072,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 8361,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 1011919348,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -1234215762,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 563222709,
+      "attributes": {
+        "content": "En el caso de nuevos pensionados, se entregará una pensión final garantizada, para evitar que las pensiones totales percibidas caigan en el tiempo. ",
+        "number": "48",
+        "title": "Pensión final garantizada para nuevos pensionados",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1486969660,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 673323784,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": 676249658,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 2
+      }
+    },
+    {
+      "type": "bill",
+      "id": 884823898,
+      "attributes": {
+        "name": "13091-13",
+        "title": "Mejora y establece nuevos beneficios en el sistema de pensiones solidarias",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13091-13",
+        "chekIsEmpty": "13091-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -1486969660,
+              "type": "priority"
+            },
+            {
+              "id": 673323784,
+              "type": "priority"
+            },
+            {
+              "id": 676249658,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 9361,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 563222709,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 884823898,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "promise",
+      "id": 114526070,
+      "attributes": {
+        "content": "Vamos a anunciar prontamente una Agenda que incluye una modernización profunda de la Dirección del Trabajo, que va a incorporar tecnología digital para facilitar la relación entre los trabajadores, los empleadores y la Dirección del Trabajo, y que va a promover la mediación voluntaria entre trabajadores y empleadores por parte de la Dirección del Trabajo, para facilitar los acuerdos y encontrar las soluciones.",
+        "number": "49",
+        "title": "Modernización de la Dirección del Trabajo\n",
+        "ja-why": "\nEste proyecto se cumple con dos proyectos de ley, uno en primer trámite (boletín 12827-13) y el otro en segundo (boletín 12826-13)."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": 991578242,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 852545683,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -428151145,
+      "attributes": {
+        "name": "Suma",
+        "count": 7
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1551446517,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 637473348,
+      "attributes": {
+        "name": "12827-13",
+        "title": "Modernización de la Dirección del Trabajo",
+        "url": "https://www.senado.cl/appsenado/templates/tramitacion/index.php?",
+        "chekIsEmpty": "12827-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -535070749,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 852545683,
+              "type": "priority"
+            },
+            {
+              "id": -428151145,
+              "type": "priority"
+            },
+            {
+              "id": -1551446517,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 1166,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 114526070,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 637473348,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": 991578242,
+      "attributes": {
+        "name": "Trabajo y Previsión Social"
+      }
+    },
+    {
+      "type": "priority",
+      "id": 596477240,
+      "attributes": {
+        "name": "Simple",
+        "count": 5
+      }
+    },
+    {
+      "type": "priority",
+      "id": 934709372,
+      "attributes": {
+        "name": "Suma",
+        "count": 4
+      }
+    },
+    {
+      "type": "priority",
+      "id": 2070453062,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 0
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1820820645,
+      "attributes": {
+        "name": "12826-13",
+        "title": "Adecua el Código del Trabajo en materia de documentos electrónicos laborales",
+        "url": " \thttp://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=12826-13",
+        "chekIsEmpty": "12826-13"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1980702071,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 596477240,
+              "type": "priority"
+            },
+            {
+              "id": 934709372,
+              "type": "priority"
+            },
+            {
+              "id": 2070453062,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 3407,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": 114526070,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1820820645,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1148121259,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1166865396,
+      "attributes": {
+        "content": "Vamos a suspender el alza de los pasajes del Metro, lo que requerirá la aprobación de una ley que debe ser muy urgente, hasta que logremos un acuerdo que nos permita proteger mejor a nuestros compatriotas frente a alzas bruscas e inesperadas en el precio del dólar o del petróleo, como han ocurrido en los últimos meses y que son la causa del aumento en las tarifas.",
+        "number": "50",
+        "title": "Suspensión de alza de tarifa de Metro",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1148121259,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": -285513374,
+      "attributes": {
+        "name": "Simple",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -1832685786,
+      "attributes": {
+        "name": "Suma",
+        "count": 0
+      }
+    },
+    {
+      "type": "priority",
+      "id": -996978980,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": -687141930,
+      "attributes": {
+        "name": "13010-05",
+        "title": "Faculta al Presidente de la República para dejar sin efecto o limitar un alza de tarifas en el transporte público de pasajeros, en las condiciones que indica",
+        "url": "http://www.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=13010-05",
+        "chekIsEmpty": "13010-05"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": -285513374,
+              "type": "priority"
+            },
+            {
+              "id": -1832685786,
+              "type": "priority"
+            },
+            {
+              "id": -996978980,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 7158,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1166865396,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": -687141930,
+            "type": "bill"
+          }
+        }
+      }
+    },
+    {
+      "type": "area",
+      "id": -1148121259,
+      "attributes": {
+        "name": "Transporte y Telecomunicaciones"
+      }
+    },
+    {
+      "type": "promise",
+      "id": -1615562035,
+      "attributes": {
+        "content": "Alfredo Moreno, anunció una serie de medidas para los usuarios de las autopistas urbanas de la capital tras una reunión con el movimiento No+TAG (...) Además, se refirió a las multas por circular sin tener el TAG habilitado, lo cual actualmente es sancionado con una UTM por cada comuna en la que se circula (...) indicó que en el Senado se encuentra un proyecto de ley -el cual apoyarán- con el que esperan lograr “una multa por día”. Moreno también mencionó que para quienes mantienen ese tipo de deudas “enviaremos un proyecto de ley o vamos a complementar el que ya está de manera tal de que las personas cancelando el 20% de lo que hoy adeudan por estas multas (…) y en la medida que se pague ese 20%, quede condonado la diferencia”.",
+        "number": "51",
+        "title": "Condonación de deudas por circular sin TAG habilitado",
+        "ja-why": "El proyecto de ley asociado se encuentra publicado y es Ley de la República."
+      },
+      "relationships": {
+        "study": {
+          "data": {
+            "id": "2120432313",
+            "type": "study"
+          }
+        },
+        "area": {
+          "data": {
+            "id": -1148121259,
+            "type": "area"
+          }
+        }
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1731862692,
+      "attributes": {
+        "name": "Simple",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": 1449856744,
+      "attributes": {
+        "name": "Suma",
+        "count": 1
+      }
+    },
+    {
+      "type": "priority",
+      "id": -823969702,
+      "attributes": {
+        "name": "Inmediata",
+        "count": 1
+      }
+    },
+    {
+      "type": "bill",
+      "id": 1978341900,
+      "attributes": {
+        "name": "12942-15",
+        "title": "Modifica la ley N°18.290, de Tránsito, para delimitar la infracción que consiste en circular un vehículo sin dispositivo electrónico de pago de peajes o tarifas",
+        "url": "https://www.camara.cl/pley/pley_detalle.aspx?prmID=13487&prmBOLETIN=12942-15",
+        "chekIsEmpty": "12942-15"
+      },
+      "relationships": {
+        "phase": {
+          "data": {
+            "id": -1142968964,
+            "type": "phase"
+          }
+        },
+        "priorities": {
+          "data": [
+            {
+              "id": 1731862692,
+              "type": "priority"
+            },
+            {
+              "id": 1449856744,
+              "type": "priority"
+            },
+            {
+              "id": -823969702,
+              "type": "priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "justification",
+      "id": 814,
+      "attributes": {},
+      "relationships": {
+        "promise": {
+          "data": {
+            "id": -1615562035,
+            "type": "promise"
+          }
+        },
+        "bill": {
+          "data": {
+            "id": 1978341900,
+            "type": "bill"
+          }
+        }
+      }
+    }
+  ]
+}
