@@ -355,7 +355,7 @@ section{
  }
 
 .panel-compare-body{
-  border: 1px solid #2323;
+  border: 1px solid #E0E0E0;
   margin-bottom: -15px;
   padding-bottom: 10px;
 }
@@ -432,7 +432,6 @@ section{
   font-size: 1.2rem;
   position: relative;
   top: 3px;
-  margin-right: 9px;
 }
 
 .promise-result {
@@ -608,6 +607,17 @@ a.btn-jumbo:focus{
     border: 2px solid #465056 !important;
     color: #fff !important;
   }
+  .btn-danger:active{
+    background-color: #465056 !important;
+    border: 2px solid #465056 !important;
+    color: #fff !important;
+  }
+
+.btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger{
+  background-color: #465056 !important;
+  border: 2px solid #465056 !important;
+  color: #fff !important;
+}
 
 .btn-warning{
   background-color: transparent;
@@ -636,16 +646,16 @@ a.btn-jumbo:focus{
   font-size: 1.2rem;
   margin-right: 9px;
 }
-  .btn-success:hover{
-    background-color: transparent;
-    border: 2px solid #6200EA !important;
-    color: #6200EA;
-   }
-  .btn-success:focus{
-    background-color: transparent;
-    border: 2px solid #6200EA !important;
-    color: #6200EA;
-   }
+.btn-success:hover{
+  background-color: transparent;
+  border: 2px solid #6200EA !important;
+  color: #6200EA;
+ }
+.btn-success:focus{
+  background-color: transparent;
+  border: 2px solid #6200EA !important;
+  color: #6200EA;
+ }
 
 
 .btn-success-inverse{
@@ -691,6 +701,11 @@ a.btn-success-inverse{
     color: white;}
   a:focus.btn-success-inverse{
     color: white;}
+
+
+.btn-lg{
+  padding: 10px 16px !important;
+}
 
 /*MODALS*/
 .modal-content {
