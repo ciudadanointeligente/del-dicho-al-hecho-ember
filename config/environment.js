@@ -42,7 +42,7 @@ var governments =[
     "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
     "fixed_result": 33,
     "visible": true,
-		"in_landing": true,
+		"in_landing_2": true,
   }, {
     "type": "MovimientoSocial",
     "color": "#F1ACFD",
@@ -54,7 +54,7 @@ var governments =[
     "description": "Revisa cuánto cumplió el gobierno de los anuncios legislativos realizados a raíz de las movilizaciones sociales.",
     "fixed_result": 64,
     "visible": false,
-		"in_landing_2": true,
+		"in_landing": true,
   },
 	]},{
 	"name": "Michelle Bachelet II",
