@@ -27,55 +27,55 @@
 </section>
 
 {{#if study_0}}
-  <section id="resume">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <h2 class="text-center">{{study_0.title}}</h2>
-        <p class="home text-center">{{study_0.description}}</p>
-      </div>
-    </div>
-    <div class="row">
-      {{#each-in study_0.promisesGroupedByArea as |area_id a|}}
-      <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
-        <h3 class="text-center">{{a.area.name}}</h3>
-        <div class="chart-resume text-center">
-          <img src="{{ area-image a.area.name }}" class="img-chart">
-          {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_0 'front') options=study_0.doughnutOpt height=150}}
-        </div>
-        <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
-        <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
-        <a href="{{url-for "study" study_0.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
-      </div>
-      {{/each-in}}
-    </div>
-  </div>
-  </section>
-{{/if}}
-
-{{#if study_1}}
   <section id="movement">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <h2 class="text-center">{{study_1.title}}</h2>
-        <p class="home text-center">{{study_1.description}}</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+          <h2 class="text-center">{{study_0.title}}</h2>
+          <p class="home text-center">{{study_0.description}}</p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      {{#each-in study_1.promisesGroupedByArea as |area_id a|}}
+      <div class="row">
+        {{#each-in study_0.promisesGroupedByArea as |area_id a|}}
         <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
           <h3 class="text-center">{{a.area.name}}</h3>
           <div class="chart-resume text-center">
             <img src="{{ area-image a.area.name }}" class="img-chart">
-            {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_1 'front') options=study_1.doughnutOpt height=150}}
+            {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_0 'front') options=study_0.doughnutOpt height=150}}
           </div>
           <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
           <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
-          <a href="{{url-for "study" study_1.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+          <a href="{{url-for "study" study_0.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
         </div>
-      {{/each-in}}
+        {{/each-in}}
+      </div>
     </div>
-  </div>
+  </section>
+{{/if}}
+
+{{#if study_1}}
+  <section id="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+          <h2 class="text-center">{{study_1.title}}</h2>
+          <p class="home text-center">{{study_1.description}}</p>
+        </div>
+      </div>
+      <div class="row">
+        {{#each-in study_1.promisesGroupedByArea as |area_id a|}}
+          <div class="cumplimientos cumplimientos-resumen col-sm-4 col-md-4">
+            <h3 class="text-center">{{a.area.name}}</h3>
+            <div class="chart-resume text-center">
+              <img src="{{ area-image a.area.name }}" class="img-chart">
+              {{ember-chart type='doughnut' data=(chartPerAreaAndStudy a.area study_1 'front') options=study_1.doughnutOpt height=150}}
+            </div>
+            <div class="text-center promise-result home">{{a.summary.fullfilment}}%</div>
+            <p class="text-center home font-mono" style="margin-bottom:5px;">de avance</p>
+            <a href="{{url-for "study" study_1.slug}}" class="btn btn-info btn-sm btn-block">Ver Más</a>
+          </div>
+        {{/each-in}}
+      </div>
+    </div>
   </section>
 {{/if}}
