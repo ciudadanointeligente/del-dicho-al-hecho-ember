@@ -579,6 +579,14 @@ section{
   background-color: #FFF;
   border: 2px solid #FFF;
 }
+.btn-jumbo:active{
+  background-color: #FFF;
+  border: 2px solid #FFF;
+}
+.btn-jumbo:active, .btn-jumbo.active, .open > .dropdown-toggle.btn-jumbo{
+  background-color: #FFF;
+  border: 2px solid #FFF;
+}
 a.btn-jumbo{
   color: #FFF;
   -webkit-transition: background-color .3s ease-in;
@@ -636,6 +644,17 @@ a.btn-jumbo:focus{
     border: 2px solid #6200EA !important;
     color: #fff !important;
   }
+  .btn-warning:active{
+    background-color: #6200EA;
+    border: 2px solid #6200EA !important;
+    color: #fff !important;
+  }
+  .btn-warning:active, .btn-warning.active, .open > .dropdown-toggle.btn-warning{
+    background-color: #6200EA !important;
+    border: 2px solid #6200EA !important;
+    color: #fff !important;
+  }
+
 .btn-success{
   background-color: #6200EA;
   border: 2px solid #6200EA !important;
@@ -656,6 +675,16 @@ a.btn-jumbo:focus{
   border: 2px solid #6200EA !important;
   color: #6200EA;
  }
+ .btn-success:active{
+   background-color: transparent;
+   border: 2px solid #6200EA !important;
+   color: #6200EA;
+  }
+  .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success{
+    background-color: #6200EA !important;
+    border: 2px solid #6200EA !important;
+    color: #fff !important;
+  }
 
 
 .btn-success-inverse{
@@ -675,6 +704,16 @@ a.btn-jumbo:focus{
     color: #fff !important;
     border: 2px solid #6200EA !important;
    }
+   .btn-success-inverse:active{
+     background-color: #6200EA;
+     color: #fff !important;
+     border: 2px solid #6200EA !important;
+    }
+    .btn-success-inverse:active, .btn-success-inverse.active, .open > .dropdown-toggle.btn-success-inverse{
+      background-color: #6200EA;
+      color: #fff !important;
+      border: 2px solid #6200EA !important;
+    }
 
 .btn{
   margin: auto;
