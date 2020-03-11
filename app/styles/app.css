@@ -216,31 +216,37 @@ section{
 #hero-methodology{
   background: url('../img/hero-methodology.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #hero-about{
   background: url('../img/hero-about.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #hero-studies{
   background: url('../img/hero-studies.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #hero-whole{
   background: url('../img/hero-whole.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #hero-comparisson{
   background: url('../img/hero-comparisson.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #hero-movement{
   background: url('../img/hero-movement.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 #movement{
@@ -259,12 +265,13 @@ section{
 }
 
 #hero-home{
-  background: url('../img/hero-home.png');
+  background: url('../img/hero-home.jpg');
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
   padding: 80px;
   margin-bottom: 50px;
+  background-size: cover;
 }
 
 #hero-home h1{

@@ -1,6 +1,8 @@
 <div id={{heroByStudyType study}} class="hero">
-  <div class="row">
-    <h1 class="text-center page">Estudios</h1>
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center page">Estudios</h1>
+    </div>
   </div>
 </div>
 
@@ -114,7 +116,7 @@
                   <h5>{{p.title}}</h5>
                   <p>{{p.content}}</p><br>
                   {{#if p.bills.length}}
-                    <p style="float: left;" class="uppercase-font" style="margin-right: 9px;"><span>Proyectos asociados </span></p>
+                    <p style="float: left;" class="uppercase-font" style="margin-right: 9px;float:left;"><span>Proyectos asociados </span></p>
                     {{#each p.bills as |b|}}
                     <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal-proyecto-{{a.id}}-{{b.id}}">Proyecto {{b.name}}</button>
                     <!-- modal project -->
