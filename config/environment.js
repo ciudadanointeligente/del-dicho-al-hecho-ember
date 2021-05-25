@@ -69,7 +69,7 @@ var governments =[
 		"title": "Los anuncios del Gobierno durante las movilizaciones sociales",
     "description": "Revisa cuánto cumplió el gobierno de los anuncios legislativos realizados a raíz de las movilizaciones sociales.",
     "fixed_result": 64,
-    "visible": false,
+    "visible": true,
 		"in_landing_2": false,
   },
 	]},{
