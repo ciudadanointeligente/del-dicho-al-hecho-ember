@@ -68,5 +68,5 @@ Y estamos
 
 ## Para el desarrollo local se recomienda
 
-* Instalar un manejador de versiones de node, algo como nvm. Con nvm use stable corre prefecto
+* Instalar un manejador de versiones de node, algo como nvm. Con nvm use stable corre perfecto
 * Es importante para hacer pruebas y levantar el local recordar que se debe estar en la rama master, volver siempre a esta luego de hacer deploy a gh-pages
