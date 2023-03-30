@@ -49,7 +49,7 @@ y luego debemos hacer algo así como esto:
 
 ```git push origin gh-pages```
 
-Y tamos
+Y estamos
 
 ## Further Reading / Useful Links
 
@@ -65,3 +65,8 @@ Y tamos
 * En el archivo environment.js agregar otro *government*
 * Para agregar un nuevo estudio, debe incluirse en el atributo *studies*
 * El estudio que se quiera destacar en el home debe tener el atributo `in_landing: true`
+
+## Para el desarrollo local se recomienda
+
+* Instalar un manejador de versiones de node, algo como nvm. Con nvm use stable corre prefecto
+* Es importante para hacer pruebas y levantar el local recordar que se debe estar en la rama master, volver siempre a esta luego de hacer deploy a gh-pages
