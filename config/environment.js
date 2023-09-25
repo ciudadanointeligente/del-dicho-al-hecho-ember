@@ -1,5 +1,26 @@
 var governments =[
-		 {
+  {
+    "name": "Gabriel Boric I",
+    "years": {'start': 2022, 'end': 2026},
+    "color1": "#A973F4",
+    "color2": "#C099F7",
+    "color3": "#D7BFF9",
+    "color4": "#F0E6FD",
+    "studies": [{
+      "type": "Programa",
+      "img": "/img/bashelet-en-el-barquito.svg",
+      "color": "#A973F4",
+      "year": 2022,
+      "version": "Programa de Gobierno",
+      "name": "Gabriel Boric: Programa de Gobierno 2022",
+      "filename": "Boric-2022-2026_Programa-2022.csv",
+      "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
+      "title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",
+      "fixed_result": 10,
+      "visible": true,
+    }]
+  },
+  {
 			 "name": "Sebastián Piñera II",
 			 "years": {'start': 2018, 'end': 2022},
 			 "color1": "#73F1FF",
