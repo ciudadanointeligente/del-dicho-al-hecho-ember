@@ -268,7 +268,7 @@ section{
   background: url('../img/hero-about.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 700px;
   padding: 80px;
   margin-bottom: 50px;
   background-size: cover;
