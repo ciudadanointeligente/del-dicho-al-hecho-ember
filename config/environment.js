@@ -18,6 +18,7 @@ var governments =[
       "title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",
       "fixed_result": 17,
       "visible": true,
+      "in_landing": true,
     }]
   },
   {
@@ -52,7 +53,6 @@ var governments =[
  "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
  "fixed_result": 42,
  "visible": true,
- "in_landing": true,
 },
 {
 "type": "Programa",
