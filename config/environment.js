@@ -16,7 +16,7 @@ var governments =[
       "filename": "Boric-2022-2026_Programa-2022.csv",
       "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
       "title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",
-      "fixed_result": 17,
+      "fixed_result": 18,
       "visible": true,
       "in_landing": true,
     }]
