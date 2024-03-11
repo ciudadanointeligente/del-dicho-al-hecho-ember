@@ -65,6 +65,7 @@ Y estamos
 * En el archivo environment.js agregar otro *government*
 * Para agregar un nuevo estudio, debe incluirse en el atributo *studies*
 * El estudio que se quiera destacar en el home debe tener el atributo `in_landing: true`
+* Es necesario fijarse muy bien en los acentos de la columna `nombre_avance` del archivo CSV que se sube para que cargue y sume las etapas correctamente
 
 ## Para el desarrollo local se recomienda
 

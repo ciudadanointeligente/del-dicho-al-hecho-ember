@@ -10,6 +10,20 @@ var governments =[
       "type": "Programa",
       "img": "/img/bashelet-en-el-barquito.svg",
       "color": "#A973F4",
+      "year": 2023,
+      "version": "Programa de Gobierno",
+      "name": "Gabriel Boric: Programa de Gobierno 2023",
+      "filename": "Boric-2022-2026_Programa-2023.csv",
+      "description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",
+      "title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",
+      "fixed_result": 31,
+      "visible": true,
+      "in_landing": true,
+    },
+    {
+      "type": "Programa",
+      "img": "/img/bashelet-en-el-barquito.svg",
+      "color": "#A973F4",
       "year": 2022,
       "version": "Programa de Gobierno",
       "name": "Gabriel Boric: Programa de Gobierno 2022",
@@ -18,8 +32,9 @@ var governments =[
       "title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",
       "fixed_result": 18,
       "visible": true,
-      "in_landing": true,
-    }]
+      "in_landing": false,
+    }
+  ]
   },
   {
 			 "name": "Sebastián Piñera II",
