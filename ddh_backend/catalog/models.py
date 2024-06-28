@@ -1,4 +1,7 @@
 from django.db import models
+from django.http import HttpResponse
+import json
+import re
 
 class Government(models.Model):
     name = models.CharField(max_length=255)
@@ -60,6 +63,21 @@ class Phase(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def saveBulk(request):
+        response = 'Success' 
+        validKeys = {
+            "name": str,
+            "fullfilment": int
+        }
+        updatedText = re.sub(r"^\s+", "", request.POST['jsonData'], flags=re.MULTILINE)
+        phaseList = json.loads(updatedText)
+
+        for phaseItem in phaseList:
+            for key in validKeys.keys():
+                if not phaseItem.get(key) or not type(phaseItem.get(key)) == validKeys.get(key):
+                    response = 'failed'
+        return HttpResponse(response);
     
 class Bill(models.Model):
     name = models.CharField(max_length=255)
