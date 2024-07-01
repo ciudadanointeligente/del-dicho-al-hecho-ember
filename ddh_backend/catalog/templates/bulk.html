@@ -10,24 +10,32 @@
 
 {% block coltype %}colM{% endblock %}
 
-{% if not is_popup %}
 {% block breadcrumbs %}
 <div class="breadcrumbs">
 <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
 &rsaquo; <a href="/bulk">Bulk Data</a>
 </div>
 {% endblock %}
-{% endif %}
 
 {% block content %}<div id="content-main">
     <form method="post" id="bulk_form" action="/phase_bulk/" novalidate>
         {% csrf_token %}{% block form_top %}{% endblock %}
+        {% if error %}
+            <p class="errornote">
+                {{ error }}
+            </p>
+        {% endif %}
+        {% if response %}
+            <ul class="messagelist">
+            <li class="success">{{response}}</li>
+          </ul>
+        {% endif %}
     <div>
         <label>Type:</label>
         <select name="select" id="bulkType">
-            <option value="csv" selected>CSV files</option>
+            <option value="csv">CSV files</option>
             <option value="government">Government and Studies</option>
-            <option value="phase">Phase</option>
+            <option value="phase" selected>Phase</option>
         </select>
     </div>
     <div style="padding-top: 10px;" id="csvContainer">
@@ -55,63 +63,67 @@
     <input type="submit" value="{% translate 'Save' %}" class="default" name="_save">
     </form></div>
     <script>
-        document.getElementById('jsonContainer').style.display = 'none';
-        document.getElementById('sampleJson').style.display = 'none';
-        document.getElementById('csvContainer').style.display = 'block';
-        document.getElementById('bulkType').addEventListener('change', function() {
-          const selectedOption = this.value;
-      
-          if (selectedOption === 'csv') {
-            document.getElementById('jsonContainer').style.display = 'none';
-            document.getElementById('csvContainer').style.display = 'block';
-          } else {
-            document.getElementById('jsonContainer').style.display = 'flex';
-            document.getElementById('sampleJson').style.display = 'block';
-            let jsonExample = '';
-            if (selectedOption === 'phase') {
-                jsonExample = '[ </br>\
+        document.getElementById('jsonContainer').style.display = 'flex';
+        document.getElementById('sampleJson').style.display = 'block';
+        document.getElementById('csvContainer').style.display = 'none';
+        handleForm()
+        document.getElementById('bulkType').addEventListener('change', handleForm);
+
+        function handleForm() {
+            let value = document.getElementById('bulkType').value
+            const selectedOption = value;
+            if (selectedOption === 'csv') {
+                document.getElementById('jsonContainer').style.display = 'none';
+                document.getElementById('csvContainer').style.display = 'block';
+                document.getElementById('sampleJson').style.display = 'none';
+            } else {
+                document.getElementById('jsonContainer').style.display = 'flex';
+                document.getElementById('sampleJson').style.display = 'block';
+                let jsonExample = '';
+                if (selectedOption === 'phase') {
+                    jsonExample = '[ </br>\
+                        &emsp;{</br>\
+                        &emsp;&emsp;"name": "Primer Tramite",</br>\
+                        &emsp;&emsp;"fullfilment": 40,</br>\
+                        &emsp;}, {</br>\
+                        &emsp;&emsp;"name": "Segundo Tramite",</br>\
+                        &emsp;&emsp;"fullfilment": 70,</br>\
+                        &emsp;}</br>\
+                        &emsp;...</br>\
+                    ]'
+                } else if (selectedOption === 'government') {
+                    jsonExample = '[</br>\
                     &emsp;{</br>\
-                    &emsp;&emsp;"name": "Primer Tramite",</br>\
-                    &emsp;&emsp;"fullfilment": 40,</br>\
-                    &emsp;}, {</br>\
-                    &emsp;&emsp;"name": "Segundo Tramite",</br>\
-                    &emsp;&emsp;"fullfilment": 70,</br>\
+                        &emsp;&emsp;"name": "Gabriel Boric I",</br>\
+                        &emsp;&emsp;"years": {"start": 2022, "end": 2026},</br>\
+                        &emsp;&emsp;"color1": "#A973F4",</br>\
+                        &emsp;&emsp;"color2": "#C099F7",</br>\
+                        &emsp;&emsp;"color3": "#D7BFF9",</br>\
+                        &emsp;&emsp;"color4": "#F0E6FD",</br>\
+                        &emsp;&emsp;"studies":[ </br>\
+                            &emsp;&emsp;&emsp;{</br>\
+                                &emsp;&emsp;&emsp;&emsp;"type": "Programa",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"img": "/img/bashelet-en-el-barquito.svg",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"color": "#A973F4",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"year": 2023,</br>\
+                                &emsp;&emsp;&emsp;&emsp;"version": "Programa de Gobierno",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"name": "Gabriel Boric: Programa de Gobierno 2023",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"filename": "Boric-2022-2026_Programa-2023.csv",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",</br>\
+                                &emsp;&emsp;&emsp;&emsp;"fixed_result": 31,</br>\
+                                &emsp;&emsp;&emsp;&emsp;"visible": true,</br>\
+                                &emsp;&emsp;&emsp;&emsp;"in_landing": true,</br>\
+                                &emsp;&emsp;&emsp;}</br>\
+                                &emsp;&emsp;&emsp;...</br>\
+                            &emsp;&emsp;]</br>\
                     &emsp;}</br>\
                     &emsp;...</br>\
-                ]'
-            } else if (selectedOption === 'government') {
-                jsonExample = '[</br>\
-                &emsp;{</br>\
-                    &emsp;&emsp;"name": "Gabriel Boric I",</br>\
-                    &emsp;&emsp;"years": {"start": 2022, "end": 2026},</br>\
-                    &emsp;&emsp;"color1": "#A973F4",</br>\
-                    &emsp;&emsp;"color2": "#C099F7",</br>\
-                    &emsp;&emsp;"color3": "#D7BFF9",</br>\
-                    &emsp;&emsp;"color4": "#F0E6FD",</br>\
-                    &emsp;&emsp;"studies":[ </br>\
-                        &emsp;&emsp;&emsp;{</br>\
-                            &emsp;&emsp;&emsp;&emsp;"type": "Programa",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"img": "/img/bashelet-en-el-barquito.svg",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"color": "#A973F4",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"year": 2023,</br>\
-                            &emsp;&emsp;&emsp;&emsp;"version": "Programa de Gobierno",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"name": "Gabriel Boric: Programa de Gobierno 2023",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"filename": "Boric-2022-2026_Programa-2023.csv",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",</br>\
-                            &emsp;&emsp;&emsp;&emsp;"fixed_result": 31,</br>\
-                            &emsp;&emsp;&emsp;&emsp;"visible": true,</br>\
-                            &emsp;&emsp;&emsp;&emsp;"in_landing": true,</br>\
-                            &emsp;&emsp;&emsp;}</br>\
-                            &emsp;&emsp;&emsp;...</br>\
-                        &emsp;&emsp;]</br>\
-                &emsp;}</br>\
-                &emsp;...</br>\
-                ]'
+                    ]'
+                }
+                document.getElementById('sampleJson').innerHTML = jsonExample;
+                document.getElementById('csvContainer').style.display = 'none';
             }
-            document.getElementById('sampleJson').innerHTML = jsonExample;
-            document.getElementById('csvContainer').style.display = 'none';
-          }
-        });
+        }
     </script>
 {% endblock %}

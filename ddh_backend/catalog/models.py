@@ -1,5 +1,6 @@
 from django.db import models
 from django.http import HttpResponse
+from django.shortcuts import render
 import json
 import re
 
@@ -65,19 +66,34 @@ class Phase(models.Model):
         return self.name
     
     def saveBulk(request):
-        response = 'Success' 
-        validKeys = {
-            "name": str,
-            "fullfilment": int
-        }
-        updatedText = re.sub(r"^\s+", "", request.POST['jsonData'], flags=re.MULTILINE)
-        phaseList = json.loads(updatedText)
-
-        for phaseItem in phaseList:
-            for key in validKeys.keys():
-                if not phaseItem.get(key) or not type(phaseItem.get(key)) == validKeys.get(key):
-                    response = 'failed'
-        return HttpResponse(response);
+        if request.method =='POST':
+            response = 'Success'
+            validKeys = {
+                "name": str,
+                "fullfilment": int
+            }
+            phaseList = []
+            try:
+                updatedText = re.sub(r"^\s+", "", request.POST['jsonData'], flags=re.MULTILINE)
+                phaseList = json.loads(updatedText)
+            except:
+                error = 'Error parsing JSON'
+                response = None
+                context = {'response': response, 'selected': 'phase', 'error': error}
+                return render(request, "bulk.html", context)
+            if type(phaseList) == list:
+                for phaseItem in phaseList:
+                    for key in validKeys.keys():
+                        if not phaseItem.get(key) or not type(phaseItem.get(key)) == validKeys.get(key):
+                            error = 'Invalid phase JSON'
+                            response = None
+            else:
+                error = 'Invalid phase JSON'
+                response = None
+        else:
+            response = None
+        context = {'response': response, 'selected': 'phase', 'error': None}
+        return render(request, "bulk.html", context)
     
 class Bill(models.Model):
     name = models.CharField(max_length=255)
