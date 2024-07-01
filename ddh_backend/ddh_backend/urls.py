@@ -25,5 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('bulk/', views.bulk),
     path('graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    path('government_bulk/', models.Government.saveBulk),
+    path('study_bulk/', models.Study.saveBulk),
     path('phase_bulk/', models.Phase.saveBulk),
 ]

@@ -1,8 +1,6 @@
 from django.db import models
-from django.http import HttpResponse
-from django.shortcuts import render
-import json
-import re
+from django.shortcuts import render, redirect
+from .utils import createRecords
 
 class Government(models.Model):
     name = models.CharField(max_length=255)
@@ -15,6 +13,9 @@ class Government(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def saveBulk(request):
+        return createRecords(request, Government, 'government')
 
 class Study(models.Model):
     type = models.CharField(max_length=255)
@@ -33,6 +34,9 @@ class Study(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def saveBulk(request):
+        return createRecords(request, Study, 'study')
     
 class Area(models.Model):
     name = models.CharField(max_length=255)
@@ -66,34 +70,7 @@ class Phase(models.Model):
         return self.name
     
     def saveBulk(request):
-        if request.method =='POST':
-            response = 'Success'
-            validKeys = {
-                "name": str,
-                "fullfilment": int
-            }
-            phaseList = []
-            try:
-                updatedText = re.sub(r"^\s+", "", request.POST['jsonData'], flags=re.MULTILINE)
-                phaseList = json.loads(updatedText)
-            except:
-                error = 'Error parsing JSON'
-                response = None
-                context = {'response': response, 'selected': 'phase', 'error': error}
-                return render(request, "bulk.html", context)
-            if type(phaseList) == list:
-                for phaseItem in phaseList:
-                    for key in validKeys.keys():
-                        if not phaseItem.get(key) or not type(phaseItem.get(key)) == validKeys.get(key):
-                            error = 'Invalid phase JSON'
-                            response = None
-            else:
-                error = 'Invalid phase JSON'
-                response = None
-        else:
-            response = None
-        context = {'response': response, 'selected': 'phase', 'error': None}
-        return render(request, "bulk.html", context)
+        return createRecords(request, Phase, 'phase')
     
 class Bill(models.Model):
     name = models.CharField(max_length=255)
