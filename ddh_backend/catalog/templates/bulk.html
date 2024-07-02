@@ -18,41 +18,42 @@
 {% endblock %}
 
 {% block content %}<div id="content-main">
-    <form method="post" id="bulk_form" action="/" novalidate>
-        {% csrf_token %}{% block form_top %}{% endblock %}
-    <div>
-        <label>Type:</label>
-        <select name="select" id="bulkType">
-            <option value="csv" selected>CSV files</option>
-            <option value="government">Government</option>
-            <option value="study">Study</option>
-            <option value="phase">Phase</option>
-        </select>
-    </div>
-    <div style="padding-top: 10px;" id="csvContainer">
-        <label for="myfile">Select a csv file:</label>
-        <input type="file" id="fileChoserCsv" name="csvFile" accept=".csv">
-    </div>
-    <div id="jsonContainer">
+        <form method="post" id="bulk_form" action="/bulk/" novalidate>
+            {% csrf_token %}{% block form_top %}{% endblock %}
         <div>
-            <div style="padding-top: 10px;">
-                <label>Json data</label>
-            </div>
+            <label>Type:</label>
+            <select name="select" id="bulkType">
+                <option value="csv" selected>CSV files</option>
+                <option value="government">Government</option>
+                <option value="study">Study</option>
+                <option value="phase">Phase</option>
+            </select>
+        </div>
+        <div style="padding-top: 10px;" id="csvContainer">
+            <label for="myfile">Select a csv file:</label>
+            <input type="file" id="fileChoserCsv" name="csvFile" accept=".csv">
+        </div>
+        <div id="jsonContainer">
             <div>
-                <textarea style="min-width: 40vw; min-height: 60vh;" name="jsonData"></textarea>
+                <div style="padding-top: 10px;">
+                    <label>Json data</label>
+                </div>
+                <div>
+                    <textarea style="min-width: 40vw; min-height: 60vh;" name="jsonData"></textarea>
+                </div>
+            </div>
+            <div style="padding-left: 10px;">
+                <div style="padding-top: 10px;">
+                    <label>Sample</label>
+                </div>
+                <div style="border: 1px solid; border-color: #353535; border-radius: 4px; min-height: 60vh;">
+                    <p id="sampleJson" style="padding: 10px;"></p>
+                </div>
             </div>
         </div>
-        <div style="padding-left: 10px;">
-            <div style="padding-top: 10px;">
-                <label>Sample</label>
-            </div>
-            <div style="border: 1px solid; border-color: #353535; border-radius: 4px; min-height: 60vh;">
-                <p id="sampleJson" style="padding: 10px;"></p>
-            </div>
-        </div>
+        <input type="submit" value="{% translate 'Save' %}" class="default" name="_save">
+        </form>
     </div>
-    <input type="submit" value="{% translate 'Save' %}" class="default" name="_save">
-    </form></div>
     <script>
         document.getElementById('jsonContainer').style.display = 'none';
         document.getElementById('sampleJson').style.display = 'none';
@@ -62,7 +63,6 @@
 
         function handleForm(e) {
             let value = document.getElementById('bulkType').value
-            document.getElementById('bulk_form').action = value + '_bulk'
             var selectedOption = value;
             var selected = '{{ selected }}';
             if (selected && !e) {
@@ -94,6 +94,7 @@
                         &emsp;&emsp;"name": "Gabriel Boric I",</br>\
                         &emsp;&emsp;"start_year": 2022,</br>\
                         &emsp;&emsp;"end_year": 2026,</br>\
+                        &emsp;&emsp;"extra_info": "Info",</br>\
                         &emsp;&emsp;"color1": "#A973F4",</br>\
                         &emsp;&emsp;"color2": "#C099F7",</br>\
                         &emsp;&emsp;"color3": "#D7BFF9",</br>\
@@ -117,6 +118,7 @@
                                 &emsp;&emsp;"fixed_result": 31,</br>\
                                 &emsp;&emsp;"visible": true,</br>\
                                 &emsp;&emsp;"in_landing": true</br>\
+                                &emsp;&emsp;"in_landing_2": false</br>\
                                 &emsp;}</br>\
                                 &emsp;...</br>\
                     ]'

@@ -1,11 +1,11 @@
 from django.db import models
 from django.shortcuts import render, redirect
-from .utils import createRecords
 
 class Government(models.Model):
     name = models.CharField(max_length=255)
     start_year = models.IntegerField()
     end_year = models.IntegerField()
+    extra_info = models.TextField(null=True)
     color1 = models.CharField(max_length=7)
     color2 = models.CharField(max_length=7)
     color3 = models.CharField(max_length=7)
@@ -13,9 +13,6 @@ class Government(models.Model):
 
     def __str__(self):
         return self.name
-    
-    def saveBulk(request):
-        return createRecords(request, Government, 'government')
 
 class Study(models.Model):
     type = models.CharField(max_length=255)
@@ -29,14 +26,12 @@ class Study(models.Model):
     title = models.CharField(max_length=255)
     fixed_result = models.IntegerField()
     visible = models.BooleanField()
-    in_landing = models.BooleanField()
+    in_landing = models.BooleanField(default=False)
+    in_landing_2 = models.BooleanField(default=False)
     government = models.ForeignKey(Government, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
-    
-    def saveBulk(request):
-        return createRecords(request, Study, 'study')
     
 class Area(models.Model):
     name = models.CharField(max_length=255)
@@ -68,9 +63,6 @@ class Phase(models.Model):
 
     def __str__(self):
         return self.name
-    
-    def saveBulk(request):
-        return createRecords(request, Phase, 'phase')
     
 class Bill(models.Model):
     name = models.CharField(max_length=255)

@@ -2,7 +2,10 @@ from django.contrib import admin
 
 from .models import *
 
-admin.site.register(Government)
+class GovernmentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name')
+
+admin.site.register(Government, GovernmentAdmin)
 admin.site.register(Study)
 admin.site.register(Area)
 admin.site.register(Promise)

@@ -1,45 +1,57 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.db.models import Count
-from models import Government
+from .models import Government, Study, Phase
 import json
 import re
 
 mapKeys = {
-    'phase': {
-        "name": str,
-        "fullfilment": int
-    },
     'government': {
-        "name": str,
-        "start_year": int,
-        "end_year": int,
-        "color1": str,
-        "color2": str,
-        "color3": str,
-        "color4": str
+        'keys': {
+            "name": str,
+            "start_year": int,
+            "end_year": int,
+            "extra_info": str,
+            "color1": str,
+            "color2": str,
+            "color3": str,
+            "color4": str
+        },
+        'model': Government
     },
     'study': {
-        "type": str,
-        "img": str,
-        "color": str,
-        "year" : int,
-        "version": str,
-        "name": str,
-        "filename": str,
-        "description": str,
-        "title": str,
-        "fixed_result": int,
-        "visible": bool,
-        "in_landing": bool,
-        "government": int
+        'keys': {
+            "type": str,
+            "img": str,
+            "color": str,
+            "year" : int,
+            "version": str,
+            "name": str,
+            "filename": str,
+            "description": str,
+            "title": str,
+            "fixed_result": int,
+            "visible": bool,
+            "in_landing": bool,
+            "in_landing_2": bool,
+            "government": int
+        },
+        'model': Study
+    },
+    'phase': {
+        'keys': {
+            "name": str,
+            "fullfilment": int
+        },
+        'model': Phase
     }
 }
 
-def createRecords(request, model, typeCatalog):
-    response = 'Success'
+def createRecords(request):
+    typeCatalog = request.POST['select']
     error = None
-    validKeys = mapKeys.get(typeCatalog)
+    response = 'Success'
+    validKeys = mapKeys.get(typeCatalog).get('keys')
     elementList = []
     try:
         updatedText = re.sub(r"^\s+", "", request.POST['jsonData'], flags=re.MULTILINE)
@@ -47,41 +59,40 @@ def createRecords(request, model, typeCatalog):
     except:
         error = 'Error parsing JSON'
         response = None
-        context = {'selected': typeCatalog}
-        messages.error(request, error)
-        return render(request, "bulk.html", context)
+        return {'typeCatalog': typeCatalog, 'response': response, 'error': error}
     if type(elementList) == list:
-        if findDuplicate(model, elementList):
-            error = 'Duplicated name in'
+        if findDuplicate(mapKeys.get(typeCatalog).get('model'), elementList):
+            error = 'Duplicated name in JSON'
             response = None
         else:
             for elementItem in elementList:
                 for key in validKeys.keys():
-                    if not elementItem.get(key) or not type(elementItem.get(key)) == validKeys.get(key):
-                        error = 'Invalid phase JSON'
+                    if elementItem.get(key) == None or not type(elementItem.get(key)) == validKeys.get(key):
+                        error = 'Invalid JSON'
                         response = None
     else:
-        error = 'Invalid phase JSON'
+        error = 'Invalid JSON'
         response = None
     if not error:
         for elementItem in elementList:
             if typeCatalog == 'phase':
-                newRecord = model(
+                newRecord = mapKeys.get(typeCatalog).get('model')(
                     name=elementItem.get('name'), 
                     fullfilment=elementItem.get('fullfilment')
                 )
             elif typeCatalog == 'government':
-                newRecord = model(
-                    name=elementItem.get('name')
+                newRecord = mapKeys.get(typeCatalog).get('model')(
+                    name=elementItem.get('name'),
                     start_year=elementItem.get('start_year'),
                     end_year=elementItem.get('end_year'),
+                    extra_info=elementItem.get('extra_info'),
                     color1=elementItem.get('color1'),
                     color2=elementItem.get('color2'),
                     color3=elementItem.get('color3'),
                     color4=elementItem.get('color4')
                 )
             elif typeCatalog == 'study':
-                newRecord = model(
+                newRecord = mapKeys.get(typeCatalog).get('model')(
                     type=elementItem.get('type'),
                     img=elementItem.get('img'),
                     color=elementItem.get('color'),
@@ -94,16 +105,11 @@ def createRecords(request, model, typeCatalog):
                     fixed_result=elementItem.get('fixed_result'),
                     visible=elementItem.get('visible'),
                     in_landing=elementItem.get('in_landing'),
+                    in_landing_2=elementItem.get('in_landing_2'),
                     government=getGovernment(elementItem.get('government'))
                 )
             newRecord.save()   
-    if error:
-        context = {'selected': typeCatalog}
-        messages.error(request, error)
-        return render(request, "bulk.html", context)
-    else:
-        messages.success(request, response)
-        return redirect('/admin/catalog/' + typeCatalog + '/')
+    return {'typeCatalog': typeCatalog, 'response': response, 'error': error}
     
 def findDuplicate(model, elementList):
     isDuplicated = model.objects.filter(name__in=[element['name'] for element in elementList]).values('name').annotate(count=Count('name')).filter(count__gt=0).exists()
