@@ -18,7 +18,7 @@
 {% endblock %}
 
 {% block content %}<div id="content-main">
-        <form method="post" id="bulk_form" action="/bulk/" novalidate>
+        <form enctype="multipart/form-data" method="post" id="bulk_form" action="/bulk/" novalidate>
             {% csrf_token %}{% block form_top %}{% endblock %}
         <div>
             <label>Type:</label>

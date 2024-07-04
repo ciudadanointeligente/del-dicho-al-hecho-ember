@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.db.models import Count
-from .models import Government, Study, Phase
+from .models import Government, Study, Phase, Priority
 import json
 import re
+from .matcher import getMatcher
+import random
+import string
 
 mapKeys = {
     'government': {
@@ -117,3 +120,80 @@ def findDuplicate(model, elementList):
 
 def getGovernment(id):
     return Government.objects.get(pk=id)
+
+def parseAttributes(data_csv, study):
+    config = getMatcher()
+    keys_that_can_be_empty = ['justification']
+    columnName = 'nombre_avance'
+    data = []
+    keys = config.keys()
+    for key in keys:
+        if config[key].get('chekIsEmpty'):
+            if not data_csv.get(config[key].get('chekIsEmpty')):
+                continue
+
+        obj = {
+            'type': key,
+            'id': None,
+            'attributes': {}
+        };
+        for subKey in config.get(key).keys():
+            value = config.get(key).get(subKey)
+            if subKey not in ("id", "relationships"):
+                obj['attributes'][subKey] = data_csv.get(value)
+            elif subKey == 'id':
+                id_from_csv = data_csv[value.get('fieldToGetIdFrom')];
+                if id_from_csv == None or key in keys_that_can_be_empty:
+                    id_from_csv = "".join(random.choices(string.digits, k=5))
+                if key in ("promise", "bill") and study is not None:
+                    if not len(data_csv.get(value.get('fieldToGetIdFrom').strip())):
+                        continue
+                    id = hash(f"{id_from_csv}{study.get('government').get('name')}{study.get('version')}{study.get('year')}")
+                    obj["id"] = id;
+                else:
+                    if isinstance(id_from_csv, str):
+                        id_from_csv = id_from_csv.strip().lower().replace("-", "")
+                    try:
+                        obj["id"] = int(id_from_csv)
+                    except ValueError:
+                        if key in keys_that_can_be_empty:
+                            obj["id"] = "".join(random.choices(string.digits, k=5))
+                        else:
+                            obj["id"] = hash(id_from_csv)
+            elif subKey == "relationships":
+                if "relationships" not in obj.keys():
+                    obj.setdefault("relationships", {})
+                if study is not None and key == "promise":
+                    obj["relationships"]["study"] = {"data": {"id": study.get("id"), "type": "study"}}
+                for relationship_model in value:
+                    if relationship_model == "phase":
+                        if data_csv.get(columnName):
+                            obj["relationships"]["phase"] = {"data": {"id": hash(data_csv.get(columnName)), "type": relationship_model}}
+                    elif relationship_model == "priority":
+                        priorities = []
+                        PriorityData = Priority.objects.all()
+                        for priority_config in PriorityData:
+                            if obj.get("id"):
+                                priority_id = hash(f"{obj['id']}{priority_config['name']}")
+                                count = int(data_csv.get(priority_config["countColumnName"], 0))
+                                priority = {
+                                    "type": "priority",
+                                    "id": priority_id,
+                                    "attributes": {"name": priority_config["name"], "count": count},
+                                }
+                                data.append(priority)
+                                priorities.append({"id": priority_id, "type": "priority"})
+                        obj["relationships"]["priorities"] = {"data": priorities}
+                    else:
+                        existing_object = next(
+                            (o for o in data if o["type"] == relationship_model), None
+                        )
+                        if existing_object:
+                            obj["relationships"][relationship_model] = {
+                                "data": {"id": existing_object["id"], "type": relationship_model}
+                            }
+                        else:
+                            obj["id"] = None
+        if obj.get("id"):
+            data.add(obj);
+    return data
