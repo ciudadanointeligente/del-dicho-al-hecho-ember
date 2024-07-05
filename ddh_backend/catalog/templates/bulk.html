@@ -27,6 +27,7 @@
                 <option value="government">Government</option>
                 <option value="study">Study</option>
                 <option value="phase">Phase</option>
+                <option value="priority">Priority</option>
             </select>
         </div>
         <div style="padding-top: 10px;" id="csvContainer">
@@ -119,8 +120,16 @@
                                 &emsp;&emsp;"visible": true,</br>\
                                 &emsp;&emsp;"in_landing": true</br>\
                                 &emsp;&emsp;"in_landing_2": false</br>\
-                                &emsp;}</br>\
-                                &emsp;...</br>\
+                            &emsp;}</br>\
+                            &emsp;...</br>\
+                    ]'
+                }  else if (selectedOption === 'priority') {
+                    jsonExample = '[ </br>\
+                            &emsp;{</br>\
+                                &emsp;&emsp;"countColumnName": "simple",</br>\
+                                &emsp;&emsp;"name": "Simple"</br>\
+                            &emsp;}</br>\
+                            &emsp;...</br>\
                     ]'
                 }
                 document.getElementById('sampleJson').innerHTML = jsonExample;

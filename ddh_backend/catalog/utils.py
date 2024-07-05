@@ -47,6 +47,13 @@ mapKeys = {
             "fullfilment": int
         },
         'model': Phase
+    },
+    'priority': {
+        'keys': {
+            "countColumnName": str,
+            "name": str
+        },
+        'model': Priority
     }
 }
 
@@ -110,6 +117,11 @@ def createRecords(request):
                     in_landing=elementItem.get('in_landing'),
                     in_landing_2=elementItem.get('in_landing_2'),
                     government=getGovernment(elementItem.get('government'))
+                )
+            elif typeCatalog == 'priority':
+                newRecord = mapKeys.get(typeCatalog).get('model')(
+                    countColumnName=elementItem.get('countColumnName'),
+                    name=elementItem.get('name'),
                 )
             newRecord.save()   
     return {'typeCatalog': typeCatalog, 'response': response, 'error': error}

@@ -52,7 +52,7 @@ class Promise(models.Model):
     
 class Priority(models.Model):
     name = models.CharField(max_length=255)
-    count = models.IntegerField()
+    countColumnName = models.CharField(max_length=255, null=True)
 
     def __str__(self):
         return self.name
