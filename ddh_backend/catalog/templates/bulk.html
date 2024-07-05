@@ -30,6 +30,16 @@
                 <option value="priority">Priority</option>
             </select>
         </div>
+        <br>
+        <div>
+            <label>Study:</label>
+            <select name="selectedStudy" id="studies">
+                <option value="" selected>Select a study</option>
+                {% for study in studies %}
+                    <option value="{{ study.id }}">{{ study.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
         <div style="padding-top: 10px;" id="csvContainer">
             <label for="myfile">Select a csv file:</label>
             <input type="file" id="fileChoserCsv" name="csvFile" accept=".csv">

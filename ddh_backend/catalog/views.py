@@ -1,22 +1,27 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .utils import createRecords
+from .utils import createRecords, saveCSV, getStudies, getStudyById
 from django.contrib import messages
 import csv
+import json
 import pandas as pd
 from django.core.files.base import ContentFile
 
 @login_required
 def bulk(request):
+    studies = getStudies()
     if request.method == 'POST':
         if request.POST['select'] == 'csv':
-            context = {'selected': 'csv'}
+            selectedStudy = getStudyById(request.POST['selectedStudy'])
+            context = {'selected': 'csv', 'studies': studies}
             try:
                 csvfile = request.FILES['csvFile']
                 csv_string = csvfile.read().decode('utf-8')
                 csvfile_obj = ContentFile(csv_string)
                 df = pd.read_csv(csvfile_obj)
                 json_string = df.to_json(orient='records')
+                jsonData = json.loads(json_string)
+                dataParsed = saveCSV(jsonData, selectedStudy)
 
                 messages.success(request, 'Data uploaded successfully!')
                 return render(request, "bulk.html", context)
@@ -27,7 +32,7 @@ def bulk(request):
         else:
             result = createRecords(request)
             if result.get('error'):
-                context = {'selected': result.get('typeCatalog')}
+                context = {'selected': result.get('typeCatalog'), 'studies': studies}
                 messages.error(request, result.get('error'))
                 return render(request, "bulk.html", context)
             else:
@@ -35,4 +40,5 @@ def bulk(request):
                 return redirect('/admin/catalog/' + result.get('typeCatalog') + '/')
         
     else:
-        return render(request, "bulk.html")
+        context = {'studies': studies}
+        return render(request, "bulk.html", context)

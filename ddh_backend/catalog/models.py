@@ -2,30 +2,30 @@ from django.db import models
 from django.shortcuts import render, redirect
 
 class Government(models.Model):
-    name = models.CharField(max_length=255)
-    start_year = models.IntegerField()
-    end_year = models.IntegerField()
+    name = models.CharField(max_length=255, null=False)
+    start_year = models.IntegerField(null=True)
+    end_year = models.IntegerField(null=True)
     extra_info = models.TextField(null=True)
-    color1 = models.CharField(max_length=7)
-    color2 = models.CharField(max_length=7)
-    color3 = models.CharField(max_length=7)
-    color4 = models.CharField(max_length=7)
+    color1 = models.CharField(max_length=7, null=True)
+    color2 = models.CharField(max_length=7, null=True)
+    color3 = models.CharField(max_length=7, null=True)
+    color4 = models.CharField(max_length=7, null=True)
 
     def __str__(self):
         return self.name
 
 class Study(models.Model):
-    type = models.CharField(max_length=255)
-    img = models.CharField(max_length=255)
-    color = models.CharField(max_length=7)
-    year = models.IntegerField()
-    version = models.CharField(max_length=255)
-    name = models.CharField(max_length=255)
-    filename = models.CharField(max_length=255)
-    description = models.TextField(null=False)
-    title = models.CharField(max_length=255)
-    fixed_result = models.IntegerField()
-    visible = models.BooleanField()
+    type = models.CharField(max_length=255, null=True)
+    img = models.CharField(max_length=255, null=True)
+    color = models.CharField(max_length=7, null=True)
+    year = models.IntegerField(null=True)
+    version = models.CharField(max_length=255, null=True)
+    name = models.CharField(max_length=255, null=False)
+    filename = models.CharField(max_length=255, null=True)
+    description = models.TextField(null=True)
+    title = models.CharField(max_length=255, null=True)
+    fixed_result = models.IntegerField(null=True)
+    visible = models.BooleanField(null=True)
     in_landing = models.BooleanField(default=False)
     in_landing_2 = models.BooleanField(default=False)
     government = models.ForeignKey(Government, on_delete=models.CASCADE)
@@ -34,47 +34,45 @@ class Study(models.Model):
         return self.name
     
 class Area(models.Model):
-    name = models.CharField(max_length=255)
-
-    def __str__(self):
-        return self.name
+    name = models.CharField(max_length=255, null=False)
 
 class Promise(models.Model):
-    content = models.CharField(max_length=255)
-    number = models.IntegerField()
-    title = models.CharField(max_length=255)
-    ja_why = models.CharField(max_length=255)
+    content = models.CharField(max_length=255, null=True)
+    number = models.IntegerField(null=True)
+    title = models.CharField(max_length=255, null=False)
+    ja_why = models.CharField(max_length=255, null=True)
     study = models.ForeignKey(Study, on_delete=models.CASCADE)
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
     
 class Priority(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, null=False)
     countColumnName = models.CharField(max_length=255, null=True)
 
     def __str__(self):
         return self.name
     
 class Phase(models.Model):
-    name = models.CharField(max_length=255)
-    fullfilment = models.IntegerField()
+    name = models.CharField(max_length=255, null=False)
+    fullfilment = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name
     
 class Bill(models.Model):
-    name = models.CharField(max_length=255)
-    title = models.CharField(max_length=255)
-    url = models.CharField(max_length=255)
-    chekIsEmpty = models.CharField(max_length=255)
-    phase = models.ForeignKey(Phase, on_delete=models.CASCADE)
-    priority = models.ForeignKey(Priority, on_delete=models.CASCADE)
+    name = models.CharField(max_length=255, null=False)
+    title = models.CharField(max_length=255, null=True)
+    url = models.CharField(max_length=255, null=True)
+    chekIsEmpty = models.CharField(max_length=255, null=True)
+    phase = models.ForeignKey(Phase, on_delete=models.CASCADE, null=True)
+    priority = models.JSONField(null=True)
 
     def __str__(self):
         return self.name
     
 class Justification(models.Model):
+    justification = models.CharField(max_length=255, null=True)
     promise = models.ForeignKey(Promise, on_delete=models.CASCADE)
     bill = models.ForeignKey(Bill, on_delete=models.CASCADE)

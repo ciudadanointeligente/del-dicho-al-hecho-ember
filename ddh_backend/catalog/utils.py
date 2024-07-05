@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.db.models import Count
-from .models import Government, Study, Phase, Priority
+from .models import *
 import json
 import re
 from .matcher import getMatcher
@@ -133,6 +133,118 @@ def findDuplicate(model, elementList):
 def getGovernment(id):
     return Government.objects.get(pk=id)
 
+def getStudies():
+    return Study.objects.all()
+
+def getStudyById(studyId):
+    return Study.objects.get(pk=studyId)
+
+def saveArea(data):
+    print('saveArea->')
+    AreaName = name=data.get('attributes').get('name')
+    try:
+        newArea = Area.objects.get(name=data.get('attributes').get('name'))
+        print('Area exists->')
+    except Area.DoesNotExist:
+        try:
+            newArea = Area(name=AreaName)
+        except Exception as e:
+            print('Error:', e)
+            return e
+        newArea.save()
+    print('Success->')
+    return newArea
+
+def savePhase(phaseName):
+    print('savePhase')
+    try:
+        newPhase = Phase.objects.get(name=phaseName)
+        print('Phase exists->')
+    except Area.DoesNotExist:
+        try:
+            newPhase = Phase(name=newPhase)
+        except Exception as e:
+            print('Error:', e)
+            return e
+        newPhase.save()
+    print('Success->')
+    return newPhase
+
+def savePromise(data, areaInstance):
+    print('savePromise->')
+    try:
+        newPromise = Promise(
+            content = data.get('attributes').get('content'),
+            number = data.get('attributes').get('number'),
+            title = data.get('attributes').get('title'),
+            ja_why = data.get('attributes').get('ja_why'),
+            study = Study.objects.get(pk=data.get('relationships').get('study').get('data').get('id')),
+            area = areaInstance
+        )
+        newPromise.save()
+        print('Success->')
+        return newPromise
+    except Exception as e:
+        print('Error:', e)
+        return e
+
+def saveBill(data):
+    print('saveBill->')
+    if data.get('relationships').get('phase'):
+        phaseInstance = savePhase(data.get('relationships').get('phase').get('data').get('name'))
+    else:
+        phaseInstance = None
+    try:
+        newBill = Bill(
+            name = data.get('attributes').get('name'),
+            title = data.get('attributes').get('title'),
+            url = data.get('attributes').get('url'),
+            chekIsEmpty = data.get('attributes').get('chekIsEmpty'),
+            phase = phaseInstance,
+            priority = data.get('relationships').get('priorities').get('data')
+        )
+        newBill.save()
+        print('Success->')
+        return newBill
+    except Exception as e:
+        print('Error:', e)
+        return e
+
+def saveJustification(data, promiseInstance, billInstance):
+    print('saveJustification->')
+    try:
+        newJustification = Justification(
+            justification = data.get('attributes').get('justification'),
+            promise = promiseInstance,
+            bill = billInstance
+        )
+        print('Success->')
+        newJustification.save()
+        return
+    except Exception as e:
+        print('Error:', e)
+        return e
+
+def saveCSV(data_csv, study):
+    for record in data_csv:
+        parsedRecord = parseAttributes(record, study)
+        areaInstance = None
+        promiseInstance = None
+        billIInstance = None
+        for element in parsedRecord:
+            print('element->', element.get('type'))
+            if element.get('type') == 'area':
+                areaInstance = saveArea(element)
+            elif element.get('type') == 'promise':
+                promiseInstance = savePromise(element, areaInstance)
+            elif element.get('type') == 'bill':
+                billIInstance = saveBill(element)
+            elif element.get('type') == 'justification':
+                saveJustification(element, promiseInstance, billIInstance)
+            else:
+                print('Invalid Type')
+    return ""
+
 def parseAttributes(data_csv, study):
     config = getMatcher()
     keys_that_can_be_empty = ['justification']
@@ -140,8 +252,8 @@ def parseAttributes(data_csv, study):
     data = []
     keys = config.keys()
     for key in keys:
-        if config[key].get('chekIsEmpty'):
-            if not data_csv.get(config[key].get('chekIsEmpty')):
+        if config.get(key).get('chekIsEmpty'):
+            if not data_csv.get(config.get(key).get('chekIsEmpty')):
                 continue
 
         obj = {
@@ -154,13 +266,14 @@ def parseAttributes(data_csv, study):
             if subKey not in ("id", "relationships"):
                 obj['attributes'][subKey] = data_csv.get(value)
             elif subKey == 'id':
-                id_from_csv = data_csv[value.get('fieldToGetIdFrom')];
+                id_from_csv = data_csv.get(value.get('fieldToGetIdFrom'));
                 if id_from_csv == None or key in keys_that_can_be_empty:
                     id_from_csv = "".join(random.choices(string.digits, k=5))
                 if key in ("promise", "bill") and study is not None:
-                    if not len(data_csv.get(value.get('fieldToGetIdFrom').strip())):
+                    fieldToGetValue = data_csv.get(value.get('fieldToGetIdFrom'))
+                    if fieldToGetValue is None or not len(str(fieldToGetValue).strip()):
                         continue
-                    id = hash(f"{id_from_csv}{study.get('government').get('name')}{study.get('version')}{study.get('year')}")
+                    id = hash(f"{id_from_csv}{study.government.name}{study.version}{study.year}")
                     obj["id"] = id;
                 else:
                     if isinstance(id_from_csv, str):
@@ -176,22 +289,24 @@ def parseAttributes(data_csv, study):
                 if "relationships" not in obj.keys():
                     obj.setdefault("relationships", {})
                 if study is not None and key == "promise":
-                    obj["relationships"]["study"] = {"data": {"id": study.get("id"), "type": "study"}}
+                    obj["relationships"]["study"] = {"data": {"id": study.id, "type": "study"}}
                 for relationship_model in value:
                     if relationship_model == "phase":
                         if data_csv.get(columnName):
-                            obj["relationships"]["phase"] = {"data": {"id": hash(data_csv.get(columnName)), "type": relationship_model}}
+                            print('Phase->', data_csv.get(columnName))
+                            obj["relationships"]["phase"] = {"data": {"name": data_csv.get(columnName), "type": relationship_model}}
                     elif relationship_model == "priority":
-                        priorities = []
                         PriorityData = Priority.objects.all()
+                        priorities = []
                         for priority_config in PriorityData:
                             if obj.get("id"):
-                                priority_id = hash(f"{obj['id']}{priority_config['name']}")
-                                count = int(data_csv.get(priority_config["countColumnName"], 0))
+                                priority_id = priority_config.id
+                                priorityValue = data_csv.get(priority_config.countColumnName)
+                                count = 0 if priorityValue is None else int(priorityValue)
                                 priority = {
                                     "type": "priority",
                                     "id": priority_id,
-                                    "attributes": {"name": priority_config["name"], "count": count},
+                                    "attributes": {"name": priority_config.name, "count": count},
                                 }
                                 data.append(priority)
                                 priorities.append({"id": priority_id, "type": "priority"})
@@ -207,5 +322,5 @@ def parseAttributes(data_csv, study):
                         else:
                             obj["id"] = None
         if obj.get("id"):
-            data.add(obj);
+            data.append(obj);
     return data
