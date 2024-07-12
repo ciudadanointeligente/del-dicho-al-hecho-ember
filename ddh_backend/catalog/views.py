@@ -6,6 +6,9 @@ import csv
 import json
 import pandas as pd
 from django.core.files.base import ContentFile
+from django.http import HttpResponse
+from graphql import parse
+from ddh_backend.schema import schema
 
 @login_required
 def bulk(request):
@@ -42,3 +45,8 @@ def bulk(request):
     else:
         context = {'studies': studies}
         return render(request, "bulk.html", context)
+
+def getGovernments(request):
+    query_str = 'query { governments { id, name, startYear, endYear, color1, color2, color3, color4, extraInfo, studySet { id, name } } }'
+    result = schema.execute(query_str)
+    return HttpResponse(result)

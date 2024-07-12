@@ -4,8 +4,13 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
+  ajax: Ember.inject.service(),
   model() {
-    return this._parseStudiesGovernment(this.store);
+    try {
+      return this.get('ajax').request('http://127.0.0.1:8000/get_governments/');
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
   },
   setupController: function(controller, model) {
     controller.set('model', model);

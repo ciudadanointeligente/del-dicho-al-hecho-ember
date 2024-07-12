@@ -12,12 +12,12 @@ class StudyType(DjangoObjectType):
 
 class Query(graphene.ObjectType):
     governments = graphene.List(GovernmentType)
-    Studies = graphene.List(StudyType)
+    studies = graphene.List(StudyType)
 
     def resolve_governments(root, info):
         return Government.objects.all()
 
-    def resolve_Studies(root, info):
+    def resolve_studies(root, info):
         return Study.objects.all()
 
 schema = graphene.Schema(query=Query)

@@ -37,7 +37,7 @@ mapKeys = {
             "visible": bool,
             "in_landing": bool,
             "in_landing_2": bool,
-            "government": int
+            "government": str
         },
         'model': Study
     },
@@ -130,8 +130,8 @@ def findDuplicate(model, elementList):
     isDuplicated = model.objects.filter(name__in=[element['name'] for element in elementList]).values('name').annotate(count=Count('name')).filter(count__gt=0).exists()
     return isDuplicated
 
-def getGovernment(id):
-    return Government.objects.get(pk=id)
+def getGovernment(gName):
+    return Government.objects.get(name=gName)
 
 def getStudies():
     return Study.objects.all()
