@@ -13,14 +13,14 @@ export default Ember.Mixin.create(CsvMixin, {
   },
 
 
-  _uploadPhases(store){
+  _uploadPhases(store, phases){
     let _hashCode = this._hashCode;
     Ember.run.begin();
-    _.forEach(config.phases.phases , function(key){
+    _.forEach(phases , function(key){
       store.createRecord('phase', {
         name: key.name,
         fullfilment: parseInt(key.fullfilment),
-        id: _hashCode(key.name),
+        id: key.id,
       });
     });
     Ember.run.end();
@@ -79,25 +79,25 @@ export default Ember.Mixin.create(CsvMixin, {
     return _all;
   },
 
-  _parseStudiesGovernment(store, config_governments){
+  _parseStudiesGovernment(store, config_governments, phases){
     if(_.isUndefined(config_governments)){
       config_governments = config.governments;
     }
     let govs = [];
-    this._uploadPhases(store);
+    this._uploadPhases(store, phases);
 
     let _hashCode = this._hashCode;
     _.forEach(config_governments, function(government){
-      let name = government.name;
+      let id = government.id;
 
-      let gov = store.peekRecord('government', _hashCode(name));
+      let gov = store.peekRecord('government', id);
       //
       if (!gov) {
         let start;
         let end;
-        if(!_.isUndefined(government.years) && !_.isUndefined(government.years.start) && !_.isUndefined(government.years.start)){
-          start = government.years.start;
-          end = government.years.end;
+        if(!_.isUndefined(government.startYear) && !_.isUndefined(government.endYear)){
+          start = government.startYear;
+          end = government.endYear;
 
         }
         let extra_info = "";
@@ -105,7 +105,7 @@ export default Ember.Mixin.create(CsvMixin, {
           extra_info = government.extra_info;
         }
         gov = store.createRecord('government', {
-          name: name,
+          name: government.name,
           start_year: start,
           end_year: end,
           color1: government.color1,
@@ -113,12 +113,12 @@ export default Ember.Mixin.create(CsvMixin, {
           color3: government.color3,
           color4: government.color4,
           extra_info: extra_info,
-          id: _hashCode(name),
+          id: id,
         });
       }
 
 
-      _.forEach(government.studies, function(study_obj){
+      _.forEach(government['studySet'], function(study_obj){
           let in_land = false;
           if(!_.isUndefined(study_obj.in_landing) && study_obj.in_landing){
             in_land = true;
@@ -137,7 +137,6 @@ export default Ember.Mixin.create(CsvMixin, {
           if(!_.isUndefined(study_obj.fixed_result)){
             fixed_result = study_obj.fixed_result;
           }
-
           let study = store.createRecord('study', {
             version: study_obj.version,
             year: study_obj.year,
@@ -152,14 +151,12 @@ export default Ember.Mixin.create(CsvMixin, {
             name: study_obj.name,
             description: study_obj.description,
             title: study_obj.title,
-            id: _hashCode(study_obj.version + study_obj.year),
+            id: study_obj.id,
           });
-
           gov.get('studies').pushObject(study);
       });
       govs.push(gov);
     });
-
     return govs;
   }
 });

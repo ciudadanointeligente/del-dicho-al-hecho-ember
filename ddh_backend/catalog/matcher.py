@@ -10,9 +10,9 @@ def getMatcher():
       'content': 'promesa',
       'number': 'uid',
       'title': 'titulo',
-      'ja-why': 'ja_porque',
-      'jc-why': 'jn_porque',
-      'coherence-level': 'escala_de_coherencia',
+      'ja_why': 'ja_porque',
+      'jc_why': 'jn_porque',
+      'coherence_level': 'escala_de_coherencia',
       'id': {
         'fieldToGetIdFrom': 'uid'
       },

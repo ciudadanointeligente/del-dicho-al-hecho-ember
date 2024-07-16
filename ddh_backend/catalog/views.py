@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .utils import createRecords, saveCSV, getStudies, getStudyById
+from .utils import createRecords, saveCSV, getStudies, getStudyById, getPriorityById
 from django.contrib import messages
 import csv
 import json
@@ -50,8 +50,9 @@ def getGovernments(request):
     query_str = """
         query 
             { governments { id, name, startYear, endYear, color1, color2, color3, color4, extraInfo, 
-                studySet { id, name, version, type, year } 
-            } 
+                studySet { id, name, version, type, year, img, color, filename, 
+                description, title, fixedResult, visible, inLanding, inLanding2 }
+            }, phases { id, name, fullfilment }
         }
     """
     try:
@@ -61,21 +62,37 @@ def getGovernments(request):
         return JsonResponse({'error': str(e)}, status=500)
     return JsonResponse(data)
 
+def getAttributes(dictionary):
+    excludeKeys = ['id', 'promiseSet', 'justificationSet', 'area', 'bill', 'phase']
+    attributes = {}
+    for k, v in dictionary.items():
+        if not k in excludeKeys:
+            key = k
+            if key == "coherenceLevel":
+                key = "coherence_level"
+            elif key == "jaWhy":
+                key = "ja-why"
+            elif key == "jcWhy":
+                key = "jc-why"
+            elif key == "justificationSummary":
+                key = "justification"
+            attributes[key] = v
+    return attributes
+
 def entityExist(current, id, type):
-    for entity in current:
-        if 'id' in entity and current['id'] == id and 'type' in entity and current['type'] == type :
+    for entity in current['data']:
+        if 'id' in entity and entity['id'] == id and 'type' in entity and entity['type'] == type :
             return True
     return False
 
 def getStudiesById(request, study_id):
-    #studyId = request.GET['study_id']
     query_str = """
         query 
             { studyById(studyId: "%s") { id, name,
-                promiseSet { id,
-                    area { id }
-                    justificationSet { id,
-                        bill {id, priority,
+                promiseSet { id, content, number, title, jaWhy, jcWhy, coherenceLevel,
+                    area { id, name }
+                    justificationSet { id, justification,
+                        bill {id, name, priority, title, url, justificationSummary, chekIsEmpty,
                             phase {
                                 id
                             }
@@ -91,18 +108,110 @@ def getStudiesById(request, study_id):
         responseData = {
             'data': []
         }
-        excludeKeys = ['id', 'promiseSet', 'justificationSet', 'area', 'bill', 'phase']
         if data['studyById'].get('promiseSet'):
+            studyId = data['studyById'].get('id')
             for promise in data['studyById'].get('promiseSet'):
                 if not entityExist(responseData, promise.get('id'), 'promise'):
-                    responseData.append({ 
+                    areaId = None
+                    if promise.get('area') and promise.get('area').get('id'):
+                        areaId = promise.get('area').get('id')
+                        if not entityExist(responseData, areaId, 'area'):
+                            responseData['data'].append({
+                                "type": "area", "id": areaId, 
+                                "attributes": getAttributes(promise.get('area')),
+                            })
+                    responseData['data'].append({ 
                         "type": "promise", "id": promise.get("id"), 
-                        "attributes": {k: v for k, v in promise.items() if not k in excludeKeys},
+                        "attributes": getAttributes(promise),
                         "relationships": {
-                            
+                            "study": {
+                                "data": {
+                                    "id": studyId,
+                                    "type": "study"
+                                }
+                            },
+                            "area": {
+                                "data": {
+                                    "id": areaId,
+                                    "type": "area"
+                                }
+                            }
                         }
                     })
-        print('responseData->', responseData)
+                if promise.get('justificationSet'):
+                    for justification in promise.get('justificationSet'):
+                        if not entityExist(responseData, justification.get('id'), 'justification'):
+                            billId = None
+                            if justification.get('bill') and justification.get('bill').get('id'):
+                                if not entityExist(responseData, justification.get('bill').get('id'), 'bill'):
+                                    phaseId = None
+                                    if justification.get('bill').get('phase') and justification.get('bill').get('phase').get('id'):
+                                        phaseId = justification.get('bill').get('phase').get('id')
+                                        """ if not entityExist(responseData, phaseId, 'phase'):
+                                            responseData['data'].append({
+                                                "type": "phase", "id": phaseId, 
+                                                "attributes": getAttributes(justification.get('bill').get('phase'))
+                                            }) """
+                                    priorityIds = []
+                                    if justification.get('bill').get('priority'):
+                                        jsonPriorities = []
+                                        try:
+                                            jsonPriorities = json.loads(justification.get('bill').get('priority'))
+                                        except Exception as e:
+                                            print('Error: ', e)
+                                        for priority in jsonPriorities:
+                                            if priority.get('id'):
+                                                if not entityExist(responseData, priority.get('id'), 'priority'):
+                                                    responseData['data'].append({
+                                                        "type": "priority", "id": priority.get('id'), 
+                                                        "attributes": getAttributes(priority)
+                                                    })
+                                                    priorityIds.append({"type": "priority", "id": priority.get('id')})
+                                    billId = justification.get('bill').get('id')
+                                    if phaseId:
+                                        responseData['data'].append({
+                                            "type": "bill", "id": billId, 
+                                            "attributes":getAttributes(justification.get('bill')),
+                                            "relationships": {
+                                                "phase": {
+                                                    "data": {
+                                                        "id": phaseId,
+                                                        "type": "phase"
+                                                    }
+                                                },
+                                                "priorities": {
+                                                    "data": priorityIds
+                                                }
+                                            }
+                                        })
+                                    else:
+                                        responseData['data'].append({
+                                            "type": "bill", "id": billId, 
+                                            "attributes":getAttributes(justification.get('bill')),
+                                            "relationships": {
+                                                "priorities": {
+                                                    "data": priorityIds
+                                                }
+                                            }
+                                        })
+                        responseData['data'].append({
+                            "type": "justification", "id": justification.get('id'), 
+                            "attributes": getAttributes(justification),
+                            "relationships": {
+                                "promise": {
+                                    "data": {
+                                        "id": promise.get('id'),
+                                        "type": "promise"
+                                    }
+                                },
+                                "bill": {
+                                    "data": {
+                                        "id": billId,
+                                        "type": "bill"
+                                    }
+                                }
+                            }
+                        })
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
     return JsonResponse(responseData)

@@ -141,19 +141,25 @@ def getStudyById(studyId):
 
 def saveArea(data):
     print('saveArea->')
-    AreaName = name=data.get('attributes').get('name')
-    try:
-        newArea = Area.objects.get(name=data.get('attributes').get('name'))
-        print('Area exists->')
-    except Area.DoesNotExist:
+    AreaName = data.get('attributes').get('name')
+    print('AreaName->', AreaName)
+    if AreaName:
+        print('paso->')
         try:
-            newArea = Area(name=AreaName)
-        except Exception as e:
-            print('Error:', e)
-            return e
-        newArea.save()
-    print('Success->')
-    return newArea
+            newArea = Area.objects.get(name=AreaName)
+            print('Area exists->', newArea)
+        except Area.DoesNotExist:
+            print('DoesNotExist->')
+            try:
+                newArea = Area(name=AreaName)
+            except Exception as e:
+                print('Error:', e)
+                print('data->', data)
+                return e
+            newArea.save()
+            print('Success->')
+        return newArea
+    return None;
 
 def savePhase(phaseName):
     print('savePhase')
@@ -165,6 +171,7 @@ def savePhase(phaseName):
             newPhase = Phase(name=newPhase)
         except Exception as e:
             print('Error:', e)
+            print('phaseName->', phaseName)
             return e
         newPhase.save()
     print('Success->')
@@ -172,21 +179,27 @@ def savePhase(phaseName):
 
 def savePromise(data, areaInstance):
     print('savePromise->')
-    try:
-        newPromise = Promise(
-            content = data.get('attributes').get('content'),
-            number = data.get('attributes').get('number'),
-            title = data.get('attributes').get('title'),
-            ja_why = data.get('attributes').get('ja_why'),
-            study = Study.objects.get(pk=data.get('relationships').get('study').get('data').get('id')),
-            area = areaInstance
-        )
-        newPromise.save()
-        print('Success->')
-        return newPromise
-    except Exception as e:
-        print('Error:', e)
-        return e
+    if areaInstance:
+        try:
+            newPromise = Promise(
+                content = data.get('attributes').get('content'),
+                number = data.get('attributes').get('number'),
+                title = data.get('attributes').get('title'),
+                ja_why = data.get('attributes').get('ja_why'),
+                jc_why = data.get('attributes').get('jc_why'),
+                coherence_level = data.get('attributes').get('coherence_level'),
+                study = Study.objects.get(pk=data.get('relationships').get('study').get('data').get('id')),
+                area = areaInstance
+            )
+            newPromise.save()
+            print('Success->')
+            return newPromise
+        except Exception as e:
+            print('Error:', e)
+            print('data->', data)
+            return e
+    print('Skiped->')
+    return None
 
 def saveBill(data):
     print('saveBill->')
@@ -200,6 +213,7 @@ def saveBill(data):
             title = data.get('attributes').get('title'),
             url = data.get('attributes').get('url'),
             chekIsEmpty = data.get('attributes').get('chekIsEmpty'),
+            justification_summary = data.get('attributes').get('justification'),
             phase = phaseInstance,
             priority = data.get('relationships').get('priorities').get('data')
         )
@@ -208,22 +222,27 @@ def saveBill(data):
         return newBill
     except Exception as e:
         print('Error:', e)
+        print('data->', data)
         return e
 
 def saveJustification(data, promiseInstance, billInstance):
     print('saveJustification->')
-    try:
-        newJustification = Justification(
-            justification = data.get('attributes').get('justification'),
-            promise = promiseInstance,
-            bill = billInstance
-        )
-        print('Success->')
-        newJustification.save()
-        return
-    except Exception as e:
-        print('Error:', e)
-        return e
+    if promiseInstance and billInstance:
+        try:
+            newJustification = Justification(
+                justification = data.get('attributes').get('justification'),
+                promise = promiseInstance,
+                bill = billInstance
+            )
+            print('Success->')
+            newJustification.save()
+            return
+        except Exception as e:
+            print('Error:', e)
+            print('data->', data)
+            return e
+    print('Skiped->')
+    return None
 
 def saveCSV(data_csv, study):
     for record in data_csv:
@@ -266,25 +285,7 @@ def parseAttributes(data_csv, study):
             if subKey not in ("id", "relationships"):
                 obj['attributes'][subKey] = data_csv.get(value)
             elif subKey == 'id':
-                id_from_csv = data_csv.get(value.get('fieldToGetIdFrom'));
-                if id_from_csv == None or key in keys_that_can_be_empty:
-                    id_from_csv = "".join(random.choices(string.digits, k=5))
-                if key in ("promise", "bill") and study is not None:
-                    fieldToGetValue = data_csv.get(value.get('fieldToGetIdFrom'))
-                    if fieldToGetValue is None or not len(str(fieldToGetValue).strip()):
-                        continue
-                    id = hash(f"{id_from_csv}{study.government.name}{study.version}{study.year}")
-                    obj["id"] = id;
-                else:
-                    if isinstance(id_from_csv, str):
-                        id_from_csv = id_from_csv.strip().lower().replace("-", "")
-                    try:
-                        obj["id"] = int(id_from_csv)
-                    except ValueError:
-                        if key in keys_that_can_be_empty:
-                            obj["id"] = "".join(random.choices(string.digits, k=5))
-                        else:
-                            obj["id"] = hash(id_from_csv)
+                obj["id"] = "".join(random.choices(string.digits, k=5))
             elif subKey == "relationships":
                 if "relationships" not in obj.keys():
                     obj.setdefault("relationships", {})
@@ -293,7 +294,6 @@ def parseAttributes(data_csv, study):
                 for relationship_model in value:
                     if relationship_model == "phase":
                         if data_csv.get(columnName):
-                            print('Phase->', data_csv.get(columnName))
                             obj["relationships"]["phase"] = {"data": {"name": data_csv.get(columnName), "type": relationship_model}}
                     elif relationship_model == "priority":
                         PriorityData = Priority.objects.all()
@@ -303,13 +303,7 @@ def parseAttributes(data_csv, study):
                                 priority_id = priority_config.id
                                 priorityValue = data_csv.get(priority_config.countColumnName)
                                 count = 0 if priorityValue is None else int(priorityValue)
-                                priority = {
-                                    "type": "priority",
-                                    "id": priority_id,
-                                    "attributes": {"name": priority_config.name, "count": count},
-                                }
-                                data.append(priority)
-                                priorities.append({"id": priority_id, "type": "priority"})
+                                priorities.append({"id": priority_id, "type": "priority", "name": priority_config.name, "count": count})
                         obj["relationships"]["priorities"] = {"data": priorities}
                     else:
                         existing_object = next(
@@ -324,3 +318,6 @@ def parseAttributes(data_csv, study):
         if obj.get("id"):
             data.append(obj);
     return data
+
+def getPriorityById(priorityId):
+    return Priority.objects.get(pk=priorityId)

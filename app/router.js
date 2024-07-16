@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('study', { path: '/study/:study_name' });
+  this.route('study', { path: '/study/:id' });
   this.route('about');
   this.route('methodology');
   this.route('government');

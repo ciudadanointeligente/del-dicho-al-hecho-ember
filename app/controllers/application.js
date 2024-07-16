@@ -5,6 +5,7 @@ import _ from 'lodash';
 
 export default Ember.Controller.extend(WhatStudiesAreComparableMixin, {
   setCompareUrls: function(governments){
+    let governmentList = governments.governments
     let urls = {};
     let comparableStudies = this.comparableStudies(config.governments);
     _.forEach(comparableStudies, function(comparable_studies){
@@ -17,14 +18,14 @@ export default Ember.Controller.extend(WhatStudiesAreComparableMixin, {
         let study_comparison = {'study1': undefined,
                                 'study2': undefined,
                                 'url': undefined};
-        governments.forEach(function(gov){
-          gov.get('studies').forEach(function(s){
-            if(s1.version === s.get('version') && s1.year === s.get('year')){
-              url1 = s.get('slug');
+        governmentList.forEach(function(gov){
+          gov['studySet'].forEach(function(s){
+            if(s1.version === s['version'] && s1.year === s['year']){
+              url1 = s['slug'];
               study_comparison.study1 = s;
             }
-            if(s2.version === s.get('version') && s2.year === s.get('year')){
-              url2 = s.get('slug');
+            if(s2.version === s['version'] && s2.year === s['year']){
+              url2 = s['slug'];
               study_comparison.study2 = s;
             }
           });

@@ -11,7 +11,7 @@ export default Ember.Mixin.create({
     return study.year - config.government_length;
   },
   comparableStudies: function(govs){
-    govs = _.sortBy(govs, function(g){ return g.years.start; });
+    govs = _.sortBy(govs, function(g){ return g['startYear']; });
     let result = {
       'version': config.comparable_with_other_gov,
       'studies': []
@@ -35,7 +35,7 @@ export default Ember.Mixin.create({
     while(govs.length > 0){
 
       let initial_gov = govs.pop();
-      _.forEach(initial_gov.studies, checkForOtherStudies);
+      _.forEach(initial_gov['studySet'], checkForOtherStudies);
     }
     return [result];
   }
