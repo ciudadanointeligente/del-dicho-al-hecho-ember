@@ -6,7 +6,7 @@ import csv
 import json
 import pandas as pd
 from django.core.files.base import ContentFile
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from graphql import parse
 from ddh_backend.schema import schema
 
@@ -47,6 +47,62 @@ def bulk(request):
         return render(request, "bulk.html", context)
 
 def getGovernments(request):
-    query_str = 'query { governments { id, name, startYear, endYear, color1, color2, color3, color4, extraInfo, studySet { id, name } } }'
-    result = schema.execute(query_str)
-    return HttpResponse(result)
+    query_str = """
+        query 
+            { governments { id, name, startYear, endYear, color1, color2, color3, color4, extraInfo, 
+                studySet { id, name, version, type, year } 
+            } 
+        }
+    """
+    try:
+        result = schema.execute(query_str)
+        data = result.data
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    return JsonResponse(data)
+
+def entityExist(current, id, type):
+    for entity in current:
+        if 'id' in entity and current['id'] == id and 'type' in entity and current['type'] == type :
+            return True
+    return False
+
+def getStudiesById(request, study_id):
+    #studyId = request.GET['study_id']
+    query_str = """
+        query 
+            { studyById(studyId: "%s") { id, name,
+                promiseSet { id,
+                    area { id }
+                    justificationSet { id,
+                        bill {id, priority,
+                            phase {
+                                id
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    """ % (study_id)
+    try:
+        result = schema.execute(query_str)
+        data = result.data
+        responseData = {
+            'data': []
+        }
+        excludeKeys = ['id', 'promiseSet', 'justificationSet', 'area', 'bill', 'phase']
+        if data['studyById'].get('promiseSet'):
+            for promise in data['studyById'].get('promiseSet'):
+                if not entityExist(responseData, promise.get('id'), 'promise'):
+                    responseData.append({ 
+                        "type": "promise", "id": promise.get("id"), 
+                        "attributes": {k: v for k, v in promise.items() if not k in excludeKeys},
+                        "relationships": {
+                            
+                        }
+                    })
+        print('responseData->', responseData)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+    return JsonResponse(responseData)
