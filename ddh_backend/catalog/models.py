@@ -37,6 +37,7 @@ class Area(models.Model):
     name = models.CharField(max_length=255, null=True)
 
 class Promise(models.Model):
+    id = models.CharField(primary_key=True, max_length=255) 
     content = models.TextField(null=True)
     number = models.IntegerField(null=True)
     title = models.CharField(max_length=255, null=True)
@@ -64,6 +65,7 @@ class Phase(models.Model):
         return self.name
     
 class Bill(models.Model):
+    id = models.CharField(primary_key=True, max_length=255) 
     name = models.CharField(max_length=255, null=True)
     title = models.TextField(null=True)
     url = models.CharField(max_length=255, null=True)

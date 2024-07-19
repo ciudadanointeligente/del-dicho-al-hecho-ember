@@ -85,6 +85,20 @@ def entityExist(current, id, type):
             return True
     return False
 
+def findDuplicatedBills(datas):
+    billNames = {}
+    for data in datas:
+        if data['type'] == 'bill':
+            billName = data['attributes']['name']
+            if not billNames.get(billName):
+                billNames[billName] = 1
+            else:
+                billNames[billName] = billNames[billName] + 1
+    for k in billNames.keys():
+        print('k->', billNames[k])
+
+
+
 def getStudiesById(request, study_id):
     query_str = """
         query 
@@ -140,60 +154,57 @@ def getStudiesById(request, study_id):
                     })
                 if promise.get('justificationSet'):
                     for justification in promise.get('justificationSet'):
-                        if not entityExist(responseData, justification.get('id'), 'justification'):
-                            billId = None
-                            if justification.get('bill') and justification.get('bill').get('id'):
-                                if not entityExist(responseData, justification.get('bill').get('id'), 'bill'):
-                                    phaseId = None
-                                    if justification.get('bill').get('phase') and justification.get('bill').get('phase').get('id'):
-                                        phaseId = justification.get('bill').get('phase').get('id')
-                                        """ if not entityExist(responseData, phaseId, 'phase'):
-                                            responseData['data'].append({
-                                                "type": "phase", "id": phaseId, 
-                                                "attributes": getAttributes(justification.get('bill').get('phase'))
-                                            }) """
-                                    priorityIds = []
-                                    if justification.get('bill').get('priority'):
-                                        jsonPriorities = []
-                                        try:
-                                            jsonPriorities = json.loads(justification.get('bill').get('priority'))
-                                        except Exception as e:
-                                            print('Error: ', e)
-                                        for priority in jsonPriorities:
-                                            if priority.get('id'):
-                                                if not entityExist(responseData, priority.get('id'), 'priority'):
-                                                    responseData['data'].append({
-                                                        "type": "priority", "id": priority.get('id'), 
-                                                        "attributes": getAttributes(priority)
-                                                    })
-                                                    priorityIds.append({"type": "priority", "id": priority.get('id')})
-                                    billId = justification.get('bill').get('id')
-                                    if phaseId:
+                        ##if not entityExist(responseData, justification.get('id'), 'justification'):
+                        billId = None
+                        if justification.get('bill') and justification.get('bill').get('id'):
+                            ##if not entityExist(responseData, justification.get('bill').get('id'), 'bill'):
+                            phaseId = None
+                            if justification.get('bill').get('phase') and justification.get('bill').get('phase').get('id'):
+                                phaseId = justification.get('bill').get('phase').get('id')
+                            priorityIds = []
+                            billId = justification.get('bill').get('id')
+                            if justification.get('bill').get('priority'):
+                                jsonPriorities = []
+                                try:
+                                    jsonPriorities = json.loads(justification.get('bill').get('priority'))
+                                except Exception as e:
+                                    print('Error: ', e)
+                                for priority in jsonPriorities:
+                                    if priority.get('id'):
+                                        ##priority_id = hash((billId, priority.get('name')))
+                                        priority_id = billId + "_" + priority.get('name')
+                                        ##if not entityExist(responseData, priority_id, 'priority'):
                                         responseData['data'].append({
-                                            "type": "bill", "id": billId, 
-                                            "attributes":getAttributes(justification.get('bill')),
-                                            "relationships": {
-                                                "phase": {
-                                                    "data": {
-                                                        "id": phaseId,
-                                                        "type": "phase"
-                                                    }
-                                                },
-                                                "priorities": {
-                                                    "data": priorityIds
-                                                }
-                                            }
+                                            "type": "priority", "id": priority_id, 
+                                            "attributes": getAttributes(priority)
                                         })
-                                    else:
-                                        responseData['data'].append({
-                                            "type": "bill", "id": billId, 
-                                            "attributes":getAttributes(justification.get('bill')),
-                                            "relationships": {
-                                                "priorities": {
-                                                    "data": priorityIds
-                                                }
+                                        priorityIds.append({"type": "priority", "id": priority_id})
+                            if phaseId:
+                                responseData['data'].append({
+                                    "type": "bill", "id": billId, 
+                                    "attributes":getAttributes(justification.get('bill')),
+                                    "relationships": {
+                                        "phase": {
+                                            "data": {
+                                                "id": phaseId,
+                                                "type": "phase"
                                             }
-                                        })
+                                        },
+                                        "priorities": {
+                                            "data": priorityIds
+                                        }
+                                    }
+                                })
+                            else:
+                                responseData['data'].append({
+                                    "type": "bill", "id": billId, 
+                                    "attributes":getAttributes(justification.get('bill')),
+                                    "relationships": {
+                                        "priorities": {
+                                            "data": priorityIds
+                                        }
+                                    }
+                                })
                         responseData['data'].append({
                             "type": "justification", "id": justification.get('id'), 
                             "attributes": getAttributes(justification),
@@ -214,4 +225,5 @@ def getStudiesById(request, study_id):
                         })
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+    ##findDuplicatedBills(responseData['data'])
     return JsonResponse(responseData)

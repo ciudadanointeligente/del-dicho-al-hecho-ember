@@ -22,11 +22,11 @@ export default DS.Model.extend({
     return false;
   }),
   slug: DS.attr('string', {defaultValue: function(e){
-    let gov = e.get('name');
-    return gov.replace(/\s+/g, '-').toLowerCase();
+    /*let gov = e.get('name');
+    return gov.replace(/\s+/g, '-').toLowerCase();*/
+    return e.get('id')
   }}),
   comparable: Ember.computed('studies', function(){
-
     return this.get('studies').filterBy('type', config.comparable_with_other_gov).sortBy('year');
   }),
   comparablePromises: Ember.computed('comparable', function(){

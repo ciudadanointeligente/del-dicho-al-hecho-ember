@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import _ from 'lodash';
 import config from '../config/environment';
+import RSVP from 'rsvp';
 
 
 export default Ember.Mixin.create({
@@ -11,7 +12,7 @@ export default Ember.Mixin.create({
     return study.year - config.government_length;
   },
   comparableStudies: function(govs){
-    govs = _.sortBy(govs, function(g){ return g['startYear']; });
+    govs = _.sortBy(govs, function(g){ return g.startYear; });
     let result = {
       'version': config.comparable_with_other_gov,
       'studies': []
@@ -22,11 +23,10 @@ export default Ember.Mixin.create({
       if(isComparable(study)){
         let year = determinePreviousStudy(study);
         _.forEach(govs, function(gov){
-
-          _.forEach(gov.studies,function(s){
+          _.forEach(gov.studySet,function(s){
             if(s.year === year && isComparable(s)){
               result.studies.push([{'version': study.version, 'year': study.year},
-                           {'version': s.version, 'year': s.year}]);
+                          {'version': s.version, 'year': s.year}]);
             }
           });
         });

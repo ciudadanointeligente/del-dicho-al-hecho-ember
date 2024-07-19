@@ -142,14 +142,11 @@ def getStudyById(studyId):
 def saveArea(data):
     print('saveArea->')
     AreaName = data.get('attributes').get('name')
-    print('AreaName->', AreaName)
     if AreaName:
-        print('paso->')
         try:
             newArea = Area.objects.get(name=AreaName)
-            print('Area exists->', newArea)
+            print('Area exists->')
         except Area.DoesNotExist:
-            print('DoesNotExist->')
             try:
                 newArea = Area(name=AreaName)
             except Exception as e:
@@ -182,6 +179,7 @@ def savePromise(data, areaInstance):
     if areaInstance:
         try:
             newPromise = Promise(
+                id = data.get('id'),
                 content = data.get('attributes').get('content'),
                 number = data.get('attributes').get('number'),
                 title = data.get('attributes').get('title'),
@@ -209,6 +207,7 @@ def saveBill(data):
         phaseInstance = None
     try:
         newBill = Bill(
+            id = data.get('id'),
             name = data.get('attributes').get('name'),
             title = data.get('attributes').get('title'),
             url = data.get('attributes').get('url'),
@@ -270,6 +269,7 @@ def parseAttributes(data_csv, study):
     columnName = 'nombre_avance'
     data = []
     keys = config.keys()
+    idsBill = []
     for key in keys:
         if config.get(key).get('chekIsEmpty'):
             if not data_csv.get(config.get(key).get('chekIsEmpty')):
@@ -280,12 +280,22 @@ def parseAttributes(data_csv, study):
             'id': None,
             'attributes': {}
         };
+        isBreak = False
         for subKey in config.get(key).keys():
             value = config.get(key).get(subKey)
             if subKey not in ("id", "relationships"):
                 obj['attributes'][subKey] = data_csv.get(value)
             elif subKey == 'id':
-                obj["id"] = "".join(random.choices(string.digits, k=5))
+                fieldToGetIdFrom = config.get(key).get(subKey).get('fieldToGetIdFrom')
+                id_from_csv = data_csv.get(fieldToGetIdFrom);
+                if study is not None and key == 'promise' or key == 'bill':
+                    if id_from_csv is None or not str(id_from_csv).strip():
+                        isBreak = True
+                        continue
+                    else:
+                        obj["id"] = hash(str(id_from_csv) +  str(study.government.name) + str(study.version) + str(study.year));
+                else:
+                    obj["id"] = "".join(random.choices(string.digits, k=5))
             elif subKey == "relationships":
                 if "relationships" not in obj.keys():
                     obj.setdefault("relationships", {})
@@ -315,7 +325,9 @@ def parseAttributes(data_csv, study):
                             }
                         else:
                             obj["id"] = None
-        if obj.get("id"):
+        if isBreak:
+            continue
+        else:
             data.append(obj);
     return data
 

@@ -30,12 +30,10 @@ export default DS.Model.extend(CalculationsMixin, {
     slug: DS.attr("string", {defaultValue: function(e){
       let gov = e.get("government");
       return e.get("id");
-      //return (gov.get("name") + "_" + e.get("version") + "-" + e.get("year")).replace(/\s+/g, '-').toLowerCase();
       },
     }),
     order: Ember.computed('government', 'year', function() {
       let gov_year = this.get('government').get('start_year');
-
       let n = this.get('year') - gov_year + 1;
       return orders[n];
     }),
