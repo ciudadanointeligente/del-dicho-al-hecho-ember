@@ -120,12 +120,12 @@ export default Ember.Mixin.create(CsvMixin, {
 
       _.forEach(government['studySet'], function(study_obj){
           let in_land = false;
-          if(!_.isUndefined(study_obj.in_landing) && study_obj.in_landing){
+          if(!_.isUndefined(study_obj.inLanding) && study_obj.inLanding){
             in_land = true;
           }
 
           let in_land_2 = false;
-          if(!_.isUndefined(study_obj.in_landing_2) && study_obj.in_landing_2){
+          if(!_.isUndefined(study_obj.inLanding2) && study_obj.inLanding2){
             in_land_2 = true;
           }
 
@@ -134,8 +134,8 @@ export default Ember.Mixin.create(CsvMixin, {
             visible = true;
           }
           let fixed_result;
-          if(!_.isUndefined(study_obj.fixed_result)){
-            fixed_result = study_obj.fixed_result;
+          if(!_.isUndefined(study_obj.fixedResult)){
+            fixed_result = study_obj.fixedResult;
           }
           let study = store.createRecord('study', {
             version: study_obj.version,

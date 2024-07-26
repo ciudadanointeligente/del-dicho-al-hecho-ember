@@ -4,12 +4,18 @@ import UtilitiesMixin from 'ddah-ember/mixins/utilities';
 import config from '../config/environment';
 
 export default Ember.Route.extend(CsvParserMixin, UtilitiesMixin, {
+  ajax: Ember.inject.service(),
   titleToken: function(model) {
     return model.get('name');
   },
   model(){
     let study = this.store.peekAll('study').findBy('in_landing');
-    let file_name =config.rootURL +  'studies/' + study.get('filename');
-    return this._parseCsv(file_name, this.store, study);
+    return this.get('ajax').request('http://127.0.0.1:8000/get_study_by_id/' + study.get('id') + '/').then((data) => {
+      this.store.pushPayload(data);
+      return study;
+    }).catch((error) => {
+      console.log('error:', error)
+      return error;
+    });
   }
 });
