@@ -7,6 +7,7 @@ import re
 from .matcher import getMatcher
 import random
 import string
+from django.db import transaction
 
 mapKeys = {
     'government': {
@@ -160,7 +161,7 @@ def saveArea(data):
             except Exception as e:
                 print('Error:', e)
                 print('data->', data)
-                return e
+                return {'Error': e}
             newArea.save()
             print('Success->')
         return newArea
@@ -182,6 +183,7 @@ def savePhase(phaseName):
         newPhase.save()
     print('Success->')
     return newPhase
+    
 
 def savePromise(data, areaInstance):
     print('savePromise->')
@@ -204,7 +206,7 @@ def savePromise(data, areaInstance):
         except Exception as e:
             print('Error:', e)
             print('data->', data)
-            return e
+            return {'Error': e}
     print('Skiped->')
     return None
 
@@ -212,6 +214,8 @@ def saveBill(data):
     print('saveBill->')
     if data.get('relationships').get('phase'):
         phaseInstance = savePhase(data.get('relationships').get('phase').get('data').get('name'))
+        if phaseInstance and type(phaseInstance) is dict and phaseInstance.get('Error'):
+            return phaseInstance
     else:
         phaseInstance = None
     try:
@@ -231,7 +235,7 @@ def saveBill(data):
     except Exception as e:
         print('Error:', e)
         print('data->', data)
-        return e
+        return {'Error': e}
 
 def saveJustification(data, promiseInstance, billInstance):
     print('saveJustification->')
@@ -248,28 +252,107 @@ def saveJustification(data, promiseInstance, billInstance):
         except Exception as e:
             print('Error:', e)
             print('data->', data)
-            return e
+            return {'Error': e}
     print('Skiped->')
     return None
 
+@transaction.atomic
 def saveCSV(data_csv, study):
+    parsedRecords = []
     for record in data_csv:
-        parsedRecord = parseAttributes(record, study)
-        areaInstance = None
-        promiseInstance = None
-        billIInstance = None
-        for element in parsedRecord:
-            print('element->', element.get('type'))
-            if element.get('type') == 'area':
-                areaInstance = saveArea(element)
-            elif element.get('type') == 'promise':
-                promiseInstance = savePromise(element, areaInstance)
-            elif element.get('type') == 'bill':
-                billIInstance = saveBill(element)
-            elif element.get('type') == 'justification':
-                saveJustification(element, promiseInstance, billIInstance)
-            else:
-                print('Invalid Type')
+        parsedRecords.append(parseAttributes(record, study))
+    try:
+        for parsedRecord in parsedRecords:
+            areaInstance = None
+            promiseInstance = None
+            billInstance = None
+            for element in parsedRecord:
+                if element.get('type') == 'area':
+                    #areaInstance = saveArea(element)
+                    print('saveArea->')
+                    AreaName = firstLetterUppercase(element.get('attributes').get('name'))
+                    if AreaName:
+                        try:
+                            newArea = Area.objects.get(name=AreaName)
+                            areaInstance = newArea
+                            print('Area exists->')
+                        except Area.DoesNotExist:
+                            newArea = Area(name=AreaName)
+                            newArea.save()
+                            areaInstance = newArea
+                            print('Success->')
+                    else:
+                        print('Skiped->')
+                        areaInstance = None
+                elif element.get('type') == 'promise':
+                    #promiseInstance = savePromise(element, areaInstance)
+                    print('savePromise->')
+                    if areaInstance:
+                        newPromise = Promise(
+                            id = element.get('id'),
+                            content = element.get('attributes').get('content'),
+                            number = element.get('attributes').get('number'),
+                            title = element.get('attributes').get('title'),
+                            ja_why = element.get('attributes').get('ja_why'),
+                            jc_why = element.get('attributes').get('jc_why'),
+                            coherence_level = element.get('attributes').get('coherence_level'),
+                            study = Study.objects.get(pk=element.get('relationships').get('study').get('data').get('id')),
+                            area = areaInstance
+                        )
+                        newPromise.save()
+                        promiseInstance = newPromise
+                        print('Success->')
+                    else:
+                        print('Skiped->')
+                        promiseInstance = None
+                elif element.get('type') == 'bill':
+                    #billInstance = saveBill(element)
+                    print('saveBill->')
+                    phaseInstance = None
+                    if element.get('relationships').get('phase'):
+                        #phaseInstance = savePhase(data.get('relationships').get('phase').get('data').get('name'))
+                        print('savePhase')
+                        phaseName = firstLetterUppercase(element.get('relationships').get('phase').get('data').get('name'))
+                        try:
+                            newPhase = Phase.objects.get(name=phaseName)
+                            phaseInstance = newPhase
+                            print('Phase exists->')
+                        except Area.DoesNotExist:
+                            newPhase = Phase(name=newPhase)
+                            newPhase.save()
+                            phaseInstance = newPhase
+                            print('Success->')
+                    newBill = Bill(
+                        id = element.get('id'),
+                        name = element.get('attributes').get('name'),
+                        title = element.get('attributes').get('title'),
+                        url = element.get('attributes').get('url'),
+                        chekIsEmpty = element.get('attributes').get('chekIsEmpty'),
+                        justification_summary = element.get('attributes').get('justification'),
+                        phase = phaseInstance,
+                        priority = element.get('relationships').get('priorities').get('data')
+                    )
+                    newBill.save()
+                    billInstance = newBill
+                    print('Success->')
+                elif element.get('type') == 'justification':
+                    #justificationInstance = saveJustification(element, promiseInstance, billInstance)
+                    print('saveJustification->')
+                    if promiseInstance and billInstance:
+                        print('id->', element.get('id'))
+                        newJustification = Justification(
+                            id = element.get('id'),
+                            justification = element.get('attributes').get('justification'),
+                            promise = promiseInstance,
+                            bill = billInstance
+                        )
+                        newJustification.save()
+                        print('Success->')
+                else:
+                    print('Invalid Type')
+    except Exception as e:
+            print('Error:', e)
+            return {'Error': e}
     return ""
 
 def parseAttributes(data_csv, study):
@@ -309,7 +392,10 @@ def parseAttributes(data_csv, study):
                             isBreak = True
                             continue
                     if not isBreak:
-                        obj["id"] = "".join(random.choices(string.digits, k=5))
+                        if id_from_csv is None or not str(id_from_csv).strip() or key in keys_that_can_be_empty:
+                            obj["id"] = hash("".join(random.choices(string.digits, k=5)))
+                        else:
+                            obj["id"] = hash(str(id_from_csv))
             elif subKey == "relationships":
                 if "relationships" not in obj.keys():
                     obj.setdefault("relationships", {})

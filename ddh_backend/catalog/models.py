@@ -72,12 +72,13 @@ class Bill(models.Model):
     chekIsEmpty = models.CharField(max_length=255, null=True)
     phase = models.ForeignKey(Phase, on_delete=models.CASCADE, null=True)
     priority = models.JSONField(null=True)
-    justification_summary = models.CharField(max_length=255, null=True)
+    justification_summary = models.TextField(null=True)
 
     def __str__(self):
         return self.name
     
 class Justification(models.Model):
-    justification = models.CharField(max_length=255, null=True)
+    id = models.CharField(primary_key=True, max_length=255) 
+    justification = models.TextField(null=True)
     promise = models.ForeignKey(Promise, on_delete=models.CASCADE)
     bill = models.ForeignKey(Bill, on_delete=models.CASCADE)

@@ -25,6 +25,9 @@ def bulk(request):
                 json_string = df.to_json(orient='records')
                 jsonData = json.loads(json_string)
                 dataParsed = saveCSV(jsonData, selectedStudy)
+                if type(dataParsed) is dict and dataParsed.get('Error'):
+                    messages.error(request, f"Error: {dataParsed.get('Error')}")
+                    return render(request, "bulk.html", context)
 
                 messages.success(request, 'Data uploaded successfully!')
                 return render(request, "bulk.html", context)
