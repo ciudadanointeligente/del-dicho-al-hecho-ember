@@ -11,9 +11,6 @@ class Government(models.Model):
     color3 = models.CharField(max_length=7, null=True)
     color4 = models.CharField(max_length=7, null=True)
 
-    def __str__(self):
-        return self.name
-
 class Study(models.Model):
     type = models.CharField(max_length=255, null=True)
     img = models.CharField(max_length=255, null=True)
@@ -33,6 +30,9 @@ class Study(models.Model):
     def __str__(self):
         return self.name
     
+    class Meta:
+        verbose_name_plural = "Studies"
+    
 class Area(models.Model):
     name = models.CharField(max_length=255, null=True)
 
@@ -46,9 +46,6 @@ class Promise(models.Model):
     coherence_level = models.CharField(max_length=255, null=True)
     study = models.ForeignKey(Study, on_delete=models.CASCADE)
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.title
     
 class Priority(models.Model):
     name = models.CharField(max_length=255, null=True)
@@ -56,6 +53,9 @@ class Priority(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name_plural = "Priorities"
     
 class Phase(models.Model):
     name = models.CharField(max_length=255, null=True)
@@ -73,9 +73,6 @@ class Bill(models.Model):
     phase = models.ForeignKey(Phase, on_delete=models.CASCADE, null=True)
     priority = models.JSONField(null=True)
     justification_summary = models.TextField(null=True)
-
-    def __str__(self):
-        return self.name
     
 class Justification(models.Model):
     id = models.CharField(primary_key=True, max_length=255) 

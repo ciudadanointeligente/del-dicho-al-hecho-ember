@@ -339,7 +339,6 @@ def saveCSV(data_csv, study):
                     #justificationInstance = saveJustification(element, promiseInstance, billInstance)
                     print('saveJustification->')
                     if promiseInstance and billInstance:
-                        print('id->', element.get('id'))
                         newJustification = Justification(
                             id = element.get('id'),
                             justification = element.get('attributes').get('justification'),
@@ -348,6 +347,8 @@ def saveCSV(data_csv, study):
                         )
                         newJustification.save()
                         print('Success->')
+                    else:
+                        print('failed->', parsedRecord)
                 else:
                     print('Invalid Type')
     except Exception as e:
@@ -393,7 +394,16 @@ def parseAttributes(data_csv, study):
                             continue
                     if not isBreak:
                         if id_from_csv is None or not str(id_from_csv).strip() or key in keys_that_can_be_empty:
-                            obj["id"] = hash("".join(random.choices(string.digits, k=5)))
+                            existing_promise = next(
+                                (o for o in data if o["type"] == 'promise'), None
+                            )
+                            existing_Bill = next(
+                                (o for o in data if o["type"] == 'bill'), None
+                            )
+                            if existing_promise and existing_Bill:
+                                obj["id"] = hash(str(existing_promise["id"]) + str(existing_Bill["id"]))
+                            else:
+                                obj["id"] = hash("".join(random.choices(string.digits, k=5)))
                         else:
                             obj["id"] = hash(str(id_from_csv))
             elif subKey == "relationships":

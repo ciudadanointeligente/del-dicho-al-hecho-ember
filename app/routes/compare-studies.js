@@ -51,6 +51,6 @@ export default Ember.Route.extend(UtilitiesMixin, CsvParserMixin, {
   },
   setupController(controller, model){
     this._super(controller, model);
-    controller.set('areas', this.store.peekAll('area'));
+    controller.set('areas', this.store.peekAll('area').sortBy('name'));
   }
 });
