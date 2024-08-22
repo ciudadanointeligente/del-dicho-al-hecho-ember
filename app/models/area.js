@@ -5,7 +5,7 @@ export default DS.Model.extend(CalculationsMixin, {
     name: DS.attr('string'),
     promises: DS.hasMany('promise'),
     slug: DS.attr("string", {defaultValue: function(e){
-      return (e.get('name')).replace(/\s+/g, '-').trim().toLowerCase();
+      return (e.get('name') ? e.get('name') : 'None').replace(/\s+/g, '-').trim().toLowerCase();
       },
     }),
     getPromisesPerStudy: function(study){

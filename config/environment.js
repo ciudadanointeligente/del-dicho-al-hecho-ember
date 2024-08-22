@@ -1,5 +1,5 @@
 var governments =[
-  {
+  /* {
     "name": "Gabriel Boric I",
     "years": {'start': 2022, 'end': 2026},
     "color1": "#A973F4",
@@ -307,7 +307,7 @@ var governments =[
 		"title": "¿Cuánto cumplió el gobierno de Sebastián Piñera?",
     "visible": true,
 	},]
-}];
+} */];
 module.exports = function(environment) {
   var orders = {
     1: 'primer',

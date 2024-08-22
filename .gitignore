@@ -19,3 +19,7 @@ testem.log
 .DS_Store
 _site
 .jekyll-metadata
+
+*.pyc
+venv
+package-lock.json

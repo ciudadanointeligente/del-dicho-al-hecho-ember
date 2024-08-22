@@ -1,0 +1,150 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static "admin/css/forms.css" %}">{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+&rsaquo; <a href="/bulk">Bulk Data</a>
+</div>
+{% endblock %}
+
+{% block content %}<div id="content-main">
+        <form enctype="multipart/form-data" method="post" id="bulk_form" action="/bulk/" novalidate>
+            {% csrf_token %}{% block form_top %}{% endblock %}
+        <div>
+            <label>Type:</label>
+            <select name="select" id="bulkType">
+                <option value="csv" selected>CSV files</option>
+                <option value="government">Government</option>
+                <option value="study">Study</option>
+                <option value="phase">Phase</option>
+                <option value="priority">Priority</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Study:</label>
+            <select name="selectedStudy" id="studies">
+                <option value="" selected>Select a study</option>
+                {% for study in studies %}
+                    <option value="{{ study.id }}">{{ study.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div style="padding-top: 10px;" id="csvContainer">
+            <label for="myfile">Select a csv file:</label>
+            <input type="file" id="fileChoserCsv" name="csvFile" accept=".csv">
+        </div>
+        <div id="jsonContainer">
+            <div>
+                <div style="padding-top: 10px;">
+                    <label>Json data</label>
+                </div>
+                <div>
+                    <textarea style="min-width: 40vw; min-height: 60vh;" name="jsonData"></textarea>
+                </div>
+            </div>
+            <div style="padding-left: 10px;">
+                <div style="padding-top: 10px;">
+                    <label>Sample</label>
+                </div>
+                <div style="border: 1px solid; border-color: #353535; border-radius: 4px; min-height: 60vh;">
+                    <p id="sampleJson" style="padding: 10px;"></p>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="{% translate 'Save' %}" class="default" name="_save">
+        </form>
+    </div>
+    <script>
+        document.getElementById('jsonContainer').style.display = 'none';
+        document.getElementById('sampleJson').style.display = 'none';
+        document.getElementById('csvContainer').style.display = 'block';
+        handleForm()
+        document.getElementById('bulkType').addEventListener('change', handleForm);
+
+        function handleForm(e) {
+            let value = document.getElementById('bulkType').value
+            var selectedOption = value;
+            var selected = '{{ selected }}';
+            if (selected && !e) {
+                document.getElementById('bulkType').value = selected;
+                selectedOption = selected;
+            }
+            if (selectedOption === 'csv') {
+                document.getElementById('jsonContainer').style.display = 'none';
+                document.getElementById('csvContainer').style.display = 'block';
+                document.getElementById('sampleJson').style.display = 'none';
+            } else {
+                document.getElementById('jsonContainer').style.display = 'flex';
+                document.getElementById('sampleJson').style.display = 'block';
+                let jsonExample = '';
+                if (selectedOption === 'phase') {
+                    jsonExample = '[ </br>\
+                        &emsp;{</br>\
+                        &emsp;&emsp;"name": "Primer Tramite",</br>\
+                        &emsp;&emsp;"fullfilment": 40</br>\
+                        &emsp;}, {</br>\
+                        &emsp;&emsp;"name": "Segundo Tramite",</br>\
+                        &emsp;&emsp;"fullfilment": 70</br>\
+                        &emsp;}</br>\
+                        &emsp;...</br>\
+                    ]'
+                } else if (selectedOption === 'government') {
+                    jsonExample = '[</br>\
+                    &emsp;{</br>\
+                        &emsp;&emsp;"name": "Gabriel Boric I",</br>\
+                        &emsp;&emsp;"start_year": 2022,</br>\
+                        &emsp;&emsp;"end_year": 2026,</br>\
+                        &emsp;&emsp;"extra_info": "Info",</br>\
+                        &emsp;&emsp;"color1": "#A973F4",</br>\
+                        &emsp;&emsp;"color2": "#C099F7",</br>\
+                        &emsp;&emsp;"color3": "#D7BFF9",</br>\
+                        &emsp;&emsp;"color4": "#F0E6FD"</br>\
+                    &emsp;}</br>\
+                    &emsp;...</br>\
+                    ]'
+                } else if (selectedOption === 'study') {
+                    jsonExample = '[ </br>\
+                            &emsp;{</br>\
+                                &emsp;&emsp;"government": 1,</br>\
+                                &emsp;&emsp;"type": "Programa",</br>\
+                                &emsp;&emsp;"img": "/img/bashelet-en-el-barquito.svg",</br>\
+                                &emsp;&emsp;"color": "#A973F4",</br>\
+                                &emsp;&emsp;"year": 2023,</br>\
+                                &emsp;&emsp;"version": "Programa de Gobierno",</br>\
+                                &emsp;&emsp;"name": "Gabriel Boric: Programa de Gobierno 2023",</br>\
+                                &emsp;&emsp;"filename": "Boric-2022-2026_Programa-2023.csv",</br>\
+                                &emsp;&emsp;"description": "Revisa aquí el porcentaje de cumplimiento de las promesas del programa de gobierno.",</br>\
+                                &emsp;&emsp;"title": "¿Cuánto cumplió el gobierno de Gabriel Boric?",</br>\
+                                &emsp;&emsp;"fixed_result": 31,</br>\
+                                &emsp;&emsp;"visible": true,</br>\
+                                &emsp;&emsp;"in_landing": true</br>\
+                                &emsp;&emsp;"in_landing_2": false</br>\
+                            &emsp;}</br>\
+                            &emsp;...</br>\
+                    ]'
+                }  else if (selectedOption === 'priority') {
+                    jsonExample = '[ </br>\
+                            &emsp;{</br>\
+                                &emsp;&emsp;"countColumnName": "simple",</br>\
+                                &emsp;&emsp;"name": "Simple"</br>\
+                            &emsp;}</br>\
+                            &emsp;...</br>\
+                    ]'
+                }
+                document.getElementById('sampleJson').innerHTML = jsonExample;
+                document.getElementById('csvContainer').style.display = 'none';
+            }
+        }
+    </script>
+{% endblock %}
