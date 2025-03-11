@@ -3,9 +3,9 @@ var governments =[
     "name": "Gabriel Boric I",
     "years": {'start': 2022, 'end': 2026},
     "color1": "#A973F4",
-    "color2": "#C099F7",
-    "color3": "#D7BFF9",
-    "color4": "#F0E6FD",
+    "color2": "#A973F4",
+    "color3": "#A973F4",
+    "color4": "#A973F4",
     "studies": [{
       "type": "Programa",
       "img": "/img/bashelet-en-el-barquito.svg",
@@ -53,10 +53,10 @@ var governments =[
   {
 			 "name": "Sebastián Piñera II",
 			 "years": {'start': 2018, 'end': 2022},
-			 "color1": "#73F1FF",
-			 "color2": "#99F5FF",
-			 "color3": "#BFF8FF",
-			 "color4": "#99F5FF",
+			 "color1": "#A973F4",
+			 "color2": "#A973F4",
+			 "color3": "#A973F4",
+			 "color4": "#A973F4",
 			 "studies": [
 	//  {
   //   "type": "MovimientoSocial",
@@ -73,7 +73,7 @@ var governments =[
   // },
 	{
  "type": "Programa",
- "color": "#73F1FF",
+ "color": "#A973F4",
  "year": 2021,
  "version": "Programa de Gobierno",
  "name": "Sebastián Piñera: Programa de Gobierno 2021",
@@ -85,7 +85,7 @@ var governments =[
 },
 {
 "type": "Programa",
-"color": "#99F5FF",
+"color": "#A973F4",
 "year": 2020,
 "version": "Programa de Gobierno",
 "name": "Sebastián Piñera: Programa de Gobierno 2020",
@@ -98,7 +98,7 @@ var governments =[
 },
 {
  "type": "Programa",
- "color": "#BFF8FF",
+ "color": "#A973F4",
  "year": 2019,
  "version": "Programa de Gobierno",
  "name": "Sebastián Piñera: Programa de Gobierno 2019",
@@ -111,7 +111,7 @@ var governments =[
 },
 {
 	"type": "Programa",
-	"color": "#99F5FF",
+	"color": "#A973F4",
 	"year": 2018,
 	"version": "Programa de Gobierno",
 	"name": "Sebastián Piñera: Programa de Gobierno 2018",
@@ -140,9 +140,9 @@ var governments =[
 	"name": "Michelle Bachelet II",
 	"years": {'start': 2014, 'end': 2018},
 	"color1": "#A973F4",
-	"color2": "#C099F7",
-	"color3": "#D7BFF9",
-	"color4": "#F0E6FD",
+	"color2": "#A973F4",
+	"color3": "#A973F4",
+	"color4": "#A973F4",
 	"studies": [{
     "type": "Programa",
     "img": "/img/bashelet-en-el-barquito.svg",
@@ -158,7 +158,7 @@ var governments =[
   },{
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#C099F7",
+		"color": "#A973F4",
 		"year": 2016,
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2016",
@@ -170,7 +170,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#D7BFF9",
+		"color": "#A973F4",
 		"year": 2015,
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2015",
@@ -182,7 +182,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/bashelet-en-el-barquito.svg",
-		"color": "#F0E6FD",
+		"color": "#A973F4",
 		"year": 2014,
 		"version": "Programa de Gobierno",
 		"name": "Michelle Bachelet: Programa de Gobierno 2014",
@@ -206,7 +206,7 @@ var governments =[
 		},{
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#C099F7",
+		"color": "#A973F4",
 		"year": 2016,
 		"version": "Cuenta Pública",
 		"name": "Michelle Bachelet: Cuenta Pública 2016",
@@ -218,7 +218,7 @@ var governments =[
 		}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-con-la-fiera.svg",
-		"color": "#D7BFF9",
+		"color": "#A973F4",
 		"year": 2015,
 		"version": "Cuenta Pública",
 		"name": "Michelle Bachelet: Cuenta Pública 2015",
@@ -230,7 +230,7 @@ var governments =[
 	}, {
 		"type": "Discurso",
 		"img": "/img/bashelet-en-el-avion.svg",
-		"color": "#F0E6FD",
+		"color": "#A973F4",
 		"year": 2014,
 		"version": "Cuenta Pública",
 		"name": "Michelle Bachelet: Cuenta Pública 2014",
@@ -244,14 +244,14 @@ var governments =[
 	"name": "Sebastián Piñera I",
 	"years": {'start': 2010, 'end': 2014},
 	"extra_info": "La primera medición de Del Dicho al Hecho se efectuó en 2012, por lo que los resultados al primer año no están disponibles.",
-	"color1": "#8D9EFF",
-	"color2": "#ACB9FF",
-	"color3": "#CBD3FE",
-	"color4": "#F0EFFF",
+	"color1": "#A973F4",
+	"color2": "#A973F4",
+	"color3": "#A973F4",
+	"color4": "#A973F4",
 	"studies": [{
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#8D9EFF",
+		"color": "#A973F4",
 		"year": 2013,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2013",
@@ -263,7 +263,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#ACB9FF",
+		"color": "#A973F4",
 		"year": 2012,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2012",
@@ -275,7 +275,7 @@ var governments =[
 	}, {
 		"type": "Programa",
 		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#CBD3FE",
+		"color": "#A973F4",
 		"year": 2011,
 		"version": "Programa de Gobierno",
 		"name": "Sebastián Piñera: Programa de Gobierno 2011",
@@ -287,7 +287,7 @@ var governments =[
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#8D9EFF",
+		"color": "#A973F4",
 		"year": 2013,
 		"version": "Cuenta Pública",
 		"name": "Sebastián Piñera: Cuenta Pública 2013",
@@ -299,7 +299,7 @@ var governments =[
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-bicicleta.svg",
-		"color": "#ACB9FF",
+		"color": "#A973F4",
 		"year": 2012,
 		"version": "Cuenta Pública",
 		"name": "Sebastián Piñera: Cuenta Pública 2012",
@@ -311,7 +311,7 @@ var governments =[
 	}, {
 		"type": "Discurso",
 		"img": "/img/pinera-en-el-auto.svg",
-		"color": "#CBD3FE",
+		"color": "#A973F4",
 		"year": 2011,
     "fixed_result": 53,
 		"version": "Cuenta Pública",
